@@ -1,0 +1,178 @@
+# Actualización automática de la documentación de docs-kb en GitHub Actions.
+#
+# Cada tecnología corre en su propio job con un Firecrawl efímero
+# (.github/firecrawl/docker-compose.yml). Al final, un job descarga los
+# resultados y hace un único commit en main. El servidor del MCP solo
+# sincroniza (sincronizar.sh: git pull + reindexado incremental).
+name: Actualizar documentación
+
+on:
+  # HORARIO: se activa después del primer push completo de sources/ (ver SistemaDocumentación.md).
+  # schedule:
+  #   - cron: "0 3 * * 0"   # domingos 03:00 UTC: re-descarga páginas con más de 28 días
+  #   - cron: "0 1 1 * *"   # día 1 de cada mes 01:00 UTC: además re-descubre páginas nuevas
+  workflow_dispatch:
+    inputs:
+      tecnologias:
+        description: "Tecnologías separadas por coma (vacío = todas)"
+        required: false
+        default: ""
+      descubrir:
+        description: "Re-descubrir páginas nuevas (--discover)"
+        type: boolean
+        default: false
+      max_age_days:
+        description: "Re-descargar solo páginas con más de N días (las nuevas siempre)"
+        required: false
+        default: "28"
+      publicar:
+        description: "Hacer commit y push del resultado en main"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: actualizar-docs
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      techs: ${{ steps.plan.outputs.techs }}
+      discover: ${{ steps.plan.outputs.discover }}
+      max_age: ${{ steps.plan.outputs.max_age }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: config.json
+          sparse-checkout-cone-mode: false
+      - id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT_TECHS: ${{ inputs.tecnologias }}
+          INPUT_DISCOVER: ${{ inputs.descubrir }}
+          INPUT_AGE: ${{ inputs.max_age_days }}
+        run: |
+          python3 - >> "$GITHUB_OUTPUT" <<'EOF'
+          import json, os
+          techs = list(json.load(open("config.json"))["technologies"])
+          sel = [t.strip() for t in os.environ.get("INPUT_TECHS", "").split(",") if t.strip()]
+          if sel:
+              unknown = [t for t in sel if t not in techs]
+              if unknown:
+                  raise SystemExit(f"Tecnologías desconocidas: {unknown}")
+              techs = sel
+          monthly = os.environ["EVENT"] == "schedule" and os.environ.get("SCHEDULE") == "0 1 1 * *"
+          discover = monthly or os.environ.get("INPUT_DISCOVER") == "true"
+          age = float(os.environ.get("INPUT_AGE") or "28")  # valida que sea numérico
+          print("techs=" + json.dumps(techs))
+          print("discover=" + ("true" if discover else "false"))
+          print(f"max_age={age:g}")
+          EOF
+          cat "$GITHUB_OUTPUT"
+
+  recolectar:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        tech: ${{ fromJSON(needs.plan.outputs.techs) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /*
+            !/sources/
+            /sources/${{ matrix.tech }}/
+          sparse-checkout-cone-mode: false
+
+      - name: Levantar Firecrawl (+ Playwright)
+        run: |
+          docker compose -f .github/firecrawl/docker-compose.yml up -d --quiet-pull
+          for i in $(seq 1 60); do
+            curl -sf http://localhost:3002/ > /dev/null && { echo "Firecrawl listo"; exit 0; }
+            sleep 5
+          done
+          docker compose -f .github/firecrawl/docker-compose.yml logs --tail 80
+          exit 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias del collector
+        run: pip install --quiet requests
+
+      - name: Recolectar
+        env:
+          TECH: ${{ matrix.tech }}
+          DISCOVER: ${{ needs.plan.outputs.discover }}
+          MAX_AGE: ${{ needs.plan.outputs.max_age }}
+        run: |
+          args=(--tech "$TECH" --max-age-days "$MAX_AGE" --no-index --time-budget-min 300)
+          [ "$DISCOVER" = "true" ] && args+=(--discover)
+          python collector.py "${args[@]}"
+
+      - name: Resumen del log
+        if: always()
+        run: |
+          grep -E "discovery|Stats:|TOTAL|Time budget|ERROR|WARNING" logs/collector.log | tail -60 || true
+          echo "Páginas nuevas: $(grep -c 'New:' logs/collector.log || true)"
+          echo "Actualizadas:   $(grep -c 'Updated:' logs/collector.log || true)"
+          echo "Fallidas:       $(grep -cE 'Scrape failed|No markdown' logs/collector.log || true)"
+
+      - name: Subir resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sources-${{ matrix.tech }}
+          path: |
+            sources/${{ matrix.tech }}/markdown/
+            sources/${{ matrix.tech }}/manifest.json
+            sources/${{ matrix.tech }}/versions/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  publicar:
+    needs: [plan, recolectar]
+    if: always() && needs.plan.result == 'success' && (github.event_name == 'schedule' || inputs.publicar)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: sources-*
+          path: artefactos
+
+      - name: Commit y push
+        run: |
+          shopt -s nullglob
+          for d in artefactos/sources-*; do
+            t="${d#artefactos/sources-}"
+            mkdir -p "sources/$t"
+            cp -a "$d/." "sources/$t/"
+          done
+          git config user.name "docs-kb-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A sources
+          if git diff --cached --quiet; then
+            echo "Sin cambios que publicar"
+            exit 0
+          fi
+          N=$(git diff --cached --name-only | wc -l)
+          git commit -q -m "docs: actualización automática $(date -u +%F) ($N archivos)"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && { echo "Publicado: $N archivos"; exit 0; }
+            sleep 15
+          done
+          exit 1

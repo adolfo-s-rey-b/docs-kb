@@ -1,0 +1,57 @@
+# Firecrawl self-hosted para GitHub Actions: mismas imágenes y variables que el
+# servidor de docs-kb, para que el Markdown generado sea idéntico.
+# Sin volúmenes persistentes (cada job arranca limpio). La base de datos es
+# efímera y solo accesible dentro del runner, así que sus credenciales no son secretas.
+name: firecrawl
+
+services:
+  api:
+    image: ghcr.io/firecrawl/firecrawl:latest
+    ports:
+      - "127.0.0.1:3002:3002"
+    environment:
+      PORT: "3002"
+      HOST: "0.0.0.0"
+      REDIS_URL: redis://redis:6379
+      REDIS_RATE_LIMIT_URL: redis://redis:6379
+      NUQ_DATABASE_URL: postgres://firecrawl:firecrawl@postgres:5432/firecrawl
+      NUQ_RABBITMQ_URL: amqp://rabbitmq:5672
+      USE_DB_AUTHENTICATION: "false"
+      PLAYWRIGHT_MICROSERVICE_URL: http://playwright:3000/scrape
+    depends_on:
+      redis:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+
+  playwright:
+    image: ghcr.io/firecrawl/playwright-service:latest
+    environment:
+      PORT: "3000"
+      BLOCK_MEDIA: "true"
+
+  redis:
+    image: redis:alpine
+
+  postgres:
+    # La imagen ya incluye /docker-entrypoint-initdb.d/010-nuq.sql
+    image: ghcr.io/firecrawl/nuq-postgres:latest
+    environment:
+      POSTGRES_USER: firecrawl
+      POSTGRES_PASSWORD: firecrawl
+      POSTGRES_DB: firecrawl
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U firecrawl -d firecrawl"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 10s
+      timeout: 5s
+      retries: 10

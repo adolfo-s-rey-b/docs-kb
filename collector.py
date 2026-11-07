@@ -69,6 +69,10 @@ for _noisy in ("httpx", "httpcore", "huggingface_hub", "urllib3"):
 
 HTTP_HEADERS = {"User-Agent": "docs-kb-collector/1.1 (self-hosted documentation index)"}
 
+# Optional wall-clock deadline (epoch seconds) set by --time-budget-min: scraping
+# stops cleanly and the manifest is saved, e.g. before a CI job time limit.
+DEADLINE: float | None = None
+
 
 def load_config() -> dict:
     with open(CONFIG_PATH) as f:
@@ -960,6 +964,11 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
                 stats["skipped"] += 1
                 continue
 
+        if DEADLINE is not None and time.time() > DEADLINE:
+            log.warning(f"  Time budget exhausted: stopping {tech_key} early (progress saved; "
+                        f"remaining pages are picked up on the next run)")
+            break
+
         log.info(f"  Scraping: {slug} ({url})")
         data = firecrawl_scrape(url, firecrawl_url, scrape_options)
         if not data:
@@ -1209,6 +1218,8 @@ def main():
     parser.add_argument("--discover", action="store_true", help="Re-discover pages (map/inventory/sitemap/crawl)")
     parser.add_argument("--max-age-days", type=float, default=None,
                         help="Only re-scrape pages fetched more than N days ago (new pages always)")
+    parser.add_argument("--time-budget-min", type=float, default=None,
+                        help="Stop scraping after N minutes (saves progress); for CI time limits")
     parser.add_argument("--no-index", action="store_true",
                         help="Skip rebuilding section index/FAISS at the end (for parallel runs; run --index-only after)")
     parser.add_argument("--dry-run", action="store_true",
@@ -1226,6 +1237,10 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
 
     config = load_config()
+
+    if args.time_budget_min:
+        global DEADLINE
+        DEADLINE = time.time() + args.time_budget_min * 60
 
     # Stand-alone actions (no scraping)
     if args.index_only:
