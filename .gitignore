@@ -1,0 +1,19 @@
+# Secretos y configuración local
+.env
+.claude/settings.local.json
+
+# Entorno y artefactos generados (se reconstruyen con: collector.py --index-only)
+.venv/
+__pycache__/
+*.pyc
+*.tmp
+index/
+logs/
+resultados/
+ESTADO.md
+
+# Caché HTML del collector (solo para detectar cambios; lo publicado es el markdown)
+sources/*/html/
+
+# Estado local del servidor (el historial público es el de git)
+changelog/

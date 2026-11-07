@@ -1,0 +1,309 @@
+{
+  "firecrawl_url": "http://localhost:3002",
+  "defaults": {
+    "scrape_options": {
+      "onlyMainContent": true,
+      "formats": [
+        "markdown",
+        "html"
+      ]
+    },
+    "max_pages": 0
+  },
+  "technologies": {
+    "python": {
+      "display_name": "Python",
+      "doc_base_url": "https://docs.python.org/3/",
+      "map_url": "https://docs.python.org/3/library/",
+      "exclude_patterns": [
+        "about",
+        "bugs",
+        "copyright",
+        "genindex",
+        "modindex",
+        "search"
+      ],
+      "max_pages": 0,
+      "inventory_url": "https://docs.python.org/3/objects.inv"
+    },
+    "pandas": {
+      "display_name": "Pandas",
+      "doc_base_url": "https://pandas.pydata.org/docs/",
+      "map_url": "https://pandas.pydata.org/docs/",
+      "exclude_patterns": [
+        "whatsnew",
+        "development",
+        "community"
+      ],
+      "max_pages": 0
+    },
+    "numpy": {
+      "display_name": "NumPy",
+      "doc_base_url": "https://numpy.org/doc/stable/",
+      "map_url": "https://numpy.org/doc/stable/",
+      "exclude_patterns": [
+        "release",
+        "dev/"
+      ],
+      "max_pages": 0
+    },
+    "matplotlib": {
+      "display_name": "Matplotlib",
+      "doc_base_url": "https://matplotlib.org/stable/",
+      "map_url": "https://matplotlib.org/stable/",
+      "exclude_patterns": [
+        "whatsnew",
+        "devel/"
+      ],
+      "max_pages": 0
+    },
+    "seaborn": {
+      "display_name": "Seaborn",
+      "doc_base_url": "https://seaborn.pydata.org/",
+      "map_url": "https://seaborn.pydata.org/",
+      "exclude_patterns": [
+        "whatsnew",
+        "installing"
+      ],
+      "max_pages": 0
+    },
+    "scikit-learn": {
+      "display_name": "scikit-learn",
+      "doc_base_url": "https://scikit-learn.org/stable/",
+      "map_url": "https://scikit-learn.org/stable/",
+      "exclude_patterns": [
+        "whatsnew",
+        "developers/",
+        "testimonials"
+      ],
+      "max_pages": 0
+    },
+    "keras": {
+      "display_name": "Keras",
+      "doc_base_url": "https://keras.io/",
+      "map_url": "https://keras.io/",
+      "exclude_patterns": [
+        "getting_started/faq",
+        "community"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "crawl"
+      ]
+    },
+    "tensorflow": {
+      "display_name": "TensorFlow",
+      "doc_base_url": "https://www.tensorflow.org/",
+      "map_url": "https://www.tensorflow.org/api_docs/python/",
+      "map_filters": [
+        "api_docs/python/",
+        "guide/",
+        "tutorials/"
+      ],
+      "exclude_patterns": [
+        "versions",
+        "community",
+        "js/",
+        "lite/"
+      ],
+      "max_pages": 0
+    },
+    "pytorch": {
+      "display_name": "PyTorch",
+      "doc_base_url": "https://docs.pytorch.org/docs/stable/",
+      "map_url": "https://docs.pytorch.org/docs/stable/",
+      "exclude_patterns": [
+        "_modules/",
+        "community/"
+      ],
+      "max_pages": 0
+    },
+    "r": {
+      "display_name": "R",
+      "doc_base_url": "https://cran.r-project.org/doc/manuals/",
+      "map_url": "https://cran.r-project.org/doc/manuals/",
+      "map_filters": [
+        "R-intro",
+        "R-lang",
+        "R-data",
+        "R-exts",
+        "R-admin",
+        "R-ints"
+      ],
+      "exclude_patterns": [
+        "r-devel/",
+        "r-patched/"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "crawl"
+      ],
+      "crawl_start": "https://cran.r-project.org/manuals.html",
+      "crawl_depth": 1
+    },
+    "tidyverse": {
+      "display_name": "Tidyverse",
+      "doc_base_url": "https://www.tidyverse.org/",
+      "map_url": "https://www.tidyverse.org/",
+      "exclude_patterns": [
+        "blog/",
+        "help/"
+      ],
+      "max_pages": 0
+    },
+    "dplyr": {
+      "display_name": "dplyr",
+      "doc_base_url": "https://dplyr.tidyverse.org/",
+      "map_url": "https://dplyr.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "tidyr": {
+      "display_name": "tidyr",
+      "doc_base_url": "https://tidyr.tidyverse.org/",
+      "map_url": "https://tidyr.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "purrr": {
+      "display_name": "purrr",
+      "doc_base_url": "https://purrr.tidyverse.org/",
+      "map_url": "https://purrr.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "stringr": {
+      "display_name": "stringr",
+      "doc_base_url": "https://stringr.tidyverse.org/",
+      "map_url": "https://stringr.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "lubridate": {
+      "display_name": "lubridate",
+      "doc_base_url": "https://lubridate.tidyverse.org/",
+      "map_url": "https://lubridate.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "ggplot2": {
+      "display_name": "ggplot2",
+      "doc_base_url": "https://ggplot2.tidyverse.org/",
+      "map_url": "https://ggplot2.tidyverse.org/",
+      "exclude_patterns": [
+        "news",
+        "LICENSE"
+      ],
+      "max_pages": 0
+    },
+    "rstudio": {
+      "display_name": "RStudio",
+      "doc_base_url": "https://docs.posit.co/ide/",
+      "map_url": "https://docs.posit.co/ide/",
+      "exclude_patterns": [
+        "release-notes",
+        "server-pro/"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "crawl"
+      ]
+    },
+    "css": {
+      "display_name": "CSS",
+      "doc_base_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "map_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "exclude_patterns": [
+        "CSS/Value_definition_syntax"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "sitemap"
+      ],
+      "sitemap_url": "https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz"
+    },
+    "html": {
+      "display_name": "HTML",
+      "doc_base_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "map_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "exclude_patterns": [],
+      "max_pages": 0,
+      "discovery": [
+        "sitemap"
+      ],
+      "sitemap_url": "https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz"
+    },
+    "javascript": {
+      "display_name": "JavaScript",
+      "doc_base_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "map_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "exclude_patterns": [],
+      "max_pages": 0,
+      "discovery": [
+        "sitemap"
+      ],
+      "sitemap_url": "https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz"
+    },
+    "react": {
+      "display_name": "React",
+      "doc_base_url": "https://react.dev/",
+      "map_url": "https://react.dev/",
+      "exclude_patterns": [
+        "blog/",
+        "community/"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "crawl"
+      ]
+    },
+    "n8n": {
+      "display_name": "n8n",
+      "doc_base_url": "https://docs.n8n.io/",
+      "map_url": "https://docs.n8n.io/",
+      "exclude_patterns": [
+        "changelog",
+        "release-notes"
+      ],
+      "max_pages": 0
+    },
+    "anaconda": {
+      "display_name": "Anaconda",
+      "doc_base_url": "https://docs.anaconda.com/",
+      "map_url": "https://docs.anaconda.com/",
+      "exclude_patterns": [
+        "release-notes",
+        "eula"
+      ],
+      "max_pages": 0,
+      "discovery": [
+        "crawl"
+      ]
+    },
+    "jupyterlab": {
+      "display_name": "JupyterLab",
+      "doc_base_url": "https://jupyterlab.readthedocs.io/en/stable/",
+      "map_url": "https://jupyterlab.readthedocs.io/en/stable/",
+      "exclude_patterns": [
+        "changelog",
+        "developer/"
+      ],
+      "max_pages": 0
+    }
+  }
+}
