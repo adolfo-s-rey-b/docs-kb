@@ -15,5 +15,8 @@ ESTADO.md
 # Caché HTML del collector (solo para detectar cambios; lo publicado es el markdown)
 sources/*/html/
 
+# Snapshots locales de versiones (obsoleto: las versiones anteriores están en el historial de git)
+sources/*/versions/
+
 # Estado local del servidor (el historial público es el de git)
 changelog/

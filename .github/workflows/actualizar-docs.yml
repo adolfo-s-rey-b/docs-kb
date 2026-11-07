@@ -136,7 +136,6 @@ jobs:
           path: |
             sources/${{ matrix.tech }}/markdown/
             sources/${{ matrix.tech }}/manifest.json
-            sources/${{ matrix.tech }}/versions/
           if-no-files-found: ignore
           retention-days: 7
 

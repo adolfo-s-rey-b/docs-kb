@@ -33,6 +33,8 @@ CHANGELOG_DIR = BASE_DIR / "changelog"
 CONFIG_PATH = BASE_DIR / "config.json"
 
 FIRECRAWL_URL = os.environ.get("FIRECRAWL_URL", "http://localhost:3002")
+# Public repository = single source of truth; previous versions live in its git history
+REPO_URL = os.environ.get("DOCS_KB_REPO_URL", "https://github.com/adolfo-s-rey-b/docs-kb")
 
 MAX_EXCERPT_CHARS = 800
 MAX_TOTAL_CHARS = 4000
@@ -844,21 +846,26 @@ def docs_version_history(technology: str) -> str:
     history_versions = {entry["version"] for entry in version_history}
     all_versions = history_versions | fs_versions
 
+    history_url = f"{REPO_URL}/commits/main/sources/{tech_key}"
     if all_versions:
-        lines.append("  Snapshots:")
+        lines.append("  Previous versions:")
         for entry in version_history:
             v = entry["version"]
             date = entry.get("date", "")[:10]
             snap_path = versions_dir / v
-            page_c = len(list(snap_path.glob("*.md"))) if snap_path.exists() else "?"
-            lines.append(f"    v{v} (saved {date}, {page_c} pages) — docs_search(version='{v}')")
+            if snap_path.exists():
+                page_c = len(list(snap_path.glob("*.md")))
+                lines.append(f"    v{v} (saved {date}, {page_c} pages) — docs_search(version='{v}')")
+            else:
+                nxt = entry.get("replaced_by", "?")
+                lines.append(f"    v{v} → v{nxt} on {date} — previous content in git history")
         for v in sorted(fs_versions - history_versions):
             snap_path = versions_dir / v
-            page_c = len(list(snap_path.glob("*.md"))) if snap_path.exists() else "?"
+            page_c = len(list(snap_path.glob("*.md")))
             lines.append(f"    v{v} ({page_c} pages) — docs_search(version='{v}')")
     else:
-        lines.append("  No version snapshots available.")
-        lines.append("  Snapshots are created automatically when a version change is detected during collection.")
+        lines.append("  No previous versions recorded.")
+    lines.append(f"  Full change history (git): {history_url}")
 
     # Changelog version changes
     changelog_changes = []

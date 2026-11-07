@@ -22,7 +22,6 @@ import json
 import logging
 import os
 import re
-import shutil
 import subprocess
 import sys
 import time
@@ -449,28 +448,36 @@ def save_manifest(tech_key: str, manifest: dict):
 # Version snapshots
 # ---------------------------------------------------------------------------
 
-def take_version_snapshot(tech_key: str, old_version: str, manifest: dict):
-    """Copy current markdown/ to versions/{old_version}/ when version changes."""
-    if not old_version:
+def update_detected_version(tech_key: str, manifest: dict, run_versions: dict):
+    """Set the tech version to the one detected in most pages of this run.
+
+    Versions are guessed per page (title/URL/first lines), so single pages such
+    as "What's new in 2.0" yield noise; only the majority counts, and only with
+    enough evidence. A change is recorded in manifest["version_history"]; the
+    previous content stays in the git history of the repository (no copies).
+    """
+    if not run_versions:
         return
-    src_dir = SOURCES_DIR / tech_key / "markdown"
-    dst_dir = SOURCES_DIR / tech_key / "versions" / old_version
-    if not src_dir.exists():
+    version, count = max(run_versions.items(), key=lambda kv: kv[1])
+    total = sum(run_versions.values())
+    if count < 3 or count / total < 0.5:
+        log.info(f"  {tech_key}: version not determined this run ({run_versions if len(run_versions) < 6 else total} detections)")
         return
-    try:
-        if dst_dir.exists():
-            log.info(f"  Snapshot for v{old_version} already exists, skipping.")
-            return
-        shutil.copytree(src_dir, dst_dir)
-        log.info(f"  Version snapshot: {tech_key} v{old_version} → {dst_dir}")
-        history = manifest.setdefault("version_history", [])
-        history.append({
-            "version": old_version,
+    old = manifest.get("detected_version")
+    if old == version:
+        return
+    manifest["detected_version"] = version
+    if old:
+        manifest.setdefault("version_history", []).append({
+            "version": old,
+            "replaced_by": version,
             "date": datetime.now(timezone.utc).isoformat(),
-            "snapshot_path": f"versions/{old_version}/",
         })
-    except Exception as e:
-        log.error(f"  Snapshot failed for {tech_key} v{old_version}: {e}")
+        log.info(f"  {tech_key}: version {old} -> {version} (previous content in git history)")
+        log_change(tech=tech_key, slug="*", old_hash=None, new_hash="version-change",
+                   old_version=old, new_version=version, version_change=True)
+    else:
+        log.info(f"  {tech_key}: version {version}")
 
 
 # ---------------------------------------------------------------------------
@@ -948,6 +955,7 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
     else:
         urls = [p["url"] for p in manifest["pages"].values() if p.get("url")]
 
+    run_versions: dict = {}  # version string -> pages where it was detected in this run
     for url in urls:
         slug = url_to_slug(url, base_url)
         page_info = manifest["pages"].get(slug, {
@@ -988,24 +996,19 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
             (html_content or markdown).encode("utf-8")
         ).hexdigest()
 
+        new_version = detect_version(metadata, url, markdown)
+        if new_version:
+            run_versions[new_version] = run_versions.get(new_version, 0) + 1
+
         old_hash = page_info.get("last_hash")
         if old_hash == content_hash:
             log.info(f"    Unchanged: {slug}")
             stats["unchanged"] += 1
+            # last_fetched = last time the page was checked; without this,
+            # --max-age-days would re-download unchanged pages every run.
+            page_info["last_fetched"] = datetime.now(timezone.utc).isoformat()
+            manifest["pages"][slug] = page_info
             continue
-
-        # Version detection
-        old_version = manifest.get("detected_version")
-        new_version = detect_version(metadata, url, markdown)
-        version_changed = (
-            new_version is not None
-            and old_version is not None
-            and new_version != old_version
-        )
-
-        # Take version snapshot before overwriting if version changed
-        if version_changed:
-            take_version_snapshot(tech_key, old_version, manifest)
 
         # Write files
         (md_dir / f"{slug}.md").write_text(markdown, encoding="utf-8")
@@ -1020,19 +1023,9 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
             "title": metadata.get("title", page_info.get("title")),
         }
 
-        if new_version:
-            manifest["detected_version"] = new_version
         manifest["last_updated"] = now
 
-        log_change(
-            tech=tech_key,
-            slug=slug,
-            old_hash=old_hash,
-            new_hash=content_hash,
-            old_version=old_version,
-            new_version=new_version,
-            version_change=version_changed,
-        )
+        log_change(tech=tech_key, slug=slug, old_hash=old_hash, new_hash=content_hash)
 
         if old_hash is None:
             stats["new"] += 1
@@ -1045,6 +1038,7 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
             save_manifest(tech_key, manifest)  # checkpoint for long runs
         time.sleep(0.5)
 
+    update_detected_version(tech_key, manifest, run_versions)
     save_manifest(tech_key, manifest)
 
     if compress:
