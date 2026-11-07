@@ -1,6 +1,6 @@
 # Atribución y licencias
 
-La documentación en `sources/` es una copia en Markdown de la documentación oficial de cada proyecto, convertida automáticamente con Firecrawl. **Los derechos pertenecen a sus autores.** Cada página conserva su URL original en `sources/<tecnología>/manifest.json`. Para cualquier uso que vaya más allá de la consulta, se debe respetar la licencia del proyecto original.
+El código de este repositorio está bajo licencia MIT ([LICENSE](LICENSE)); eso **no** aplica a `sources/`. La documentación en `sources/` es una copia en Markdown de la documentación oficial de cada proyecto, convertida automáticamente con Firecrawl. **Los derechos pertenecen a sus autores.** Cada página conserva su URL original en `sources/<tecnología>/manifest.json`. Para cualquier uso que vaya más allá de la consulta, se debe respetar la licencia del proyecto original.
 
 | Tecnología | Fuente | Licencia de la documentación |
 | --- | --- | --- |

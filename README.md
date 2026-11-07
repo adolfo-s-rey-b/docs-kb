@@ -57,3 +57,7 @@ Arquitectura completa, operación del servidor y guía de modificación: [Sistem
 3. Indexa la documentación incluida: `.venv/bin/python3 collector.py --index-only`.
 4. Inicia el servidor: `.venv/bin/python3 mcp_server.py --transport streamable-http --port 8765`, o con Docker usando `Dockerfile.http`.
 5. Conéctalo: `claude mcp add --transport http docs-kb http://localhost:8765/mcp`.
+
+## Licencia
+
+El código, los scripts y los textos propios de este repositorio están bajo la licencia [MIT](LICENSE): `mcp_server.py`, `collector.py`, los scripts `.sh`, `config.json` y las guías. La documentación de `sources/` **no** está cubierta por la licencia MIT: conserva la licencia de cada proyecto original (ver [ATTRIBUTION.md](ATTRIBUTION.md)).
