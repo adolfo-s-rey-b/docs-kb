@@ -95,7 +95,7 @@ jobs:
 
       - name: Levantar Firecrawl (+ Playwright)
         run: |
-          docker compose -f .github/firecrawl/docker-compose.yml up -d --quiet-pull
+          docker compose -f .github/firecrawl/docker-compose.yml up -d --quiet-pull || true
           for i in $(seq 1 60); do
             curl -sf http://localhost:3002/ > /dev/null && { echo "Firecrawl listo"; exit 0; }
             sleep 5

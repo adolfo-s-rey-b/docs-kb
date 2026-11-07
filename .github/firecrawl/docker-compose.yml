@@ -14,7 +14,7 @@ services:
       HOST: "0.0.0.0"
       REDIS_URL: redis://redis:6379
       REDIS_RATE_LIMIT_URL: redis://redis:6379
-      NUQ_DATABASE_URL: postgres://firecrawl:firecrawl@postgres:5432/firecrawl
+      NUQ_DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
       NUQ_RABBITMQ_URL: amqp://rabbitmq:5672
       USE_DB_AUTHENTICATION: "false"
       PLAYWRIGHT_MICROSERVICE_URL: http://playwright:3000/scrape
@@ -39,11 +39,12 @@ services:
     # La imagen ya incluye /docker-entrypoint-initdb.d/010-nuq.sql
     image: ghcr.io/firecrawl/nuq-postgres:latest
     environment:
-      POSTGRES_USER: firecrawl
-      POSTGRES_PASSWORD: firecrawl
-      POSTGRES_DB: firecrawl
+      # pg_cron (en 010-nuq.sql) exige la base "postgres"
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U firecrawl -d firecrawl"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
       interval: 5s
       timeout: 5s
       retries: 30
