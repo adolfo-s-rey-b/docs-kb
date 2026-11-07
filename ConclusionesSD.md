@@ -31,7 +31,8 @@
 | Log duplicaba cada línea | Handler a stdout + redirección del cron al mismo archivo | stdout solo en terminal |
 | Tools nativos `mcp__docs-kb__*` nunca aparecían en el cliente | La guía usaba `~/.claude/mcp.json`, que Claude Code no lee | `claude mcp add --scope user` |
 | Health-checks documentados daban 406 | Faltaba `Accept: application/json, text/event-stream` y `initialize` | Comandos corregidos + `chequeo_remoto.sh` |
-| Token Bearer en texto plano en 4 archivos | Documentación original | Variable `DOCS_KB_TOKEN` en `.env` (no versionado) |
+| Token Bearer en texto plano en 4 archivos | Documentación original | Variable `DOCS_KB_TOKEN` en `.env` (no versionado); token **rotado** el 2026-11-07 (el anterior devuelve 403) |
+| El código del repositorio no tenía licencia | — | Licencia MIT para el código; `sources/` conserva las licencias originales (ATTRIBUTION.md) |
 | Contenido personal en el índice (vault de Obsidian, stack Docker, skills) | Fuentes locales configuradas | Retirado del config, `sources/`, índice y changelog; docs-kb solo contiene documentación técnica pública |
 
 ---
@@ -73,6 +74,4 @@ Lanzada el 2026-11-07 a las 18:37 UTC con `recoleccion_completa.sh` (3 grupos en
 
 1. Completar la sección 4 con las cifras finales y repetir `./chequeo_remoto.sh`.
 2. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*`.
-3. Opcional: rotar el Bearer token, que estuvo en texto plano (procedimiento en SistemaDocumentación.md §12).
-4. Opcional: definir una licencia para el código del repositorio (`mcp_server.py`, `collector.py`, scripts). Hoy no tiene ninguna.
-5. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
+3. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.

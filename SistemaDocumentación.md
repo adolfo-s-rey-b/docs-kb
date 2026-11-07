@@ -373,10 +373,13 @@ El servidor detecta el nuevo indice y el modelo desde `embeddings-info.json`.
 
 ### Cambiar Bearer token
 
-1. `openssl rand -hex 32` (generar nuevo token)
-2. Editar `~/server-stack/nginx/conf.d/mcp-docs-proxy.conf` linea `set $expected_key "Bearer <token>"`
-3. `docker compose restart nginx_firecrawl_proxy`
-4. Cliente: actualizar `DOCS_KB_TOKEN` en `.env` y re-registrar: `claude mcp remove docs-kb -s user` + `claude mcp add ...`
+Ultima rotacion: 2026-11-07 (el token anterior habia estado en texto plano en la documentacion).
+
+1. Respaldo: `cp -p ~/server-stack/nginx/conf.d/mcp-docs-proxy.conf ~/backups/mcp-docs-proxy.conf-FECHA`
+2. `openssl rand -hex 32` (generar nuevo token) y reemplazarlo en la linea `set $expected_key "Bearer <token>"` de ese archivo
+3. Validar y recargar sin cortar conexiones: `docker exec nginx_firecrawl_proxy nginx -t && docker exec nginx_firecrawl_proxy nginx -s reload`
+4. Cliente: actualizar `DOCS_KB_TOKEN` en `.env` y re-registrar: `claude mcp remove docs-kb -s user` + `claude mcp add ...` (ver GuiaMCP.md); reiniciar Claude Code
+5. Verificar: token viejo -> 403, token nuevo -> 200 (`./chequeo_remoto.sh`)
 
 ### Ajustar limites de contexto
 
