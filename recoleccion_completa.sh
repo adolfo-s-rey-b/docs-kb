@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Recolección completa de docs-kb en 3 grupos paralelos (sitios distintos por grupo)
-# y una sola reconstrucción del índice al final.
+# Recolección completa de docs-kb en 3 grupos paralelos (sitios distintos por grupo),
+# una sola reconstrucción del índice al final y publicación en GitHub (publicar.sh).
 # Uso (en el servidor): setsid nohup ./recoleccion_completa.sh > logs/recoleccion-$(date +%F).out 2>&1 &
 set -u
 cd "$(dirname "$0")"
@@ -17,4 +17,6 @@ done
 wait
 echo "$(date '+%F %T') recolección terminada; reconstruyendo índice"
 $PY collector.py --index-only
+echo "$(date '+%F %T') publicando en GitHub"
+./publicar.sh
 echo "$(date '+%F %T') fin"
