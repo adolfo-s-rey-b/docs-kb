@@ -1,1111 +1,1274 @@
 {
   "pages": {
-    "index": {
-      "url": "https://react.dev/",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:06.655775+00:00",
-      "title": "Vercel Security Checkpoint"
-    },
-    "versions": {
-      "url": "https://react.dev/versions",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:07.569338+00:00",
-      "title": "Vercel Security Checkpoint"
-    },
     "learn": {
       "url": "https://react.dev/learn",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:08.402713+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "224f9dd7231744b623fa5abaacf35818a8df7978",
+      "last_fetched": "2026-11-08T19:50:23.793906+00:00",
+      "title": "Quick Start",
+      "source": "github:reactjs/react.dev/src/content/learn/index.md"
     },
     "reference-react": {
       "url": "https://react.dev/reference/react",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:09.285993+00:00",
-      "title": "Vercel Security Checkpoint"
-    },
-    "community": {
-      "url": "https://react.dev/community",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:10.136365+00:00",
-      "title": "Vercel Security Checkpoint"
-    },
-    "blog": {
-      "url": "https://react.dev/blog",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:11.042032+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bdb202157f6724b030604e21b95df260d656ad5b",
+      "last_fetched": "2026-11-08T19:50:43.624173+00:00",
+      "title": "React Reference Overview",
+      "source": "github:reactjs/react.dev/src/content/reference/react/index.md"
     },
     "learn-add-react-to-an-existing-project": {
       "url": "https://react.dev/learn/add-react-to-an-existing-project",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:11.867349+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f98bece42d4f650424472f0983927d4901a57cc5",
+      "last_fetched": "2026-11-08T19:50:22.173183+00:00",
+      "title": "Add React to an Existing Project",
+      "source": "github:reactjs/react.dev/src/content/learn/add-react-to-an-existing-project.md"
     },
     "learn-creating-a-react-app": {
       "url": "https://react.dev/learn/creating-a-react-app",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:12.681620+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "fef66838e7251f5229d83df6d11a6dd6c4d4e9d3",
+      "last_fetched": "2026-11-08T19:50:22.894253+00:00",
+      "title": "Creating a React App",
+      "source": "github:reactjs/react.dev/src/content/learn/creating-a-react-app.md"
     },
     "learn-installation": {
       "url": "https://react.dev/learn/installation",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:13.518414+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ab538e5bb510fed96bfdc0d127dc429d832bf4c4",
+      "last_fetched": "2026-11-08T19:50:23.919266+00:00",
+      "title": "Installation",
+      "source": "github:reactjs/react.dev/src/content/learn/installation.md"
     },
     "learn-describing-the-ui": {
       "url": "https://react.dev/learn/describing-the-ui",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:14.396027+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b44f87e649137e4f59a5817298e9337e5e7ea323",
+      "last_fetched": "2026-11-08T19:50:23.024272+00:00",
+      "title": "Describing the UI",
+      "source": "github:reactjs/react.dev/src/content/learn/describing-the-ui.md"
     },
     "learn-adding-interactivity": {
       "url": "https://react.dev/learn/adding-interactivity",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:15.209676+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "0e84780fa6080434f791fa67d90038cc9eeffb2b",
+      "last_fetched": "2026-11-08T19:50:22.325702+00:00",
+      "title": "Adding Interactivity",
+      "source": "github:reactjs/react.dev/src/content/learn/adding-interactivity.md"
     },
     "learn-managing-state": {
       "url": "https://react.dev/learn/managing-state",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:16.046283+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ef7b76e04c208ab4fc2a86f67e2a38f4af64672b",
+      "last_fetched": "2026-11-08T19:50:24.497132+00:00",
+      "title": "Managing State",
+      "source": "github:reactjs/react.dev/src/content/learn/managing-state.md"
     },
     "learn-escape-hatches": {
       "url": "https://react.dev/learn/escape-hatches",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:16.875280+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "cbaef8bb36f719f3add966fa71a3c44598c12fd6",
+      "last_fetched": "2026-11-08T19:50:23.295580+00:00",
+      "title": "Escape Hatches",
+      "source": "github:reactjs/react.dev/src/content/learn/escape-hatches.md"
     },
     "reference-react-dom": {
       "url": "https://react.dev/reference/react-dom",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:17.745253+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "6ba5cdc933285252331b29a2f28aa81fe7eedea7",
+      "last_fetched": "2026-11-08T19:50:37.276402+00:00",
+      "title": "React DOM APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/index.md"
     },
     "learn-setup": {
       "url": "https://react.dev/learn/setup",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:18.663213+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b93155cc1ca762dc372ee9d5f2d0202b1507da5a",
+      "last_fetched": "2026-11-08T19:50:27.781924+00:00",
+      "title": "Setup",
+      "source": "github:reactjs/react.dev/src/content/learn/setup.md"
     },
     "learn-react-compiler": {
       "url": "https://react.dev/learn/react-compiler",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:19.501571+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "480187ed5e6934e2dd8a6c08e6b7d92538f08f59",
+      "last_fetched": "2026-11-08T19:50:25.717226+00:00",
+      "title": "React Compiler",
+      "source": "github:reactjs/react.dev/src/content/learn/react-compiler/index.md"
     },
     "reference-react-components": {
       "url": "https://react.dev/reference/react/components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:20.344066+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bd5a30112d33a9d18371bd95de86f2d0ed3f1bbd",
+      "last_fetched": "2026-11-08T19:50:42.413585+00:00",
+      "title": "Built-in React Components",
+      "source": "github:reactjs/react.dev/src/content/reference/react/components.md"
     },
     "reference-react-apis": {
       "url": "https://react.dev/reference/react/apis",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:21.163851+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "1e6a8a6449a3aad826a8c7c0949e34977db5cece",
+      "last_fetched": "2026-11-08T19:50:41.667995+00:00",
+      "title": "Built-in React APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react/apis.md"
     },
     "reference-react-legacy": {
       "url": "https://react.dev/reference/react/legacy",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:22.010539+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f4e3ebe289f7d401f9ad1054e4937ac02ec8c7cf",
+      "last_fetched": "2026-11-08T19:50:44.107271+00:00",
+      "title": "Legacy React APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react/legacy.md"
     },
     "reference-react-dom-components": {
       "url": "https://react.dev/reference/react-dom/components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:22.892884+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "055d73753b3ac51bcc8fdd22944787f81cf7335e",
+      "last_fetched": "2026-11-08T19:50:35.084050+00:00",
+      "title": "React DOM Components",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/index.md"
     },
     "reference-react-dom-client": {
       "url": "https://react.dev/reference/react-dom/client",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:23.786601+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b612d7ba63182dc3db8ab03c241787026d0fff2b",
+      "last_fetched": "2026-11-08T19:50:34.528788+00:00",
+      "title": "Client React DOM APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/client/index.md"
     },
     "reference-react-dom-server": {
       "url": "https://react.dev/reference/react-dom/server",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:24.675373+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "aa5d370908708b19ec3bf498723f767fca6fd57b",
+      "last_fetched": "2026-11-08T19:50:38.347358+00:00",
+      "title": "Server React DOM APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/index.md"
     },
     "reference-react-compiler-configuration": {
       "url": "https://react.dev/reference/react-compiler/configuration",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:25.510416+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ec9b27e6f577c6fb7c78951491fa9a316cda8f28",
+      "last_fetched": "2026-11-08T19:50:33.049854+00:00",
+      "title": "Configuration",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/configuration.md"
     },
     "reference-react-compiler-directives": {
       "url": "https://react.dev/reference/react-compiler/directives",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:26.352210+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "df0f053e8c76f2deda47e30116658585b97d64f2",
+      "last_fetched": "2026-11-08T19:50:33.178275+00:00",
+      "title": "Directives",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/directives.md"
     },
     "reference-react-compiler-compiling-libraries": {
       "url": "https://react.dev/reference/react-compiler/compiling-libraries",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:27.224539+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ec0a7581eaef2d28f96dd3cb66aebf3894aaa1fb",
+      "last_fetched": "2026-11-08T19:50:32.922232+00:00",
+      "title": "Compiling Libraries",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/compiling-libraries.md"
     },
     "learn-tutorial-tic-tac-toe": {
       "url": "https://react.dev/learn/tutorial-tic-tac-toe",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:28.079602+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "31e17b3d51dbcdb0bcceb21895b53df71210fea6",
+      "last_fetched": "2026-11-08T19:50:28.730619+00:00",
+      "title": "Tutorial: Tic-Tac-Toe",
+      "source": "github:reactjs/react.dev/src/content/learn/tutorial-tic-tac-toe.md"
     },
     "learn-thinking-in-react": {
       "url": "https://react.dev/learn/thinking-in-react",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:28.903449+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "70a94d64794d50d19e15b4ce9d4dd312bd3fd385",
+      "last_fetched": "2026-11-08T19:50:28.594559+00:00",
+      "title": "Thinking in React",
+      "source": "github:reactjs/react.dev/src/content/learn/thinking-in-react.md"
     },
     "learn-build-a-react-app-from-scratch": {
       "url": "https://react.dev/learn/build-a-react-app-from-scratch",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:29.739954+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "182ad54bb1a37a9a30e6a282344149937ab5665c",
+      "last_fetched": "2026-11-08T19:50:22.447332+00:00",
+      "title": "Build a React app from Scratch",
+      "source": "github:reactjs/react.dev/src/content/learn/build-a-react-app-from-scratch.md"
     },
     "learn-editor-setup": {
       "url": "https://react.dev/learn/editor-setup",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:30.687545+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "fb469d3761c38f8ab9f9588626f8e3618b850688",
+      "last_fetched": "2026-11-08T19:50:23.159349+00:00",
+      "title": "Editor Setup",
+      "source": "github:reactjs/react.dev/src/content/learn/editor-setup.md"
     },
     "learn-typescript": {
       "url": "https://react.dev/learn/typescript",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:31.518873+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "739efe36671bcde779b1d4f8b8bcb1d2995b9423",
+      "last_fetched": "2026-11-08T19:50:28.873238+00:00",
+      "title": "Using TypeScript",
+      "source": "github:reactjs/react.dev/src/content/learn/typescript.md"
     },
     "learn-react-developer-tools": {
       "url": "https://react.dev/learn/react-developer-tools",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:32.431686+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "75406c5c629ee1f6c9ee739334f673889f81d8d3",
+      "last_fetched": "2026-11-08T19:50:26.118476+00:00",
+      "title": "React Developer Tools",
+      "source": "github:reactjs/react.dev/src/content/learn/react-developer-tools.md"
     },
     "learn-react-compiler-introduction": {
       "url": "https://react.dev/learn/react-compiler/introduction",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:33.313681+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2b6b26d38b6a010c03f2ff21ebf26c0a0edb53e8",
+      "last_fetched": "2026-11-08T19:50:25.990887+00:00",
+      "title": "Introduction",
+      "source": "github:reactjs/react.dev/src/content/learn/react-compiler/introduction.md"
     },
     "learn-react-compiler-installation": {
       "url": "https://react.dev/learn/react-compiler/installation",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:34.146056+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b386e866ea32278f0843f08b240e3aed6859b501",
+      "last_fetched": "2026-11-08T19:50:25.855772+00:00",
+      "title": "Installation",
+      "source": "github:reactjs/react.dev/src/content/learn/react-compiler/installation.md"
     },
     "learn-react-compiler-incremental-adoption": {
       "url": "https://react.dev/learn/react-compiler/incremental-adoption",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:35.017747+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "56d9320346f7fa859be09888505486f1c22ed9c8",
+      "last_fetched": "2026-11-08T19:50:25.585477+00:00",
+      "title": "Incremental Adoption",
+      "source": "github:reactjs/react.dev/src/content/learn/react-compiler/incremental-adoption.md"
     },
     "learn-react-compiler-debugging": {
       "url": "https://react.dev/learn/react-compiler/debugging",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:35.849637+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a2981e09470b48aaed327a56b77b7332dbf62a4c",
+      "last_fetched": "2026-11-08T19:50:25.425717+00:00",
+      "title": "Debugging and Troubleshooting",
+      "source": "github:reactjs/react.dev/src/content/learn/react-compiler/debugging.md"
     },
     "learn-your-first-component": {
       "url": "https://react.dev/learn/your-first-component",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:36.773176+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "81744322e60c36d7ef5e310c54c57c4e1702fccf",
+      "last_fetched": "2026-11-08T19:50:29.767718+00:00",
+      "title": "Your First Component",
+      "source": "github:reactjs/react.dev/src/content/learn/your-first-component.md"
     },
     "learn-importing-and-exporting-components": {
       "url": "https://react.dev/learn/importing-and-exporting-components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:37.670616+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "16cd509f0797b99f4f1855ad5c6784388df98f3f",
+      "last_fetched": "2026-11-08T19:50:23.616422+00:00",
+      "title": "Importing and Exporting Components",
+      "source": "github:reactjs/react.dev/src/content/learn/importing-and-exporting-components.md"
     },
     "learn-writing-markup-with-jsx": {
       "url": "https://react.dev/learn/writing-markup-with-jsx",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:38.546418+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "be3a9ac2cdb76bf88b433bc02b575f2a005afc37",
+      "last_fetched": "2026-11-08T19:50:29.452017+00:00",
+      "title": "Writing Markup with JSX",
+      "source": "github:reactjs/react.dev/src/content/learn/writing-markup-with-jsx.md"
     },
     "learn-javascript-in-jsx-with-curly-braces": {
       "url": "https://react.dev/learn/javascript-in-jsx-with-curly-braces",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:39.464719+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "94b943de0c901c785ec1038142ca86ca2fd9570d",
+      "last_fetched": "2026-11-08T19:50:24.041676+00:00",
+      "title": "JavaScript in JSX with Curly Braces",
+      "source": "github:reactjs/react.dev/src/content/learn/javascript-in-jsx-with-curly-braces.md"
     },
     "learn-passing-props-to-a-component": {
       "url": "https://react.dev/learn/passing-props-to-a-component",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:40.309618+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c0f16be949bb43428ab6172c5670475b92f05750",
+      "last_fetched": "2026-11-08T19:50:24.966186+00:00",
+      "title": "Passing Props to a Component",
+      "source": "github:reactjs/react.dev/src/content/learn/passing-props-to-a-component.md"
     },
     "learn-conditional-rendering": {
       "url": "https://react.dev/learn/conditional-rendering",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:41.213665+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "7a75fe021d8711a52a7cfa2737cd74fcfd0663c1",
+      "last_fetched": "2026-11-08T19:50:22.768901+00:00",
+      "title": "Conditional Rendering",
+      "source": "github:reactjs/react.dev/src/content/learn/conditional-rendering.md"
     },
     "learn-rendering-lists": {
       "url": "https://react.dev/learn/rendering-lists",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:42.056648+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "8dfdf0b16fe7bd8087a80af2b0d850467f256180",
+      "last_fetched": "2026-11-08T19:50:26.860654+00:00",
+      "title": "Rendering Lists",
+      "source": "github:reactjs/react.dev/src/content/learn/rendering-lists.md"
     },
     "learn-keeping-components-pure": {
       "url": "https://react.dev/learn/keeping-components-pure",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:42.986302+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5bf8e0a79b821d4aec06f347ab0dd418ff9bda00",
+      "last_fetched": "2026-11-08T19:50:24.198663+00:00",
+      "title": "Keeping Components Pure",
+      "source": "github:reactjs/react.dev/src/content/learn/keeping-components-pure.md"
     },
     "learn-understanding-your-ui-as-a-tree": {
       "url": "https://react.dev/learn/understanding-your-ui-as-a-tree",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:43.851073+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "497eb48de791ab96167f86348bda49c4ca5a9d5a",
+      "last_fetched": "2026-11-08T19:50:28.999147+00:00",
+      "title": "Understanding Your UI as a Tree",
+      "source": "github:reactjs/react.dev/src/content/learn/understanding-your-ui-as-a-tree.md"
     },
     "learn-responding-to-events": {
       "url": "https://react.dev/learn/responding-to-events",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:44.725359+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "1fb554c5eee1dc4a7bc24f476fd2d089d20b727c",
+      "last_fetched": "2026-11-08T19:50:27.027669+00:00",
+      "title": "Responding to Events",
+      "source": "github:reactjs/react.dev/src/content/learn/responding-to-events.md"
     },
     "learn-state-a-components-memory": {
       "url": "https://react.dev/learn/state-a-components-memory",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:45.575762+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "0637dd173d4ef27b6a4396b9b6b695e0cbc26b2a",
+      "last_fetched": "2026-11-08T19:50:28.061487+00:00",
+      "title": "State: A Component's Memory",
+      "source": "github:reactjs/react.dev/src/content/learn/state-a-components-memory.md"
     },
     "learn-render-and-commit": {
       "url": "https://react.dev/learn/render-and-commit",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:46.401450+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "055111c3225bd3f2c2bb61f7939d359a1b0c1852",
+      "last_fetched": "2026-11-08T19:50:26.692556+00:00",
+      "title": "Render and Commit",
+      "source": "github:reactjs/react.dev/src/content/learn/render-and-commit.md"
     },
     "learn-state-as-a-snapshot": {
       "url": "https://react.dev/learn/state-as-a-snapshot",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:47.237001+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "df4eddbd677f76a5a671211c16ee96c923c245fe",
+      "last_fetched": "2026-11-08T19:50:28.236865+00:00",
+      "title": "State as a Snapshot",
+      "source": "github:reactjs/react.dev/src/content/learn/state-as-a-snapshot.md"
     },
     "learn-queueing-a-series-of-state-updates": {
       "url": "https://react.dev/learn/queueing-a-series-of-state-updates",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:48.138636+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b3be278cf4d1e6c386c9b04fa3a0c7171146c2db",
+      "last_fetched": "2026-11-08T19:50:25.280008+00:00",
+      "title": "Queueing a Series of State Updates",
+      "source": "github:reactjs/react.dev/src/content/learn/queueing-a-series-of-state-updates.md"
     },
     "learn-updating-objects-in-state": {
       "url": "https://react.dev/learn/updating-objects-in-state",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:49.019105+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5e04e7ae5cb637d869d0de27ed714121f5656e48",
+      "last_fetched": "2026-11-08T19:50:29.309591+00:00",
+      "title": "Updating Objects in State",
+      "source": "github:reactjs/react.dev/src/content/learn/updating-objects-in-state.md"
     },
     "learn-updating-arrays-in-state": {
       "url": "https://react.dev/learn/updating-arrays-in-state",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:49.849742+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "61e4f4e2d98049493c96d88539c577293f189447",
+      "last_fetched": "2026-11-08T19:50:29.159322+00:00",
+      "title": "Updating Arrays in State",
+      "source": "github:reactjs/react.dev/src/content/learn/updating-arrays-in-state.md"
     },
     "learn-reacting-to-input-with-state": {
       "url": "https://react.dev/learn/reacting-to-input-with-state",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:50.707863+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "006f316255546d2e52e377d5e4bc899366408983",
+      "last_fetched": "2026-11-08T19:50:26.266594+00:00",
+      "title": "Reacting to Input with State",
+      "source": "github:reactjs/react.dev/src/content/learn/reacting-to-input-with-state.md"
     },
     "learn-choosing-the-state-structure": {
       "url": "https://react.dev/learn/choosing-the-state-structure",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:51.580202+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2533a53d85dad69330d8403a64ad448c925e399e",
+      "last_fetched": "2026-11-08T19:50:22.595232+00:00",
+      "title": "Choosing the State Structure",
+      "source": "github:reactjs/react.dev/src/content/learn/choosing-the-state-structure.md"
     },
     "learn-sharing-state-between-components": {
       "url": "https://react.dev/learn/sharing-state-between-components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:52.421844+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2fbef89180150915f106ed4de7b6fc51b88c569d",
+      "last_fetched": "2026-11-08T19:50:27.935986+00:00",
+      "title": "Sharing State Between Components",
+      "source": "github:reactjs/react.dev/src/content/learn/sharing-state-between-components.md"
     },
     "learn-preserving-and-resetting-state": {
       "url": "https://react.dev/learn/preserving-and-resetting-state",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:53.244194+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "47042cbc40857097b3c5105ee9a63a9584892bf3",
+      "last_fetched": "2026-11-08T19:50:25.108384+00:00",
+      "title": "Preserving and Resetting State",
+      "source": "github:reactjs/react.dev/src/content/learn/preserving-and-resetting-state.md"
     },
     "learn-extracting-state-logic-into-a-reducer": {
       "url": "https://react.dev/learn/extracting-state-logic-into-a-reducer",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:54.133557+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f38ec76d99e4c81c4e27270880ab78c06d280b5e",
+      "last_fetched": "2026-11-08T19:50:23.466457+00:00",
+      "title": "Extracting State Logic into a Reducer",
+      "source": "github:reactjs/react.dev/src/content/learn/extracting-state-logic-into-a-reducer.md"
     },
     "learn-passing-data-deeply-with-context": {
       "url": "https://react.dev/learn/passing-data-deeply-with-context",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:55.039261+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "fead4056db5ab2765f1bfc3eca932eb634683504",
+      "last_fetched": "2026-11-08T19:50:24.796340+00:00",
+      "title": "Passing Data Deeply with Context",
+      "source": "github:reactjs/react.dev/src/content/learn/passing-data-deeply-with-context.md"
     },
     "learn-scaling-up-with-reducer-and-context": {
       "url": "https://react.dev/learn/scaling-up-with-reducer-and-context",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:55.898120+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "01483bebf48921771c69f55c27002a072aaebd09",
+      "last_fetched": "2026-11-08T19:50:27.459288+00:00",
+      "title": "Scaling Up with Reducer and Context",
+      "source": "github:reactjs/react.dev/src/content/learn/scaling-up-with-reducer-and-context.md"
     },
     "learn-referencing-values-with-refs": {
       "url": "https://react.dev/learn/referencing-values-with-refs",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:56.778999+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "657d3ddcb008a214ce38e2ff587e0922c4d8155e",
+      "last_fetched": "2026-11-08T19:50:26.408608+00:00",
+      "title": "Referencing Values with Refs",
+      "source": "github:reactjs/react.dev/src/content/learn/referencing-values-with-refs.md"
     },
     "learn-manipulating-the-dom-with-refs": {
       "url": "https://react.dev/learn/manipulating-the-dom-with-refs",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:57.659465+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2d1ee86851d6d196aad0f5159ad3eba8a772c588",
+      "last_fetched": "2026-11-08T19:50:24.645610+00:00",
+      "title": "Manipulating the DOM with Refs",
+      "source": "github:reactjs/react.dev/src/content/learn/manipulating-the-dom-with-refs.md"
     },
     "learn-synchronizing-with-effects": {
       "url": "https://react.dev/learn/synchronizing-with-effects",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:58.529097+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a43347390a61b373558e12a24764fa4c92c16608",
+      "last_fetched": "2026-11-08T19:50:28.440902+00:00",
+      "title": "Synchronizing with Effects",
+      "source": "github:reactjs/react.dev/src/content/learn/synchronizing-with-effects.md"
     },
     "learn-you-might-not-need-an-effect": {
       "url": "https://react.dev/learn/you-might-not-need-an-effect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:08:59.420769+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "81a0842eb60f53c3f97e56f6c4d9e8b18bf846d8",
+      "last_fetched": "2026-11-08T19:50:29.610554+00:00",
+      "title": "You Might Not Need an Effect",
+      "source": "github:reactjs/react.dev/src/content/learn/you-might-not-need-an-effect.md"
     },
     "learn-lifecycle-of-reactive-effects": {
       "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:00.283856+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ec3719736f3022dbb4438c5f994ab3ae9637efcf",
+      "last_fetched": "2026-11-08T19:50:24.325679+00:00",
+      "title": "Lifecycle of Reactive Effects",
+      "source": "github:reactjs/react.dev/src/content/learn/lifecycle-of-reactive-effects.md"
     },
     "learn-separating-events-from-effects": {
       "url": "https://react.dev/learn/separating-events-from-effects",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:01.201904+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5f6ce4ee8d966b43043802c77ebf1eee9447b927",
+      "last_fetched": "2026-11-08T19:50:27.624810+00:00",
+      "title": "Separating Events from Effects",
+      "source": "github:reactjs/react.dev/src/content/learn/separating-events-from-effects.md"
     },
     "learn-removing-effect-dependencies": {
       "url": "https://react.dev/learn/removing-effect-dependencies",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:02.043758+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "0b69cfa64f48571d855b6210a4b568d143505e3a",
+      "last_fetched": "2026-11-08T19:50:26.530663+00:00",
+      "title": "Removing Effect Dependencies",
+      "source": "github:reactjs/react.dev/src/content/learn/removing-effect-dependencies.md"
     },
     "learn-reusing-logic-with-custom-hooks": {
       "url": "https://react.dev/learn/reusing-logic-with-custom-hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:02.914816+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "47a4cf52a18a3722ef0361d43da664a783158d75",
+      "last_fetched": "2026-11-08T19:50:27.173332+00:00",
+      "title": "Reusing Logic with Custom Hooks",
+      "source": "github:reactjs/react.dev/src/content/learn/reusing-logic-with-custom-hooks.md"
     },
     "reference-react-useState": {
       "url": "https://react.dev/reference/react/useState",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:03.730720+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "21911f0ad2012f07ff5d17feaad440d28a865a5d",
+      "last_fetched": "2026-11-08T19:50:47.507036+00:00",
+      "title": "useState",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useState.md"
     },
     "reference-react-hooks": {
       "url": "https://react.dev/reference/react/hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:04.549505+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a8586f9f672ff3cb7adc41c7387a1e6d6f897cb4",
+      "last_fetched": "2026-11-08T19:50:43.487626+00:00",
+      "title": "Built-in React Hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/react/hooks.md"
     },
     "reference-react-useActionState": {
       "url": "https://react.dev/reference/react/useActionState",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:05.424510+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "47f05d9c7c0776ae5f76ed3f021458d8978a9406",
+      "last_fetched": "2026-11-08T19:50:44.709377+00:00",
+      "title": "useActionState",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useActionState.md"
     },
     "reference-react-useCallback": {
       "url": "https://react.dev/reference/react/useCallback",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:06.310648+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "cb5a3454e761cca7de1f249dee2b032c5bca8b3f",
+      "last_fetched": "2026-11-08T19:50:44.918371+00:00",
+      "title": "useCallback",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useCallback.md"
     },
     "reference-react-useContext": {
       "url": "https://react.dev/reference/react/useContext",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:07.160264+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c6fdd806023237a056ec1bb287206465f76a8642",
+      "last_fetched": "2026-11-08T19:50:45.184590+00:00",
+      "title": "useContext",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useContext.md"
     },
     "reference-react-useDebugValue": {
       "url": "https://react.dev/reference/react/useDebugValue",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:08.079758+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "62db9e6b231a2538abb7158a55b79eff773a31da",
+      "last_fetched": "2026-11-08T19:50:45.323432+00:00",
+      "title": "useDebugValue",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useDebugValue.md"
     },
     "reference-react-useDeferredValue": {
       "url": "https://react.dev/reference/react/useDeferredValue",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:08.910717+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f5aa29bb128ab3797adaec3c29651bfe7a0284e8",
+      "last_fetched": "2026-11-08T19:50:45.485946+00:00",
+      "title": "useDeferredValue",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useDeferredValue.md"
     },
     "reference-react-useEffect": {
       "url": "https://react.dev/reference/react/useEffect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:09.733854+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ad84d70500e54dc150464b8ab0b01e532a3793b6",
+      "last_fetched": "2026-11-08T19:50:45.691851+00:00",
+      "title": "useEffect",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useEffect.md"
     },
     "reference-react-useEffectEvent": {
       "url": "https://react.dev/reference/react/useEffectEvent",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:10.618256+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "968f808c621ef15133b9482a5c082015efc5f09e",
+      "last_fetched": "2026-11-08T19:50:45.837998+00:00",
+      "title": "useEffectEvent",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useEffectEvent.md"
     },
     "reference-react-useId": {
       "url": "https://react.dev/reference/react/useId",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:11.475316+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "40446825aff33461b03284c414a83658506b031b",
+      "last_fetched": "2026-11-08T19:50:45.984392+00:00",
+      "title": "useId",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useId.md"
     },
     "reference-react-useImperativeHandle": {
       "url": "https://react.dev/reference/react/useImperativeHandle",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:12.337681+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ea3f97f8aac2bb4c3602357307847faf3c402c53",
+      "last_fetched": "2026-11-08T19:50:46.136912+00:00",
+      "title": "useImperativeHandle",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useImperativeHandle.md"
     },
     "reference-react-useInsertionEffect": {
       "url": "https://react.dev/reference/react/useInsertionEffect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:13.201448+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c8094014409e657224e707df7987111731244514",
+      "last_fetched": "2026-11-08T19:50:46.293025+00:00",
+      "title": "useInsertionEffect",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useInsertionEffect.md"
     },
     "reference-react-useLayoutEffect": {
       "url": "https://react.dev/reference/react/useLayoutEffect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:14.073485+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "df7e2e9cc7cfa11b26e6e70950e59a22a44b4eae",
+      "last_fetched": "2026-11-08T19:50:46.443008+00:00",
+      "title": "useLayoutEffect",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useLayoutEffect.md"
     },
     "reference-react-useMemo": {
       "url": "https://react.dev/reference/react/useMemo",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:14.913500+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e8552e1666c521801c823ebbce375f97d86a8f27",
+      "last_fetched": "2026-11-08T19:50:46.597573+00:00",
+      "title": "useMemo",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useMemo.md"
     },
     "reference-react-useOptimistic": {
       "url": "https://react.dev/reference/react/useOptimistic",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:15.736288+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c1ec7978791dd83d3edb14377f26ff7e2d27645e",
+      "last_fetched": "2026-11-08T19:50:46.781712+00:00",
+      "title": "useOptimistic",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useOptimistic.md"
     },
     "reference-react-useReducer": {
       "url": "https://react.dev/reference/react/useReducer",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:16.561445+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "404ebb08770aa9b9969e6734f48842b4ea6126c9",
+      "last_fetched": "2026-11-08T19:50:47.176330+00:00",
+      "title": "useReducer",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useReducer.md"
     },
     "reference-react-useRef": {
       "url": "https://react.dev/reference/react/useRef",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:17.378833+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "6f7728f0a2a6e838e2dff10c94e3885edf0dfde0",
+      "last_fetched": "2026-11-08T19:50:47.363439+00:00",
+      "title": "useRef",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useRef.md"
     },
     "reference-react-useSyncExternalStore": {
       "url": "https://react.dev/reference/react/useSyncExternalStore",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:18.242145+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "9bb755a4be93c04ba6e6666ba54adc155f76f24a",
+      "last_fetched": "2026-11-08T19:50:47.682125+00:00",
+      "title": "useSyncExternalStore",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useSyncExternalStore.md"
     },
     "reference-react-useTransition": {
       "url": "https://react.dev/reference/react/useTransition",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:19.080041+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "955a82168f72ba5eb37ae55cf39ef31e617b29b3",
+      "last_fetched": "2026-11-08T19:50:47.835573+00:00",
+      "title": "useTransition",
+      "source": "github:reactjs/react.dev/src/content/reference/react/useTransition.md"
     },
     "reference-react-Fragment": {
       "url": "https://react.dev/reference/react/Fragment",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:19.950498+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "8666850fc009ebff4828284e07999add04796772",
+      "last_fetched": "2026-11-08T19:50:40.547162+00:00",
+      "title": "<Fragment> (<>...</>)",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Fragment.md"
     },
     "reference-react-Profiler": {
       "url": "https://react.dev/reference/react/Profiler",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:20.818816+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e70e299636de8d013b5ce6ca101c3ea3086e967a",
+      "last_fetched": "2026-11-08T19:50:40.680756+00:00",
+      "title": "<Profiler>",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Profiler.md"
     },
     "reference-react-StrictMode": {
       "url": "https://react.dev/reference/react/StrictMode",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:21.691551+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f60abc534281f92c553f332d5da665206a286bf9",
+      "last_fetched": "2026-11-08T19:50:40.957409+00:00",
+      "title": "<StrictMode>",
+      "source": "github:reactjs/react.dev/src/content/reference/react/StrictMode.md"
     },
     "reference-react-Suspense": {
       "url": "https://react.dev/reference/react/Suspense",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:22.602752+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "179a4d368fd39c9f2cedf9052e92b6cc7c5a40a0",
+      "last_fetched": "2026-11-08T19:50:41.084260+00:00",
+      "title": "<Suspense>",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Suspense.md"
     },
     "reference-react-Activity": {
       "url": "https://react.dev/reference/react/Activity",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:23.467372+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b521970b764d1b085a9d9c10c920c1d9f77a1413",
+      "last_fetched": "2026-11-08T19:50:40.068247+00:00",
+      "title": "<Activity>",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Activity.md"
     },
     "reference-react-ViewTransition": {
       "url": "https://react.dev/reference/react/ViewTransition",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:24.283625+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "17595bb763e693ca3dc3cc2f0144e64dd36237e0",
+      "last_fetched": "2026-11-08T19:50:41.228002+00:00",
+      "title": "<ViewTransition>",
+      "source": "github:reactjs/react.dev/src/content/reference/react/ViewTransition.md"
     },
     "reference-react-act": {
       "url": "https://react.dev/reference/react/act",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:25.186477+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "fc95659090d793bbdaafd4a34bf4ae11cc176f58",
+      "last_fetched": "2026-11-08T19:50:41.369525+00:00",
+      "title": "act",
+      "source": "github:reactjs/react.dev/src/content/reference/react/act.md"
     },
     "reference-react-addTransitionType": {
       "url": "https://react.dev/reference/react/addTransitionType",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:26.029317+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "415e7247a4f2f10aec9bc4a0c8f649e3fd8c8262",
+      "last_fetched": "2026-11-08T19:50:41.512484+00:00",
+      "title": "addTransitionType",
+      "source": "github:reactjs/react.dev/src/content/reference/react/addTransitionType.md"
     },
     "reference-react-cache": {
       "url": "https://react.dev/reference/react/cache",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:26.880954+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "7b6984736eedb85e2711ca44b0c8806388c7beb2",
+      "last_fetched": "2026-11-08T19:50:41.812541+00:00",
+      "title": "cache",
+      "source": "github:reactjs/react.dev/src/content/reference/react/cache.md"
     },
     "reference-react-cacheSignal": {
       "url": "https://react.dev/reference/react/cacheSignal",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:27.734353+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c898ca53b1d2a4216b313f72b010a03fb3febd24",
+      "last_fetched": "2026-11-08T19:50:41.936744+00:00",
+      "title": "cacheSignal",
+      "source": "github:reactjs/react.dev/src/content/reference/react/cacheSignal.md"
     },
     "reference-react-captureOwnerStack": {
       "url": "https://react.dev/reference/react/captureOwnerStack",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:28.617865+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b7516791ed9cb7ea13e7f04a7232d921a3a7847b",
+      "last_fetched": "2026-11-08T19:50:42.124327+00:00",
+      "title": "captureOwnerStack",
+      "source": "github:reactjs/react.dev/src/content/reference/react/captureOwnerStack.md"
     },
     "reference-react-createContext": {
       "url": "https://react.dev/reference/react/createContext",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:29.496772+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e4e9bcf6219e1b5d2560a6de6c811be125ac170c",
+      "last_fetched": "2026-11-08T19:50:42.559307+00:00",
+      "title": "createContext",
+      "source": "github:reactjs/react.dev/src/content/reference/react/createContext.md"
     },
     "reference-react-lazy": {
       "url": "https://react.dev/reference/react/lazy",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:30.330996+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5ec74d0d9c0c93c413ddea77d04d37782331414b",
+      "last_fetched": "2026-11-08T19:50:43.929830+00:00",
+      "title": "lazy",
+      "source": "github:reactjs/react.dev/src/content/reference/react/lazy.md"
     },
     "reference-react-memo": {
       "url": "https://react.dev/reference/react/memo",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:31.250441+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b91171e8fd24d68f4722c932cb8941a53e894e30",
+      "last_fetched": "2026-11-08T19:50:44.257772+00:00",
+      "title": "memo",
+      "source": "github:reactjs/react.dev/src/content/reference/react/memo.md"
     },
     "reference-react-startTransition": {
       "url": "https://react.dev/reference/react/startTransition",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:32.171605+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "1da920d5e920fa031d03c2f1e6e288978f2b5b84",
+      "last_fetched": "2026-11-08T19:50:44.412455+00:00",
+      "title": "startTransition",
+      "source": "github:reactjs/react.dev/src/content/reference/react/startTransition.md"
     },
     "reference-react-use": {
       "url": "https://react.dev/reference/react/use",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:33.048189+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ab0db0dd8ec721b02ffde2256a243bd64ce4b2dd",
+      "last_fetched": "2026-11-08T19:50:44.563661+00:00",
+      "title": "use",
+      "source": "github:reactjs/react.dev/src/content/reference/react/use.md"
     },
     "reference-react-experimental_taintObjectReference": {
       "url": "https://react.dev/reference/react/experimental_taintObjectReference",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:33.920626+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c7b565e9b6ea041e689be4ed04d842fbfffbcc8f",
+      "last_fetched": "2026-11-08T19:50:43.029231+00:00",
+      "title": "experimental_taintObjectReference",
+      "source": "github:reactjs/react.dev/src/content/reference/react/experimental_taintObjectReference.md"
     },
     "reference-react-experimental_taintUniqueValue": {
       "url": "https://react.dev/reference/react/experimental_taintUniqueValue",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:34.762332+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "3bbd9d8ec221993e2a23a1098ae9b513a3ba9ccd",
+      "last_fetched": "2026-11-08T19:50:43.149027+00:00",
+      "title": "experimental_taintUniqueValue",
+      "source": "github:reactjs/react.dev/src/content/reference/react/experimental_taintUniqueValue.md"
     },
     "reference-react-dom-hooks": {
       "url": "https://react.dev/reference/react-dom/hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:35.624675+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5bda2b5ad10f7155fd4856d3ba2b30b53972f525",
+      "last_fetched": "2026-11-08T19:50:37.012448+00:00",
+      "title": "Built-in React DOM Hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/hooks/index.md"
     },
     "reference-react-dom-hooks-useFormStatus": {
       "url": "https://react.dev/reference/react-dom/hooks/useFormStatus",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:36.485400+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "d208535131d51bc494f4c48d15844e61a555e9e3",
+      "last_fetched": "2026-11-08T19:50:37.148908+00:00",
+      "title": "useFormStatus",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/hooks/useFormStatus.md"
     },
     "reference-react-dom-components-common": {
       "url": "https://react.dev/reference/react-dom/components/common",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:37.410368+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a70035947306b30b133217f6335da311683e89ea",
+      "last_fetched": "2026-11-08T19:50:34.648729+00:00",
+      "title": "Common components (e.g. <div>)",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/common.md"
     },
     "reference-react-dom-components-form": {
       "url": "https://react.dev/reference/react-dom/components/form",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:38.326224+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "459c27e0be9ddac9ebb3b3a735526c651858ddb3",
+      "last_fetched": "2026-11-08T19:50:34.814016+00:00",
+      "title": "<form>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/form.md"
     },
     "reference-react-dom-components-input": {
       "url": "https://react.dev/reference/react-dom/components/input",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:39.202294+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "37ff14d98765c29a6a0082cff1d7d6c649b78153",
+      "last_fetched": "2026-11-08T19:50:35.213402+00:00",
+      "title": "<input>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/input.md"
     },
     "reference-react-dom-components-option": {
       "url": "https://react.dev/reference/react-dom/components/option",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:40.024761+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f523e0da843424acc92b6ac8eb7f1da9036276eb",
+      "last_fetched": "2026-11-08T19:50:35.611722+00:00",
+      "title": "<option>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/option.md"
     },
     "reference-react-dom-components-progress": {
       "url": "https://react.dev/reference/react-dom/components/progress",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:40.863380+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "cc231890c038b5a890faaefbf39490a7086b9f14",
+      "last_fetched": "2026-11-08T19:50:35.755008+00:00",
+      "title": "<progress>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/progress.md"
     },
     "reference-react-dom-components-select": {
       "url": "https://react.dev/reference/react-dom/components/select",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:41.788745+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "72033ea0ac0a814fd659d559d8706488b9bfa4d8",
+      "last_fetched": "2026-11-08T19:50:36.037721+00:00",
+      "title": "<select>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/select.md"
     },
     "reference-react-dom-components-textarea": {
       "url": "https://react.dev/reference/react-dom/components/textarea",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:42.613009+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "963b0b3fde7f6eedff9cbb9795606f84767478ed",
+      "last_fetched": "2026-11-08T19:50:36.424188+00:00",
+      "title": "<textarea>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/textarea.md"
     },
     "reference-react-dom-components-img": {
       "url": "https://react.dev/reference/react-dom/components/img",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:43.472216+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "255aee8d6f2b02f5413e5d561e3cd46f41c27ce4",
+      "last_fetched": "2026-11-08T19:50:34.958317+00:00",
+      "title": "<img>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/img.md"
     },
     "reference-react-dom-components-link": {
       "url": "https://react.dev/reference/react-dom/components/link",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:44.353847+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "6d374807caefc358b7b382da4a8d2ad4e6586be7",
+      "last_fetched": "2026-11-08T19:50:35.338431+00:00",
+      "title": "reference-react-dom-components-link",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/link.md"
     },
     "reference-react-dom-components-meta": {
       "url": "https://react.dev/reference/react-dom/components/meta",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:45.175799+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "35a95c5aaf5a75fae097c6c018efcf9b23b11c90",
+      "last_fetched": "2026-11-08T19:50:35.480294+00:00",
+      "title": "reference-react-dom-components-meta",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/meta.md"
     },
     "reference-react-dom-components-script": {
       "url": "https://react.dev/reference/react-dom/components/script",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:46.043146+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "06032a8935bac8bfdf8264947e788d1acbf8a8c5",
+      "last_fetched": "2026-11-08T19:50:35.899699+00:00",
+      "title": "reference-react-dom-components-script",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/script.md"
     },
     "reference-react-dom-components-style": {
       "url": "https://react.dev/reference/react-dom/components/style",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:46.961486+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "561c207d1d20f45e88a5059da76ce1dd3a7c7eec",
+      "last_fetched": "2026-11-08T19:50:36.215821+00:00",
+      "title": "reference-react-dom-components-style",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/style.md"
     },
     "reference-react-dom-components-title": {
       "url": "https://react.dev/reference/react-dom/components/title",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:47.787862+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "9e4d8e65ae4b047b59f8c05978acd52c201cfe3f",
+      "last_fetched": "2026-11-08T19:50:36.563412+00:00",
+      "title": "<title>",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/components/title.md"
     },
     "reference-react-dom-browser": {
       "url": "https://react.dev/reference/react-dom/browser",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:48.645872+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "8b00905751308508a9fbebe0c3173cea6bb04810",
+      "last_fetched": "2026-11-08T19:50:34.070872+00:00",
+      "title": "browser",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/browser.md"
     },
     "reference-react-dom-createPortal": {
       "url": "https://react.dev/reference/react-dom/createPortal",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:49.554753+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e806660e8699c418669e403e6ce56254eae4ae54",
+      "last_fetched": "2026-11-08T19:50:36.691410+00:00",
+      "title": "createPortal",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/createPortal.md"
     },
     "reference-react-dom-flushSync": {
       "url": "https://react.dev/reference/react-dom/flushSync",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:50.463269+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b0019868d8adf0ebbd00ec1cb21e859bab0151f4",
+      "last_fetched": "2026-11-08T19:50:36.851797+00:00",
+      "title": "flushSync",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/flushSync.md"
     },
     "reference-react-dom-preconnect": {
       "url": "https://react.dev/reference/react-dom/preconnect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:51.347214+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f28de8776fc6bc061ff45504778d12ac3892e98b",
+      "last_fetched": "2026-11-08T19:50:37.431319+00:00",
+      "title": "preconnect",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/preconnect.md"
     },
     "reference-react-dom-prefetchDNS": {
       "url": "https://react.dev/reference/react-dom/prefetchDNS",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:52.219799+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c9229bba266602a60785c107323dc0747acfd6dc",
+      "last_fetched": "2026-11-08T19:50:37.574195+00:00",
+      "title": "prefetchDNS",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/prefetchDNS.md"
     },
     "reference-react-dom-preinit": {
       "url": "https://react.dev/reference/react-dom/preinit",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:53.106210+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "d9f3808c465dc2e5d0fec3e4041d523152cf1817",
+      "last_fetched": "2026-11-08T19:50:37.736302+00:00",
+      "title": "preinit",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/preinit.md"
     },
     "reference-react-dom-preinitModule": {
       "url": "https://react.dev/reference/react-dom/preinitModule",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:53.920567+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "727f6e047701196ba1b38357a198e36bdb317c3b",
+      "last_fetched": "2026-11-08T19:50:37.866910+00:00",
+      "title": "preinitModule",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/preinitModule.md"
     },
     "reference-react-dom-preload": {
       "url": "https://react.dev/reference/react-dom/preload",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:54.805898+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5d625d23672fcefd8c3e4fbecb56ba0bf8bf3b29",
+      "last_fetched": "2026-11-08T19:50:38.007132+00:00",
+      "title": "preload",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/preload.md"
     },
     "reference-react-dom-preloadModule": {
       "url": "https://react.dev/reference/react-dom/preloadModule",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:55.627095+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "cfaf80717f5acd3f4fee0c3087ebb80d93ea1818",
+      "last_fetched": "2026-11-08T19:50:38.214219+00:00",
+      "title": "preloadModule",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/preloadModule.md"
     },
     "reference-react-dom-client-createRoot": {
       "url": "https://react.dev/reference/react-dom/client/createRoot",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:56.500274+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "dbf37fb7f4b72132e5acf619f62cb81a48f22622",
+      "last_fetched": "2026-11-08T19:50:34.232676+00:00",
+      "title": "createRoot",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/client/createRoot.md"
     },
     "reference-react-dom-client-hydrateRoot": {
       "url": "https://react.dev/reference/react-dom/client/hydrateRoot",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:57.346824+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "063162d357b7401a2a54f76ec123bf45e2f70a90",
+      "last_fetched": "2026-11-08T19:50:34.376945+00:00",
+      "title": "hydrateRoot",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/client/hydrateRoot.md"
     },
     "reference-react-dom-server-renderToPipeableStream": {
       "url": "https://react.dev/reference/react-dom/server/renderToPipeableStream",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:58.191251+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c3fac16c341efe2503660a912322a4e17b1d7edb",
+      "last_fetched": "2026-11-08T19:50:38.493181+00:00",
+      "title": "renderToPipeableStream",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/renderToPipeableStream.md"
     },
     "reference-react-dom-server-renderToReadableStream": {
       "url": "https://react.dev/reference/react-dom/server/renderToReadableStream",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:59.039971+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "76819184c72ba57318f6c2b00063c1c8e645bbbe",
+      "last_fetched": "2026-11-08T19:50:38.627816+00:00",
+      "title": "renderToReadableStream",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/renderToReadableStream.md"
     },
     "reference-react-dom-server-renderToStaticMarkup": {
       "url": "https://react.dev/reference/react-dom/server/renderToStaticMarkup",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:09:59.932756+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2b9178d550ee531c2f0e4e884811173a9b2b4450",
+      "last_fetched": "2026-11-08T19:50:38.785784+00:00",
+      "title": "renderToStaticMarkup",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/renderToStaticMarkup.md"
     },
     "reference-react-dom-server-renderToString": {
       "url": "https://react.dev/reference/react-dom/server/renderToString",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:00.853218+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b89c65c0c178479780e796f89eb4e1937098e521",
+      "last_fetched": "2026-11-08T19:50:38.909365+00:00",
+      "title": "renderToString",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/renderToString.md"
     },
     "reference-react-dom-server-resume": {
       "url": "https://react.dev/reference/react-dom/server/resume",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:01.734513+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bc22c1fe0a089622c945b3cec3d5c5fe5a5541fc",
+      "last_fetched": "2026-11-08T19:50:39.051327+00:00",
+      "title": "resume",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/resume.md"
     },
     "reference-react-dom-server-resumeToPipeableStream": {
       "url": "https://react.dev/reference/react-dom/server/resumeToPipeableStream",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:02.616950+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "c15e71e14790f25c9a8831b95f3e26642b8ddb5d",
+      "last_fetched": "2026-11-08T19:50:39.202752+00:00",
+      "title": "resumeToPipeableStream",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/server/resumeToPipeableStream.md"
     },
     "reference-react-dom-static": {
       "url": "https://react.dev/reference/react-dom/static",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:03.439334+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "cde1268f6de10b4930eb4f4087534fc64f022ccb",
+      "last_fetched": "2026-11-08T19:50:39.348369+00:00",
+      "title": "Static React DOM APIs",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/static/index.md"
     },
     "reference-react-dom-static-prerender": {
       "url": "https://react.dev/reference/react-dom/static/prerender",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:04.258689+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "315e32acaced8116ad99d1259f02aaff88569d71",
+      "last_fetched": "2026-11-08T19:50:39.496729+00:00",
+      "title": "prerender",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/static/prerender.md"
     },
     "reference-react-dom-static-prerenderToNodeStream": {
       "url": "https://react.dev/reference/react-dom/static/prerenderToNodeStream",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:05.072009+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b7f218a7007be872e702fa7f081248a54ad7aee1",
+      "last_fetched": "2026-11-08T19:50:39.638862+00:00",
+      "title": "prerenderToNodeStream",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/static/prerenderToNodeStream.md"
     },
     "reference-react-dom-static-resumeAndPrerender": {
       "url": "https://react.dev/reference/react-dom/static/resumeAndPrerender",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:05.884968+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2a9917d43daa044b4fa239395e3b6b3b71048768",
+      "last_fetched": "2026-11-08T19:50:39.778480+00:00",
+      "title": "resumeAndPrerender",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/static/resumeAndPrerender.md"
     },
     "reference-react-dom-static-resumeAndPrerenderToNodeStream": {
       "url": "https://react.dev/reference/react-dom/static/resumeAndPrerenderToNodeStream",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:06.798679+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "267349ffd5c48669b4dc116f043a6bd89948ebc1",
+      "last_fetched": "2026-11-08T19:50:39.923622+00:00",
+      "title": "resumeAndPrerenderToNodeStream",
+      "source": "github:reactjs/react.dev/src/content/reference/react-dom/static/resumeAndPrerenderToNodeStream.md"
     },
     "reference-react-compiler-compilationMode": {
       "url": "https://react.dev/reference/react-compiler/compilationMode",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:07.665667+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "5513d1c6a68dd7cfdb8629656cae1222aee89141",
+      "last_fetched": "2026-11-08T19:50:32.780556+00:00",
+      "title": "compilationMode",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/compilationMode.md"
     },
     "reference-react-compiler-gating": {
       "url": "https://react.dev/reference/react-compiler/gating",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:08.504959+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "479506af32b4323bd7f562ee525770ba891719a3",
+      "last_fetched": "2026-11-08T19:50:33.557041+00:00",
+      "title": "gating",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/gating.md"
     },
     "reference-react-compiler-logger": {
       "url": "https://react.dev/reference/react-compiler/logger",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:09.380840+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "41e2a1da064c5019dfd396a0b72e073145daddbe",
+      "last_fetched": "2026-11-08T19:50:33.699775+00:00",
+      "title": "logger",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/logger.md"
     },
     "reference-react-compiler-panicThreshold": {
       "url": "https://react.dev/reference/react-compiler/panicThreshold",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:10.277983+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e20f5c0c5080f12b61b90bed9461d7ab6f0ffc39",
+      "last_fetched": "2026-11-08T19:50:33.821471+00:00",
+      "title": "panicThreshold",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/panicThreshold.md"
     },
     "reference-react-compiler-target": {
       "url": "https://react.dev/reference/react-compiler/target",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:11.171359+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "8ccc4a6b1254f1891c2bb5861cb5bfed0b5fe237",
+      "last_fetched": "2026-11-08T19:50:33.946686+00:00",
+      "title": "target",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/target.md"
     },
     "reference-react-compiler-directives-use-memo": {
       "url": "https://react.dev/reference/react-compiler/directives/use-memo",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:11.996969+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "431862682f1e749c31113691d629403c150bf6f2",
+      "last_fetched": "2026-11-08T19:50:33.303914+00:00",
+      "title": "use memo",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/directives/use-memo.md"
     },
     "reference-react-compiler-directives-use-no-memo": {
       "url": "https://react.dev/reference/react-compiler/directives/use-no-memo",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:12.832637+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "e6c419bc66c397fe97a791dd51d87f52d0e84713",
+      "last_fetched": "2026-11-08T19:50:33.428247+00:00",
+      "title": "use no memo",
+      "source": "github:reactjs/react.dev/src/content/reference/react-compiler/directives/use-no-memo.md"
     },
     "reference-dev-tools-react-performance-tracks": {
       "url": "https://react.dev/reference/dev-tools/react-performance-tracks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:13.708775+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "1c10823d36ace092ad06faab1bddc24e612da8d8",
+      "last_fetched": "2026-11-08T19:50:30.023532+00:00",
+      "title": "React Performance tracks",
+      "source": "github:reactjs/react.dev/src/content/reference/dev-tools/react-performance-tracks.md"
     },
     "reference-dev-tools-react-devtools-cdt-mcp": {
       "url": "https://react.dev/reference/dev-tools/react-devtools-cdt-mcp",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:14.593416+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "9c966a0ffc937bbea9751138df7c556d22fcd2b7",
+      "last_fetched": "2026-11-08T19:50:29.898021+00:00",
+      "title": "React DevTools for agents",
+      "source": "github:reactjs/react.dev/src/content/reference/dev-tools/react-devtools-cdt-mcp.md"
     },
     "reference-eslint-plugin-react-hooks": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:15.405937+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "b3a16bc3702791c66f4332c21cc9835e54e66285",
+      "last_fetched": "2026-11-08T19:50:30.164506+00:00",
+      "title": "eslint-plugin-react-hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/index.md"
     },
     "reference-eslint-plugin-react-hooks-lints-exhaustive-deps": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:16.252191+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "daa7db6a81391329e25c9748a15800987a670042",
+      "last_fetched": "2026-11-08T19:50:30.760505+00:00",
+      "title": "exhaustive-deps",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/exhaustive-deps.md"
     },
     "reference-eslint-plugin-react-hooks-lints-rules-of-hooks": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/rules-of-hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:17.152792+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a364ab67febd8b181024a20e32505720a58295b8",
+      "last_fetched": "2026-11-08T19:50:31.895400+00:00",
+      "title": "rules-of-hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/rules-of-hooks.md"
     },
     "reference-eslint-plugin-react-hooks-lints-component-hook-factories": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/component-hook-factories",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:17.982464+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "537903abdd00bad6a4b20d8ecb7207792e29a280",
+      "last_fetched": "2026-11-08T19:50:30.320592+00:00",
+      "title": "component-hook-factories",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/component-hook-factories.md"
     },
     "reference-eslint-plugin-react-hooks-lints-config": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/config",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:18.802442+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "719e08412e50c9fbdf0771485e912ea1ca5cd8de",
+      "last_fetched": "2026-11-08T19:50:30.479576+00:00",
+      "title": "config",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/config.md"
     },
     "reference-eslint-plugin-react-hooks-lints-error-boundaries": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:19.683710+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "830098e5be3fe12f7d527ad1091682e0402eaa32",
+      "last_fetched": "2026-11-08T19:50:30.620416+00:00",
+      "title": "error-boundaries",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/error-boundaries.md"
     },
     "reference-eslint-plugin-react-hooks-lints-gating": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/gating",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:20.532457+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "3bd662a86e1d4a4b7446f28745be126a3e28bb37",
+      "last_fetched": "2026-11-08T19:50:30.890227+00:00",
+      "title": "gating",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/gating.md"
     },
     "reference-eslint-plugin-react-hooks-lints-globals": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/globals",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:21.391379+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "fe0cbe0080f5f68dda8ece5f8268280ed1a67132",
+      "last_fetched": "2026-11-08T19:50:31.035233+00:00",
+      "title": "globals",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/globals.md"
     },
     "reference-eslint-plugin-react-hooks-lints-immutability": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:22.275385+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2314cde0649b49a709ed684f7750407e30c3717d",
+      "last_fetched": "2026-11-08T19:50:31.189786+00:00",
+      "title": "immutability",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/immutability.md"
     },
     "reference-eslint-plugin-react-hooks-lints-incompatible-library": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:23.176284+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "6acffb227f4dec05e3c2b7f2c7abdec44f316331",
+      "last_fetched": "2026-11-08T19:50:31.357652+00:00",
+      "title": "incompatible-library",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/incompatible-library.md"
     },
     "reference-eslint-plugin-react-hooks-lints-preserve-manual-memoization": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:24.017683+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "93b582b1e16e059cf69b2d38c2a1e3b3a133a322",
+      "last_fetched": "2026-11-08T19:50:31.497139+00:00",
+      "title": "preserve-manual-memoization",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization.md"
     },
     "reference-eslint-plugin-react-hooks-lints-purity": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/purity",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:24.854846+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "af8aacc612d86c4bd1d00e94cfe4d3c6a45eda48",
+      "last_fetched": "2026-11-08T19:50:31.635845+00:00",
+      "title": "purity",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/purity.md"
     },
     "reference-eslint-plugin-react-hooks-lints-refs": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/refs",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:25.728210+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "3108fdd89da5812fd1640755b936ba6558d3ce31",
+      "last_fetched": "2026-11-08T19:50:31.768898+00:00",
+      "title": "refs",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/refs.md"
     },
     "reference-eslint-plugin-react-hooks-lints-set-state-in-effect": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:26.596719+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "64fa5c655a9a707254a0ef3214871772c41740f5",
+      "last_fetched": "2026-11-08T19:50:32.040598+00:00",
+      "title": "set-state-in-effect",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/set-state-in-effect.md"
     },
     "reference-eslint-plugin-react-hooks-lints-set-state-in-render": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:27.423253+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "87262949db9e9a5ef059e28132459aa119929e48",
+      "last_fetched": "2026-11-08T19:50:32.200669+00:00",
+      "title": "set-state-in-render",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/set-state-in-render.md"
     },
     "reference-eslint-plugin-react-hooks-lints-static-components": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:28.281099+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bd52f07037a0cf5df3d950d1551a1ac640cb2c39",
+      "last_fetched": "2026-11-08T19:50:32.330716+00:00",
+      "title": "static-components",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/static-components.md"
     },
     "reference-eslint-plugin-react-hooks-lints-unsupported-syntax": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:29.119223+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "a3eefcdb24ff779328d0fb86ff7488d00034683f",
+      "last_fetched": "2026-11-08T19:50:32.465309+00:00",
+      "title": "unsupported-syntax",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/unsupported-syntax.md"
     },
     "reference-eslint-plugin-react-hooks-lints-use-memo": {
       "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:29.935614+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "56810c359097d6f5ba8c6c12e8ace66456af6a39",
+      "last_fetched": "2026-11-08T19:50:32.633351+00:00",
+      "title": "use-memo",
+      "source": "github:reactjs/react.dev/src/content/reference/eslint-plugin-react-hooks/lints/use-memo.md"
     },
     "reference-rules": {
       "url": "https://react.dev/reference/rules",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:30.813306+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "dd5f7456c84374d09f12497c5daf58481e6c840d",
+      "last_fetched": "2026-11-08T19:50:48.993637+00:00",
+      "title": "Rules of React",
+      "source": "github:reactjs/react.dev/src/content/reference/rules/index.md"
     },
     "reference-rules-components-and-hooks-must-be-pure": {
       "url": "https://react.dev/reference/rules/components-and-hooks-must-be-pure",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:31.687298+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "973561c2251eb48fa253bb9fef221ce72006f480",
+      "last_fetched": "2026-11-08T19:50:48.838541+00:00",
+      "title": "Components and Hooks must be pure",
+      "source": "github:reactjs/react.dev/src/content/reference/rules/components-and-hooks-must-be-pure.md"
     },
     "reference-rules-react-calls-components-and-hooks": {
       "url": "https://react.dev/reference/rules/react-calls-components-and-hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:32.535105+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "03354ad5a73a2c8d85f22d915d3466a3e2b81099",
+      "last_fetched": "2026-11-08T19:50:49.143196+00:00",
+      "title": "React calls Components and Hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/rules/react-calls-components-and-hooks.md"
     },
     "reference-rules-rules-of-hooks": {
       "url": "https://react.dev/reference/rules/rules-of-hooks",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:33.411352+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "ecaef7c60d9caf26b1740a6bf4b0f970d31da875",
+      "last_fetched": "2026-11-08T19:50:49.299049+00:00",
+      "title": "Rules of Hooks",
+      "source": "github:reactjs/react.dev/src/content/reference/rules/rules-of-hooks.md"
     },
     "reference-rsc-server-components": {
       "url": "https://react.dev/reference/rsc/server-components",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:34.304096+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bcb7c6cc31df5753ae30924064056e66178cd888",
+      "last_fetched": "2026-11-08T19:50:48.180662+00:00",
+      "title": "Server Components",
+      "source": "github:reactjs/react.dev/src/content/reference/rsc/server-components.md"
     },
     "reference-rsc-server-functions": {
       "url": "https://react.dev/reference/rsc/server-functions",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:35.138474+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f232a16f77031ae94533a46839969bdccc823a24",
+      "last_fetched": "2026-11-08T19:50:48.350246+00:00",
+      "title": "Server Functions",
+      "source": "github:reactjs/react.dev/src/content/reference/rsc/server-functions.md"
     },
     "reference-rsc-directives": {
       "url": "https://react.dev/reference/rsc/directives",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:35.970453+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "af04d5b4158905c4fc22ba8edf168b550f2f6514",
+      "last_fetched": "2026-11-08T19:50:48.007003+00:00",
+      "title": "Directives",
+      "source": "github:reactjs/react.dev/src/content/reference/rsc/directives.md"
     },
     "reference-rsc-use-client": {
       "url": "https://react.dev/reference/rsc/use-client",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:36.786959+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "4c6051977ef942a82318d3923776001ef4846d1a",
+      "last_fetched": "2026-11-08T19:50:48.528500+00:00",
+      "title": "'use client'",
+      "source": "github:reactjs/react.dev/src/content/reference/rsc/use-client.md"
     },
     "reference-rsc-use-server": {
       "url": "https://react.dev/reference/rsc/use-server",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:37.611095+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "148f5130bcd90329606b430bf7b67c6111468502",
+      "last_fetched": "2026-11-08T19:50:48.682192+00:00",
+      "title": "'use server'",
+      "source": "github:reactjs/react.dev/src/content/reference/rsc/use-server.md"
     },
     "reference-react-Children": {
       "url": "https://react.dev/reference/react/Children",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:38.620333+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "3647b1eed1d343645819007448a89da63e049c3d",
+      "last_fetched": "2026-11-08T19:50:40.214065+00:00",
+      "title": "Children",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Children.md"
     },
     "reference-react-cloneElement": {
       "url": "https://react.dev/reference/react/cloneElement",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:39.465383+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "91d501b7203ac1297177312d148162e3a5047c4c",
+      "last_fetched": "2026-11-08T19:50:42.275609+00:00",
+      "title": "cloneElement",
+      "source": "github:reactjs/react.dev/src/content/reference/react/cloneElement.md"
     },
     "reference-react-Component": {
       "url": "https://react.dev/reference/react/Component",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:40.325382+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "f6c8cc4bf321c23c32425b3b2012807dc53474aa",
+      "last_fetched": "2026-11-08T19:50:40.366528+00:00",
+      "title": "Component",
+      "source": "github:reactjs/react.dev/src/content/reference/react/Component.md"
     },
     "reference-react-createElement": {
       "url": "https://react.dev/reference/react/createElement",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:41.209604+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "87110a71af5e5e7221fb8da4a5454b09ca6f7874",
+      "last_fetched": "2026-11-08T19:50:42.706522+00:00",
+      "title": "createElement",
+      "source": "github:reactjs/react.dev/src/content/reference/react/createElement.md"
     },
     "reference-react-createRef": {
       "url": "https://react.dev/reference/react/createRef",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:42.140032+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "2a3ba6aa3df4e102e1ab536f252ea4a97aa19c28",
+      "last_fetched": "2026-11-08T19:50:42.855224+00:00",
+      "title": "createRef",
+      "source": "github:reactjs/react.dev/src/content/reference/react/createRef.md"
     },
     "reference-react-forwardRef": {
       "url": "https://react.dev/reference/react/forwardRef",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:43.002870+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "db42bfae06633372d362b727666ae8ad70781479",
+      "last_fetched": "2026-11-08T19:50:43.331212+00:00",
+      "title": "forwardRef",
+      "source": "github:reactjs/react.dev/src/content/reference/react/forwardRef.md"
     },
     "reference-react-isValidElement": {
       "url": "https://react.dev/reference/react/isValidElement",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:43.877472+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "bc4fbaef45498188a95d67d1004a6ed7efd33a58",
+      "last_fetched": "2026-11-08T19:50:43.783658+00:00",
+      "title": "isValidElement",
+      "source": "github:reactjs/react.dev/src/content/reference/react/isValidElement.md"
     },
     "reference-react-PureComponent": {
       "url": "https://react.dev/reference/react/PureComponent",
-      "last_hash": "44c329144d5d108e0b6ded2a124838f83c9bc7ebfc3542fc8a1d1681c6d565de",
-      "last_fetched": "2026-11-08T18:10:44.719729+00:00",
-      "title": "Vercel Security Checkpoint"
+      "last_hash": "3e2d074e10d00e38579dc4f60711c8f882a3823e",
+      "last_fetched": "2026-11-08T19:50:40.830530+00:00",
+      "title": "PureComponent",
+      "source": "github:reactjs/react.dev/src/content/reference/react/PureComponent.md"
+    },
+    "learn-rsc-sandbox-test": {
+      "url": "https://react.dev/learn/rsc-sandbox-test",
+      "last_hash": "f914ea4ae3f6a291f033444bb84c3754b760fab1",
+      "last_fetched": "2026-11-08T19:50:27.320703+00:00",
+      "title": "RSC Sandbox Test",
+      "source": "github:reactjs/react.dev/src/content/learn/rsc-sandbox-test.md"
     }
   },
   "detected_version": null,
-  "last_updated": "2026-11-08T18:10:44.719729+00:00",
+  "last_updated": "2026-11-08T19:50:49.299049+00:00",
   "version_history": []
 }
