@@ -2,13 +2,47 @@
 
 Copia en Markdown de la documentación oficial de 25 tecnologías de ciencia de datos y desarrollo web. Se actualiza automáticamente cada semana y está indexada para búsqueda semántica (también en español) mediante un servidor [MCP](https://modelcontextprotocol.io/).
 
-Este repositorio es la **fuente única de verdad**: el servidor MCP lee exactamente lo que hay aquí, y aquí publica cada actualización.
+Todo vive en GitHub: este repositorio es la **fuente única de verdad**, GitHub Actions lo actualiza cada semana y el servidor MCP corre **en tu propio equipo**. No hace falta ningún servidor ni token.
 
-## Cómo consultarla
+## Instalar el MCP en Claude Code (recomendado)
 
-**Directamente en GitHub.** Cada tecnología está en `sources/<tecnología>/markdown/`, con un archivo `.md` por página de la documentación original. `sources/<tecnología>/manifest.json` indica la URL original, el título y la fecha de descarga de cada página. Para buscar en todo el repositorio, usa el buscador de GitHub (tecla `/`) o clónalo y usa `grep`/`rg`.
+En Claude Code (v2.1.275 o posterior):
 
-**Desde un asistente con MCP** (Claude Code u otro cliente compatible). El servidor ofrece búsqueda semántica: una consulta como "combinar tablas por columna común" encuentra `merge`/`join` de pandas o dplyr. Tiene 8 herramientas (`docs_search`, `docs_get_section`, `docs_list_technologies`…). Por ahora el endpoint público exige un token y su uso está limitado al mantenedor. Detalles de conexión: [GuiaMCP.md](GuiaMCP.md).
+```text
+/plugin install docs-kb --marketplace adolfo-s-rey-b/docs-kb
+```
+
+O en dos pasos, en versiones anteriores:
+
+```text
+/plugin marketplace add adolfo-s-rey-b/docs-kb
+/plugin install docs-kb@docs-kb
+```
+
+La primera sesión descarga en segundo plano la documentación y el índice semántico desde el [Release `datos`](https://github.com/adolfo-s-rey-b/docs-kb/releases/tag/datos), unos 150 MB. También prepara un entorno Python propio y el modelo de embeddings, unos 220 MB. Todo eso tarda unos minutos y queda en `~/.claude/plugins/data/`. Cuando termine, reconecta con `/mcp`.
+
+**Requisitos:** Python 3.10 o posterior en el `PATH` como `python3`. En Debian/Ubuntu también hace falta `python3-venv`, o [`uv`](https://docs.astral.sh/uv/).
+
+**Actualizaciones:**
+- **Documentación e índice:** se actualizan solos. Al iniciar una sesión, el plugin revisa si GitHub publicó una versión nueva (como mucho cada 12 horas) y la descarga en segundo plano. Para forzarlo usa `/docs-kb:actualizar`, y para ver la versión instalada `/docs-kb:estado`.
+- **Plugin:** activa *Enable auto-update* para el marketplace `docs-kb` en `/plugin` → *Marketplaces*, o ejecuta `/plugin marketplace update docs-kb`.
+
+Después, Claude usa los tools `docs_search`, `docs_get_section`, `docs_list_technologies`, `docs_generate_context`, `docs_fetch_live`, `docs_changelog`, `docs_version_history` y `docs_status`. La búsqueda es semántica y multilingüe: "combinar tablas por columna común" encuentra `merge`/`join` de pandas o dplyr.
+
+### Sin plugin (cualquier cliente MCP)
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/adolfo-s-rey-b/docs-kb/main/plugin/docs_kb_local.py
+python3 docs_kb_local.py install          # descarga datos + entorno + modelo
+python3 docs_kb_local.py check            # 12 pruebas end-to-end
+claude mcp add --scope user docs-kb -- python3 "$PWD/docs_kb_local.py" serve
+```
+
+Para otros clientes MCP, el servidor es el comando `python3 /ruta/docs_kb_local.py serve` (stdio). `python3 docs_kb_local.py update` actualiza, y `serve` también revisa actualizaciones por su cuenta cada 12 horas. Los datos quedan en `~/.local/share/docs-kb`, o en `$DOCS_KB_HOME` si está definido.
+
+## Consultar sin instalar nada
+
+Cada tecnología está en `sources/<tecnología>/markdown/`, con un archivo `.md` por página de la documentación original. `sources/<tecnología>/manifest.json` indica la URL original, el título y la fecha de descarga de cada página. Para buscar en todo el repositorio, usa el buscador de GitHub (tecla `/`) o clónalo y usa `grep`/`rg`.
 
 ## Tecnologías
 
@@ -44,20 +78,16 @@ Los derechos de cada documentación pertenecen a sus autores. Las licencias est�
 
 ## Cómo se mantiene
 
-- **Recolección:** `collector.py` encuentra todas las páginas de cada sitio. Prueba, en orden: el sitemap vía Firecrawl, el inventario Sphinx `objects.inv`, el `sitemap.xml` y, como último recurso, un rastreo de enlaces con Playwright. Luego las convierte a Markdown con [Firecrawl](https://github.com/firecrawl/firecrawl).
-- **Actualización:** la hace [GitHub Actions](.github/workflows/actualizar-docs.yml), sin depender de ningún servidor. Cada domingo se vuelven a descargar las páginas con más de 28 días, y el día 1 de cada mes se buscan además páginas nuevas. Cada tecnología corre en su propio job con un Firecrawl temporal. Los cambios se publican aquí en un único commit `docs: actualización automática …` de `docs-kb-bot`.
-- **Índice:** el servidor del MCP trae los cambios cada hora (`sincronizar.sh`) y construye un índice de secciones y embeddings FAISS con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`. El índice no se versiona; se regenera con `collector.py --index-only`.
+Todo corre en GitHub, sin servidores propios:
 
-Arquitectura completa, operación del servidor y guía de modificación: [SistemaDocumentación.md](SistemaDocumentación.md). Pruebas: [ChequeoSD.md](ChequeoSD.md) (servidor), `chequeo_remoto.sh` (cliente) y [ConclusionesSD.md](ConclusionesSD.md) (últimos resultados).
+1. **Recolección** ([`actualizar-docs.yml`](.github/workflows/actualizar-docs.yml)): cada domingo se vuelven a descargar las páginas con más de 28 días, y el día 1 de cada mes se buscan además páginas nuevas. Cada tecnología corre en su propio job con un [Firecrawl](https://github.com/firecrawl/firecrawl) temporal. `collector.py` descubre las páginas probando, en orden: el sitemap, el inventario Sphinx `objects.inv`, el `sitemap.xml` y un rastreo de enlaces con Playwright. React se toma del Markdown de su repositorio oficial ([reactjs/react.dev](https://github.com/reactjs/react.dev)). Los cambios se publican en un único commit `docs: actualización automática …` de `docs-kb-bot`.
+2. **Índice y paquete** ([`datos.yml`](.github/workflows/datos.yml)): después de cada recolección se reconstruye el índice de secciones y los embeddings FAISS, con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`, cuantizado a 8 bits. Es incremental: solo se calculan las secciones nuevas o modificadas. El paquete del MCP local se publica en el Release [`datos`](https://github.com/adolfo-s-rey-b/docs-kb/releases/tag/datos).
+3. **MCP local** ([`plugin/`](plugin)): el plugin descarga ese paquete, verifica su sha256 y lo actualiza solo.
 
-## Montar tu propia instancia
+Anaconda está **congelada**: su sitio bloquea los runners de GitHub y no publica su fuente, así que se conserva la última copia sin actualizarla.
 
-1. Clona el repo e instala las dependencias: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`.
-2. Levanta Firecrawl, y opcionalmente su servicio de Playwright, y ajusta `firecrawl_url` en `config.json`.
-3. Indexa la documentación incluida: `.venv/bin/python3 collector.py --index-only`.
-4. Inicia el servidor: `.venv/bin/python3 mcp_server.py --transport streamable-http --port 8765`, o con Docker usando `Dockerfile.http`.
-5. Conéctalo: `claude mcp add --transport http docs-kb http://localhost:8765/mcp`.
+Arquitectura completa y guía de modificación: [SistemaDocumentación.md](SistemaDocumentación.md). Pruebas: `python3 plugin/docs_kb_local.py check` (MCP local) y [ConclusionesSD.md](ConclusionesSD.md) (últimos resultados).
 
 ## Licencia
 
-El código, los scripts y los textos propios de este repositorio están bajo la licencia [MIT](LICENSE): `mcp_server.py`, `collector.py`, los scripts `.sh`, `config.json` y las guías. La documentación de `sources/` **no** está cubierta por la licencia MIT: conserva la licencia de cada proyecto original (ver [ATTRIBUTION.md](ATTRIBUTION.md)).
+El código, los scripts y los textos propios de este repositorio están bajo la licencia [MIT](LICENSE): `mcp_server.py`, `collector.py`, `plugin/`, los scripts, `config.json` y las guías. La documentación de `sources/` **no** está cubierta por la licencia MIT: conserva la licencia de cada proyecto original (ver [ATTRIBUTION.md](ATTRIBUTION.md)).

@@ -55,8 +55,8 @@ FORMAT_SUPPORTED = 1
 def home() -> Path:
     if os.environ.get("DOCS_KB_HOME"):
         return Path(os.environ["DOCS_KB_HOME"]).expanduser()
-    if os.environ.get("CLAUDE_PLUGIN_DATA"):
-        return Path(os.environ["CLAUDE_PLUGIN_DATA"]) / "docs-kb"
+    if os.environ.get("CLAUDE_PLUGIN_DATA"):  # plugin: el mismo directorio en hook, MCP y comandos
+        return Path(os.environ["CLAUDE_PLUGIN_DATA"])
     system = platform.system()
     if system == "Windows":
         return Path(os.environ.get("LOCALAPPDATA", Path.home() / "AppData" / "Local")) / "docs-kb"

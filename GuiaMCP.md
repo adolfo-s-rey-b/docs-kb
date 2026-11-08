@@ -1,159 +1,129 @@
-# Guía de Conexión — docs-kb MCP Server
+# Guía del MCP docs-kb
 
-**Última actualización:** 2026-11-07 · Cliente: Linux (Arch) · Servidor: Ubuntu (`ssh server`)
+**Última actualización:** 2026-11-08
 
-Este documento es autocontenido: explica cómo conectar Claude Code al servidor MCP de documentación técnica y cómo verificar que funciona.
+docs-kb es un servidor MCP con la documentación oficial de 25 tecnologías: Python, pandas, numpy, matplotlib, seaborn, scikit-learn, JupyterLab, PyTorch, TensorFlow, Keras, Anaconda, R, tidyverse (dplyr, tidyr, purrr, stringr, lubridate, ggplot2), RStudio, MDN (CSS, HTML, JavaScript), React y n8n. Son unas 24.000 páginas con búsqueda semántica multilingüe.
 
----
+**Corre en tu equipo** y depende únicamente de GitHub:
 
-## Qué es este servidor
+- GitHub Actions recolecta la documentación cada semana y la publica en este repo.
+- GitHub Actions construye el índice semántico y publica el paquete en el Release [`datos`](https://github.com/adolfo-s-rey-b/docs-kb/releases/tag/datos).
+- El plugin descarga ese paquete y lo actualiza solo.
 
-**docs-kb** es un servidor MCP que expone documentación técnica pública indexada (25 tecnologías: Python, pandas, numpy, matplotlib, scikit-learn, PyTorch, TensorFlow, Keras, R/tidyverse, React, MDN CSS/HTML/JavaScript, n8n, etc.). Devuelve solo las secciones relevantes, sin traer documentos completos al contexto. Solo contiene documentación técnica: ningún contenido personal.
-
-- **Fuente única de verdad:** el repositorio público [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). Toda la documentación está en `sources/<tecnología>/markdown/` y se puede leer directamente allí, sin usar el MCP.
-- Corre en el servidor Ubuntu (`~/server-stack/docs-kb`, que es un clon del repo; container `mcp_docs_kb_http_core`). Cada semana el collector actualiza la documentación y la publica en el repo.
-- Se expone a internet por Cloudflare Tunnel → nginx (Bearer token) → `:8765`.
-- Búsqueda semántica FAISS **multilingüe** (`paraphrase-multilingual-MiniLM-L12-v2`): las consultas en español encuentran documentación en inglés.
-- Arquitectura completa del servidor: [SistemaDocumentación.md](SistemaDocumentación.md).
+No hay servidor ni token.
 
 ---
 
-## Configuración del cliente
+## 1. Instalación
 
-### 1. Token
+### Con el plugin de Claude Code (recomendado)
 
-El token **no** se escribe en los documentos. Vive en `.env` (permisos `600`, excluido de git):
-
-```bash
-cp .env.example .env && chmod 600 .env   # y completar DOCS_KB_TOKEN
-set -a; . ./.env; set +a                 # cargarlo en la shell actual
+```text
+/plugin install docs-kb --marketplace adolfo-s-rey-b/docs-kb
 ```
 
-Si no lo tienes, está en el servidor (configuración de nginx):
+En versiones de Claude Code anteriores a la 2.1.275:
 
-```bash
-ssh server "grep -oP 'expected_key\s+\"Bearer \K[0-9a-f]+' ~/server-stack/nginx/conf.d/mcp-docs-proxy.conf"
+```text
+/plugin marketplace add adolfo-s-rey-b/docs-kb
+/plugin install docs-kb@docs-kb
 ```
 
-### 2. Registrar el servidor MCP en Claude Code
+En la primera sesión, el hook de inicio:
 
-> ⚠️ Claude Code **no lee** `~/.claude/mcp.json` (era el error de las guías anteriores). Usa `claude mcp add`, que guarda la configuración en `~/.claude.json`.
+1. Descarga `docs-kb-datos.tar.gz` (~150 MB) y verifica su sha256.
+2. Crea un entorno Python en `~/.claude/plugins/data/docs-kb-docs-kb/` (`${CLAUDE_PLUGIN_DATA}`) con mcp, fastembed, faiss-cpu y html2text.
+3. Descarga el modelo `paraphrase-multilingual-MiniLM-L12-v2` (~220 MB).
+
+Mientras tanto, el MCP responde con un único tool, `docs_status`, que muestra el avance. Cuando termine, **reconecta con `/mcp`**.
+
+**Requisitos:**
+
+- Python 3.10 o superior como `python3`.
+- Debian/Ubuntu: el paquete `python3-venv`, o tener [`uv`](https://docs.astral.sh/uv/) instalado (se usa automáticamente si está).
+- `curl` no hace falta: la descarga usa la biblioteca estándar de Python.
+
+### Sin plugin
 
 ```bash
-claude mcp add --transport http --scope user docs-kb \
-  https://mcp-documentacion.adolfo-s-rey-b.com/mcp \
-  --header "Authorization: Bearer $DOCS_KB_TOKEN"
+curl -fsSLO https://raw.githubusercontent.com/adolfo-s-rey-b/docs-kb/main/plugin/docs_kb_local.py
+python3 docs_kb_local.py install
+claude mcp add --scope user docs-kb -- python3 "$PWD/docs_kb_local.py" serve
 ```
 
-- `--scope user`: disponible en todos los proyectos.
-- Verificar: `claude mcp get docs-kb` → `Status: ✔ Connected`.
-- Quitar: `claude mcp remove docs-kb -s user`.
+Datos en `~/.local/share/docs-kb` (o `$DOCS_KB_HOME`). Cualquier cliente MCP puede usar el comando `python3 /ruta/docs_kb_local.py serve` (transporte stdio).
 
-### 3. Reiniciar Claude Code
+### Comandos de `docs_kb_local.py`
 
-Cierra y abre Claude Code (o la extensión de VS Code). Deben aparecer 8 tools con prefijo `mcp__docs-kb__`:
+| Comando | Qué hace |
+| --- | --- |
+| `install [--force]` | Descarga la última versión publicada, prepara el entorno y el modelo |
+| `update` | Igual que `install`, pero solo descarga si hay una versión nueva |
+| `status` | Versión instalada y versión publicada |
+| `serve` | Servidor MCP por stdio. Si pasaron más de 12 h desde la última revisión, lanza un `update` en segundo plano |
+| `ensure` | Lo usa el hook de inicio de sesión: instala si falta y, si toca, actualiza |
+| `check` | 12 pruebas end-to-end contra el servidor local |
+| `uninstall --yes` | Borra los datos locales |
+
+En el plugin, los comandos equivalentes son `/docs-kb:actualizar` y `/docs-kb:estado`.
+
+---
+
+## 2. Actualizaciones
+
+| Qué | Cómo se actualiza |
+| --- | --- |
+| Documentación e índice | Solo: al iniciar una sesión (como mucho cada 12 h) se compara `version.json` del Release con lo instalado y se descarga la versión nueva. La versión anterior se conserva hasta la siguiente actualización, para no romper una sesión abierta. La nueva se usa al reconectar (`/mcp`) o en la próxima sesión |
+| Código del servidor (`mcp_server.py`) | Viene dentro del mismo paquete del Release, así que se actualiza junto con los datos |
+| Plugin (lanzador, hook, skill) | Activa *Enable auto-update* para el marketplace `docs-kb` en `/plugin` → *Marketplaces*, o ejecuta `/plugin marketplace update docs-kb`. El plugin no fija `version`, así que sigue los commits del repo |
+
+El paquete se publica cada domingo, tras la recolección semanal, y también cada vez que cambia el código del servidor, del collector o la configuración.
+
+---
+
+## 3. Uso
 
 | Tool | Uso |
 | --- | --- |
-| `docs_search` | Búsqueda semántica + keyword (`query`, `technology?`, `max_results?`, `version?`) |
-| `docs_list_technologies` | Lista las tecnologías con páginas y fecha de actualización |
-| `docs_get_section` | TOC de una página o una sección específica (`technology`, `slug`, `section?`) |
-| `docs_changelog` | Cambios recientes (`technology?`, `days?`) |
-| `docs_fetch_live` | Fetch en tiempo real de una URL vía Firecrawl (`url`, `query?`) |
-| `docs_status` | Estado global: FAISS, modelo, caché, tecnologías, disco |
-| `docs_version_history` | Snapshots de versiones de una tecnología |
-| `docs_generate_context` | Cheatsheet, migration notes o summary (`technologies`, `context_type`) |
+| `docs_search` | Búsqueda semántica + keyword (`query`, `technology?`, `max_results?`) |
+| `docs_get_section` | TOC de una página (sin `section`) o el contenido de una sección (`technology`, `slug`, `section?`) |
+| `docs_list_technologies` | Tecnologías con número de páginas y fecha |
+| `docs_generate_context` | `cheatsheet`, `summary` o `migration` de una o varias tecnologías |
+| `docs_fetch_live` | Página web en vivo convertida a Markdown. En local es una descarga directa, sin JavaScript; con `DOCS_KB_FIRECRAWL_URL` usa tu Firecrawl |
+| `docs_changelog` | Cambios recientes, sacados del historial de git del repo (90 días) |
+| `docs_version_history` | Versión detectada, cambios registrados y enlace al historial de git |
+| `docs_status` | Estado del índice: vectores, modelo, tecnologías |
 
-**Patrón recomendado:** `docs_search` → tomar `tech` y `slug` del resultado → `docs_get_section` sin `section` (TOC) → `docs_get_section` con la sección.
+**Patrón recomendado:** `docs_search` → tomar `tech` y `slug` → `docs_get_section` sin sección (TOC) → `docs_get_section` con la sección.
 
 ---
 
-## Verificación
-
-### Chequeo automático (recomendado)
+## 4. Verificación
 
 ```bash
-./chequeo_remoto.sh              # 12 pruebas, tabla PASS/WARN/FAIL
-./chequeo_remoto.sh --md         # además: resultados/chequeo-AAAA-MM-DD.md
+python3 docs_kb_local.py check     # o: python3 "$CLAUDE_PLUGIN_ROOT/docs_kb_local.py" check
 ```
 
-Ejecuta las 12 pruebas de abajo vía JSON-RPC contra el endpoint público. Código de salida = número de FAIL. Resultados más recientes: [ConclusionesSD.md](ConclusionesSD.md).
-
-### Conectividad manual
-
-El transporte streamable-http exige el header `Accept` con **ambos** tipos y un `initialize` antes de cualquier otro método. Sin ellos el servidor responde **406** o **400**.
-
-```bash
-curl -s -D - -o /dev/null -X POST https://mcp-documentacion.adolfo-s-rey-b.com/mcp \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json, text/event-stream" \
-  -H "Authorization: Bearer $DOCS_KB_TOKEN" \
-  -d '{"jsonrpc":"2.0","method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}},"id":0}' \
-  | grep -iE "^HTTP|mcp-session-id"
-```
-
-**Esperado:** `HTTP/2 200` y un `mcp-session-id`.
+Corre las mismas 12 pruebas que antes se hacían contra el servidor remoto: tools, estado del índice, búsqueda keyword y semántica en español, TOC y sección, summary, cheatsheet, historial de versiones, changelog y fetch en vivo. El código de salida es 0 si todas pasan.
 
 ---
 
-## Las 12 pruebas remotas
-
-Se pueden ejecutar a mano llamando los tools desde Claude Code, o todas juntas con `./chequeo_remoto.sh`.
-
-| # | Llamada | Indicador de éxito |
-| --- | --- | --- |
-| 1 | (lista de tools) | 8 tools `docs_*` |
-| 2 | `docs_status()` | `FAISS Search: Active (N vectors indexed, paraphrase-multilingual-MiniLM-L12-v2)` |
-| 3 | `docs_list_technologies()` | Sin error; 25 tecnologías, todas con páginas |
-| 4 | `docs_search(query="str_detect", technology="stringr")` | 1–5 resultados `[stringr] … > str_detect()` |
-| 5 | `docs_search(query="combinar tablas por columna comun")` | Top-3 con `pandas`/`dplyr`/`tidyr` (merge/join) aunque la query no diga "merge" ni "join" |
-| 6 | `docs_get_section(technology="stringr", slug="articles-stringr")` | TOC con headings y rangos de líneas |
-| 7 | `docs_get_section(technology="stringr", slug="articles-stringr", section="<una sección del TOC>")` | Markdown de esa sección (p. ej. `Tasks`) |
-| 8 | `docs_generate_context(technologies="numpy", context_type="summary")` | N páginas de numpy y fecha de actualización reciente |
-| 9 | `docs_generate_context(technologies="pandas", context_type="cheatsheet")` | Quick reference de pandas con contenido |
-| 10 | `docs_version_history(technology="stringr")` | `Current: v… (fecha, N pages)` |
-| 11 | `docs_changelog(days=30)` | Lista de cambios o `No changes in the last 30 days.` |
-| 12 | `docs_fetch_live(url="https://stringr.tidyverse.org/reference/str_detect.html", query="pattern")` | Markdown de la página filtrado por "pattern" |
-
-> Prueba 7: usa un heading que aparezca en el TOC de la prueba 6 (la sección "Basic usage" de versiones anteriores de esta guía no existe). El script lo hace automáticamente.
-
----
-
-## Qué se prueba desde dónde
-
-| Desde el cliente (este equipo) | Solo en el servidor (`ssh server`) |
-| --- | --- |
-| Las 12 pruebas de arriba (`./chequeo_remoto.sh`) | [ChequeoSD.md](ChequeoSD.md) Secciones 1–7, 9–12: Docker, `localhost:8765`, nginx, archivos FAISS, collector, error hook, cron, publicación en GitHub, rendimiento |
-| | Sección 8 (skills `/docs-search`, `/docs-context`…): viven en `~/server-stack/.claude/skills` y solo existen en sesiones de Claude Code abiertas en el servidor |
-
----
-
-## Troubleshooting
+## 5. Troubleshooting
 
 | Síntoma | Causa / solución |
 | --- | --- |
-| `406 Not Acceptable` | Falta `Accept: application/json, text/event-stream` |
-| `400` / "Missing session ID" | No se hizo `initialize` o no se envía `mcp-session-id` |
-| `401` | Falta el header `Authorization` |
-| `403` | Token incorrecto (revisa `.env` y `claude mcp get docs-kb`) |
-| `000` / timeout | Servidor apagado o túnel Cloudflare caído: `ssh server "docker ps \| grep -E 'cloudflared\|nginx_firecrawl\|mcp_docs'"` |
-| Tools `mcp__docs-kb__*` no aparecen | Registrar con `claude mcp add` (no `~/.claude/mcp.json`) y reiniciar Claude Code |
-| `FAISS Search: … not loaded` | En el servidor: `docker restart mcp_docs_kb_http_core` y revisar `docker logs mcp_docs_kb_http_core` |
-| `docs_fetch_live` falla | Firecrawl caído: `ssh server "cd ~/server-stack && docker compose up -d firecrawl_api firecrawl_playwright"` |
-| `docs_search` vacío | Confirmar la tecnología con `docs_list_technologies()`; probar sin filtro `technology` |
+| El MCP solo tiene `docs_status` y dice "instalando" | Primera instalación en curso. Espera y reconecta con `/mcp`. El log está en `docs-kb.log` del directorio de datos |
+| `no se pudo crear el entorno virtual` | Instala `python3-venv` (Debian/Ubuntu) o `uv`, y luego ejecuta `/docs-kb:actualizar` |
+| `la descarga no coincide con el sha256 publicado` | El Release se estaba actualizando justo en ese momento. Reintenta en unos minutos |
+| `docs_fetch_live` devuelve poco contenido | La página necesita JavaScript. Usa una URL de la documentación estática o configura `DOCS_KB_FIRECRAWL_URL` |
+| Quiero empezar de cero | `python3 docs_kb_local.py uninstall --yes`, o desinstalar el plugin (borra `${CLAUDE_PLUGIN_DATA}`), y volver a instalar |
 
 ---
 
-## Referencia rápida
+## Anexo: endpoint remoto (legado)
 
-```text
-URL:            https://mcp-documentacion.adolfo-s-rey-b.com/mcp
-Token:          $DOCS_KB_TOKEN (archivo .env, nunca en los documentos)
-Transporte:     streamable-http (MCP 2024-11-05)
-Tools:          8 (prefijo mcp__docs-kb__)
-Tecnologías:    25 (solo documentación técnica pública)
-Repositorio:    https://github.com/adolfo-s-rey-b/docs-kb
-Embeddings:     paraphrase-multilingual-MiniLM-L12-v2 (384d, FAISS)
-Chequeo:        ./chequeo_remoto.sh   ·   servidor: ChequeoSD.md
-SSH servidor:   ssh server  (alias local, red interna)
-```
+Hasta noviembre de 2026 docs-kb también se servía desde un servidor propio, en `https://mcp-documentacion.adolfo-s-rey-b.com/mcp`, con Bearer token. Ese servidor va a desconectarse; el MCP local lo reemplaza por completo. Mientras siga activo:
+
+- Se registra con `claude mcp add --transport http --scope user docs-kb <url> --header "Authorization: Bearer $DOCS_KB_TOKEN"`. El token vive solo en `.env`.
+- Las 12 pruebas remotas se corren con `./chequeo_remoto.sh`.
+- Los curl manuales exigen `Accept: application/json, text/event-stream` y un `initialize` previo; si no, la respuesta es 406/400. Los códigos de error son: 401 sin token, 403 token incorrecto, 000 servidor o túnel caído.
