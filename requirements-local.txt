@@ -1,0 +1,8 @@
+# Dependencias del servidor MCP local (plugin / docs_kb_local.py).
+# El servidor Docker usa requirements.txt.
+mcp>=1.9.0
+fastembed>=0.8.0
+faiss-cpu>=1.8.0
+numpy>=1.26
+requests>=2.31.0
+html2text>=2024.2.26

@@ -1,0 +1,89 @@
+# Construye el índice semántico y publica el paquete del MCP local en el Release "datos".
+#
+# - Lo llama actualizar-docs.yml después de cada recolección (workflow_call).
+# - También corre al hacer push de código que cambia el paquete, o manualmente.
+# - Incremental: reutiliza la caché de embeddings publicada en el Release anterior.
+# Assets del Release "datos" (URLs estables, sin API ni token):
+#   docs-kb-datos.tar.gz   documentación + índice + servidor (lo descarga docs_kb_local.py)
+#   version.json           commit, sha256 y tamaño del paquete (se sube al final)
+#   embeddings-cache.npz   caché de embeddings para la próxima reconstrucción
+name: Publicar datos (índice + paquete local)
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - mcp_server.py
+      - collector.py
+      - config.json
+      - requirements-local.txt
+      - .github/workflows/datos.yml
+      - .github/scripts/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-datos
+  cancel-in-progress: false
+
+jobs:
+  datos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      FASTEMBED_CACHE_PATH: /home/runner/.cache/fastembed
+      DOCS_KB_FAISS_INDEX: sq8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencias
+        run: pip install --quiet -r requirements-local.txt
+
+      - name: Modelo de embeddings (caché)
+        uses: actions/cache@v4
+        with:
+          path: /home/runner/.cache/fastembed
+          key: fastembed-paraphrase-multilingual-MiniLM-L12-v2
+
+      - name: Caché de embeddings del Release anterior
+        run: |
+          mkdir -p index
+          gh release download datos --pattern embeddings-cache.npz --dir index --clobber \
+            && ls -la index/embeddings-cache.npz || echo "Sin caché previa: se calculan todos los embeddings"
+
+      - name: Índice (secciones + FAISS)
+        run: |
+          python collector.py --index-only
+          grep -E "Section index|Embeddings|FAISS index|ERROR" logs/collector.log | tail -10
+          cat index/embeddings-info.json
+
+      - name: Changelog desde git
+        run: python .github/scripts/changelog_desde_git.py 90
+
+      - name: Empaquetar
+        run: python .github/scripts/empaquetar.py
+
+      - name: Publicar Release "datos"
+        run: |
+          if ! gh release view datos > /dev/null 2>&1; then
+            gh release create datos --title "Datos de docs-kb" --latest \
+              --notes "Paquete del MCP local de docs-kb (documentación + índice semántico). Lo descarga y actualiza automáticamente el plugin; ver README."
+          fi
+          gh release upload datos dist/docs-kb-datos.tar.gz index/embeddings-cache.npz --clobber
+          gh release upload datos dist/version.json --clobber
+          V=$(python -c "import json;d=json.load(open('dist/version.json'));print(f\"{d['commit'][:12]} · {d['fecha'][:10]} · {d['tecnologias']} tecnologías · {d['paginas']} páginas · {d['vectores']} vectores · {d['bytes']//1000000} MB\")")
+          gh release edit datos --notes "Paquete del MCP local de docs-kb (documentación + índice semántico). Lo descarga y actualiza automáticamente el plugin; ver README.
+
+          Versión publicada: $V"
+          echo "Publicado: $V"

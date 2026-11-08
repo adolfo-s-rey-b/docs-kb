@@ -67,8 +67,8 @@ jobs:
                   raise SystemExit(f"Tecnologías desconocidas: {unknown}")
               techs = sel
           else:
-              # "recolectar_en": "servidor" = sitios que bloquean las IPs de GitHub
-              # (react.dev, docs.anaconda.com): se recolectan desde el servidor (cron mensual)
+              # "recolectar_en": "congelada" = sin recolección automática (anaconda: el sitio
+              # bloquea los runners de GitHub y no publica su fuente); se conserva lo ya publicado
               techs = [t for t in techs if cfg[t].get("recolectar_en", "actions") == "actions"]
           monthly = os.environ["EVENT"] == "schedule" and os.environ.get("SCHEDULE") == "0 1 1 * *"
           discover = monthly or os.environ.get("INPUT_DISCOVER") == "true"
@@ -116,6 +116,7 @@ jobs:
 
       - name: Recolectar
         env:
+          GH_TOKEN: ${{ github.token }}
           TECH: ${{ matrix.tech }}
           DISCOVER: ${{ needs.plan.outputs.discover }}
           MAX_AGE: ${{ needs.plan.outputs.max_age }}
@@ -179,3 +180,11 @@ jobs:
             sleep 15
           done
           exit 1
+
+  datos:
+    # Reconstruye el índice y publica el paquete del MCP local (Release "datos")
+    needs: publicar
+    if: always() && needs.publicar.result == 'success'
+    permissions:
+      contents: write
+    uses: ./.github/workflows/datos.yml

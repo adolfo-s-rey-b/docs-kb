@@ -20,3 +20,6 @@ sources/*/versions/
 
 # Estado local del servidor (el historial público es el de git)
 changelog/
+
+# Paquete del MCP local generado por .github/scripts/empaquetar.py
+dist/

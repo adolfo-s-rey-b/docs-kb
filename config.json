@@ -261,17 +261,16 @@
     },
     "react": {
       "display_name": "React",
+      "source_type": "github",
+      "repo": "reactjs/react.dev",
+      "ref": "main",
+      "path": "src/content",
+      "include": [
+        "learn/",
+        "reference/"
+      ],
       "doc_base_url": "https://react.dev/",
-      "map_url": "https://react.dev/",
-      "exclude_patterns": [
-        "blog/",
-        "community/"
-      ],
-      "max_pages": 0,
-      "discovery": [
-        "crawl"
-      ],
-      "recolectar_en": "servidor"
+      "license": "CC-BY-4.0"
     },
     "n8n": {
       "display_name": "n8n",
@@ -295,7 +294,7 @@
       "discovery": [
         "crawl"
       ],
-      "recolectar_en": "servidor"
+      "recolectar_en": "congelada"
     },
     "jupyterlab": {
       "display_name": "JupyterLab",

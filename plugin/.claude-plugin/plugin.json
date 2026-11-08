@@ -1,0 +1,22 @@
+{
+  "name": "docs-kb",
+  "displayName": "docs-kb: documentación técnica",
+  "description": "Documentación oficial de 25 tecnologías (Python, pandas, numpy, matplotlib, scikit-learn, PyTorch, TensorFlow, R/tidyverse, React, MDN, n8n...) con búsqueda semántica en español, como servidor MCP local. Los datos se descargan y actualizan desde GitHub; no requiere ningún servidor.",
+  "author": {
+    "name": "Adolfo S. Rey B.",
+    "url": "https://github.com/adolfo-s-rey-b"
+  },
+  "homepage": "https://github.com/adolfo-s-rey-b/docs-kb",
+  "repository": "https://github.com/adolfo-s-rey-b/docs-kb",
+  "license": "MIT",
+  "keywords": ["documentation", "mcp", "semantic-search", "python", "pandas", "r", "tidyverse", "pytorch", "tensorflow", "react", "mdn"],
+  "mcpServers": {
+    "docs-kb": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/docs_kb_local.py", "serve"],
+      "env": {
+        "DOCS_KB_HOME": "${CLAUDE_PLUGIN_DATA}"
+      }
+    }
+  }
+}

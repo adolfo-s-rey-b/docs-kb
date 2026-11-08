@@ -50,6 +50,8 @@ EMBED_MODEL = os.environ.get(
     "DOCS_KB_EMBED_MODEL", "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 )
 EMBED_SNIPPET_CHARS = 300  # body text appended to each heading before embedding
+# FAISS index type: "flat" (exact, float32) or "sq8" (8-bit quantized, ~4x smaller)
+FAISS_INDEX_TYPE = os.environ.get("DOCS_KB_FAISS_INDEX", "flat").lower()
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 # Log to file always; to stdout only when interactive (cron redirects stdout to
@@ -201,6 +203,9 @@ def clean_heading(text: str) -> str:
     "Merge[#](https://...)"                      -> "Merge"
     "[`str_detect()`](https://...)"              -> "`str_detect()`"
     """
+    text = re.sub(r"\{/\*.*?\*/\}", "", text)            # MDX anchors: "Reference {/*reference*/}"
+    if re.fullmatch(r"\s*<[^>]+>\s*", text):              # bare JSX/HTML component: "<InlineToc />"
+        return ""
     text = re.sub(r"\[\s*[#¶]?\s*\]\([^)]*\)", "", text)
     text = _MD_LINK_RE.sub(r"\1", text)
     text = re.sub(r"\\([\\`*_{}\[\]()#+\-.!=>|])", r"\1", text)  # markdown escapes: left\_on -> left_on
@@ -236,7 +241,20 @@ def build_section_index_for_file(markdown_path: Path) -> list:
 
     in_code = False
     last_text = None  # (line_no, text) of the last non-blank, non-heading text line
+    skip_until = 0
+    # YAML frontmatter (markdown taken from GitHub repos): its title is the page heading
+    if lines and lines[0].strip() == "---":
+        for j in range(1, min(len(lines), 60)):
+            if lines[j].strip() == "---":
+                skip_until = j + 1
+                fm = "\n".join(lines[1:j])
+                m = re.search(r"^title:\s*['\"]?(.+?)['\"]?\s*$", fm, re.M)
+                if m:
+                    add(1, m.group(1), 1)
+                break
     for i, line in enumerate(lines, start=1):
+        if i <= skip_until:
+            continue
         stripped = line.strip()
         if stripped.startswith(("```", "~~~")):
             in_code = not in_code
@@ -346,7 +364,7 @@ def _load_embed_cache(np):
         if npz.exists():
             d = np.load(npz, allow_pickle=False)
             if str(d["model"]) == EMBED_MODEL and len(d["keys"]) == len(d["vecs"]):
-                return [str(k) for k in d["keys"]], d["vecs"]
+                return [str(k) for k in d["keys"]], d["vecs"].astype("float32")
         else:  # legacy format (2026-11-07): .npy + keys .json
             meta = json.loads((INDEX_DIR / "embeddings-cache-keys.json").read_text(encoding="utf-8"))
             vecs = np.load(INDEX_DIR / "embeddings-cache.npy")
@@ -358,9 +376,11 @@ def _load_embed_cache(np):
 
 
 def _save_embed_cache(np, keys: list, vecs):
-    """Atomic: a single .npz written to a temp file and renamed."""
+    """Atomic: a single .npz written to a temp file and renamed. Vectors are
+    stored as float16 (half the size; it is also published as a GitHub Release
+    asset so CI rebuilds are incremental)."""
     tmp = INDEX_DIR / "embeddings-cache.tmp.npz"
-    np.savez(tmp, model=np.array(EMBED_MODEL), keys=np.array(keys), vecs=vecs)
+    np.savez(tmp, model=np.array(EMBED_MODEL), keys=np.array(keys), vecs=vecs.astype("float16"))
     tmp.replace(INDEX_DIR / "embeddings-cache.npz")
 
 
@@ -459,9 +479,15 @@ def build_embedding_index(section_index: dict):
     try:
         embeddings_array = _embed_with_cache(texts, np, faiss, TextEmbedding)
 
-        # Build IndexFlatL2 (exact search, fast for <50k vectors)
         dimension = embeddings_array.shape[1]
-        index = faiss.IndexFlatL2(dimension)
+        if FAISS_INDEX_TYPE == "sq8":
+            # 8-bit scalar quantization: ~4x smaller (63 MB vs 250 MB for 163k
+            # vectors), same L2 search API, negligible ranking loss. Used for
+            # the downloadable local index.
+            index = faiss.IndexScalarQuantizer(dimension, faiss.ScalarQuantizer.QT_8bit, faiss.METRIC_L2)
+            index.train(embeddings_array)
+        else:
+            index = faiss.IndexFlatL2(dimension)  # exact search
         index.add(embeddings_array)
 
         faiss_path = INDEX_DIR / "embeddings.faiss"
@@ -477,6 +503,7 @@ def build_embedding_index(section_index: dict):
                 "model": EMBED_MODEL,
                 "dimension": int(dimension),
                 "normalized": True,
+                "index_type": FAISS_INDEX_TYPE,
                 "vectors": int(index.ntotal),
                 "built": datetime.now(timezone.utc).isoformat(),
             }, f, indent=2)
@@ -637,6 +664,103 @@ def compress_technology(tech_key: str, force: bool = False):
         time.sleep(1.0)  # Rate limiting for Gemini API
 
     log.info(f"  {tech_key} compression: {compressed} compressed, {existing} existing, {skipped} skipped")
+
+
+# ---------------------------------------------------------------------------
+# GitHub repository source (official docs published as markdown in a repo)
+# ---------------------------------------------------------------------------
+#
+# For sites whose content is the markdown of a public repository and that are
+# hard to scrape from CI (react.dev blocks GitHub runner IPs), e.g.:
+#   "react": {"source_type": "github", "repo": "reactjs/react.dev", "ref": "main",
+#             "path": "src/content", "include": ["learn/", "reference/"],
+#             "doc_base_url": "https://react.dev/"}
+# Files are listed with one git-tree API call; only files whose git blob sha
+# changed are downloaded (raw.githubusercontent.com). Slug and URL mirror the
+# site: src/content/learn/foo.md -> slug "learn-foo", https://react.dev/learn/foo
+
+def _github_api(url: str):
+    headers = {**HTTP_HEADERS, "Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    resp = requests.get(url, headers=headers, timeout=60)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def collect_github_technology(tech_key: str, tech_conf: dict, dry_run: bool = False) -> dict:
+    repo, ref = tech_conf["repo"], tech_conf.get("ref", "main")
+    root = tech_conf.get("path", "").strip("/")
+    include = tech_conf.get("include", [])
+    exclude = tech_conf.get("exclude_patterns", [])
+    base_url = tech_conf["doc_base_url"].rstrip("/") + "/"
+    stats = {"new": 0, "updated": 0, "unchanged": 0, "failed": 0, "removed": 0, "skipped": 0}
+
+    tree = _github_api(f"https://api.github.com/repos/{repo}/git/trees/{ref}?recursive=1")
+    files = []
+    for item in tree.get("tree", []):
+        path = item.get("path", "")
+        if item.get("type") != "blob" or not path.endswith((".md", ".mdx")):
+            continue
+        if root and not path.startswith(root + "/"):
+            continue
+        rel = path[len(root) + 1:] if root else path
+        if include and not any(rel.startswith(i) for i in include):
+            continue
+        if any(x in rel for x in exclude):
+            continue
+        files.append((rel, path, item["sha"]))
+    log.info(f"  {tech_key}: {len(files)} markdown files in {repo}/{root}")
+    if dry_run:
+        stats["skipped"] = len(files)
+        return stats
+
+    md_dir = SOURCES_DIR / tech_key / "markdown"
+    md_dir.mkdir(parents=True, exist_ok=True)
+    manifest = load_manifest(tech_key)
+    current = set()
+    for rel, path, sha in files:
+        page = re.sub(r"\.mdx?$", "", rel)
+        page = re.sub(r"(^|/)index$", "", page)
+        url = base_url + page
+        slug = url_to_slug(url, base_url)
+        current.add(slug)
+        old_hash = manifest["pages"].get(slug, {}).get("last_hash")
+        now = datetime.now(timezone.utc).isoformat()
+        if old_hash == sha and (md_dir / f"{slug}.md").exists():
+            stats["unchanged"] += 1
+            manifest["pages"][slug]["last_fetched"] = now
+            continue
+        try:
+            resp = requests.get(f"https://raw.githubusercontent.com/{repo}/{ref}/{path}",
+                                headers=HTTP_HEADERS, timeout=60)
+            resp.raise_for_status()
+        except Exception as e:
+            log.error(f"  Download failed for {path}: {e}")
+            stats["failed"] += 1
+            continue
+        content = resp.text
+        m = re.search(r"^title:\s*['\"]?(.+?)['\"]?\s*$", content[:500], re.M)
+        (md_dir / f"{slug}.md").write_text(content, encoding="utf-8")
+        manifest["pages"][slug] = {"url": url, "last_hash": sha, "last_fetched": now,
+                                   "title": m.group(1) if m else slug, "source": f"github:{repo}/{path}"}
+        manifest["last_updated"] = now
+        log_change(tech=tech_key, slug=slug, old_hash=old_hash, new_hash=sha)
+        stats["new" if old_hash is None else "updated"] += 1
+
+    # Remove pages that no longer exist upstream (or came from the old scraping source)
+    if current:
+        for slug in [s for s in manifest["pages"] if s not in current]:
+            manifest["pages"].pop(slug, None)
+            (md_dir / f"{slug}.md").unlink(missing_ok=True)
+            stats["removed"] += 1
+        for p in md_dir.glob("*.md"):
+            if p.stem not in current:
+                p.unlink()
+                stats["removed"] += 1
+    save_manifest(tech_key, manifest)
+    return stats
 
 
 # ---------------------------------------------------------------------------
@@ -977,9 +1101,12 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
                        discover: bool = False, compress: bool = False,
                        max_age_days: float | None = None, dry_run: bool = False) -> dict:
     """Collect/update documentation for a single web technology."""
-    # Route to local collection if source_type is "local"
-    if tech_conf.get("source_type") == "local":
-        stats = collect_local_technology(tech_key, tech_conf)
+    # Route to local / GitHub-repository collection by source_type
+    if tech_conf.get("source_type") in ("local", "github"):
+        if tech_conf["source_type"] == "local":
+            stats = collect_local_technology(tech_key, tech_conf)
+        else:
+            stats = collect_github_technology(tech_key, tech_conf, dry_run=dry_run)
         if compress:
             compress_technology(tech_key)
         return stats
@@ -1230,7 +1357,7 @@ def check_for_updates(config: dict):
     needs_update = []
 
     for tech_key, tech_conf in config["technologies"].items():
-        if tech_conf.get("source_type") == "local":
+        if tech_conf.get("source_type") in ("local", "github"):
             continue
 
         manifest = load_manifest(tech_key)

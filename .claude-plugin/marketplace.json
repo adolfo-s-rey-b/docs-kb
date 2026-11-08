@@ -1,0 +1,17 @@
+{
+  "name": "docs-kb",
+  "owner": {
+    "name": "Adolfo S. Rey B.",
+    "url": "https://github.com/adolfo-s-rey-b"
+  },
+  "description": "Marketplace de docs-kb: documentación técnica oficial de 25 tecnologías como servidor MCP local con búsqueda semántica en español, actualizada semanalmente desde GitHub.",
+  "plugins": [
+    {
+      "name": "docs-kb",
+      "source": "./plugin",
+      "description": "Documentación oficial de 25 tecnologías (Python, pandas, numpy, scikit-learn, PyTorch, TensorFlow, R/tidyverse, React, MDN, n8n...) con búsqueda semántica en español, como MCP local. Sin servidor: datos e índice desde GitHub Releases.",
+      "category": "documentation",
+      "tags": ["documentation", "mcp", "semantic-search", "spanish"]
+    }
+  ]
+}

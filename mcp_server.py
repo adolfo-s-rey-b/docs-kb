@@ -14,6 +14,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
@@ -32,7 +33,10 @@ INDEX_DIR = BASE_DIR / "index"
 CHANGELOG_DIR = BASE_DIR / "changelog"
 CONFIG_PATH = BASE_DIR / "config.json"
 
-FIRECRAWL_URL = os.environ.get("FIRECRAWL_URL", "http://localhost:3002")
+# Firecrawl is optional: the self-hosted server sets FIRECRAWL_URL; the local
+# install (plugin / docs_kb_local.py) doesn't, and docs_fetch_live then fetches
+# the page directly and converts the HTML to markdown (no JavaScript rendering).
+FIRECRAWL_URL = os.environ.get("FIRECRAWL_URL", "")
 # Public repository = single source of truth; previous versions live in its git history
 REPO_URL = os.environ.get("DOCS_KB_REPO_URL", "https://github.com/adolfo-s-rey-b/docs-kb")
 
@@ -130,12 +134,12 @@ def _load_faiss_index() -> None:
             _faiss_encoder = TextEmbedding(model_name=model)
         _faiss_index, _faiss_meta = index, meta
         _faiss_state.update(mtime=mtime, model=model, normalized=bool(info.get("normalized")))
-        print(f"[docs-kb] FAISS loaded: {index.ntotal} vectors, model {model}", flush=True)
+        print(f"[docs-kb] FAISS loaded: {index.ntotal} vectors, model {model}", file=sys.stderr, flush=True)
     except Exception as exc:
         _faiss_index = None
         _faiss_meta = []
         _faiss_encoder = None
-        print(f"[docs-kb] FAISS not loaded: {exc}", flush=True)
+        print(f"[docs-kb] FAISS not loaded: {exc}", file=sys.stderr, flush=True)
 
 
 def _reload_faiss_if_changed() -> None:
@@ -660,30 +664,63 @@ def docs_changelog(
     return "\n".join(output)
 
 
+def _fetch_as_markdown(url: str) -> str:
+    """Direct download + HTML-to-markdown (html2text if installed, else plain text)."""
+    resp = requests.get(url, timeout=30, headers={
+        "User-Agent": f"docs-kb/1.0 (+{REPO_URL})",
+        "Accept": "text/html,text/markdown,text/plain;q=0.9,*/*;q=0.5",
+    })
+    resp.raise_for_status()
+    ctype = resp.headers.get("content-type", "")
+    text = resp.text
+    if "html" not in ctype and not text.lstrip().lower().startswith(("<!doctype", "<html")):
+        return text
+    try:
+        import html2text
+        conv = html2text.HTML2Text(baseurl=url)
+        conv.body_width = 0
+        conv.ignore_images = True
+        # keep only <main>/<article> when present, to drop navigation
+        m = re.search(r"<(main|article)\b.*?</\1>", text, re.S | re.I)
+        return conv.handle(m.group(0) if m else text)
+    except ImportError:
+        text = re.sub(r"(?is)<(script|style|nav|header|footer)\b.*?</\1>", " ", text)
+        text = re.sub(r"(?s)<[^>]+>", " ", text)
+        return re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n\n", text)).strip()
+
+
 @mcp_app.tool()
 def docs_fetch_live(
     url: str,
     query: str = "",
 ) -> str:
-    """Fetch documentation from a URL in real-time via Firecrawl.
+    """Fetch documentation from a URL in real-time (Firecrawl if configured,
+    otherwise a direct download converted to markdown).
 
     Args:
         url: The documentation URL to fetch
         query: Optional search term to extract only the relevant section
     """
-    try:
-        resp = requests.post(
-            f"{FIRECRAWL_URL}/v1/scrape",
-            json={"url": url, "formats": ["markdown"], "onlyMainContent": True},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        markdown = data.get("data", {}).get("markdown", "")
-        if not markdown:
-            return f"No content extracted from {url}"
-    except Exception as e:
-        return f"Firecrawl fetch failed: {e}"
+    if not url.lower().startswith(("http://", "https://")):
+        return "Only http(s) URLs are supported."
+    if FIRECRAWL_URL:
+        try:
+            resp = requests.post(
+                f"{FIRECRAWL_URL}/v1/scrape",
+                json={"url": url, "formats": ["markdown"], "onlyMainContent": True},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            markdown = resp.json().get("data", {}).get("markdown", "")
+        except Exception as e:
+            return f"Firecrawl fetch failed: {e}"
+    else:
+        try:
+            markdown = _fetch_as_markdown(url)
+        except Exception as e:
+            return f"Fetch failed: {e}"
+    if not markdown:
+        return f"No content extracted from {url}"
 
     if query:
         query_terms = query.lower().split()
