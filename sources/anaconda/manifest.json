@@ -5,9 +5,159 @@
       "last_hash": "73b8e8b80bc097f73904b82aa7bc02edb13f7f12d16c885f2cdbe8f19df58a44",
       "last_fetched": "2026-11-08T05:31:29.608197+00:00",
       "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-getting-started-main": {
+      "url": "https://docs.anaconda.com/docs/getting-started/main",
+      "last_hash": "4e0b44914599abc79f8fb31d7d5e713621645885507486b58f1083e9bce78655",
+      "last_fetched": "2026-11-08T18:11:45.613985+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-getting-started-installation": {
+      "url": "https://docs.anaconda.com/docs/getting-started/installation",
+      "last_hash": "d946ae261bcde45ab6b3352fc79a7330e20cafcc3e4b6f5d0fd1dd122f3080ce",
+      "last_fetched": "2026-11-08T18:11:48.416458+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-getting-started-guides": {
+      "url": "https://docs.anaconda.com/docs/getting-started/guides",
+      "last_hash": "7022f86ec7c4d6c9ad35c2f4082ec7eb61134ec6a5d7d2286de41e63eb8f6d8d",
+      "last_fetched": "2026-11-08T18:11:51.477767+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-org-key-features": {
+      "url": "https://docs.anaconda.com/docs/anaconda-org/key-features",
+      "last_hash": "77afedd4b69ced367a4da0ab7953eb2c39dd58fa3bd5d12a79fdc828c0ef63ae",
+      "last_fetched": "2026-11-08T18:11:54.355870+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-org-getting-started": {
+      "url": "https://docs.anaconda.com/docs/anaconda-org/getting-started",
+      "last_hash": "bce1754ce3d579e0827286ba6773cf843e15fe10ef39968501c361eebb58cef7",
+      "last_fetched": "2026-11-08T18:11:57.197782+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-org-searching": {
+      "url": "https://docs.anaconda.com/docs/anaconda-org/searching",
+      "last_hash": "34ab1f893218a47f460685657fd8cbaa8a15252bfcda4f6641dbc2bbb456bc51",
+      "last_fetched": "2026-11-08T18:11:59.857667+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-org-installing-packages": {
+      "url": "https://docs.anaconda.com/docs/anaconda-org/installing-packages",
+      "last_hash": "1378fca18275be8d9cd8c3d42fc5404c08b4b21a8bd1dec5e27a8e27b03ccc77",
+      "last_fetched": "2026-11-08T18:12:02.684273+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-legacy-anaconda-navigator-main": {
+      "url": "https://docs.anaconda.com/docs/legacy/anaconda-navigator/main",
+      "last_hash": "363bd2a2cdcb46149c601936384b5ad81b6124bc782719ce2c5c901101c385e4",
+      "last_fetched": "2026-11-08T18:12:05.328972+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-legacy-anaconda-navigator-getting-started": {
+      "url": "https://docs.anaconda.com/docs/legacy/anaconda-navigator/getting-started",
+      "last_hash": "97d7470621c1c9bfb8ff676ba8e376abec773fc4409dfd5ab0178e62d05498e5",
+      "last_fetched": "2026-11-08T18:12:07.944927+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-legacy-anaconda-navigator-install": {
+      "url": "https://docs.anaconda.com/docs/legacy/anaconda-navigator/install",
+      "last_hash": "54e0abb3bd05e3435ac8331393f3a2c6d96a57f5684464ff73f707f5c73cec2a",
+      "last_fetched": "2026-11-08T18:12:10.651324+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-legacy-anaconda-navigator-tutorials-main": {
+      "url": "https://docs.anaconda.com/docs/legacy/anaconda-navigator/tutorials/main",
+      "last_hash": "6d924be851f3d82154f2c9a09e6d5aaf073697cc5701deeb866a22d64ddb4542",
+      "last_fetched": "2026-11-08T18:12:13.336155+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-platform-main": {
+      "url": "https://docs.anaconda.com/docs/platform/main",
+      "last_hash": "562215120ddd1b697ebb387df182a33849685076b73fc8492ad52dcacc5b993f",
+      "last_fetched": "2026-11-08T18:12:15.984506+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-platform-getting-started-connect-and-first-run": {
+      "url": "https://docs.anaconda.com/docs/platform/getting-started/connect-and-first-run",
+      "last_hash": "fdcbb8cb3b24aee9b080d1183dc94fa40e203083f7bb854f84c6aee024a43452",
+      "last_fetched": "2026-11-08T18:12:18.621128+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-platform-guides-projects-project-gallery": {
+      "url": "https://docs.anaconda.com/docs/platform/guides/projects/project-gallery",
+      "last_hash": "0d231f6542e5de9287ea33ed74ae6519d346874043d9ae4397af18aff01a5620",
+      "last_fetched": "2026-11-08T18:12:21.363722+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-platform-guides-inference-deploy-model-from-catalog": {
+      "url": "https://docs.anaconda.com/docs/platform/guides/inference/deploy-model-from-catalog",
+      "last_hash": "63419d479308d55814e68b617036f12c173a364bf5dcecdaa7386f07824d8cbf",
+      "last_fetched": "2026-11-08T18:12:24.026858+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-platform-main": {
+      "url": "https://docs.anaconda.com/docs/anaconda-platform/main",
+      "last_hash": "b4784ecf15b59957ec92d33e9cccf4c9340870c6f15095bd67367fc89c8729d6",
+      "last_fetched": "2026-11-08T18:12:26.612948+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-platform-getting-started-with-anaconda-platform": {
+      "url": "https://docs.anaconda.com/docs/anaconda-platform/getting-started-with-anaconda-platform",
+      "last_hash": "f6084e0065282d530ba4ed03b80d3bb5ebdfcc345cca142b9f22d8c1aa225c14",
+      "last_fetched": "2026-11-08T18:12:29.204841+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-platform-admin-channels": {
+      "url": "https://docs.anaconda.com/docs/anaconda-platform/admin/channels",
+      "last_hash": "1895d77b5d808d76da9e161af33cd2f828634131c0b517b2376a4bdbd9166699",
+      "last_fetched": "2026-11-08T18:12:31.893503+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-anaconda-platform-admin-cve": {
+      "url": "https://docs.anaconda.com/docs/anaconda-platform/admin/cve",
+      "last_hash": "6e498ebe20dab3f44c0fb508dc3685cc99352403f63512b5320521f4e3bc24c7",
+      "last_fetched": "2026-11-08T18:12:34.587658+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-cli-reference-anaconda-cli-getting-started": {
+      "url": "https://docs.anaconda.com/docs/cli-reference/anaconda-cli/getting-started",
+      "last_hash": "5dcc3178c79a2c957acdaa3c56d7aa43b3f82cc385bec0d01e9de83409d5e9bd",
+      "last_fetched": "2026-11-08T18:12:37.309511+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-cli-reference-anaconda-cli-github-actions": {
+      "url": "https://docs.anaconda.com/docs/cli-reference/anaconda-cli/github-actions",
+      "last_hash": "b72f651a3f05c42d9295b83e87a86786fe0c8768a4c4aae8fd17af8c4b5cfabc",
+      "last_fetched": "2026-11-08T18:12:39.985664+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-cli-reference-anaconda-mcp-getting-started": {
+      "url": "https://docs.anaconda.com/docs/cli-reference/anaconda-mcp/getting-started",
+      "last_hash": "cb56bd1b9d594b3d430dddcd3fe6523e432b0116c5e65aa5a4c9dc815c8a04b6",
+      "last_fetched": "2026-11-08T18:12:42.696273+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-reference-glossary": {
+      "url": "https://docs.anaconda.com/docs/reference/glossary",
+      "last_hash": "278cfa56118f8e74b07cdffb639fdb2c8d6d6a1828bde0ef6bfc4ce2ccadd107",
+      "last_fetched": "2026-11-08T18:12:45.399848+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-reference-troubleshooting": {
+      "url": "https://docs.anaconda.com/docs/reference/troubleshooting",
+      "last_hash": "d60c24957017fc81ab15528b08dc7ff84f9515b9c09d8fde8f3164747a9b1b15",
+      "last_fetched": "2026-11-08T18:12:48.000668+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    },
+    "docs-reference-help-support": {
+      "url": "https://docs.anaconda.com/docs/reference/help-support",
+      "last_hash": "000cb15f60805ed152bfc1322232e39290905125de9456349b27c12d2ad60bb7",
+      "last_fetched": "2026-11-08T18:12:51.435512+00:00",
+      "title": "Anaconda Documentation - Anaconda"
     }
   },
   "detected_version": null,
-  "last_updated": "2026-11-08T05:31:29.608197+00:00",
+  "last_updated": "2026-11-08T18:12:51.435512+00:00",
   "version_history": []
 }
