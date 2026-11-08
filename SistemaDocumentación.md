@@ -1,6 +1,6 @@
 # Sistema de Documentacion docs-kb
 
-**Ultima actualizacion:** 2026-11-07
+**Ultima actualizacion:** 2026-11-08
 
 > Repositorio publico y fuente unica de verdad: [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). El servidor (`~/server-stack/docs-kb/`) es un clon que publica cada actualizacion de la documentacion. docs-kb contiene **solo documentacion tecnica publica**: ningun contenido personal.
 
@@ -22,17 +22,24 @@ Repositorio local de documentacion tecnica para Claude Code. Protege la ventana 
 ```text
 [Documentacion tecnica publica de 25 tecnologias]
          |
-         v Firecrawl (+ Playwright para JS)
+         v Firecrawl + Playwright (efimeros, uno por job)
     +-----------------------------------------------------------------------------------+
-    |                         collector.py (venv Python)                                |
+    |  GitHub Actions: .github/workflows/actualizar-docs.yml (domingos; dia 1 + discover)|
+    |  - 1 job por tecnologia: collector.py --tech T --max-age-days 28 --no-index       |
     |  - Descubre paginas: map -> objects.inv -> sitemap -> crawl BFS                   |
-    |  - Recolecta/indexa documentacion; publica sources/ en GitHub (publicar.sh)       |
-    |  - Construye section-index.json + embeddings.faiss (multilingue)                  |
-    |  - Detecta cambios de version -> snapshot a versions/                             |
-    |  - Comprime paginas largas con Gemini Flash -> summaries/                         |
+    |  - Job final: un commit "docs: actualizacion automatica" (docs-kb-bot) en main    |
     +-----------------------------------------------------------------------------------+
                  |
-                 v sources/{tech}/markdown/  index/  changelog/
+                 v github.com/adolfo-s-rey-b/docs-kb  (fuente unica de verdad: sources/)
+                 |
+                 v git pull cada hora (sincronizar.sh, cron del servidor)
+    +-----------------------------------------------------------------------------------+
+    |  Servidor (~/server-stack/docs-kb = clon del repo)                                |
+    |  - collector.py --index-only: section-index.json + embeddings.faiss (multilingue, |
+    |    cache incremental con checkpoints; reanudable tras un reinicio)                |
+    +-----------------------------------------------------------------------------------+
+                 |
+                 v index/
     +-----------------------------------------------------------------------------------+
     |                 mcp_server.py (Docker container :8765)                            |
     |  Transporte: streamable-http                                                      |
@@ -70,9 +77,12 @@ docs-kb/
 +-- collector.py               # Recolector (web, FAISS, compression)
 +-- error_hook.py              # PostToolUse hook para errores
 +-- config.json                # 25 tecnologias configuradas
-+-- actualizar.sh              # Cron: collector.py <args> + publicar.sh
-+-- publicar.sh                # pull --rebase, commit de sources/ + config.json, push
-+-- recoleccion_completa.sh    # Recoleccion completa en 3 grupos paralelos + indice al final
++-- .github/workflows/actualizar-docs.yml  # Recoleccion semanal en GitHub Actions (mecanismo principal)
++-- .github/firecrawl/docker-compose.yml   # Firecrawl + Playwright efimeros para los jobs
++-- sincronizar.sh             # Servidor (cron cada hora): git pull + reindexado reanudable
++-- actualizar.sh              # Alternativa manual en el servidor: collector.py <args> + publicar.sh
++-- publicar.sh                # pull --rebase, commit de sources/ + config.json, push (deploy key)
++-- recoleccion_completa.sh    # Alternativa manual: recoleccion completa en el servidor, 3 grupos paralelos
 +-- requirements.txt           # mcp, requests, fastembed, faiss-cpu, scikit-learn
 +-- Dockerfile.http            # Imagen Docker para transporte HTTP (codigo montado por volumen)
 +-- .venv/                     # Python 3.12 venv (FastMCP + FAISS + fastembed)
@@ -82,7 +92,6 @@ docs-kb/
 |       +-- markdown/          # Archivos .md entregados por el MCP
 |       +-- html/              # Cache HTML para deteccion de cambios
 |       +-- summaries/         # Resumenes LLM (Gemini Flash) para paginas largas
-|       +-- versions/          # Snapshots por version (e.g. versions/2.1.0/)
 |       +-- manifest.json      # Estado: paginas, version, version_history
 |
 +-- index/
@@ -136,7 +145,7 @@ Fuente y licencia de cada una: `ATTRIBUTION.md`.
 | `docs_changelog` | Cambios recientes | `technology?`, `days?` |
 | `docs_fetch_live` | Fetch real-time via Firecrawl | `url`, `query?` |
 | `docs_status` | Estado global de la KB (incluye modelo de embeddings) | - |
-| `docs_version_history` | Snapshots de versiones | `technology` |
+| `docs_version_history` | Version actual, cambios registrados y enlace al historial de git | `technology` |
 | `docs_generate_context` | Cheatsheet/migration/summary | `technologies`, `context_type?` |
 
 ### Busqueda en 3 Fases
@@ -170,7 +179,7 @@ Vectores cacheados por `sha1(texto)` en `index/embeddings-cache.npy`: al reindex
 
 ## 6. Collector (collector.py)
 
-**Interprete requerido:** `.venv/bin/python3` (para FAISS). El cron usa el venv.
+**Donde corre:** la recoleccion semanal corre en GitHub Actions (seccion 10); en el servidor el collector solo reindexa (`--index-only`, via `sincronizar.sh`). Para FAISS usar `.venv/bin/python3`; en Actions basta `requests` (con `--no-index` no se cargan fastembed ni FAISS). `--time-budget-min N` detiene la descarga de forma ordenada antes del limite de 6 h de cada job.
 
 ### CLI completo
 
@@ -194,7 +203,7 @@ Vectores cacheados por `sha1(texto)` en `index/embeddings-cache.npy`: al reindex
 .venv/bin/python3 collector.py --check                 # Verifica versiones (ligero)
 ```
 
-Recolecciones largas: `setsid nohup ./recoleccion_completa.sh > logs/recoleccion-FECHA.out 2>&1 &` (3 grupos de tecnologias en paralelo, sitios distintos por grupo, `--discover --max-age-days 7 --no-index`, y un solo `--index-only` al final; usa el lock `/tmp/docs-kb-collector.lock`). El manifest se guarda cada 50 paginas, asi que una corrida interrumpida retoma sin repetir trabajo si se usa `--max-age-days`.
+Recolecciones largas desde el servidor (alternativa manual a GitHub Actions): `setsid nohup ./recoleccion_completa.sh > logs/recoleccion-FECHA.out 2>&1 &` (3 grupos de tecnologias en paralelo, sitios distintos por grupo, `--discover --max-age-days 7 --no-index`, y un solo `--index-only` al final; usa el lock `/tmp/docs-kb-collector.lock`). El manifest se guarda cada 50 paginas, asi que una corrida interrumpida retoma sin repetir trabajo si se usa `--max-age-days`.
 
 ### Descubrimiento de paginas
 
@@ -217,7 +226,7 @@ Opciones por tecnologia en `config.json`: `discovery` (orden), `inventory_url`, 
 
 ### Fuentes locales (soportadas, ninguna configurada)
 
-Cualquier fuente local que se agregue queda publicada en el repo por `publicar.sh`: no usar para contenido personal.
+Cualquier fuente local que se agregue queda publicada en el repo publico: no usar para contenido personal.
 
 ```json
 {
@@ -231,13 +240,13 @@ Cualquier fuente local que se agregue queda publicada en el repo por `publicar.s
 
 Change detection via SHA-256 del contenido (sin Firecrawl). Slugs truncados a 120 chars. Los archivos eliminados o renombrados en la fuente se podan del indice (solo si el escaneo encontro archivos, para no vaciar el indice si la ruta falla). Si `local_path` no existe, el log muestra `Local path not found` y no se toca nada.
 
-### Version Snapshots
+### Versiones
 
-Cuando se detecta cambio de version:
+La version de cada tecnologia es la mas frecuente entre las paginas descargadas en la corrida (titulo/URL de cada pagina, con umbral: al menos 3 paginas y mayoria). Un cambio se registra en `manifest.json["version_history"]` y el contenido anterior queda en el **historial de git** del repo (`docs_version_history` enlaza a `commits/main/sources/<tech>`). Ya no se hacen copias en `versions/`: la deteccion pagina por pagina generaba snapshots espurios (~3 GB, 105 en matplotlib, por paginas tipo "What's new in 0.40"). `docs_search(version=...)` solo funciona con snapshots locales antiguos, si existieran.
 
-1. Copia `sources/{tech}/markdown/` a `sources/{tech}/versions/{old_version}/`
-2. Registra en `manifest.json["version_history"]`
-3. Accesible via `docs_search(version="2.1.0")` o `docs_version_history(tech)`
+### Indice de secciones
+
+Ademas de `# Titulo`, reconoce los formatos que produce Firecrawl: titulos con ancla permalink (`Titulo[#](url "Link to this heading")`, `Usage[](url#ref-usage)` de pkgdown), subrayados setext (`=====` / `-----`, aunque haya una linea en blanco en medio) y definiciones de API de Sphinx (`firma[#](url "Link to this definition")`). Ignora bloques de codigo. Con solo `# Titulo` quedaban sin secciones la mayoria de paginas de API (numpy: 63 de 2.520); con los tres formatos se indexan ~94 % de las paginas.
 
 ### Compresion LLM (Gemini Flash)
 
@@ -318,20 +327,32 @@ claude mcp add --transport http --scope user docs-kb \
 
 ---
 
-## 10. Cron
+## 10. Actualizacion automatica (GitHub Actions) y cron del servidor
 
-**Instalado el 2026-11-07** (refresco semanal escalonado + descubrimiento mensual, con lock compartido con `recoleccion_completa.sh`):
+**Recoleccion: GitHub Actions** (`.github/workflows/actualizar-docs.yml`), sin depender del servidor:
+
+- `schedule`: domingos 03:00 UTC (re-descarga paginas con mas de 28 dias; las nuevas siempre) y dia 1 de cada mes 01:00 UTC (ademas `--discover` para encontrar paginas nuevas).
+- `workflow_dispatch` manual con entradas `tecnologias` (lista separada por comas), `descubrir`, `max_age_days` y `publicar` (`gh workflow run actualizar-docs.yml -f tecnologias=pandas -f publicar=false`).
+- Un job por tecnologia (hasta 10 en paralelo), cada uno con su Firecrawl + Playwright (`.github/firecrawl/docker-compose.yml`, mismas imagenes que el servidor: el Markdown es identico byte a byte). Postgres debe usar base/usuario `postgres` (lo exige `pg_cron`).
+- Job `publicar`: junta los artefactos y hace un unico commit `docs: actualizacion automatica FECHA (N archivos)` como `docs-kb-bot`.
+- Carga inicial completa: run 42448781365 (2026-11-08, ~2 h 40 min; el job mas largo fue tensorflow, 4.474 paginas), commit `218313e` con 23.931 archivos.
+
+**Excepcion: react y anaconda** (`"recolectar_en": "servidor"` en `config.json`). react.dev y docs.anaconda.com bloquean las IPs de GitHub Actions (en el run 42502728904: 286 scrapes de React con error 500 y el crawl de Anaconda con 1 sola pagina), mientras que desde el servidor se descargan bien (184 y 26 paginas). El workflow las omite salvo que se pidan explicitamente, y el servidor las recolecta una vez al mes y las publica con su deploy key (ver cron abajo). Si el servidor esta caido ese dia, esperan al mes siguiente; las otras 23 tecnologias no dependen de el.
+
+**Servidor: solo sincroniza** (cron instalado el 2026-11-08):
 
 ```text
-0 3 * * 0 cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -n /tmp/docs-kb-collector.lock ./actualizar.sh --all --max-age-days 28
-0 1 1 * * cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -n /tmp/docs-kb-collector.lock ./actualizar.sh --all --discover --max-age-days 28
+17 * * * * cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -n /tmp/docs-kb-collector.lock ./sincronizar.sh >> logs/sincronizar.log 2>&1
+43 4 2 * * cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -w 7200 /tmp/docs-kb-collector.lock ./actualizar.sh --tech react,anaconda --discover --max-age-days 28 --no-index
 ```
 
-`actualizar.sh` corre `collector.py` con esos argumentos (log en `logs/collector.log`) y luego `publicar.sh` (log en `logs/publicar.log`), que sube los cambios a GitHub.
+La segunda linea (dia 2 de cada mes, 04:43 UTC) es la recoleccion mensual de react y anaconda desde el servidor; `--no-index` porque la siguiente corrida de `sincronizar.sh` reindexa.
 
-Cada domingo se re-scrapean solo las paginas con mas de 28 dias (las nuevas siempre); el dia 1 de cada mes ademas se re-descubren paginas nuevas. Si otra recoleccion tiene el lock, la corrida del cron se salta. La entrada anterior (`collector.py --all` semanal, sin lock) re-scrapeaba todo (~16 h con cobertura completa). El MCP server recarga el indice en caliente; no hace falta reiniciar el container. Backup del crontab anterior: `~/backups/crontab-2026-11-07.txt`.
+`sincronizar.sh` hace `git pull --ff-only`; si cambio `mcp_server.py` reinicia el container; si cambio algo que afecta al indice (`sources/`, `config.json`, `collector.py`) corre `collector.py --index-only`. El commit indexado se guarda en `index/indexed-commit` solo al terminar, y la cache de embeddings se guarda cada 20.000 secciones: si el servidor se reinicia a mitad, la siguiente hora retoma el reindexado sin repetir trabajo. El MCP recarga indice y secciones en caliente.
 
-El servidor estuvo apagado entre 2026-08-15 y 2026-11-04, por eso no hubo corridas en ese periodo.
+`actualizar.sh`, `publicar.sh` y `recoleccion_completa.sh` quedan como alternativa manual para recolectar desde el servidor (por ejemplo si una tecnologia falla en Actions); no correrlos a la vez que el workflow. Backups del crontab: `~/backups/crontab-2026-11-07.txt`.
+
+**Disponibilidad del servidor:** estuvo apagado entre 2026-08-15 y 2026-11-04; el 2026-11-08 tuvo dos caidas abruptas (02:10 y 07:20 UTC, sin secuencia de apagado en el journal: corte de energia o cuelgue). La documentacion del repo no depende de el; el MCP si.
 
 ---
 
@@ -339,9 +360,9 @@ El servidor estuvo apagado entre 2026-08-15 y 2026-11-04, por eso no hubo corrid
 
 - Repo publico: `github.com/adolfo-s-rey-b/docs-kb`. La documentacion se lee directamente en `sources/<tecnologia>/markdown/*.md`; `sources/<tecnologia>/manifest.json` tiene la URL original, titulo y fecha de cada pagina.
 - Servidor: `~/server-stack/docs-kb` es un clon. Remoto `git@github-docs-kb:adolfo-s-rey-b/docs-kb.git`; alias SSH `github-docs-kb` -> deploy key `~/.ssh/docs-kb-deploy` (escritura solo en este repo). Autor de commits: noreply de GitHub.
-- `publicar.sh`: `git pull --rebase --autostash`, `git add -A sources config.json`, commit `docs: actualizacion automatica FECHA (N archivos)`, push. Lo llaman `actualizar.sh` (cron) y `recoleccion_completa.sh`.
-- No se versionan (`.gitignore`): `.env`, `.venv/`, `index/` (se reconstruye con `--index-only`), `logs/`, `sources/*/html/` (cache para detectar cambios), `changelog/` (estado local; el historial publico es el de git).
-- Cambios de codigo o documentacion se hacen en un clon (por ejemplo en el cliente), se hace push y el servidor los recibe en el siguiente `publicar.sh` (o `git pull` manual + `docker restart mcp_docs_kb_http_core` si cambia `mcp_server.py`).
+- Quien escribe en `sources/`: el workflow de GitHub Actions (`docs-kb-bot`). El servidor solo lee (`sincronizar.sh`); `publicar.sh` existe para recolecciones manuales desde el servidor.
+- No se versionan (`.gitignore`): `.env`, `.venv/`, `index/` (se reconstruye con `--index-only`), `logs/`, `sources/*/html/` (cache para detectar cambios), `sources/*/versions/` (obsoleto), `changelog/` (estado local; el historial publico es el de git).
+- Cambios de codigo o documentacion se hacen en un clon (por ejemplo en el cliente) y se hace push; el servidor los recibe en la siguiente corrida de `sincronizar.sh` (cada hora), que reinicia el container si cambia `mcp_server.py`.
 
 ---
 

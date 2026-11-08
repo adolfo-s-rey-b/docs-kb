@@ -270,7 +270,8 @@
       "max_pages": 0,
       "discovery": [
         "crawl"
-      ]
+      ],
+      "recolectar_en": "servidor"
     },
     "n8n": {
       "display_name": "n8n",
@@ -293,7 +294,8 @@
       "max_pages": 0,
       "discovery": [
         "crawl"
-      ]
+      ],
+      "recolectar_en": "servidor"
     },
     "jupyterlab": {
       "display_name": "JupyterLab",

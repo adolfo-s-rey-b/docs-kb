@@ -45,8 +45,8 @@ Los derechos de cada documentación pertenecen a sus autores. Las licencias est�
 ## Cómo se mantiene
 
 - **Recolección:** `collector.py` encuentra todas las páginas de cada sitio. Prueba, en orden: el sitemap vía Firecrawl, el inventario Sphinx `objects.inv`, el `sitemap.xml` y, como último recurso, un rastreo de enlaces con Playwright. Luego las convierte a Markdown con [Firecrawl](https://github.com/firecrawl/firecrawl).
-- **Actualización:** cada domingo se vuelven a descargar las páginas con más de 28 días. El día 1 de cada mes se buscan además páginas nuevas. Los cambios se publican aquí como commits `docs: actualización automática …`.
-- **Índice:** el servidor construye un índice de secciones y embeddings FAISS con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`. El índice no se versiona; se regenera con `collector.py --index-only`.
+- **Actualización:** la hace [GitHub Actions](.github/workflows/actualizar-docs.yml), sin depender de ningún servidor. Cada domingo se vuelven a descargar las páginas con más de 28 días, y el día 1 de cada mes se buscan además páginas nuevas. Cada tecnología corre en su propio job con un Firecrawl temporal. Los cambios se publican aquí en un único commit `docs: actualización automática …` de `docs-kb-bot`.
+- **Índice:** el servidor del MCP trae los cambios cada hora (`sincronizar.sh`) y construye un índice de secciones y embeddings FAISS con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`. El índice no se versiona; se regenera con `collector.py --index-only`.
 
 Arquitectura completa, operación del servidor y guía de modificación: [SistemaDocumentación.md](SistemaDocumentación.md). Pruebas: [ChequeoSD.md](ChequeoSD.md) (servidor), `chequeo_remoto.sh` (cliente) y [ConclusionesSD.md](ConclusionesSD.md) (últimos resultados).
 

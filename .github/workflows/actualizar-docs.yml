@@ -58,13 +58,18 @@ jobs:
         run: |
           python3 - >> "$GITHUB_OUTPUT" <<'EOF'
           import json, os
-          techs = list(json.load(open("config.json"))["technologies"])
+          cfg = json.load(open("config.json"))["technologies"]
+          techs = list(cfg)
           sel = [t.strip() for t in os.environ.get("INPUT_TECHS", "").split(",") if t.strip()]
           if sel:
               unknown = [t for t in sel if t not in techs]
               if unknown:
                   raise SystemExit(f"Tecnologías desconocidas: {unknown}")
               techs = sel
+          else:
+              # "recolectar_en": "servidor" = sitios que bloquean las IPs de GitHub
+              # (react.dev, docs.anaconda.com): se recolectan desde el servidor (cron mensual)
+              techs = [t for t in techs if cfg[t].get("recolectar_en", "actions") == "actions"]
           monthly = os.environ["EVENT"] == "schedule" and os.environ.get("SCHEDULE") == "0 1 1 * *"
           discover = monthly or os.environ.get("INPUT_DISCOVER") == "true"
           age = float(os.environ.get("INPUT_AGE") or "28")  # valida que sea numérico

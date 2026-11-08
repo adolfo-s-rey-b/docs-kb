@@ -1,6 +1,6 @@
 # Chequeo del Sistema docs-kb
 
-**Fecha de actualizacion:** 2026-11-07
+**Fecha de actualizacion:** 2026-11-08
 
 Pruebas para verificar el correcto funcionamiento del sistema docs-kb despues de cualquier modificacion, reinicio de servicios, o como healthcheck periodico. **Se ejecutan en el servidor** (`ssh server`). Desde el cliente, las 12 pruebas remotas se corren con `./chequeo_remoto.sh` (ver GuiaMCP.md).
 
@@ -537,33 +537,43 @@ cd ~/server-stack/docs-kb && .venv/bin/python3 collector.py --tech pandas --disc
 
 ---
 
-## 12. Publicacion en GitHub (fuente unica de verdad)
+## 12. GitHub (fuente unica de verdad), Actions y sincronizacion
 
-`~/server-stack/docs-kb` es un clon de [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). `actualizar.sh` (cron) corre el collector y luego `publicar.sh`, que hace `pull --rebase`, commit de `sources/` + `config.json` y push con la deploy key `~/.ssh/docs-kb-deploy` (alias SSH `github-docs-kb`, escritura solo en ese repo).
+La documentacion se recolecta en GitHub Actions (`.github/workflows/actualizar-docs.yml`) y se publica en [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). `~/server-stack/docs-kb` es un clon que solo sincroniza (`sincronizar.sh`, cron cada hora). Para recolecciones manuales desde el servidor, `publicar.sh` hace push con la deploy key `~/.ssh/docs-kb-deploy` (alias SSH `github-docs-kb`, escritura solo en ese repo).
 
-### 12.1 Deploy key y remoto
+### 12.1 Ultimas corridas del workflow (desde el cliente, con `gh`)
+
+```bash
+gh run list --repo adolfo-s-rey-b/docs-kb --workflow actualizar-docs.yml --limit 5
+gh api 'repos/adolfo-s-rey-b/docs-kb/commits?per_page=3' --jq '.[] | "\(.sha[0:7]) \(.commit.author.name) \(.commit.message | split("\n")[0])"'
+```
+
+**Esperado:** corridas `completed success` los domingos (y el dia 1 de cada mes); commits `docs: actualizacion automatica ...` de `docs-kb-bot`. Si una tecnologia falla: `gh run view <id> --log-failed` y relanzar solo esa con `gh workflow run actualizar-docs.yml -f tecnologias=<tech> -f descubrir=true`.
+
+### 12.2 Sincronizacion del servidor
+
+```bash
+cd ~/server-stack/docs-kb && tail -5 logs/sincronizar.log
+git status -sb | head -1; cat index/indexed-commit; git rev-parse HEAD
+crontab -l | grep sincronizar
+```
+
+**Esperado:** `sin cambios` o `indice reconstruido`; `main...origin/main` sin cambios locales ni archivos sin versionar en `sources/`; `indexed-commit` igual a `HEAD`; una linea de cron `17 * * * * ... ./sincronizar.sh`. Si aparece `ERROR: git pull --ff-only fallo`, hay cambios locales: revisarlos con `git status` (el servidor no debe modificar archivos versionados).
+
+### 12.3 Deploy key (solo para recolecciones manuales desde el servidor)
 
 ```bash
 ssh -T github-docs-kb 2>&1 | head -1
-cd ~/server-stack/docs-kb && git remote -v | head -1 && git status -sb | head -1
 ```
 
-**Esperado:** `Hi adolfo-s-rey-b/docs-kb! You've successfully authenticated...`; remoto `git@github-docs-kb:adolfo-s-rey-b/docs-kb.git`; rama `main...origin/main` sin commits pendientes.
+**Esperado:** `Hi adolfo-s-rey-b/docs-kb! You've successfully authenticated...`.
 
-### 12.2 Ultima publicacion
-
-```bash
-tail -3 ~/server-stack/docs-kb/logs/publicar.log
-git -C ~/server-stack/docs-kb log --oneline -3
-```
-
-**Esperado:** `publicado: N archivos` o `sin cambios que publicar` despues de cada corrida del cron.
-
-### 12.3 Nada personal en el repo
+### 12.4 Nada personal ni secretos en el repo
 
 ```bash
 cd ~/server-stack/docs-kb && git ls-files | grep -iE "obsidian|docker-stack|\.env$|settings.local" ; echo "coincidencias: $?"
-git grep -nE "Bearer [0-9a-f]{20,}|192\.168\." ; echo "coincidencias: $?"
+TOK=$(grep -oP 'expected_key\s+"Bearer \K[0-9a-f]+' ~/server-stack/nginx/conf.d/mcp-docs-proxy.conf)
+git grep -qF "$TOK" ; echo "token en el repo: $? (1 = no)"
 ```
 
-**Esperado:** ambos `coincidencias: 1` (grep no encontro nada).
+**Esperado:** `coincidencias: 1` y `token en el repo: 1`. (No buscar IPs privadas: la documentacion de n8n, RStudio, etc. trae IPs de ejemplo.)
