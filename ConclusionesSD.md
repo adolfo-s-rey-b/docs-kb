@@ -12,7 +12,8 @@
 | --- | --- | --- |
 | 2026-04-27 | 8 PASS / 1 FAIL / 2 PARCIAL / 1 ERROR | Operativo con bug en `docs_list_technologies`, Firecrawl caído, búsqueda en español irrelevante, 12/28 tecnologías |
 | 2026-11-07 (antes de cambios) | 9 PASS / 3 WARN / 0 FAIL | Bug y Firecrawl corregidos; seguían 12/28 tecnologías, búsqueda en español irrelevante, Obsidian congelado desde abril |
-| 2026-11-07 (después de cambios) | **12 PASS / 0 WARN / 0 FAIL** | Búsqueda en español funcional, solo documentación técnica; recolección completa de las 25 tecnologías en curso |
+| 2026-11-07 (después de cambios) | 12 PASS / 0 WARN / 0 FAIL | Búsqueda en español funcional, solo documentación técnica; recolección completa de las 25 tecnologías en curso |
+| **2026-11-08 (final)** | **12 PASS / 0 WARN / 0 FAIL** | **25/25 tecnologías recolectadas, 24.115 páginas, 163.003 vectores**; GitHub Actions recolecta y el servidor solo sincroniza |
 
 
 ---
@@ -68,8 +69,11 @@
 | 2026-11-08 06:25 / 07:20 / 14:25 | El servidor arranca, vuelve a caerse a las 07:20 y arranca de nuevo a las 14:25 |
 | 2026-11-08 07:35 | Actions publica el commit `218313e` (`docs-kb-bot`, 23.931 archivos). El job más largo fue tensorflow (2 h 38 min) |
 | 2026-11-08 17:00 | El servidor descarta su copia local, sincroniza con el repo y reindexa con el parser de secciones corregido |
+| 2026-11-08 18:12 | El servidor publica react (184 páginas) y anaconda (26) con su deploy key (commit `8b4b62a`) |
+| 2026-11-08 18:17 | Reindexado incremental: 160.905 embeddings reutilizados de la caché y solo 250 nuevos. Índice al día: 163.003 vectores |
+| 2026-11-08 18:52 | `./chequeo_remoto.sh`: 12/12 PASS |
 
-**Documentación publicada** (repo `sources/`, 23.906 páginas de Markdown en 23 tecnologías, ~290 MB):
+**Documentación publicada** (repo `sources/`, **24.115 páginas** de Markdown en 25 tecnologías, ~290 MB):
 
 | Tecnología | Páginas | MB | Descubrimiento |
 | --- | --- | --- | --- |
@@ -96,10 +100,10 @@
 | jupyterlab | 55 | 2 | inventory |
 | stringr | 48 | 1 | map |
 | r | 12 | 6 | crawl |
-| react | (en curso) | | crawl, desde el servidor |
-| anaconda | (en curso) | | crawl, desde el servidor |
+| react | 184 | 0,7 | crawl, desde el servidor |
+| anaconda | 26 | 0,2 | crawl, desde el servidor |
 
-Total de las 23 tecnologías publicadas por Actions: **23,905 páginas**.
+Total: 23.905 páginas de las 23 tecnologías recolectadas por GitHub Actions, más 210 de react y anaconda desde el servidor = **24.115 páginas**.
 
 **React y Anaconda** se recolectan desde el servidor porque react.dev y docs.anaconda.com bloquean las IPs de GitHub Actions. En Actions dieron 286 scrapes de React con error 500 y un crawl de Anaconda con 1 sola página; desde el servidor se habían descargado 184 y 26. Quedan marcadas con `"recolectar_en": "servidor"` y se recolectan una vez al mes (cron del día 2).
 
@@ -114,8 +118,6 @@ Total de las 23 tecnologías publicadas por Actions: **23,905 páginas**.
 
 ## 5. Pendientes
 
-1. Repetir `./chequeo_remoto.sh` cuando termine el reindexado (~18:00 UTC del 2026-11-08) y anotar el resultado.
-2. Completar las filas de react y anaconda cuando el servidor publique su recolección.
-3. **Estabilidad del servidor:** se cayó tres veces en cuatro meses (ago–nov, y dos veces el 2026-11-08) sin apagado ordenado. Hay que revisar la alimentación eléctrica (¿UPS?) y el hardware. Además, `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo (es un servicio personal, ajeno a docs-kb).
-4. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*` en las pruebas end-to-end.
-5. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
+1. **Estabilidad del servidor:** se cayó tres veces en cuatro meses (ago–nov, y dos veces el 2026-11-08) sin apagado ordenado. Hay que revisar la alimentación eléctrica (¿UPS?) y el hardware. Además, `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo (es un servicio personal, ajeno a docs-kb).
+2. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*` en las pruebas end-to-end.
+3. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
