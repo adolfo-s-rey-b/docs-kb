@@ -1,0 +1,481 @@
+{
+  "pages": {
+    "commands-activate": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/activate.html",
+      "last_hash": "0aad3635c20b515625c8f6b3403ffcc61e45dca4af4618b24687015872ec1db8",
+      "last_fetched": "2026-11-08T20:18:24.909982+00:00",
+      "title": "conda activate — conda 26.10.0 documentation"
+    },
+    "commands-clean": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/clean.html",
+      "last_hash": "5b1b2d0eef0a88db5806a9a31b2fdfd9a63e5d31ab804cf4886db3d3df233919",
+      "last_fetched": "2026-11-08T20:18:26.065024+00:00",
+      "title": "conda clean — conda 26.10.0 documentation"
+    },
+    "commands-commands": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/commands.html",
+      "last_hash": "4bcedec80e85e06bd252d115a9ad8a3b0df73a194ca9b472bfa249cb94395727",
+      "last_fetched": "2026-11-08T20:18:27.235639+00:00",
+      "title": "conda commands — conda 26.10.0 documentation"
+    },
+    "commands-compare": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/compare.html",
+      "last_hash": "c9a54d03a8f798000b1ddfcd8c31d5ee53f0da7f61cbf01bc543f513880eaf38",
+      "last_fetched": "2026-11-08T20:18:28.537732+00:00",
+      "title": "conda compare — conda 26.10.0 documentation"
+    },
+    "commands-config": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/config.html",
+      "last_hash": "a5c5a81e3ef4296bc695e3ceaad366e2fb6ba34f92e48d8c06d2ac7782269fb5",
+      "last_fetched": "2026-11-08T20:18:29.726830+00:00",
+      "title": "conda config — conda 26.10.0 documentation"
+    },
+    "commands-create": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/create.html",
+      "last_hash": "9bce700efa797a4fa7266d38b4c38ebefb1d968edcb035108b498ebea8d9362b",
+      "last_fetched": "2026-11-08T20:18:30.900710+00:00",
+      "title": "conda create — conda 26.10.0 documentation"
+    },
+    "commands-deactivate": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/deactivate.html",
+      "last_hash": "47f2b3a7cef5f139a8fa0f974708f42a0e8caebe0cfdfcf641a2e4fd001f01e0",
+      "last_fetched": "2026-11-08T20:18:32.266263+00:00",
+      "title": "conda deactivate — conda 26.10.0 documentation"
+    },
+    "commands-doctor": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/doctor.html",
+      "last_hash": "5da8e19d0a57460ca21ec45574987790babd907f233d2792af2dc10d86556b04",
+      "last_fetched": "2026-11-08T20:18:33.550552+00:00",
+      "title": "conda doctor — conda 26.10.0 documentation"
+    },
+    "commands-env-config-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/config/index.html",
+      "last_hash": "fd3ce72f686e4652886afd72edeada6abda893d51ec4c170c53753fcf198ad45",
+      "last_fetched": "2026-11-08T20:18:34.834094+00:00",
+      "title": "conda env config — conda 26.10.0 documentation"
+    },
+    "commands-env-config-vars-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/index.html",
+      "last_hash": "5cc0e7902e3a60f661a3dfa2b1ee4021fe9038685857f1a0ba43f04d3d28fe8d",
+      "last_fetched": "2026-11-08T20:18:35.929896+00:00",
+      "title": "conda env config vars — conda 26.10.0 documentation"
+    },
+    "commands-env-config-vars-list": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/list.html",
+      "last_hash": "007aba929f9c22e585062342e89d0a3a9c52cc80a35818af3630415d49363c0d",
+      "last_fetched": "2026-11-08T20:18:37.272077+00:00",
+      "title": "conda env config vars list — conda 26.10.0 documentation"
+    },
+    "commands-env-config-vars-set": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/set.html",
+      "last_hash": "02e94fa1febefb46a38c6a78bff03bb1afa194dd171e4883c7c0e860b9da8ac6",
+      "last_fetched": "2026-11-08T20:18:38.527194+00:00",
+      "title": "conda env config vars set — conda 26.10.0 documentation"
+    },
+    "commands-env-config-vars-unset": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/config/vars/unset.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-create": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/create.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-export": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/export.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-list": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/list.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-remove": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/remove.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-env-update": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/env/update.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-export": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/export.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-info": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/info.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-init": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/init.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-install": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/install.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-list": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/list.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-notices": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/notices.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-package": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/package.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-remove": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/remove.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-rename": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/rename.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-repoquery-depends": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/depends.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-repoquery-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-repoquery-whoneeds": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/whoneeds.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-run": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/run.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "commands-update": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/commands/update.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "configuration": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/configuration.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "glossary": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/glossary.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "new-features": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/new-features.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-cheatsheet": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-channels": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-conda-commands": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-commands.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-conda-performance": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-performance.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-conda-plugins": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-plugins.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-data-science": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/data-science.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-environments": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/environments.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-installing-with-conda": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/installing-with-conda.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-packages": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-pkg-specs": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/pkg-specs.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-concepts-solvers": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/solvers.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-admin-multi-user-install": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/admin-multi-user-install.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-custom-env-and-pkg-locations": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/custom-env-and-pkg-locations.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-disable-ssl-verification": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/disable-ssl-verification.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-mirroring": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/mirroring.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-non-standard-certs": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/non-standard-certs.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-pip-interoperability": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/pip-interoperability.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-settings": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/settings.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-temp-files": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/temp-files.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-configuration-use-condarc": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-getting-started": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-install-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-install-linux": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-install-macos": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/macos.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-install-windows": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-authenticated-channels": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/authenticated-channels.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-create-custom-channels": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/create-custom-channels.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-creating-projects": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/creating-projects.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-index": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/index.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-install-packages-from-pypi": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/install-packages-from-pypi.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-channels": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-conda": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-conda.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-environments": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-pkgs": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-pkgs.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-python": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-python.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-manage-virtual": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-virtual.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-tasks-view-command-line-help": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/view-command-line-help.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "user-guide-troubleshooting": {
+      "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/troubleshooting.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    }
+  },
+  "detected_version": "26.10.0",
+  "last_updated": "2026-11-08T20:18:38.527194+00:00",
+  "version_history": []
+}
