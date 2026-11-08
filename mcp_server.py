@@ -200,15 +200,11 @@ _TRANSPORT_SECURITY = TransportSecuritySettings(
         "127.0.0.1:*",
         "localhost:*",
         "[::1]:*",
-        "mcp_docs_kb_http_core",      # Docker container name without port (nginx proxy)
-        "mcp_docs_kb_http_core:*",    # Docker container name with any port
-        "mcp-documentacion.adolfo-s-rey-b.com",  # Public subdomain (via cloudflare)
     ],
     allowed_origins=[
         "http://127.0.0.1:*",
         "http://localhost:*",
         "http://[::1]:*",
-        "https://mcp-documentacion.adolfo-s-rey-b.com",
     ],
 )
 

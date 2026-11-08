@@ -2,7 +2,7 @@
 
 **Última actualización:** 2026-11-08
 
-docs-kb es un servidor MCP con la documentación oficial de 25 tecnologías: Python, pandas, numpy, matplotlib, seaborn, scikit-learn, JupyterLab, PyTorch, TensorFlow, Keras, Anaconda, R, tidyverse (dplyr, tidyr, purrr, stringr, lubridate, ggplot2), RStudio, MDN (CSS, HTML, JavaScript), React y n8n. Son unas 24.000 páginas con búsqueda semántica multilingüe.
+docs-kb es un servidor MCP con la documentación oficial de 25 tecnologías: Python, pandas, numpy, matplotlib, seaborn, scikit-learn, JupyterLab, PyTorch, TensorFlow, Keras, conda, R, tidyverse (dplyr, tidyr, purrr, stringr, lubridate, ggplot2), RStudio, MDN (CSS, HTML, JavaScript), React y n8n. Son unas 24.000 páginas con búsqueda semántica multilingüe.
 
 **Corre en tu equipo** y depende únicamente de GitHub:
 
@@ -104,7 +104,7 @@ El paquete se publica cada domingo, tras la recolección semanal, y también cad
 python3 docs_kb_local.py check     # o: python3 "$CLAUDE_PLUGIN_ROOT/docs_kb_local.py" check
 ```
 
-Corre las mismas 12 pruebas que antes se hacían contra el servidor remoto: tools, estado del índice, búsqueda keyword y semántica en español, TOC y sección, summary, cheatsheet, historial de versiones, changelog y fetch en vivo. El código de salida es 0 si todas pasan.
+Corre 12 pruebas: tools, estado del índice, búsqueda keyword y semántica en español, TOC y sección, summary, cheatsheet, historial de versiones, changelog y fetch en vivo. El código de salida es 0 si todas pasan.
 
 ---
 
@@ -117,13 +117,3 @@ Corre las mismas 12 pruebas que antes se hacían contra el servidor remoto: tool
 | `la descarga no coincide con el sha256 publicado` | El Release se estaba actualizando justo en ese momento. Reintenta en unos minutos |
 | `docs_fetch_live` devuelve poco contenido | La página necesita JavaScript. Usa una URL de la documentación estática o configura `DOCS_KB_FIRECRAWL_URL` |
 | Quiero empezar de cero | `python3 docs_kb_local.py uninstall --yes`, o desinstalar el plugin (borra `${CLAUDE_PLUGIN_DATA}`), y volver a instalar |
-
----
-
-## Anexo: endpoint remoto (legado)
-
-Hasta noviembre de 2026 docs-kb también se servía desde un servidor propio, en `https://mcp-documentacion.adolfo-s-rey-b.com/mcp`, con Bearer token. Ese servidor va a desconectarse; el MCP local lo reemplaza por completo. Mientras siga activo:
-
-- Se registra con `claude mcp add --transport http --scope user docs-kb <url> --header "Authorization: Bearer $DOCS_KB_TOKEN"`. El token vive solo en `.env`.
-- Las 12 pruebas remotas se corren con `./chequeo_remoto.sh`.
-- Los curl manuales exigen `Accept: application/json, text/event-stream` y un `initialize` previo; si no, la respuesta es 406/400. Los códigos de error son: 401 sin token, 403 token incorrecto, 000 servidor o túnel caído.

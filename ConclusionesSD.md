@@ -137,11 +137,27 @@ Problemas encontrados y corregidos en el camino:
 
 ---
 
-## 6. Pendientes
+## 6. Retiro del servidor y cambio a conda (2026-11-08)
 
-1. **Retirar el servidor propio** cuando Adolfo lo decida. Pasos:
-   - Quitar el registro remoto con `claude mcp remove docs-kb -s user`; el plugin ya registra su propio `docs-kb`.
-   - En el servidor, apagar `mcp_docs_kb_http_core`, `firecrawl_*` (si nada más los usa) y el bloque `mcp-docs-proxy.conf` de nginx, y quitar la regla `mcp-documentacion` del túnel. Avisar antes a la sesión de Obsidian, que comparte nginx y el túnel.
-   - Quitar el cron de `sincronizar.sh` y revocar la deploy key del repo (`gh repo deploy-key list`).
-2. **Anaconda** está congelada. Alternativa: reemplazarla por la documentación de conda ([docs.conda.io](https://docs.conda.io), sitio Sphinx con `objects.inv`), que cubre gestión de entornos y paquetes y sí se puede recolectar desde GitHub Actions.
-3. Primera corrida programada del workflow: domingo 2026-11-15 a las 03:00 UTC. Verificar que publique y que encadene `datos.yml`.
+**Servidor retirado.** Se borró del servidor todo lo de docs-kb:
+
+- el container `mcp_docs_kb_http_core`, su imagen y el volumen de fastembed;
+- `firecrawl_playwright`, que se había agregado para docs-kb;
+- `~/server-stack/docs-kb` (1,4 GB);
+- el proxy `mcp-docs-proxy.conf` de nginx y la regla `mcp-documentacion` del túnel;
+- el cron, la deploy key (también revocada en GitHub) y el alias SSH;
+- las skills `/docs-*`, el hook `error_hook.py`, la entrada de `.mcp.json`, los permisos y la memoria de docs-kb;
+- la documentación del stack, las cachés y los respaldos de docs-kb.
+
+Se mantuvo Firecrawl, que también usan flujos de n8n, junto con nginx y el resto del stack. El cambio se coordinó con la sesión de Obsidian, que comparte nginx y el túnel.
+
+**En el cliente**, se quitó el registro del MCP remoto (`claude mcp remove docs-kb -s user`) y se borró `.env`, porque el token ya no sirve. También salieron del repo los archivos que solo servían al servidor: `sincronizar.sh`, `actualizar.sh`, `publicar.sh`, `recoleccion_completa.sh`, `Dockerfile.http`, `requirements.txt`, `error_hook.py`, `chequeo_remoto.sh`, `ChequeoSD.md` y `.env.example`. Por último, `mcp_server.py` ya no acepta el dominio viejo.
+
+**Anaconda → conda.** docs.anaconda.com bloquea los runners de GitHub y no publica su fuente. Se reemplazó por la documentación de conda (docs.conda.io, Sphinx). Su `objects.inv` descubre 80 páginas: guía de usuario y comandos.
+
+---
+
+## 7. Pendientes
+
+1. El registro DNS `mcp-documentacion.adolfo-s-rey-b.com` sigue existiendo en Cloudflare. El túnel ya responde 404 para ese nombre. Se puede borrar desde el panel de Cloudflare (DNS), porque `cloudflared` no borra registros.
+2. Verificar la primera corrida programada del workflow, el domingo 2026-11-15 a las 03:00 UTC: debe publicar y encadenar `datos.yml`.

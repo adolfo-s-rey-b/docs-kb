@@ -58,7 +58,7 @@ Cada tecnología está en `sources/<tecnología>/markdown/`, con un archivo `.md
 | PyTorch | [sources/pytorch](sources/pytorch/markdown) | https://docs.pytorch.org/docs/stable/ |
 | TensorFlow | [sources/tensorflow](sources/tensorflow/markdown) | https://www.tensorflow.org/ |
 | Keras | [sources/keras](sources/keras/markdown) | https://keras.io/ |
-| Anaconda | [sources/anaconda](sources/anaconda/markdown) | https://docs.anaconda.com/ |
+| conda | [sources/conda](sources/conda/markdown) | https://docs.conda.io/projects/conda/en/stable/ |
 | R (manuales) | [sources/r](sources/r/markdown) | https://cran.r-project.org/doc/manuals/ |
 | tidyverse | [sources/tidyverse](sources/tidyverse/markdown) | https://www.tidyverse.org/ |
 | dplyr | [sources/dplyr](sources/dplyr/markdown) | https://dplyr.tidyverse.org/ |
@@ -83,8 +83,6 @@ Todo corre en GitHub, sin servidores propios:
 1. **Recolección** ([`actualizar-docs.yml`](.github/workflows/actualizar-docs.yml)): cada domingo se vuelven a descargar las páginas con más de 28 días, y el día 1 de cada mes se buscan además páginas nuevas. Cada tecnología corre en su propio job con un [Firecrawl](https://github.com/firecrawl/firecrawl) temporal. `collector.py` descubre las páginas probando, en orden: el sitemap, el inventario Sphinx `objects.inv`, el `sitemap.xml` y un rastreo de enlaces con Playwright. React se toma del Markdown de su repositorio oficial ([reactjs/react.dev](https://github.com/reactjs/react.dev)). Los cambios se publican en un único commit `docs: actualización automática …` de `docs-kb-bot`.
 2. **Índice y paquete** ([`datos.yml`](.github/workflows/datos.yml)): después de cada recolección se reconstruye el índice de secciones y los embeddings FAISS, con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`, cuantizado a 8 bits. Es incremental: solo se calculan las secciones nuevas o modificadas. El paquete del MCP local se publica en el Release [`datos`](https://github.com/adolfo-s-rey-b/docs-kb/releases/tag/datos).
 3. **MCP local** ([`plugin/`](plugin)): el plugin descarga ese paquete, verifica su sha256 y lo actualiza solo.
-
-Anaconda está **congelada**: su sitio bloquea los runners de GitHub y no publica su fuente, así que se conserva la última copia sin actualizarla.
 
 Arquitectura completa y guía de modificación: [SistemaDocumentación.md](SistemaDocumentación.md). Pruebas: `python3 plugin/docs_kb_local.py check` (MCP local) y [ConclusionesSD.md](ConclusionesSD.md) (últimos resultados).
 

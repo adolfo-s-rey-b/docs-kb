@@ -282,20 +282,6 @@
       ],
       "max_pages": 0
     },
-    "anaconda": {
-      "display_name": "Anaconda",
-      "doc_base_url": "https://docs.anaconda.com/",
-      "map_url": "https://docs.anaconda.com/",
-      "exclude_patterns": [
-        "release-notes",
-        "eula"
-      ],
-      "max_pages": 0,
-      "discovery": [
-        "crawl"
-      ],
-      "recolectar_en": "congelada"
-    },
     "jupyterlab": {
       "display_name": "JupyterLab",
       "doc_base_url": "https://jupyterlab.readthedocs.io/en/stable/",
@@ -303,6 +289,23 @@
       "exclude_patterns": [
         "changelog",
         "developer/"
+      ],
+      "max_pages": 0
+    },
+    "conda": {
+      "display_name": "conda",
+      "doc_base_url": "https://docs.conda.io/projects/conda/en/stable/",
+      "map_url": "https://docs.conda.io/projects/conda/en/stable/",
+      "discovery": [
+        "inventory"
+      ],
+      "exclude_patterns": [
+        "release-notes",
+        "changelog",
+        "dev-guide",
+        "genindex",
+        "search",
+        "py-modindex"
       ],
       "max_pages": 0
     }

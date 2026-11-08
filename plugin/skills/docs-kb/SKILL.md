@@ -1,6 +1,6 @@
 ---
 name: docs-kb
-description: Consultar la documentación oficial de Python, pandas, numpy, matplotlib, seaborn, scikit-learn, JupyterLab, PyTorch, TensorFlow, Keras, Anaconda, R y sus manuales, tidyverse (dplyr, tidyr, purrr, stringr, lubridate, ggplot2), RStudio, CSS, HTML, JavaScript (MDN), React y n8n con el MCP docs-kb. Úsala cuando el usuario pregunte cómo se usa una función, parámetro, clase o concepto de esas tecnologías, o cuando haya un error de alguna de ellas, antes de responder de memoria.
+description: Consultar la documentación oficial de Python, pandas, numpy, matplotlib, seaborn, scikit-learn, JupyterLab, PyTorch, TensorFlow, Keras, conda, R y sus manuales, tidyverse (dplyr, tidyr, purrr, stringr, lubridate, ggplot2), RStudio, CSS, HTML, JavaScript (MDN), React y n8n con el MCP docs-kb. Úsala cuando el usuario pregunte cómo se usa una función, parámetro, clase o concepto de esas tecnologías, o cuando haya un error de alguna de ellas, antes de responder de memoria.
 ---
 
 # Documentación técnica con docs-kb

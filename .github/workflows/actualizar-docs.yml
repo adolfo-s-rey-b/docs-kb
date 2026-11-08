@@ -67,8 +67,7 @@ jobs:
                   raise SystemExit(f"Tecnologías desconocidas: {unknown}")
               techs = sel
           else:
-              # "recolectar_en": "congelada" = sin recolección automática (anaconda: el sitio
-              # bloquea los runners de GitHub y no publica su fuente); se conserva lo ya publicado
+              # "recolectar_en": "congelada" = se conserva lo publicado pero no se recolecta
               techs = [t for t in techs if cfg[t].get("recolectar_en", "actions") == "actions"]
           monthly = os.environ["EVENT"] == "schedule" and os.environ.get("SCHEDULE") == "0 1 1 * *"
           discover = monthly or os.environ.get("INPUT_DISCOVER") == "true"

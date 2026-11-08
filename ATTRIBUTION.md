@@ -20,11 +20,11 @@ El código de este repositorio está bajo licencia MIT ([LICENSE](LICENSE)); eso
 | lubridate | https://lubridate.tidyverse.org/ | Licencia del paquete; ver la ficha en CRAN |
 | css, html, javascript | https://developer.mozilla.org/ | Prosa CC BY-SA 2.5 (Mozilla Contributors); ejemplos de código CC0. La copia de MDN conserva la licencia CC BY-SA 2.5 |
 | react | https://react.dev/ (Markdown de [reactjs/react.dev](https://github.com/reactjs/react.dev), `src/content`) | CC BY 4.0 (Meta Platforms) |
+| conda | https://docs.conda.io/projects/conda/en/stable/ | BSD 3-Clause (conda contributors / Anaconda, Inc.) |
 | n8n | https://docs.n8n.io/ | © n8n GmbH; no se encontró una licencia explícita de la documentación |
 | rstudio | https://docs.posit.co/ide/ | © Posit Software, PBC; documentación propietaria |
-| anaconda | https://docs.anaconda.com/ | © Anaconda, Inc.; documentación propietaria. Copia congelada del 2026-11-08 (no se actualiza) |
 
-Las tres últimas filas no tienen una licencia abierta conocida. Se incluyen para consulta, por decisión del mantenedor.
+Las dos últimas filas no tienen una licencia abierta conocida. Se incluyen para consulta, por decisión del mantenedor.
 
 **Si eres titular de derechos** y quieres que se retire o se corrija algún contenido, abre un *issue* en este repositorio y se atenderá.
 
