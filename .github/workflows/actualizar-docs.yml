@@ -7,10 +7,9 @@
 name: Actualizar documentación
 
 on:
-  # HORARIO: se activa después del primer push completo de sources/ (ver SistemaDocumentación.md).
-  # schedule:
-  #   - cron: "0 3 * * 0"   # domingos 03:00 UTC: re-descarga páginas con más de 28 días
-  #   - cron: "0 1 1 * *"   # día 1 de cada mes 01:00 UTC: además re-descubre páginas nuevas
+  schedule:
+    - cron: "0 3 * * 0"   # domingos 03:00 UTC: re-descarga páginas con más de 28 días
+    - cron: "0 1 1 * *"   # día 1 de cada mes 01:00 UTC: además re-descubre páginas nuevas
   workflow_dispatch:
     inputs:
       tecnologias:

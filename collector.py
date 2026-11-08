@@ -287,57 +287,71 @@ def rebuild_tech_map(config: dict):
 # FAISS embedding index
 # ---------------------------------------------------------------------------
 
-def _embed_with_cache(texts: list, np, faiss, TextEmbedding):
-    """Embed texts, reusing vectors of unchanged texts from the previous build.
+EMBED_CACHE_CHUNK = 20000  # sections encoded between cache checkpoints
 
-    Cache = index/embeddings-cache.npy (normalized float32 rows) +
-    index/embeddings-cache-keys.json ({"model": ..., "keys": [sha1(text), ...]}).
-    Only new/changed sections are encoded, so re-indexing tens of thousands of
-    pages takes minutes instead of hours. The cache is rewritten with only the
-    current keys (stale rows are dropped).
-    """
-    cache_vec = INDEX_DIR / "embeddings-cache.npy"
-    cache_keys = INDEX_DIR / "embeddings-cache-keys.json"
-    keys = [hashlib.sha1(t.encode("utf-8")).hexdigest() for t in texts]
-    old = {}
+
+def _load_embed_cache(np):
+    """(keys, vecs) of the embedding cache for EMBED_MODEL, or ([], None)."""
+    npz = INDEX_DIR / "embeddings-cache.npz"
     try:
-        meta = json.loads(cache_keys.read_text(encoding="utf-8"))
-        if meta.get("model") == EMBED_MODEL:
-            vecs = np.load(cache_vec)
-            if len(vecs) == len(meta["keys"]):
-                old = {k: i for i, k in enumerate(meta["keys"])}
-            else:
-                vecs = None
-        else:
-            vecs = None
-    except (OSError, ValueError, KeyError):
-        vecs = None
+        if npz.exists():
+            d = np.load(npz, allow_pickle=False)
+            if str(d["model"]) == EMBED_MODEL and len(d["keys"]) == len(d["vecs"]):
+                return [str(k) for k in d["keys"]], d["vecs"]
+        else:  # legacy format (2026-11-07): .npy + keys .json
+            meta = json.loads((INDEX_DIR / "embeddings-cache-keys.json").read_text(encoding="utf-8"))
+            vecs = np.load(INDEX_DIR / "embeddings-cache.npy")
+            if meta.get("model") == EMBED_MODEL and len(vecs) == len(meta["keys"]):
+                return list(meta["keys"]), vecs
+    except (OSError, ValueError, KeyError) as e:
+        log.info(f"  Embedding cache not usable ({e}); starting empty")
+    return [], None
 
-    missing = [i for i, k in enumerate(keys) if k not in old]
-    log.info(f"  Embeddings: {len(texts) - len(missing)} reused from cache, {len(missing)} to encode")
-    dim = vecs.shape[1] if vecs is not None and len(vecs) else None
-    new_vecs = None
+
+def _save_embed_cache(np, keys: list, vecs):
+    """Atomic: a single .npz written to a temp file and renamed."""
+    tmp = INDEX_DIR / "embeddings-cache.tmp.npz"
+    np.savez(tmp, model=np.array(EMBED_MODEL), keys=np.array(keys), vecs=vecs)
+    tmp.replace(INDEX_DIR / "embeddings-cache.npz")
+
+
+def _embed_with_cache(texts: list, np, faiss, TextEmbedding):
+    """Embed texts, reusing vectors of unchanged texts from previous builds.
+
+    Cache = index/embeddings-cache.npz (model, sha1(text) keys, normalized
+    float32 vectors). Only new/changed sections are encoded, and the cache is
+    checkpointed every EMBED_CACHE_CHUNK sections, so an interrupted rebuild
+    (e.g. a server reboot) resumes where it stopped instead of starting over.
+    At the end the cache is pruned to the current keys.
+    """
+    keys = [hashlib.sha1(t.encode("utf-8")).hexdigest() for t in texts]
+    cache_keys, cache_vecs = _load_embed_cache(np)
+    pos = {k: i for i, k in enumerate(cache_keys)}
+    text_of = {}
+    for t, k in zip(texts, keys):
+        text_of.setdefault(k, t)
+    missing = [k for k in text_of if k not in pos]
+    log.info(f"  Embeddings: {len(text_of) - len(missing)} reused from cache, {len(missing)} to encode")
+
     if missing:
         encoder = TextEmbedding(model_name=EMBED_MODEL)
-        new_vecs = np.array(list(encoder.embed([texts[i] for i in missing], batch_size=64)),
-                            dtype="float32")
-        faiss.normalize_L2(new_vecs)  # unit vectors -> L2 distance in [0, 2]
-        dim = new_vecs.shape[1]
-    out = np.empty((len(texts), dim), dtype="float32")
-    pos = {i: j for j, i in enumerate(missing)}
-    for i, k in enumerate(keys):
-        out[i] = new_vecs[pos[i]] if i in pos else vecs[old[k]]
+        for start in range(0, len(missing), EMBED_CACHE_CHUNK):
+            chunk = missing[start:start + EMBED_CACHE_CHUNK]
+            v = np.array(list(encoder.embed([text_of[k] for k in chunk], batch_size=64)),
+                         dtype="float32")
+            faiss.normalize_L2(v)  # unit vectors -> L2 distance in [0, 2]
+            cache_vecs = v if cache_vecs is None else np.concatenate([cache_vecs, v])
+            for k in chunk:
+                pos[k] = len(cache_keys)
+                cache_keys.append(k)
+            _save_embed_cache(np, cache_keys, cache_vecs)
+            log.info(f"  Embeddings: {min(start + EMBED_CACHE_CHUNK, len(missing))}/{len(missing)} encoded (checkpoint saved)")
 
-    # Persist cache (unique keys only)
-    uniq = {}
-    for i, k in enumerate(keys):
-        uniq.setdefault(k, i)
-    idx = list(uniq.values())
-    tmp_vec = cache_vec.with_name("embeddings-cache.tmp.npy")
-    np.save(tmp_vec, out[idx])
-    tmp_vec.replace(cache_vec)
-    cache_keys.write_text(json.dumps({"model": EMBED_MODEL, "keys": list(uniq.keys())}),
-                          encoding="utf-8")
+    out = cache_vecs[[pos[k] for k in keys]]
+    current = list(text_of)
+    _save_embed_cache(np, current, cache_vecs[[pos[k] for k in current]])
+    for legacy in ("embeddings-cache.npy", "embeddings-cache-keys.json"):
+        (INDEX_DIR / legacy).unlink(missing_ok=True)
     return out
 
 
