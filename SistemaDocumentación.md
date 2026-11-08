@@ -352,7 +352,7 @@ La segunda linea (dia 2 de cada mes, 04:43 UTC) es la recoleccion mensual de rea
 
 `actualizar.sh`, `publicar.sh` y `recoleccion_completa.sh` quedan como alternativa manual para recolectar desde el servidor (por ejemplo si una tecnologia falla en Actions); no correrlos a la vez que el workflow. Backups del crontab: `~/backups/crontab-2026-11-07.txt`.
 
-**Disponibilidad del servidor:** estuvo apagado entre 2026-08-15 y 2026-11-04; el 2026-11-08 tuvo dos caidas abruptas (02:10 y 07:20 UTC, sin secuencia de apagado en el journal: corte de energia o cuelgue). La documentacion del repo no depende de el; el MCP si.
+**Disponibilidad del servidor:** estuvo apagado entre 2026-08-15 y 2026-11-04, y el 2026-11-08 se desconecto fisicamente dos veces (02:10 y 07:20 UTC; desconexiones intencionales, no fallas). La documentacion del repo no depende del servidor; el MCP remoto si. Todo lo del servidor se retoma solo al volver (sincronizacion cada hora, cache de embeddings con checkpoints).
 
 ---
 

@@ -64,9 +64,9 @@
 | Cuándo (UTC) | Qué pasó |
 | --- | --- |
 | 2026-11-07 18:37 | Recolección completa en el servidor (`recoleccion_completa.sh`, 3 grupos en paralelo) |
-| 2026-11-08 02:10 | Caída abrupta del servidor (sin secuencia de apagado en el journal), con ~19.600 páginas descargadas y sin publicar. Iba por PyTorch |
+| 2026-11-08 02:10 | Desconexión física del servidor (intencional), con ~19.600 páginas descargadas y sin publicar. Iba por PyTorch |
 | 2026-11-08 04:55 | Como el servidor no respondía, lancé la carga completa en GitHub Actions (run 42448781365, 25 jobs, 10 en paralelo) |
-| 2026-11-08 06:25 / 07:20 / 14:25 | El servidor arranca, vuelve a caerse a las 07:20 y arranca de nuevo a las 14:25 |
+| 2026-11-08 06:25 / 07:20 / 14:25 | El servidor arranca, se vuelve a desconectar a las 07:20 y arranca de nuevo a las 14:25 |
 | 2026-11-08 07:35 | Actions publica el commit `218313e` (`docs-kb-bot`, 23.931 archivos). El job más largo fue tensorflow (2 h 38 min) |
 | 2026-11-08 17:00 | El servidor descarta su copia local, sincroniza con el repo y reindexa con el parser de secciones corregido |
 | 2026-11-08 18:12 | El servidor publica react (184 páginas) y anaconda (26) con su deploy key (commit `8b4b62a`) |
@@ -118,6 +118,6 @@ Total: 23.905 páginas de las 23 tecnologías recolectadas por GitHub Actions, m
 
 ## 5. Pendientes
 
-1. **Estabilidad del servidor:** se cayó tres veces en cuatro meses (ago–nov, y dos veces el 2026-11-08) sin apagado ordenado. Hay que revisar la alimentación eléctrica (¿UPS?) y el hardware. Además, `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo (es un servicio personal, ajeno a docs-kb).
+1. **Disponibilidad del servidor:** las interrupciones del 2026-11-08 fueron desconexiones físicas intencionales, no fallas. Mientras el servidor está desconectado, el MCP remoto no responde, pero el repo sigue actualizándose con GitHub Actions. Aparte de docs-kb: `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo.
 2. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*` en las pruebas end-to-end.
 3. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
