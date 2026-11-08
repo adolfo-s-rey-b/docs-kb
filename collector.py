@@ -203,7 +203,19 @@ def clean_heading(text: str) -> str:
     """
     text = re.sub(r"\[\s*[#¶]?\s*\]\([^)]*\)", "", text)
     text = _MD_LINK_RE.sub(r"\1", text)
+    text = re.sub(r"\\([\\`*_{}\[\]()#+\-.!=>|])", r"\1", text)  # markdown escapes: left\_on -> left_on
     return re.sub(r"\s+", " ", text).strip().rstrip("#¶").strip()
+
+
+# Headings as Firecrawl renders them (besides ATX "# Title"):
+#   Sphinx:  'pandas.DataFrame.merge[#](https://...#pandas-dataframe-merge "Link to this heading")'
+#            followed (often after a blank line) by '=====' or '-----'
+#   pkgdown: 'Usage[](https://...#ref-usage)' + blank line + '------'
+#   Sphinx API objects: 'ndarray.setfield(...)[#](https://...#numpy.ndarray.setfield "Link to this definition")'
+_ATX_RE = re.compile(r"^(#{1,4})\s+(.+)")
+_PERMALINK_RE = re.compile(r'^(.*?)\[\s*[#¶]?\s*\]\((\S*#\S*)(?:\s+"([^"]*)")?\)\s*$')
+_UNDERLINE_RE = re.compile(r"^\s*(=+|-+)\s*$")
+_NOT_TEXT_RE = re.compile(r"^\s*([-*+>|]|\d+[.)]\s|!\[|```|~~~)")
 
 
 def build_section_index_for_file(markdown_path: Path) -> list:
@@ -212,29 +224,66 @@ def build_section_index_for_file(markdown_path: Path) -> list:
         lines = markdown_path.read_text(encoding="utf-8").split("\n")
     except Exception:
         return sections
-    current_section = None
+
+    def add(line_no: int, text: str, level: int):
+        heading = clean_heading(text)[:200]
+        if not heading:
+            return
+        if sections:
+            sections[-1]["line_end"] = line_no - 1
+        sections.append({"heading": heading, "level": level,
+                         "line_start": line_no, "line_end": len(lines)})
+
     in_code = False
+    last_text = None  # (line_no, text) of the last non-blank, non-heading text line
     for i, line in enumerate(lines, start=1):
-        if line.lstrip().startswith(("```", "~~~")):
+        stripped = line.strip()
+        if stripped.startswith(("```", "~~~")):
             in_code = not in_code
+            last_text = None
             continue
-        m = None if in_code else re.match(r"^(#{1,4})\s+(.+)", line)
+        if in_code or not stripped:
+            continue
+
+        m = _ATX_RE.match(line)
         if m:
-            heading = clean_heading(m.group(2))
-            if not heading:
-                continue
-            if current_section:
-                current_section["line_end"] = i - 1
-                sections.append(current_section)
-            current_section = {
-                "heading": heading,
-                "level": len(m.group(1)),
-                "line_start": i,
-                "line_end": len(lines),
-            }
-    if current_section:
-        current_section["line_end"] = len(lines)
-        sections.append(current_section)
+            add(i, m.group(2), len(m.group(1)))
+            last_text = None
+            continue
+
+        u = _UNDERLINE_RE.match(line)
+        if u and len(stripped) >= 3:
+            level = 1 if stripped[0] == "=" else 2
+            if sections and sections[-1].get("_pending_underline") and i - sections[-1]["line_start"] <= 2:
+                sections[-1]["level"] = level          # underline of a permalink heading
+                sections[-1].pop("_pending_underline")
+            elif last_text and i - last_text[0] <= 2 and len(last_text[1]) <= 150 \
+                    and not last_text[1].rstrip().endswith("."):
+                add(last_text[0], last_text[1], level)  # setext heading
+            last_text = None
+            continue
+
+        pm = _PERMALINK_RE.match(line)
+        if pm and not _NOT_TEXT_RE.match(line):
+            text, title = pm.group(1).strip(), (pm.group(3) or "")
+            definition = "definition" in title.lower()
+            if not text and definition and last_text:
+                text = last_text[1]                       # signature on the previous line
+            add(i, text, 3 if definition else 2)
+            if sections and not definition:
+                sections[-1]["_pending_underline"] = True
+            last_text = None
+            continue
+
+        if not _NOT_TEXT_RE.match(line):
+            last_text = (i, stripped)
+        else:
+            last_text = None
+
+    for sec in sections:
+        sec.pop("_pending_underline", None)
+    if sections:
+        sections[-1]["line_end"] = len(lines)
     return sections
 
 
