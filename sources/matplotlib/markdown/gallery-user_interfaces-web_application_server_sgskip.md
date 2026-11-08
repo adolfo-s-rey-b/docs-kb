@@ -1,0 +1,96 @@
+[Skip to main content](https://matplotlib.org/stable/gallery/user_interfaces/web_application_server_sgskip.html#main-content)
+
+Back to top Ctrl+K
+
+*   [Plot types](https://matplotlib.org/stable/plot_types/index.html)
+    
+*   [User guide](https://matplotlib.org/stable/users/index.html)
+    
+*   [Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+    
+*   [Examples](https://matplotlib.org/stable/gallery/index.html)
+    
+*   [Reference](https://matplotlib.org/stable/api/index.html)
+    
+*   [Contribute](https://matplotlib.org/stable/devel/index.html)
+    
+*   [Releases](https://matplotlib.org/stable/users/release_notes.html)
+    
+
+Choose version
+
+*   [Gitter](https://gitter.im/matplotlib/matplotlib "Gitter")
+    
+*   [Discourse](https://discourse.matplotlib.org/ "Discourse")
+    
+*   [GitHub](https://github.com/matplotlib/matplotlib "GitHub")
+    
+
+Note
+
+[Go to the end](https://matplotlib.org/stable/gallery/user_interfaces/web_application_server_sgskip.html#sphx-glr-download-gallery-user-interfaces-web-application-server-sgskip-py)
+ to download the full example code.
+
+Embed in a web application server (Flask)[#](https://matplotlib.org/stable/gallery/user_interfaces/web_application_server_sgskip.html#embed-in-a-web-application-server-flask "Link to this heading")
+
+======================================================================================================================================================================================================
+
+When using Matplotlib in a web server it is strongly recommended to not use pyplot (pyplot maintains references to the opened figures to make [`show`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show "matplotlib.pyplot.show")
+ work, but this will cause memory leaks unless the figures are properly closed).
+
+Since Matplotlib 3.1, one can directly create figures using the [`Figure`](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+ constructor and save them to in-memory buffers. In older versions, it was necessary to explicitly instantiate an Agg canvas (see e.g. [CanvasAgg demo](https://matplotlib.org/stable/gallery/user_interfaces/canvasagg.html)
+).
+
+The following example uses [Flask](https://flask.palletsprojects.com/)
+, but other frameworks work similarly:
+
+import base64
+from io import [BytesIO](https://docs.python.org/3/library/io.html#io.BytesIO "io.BytesIO")
+
+from flask import Flask
+
+from matplotlib.figure import [Figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+
+app \= Flask(\_\_name\_\_)
+
+@app.route("/")
+def hello():
+    \# Generate the figure \*\*without using pyplot\*\*.
+    fig \= [Figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+()
+    ax \= fig.subplots()
+    ax.plot(\[1, 2\])
+    \# Save it to a temporary buffer.
+    buf \= [BytesIO](https://docs.python.org/3/library/io.html#io.BytesIO "io.BytesIO")
+()
+    fig.savefig(buf, format\="png")
+    \# Embed the result in the html output.
+    data \= [base64.b64encode](https://docs.python.org/3/library/base64.html#base64.b64encode "base64.b64encode")
+(buf.getbuffer()).decode("ascii")
+    return f"<img src='data:image/png;base64,{data}'/>"
+
+Since the above code is a Flask application, it should be run using the [flask command-line tool](https://flask.palletsprojects.com/en/latest/cli/)
+: run
+
+flask --app web\_application\_server\_sgskip run
+
+from the directory containing this script.
+
+Clickable images for HTML[#](https://matplotlib.org/stable/gallery/user_interfaces/web_application_server_sgskip.html#clickable-images-for-html "Link to this heading")
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Andrew Dalke of [Dalke Scientific](http://www.dalkescientific.com/)
+ has written a nice [article](http://www.dalkescientific.com/writings/diary/archive/2005/04/24/interactive_html.html)
+ on how to make html click maps with Matplotlib agg PNGs. We would also like to add this functionality to SVG. If you are interested in contributing to these efforts that would be great.
+
+[`Download Jupyter notebook: web_application_server_sgskip.ipynb`](https://matplotlib.org/stable/_downloads/cc966ab50884aa7555a9dbfcce01bba8/web_application_server_sgskip.ipynb)
+
+[`Download Python source code: web_application_server_sgskip.py`](https://matplotlib.org/stable/_downloads/e99e270c11d445a8e7fc9ab51bfa857f/web_application_server_sgskip.py)
+
+[`Download zipped: web_application_server_sgskip.zip`](https://matplotlib.org/stable/_downloads/605804dc97b1dd5f348a8a8fb4c5266a/web_application_server_sgskip.zip)
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)
+
+On this page

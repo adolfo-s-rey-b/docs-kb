@@ -1,0 +1,82 @@
+[Skip to main content](https://pandas.pydata.org/docs/reference/api/pandas.Index.get_level_values.html#main-content)
+
+Back to top Ctrl+K
+
+3.1 (stable)
+
+[dev](https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_level_values.html)
+[3.1 (stable)](https://pandas.pydata.org/docs/reference/api/pandas.Index.get_level_values.html)
+[3.0](https://pandas.pydata.org/pandas-docs/version/3.0/reference/api/pandas.Index.get_level_values.html)
+[2.3](https://pandas.pydata.org/pandas-docs/version/2.3/reference/api/pandas.Index.get_level_values.html)
+[2.2](https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.Index.get_level_values.html)
+[2.1](https://pandas.pydata.org/pandas-docs/version/2.1/reference/api/pandas.Index.get_level_values.html)
+[2.0](https://pandas.pydata.org/pandas-docs/version/2.0/reference/api/pandas.Index.get_level_values.html)
+[1.5](https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.Index.get_level_values.html)
+[1.4](https://pandas.pydata.org/pandas-docs/version/1.4/reference/api/pandas.Index.get_level_values.html)
+[1.3](https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.Index.get_level_values.html)
+[1.2](https://pandas.pydata.org/pandas-docs/version/1.2/reference/api/pandas.Index.get_level_values.html)
+[1.1](https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.Index.get_level_values.html)
+[1.0](https://pandas.pydata.org/pandas-docs/version/1.0/reference/api/pandas.Index.get_level_values.html)
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/pandas-dev/pandas)
+    
+*   [X](https://x.com/pandas_dev)
+    
+*   [Mastodon](https://fosstodon.org/@pandas_dev)
+    
+
+Collapse Sidebar Expand Sidebar
+
+pandas.Index.get\_level\_values[#](https://pandas.pydata.org/docs/reference/api/pandas.Index.get_level_values.html#pandas-index-get-level-values "Link to this heading")
+
+=========================================================================================================================================================================
+
+Index.get\_level\_values(_level_)[\[source\]](https://github.com/pandas-dev/pandas/blob/v3.1.1/pandas/core/indexes/base.py#L2318-L2355)
+[#](https://pandas.pydata.org/docs/reference/api/pandas.Index.get_level_values.html#pandas.Index.get_level_values "Link to this definition")
+
+Return an Index of values for requested level.
+
+This is primarily useful to get an individual level of values from a MultiIndex, but is provided on Index as well for compatibility.
+
+Parameters:
+
+**level**int or str
+
+It is either the integer position or the name of the level.
+
+Returns:
+
+Index
+
+Calling object, as there is only one level in the Index.
+
+See also
+
+[`MultiIndex.get_level_values`](https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.get_level_values.html#pandas.MultiIndex.get_level_values "pandas.MultiIndex.get_level_values")
+
+Get values for a level of a MultiIndex.
+
+Notes
+
+For Index, level should be 0, since there are no multiple levels.
+
+Examples
+
+\>>> idx \= pd.Index(list("abc"))
+\>>> idx
+Index(\['a', 'b', 'c'\], dtype='str')
+
+Copy to clipboard
+
+Get level values by supplying level as integer:
+
+\>>> idx.get\_level\_values(0)
+Index(\['a', 'b', 'c'\], dtype='str')
+
+Copy to clipboard
+
+On this page

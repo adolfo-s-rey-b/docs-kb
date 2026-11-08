@@ -1,0 +1,147 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehivetrigger.md)
+.
+
+On this page, you'll find a list of events the TheHive Trigger node can respond to and links to more resources.
+
+**TheHive and TheHive 5**
+
+n8n provides two nodes for TheHive. Use this node (TheHive Trigger) if you want to use TheHive's version 3 or 4 API. If you want to use version 5, use [TheHive 5 Trigger](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehive5trigger)
+.
+
+**Examples and templates**
+
+For usage examples and templates to help you get started, refer to n8n's [TheHive Trigger integrations](https://n8n.io/integrations/thehive-trigger/)
+ page.
+
+Events[](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehivetrigger#events)
+
+------------------------------------------------------------------------------------------------------
+
+*   Alert
+    
+    *   Created
+        
+    *   Deleted
+        
+    *   Updated
+        
+    
+*   Case
+    
+    *   Created
+        
+    *   Deleted
+        
+    *   Updated
+        
+    
+*   Log
+    
+    *   Created
+        
+    *   Deleted
+        
+    *   Updated
+        
+    
+*   Observable
+    
+    *   Created
+        
+    *   Deleted
+        
+    *   Updated
+        
+    
+*   Task
+    
+    *   Created
+        
+    *   Deleted
+        
+    *   Updated
+        
+    
+
+Related resources[](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehivetrigger#related-resources)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+n8n provides an app node for TheHive. Refer to the [TheHive node documentation](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.thehive)
+ for more information.
+
+View [example workflows and related content](https://n8n.io/integrations/thehive-trigger/)
+ on n8n's website.
+
+Refer to TheHive's documentation for more information about the service:
+
+*   [Version 3](https://docs.thehive-project.org/thehive/legacy/thehive3/api/)
+    
+*   [Version 4](https://docs.thehive-project.org/cortex/api/api-guide/)
+    
+
+Configure a webhook in TheHive[](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehivetrigger#configure-a-webhook-in-thehive)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To configure the webhook for your TheHive instance:
+
+1.  Copy the testing and production webhook URLs from TheHive Trigger node.
+    
+2.  Add the following lines to the `application.conf` file. This is TheHive configuration file:
+    
+    Copy
+    
+        notification.webhook.endpoints = [\
+        	{\
+        		name: TESTING_WEBHOOK_NAME\
+        		url: TESTING_WEBHOOK_URL\
+        		version: 0\
+        		wsConfig: {}\
+        		includedTheHiveOrganisations: ["ORGANIZATION_NAME"]\
+        		excludedTheHiveOrganisations: []\
+        	},\
+        	{\
+        		name: PRODUCTION_WEBHOOK_NAME\
+        		url: PRODUCTION_WEBHOOK_URL\
+        		version: 0\
+        		wsConfig: {}\
+        		includedTheHiveOrganisations: ["ORGANIZATION_NAME"]\
+        		excludedTheHiveOrganisations: []\
+        	}\
+        ]
+    
+3.  Replace `TESTING_WEBHOOK_URL` and `PRODUCTION_WEBHOOK_URL` with the URLs you copied in the previous step.
+    
+4.  Replace `TESTING_WEBHOOK_NAME` and `PRODUCTION_WEBHOOK_NAME` with your preferred endpoint names.
+    
+5.  Replace `ORGANIZATION_NAME` with your organization name.
+    
+6.  Execute the following cURL command to enable notifications:
+    
+    Copy
+    
+        curl -XPUT -uTHEHIVE_USERNAME:THEHIVE_PASSWORD -H 'Content-type: application/json' THEHIVE_URL/api/config/organisation/notification -d '
+        {
+        	"value": [\
+        		{\
+        		"delegate": false,\
+        		"trigger": { "name": "AnyEvent"},\
+        		"notifier": { "name": "webhook", "endpoint": "TESTING_WEBHOOK_NAME" }\
+        		},\
+        		{\
+        		"delegate": false,\
+        		"trigger": { "name": "AnyEvent"},\
+        		"notifier": { "name": "webhook", "endpoint": "PRODUCTION_WEBHOOK_NAME" }\
+        		}\
+        	]
+        }'
+    
+
+[PreviousTheHive 5 Trigger](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehive5trigger)
+[NextToggl Trigger](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.toggltrigger)
+
+Last updated 10 days ago
+
+Was this helpful?

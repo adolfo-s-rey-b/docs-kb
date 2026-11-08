@@ -1,0 +1,61 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/credentials/schemaregistry.md)
+.
+
+You can use these credentials to authenticate the following nodes when you enable **Use Schema Registry**:
+
+*   [Kafka](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.kafka)
+    
+*   [Kafka Trigger](https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.kafkatrigger)
+    
+
+The Kafka node and Kafka Trigger use a Schema Registry to encode and decode Avro messages. This credential is separate from your [Kafka credentials](https://docs.n8n.io/integrations/builtin/credentials/kafka)
+: the registry has its own endpoint and authentication, distinct from the Kafka brokers.
+
+Supported authentication methods[](https://docs.n8n.io/integrations/builtin/credentials/schemaregistry#supported-authentication-methods)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+*   None
+    
+*   Basic Auth (username and password), such as a Confluent Cloud Schema Registry API key and secret
+    
+
+Related resources[](https://docs.n8n.io/integrations/builtin/credentials/schemaregistry#related-resources)
+
+-----------------------------------------------------------------------------------------------------------
+
+Refer to the [Confluent Schema Registry documentation](https://docs.confluent.io/platform/current/schema-registry/index.html)
+ for more information about using the service.
+
+Setting up the credential[](https://docs.n8n.io/integrations/builtin/credentials/schemaregistry#setting-up-the-credential)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+To configure this credential, you'll need the URL of your Schema Registry and, if it requires authentication, the details to access it.
+
+1.  In the **URL** field, enter the base URL of your Schema Registry, for example `https://psrc-xxxxx.region.aws.confluent.cloud`.
+    
+2.  Select the **Authentication** method:
+    
+    *   **None**: use this for a Schema Registry that doesn't require authentication.
+        
+    *   **Basic Auth**: use this for a Schema Registry that requires HTTP Basic Auth, such as Confluent Cloud. Then add:
+        
+        1.  The **Username**. For Confluent Cloud, this is the Schema Registry API key.
+            
+        2.  The **Password**. For Confluent Cloud, this is the Schema Registry API secret.
+            
+        
+    
+3.  Select **Save**. n8n tests the credential by calling the registry's `/subjects` endpoint.
+    
+
+To use the credential, open your Kafka or Kafka Trigger node, enable **Use Schema Registry**, and select this credential.
+
+[PreviousSalesmate credentials](https://docs.n8n.io/integrations/builtin/credentials/salesmate)
+[NextSearXNG credentials](https://docs.n8n.io/integrations/builtin/credentials/searxng)
+
+Last updated 10 days ago
+
+Was this helpful?

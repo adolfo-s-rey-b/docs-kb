@@ -1,0 +1,58 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/credentials/sendgrid.md)
+.
+
+You can use these credentials to authenticate the following nodes:
+
+*   [SendGrid](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.sendgrid)
+    
+
+Supported authentication methods[](https://docs.n8n.io/integrations/builtin/credentials/sendgrid#supported-authentication-methods)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+*   API key
+    
+
+Related resources[](https://docs.n8n.io/integrations/builtin/credentials/sendgrid#related-resources)
+
+-----------------------------------------------------------------------------------------------------
+
+Refer to [SendGrid's API documentation](https://www.twilio.com/docs/sendgrid/api-reference)
+ for more information about the service.
+
+Using API key[](https://docs.n8n.io/integrations/builtin/credentials/sendgrid#using-api-key)
+
+---------------------------------------------------------------------------------------------
+
+To configure this credential, you'll need a [SendGrid](https://sendgrid.com/)
+ account and:
+
+*   An **API Key**
+    
+
+To create an API key:
+
+1.  In the Twilio SendGrid app, go to **Settings >** [**API Keys**](https://app.sendgrid.com/settings/api_keys)
+    .
+    
+2.  Select **Create API Key**.
+    
+3.  Enter a **Name** for your API key, like `n8n integration`.
+    
+4.  Select **Full Access**.
+    
+5.  Select **Create & View**.
+    
+6.  Copy the key and enter it in your n8n credential.
+    
+
+Refer to [Create API Keys](https://www.twilio.com/docs/sendgrid/api-reference/api-keys/create-api-keys)
+ for more information.
+
+[PreviousYahoo](https://docs.n8n.io/integrations/builtin/credentials/send-email/yahoo)
+[NextSendy credentials](https://docs.n8n.io/integrations/builtin/credentials/sendy)
+
+Last updated 10 days ago
+
+Was this helpful?

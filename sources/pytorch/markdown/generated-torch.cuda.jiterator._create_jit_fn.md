@@ -1,0 +1,227 @@
+Opens in a new window Opens an external website Opens an external website in a new window
+
+Close this dialog
+
+This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link: [Privacy Policy](https://lfprojects.org/policies/privacy-policy/)
+
+Manage Preferences
+
+Close Cookie Preferences
+
+[Skip to main content](https://docs.pytorch.org/docs/2.15/generated/torch.cuda.jiterator._create_jit_fn.html#main-content)
+
+Back to top  
+
+ Ctrl+K
+
+v2.15.0 (stable)
+
+[v2.16.0 (unstable)](https://docs.pytorch.org/docs/main/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.15.0 (stable)](https://docs.pytorch.org/docs/2.15/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.14.0](https://docs.pytorch.org/docs/2.14/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.13.0](https://docs.pytorch.org/docs/2.13/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.12.0](https://docs.pytorch.org/docs/2.12/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.11.0](https://docs.pytorch.org/docs/2.11/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.10.0](https://docs.pytorch.org/docs/2.10/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.9.1](https://docs.pytorch.org/docs/2.9/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.8.0](https://docs.pytorch.org/docs/2.8/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.7.0](https://docs.pytorch.org/docs/2.7/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.6.0](https://docs.pytorch.org/docs/2.6/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.5.0](https://docs.pytorch.org/docs/2.5/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.4.0](https://docs.pytorch.org/docs/2.4/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.3.0](https://docs.pytorch.org/docs/2.3/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.2.0](https://docs.pytorch.org/docs/2.2/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.1.0](https://docs.pytorch.org/docs/2.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v2.0.0](https://docs.pytorch.org/docs/2.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.13](https://docs.pytorch.org/docs/1.13/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.12](https://docs.pytorch.org/docs/1.12/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.11](https://docs.pytorch.org/docs/1.11/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.10](https://docs.pytorch.org/docs/1.10/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.9.1](https://docs.pytorch.org/docs/1.9.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.9.0](https://docs.pytorch.org/docs/1.9.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.8.1](https://docs.pytorch.org/docs/1.8.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.8.0](https://docs.pytorch.org/docs/1.8.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.7.1](https://docs.pytorch.org/docs/1.7.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.7.0](https://docs.pytorch.org/docs/1.7.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.6.0](https://docs.pytorch.org/docs/1.6.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.5.1](https://docs.pytorch.org/docs/1.5.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.5.0](https://docs.pytorch.org/docs/1.5.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.4.0](https://docs.pytorch.org/docs/1.4.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.3.1](https://docs.pytorch.org/docs/1.3.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.3.0](https://docs.pytorch.org/docs/1.3.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.2.0](https://docs.pytorch.org/docs/1.2.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.1.0](https://docs.pytorch.org/docs/1.1.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.0.1](https://docs.pytorch.org/docs/1.0.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v1.0.0](https://docs.pytorch.org/docs/1.0.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.4.1](https://docs.pytorch.org/docs/0.4.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.4.0](https://docs.pytorch.org/docs/0.4.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.3.1](https://docs.pytorch.org/docs/0.3.1/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.3.0](https://docs.pytorch.org/docs/0.3.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.2.0](https://docs.pytorch.org/docs/0.2.0/generated/torch.cuda.jiterator._create_jit_fn.html)
+[v0.1.12](https://docs.pytorch.org/docs/0.1.12/generated/torch.cuda.jiterator._create_jit_fn.html)
+
+[Go to pytorch.org](https://pytorch.org/)
+
+ Ctrl+K
+
+|     |     |
+| --- | --- |
+|     | [×](javascript:void(0) "Clear search box") |
+
+search
+
+Custom Search
+
+|     |     |
+| --- | --- |
+|     | Sort by<br><br>Relevance<br><br>Date |
+
+*   [X](https://x.com/PyTorch)
+    
+*   [GitHub](https://github.com/pytorch/pytorch)
+    
+*   [PyTorch Forum](https://discuss.pytorch.org/)
+    
+*   [PyPi](https://pypi.org/project/torch/)
+    
+
+Rate this Page
+
+★ ★ ★ ★ ★
+
+torch.cuda.jiterator.\_create\_jit\_fn[#](https://docs.pytorch.org/docs/2.15/generated/torch.cuda.jiterator._create_jit_fn.html#torch-cuda-jiterator-create-jit-fn "Link to this heading")
+
+===========================================================================================================================================================================================
+
+torch.cuda.jiterator.\_create\_jit\_fn(_code\_string_, _\*\*kwargs_)[\[source\]](https://github.com/pytorch/pytorch/blob/v2.15.0/torch/cuda/jiterator.py#L101)
+[#](https://docs.pytorch.org/docs/2.15/generated/torch.cuda.jiterator._create_jit_fn.html#torch.cuda.jiterator._create_jit_fn "Link to this definition")
+
+Create a jiterator-generated cuda kernel for an elementwise op.
+
+The code string has to be a valid CUDA function that describes the computation for a single element. The code string has to follow the c++ template pattern, as shown in the example below. This function will be inlined into elementwise kernel template, and compiled on the fly. Compiled kernel will be cached in memory, as well as local temp dir.
+
+Jiterator-generated kernels accept noncontiguous tensors, and support broadcasting and type promotion.
+
+Parameters:
+
+*   **code\_string** ([_str_](https://docs.python.org/3/builtins/stdtypes.html#str "(in Python v3.15)")
+    ) – CUDA code string to be compiled by jiterator. The entry functor must return by value.
+    
+*   **kwargs** (_Dict__,_ _optional_) – Keyword arguments for generated function
+    
+
+Return type:
+
+[_Callable_](https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable "(in Python v3.15)")
+
+Example:
+
+code\_string \= "template <typename T> T my\_kernel(T x, T y, T alpha) { return -x + alpha \* y; }"
+jitted\_fn \= create\_jit\_fn(code\_string, alpha\=1.0)
+a \= torch.rand(3, device\="cuda")
+b \= torch.rand(3, device\="cuda")
+\# invoke jitted function like a regular python function
+result \= jitted\_fn(a, b, alpha\=3.14)
+
+Copy to clipboard
+
+code\_string also allows multiple function definitions, and the last function will be treated as the entry function.
+
+Example:
+
+code\_string \= (
+    "template <typename T> T util\_fn(T x, T y) { return ::sin(x) + ::cos(y); }"
+)
+code\_string += "template <typename T> T my\_kernel(T x, T y, T val) { return ::min(val, util\_fn(x, y)); }"
+jitted\_fn \= create\_jit\_fn(code\_string, val\=0.0)
+a \= torch.rand(3, device\="cuda")
+b \= torch.rand(3, device\="cuda")
+\# invoke jitted function like a regular python function
+result \= jitted\_fn(a, b)  \# using default val=0.0
+
+Copy to clipboard
+
+Jiterator can be used together with python registration to override an operator’s cuda kernel. Following example is overriding gelu’s cuda kernel with relu.
+
+Example:
+
+code\_string \= "template <typename T> T my\_gelu(T a) { return a > 0 ? a : 0; }"
+my\_gelu \= create\_jit\_fn(code\_string)
+my\_lib \= torch.library.Library("aten", "IMPL")
+my\_lib.impl("aten::gelu", my\_gelu, "CUDA")
+\# torch.nn.GELU and torch.nn.function.gelu are now overridden
+a \= torch.rand(3, device\="cuda")
+torch.allclose(torch.nn.functional.gelu(a), torch.nn.functional.relu(a))
+
+Copy to clipboard
+
+Warning
+
+This API is in beta and may change in future releases.
+
+Warning
+
+This API only supports up to 8 inputs and 1 output
+
+Warning
+
+All input tensors must live in CUDA device
+
+On this page
+
+[Show Source](https://docs.pytorch.org/docs/2.15/_sources/generated/torch.cuda.jiterator._create_jit_fn.rst.txt)
+
+PyTorch Libraries
+
+*   [ExecuTorch](https://docs.pytorch.org/executorch)
+    
+*   [Helion](https://docs.pytorch.org/helion)
+    
+*   [torchao](https://docs.pytorch.org/ao)
+    
+*   [kineto](https://github.com/pytorch/kineto)
+    
+*   [torchtitan](https://github.com/pytorch/torchtitan)
+    
+*   [TorchRL](https://docs.pytorch.org/rl)
+    
+*   [torchvision](https://docs.pytorch.org/vision)
+    
+*   [torchaudio](https://docs.pytorch.org/audio)
+    
+*   [tensordict](https://docs.pytorch.org/tensordict)
+    
+*   [PyTorch on XLA Devices](https://docs.pytorch.org/xla)
+    
+
+Docs
+----
+
+Access comprehensive developer documentation for PyTorch
+
+[View Docs](https://docs.pytorch.org/docs/stable/index.html)
+
+Tutorials
+---------
+
+Get in-depth tutorials for beginners and advanced developers
+
+[View Tutorials](https://docs.pytorch.org/tutorials)
+
+Resources
+---------
+
+Find development resources and get your questions answered
+
+[View Resources](https://pytorch.org/resources)
+
+To analyze traffic and optimize your experience, we serve cookies on this site. By clicking or navigating, you agree to allow our usage of cookies. As the current maintainers of this site, Facebook’s Cookies Policy applies. Learn more, including about available controls: [Cookies Policy](https://opensource.fb.com/legal/cookie-policy)
+.
+
+|     |     |
+| --- | --- |
+|     |     |
+
+|     |     |
+| --- | --- |
+|     |     |

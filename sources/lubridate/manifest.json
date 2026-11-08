@@ -1,0 +1,463 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://lubridate.tidyverse.org/404.html",
+      "last_hash": "b3bbc900c26a8383467e549d10f53a18fb854ade09d9ac9573dd09392f9a91ff",
+      "last_fetched": "2026-11-08T05:08:44.956442+00:00",
+      "title": "Page not found (404) • lubridate"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://lubridate.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "8eda9dfdb2520d5c3454e0cd25cb24e04f690b90af6e370c3e09599ee583b25b",
+      "last_fetched": "2026-11-08T05:08:45.856256+00:00",
+      "title": "Contributor Code of Conduct • lubridate"
+    },
+    "CONTRIBUTING": {
+      "url": "https://lubridate.tidyverse.org/CONTRIBUTING.html",
+      "last_hash": "258d8d81b92b2195da18380b642055ec7cd9da1261559fc1b4e414615add7bae",
+      "last_fetched": "2026-11-08T05:08:46.751707+00:00",
+      "title": "Contributing to lubridate • lubridate"
+    },
+    "ISSUE_TEMPLATE": {
+      "url": "https://lubridate.tidyverse.org/ISSUE_TEMPLATE.html",
+      "last_hash": "2eca21585549a8938b9bc9821a421f014adbba0194a4056cd84b2703a803d6ad",
+      "last_fetched": "2026-11-08T05:08:47.888367+00:00",
+      "title": "NA • lubridate"
+    },
+    "SUPPORT": {
+      "url": "https://lubridate.tidyverse.org/SUPPORT.html",
+      "last_hash": "9f58f2dc71d77a1befaebcd9eba5e101f87c1487d03ef3a8832f79303161bd41",
+      "last_fetched": "2026-11-08T05:08:48.806883+00:00",
+      "title": "Getting help with lubridate • lubridate"
+    },
+    "articles-index": {
+      "url": "https://lubridate.tidyverse.org/articles/index.html",
+      "last_hash": "575d1fc4efce5158d63e9cb00680705c75f71d61eeae05e87666bd11ca1a9c0f",
+      "last_fetched": "2026-11-08T05:08:49.655107+00:00",
+      "title": "Articles • lubridate"
+    },
+    "articles-lubridate": {
+      "url": "https://lubridate.tidyverse.org/articles/lubridate.html",
+      "last_hash": "7a59ff3fb67f08f5b0341a2dacbc9533a7496ee8293f08d7adf81eb288ab67d5",
+      "last_fetched": "2026-11-08T05:08:50.604139+00:00",
+      "title": "Do more with dates and times in R • lubridate"
+    },
+    "authors": {
+      "url": "https://lubridate.tidyverse.org/authors.html",
+      "last_hash": "4c6b66e6bba64688d037b867c8a97de9c95ca29679ef50652656077944b647a9",
+      "last_fetched": "2026-11-08T05:08:51.522866+00:00",
+      "title": "Authors and Citation • lubridate"
+    },
+    "index": {
+      "url": "https://lubridate.tidyverse.org/index.html",
+      "last_hash": "9593382bb7184c1221232fc772a00b0b0b61bcf86aa99cb002a17e00bed73cc4",
+      "last_fetched": "2026-11-08T05:08:52.601044+00:00",
+      "title": "Make Dealing with Dates a Little Easier • lubridate"
+    },
+    "reference-DateCoercion": {
+      "url": "https://lubridate.tidyverse.org/reference/DateCoercion.html",
+      "last_hash": "643abbe9b91c230a30023872f82f97d29907bfb4a093d49bb55644be3d0284b0",
+      "last_fetched": "2026-11-08T05:08:53.549493+00:00",
+      "title": "Convert a variety of date-time classes to POSIXlt and POSIXct — DateCoercion • lubridate"
+    },
+    "reference-DateTimeUpdate": {
+      "url": "https://lubridate.tidyverse.org/reference/DateTimeUpdate.html",
+      "last_hash": "e064620b97d2e1574a6bc09698f55898f85d9e03a8435f724054385bcc8a93f4",
+      "last_fetched": "2026-11-08T05:08:54.429126+00:00",
+      "title": "Changes the components of a date object — DateTimeUpdate • lubridate"
+    },
+    "reference-Deprecated": {
+      "url": "https://lubridate.tidyverse.org/reference/Deprecated.html",
+      "last_hash": "76f8ac82063f19625232b2f8be7e3aa6e05803da74b6c19996b1ae55773ac0f1",
+      "last_fetched": "2026-11-08T05:08:55.355916+00:00",
+      "title": "Deprecated functions in the lubridate package — Deprecated-lubridate • lubridate"
+    },
+    "reference-Duration-class": {
+      "url": "https://lubridate.tidyverse.org/reference/Duration-class.html",
+      "last_hash": "9fbf2cf2e703e239362f699509a6daeb5af51c523527afbb16619519b7c40634",
+      "last_fetched": "2026-11-08T05:08:56.246705+00:00",
+      "title": "Duration class — Duration-class • lubridate"
+    },
+    "reference-Interval-class": {
+      "url": "https://lubridate.tidyverse.org/reference/Interval-class.html",
+      "last_hash": "c3e6efc1f52a4d552c14ee45311c15aa01a87e4853353e5f33a839bab3bc7c97",
+      "last_fetched": "2026-11-08T05:08:57.282812+00:00",
+      "title": "Interval class — Interval-class • lubridate"
+    },
+    "reference-Period-class": {
+      "url": "https://lubridate.tidyverse.org/reference/Period-class.html",
+      "last_hash": "2b68f993cb955428d0266b1f6729f2e6c3f2bb35f9c2287809fe126a16d3d2f8",
+      "last_fetched": "2026-11-08T05:08:58.214522+00:00",
+      "title": "Period class — Period-class • lubridate"
+    },
+    "reference-Timespan-class": {
+      "url": "https://lubridate.tidyverse.org/reference/Timespan-class.html",
+      "last_hash": "0449ac6f7d01e7dea8871628373584320cc5c9892f794c34ebdf505d62732ee3",
+      "last_fetched": "2026-11-08T05:08:59.093059+00:00",
+      "title": "Timespan class — Timespan-class • lubridate"
+    },
+    "reference-am": {
+      "url": "https://lubridate.tidyverse.org/reference/am.html",
+      "last_hash": "df714000411aad80e135f437df7b0900349d4ce5af99746ea1f0517b9eacac4e",
+      "last_fetched": "2026-11-08T05:08:59.954801+00:00",
+      "title": "Does date time occur in the am or pm? — am • lubridate"
+    },
+    "reference-as.duration": {
+      "url": "https://lubridate.tidyverse.org/reference/as.duration.html",
+      "last_hash": "99fb253291b5043c3ad1f9694c28324026f4e77881d34001a99086ba6b5b3db7",
+      "last_fetched": "2026-11-08T05:09:00.959720+00:00",
+      "title": "Change an object to a duration — as.duration • lubridate"
+    },
+    "reference-as.interval": {
+      "url": "https://lubridate.tidyverse.org/reference/as.interval.html",
+      "last_hash": "a7fd32628438dc0c1369bd353de0337dac90bd614225ba0a3b55688f6362a3cb",
+      "last_fetched": "2026-11-08T05:09:01.870203+00:00",
+      "title": "Change an object to an interval — as.interval • lubridate"
+    },
+    "reference-as.period": {
+      "url": "https://lubridate.tidyverse.org/reference/as.period.html",
+      "last_hash": "1593d6be66c86f66d20f51506067c52886a727c244c34de65e739c838acd742b",
+      "last_fetched": "2026-11-08T05:09:02.799857+00:00",
+      "title": "Change an object to a period — as.period • lubridate"
+    },
+    "reference-as_date": {
+      "url": "https://lubridate.tidyverse.org/reference/as_date.html",
+      "last_hash": "60915cb574ab3b4ac4d3bdd703c480767f75fe74769569d814e60b2ec7ed8e01",
+      "last_fetched": "2026-11-08T05:09:03.826331+00:00",
+      "title": "Convert an object to a date or date-time — as_date • lubridate"
+    },
+    "reference-cyclic_encoding": {
+      "url": "https://lubridate.tidyverse.org/reference/cyclic_encoding.html",
+      "last_hash": "a0bda625fbd578de88010c046fef395c5fc6fa250f0038b5b3b84ddfbe6a3c61",
+      "last_fetched": "2026-11-08T05:09:04.832483+00:00",
+      "title": "Cyclic encoding of date-times — cyclic_encoding • lubridate"
+    },
+    "reference-date": {
+      "url": "https://lubridate.tidyverse.org/reference/date.html",
+      "last_hash": "37f265ac8770a61e16ed81eb75f3b351892e0c3cec2d57c803fe49afd72ef928",
+      "last_fetched": "2026-11-08T05:09:05.687213+00:00",
+      "title": "Get/set date component of a date-time — date • lubridate"
+    },
+    "reference-date_decimal": {
+      "url": "https://lubridate.tidyverse.org/reference/date_decimal.html",
+      "last_hash": "dbce466c8a30fe07ccabe113ffce0a8c644f3a00bb070477807412e2d2922f93",
+      "last_fetched": "2026-11-08T05:09:06.557814+00:00",
+      "title": "Converts a decimal to a date — date_decimal • lubridate"
+    },
+    "reference-date_utils": {
+      "url": "https://lubridate.tidyverse.org/reference/date_utils.html",
+      "last_hash": "9a1d2ca0026f57bf6fba6d37c6d58c56903ceee75f82c8185a7ae97b358a4134",
+      "last_fetched": "2026-11-08T05:09:07.436243+00:00",
+      "title": "Various date utilities — is.Date • lubridate"
+    },
+    "reference-day": {
+      "url": "https://lubridate.tidyverse.org/reference/day.html",
+      "last_hash": "4ed03ebf44250373537cc4607c47515480669849cbd25e77b54783d2b6b62fe8",
+      "last_fetched": "2026-11-08T05:09:08.377286+00:00",
+      "title": "Get/set days component of a date-time — day • lubridate"
+    },
+    "reference-days_in_month": {
+      "url": "https://lubridate.tidyverse.org/reference/days_in_month.html",
+      "last_hash": "523c523c368c23b4fecdfd7ecaf1434e2362e3e154f3a5835cc2c0dd3bc04290",
+      "last_fetched": "2026-11-08T05:09:09.264079+00:00",
+      "title": "Get the number of days in the month of a date-time — days_in_month • lubridate"
+    },
+    "reference-decimal_date": {
+      "url": "https://lubridate.tidyverse.org/reference/decimal_date.html",
+      "last_hash": "3afa9a43b4394857f08765451b6c9ee159174db96d57f5fa0e762309df458b98",
+      "last_fetched": "2026-11-08T05:09:10.128951+00:00",
+      "title": "Converts a date to a decimal of its year — decimal_date • lubridate"
+    },
+    "reference-dst": {
+      "url": "https://lubridate.tidyverse.org/reference/dst.html",
+      "last_hash": "00c91f413237aa937fb7bd709c5dccbaddc802a677ebf4cdd9e85a2db9a3797f",
+      "last_fetched": "2026-11-08T05:09:11.062534+00:00",
+      "title": "Get daylight savings time indicator of a date-time — dst • lubridate"
+    },
+    "reference-duration": {
+      "url": "https://lubridate.tidyverse.org/reference/duration.html",
+      "last_hash": "9a18af198d3c1d1517cbb49a470f69accce03f0abe86b8ed8df783bd1179f0c6",
+      "last_fetched": "2026-11-08T05:09:11.992610+00:00",
+      "title": "Create a duration object. — duration • lubridate"
+    },
+    "reference-fit_to_timeline": {
+      "url": "https://lubridate.tidyverse.org/reference/fit_to_timeline.html",
+      "last_hash": "2782185957a15eaa020c250dade426ac2bd812833e34adba0beac60030c81c5f",
+      "last_fetched": "2026-11-08T05:09:12.902959+00:00",
+      "title": "Fit a POSIXlt date-time to the timeline — fit_to_timeline • lubridate"
+    },
+    "reference-force_tz": {
+      "url": "https://lubridate.tidyverse.org/reference/force_tz.html",
+      "last_hash": "ca13f8398f677794c2022856eb91465a9b47159877feb76e49ef8813448f59da",
+      "last_fetched": "2026-11-08T05:09:13.795351+00:00",
+      "title": "Replace time zone to create new date-time — force_tz • lubridate"
+    },
+    "reference-format_ISO8601": {
+      "url": "https://lubridate.tidyverse.org/reference/format_ISO8601.html",
+      "last_hash": "4488c2986d61992b0dd5dc9608ec6e62fa184151b1bcadfa16c1aa942b5221d4",
+      "last_fetched": "2026-11-08T05:09:14.689317+00:00",
+      "title": "Format in ISO8601 character format — format_ISO8601 • lubridate"
+    },
+    "reference-format_ISO8601_precision_check": {
+      "url": "https://lubridate.tidyverse.org/reference/format_ISO8601_precision_check.html",
+      "last_hash": "d5cfc3eddab421f7f92015190d419a6c84502c11120b90cb8fa7d0b632722767",
+      "last_fetched": "2026-11-08T05:09:15.711031+00:00",
+      "title": "Provide a format for ISO8601 dates and times with the requested precision. — format_ISO8601_precision_check • lubridate"
+    },
+    "reference-guess_formats": {
+      "url": "https://lubridate.tidyverse.org/reference/guess_formats.html",
+      "last_hash": "9dfe64578087dd9b2e4cf5eb1b7a097ef1fafcd6e164b4b0da2a0ea80be0d1ae",
+      "last_fetched": "2026-11-08T05:09:16.746151+00:00",
+      "title": "Guess possible date-times formats from a character vector — guess_formats • lubridate"
+    },
+    "reference-hidden_aliases": {
+      "url": "https://lubridate.tidyverse.org/reference/hidden_aliases.html",
+      "last_hash": "a3377c08d4942fd0042fe51872e3d4b3f066a1993e30cf79ad4a1e0ae4d2471f",
+      "last_fetched": "2026-11-08T05:09:17.616417+00:00",
+      "title": "Internal page for hidden aliases — hidden_aliases • lubridate"
+    },
+    "reference-hms": {
+      "url": "https://lubridate.tidyverse.org/reference/hms.html",
+      "last_hash": "ee7c9a475acc335d54c1917c6535a37c0b6365bbf06f918cf0025e3d8fac0134",
+      "last_fetched": "2026-11-08T05:09:18.642470+00:00",
+      "title": "Parse periods with hour, minute, and second components — ms • lubridate"
+    },
+    "reference-hour": {
+      "url": "https://lubridate.tidyverse.org/reference/hour.html",
+      "last_hash": "80c7c765e6079e44a19bd62f4b07cebfb0a1fe8b10c70735c2deb46a98effb22",
+      "last_fetched": "2026-11-08T05:09:19.522268+00:00",
+      "title": "Get/set hours component of a date-time — hour • lubridate"
+    },
+    "reference-index": {
+      "url": "https://lubridate.tidyverse.org/reference/index.html",
+      "last_hash": "ccb684f8d8ded098a156ede974cb6deb0c57432dd5e125fdf48183f0d2842076",
+      "last_fetched": "2026-11-08T05:09:20.595962+00:00",
+      "title": "Package index • lubridate"
+    },
+    "reference-interval": {
+      "url": "https://lubridate.tidyverse.org/reference/interval.html",
+      "last_hash": "0d25fbfbce2fe5a79c1c2529e99d4ba0fd7c309019235660bb1631cad8bda6ab",
+      "last_fetched": "2026-11-08T05:09:21.502075+00:00",
+      "title": "Utilities for creation and manipulation of Interval objects — interval • lubridate"
+    },
+    "reference-is.difftime": {
+      "url": "https://lubridate.tidyverse.org/reference/is.difftime.html",
+      "last_hash": "1d184808ab77f83dbd8a126a4af71a21bc6a23bdb7e8d58400ab00b2712e9af9",
+      "last_fetched": "2026-11-08T05:09:22.369410+00:00",
+      "title": "Is x a difftime object? — is.difftime • lubridate"
+    },
+    "reference-is.instant": {
+      "url": "https://lubridate.tidyverse.org/reference/is.instant.html",
+      "last_hash": "3a08176550dc661b7d255b366049ebbf71acb0a32736ea249d2ae7921c3d4cfa",
+      "last_fetched": "2026-11-08T05:09:23.271155+00:00",
+      "title": "Is x a date-time object? — is.instant • lubridate"
+    },
+    "reference-is.timespan": {
+      "url": "https://lubridate.tidyverse.org/reference/is.timespan.html",
+      "last_hash": "f6b813152e3fe2d92244f891c35323227fec07c651bef3685a091e80db2c5de6",
+      "last_fetched": "2026-11-08T05:09:24.150752+00:00",
+      "title": "Is x a length of time? — is.timespan • lubridate"
+    },
+    "reference-lakers": {
+      "url": "https://lubridate.tidyverse.org/reference/lakers.html",
+      "last_hash": "59fdb7a70cdc42968790ab4e303a5b87fa4d79a8f96f4040db9309d39d69739e",
+      "last_fetched": "2026-11-08T05:09:25.056957+00:00",
+      "title": "Lakers 2008-2009 basketball data set — lakers • lubridate"
+    },
+    "reference-leap_year": {
+      "url": "https://lubridate.tidyverse.org/reference/leap_year.html",
+      "last_hash": "805358834ebf8e0ea472a5b5cf3ec2c4f23eb8eca159b5565f734eda7f4222e0",
+      "last_fetched": "2026-11-08T05:09:25.910581+00:00",
+      "title": "Is a year a leap year? — leap_year • lubridate"
+    },
+    "reference-local_time": {
+      "url": "https://lubridate.tidyverse.org/reference/local_time.html",
+      "last_hash": "b9676004fff1f76b7e54c2482fe45cb27ea87e748d35769f263d9186f4900ca4",
+      "last_fetched": "2026-11-08T05:09:26.802732+00:00",
+      "title": "Get local time from a date-time vector. — local_time • lubridate"
+    },
+    "reference-lubridate-package": {
+      "url": "https://lubridate.tidyverse.org/reference/lubridate-package.html",
+      "last_hash": "c7b166424cbae9fdd17333566fc7f0edffce7f6f9ff942c5f0b8fc844f9340e8",
+      "last_fetched": "2026-11-08T05:09:27.756794+00:00",
+      "title": "Dates and times made easy with lubridate — lubridate-package • lubridate"
+    },
+    "reference-make_datetime": {
+      "url": "https://lubridate.tidyverse.org/reference/make_datetime.html",
+      "last_hash": "abd51b95699e994d1be497ba9e1a4399cfe03c6e26d90851947cde4c85609176",
+      "last_fetched": "2026-11-08T05:09:28.681890+00:00",
+      "title": "Efficient creation of date-times from numeric representations — make_datetime • lubridate"
+    },
+    "reference-make_difftime": {
+      "url": "https://lubridate.tidyverse.org/reference/make_difftime.html",
+      "last_hash": "9f5fe85270d6d9ad1429feb24820e61a22e66302a5301ada07a11dc7bc457eb4",
+      "last_fetched": "2026-11-08T05:09:29.536757+00:00",
+      "title": "Create a difftime object. — make_difftime • lubridate"
+    },
+    "reference-minute": {
+      "url": "https://lubridate.tidyverse.org/reference/minute.html",
+      "last_hash": "c5f7fbb6494aa046d325c2631ce1313053ddf68bed847bb5a03414a46482e015",
+      "last_fetched": "2026-11-08T05:09:30.468476+00:00",
+      "title": "Get/set minutes component of a date-time — minute • lubridate"
+    },
+    "reference-month": {
+      "url": "https://lubridate.tidyverse.org/reference/month.html",
+      "last_hash": "ae1a2b95ba84a5a596b1707c353f9e1e85b724a8a7df649866a9f1f7b31a4808",
+      "last_fetched": "2026-11-08T05:09:31.306552+00:00",
+      "title": "Get/set months component of a date-time — month • lubridate"
+    },
+    "reference-mplus": {
+      "url": "https://lubridate.tidyverse.org/reference/mplus.html",
+      "last_hash": "ab3a437dfb7fbb32622ddb4f1c3faafd61a275a3de234b675f4bca3eaac7d8ba",
+      "last_fetched": "2026-11-08T05:09:32.295460+00:00",
+      "title": "Add and subtract months to a date without exceeding the last day of the new month — %m+% • lubridate"
+    },
+    "reference-now": {
+      "url": "https://lubridate.tidyverse.org/reference/now.html",
+      "last_hash": "47f674e3d0227afc0dc3160a83ae0b2563e3144995be136defc02e8038409885",
+      "last_fetched": "2026-11-08T05:09:33.116491+00:00",
+      "title": "The current day and time — now • lubridate"
+    },
+    "reference-origin": {
+      "url": "https://lubridate.tidyverse.org/reference/origin.html",
+      "last_hash": "64f8587432674a8f1272bb9ef958b18a80d960bad8678accfdb5a56bbcfef1cd",
+      "last_fetched": "2026-11-08T05:09:33.966674+00:00",
+      "title": "1970-01-01 UTC — origin • lubridate"
+    },
+    "reference-parse_date_time": {
+      "url": "https://lubridate.tidyverse.org/reference/parse_date_time.html",
+      "last_hash": "0d25b26f31de3e068d494197bbf0ab8e31806733738b002875f31b87742be946",
+      "last_fetched": "2026-11-08T05:09:34.914175+00:00",
+      "title": "User friendly date-time parsing functions — parse_date_time • lubridate"
+    },
+    "reference-period": {
+      "url": "https://lubridate.tidyverse.org/reference/period.html",
+      "last_hash": "61568008e05a98732dd574e3287022a29084b91c0939c4751b4b3d5327898c63",
+      "last_fetched": "2026-11-08T05:09:35.987497+00:00",
+      "title": "Create or parse period objects — period • lubridate"
+    },
+    "reference-period_to_seconds": {
+      "url": "https://lubridate.tidyverse.org/reference/period_to_seconds.html",
+      "last_hash": "34da346a68703e920d6b7a7db4e52ed827cbc9fa8b05bc6bad9921cacabb4af4",
+      "last_fetched": "2026-11-08T05:09:36.843071+00:00",
+      "title": "Contrive a period to/from a given number of seconds — period_to_seconds • lubridate"
+    },
+    "reference-posix_utils": {
+      "url": "https://lubridate.tidyverse.org/reference/posix_utils.html",
+      "last_hash": "b749761f728ee6893feef681f700dbb037f956fcd93776d4719c29f6ee2970fe",
+      "last_fetched": "2026-11-08T05:09:37.753920+00:00",
+      "title": "Various POSIX utilities — is.POSIXt • lubridate"
+    },
+    "reference-pretty_dates": {
+      "url": "https://lubridate.tidyverse.org/reference/pretty_dates.html",
+      "last_hash": "1e303409c62b4cc15e841fa4fd60fc5d6df185d5ae1f30b039bde7b88a5d6c12",
+      "last_fetched": "2026-11-08T05:09:38.664338+00:00",
+      "title": "Computes attractive axis breaks for date-time data — pretty_dates • lubridate"
+    },
+    "reference-quarter": {
+      "url": "https://lubridate.tidyverse.org/reference/quarter.html",
+      "last_hash": "6eb5993403011269c392e167fc3d54ab7d640817a99dce1e9b9a65c648602c9f",
+      "last_fetched": "2026-11-08T05:09:39.559794+00:00",
+      "title": "Get the fiscal quarter and semester of a date-time — quarter • lubridate"
+    },
+    "reference-reclass_date": {
+      "url": "https://lubridate.tidyverse.org/reference/reclass_date.html",
+      "last_hash": "c69599bd353445de49436666ecdb8998d057a78005da1c6012fac3020931e283",
+      "last_fetched": "2026-11-08T05:09:40.440245+00:00",
+      "title": "Convenience method to reclass dates post-modification. — reclass_date • lubridate"
+    },
+    "reference-reclass_timespan": {
+      "url": "https://lubridate.tidyverse.org/reference/reclass_timespan.html",
+      "last_hash": "9c814a4fbe605c0bf944bbe1b6fdf66c84b34739423c0a56ec472fb5966b2ca7",
+      "last_fetched": "2026-11-08T05:09:41.355514+00:00",
+      "title": "Convenience method to reclass timespans post-modification. — reclass_timespan • lubridate"
+    },
+    "reference-reexports": {
+      "url": "https://lubridate.tidyverse.org/reference/reexports.html",
+      "last_hash": "bcb22cc1bef53133e5274bd01e376cee16cc23b2d25a9bee53adf2d6f5c80a05",
+      "last_fetched": "2026-11-08T05:09:42.252494+00:00",
+      "title": "Objects exported from other packages — reexports • lubridate"
+    },
+    "reference-rollbackward": {
+      "url": "https://lubridate.tidyverse.org/reference/rollbackward.html",
+      "last_hash": "0e1d5a979ed177ff7b51a4623a1d684250f7f793a6eda68caa67a1ece40f35d7",
+      "last_fetched": "2026-11-08T05:09:43.144421+00:00",
+      "title": "Roll backward or forward a date the previous, current or next month — rollbackward • lubridate"
+    },
+    "reference-round_date": {
+      "url": "https://lubridate.tidyverse.org/reference/round_date.html",
+      "last_hash": "d24113df81bae75621dac1fc8e817351671218e41eb86ffa06b44b2b62e4cadf",
+      "last_fetched": "2026-11-08T05:09:44.105557+00:00",
+      "title": "Round, floor and ceiling methods for date-time objects — round_date • lubridate"
+    },
+    "reference-second": {
+      "url": "https://lubridate.tidyverse.org/reference/second.html",
+      "last_hash": "0d2f2ccbf58f8ae7673b9ae011c2e6bcba98e59a7a9a13214d592209087c218e",
+      "last_fetched": "2026-11-08T05:09:44.999989+00:00",
+      "title": "Get/set seconds component of a date-time — second • lubridate"
+    },
+    "reference-stamp": {
+      "url": "https://lubridate.tidyverse.org/reference/stamp.html",
+      "last_hash": "99dc3687a76688c068f72ed6df5a71bc1338236f762affa4291b791ebbc0b6e7",
+      "last_fetched": "2026-11-08T05:09:45.916483+00:00",
+      "title": "Format dates and times based on human-friendly templates — stamp • lubridate"
+    },
+    "reference-time_length": {
+      "url": "https://lubridate.tidyverse.org/reference/time_length.html",
+      "last_hash": "78926e91cf34d050a3f2ec46d8546fa75e9f5589e3b8d59920efd643f0b9f65a",
+      "last_fetched": "2026-11-08T05:09:46.792717+00:00",
+      "title": "Compute the exact length of a time span — time_length • lubridate"
+    },
+    "reference-timespan": {
+      "url": "https://lubridate.tidyverse.org/reference/timespan.html",
+      "last_hash": "45df3e0427d00420d91b51d3925b88641118a5979a0d3dcf7768bc0a339d052f",
+      "last_fetched": "2026-11-08T05:09:48.010970+00:00",
+      "title": "Description of time span classes in lubridate — timespan • lubridate"
+    },
+    "reference-tz": {
+      "url": "https://lubridate.tidyverse.org/reference/tz.html",
+      "last_hash": "f3678349c3dd486261fc6838ce2732cb3c327f9f46b195621caf265865728eda",
+      "last_fetched": "2026-11-08T05:09:48.870349+00:00",
+      "title": "Get/set time zone component of a date-time — tz • lubridate"
+    },
+    "reference-week": {
+      "url": "https://lubridate.tidyverse.org/reference/week.html",
+      "last_hash": "00420dc7eabdb4a642761a99e5f0868f142b27bbabc60fa648124020851b646e",
+      "last_fetched": "2026-11-08T05:09:49.760383+00:00",
+      "title": "Get/set weeks component of a date-time — week • lubridate"
+    },
+    "reference-with_tz": {
+      "url": "https://lubridate.tidyverse.org/reference/with_tz.html",
+      "last_hash": "39e6d4fe889009ebe8b80277e21a99828fb83d850342960d7347f38008a397a1",
+      "last_fetched": "2026-11-08T05:09:50.677257+00:00",
+      "title": "Get date-time in a different time zone — with_tz • lubridate"
+    },
+    "reference-within-interval": {
+      "url": "https://lubridate.tidyverse.org/reference/within-interval.html",
+      "last_hash": "6a1208e9c2cdae9798a73b55bc4d84d7655f88667904912988878e899d64e158",
+      "last_fetched": "2026-11-08T05:09:51.558007+00:00",
+      "title": "Does a date (or interval) fall within an interval? — %within% • lubridate"
+    },
+    "reference-year": {
+      "url": "https://lubridate.tidyverse.org/reference/year.html",
+      "last_hash": "1fc6d6b679f2a5443af7a70a6e5dff41bf6b91035e56383393e88a4c3d3dd3b5",
+      "last_fetched": "2026-11-08T05:09:52.481290+00:00",
+      "title": "Get/set years component of a date-time — year • lubridate"
+    },
+    "reference-ymd": {
+      "url": "https://lubridate.tidyverse.org/reference/ymd.html",
+      "last_hash": "2b8281b1a7b3120e50d390c20e664f7f3a4600216bacdcf69609b2e90a9380bb",
+      "last_fetched": "2026-11-08T05:09:53.364995+00:00",
+      "title": "Parse dates with year, month, and day components — ymd • lubridate"
+    },
+    "reference-ymd_hms": {
+      "url": "https://lubridate.tidyverse.org/reference/ymd_hms.html",
+      "last_hash": "24d56d20943baf450519c2dd5786bc1d432cbd3d285167f2fbb89ab49c98b9e7",
+      "last_fetched": "2026-11-08T05:09:54.289885+00:00",
+      "title": "Parse date-times with year, month, and day, hour, minute, and second components. — ymd_hms • lubridate"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:09:54.289885+00:00",
+  "version_history": []
+}

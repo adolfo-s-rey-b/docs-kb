@@ -1,0 +1,87 @@
+**Documentation Version**
+
+You are viewing version **2026.10.1**. [Verify that this is the latest version](https://docs.posit.co/supported-versions/rstudio.html)
+.
+
+Copy for LLM View as Markdown
+
+The Quarto visual editor provides a [WYSIWYM](https://en.wikipedia.org/wiki/WYSIWYM)
+ editing interface for all of Pandoc markdown, including tables, citations, cross-references, footnotes, divs/spans, definition lists, attributes, raw HTML/TeX, and more. The visual editor also includes support for executing code cells and viewing their output inline:
+
+![An R Markdown file opened in the RStudio visual editor. The page is titled 'Filter joins'. Underneath is a table containing R syntax, mathematical notation, and definitions for the semi- and anti-joins. Underneath this table is an R code chunk that displays a graphical representation of a semi-join.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing.png)
+
+The visual editor doesn’t attempt to abstract away or obscure the underlying markdown document. Rather, it aims to provide a highly productive writing interface for people that love markdown. Most markdown constructs (e.g., `#` or `**bold**`) can be used directly for formatting.
+
+### Switching Modes[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#switching-modes)
+
+Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the Source or Visual button at the top-left of the document toolbar (or alternatively the Ctrl+Shift+F4/Cmd+Shift+F4 F4 keyboard shortcut):
+
+![A snippet of an RStudio window showing the options bar at the top of a Quarto document.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-switch-modes.png)
+
+It’s possible to switch between source and visual mode at any time (editing location and undo/redo state will be preserved when you switch).
+
+Using the Editor[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#using-the-editor)
+
+-----------------------------------------------------------------------------------------------------------
+
+### Keyboard Shortcuts[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#keyboard-shortcuts)
+
+There are keyboard shortcuts for all basic editing tasks. Visual mode supports both traditional keyboard shortcuts (e.g. Ctrl + B or Cmd + B for bold) as well as markdown shortcuts (using markdown syntax directly). For example, enclose `**bold**` text in asterisks or type `##` and press space to create a second level heading. Here are some of the most commonly used shortcuts:
+
+|     |     |     |
+| --- | --- | --- |
+| Bold | ⌘ B | `**bold**` |
+| Italic | ⌘ I | `*italic*` |
+| Code | ⌘ D | `` `code` `` |
+| Link | ⌘ K | `<href>` |
+| Heading 1 | ⌥⌘ 1 | `#` |
+| Heading 2 | ⌥⌘ 2 | `##` |
+| Heading 3 | ⌥⌘ 3 | `###` |
+| R Code Chunk | ⌥⌘ I | ` ```{r} ` |
+
+See the [editing shortcuts](https://quarto.org/docs/visual-editor/options.html#shortcuts)
+ article for a complete list of all shortcuts.
+
+### Insert Anything[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#insert-anything)
+
+You can also use the catch-all Cmd+//Ctrl+/ shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:
+
+![There is a line of text (with a cursor at the end) where someone has typed '/lis'. There is a drop-down menu underneath this with options for 'Bullet List', 'Numbered List', and 'Definition List' arranged vertically. The title of each item is bolded, has a small icon to the left, and a small description in lighter gray text underneath it.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-omni-list.png)
+
+![There is a line of text (with a cursor at the end) where someone has typed '/ma'. There is a drop-down menu underneath this with options for 'Inline Math', 'Display Math', and 'Image...' arranged vertically. The title of each item is bolded, has a small icon to the left, and a small description in lighter gray text underneath it.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-omni-math.png)
+
+If you are at the beginning of a line (as displayed above), you can also enter plain `/` to invoke the shortcut.
+
+### Editor Toolbar[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#editor-toolbar)
+
+The editor toolbar includes buttons for the most commonly used formatting commands:
+
+![A snippet of an RStudio window showing the options bar at the top of an R Markdown document.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-toolbar.png)
+
+Additional commands are available on the **Format**, **Insert**, and **Table** menus:
+
+|     |     |     |
+| --- | --- | --- |  
+| ![The contents of the Format drop down menu.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-format-menu.png) | ![The contents of the Insert drop down menu.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-insert-menu.png) | ![The contents of the Table drop down menu.](https://docs.posit.co/ide/user/ide/guide/documents/images/visual-editing-table-menu.png) |
+
+Learning More[](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html#learning-more)
+
+-----------------------------------------------------------------------------------------------------
+
+See the following resources on [https://quarto.org/](https://quarto.org/)
+ to learn more about visual markdown editing:
+
+*   [Technical Writing](https://quarto.org/docs/visual-editor/technical.html)
+     covers features commonly used in scientific and technical writing, including citations, cross-references, footnotes, equations, embedded code, and LaTeX.
+    
+*   [Content Editing](https://quarto.org/docs/visual-editor/content.html)
+     provides more depth on visual editor support for tables, lists, pandoc attributes, CSS styles, comments, symbols/emojis, etc.
+    
+*   [Shortcuts & Options](https://quarto.org/docs/visual-editor/options.html)
+     documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts and describes various options for configuring the editor.
+    
+*   [Markdown Output](https://quarto.org/docs/visual-editor/markdown.html)
+     describes how the visual editor parses and writes markdown and describes various ways you can customize this.
+    
+
+Back to top

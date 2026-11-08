@@ -1,0 +1,130 @@
+### Navigation
+
+*   [index](https://docs.python.org/3/genindex.html "General Index")
+    
+*   [modules](https://docs.python.org/3/py-modindex.html "Python Module Index")
+     |
+*   [next](https://docs.python.org/3/library/grp.html "grp — The group database")
+     |
+*   [previous](https://docs.python.org/3/library/posix.html "posix — The most common POSIX system calls")
+     |
+*   ![Python logo](https://docs.python.org/3/_static/py.svg)
+*   [Python](https://www.python.org/)
+     »
+*   German | DeutschGreek | ΕλληνικάEnglishSpanish | españolPersian | فارسیFrench | françaisItalian | italianoJapanese | 日本語Korean | 한국어Punjabi | ਪੰਜਾਬੀPolish | polskiBrazilian Portuguese | Português brasileiroRomanian | RomâneșteRussian | РусскийTurkish | TürkçeSimplified Chinese | 简体中文Traditional Chinese | 繁體中文
+    
+    dev (3.16)3.15.23.143.133.123.113.103.93.83.73.63.53.43.33.23.13.02.72.6
+    
+
+*   [3.15.2 documentation](https://docs.python.org/3/index.html)
+     »
+*   [The Python standard library](https://docs.python.org/3/library/index.html)
+     »
+*   [Unix-specific services](https://docs.python.org/3/library/unix.html)
+     »
+*   [`pwd` — The password database](https://docs.python.org/3/library/pwd.html)
+    
+*    
+    
+    |
+*   Theme Auto Light Dark |
+
+`pwd` — The password database[¶](https://docs.python.org/3/library/pwd.html#module-pwd "Link to this heading")
+
+===============================================================================================================
+
+* * *
+
+This module provides access to the Unix user account and password database. It is available on all Unix versions.
+
+[Availability](https://docs.python.org/3/library/intro.html#availability)
+: Unix, not WASI, not iOS.
+
+Password database entries are reported as a tuple-like object, whose attributes correspond to the members of the `passwd` structure (Attribute field below, see `<pwd.h>`):
+
+| Index | Attribute | Meaning |
+| --- | --- | --- |
+| 0   | `pw_name` | Login name |
+| 1   | `pw_passwd` | Optional encrypted password |
+| 2   | `pw_uid` | Numerical user ID |
+| 3   | `pw_gid` | Numerical group ID |
+| 4   | `pw_gecos` | User name or comment field |
+| 5   | `pw_dir` | User home directory |
+| 6   | `pw_shell` | User command interpreter |
+
+The uid and gid items are integers, all others are strings. [`KeyError`](https://docs.python.org/3/builtins/exceptions.html#KeyError "KeyError")
+ is raised if the entry asked for cannot be found.
+
+Note
+
+In traditional Unix the field `pw_passwd` usually contains a password encrypted with a DES derived algorithm. However most modern unices use a so-called _shadow password_ system. On those unices the _pw\_passwd_ field only contains an asterisk (`'*'`) or the letter `'x'` where the encrypted password is stored in a file `/etc/shadow` which is not world readable. Whether the _pw\_passwd_ field contains anything useful is system-dependent.
+
+It defines the following items:
+
+pwd.getpwuid(_uid_)[¶](https://docs.python.org/3/library/pwd.html#pwd.getpwuid "Link to this definition")
+
+Return the password database entry for the given numeric user ID.
+
+pwd.getpwnam(_name_)[¶](https://docs.python.org/3/library/pwd.html#pwd.getpwnam "Link to this definition")
+
+Return the password database entry for the given user name.
+
+pwd.getpwall()[¶](https://docs.python.org/3/library/pwd.html#pwd.getpwall "Link to this definition")
+
+Return a list of all available password database entries, in arbitrary order.
+
+See also
+
+Module [`grp`](https://docs.python.org/3/library/grp.html#module-grp "grp: The group database (getgrnam() and friends).")
+
+An interface to the group database, similar to this.
+
+#### Previous topic
+
+[`posix` — The most common POSIX system calls](https://docs.python.org/3/library/posix.html "previous chapter")
+
+#### Next topic
+
+[`grp` — The group database](https://docs.python.org/3/library/grp.html "next chapter")
+
+### This page
+
+*   [Report a bug](https://docs.python.org/3/bugs.html)
+    
+*   [Improve this page](https://docs.python.org/3/improve-page.html?pagetitle=pwd+%E2%80%94+The+password+database&pageurl=https%3A%2F%2Fdocs.python.org%2F3%2Flibrary%2Fpwd.html&pagesource=library%2Fpwd.rst)
+    
+*   [Show source](https://github.com/python/cpython/blob/3.15/Doc/library/pwd.rst?plain=1)
+    
+
+«
+
+### Navigation
+
+*   [index](https://docs.python.org/3/genindex.html "General Index")
+    
+*   [modules](https://docs.python.org/3/py-modindex.html "Python Module Index")
+     |
+*   [next](https://docs.python.org/3/library/grp.html "grp — The group database")
+     |
+*   [previous](https://docs.python.org/3/library/posix.html "posix — The most common POSIX system calls")
+     |
+*   ![Python logo](https://docs.python.org/3/_static/py.svg)
+*   [Python](https://www.python.org/)
+     »
+*   German | DeutschGreek | ΕλληνικάEnglishSpanish | españolPersian | فارسیFrench | françaisItalian | italianoJapanese | 日本語Korean | 한국어Punjabi | ਪੰਜਾਬੀPolish | polskiBrazilian Portuguese | Português brasileiroRomanian | RomâneșteRussian | РусскийTurkish | TürkçeSimplified Chinese | 简体中文Traditional Chinese | 繁體中文
+    
+    dev (3.16)3.15.23.143.133.123.113.103.93.83.73.63.53.43.33.23.13.02.72.6
+    
+
+*   [3.15.2 documentation](https://docs.python.org/3/index.html)
+     »
+*   [The Python standard library](https://docs.python.org/3/library/index.html)
+     »
+*   [Unix-specific services](https://docs.python.org/3/library/unix.html)
+     »
+*   [`pwd` — The password database](https://docs.python.org/3/library/pwd.html)
+    
+*    
+    
+    |
+*   Theme Auto Light Dark |

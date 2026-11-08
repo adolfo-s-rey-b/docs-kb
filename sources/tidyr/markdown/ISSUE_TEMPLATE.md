@@ -1,0 +1,22 @@
+[Skip to content](https://tidyr.tidyverse.org/ISSUE_TEMPLATE.html#container)
+
+![](https://tidyr.tidyverse.org/logo.png)
+
+NA
+==
+
+Source: [`.github/ISSUE_TEMPLATE.md`](https://github.com/tidyverse/tidyr/blob/main/.github/ISSUE_TEMPLATE.md)
+
+Please briefly describe your problem and what output you expect. If you have a question, please don’t use this form. Instead, ask on [https://stackoverflow.com/](https://stackoverflow.com/)
+ or [https://forum.posit.co/](https://forum.posit.co/)
+.
+
+Please include a minimal reproducible example (AKA a reprex). If you’ve never heard of a [reprex](https://reprex.tidyverse.org/)
+ before, start by reading [https://www.tidyverse.org/help/#reprex](https://www.tidyverse.org/help/#reprex)
+.
+
+* * *
+
+Brief description of the problem
+
+    # insert reprex here

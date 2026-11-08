@@ -1,0 +1,120 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines.md)
+.
+
+**Do you want n8n to verify your node?**
+
+Follow these guidelines while building your node if you want to submit it for verification by n8n. Any user with verified community nodes enabled can discover and install verified nodes from n8n's nodes panel across all deployment types (self-hosted and n8n Cloud).
+
+**Upcoming Changes**
+
+From May 1st 2026 you must publish **ALL** community nodes using a GitHub action and include a [provenance statement](https://docs.npmjs.com/generating-provenance-statements)
+
+Use the n8n-node tool[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#use-the-n8n-node-tool)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+All verified community node authors should use the [`n8n-node` tool](https://docs.n8n.io/connect/create-nodes/build-your-node/using-the-n8n-node-tool)
+ to create and check their package. This helps n8n ensure quality and consistency by:
+
+*   Generating the expected package file structure
+    
+*   Adding the required metadata and configuration to the `package.json` file
+    
+*   Making it easy to lint your code against n8n's standards
+    
+*   Allowing you to load your node in a local n8n instance for testing
+    
+
+Node Types[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#node-types)
+
+--------------------------------------------------------------------------------------------------------------------
+
+*   The node **MUST** not be an existing node, If your node is an iteration on an existing node create a pull request instead.
+    
+*   n8n isn't accepting Logic or Flow control nodes at the moment.
+    
+*   Each package should integrate one third-party service. Most packages that wrap multiple unrelated APIs or act as a proxy layer for several services don't qualify for verification. Submit each service as its own separate package.
+    
+*   You can include a trigger node for the same service alongside the main node. Build the trigger node in the programmatic style, because the [declarative style](https://docs.n8n.io/connect/create-nodes/plan-your-node/choose-a-node-building-style)
+     doesn't support triggers. A package can mix styles, so a declarative-style action node and a programmatic-style trigger node can live in the same package.
+    
+
+Package source verification[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#package-source-verification)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*   Verify that your npm package repository URL matches the expected GitHub repository.
+    
+*   Confirm that the package author / maintainer matches between npm and the repository.
+    
+*   Confirm that the git link in npm works and that the repository is public.
+    
+*   Make sure your package has proper documentation (README, usage examples, etc.).
+    
+*   Make sure your package license is MIT.
+    
+*   Packages should be published from a GitHub action and include [provenance](https://docs.npmjs.com/generating-provenance-statements)
+    
+
+No external dependencies[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#no-external-dependencies)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+*   Ensure that your package does **not** include any external dependencies to keep it lightweight and easy to maintain.
+    
+
+Proper documentation[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#proper-documentation)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+*   Provide clear documentation, whether it’s a **README** on GitHub or links to relevant **API documentation**.
+    
+*   Include usage instructions, example workflows, and any necessary authentication details.
+    
+
+No access to environment variables or file system[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#no-access-to-environment-variables-or-file-system)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*   The code **must not** interact with environment variables or attempt to read/write files.
+    
+*   Pass all necessary data through node parameters.
+    
+
+Follow n8n best practices[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#follow-n8n-best-practices)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+*   Maintain a clear and consistent coding style.
+    
+*   Use **TypeScript** and follow n8n's [**node development guidelines**](https://docs.n8n.io/connect/create-nodes/overview)
+    .
+    
+*   Ensure proper error handling and validation.
+    
+*   Make sure the linter passes (in other words, make sure running `npx @n8n/scan-community-package n8n-nodes-PACKAGE` passes).
+    
+
+Use English language only[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#use-english-language-only)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+*   Both the node interface and all documentation must be in **English** only.
+    
+*   This includes parameter names, descriptions, help text, error messages and **README** content.
+    
+
+Related resources[](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines#related-resources)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+*   [Node building reference](https://docs.n8n.io/connect/create-nodes/build-your-node/reference)
+    
+
+[PreviousUX guidelines](https://docs.n8n.io/connect/create-nodes/build-your-node/reference/ux-guidelines)
+[NextTest your node](https://docs.n8n.io/connect/create-nodes/test-your-node)
+
+Last updated 10 days ago
+
+Was this helpful?

@@ -1,0 +1,67 @@
+*   [Skip to main content](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#content)
+    
+*   [Skip to search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#mdn-search)
+    
+
+Map.prototype.size
+==================
+
+Baseline
+
+Widely available
+
+This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.
+
+*   [See full compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#browser_compatibility)
+    
+*   [Learn more](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
+    
+
+The **`size`** accessor property of [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+ instances returns the number of elements in this map.
+
+[Try it](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#try_it)
+
+-----------------------------------------------------------------------------------------------------------
+
+[Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#description)
+
+---------------------------------------------------------------------------------------------------------------------
+
+The value of `size` is an integer representing how many entries the `Map` object has. A set accessor function for `size` is `undefined`; you cannot change this property.
+
+[Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#examples)
+
+---------------------------------------------------------------------------------------------------------------
+
+### [Using size](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#using_size)
+
+[Specifications](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#specifications)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+| Specification |
+| --- |
+| [ECMAScript® 2027 Language Specification  <br>\# sec-get-map.prototype.size](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-map.prototype.size) |
+
+[Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#browser_compatibility)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+[See also](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size#see_also)
+
+---------------------------------------------------------------------------------------------------------------
+
+*   [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+    
+
+Help improve MDN
+----------------
+
+[Learn how to contribute](https://developer.mozilla.org/en-US/docs/MDN/Community/Getting_started)
+
+This page was last modified on Sep 5, 2026 by [MDN contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size/contributors.txt)
+.
+
+[View this page on GitHub](https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/map/size/index.md?plain=1 "Folder: en-us/web/javascript/reference/global_objects/map/size (Opens in a new tab)")
+ • [Report a problem with this content](https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FMap%2Fsize&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fjavascript%2Freference%2Fglobal_objects%2Fmap%2Fsize%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FMap%2Fsize%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fjavascript%2Freference%2Fglobal_objects%2Fmap%2Fsize%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2Fc9f3d85f24d7839c9fe36a68d8042d088d906147%0A*+Document+last+modified%3A+2026-09-05T08%3A25%3A26.000Z%0A%0A%3C%2Fdetails%3E "This will take you to GitHub to file a new issue.")

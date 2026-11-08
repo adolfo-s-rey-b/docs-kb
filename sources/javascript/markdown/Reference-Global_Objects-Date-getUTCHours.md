@@ -1,0 +1,78 @@
+*   [Skip to main content](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#content)
+    
+*   [Skip to search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#mdn-search)
+    
+
+Date.prototype.getUTCHours()
+============================
+
+Baseline
+
+Widely available
+
+This feature is well established and works across many devices and browser versions. It’s been available across browsers since July 2015.
+
+*   [See full compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#browser_compatibility)
+    
+*   [Learn more](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
+    
+
+The **`getUTCHours()`** method of [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+ instances returns the hours for this date according to universal time.
+
+[Try it](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#try_it)
+
+-------------------------------------------------------------------------------------------------------------------
+
+[Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#syntax)
+
+-------------------------------------------------------------------------------------------------------------------
+
+### [Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#parameters)
+
+None.
+
+### [Return value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#return_value)
+
+An integer, between 0 and 23, representing the hours for the given date according to universal time. Returns `NaN` if the date is [invalid](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#the_epoch_timestamps_and_invalid_date)
+.
+
+[Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#examples)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+### [Using getUTCHours()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#using_getutchours)
+
+The following example assigns the hours portion of the current time to the variable `hours`.
+
+[Specifications](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#specifications)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+| Specification |
+| --- |
+| [ECMAScript® 2027 Language Specification  <br>\# sec-date.prototype.getutchours](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutchours) |
+
+[Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#browser_compatibility)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+[See also](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours#see_also)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+*   [`Date.prototype.getHours()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)
+    
+*   [`Date.prototype.setUTCHours()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours)
+    
+
+Help improve MDN
+----------------
+
+[Learn how to contribute](https://developer.mozilla.org/en-US/docs/MDN/Community/Getting_started)
+
+This page was last modified on Jul 10, 2025 by [MDN contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours/contributors.txt)
+.
+
+[View this page on GitHub](https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/date/getutchours/index.md?plain=1 "Folder: en-us/web/javascript/reference/global_objects/date/getutchours (Opens in a new tab)")
+ • [Report a problem with this content](https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FDate%2FgetUTCHours&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fjavascript%2Freference%2Fglobal_objects%2Fdate%2Fgetutchours%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FDate%2FgetUTCHours%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fjavascript%2Freference%2Fglobal_objects%2Fdate%2Fgetutchours%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2F544b843570cb08d1474cfc5ec03ffb9f4edc0166%0A*+Document+last+modified%3A+2025-07-10T09%3A07%3A55.000Z%0A%0A%3C%2Fdetails%3E "This will take you to GitHub to file a new issue.")

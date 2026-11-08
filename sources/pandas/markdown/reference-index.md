@@ -1,0 +1,357 @@
+[Skip to main content](https://pandas.pydata.org/docs/reference/index.html#main-content)
+
+Back to top Ctrl+K
+
+Choose version
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/pandas-dev/pandas)
+    
+*   [X](https://x.com/pandas_dev)
+    
+*   [Mastodon](https://fosstodon.org/@pandas_dev)
+    
+
+Collapse Sidebar Expand Sidebar
+
+API reference[#](https://pandas.pydata.org/docs/reference/index.html#api-reference "Link to this heading")
+
+===========================================================================================================
+
+This page gives an overview of all public pandas objects, functions and methods. All classes and functions exposed in `pandas.*` namespace are public.
+
+The following subpackages are public.
+
+*   `pandas.errors`: Custom exception and warnings classes that are raised by pandas.
+    
+*   `pandas.plotting`: Plotting public API.
+    
+*   `pandas.testing`: Functions that are useful for writing tests involving pandas objects.
+    
+*   `pandas.api.extensions`: Functions and classes for extending pandas objects.
+    
+*   `pandas.api.indexers`: Functions and classes for rolling window indexers.
+    
+*   `pandas.api.interchange`: DataFrame interchange protocol.
+    
+*   `pandas.api.types`: Datatype classes and functions.
+    
+*   `pandas.api.typing`: Classes that may be necessary for type-hinting. These are classes that are encountered as intermediate results but should not be instantiated directly by users. These classes are not to be confused with classes from the [pandas-stubs](https://github.com/pandas-dev/pandas-stubs)
+     package which has classes in addition to those that occur in pandas for type-hinting.
+    
+
+In addition, public functions in `pandas.io`, `pandas.tseries`, `pandas.util` submodules are explicitly mentioned in the documentation. Further APIs in these modules are not guaranteed to be stable.
+
+Warning
+
+The `pandas.core`, `pandas.compat` top-level modules are PRIVATE. Stable functionality in such modules is not guaranteed.
+
+*   [Input/output](https://pandas.pydata.org/docs/reference/io.html)
+    *   [Pickling](https://pandas.pydata.org/docs/reference/io.html#pickling)
+        
+    *   [Flat file](https://pandas.pydata.org/docs/reference/io.html#flat-file)
+        
+    *   [Clipboard](https://pandas.pydata.org/docs/reference/io.html#clipboard)
+        
+    *   [Excel](https://pandas.pydata.org/docs/reference/io.html#excel)
+        
+    *   [JSON](https://pandas.pydata.org/docs/reference/io.html#json)
+        
+    *   [HTML](https://pandas.pydata.org/docs/reference/io.html#html)
+        
+    *   [XML](https://pandas.pydata.org/docs/reference/io.html#xml)
+        
+    *   [Latex](https://pandas.pydata.org/docs/reference/io.html#latex)
+        
+    *   [HDFStore: PyTables (HDF5)](https://pandas.pydata.org/docs/reference/io.html#hdfstore-pytables-hdf5)
+        
+    *   [Feather](https://pandas.pydata.org/docs/reference/io.html#feather)
+        
+    *   [Parquet](https://pandas.pydata.org/docs/reference/io.html#parquet)
+        
+    *   [Iceberg](https://pandas.pydata.org/docs/reference/io.html#iceberg)
+        
+    *   [ORC](https://pandas.pydata.org/docs/reference/io.html#orc)
+        
+    *   [SAS](https://pandas.pydata.org/docs/reference/io.html#sas)
+        
+    *   [SPSS](https://pandas.pydata.org/docs/reference/io.html#spss)
+        
+    *   [SQL](https://pandas.pydata.org/docs/reference/io.html#sql)
+        
+    *   [STATA](https://pandas.pydata.org/docs/reference/io.html#stata)
+        
+*   [General functions](https://pandas.pydata.org/docs/reference/general_functions.html)
+    *   [Data manipulations](https://pandas.pydata.org/docs/reference/general_functions.html#data-manipulations)
+        
+    *   [Top-level missing data](https://pandas.pydata.org/docs/reference/general_functions.html#top-level-missing-data)
+        
+    *   [Top-level dealing with numeric data](https://pandas.pydata.org/docs/reference/general_functions.html#top-level-dealing-with-numeric-data)
+        
+    *   [Top-level dealing with datetimelike data](https://pandas.pydata.org/docs/reference/general_functions.html#top-level-dealing-with-datetimelike-data)
+        
+    *   [Top-level dealing with Interval data](https://pandas.pydata.org/docs/reference/general_functions.html#top-level-dealing-with-interval-data)
+        
+    *   [Top-level evaluation](https://pandas.pydata.org/docs/reference/general_functions.html#top-level-evaluation)
+        
+    *   [Datetime formats](https://pandas.pydata.org/docs/reference/general_functions.html#datetime-formats)
+        
+    *   [Hashing](https://pandas.pydata.org/docs/reference/general_functions.html#hashing)
+        
+    *   [Importing from other DataFrame libraries](https://pandas.pydata.org/docs/reference/general_functions.html#importing-from-other-dataframe-libraries)
+        
+*   [Series](https://pandas.pydata.org/docs/reference/series.html)
+    *   [Constructor](https://pandas.pydata.org/docs/reference/series.html#constructor)
+        
+    *   [Attributes](https://pandas.pydata.org/docs/reference/series.html#attributes)
+        
+    *   [Conversion](https://pandas.pydata.org/docs/reference/series.html#conversion)
+        
+    *   [Indexing, iteration](https://pandas.pydata.org/docs/reference/series.html#indexing-iteration)
+        
+    *   [Binary operator functions](https://pandas.pydata.org/docs/reference/series.html#binary-operator-functions)
+        
+    *   [Unary operator functions](https://pandas.pydata.org/docs/reference/series.html#unary-operator-functions)
+        
+    *   [Function application, GroupBy & window](https://pandas.pydata.org/docs/reference/series.html#function-application-groupby-window)
+        
+    *   [Computations / descriptive stats](https://pandas.pydata.org/docs/reference/series.html#computations-descriptive-stats)
+        
+    *   [Reindexing / selection / label manipulation](https://pandas.pydata.org/docs/reference/series.html#reindexing-selection-label-manipulation)
+        
+    *   [Missing data handling](https://pandas.pydata.org/docs/reference/series.html#missing-data-handling)
+        
+    *   [Reshaping, sorting](https://pandas.pydata.org/docs/reference/series.html#reshaping-sorting)
+        
+    *   [Combining / comparing / joining / merging](https://pandas.pydata.org/docs/reference/series.html#combining-comparing-joining-merging)
+        
+    *   [Time Series-related](https://pandas.pydata.org/docs/reference/series.html#time-series-related)
+        
+    *   [Accessors](https://pandas.pydata.org/docs/reference/series.html#accessors)
+        
+    *   [Plotting](https://pandas.pydata.org/docs/reference/series.html#plotting)
+        
+    *   [Serialization / IO / conversion](https://pandas.pydata.org/docs/reference/series.html#serialization-io-conversion)
+        
+*   [DataFrame](https://pandas.pydata.org/docs/reference/frame.html)
+    *   [Constructor](https://pandas.pydata.org/docs/reference/frame.html#constructor)
+        
+    *   [Attributes and underlying data](https://pandas.pydata.org/docs/reference/frame.html#attributes-and-underlying-data)
+        
+    *   [Conversion](https://pandas.pydata.org/docs/reference/frame.html#conversion)
+        
+    *   [Indexing, iteration](https://pandas.pydata.org/docs/reference/frame.html#indexing-iteration)
+        
+    *   [Binary operator functions](https://pandas.pydata.org/docs/reference/frame.html#binary-operator-functions)
+        
+    *   [Unary operator functions](https://pandas.pydata.org/docs/reference/frame.html#unary-operator-functions)
+        
+    *   [Function application, GroupBy & window](https://pandas.pydata.org/docs/reference/frame.html#function-application-groupby-window)
+        
+    *   [Computations / descriptive stats](https://pandas.pydata.org/docs/reference/frame.html#computations-descriptive-stats)
+        
+    *   [Reindexing / selection / label manipulation](https://pandas.pydata.org/docs/reference/frame.html#reindexing-selection-label-manipulation)
+        
+    *   [Missing data handling](https://pandas.pydata.org/docs/reference/frame.html#missing-data-handling)
+        
+    *   [Reshaping, sorting, transposing](https://pandas.pydata.org/docs/reference/frame.html#reshaping-sorting-transposing)
+        
+    *   [Combining / comparing / joining / merging](https://pandas.pydata.org/docs/reference/frame.html#combining-comparing-joining-merging)
+        
+    *   [Time Series-related](https://pandas.pydata.org/docs/reference/frame.html#time-series-related)
+        
+    *   [Flags](https://pandas.pydata.org/docs/reference/frame.html#flags)
+        
+    *   [Metadata](https://pandas.pydata.org/docs/reference/frame.html#metadata)
+        
+    *   [Plotting](https://pandas.pydata.org/docs/reference/frame.html#plotting)
+        
+    *   [Sparse accessor](https://pandas.pydata.org/docs/reference/frame.html#sparse-accessor)
+        
+    *   [Serialization / IO / conversion](https://pandas.pydata.org/docs/reference/frame.html#serialization-io-conversion)
+        
+*   [pandas arrays, scalars, and data types](https://pandas.pydata.org/docs/reference/arrays.html)
+    *   [Objects](https://pandas.pydata.org/docs/reference/arrays.html#objects)
+        
+    *   [Utilities](https://pandas.pydata.org/docs/reference/arrays.html#utilities)
+        
+*   [Index objects](https://pandas.pydata.org/docs/reference/indexing.html)
+    *   [Index](https://pandas.pydata.org/docs/reference/indexing.html#index)
+        
+    *   [Numeric Index](https://pandas.pydata.org/docs/reference/indexing.html#numeric-index)
+        
+    *   [CategoricalIndex](https://pandas.pydata.org/docs/reference/indexing.html#categoricalindex)
+        
+    *   [IntervalIndex](https://pandas.pydata.org/docs/reference/indexing.html#intervalindex)
+        
+    *   [MultiIndex](https://pandas.pydata.org/docs/reference/indexing.html#multiindex)
+        
+    *   [DatetimeIndex](https://pandas.pydata.org/docs/reference/indexing.html#datetimeindex)
+        
+    *   [TimedeltaIndex](https://pandas.pydata.org/docs/reference/indexing.html#timedeltaindex)
+        
+    *   [PeriodIndex](https://pandas.pydata.org/docs/reference/indexing.html#periodindex)
+        
+*   [Date offsets](https://pandas.pydata.org/docs/reference/offset_frequency.html)
+    *   [BaseOffset](https://pandas.pydata.org/docs/reference/offset_frequency.html#baseoffset)
+        
+    *   [DateOffset](https://pandas.pydata.org/docs/reference/offset_frequency.html#dateoffset)
+        
+    *   [BusinessDay](https://pandas.pydata.org/docs/reference/offset_frequency.html#businessday)
+        
+    *   [BusinessHour](https://pandas.pydata.org/docs/reference/offset_frequency.html#businesshour)
+        
+    *   [CustomBusinessDay](https://pandas.pydata.org/docs/reference/offset_frequency.html#custombusinessday)
+        
+    *   [CustomBusinessHour](https://pandas.pydata.org/docs/reference/offset_frequency.html#custombusinesshour)
+        
+    *   [Month offsets](https://pandas.pydata.org/docs/reference/offset_frequency.html#month-offsets)
+        
+    *   [CustomBusinessMonthEnd](https://pandas.pydata.org/docs/reference/offset_frequency.html#custombusinessmonthend)
+        
+    *   [CustomBusinessMonthBegin](https://pandas.pydata.org/docs/reference/offset_frequency.html#custombusinessmonthbegin)
+        
+    *   [SemiMonthEnd](https://pandas.pydata.org/docs/reference/offset_frequency.html#semimonthend)
+        
+    *   [Week](https://pandas.pydata.org/docs/reference/offset_frequency.html#week)
+        
+    *   [WeekOfMonth](https://pandas.pydata.org/docs/reference/offset_frequency.html#weekofmonth)
+        
+    *   [LastWeekOfMonth](https://pandas.pydata.org/docs/reference/offset_frequency.html#lastweekofmonth)
+        
+    *   [Quarter offsets](https://pandas.pydata.org/docs/reference/offset_frequency.html#quarter-offsets)
+        
+    *   [HalfYear offsets](https://pandas.pydata.org/docs/reference/offset_frequency.html#halfyear-offsets)
+        
+    *   [Year offsets](https://pandas.pydata.org/docs/reference/offset_frequency.html#year-offsets)
+        
+    *   [FY5253](https://pandas.pydata.org/docs/reference/offset_frequency.html#fy5253)
+        
+    *   [FY5253Quarter](https://pandas.pydata.org/docs/reference/offset_frequency.html#fy5253quarter)
+        
+    *   [Easter](https://pandas.pydata.org/docs/reference/offset_frequency.html#easter)
+        
+    *   [Ticks](https://pandas.pydata.org/docs/reference/offset_frequency.html#ticks)
+        
+*   [Frequencies](https://pandas.pydata.org/docs/reference/offset_frequency.html#frequencies)
+    *   [pandas.tseries.frequencies.to\_offset](https://pandas.pydata.org/docs/reference/api/pandas.tseries.frequencies.to_offset.html)
+        
+*   [Holiday calendars](https://pandas.pydata.org/docs/reference/offset_frequency.html#holiday-calendars)
+    *   [Holiday](https://pandas.pydata.org/docs/reference/offset_frequency.html#holiday)
+        
+    *   [Calendars](https://pandas.pydata.org/docs/reference/offset_frequency.html#calendars)
+        
+    *   [Observance rules](https://pandas.pydata.org/docs/reference/offset_frequency.html#observance-rules)
+        
+    *   [Calendar utilities](https://pandas.pydata.org/docs/reference/offset_frequency.html#calendar-utilities)
+        
+*   [Window](https://pandas.pydata.org/docs/reference/window.html)
+    *   [Rolling window functions](https://pandas.pydata.org/docs/reference/window.html#rolling-window-functions)
+        
+    *   [Weighted window functions](https://pandas.pydata.org/docs/reference/window.html#weighted-window-functions)
+        
+    *   [Expanding window functions](https://pandas.pydata.org/docs/reference/window.html#expanding-window-functions)
+        
+    *   [Exponentially-weighted window functions](https://pandas.pydata.org/docs/reference/window.html#exponentially-weighted-window-functions)
+        
+    *   [Window indexer](https://pandas.pydata.org/docs/reference/window.html#window-indexer)
+        
+*   [GroupBy](https://pandas.pydata.org/docs/reference/groupby.html)
+    *   [Indexing, iteration](https://pandas.pydata.org/docs/reference/groupby.html#indexing-iteration)
+        
+    *   [Function application helper](https://pandas.pydata.org/docs/reference/groupby.html#function-application-helper)
+        
+    *   [Function application](https://pandas.pydata.org/docs/reference/groupby.html#function-application)
+        
+    *   [`DataFrameGroupBy` computations / descriptive stats](https://pandas.pydata.org/docs/reference/groupby.html#dataframegroupby-computations-descriptive-stats)
+        
+    *   [`SeriesGroupBy` computations / descriptive stats](https://pandas.pydata.org/docs/reference/groupby.html#seriesgroupby-computations-descriptive-stats)
+        
+    *   [Plotting and visualization](https://pandas.pydata.org/docs/reference/groupby.html#plotting-and-visualization)
+        
+*   [Resampling](https://pandas.pydata.org/docs/reference/resampling.html)
+    *   [Indexing, iteration](https://pandas.pydata.org/docs/reference/resampling.html#indexing-iteration)
+        
+    *   [Function application](https://pandas.pydata.org/docs/reference/resampling.html#function-application)
+        
+    *   [Upsampling](https://pandas.pydata.org/docs/reference/resampling.html#upsampling)
+        
+    *   [Computations / descriptive stats](https://pandas.pydata.org/docs/reference/resampling.html#computations-descriptive-stats)
+        
+*   [Style](https://pandas.pydata.org/docs/reference/style.html)
+    *   [Styler constructor](https://pandas.pydata.org/docs/reference/style.html#styler-constructor)
+        
+    *   [Styler properties](https://pandas.pydata.org/docs/reference/style.html#styler-properties)
+        
+    *   [Style application](https://pandas.pydata.org/docs/reference/style.html#style-application)
+        
+    *   [Builtin styles](https://pandas.pydata.org/docs/reference/style.html#builtin-styles)
+        
+    *   [Style export and import](https://pandas.pydata.org/docs/reference/style.html#style-export-and-import)
+        
+*   [Plotting](https://pandas.pydata.org/docs/reference/plotting.html)
+    *   [pandas.plotting.andrews\_curves](https://pandas.pydata.org/docs/reference/api/pandas.plotting.andrews_curves.html)
+        
+    *   [pandas.plotting.autocorrelation\_plot](https://pandas.pydata.org/docs/reference/api/pandas.plotting.autocorrelation_plot.html)
+        
+    *   [pandas.plotting.bootstrap\_plot](https://pandas.pydata.org/docs/reference/api/pandas.plotting.bootstrap_plot.html)
+        
+    *   [pandas.plotting.boxplot](https://pandas.pydata.org/docs/reference/api/pandas.plotting.boxplot.html)
+        
+    *   [pandas.plotting.deregister\_matplotlib\_converters](https://pandas.pydata.org/docs/reference/api/pandas.plotting.deregister_matplotlib_converters.html)
+        
+    *   [pandas.plotting.lag\_plot](https://pandas.pydata.org/docs/reference/api/pandas.plotting.lag_plot.html)
+        
+    *   [pandas.plotting.parallel\_coordinates](https://pandas.pydata.org/docs/reference/api/pandas.plotting.parallel_coordinates.html)
+        
+    *   [pandas.plotting.plot\_params](https://pandas.pydata.org/docs/reference/api/pandas.plotting.plot_params.html)
+        
+    *   [pandas.plotting.radviz](https://pandas.pydata.org/docs/reference/api/pandas.plotting.radviz.html)
+        
+    *   [pandas.plotting.register\_matplotlib\_converters](https://pandas.pydata.org/docs/reference/api/pandas.plotting.register_matplotlib_converters.html)
+        
+    *   [pandas.plotting.scatter\_matrix](https://pandas.pydata.org/docs/reference/api/pandas.plotting.scatter_matrix.html)
+        
+    *   [pandas.plotting.table](https://pandas.pydata.org/docs/reference/api/pandas.plotting.table.html)
+        
+*   [Options and settings](https://pandas.pydata.org/docs/reference/options.html)
+    *   [Working with options](https://pandas.pydata.org/docs/reference/options.html#working-with-options)
+        
+    *   [Numeric formatting](https://pandas.pydata.org/docs/reference/options.html#numeric-formatting)
+        
+*   [Extensions](https://pandas.pydata.org/docs/reference/extensions.html)
+    *   [pandas.api.extensions.register\_extension\_dtype](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.register_extension_dtype.html)
+        
+    *   [pandas.api.extensions.register\_dataframe\_accessor](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.register_dataframe_accessor.html)
+        
+    *   [pandas.api.extensions.register\_series\_accessor](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.register_series_accessor.html)
+        
+    *   [pandas.api.extensions.register\_index\_accessor](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.register_index_accessor.html)
+        
+    *   [pandas.api.extensions.ExtensionDtype](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.ExtensionDtype.html)
+        
+    *   [pandas.api.extensions.ExtensionArray](https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.ExtensionArray.html)
+        
+    *   [pandas.arrays.NumpyExtensionArray](https://pandas.pydata.org/docs/reference/api/pandas.arrays.NumpyExtensionArray.html)
+        
+    *   [pandas.api.indexers.check\_array\_indexer](https://pandas.pydata.org/docs/reference/api/pandas.api.indexers.check_array_indexer.html)
+        
+*   [Testing](https://pandas.pydata.org/docs/reference/testing.html)
+    *   [Assertion functions](https://pandas.pydata.org/docs/reference/testing.html#assertion-functions)
+        
+    *   [Exceptions and warnings](https://pandas.pydata.org/docs/reference/testing.html#exceptions-and-warnings)
+        
+    *   [Bug report function](https://pandas.pydata.org/docs/reference/testing.html#bug-report-function)
+        
+    *   [Test suite runner](https://pandas.pydata.org/docs/reference/testing.html#test-suite-runner)
+        
+*   [Missing values](https://pandas.pydata.org/docs/reference/missing_value.html)
+    *   [pandas.NA](https://pandas.pydata.org/docs/reference/api/pandas.NA.html)
+        
+    *   [pandas.NaT](https://pandas.pydata.org/docs/reference/api/pandas.NaT.html)
+        
+*   [pandas typing aliases](https://pandas.pydata.org/docs/reference/aliases.html)
+    *   [Typing aliases](https://pandas.pydata.org/docs/reference/aliases.html#module-pandas.api.typing.aliases)

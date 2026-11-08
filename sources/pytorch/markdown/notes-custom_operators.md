@@ -1,0 +1,1 @@
+[Continue to ../../2.15/notes/custom\_operators.html](https://docs.pytorch.org/docs/2.15/notes/custom_operators.html)

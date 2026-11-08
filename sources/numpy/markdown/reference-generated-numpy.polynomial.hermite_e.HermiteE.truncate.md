@@ -1,0 +1,66 @@
+[Skip to main content](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html#main-content)
+
+Back to top Ctrl+K
+
+Light Dark System Settings
+
+2.5 (stable)
+
+[dev](https://numpy.org/devdocs/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.5 (stable)](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.4](https://numpy.org/doc/2.4/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.3](https://numpy.org/doc/2.3/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.2](https://numpy.org/doc/2.2/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.1](https://numpy.org/doc/2.1/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[2.0](https://numpy.org/doc/2.0/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.26](https://numpy.org/doc/1.26/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.25](https://numpy.org/doc/1.25/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.24](https://numpy.org/doc/1.24/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.23](https://numpy.org/doc/1.23/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.22](https://numpy.org/doc/1.22/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.21](https://numpy.org/doc/1.21/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.20](https://numpy.org/doc/1.20/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.19](https://numpy.org/doc/1.19/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.18](https://numpy.org/doc/1.18/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.17](https://numpy.org/doc/1.17/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.16](https://numpy.org/doc/1.16/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.15](https://numpy.org/doc/1.15/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.14](https://numpy.org/doc/1.14/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+[1.13](https://numpy.org/doc/1.13/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html)
+
+*   [GitHub](https://github.com/numpy/numpy)
+    
+
+Collapse Sidebar Expand Sidebar
+
+numpy.polynomial.hermite\_e.HermiteE.truncate[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html#numpy-polynomial-hermite-e-hermitee-truncate "Link to this heading")
+
+=========================================================================================================================================================================================================================
+
+method
+
+polynomial.hermite\_e.HermiteE.truncate(_size_)[\[source\]](https://github.com/numpy/numpy/blob/v2.5.0/numpy/polynomial/_polybase.py#L750-L777)
+[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.truncate.html#numpy.polynomial.hermite_e.HermiteE.truncate "Link to this definition")
+
+Truncate series to length [`size`](https://numpy.org/doc/stable/reference/generated/numpy.size.html#numpy.size "numpy.size")
+.
+
+Reduce the series to length [`size`](https://numpy.org/doc/stable/reference/generated/numpy.size.html#numpy.size "numpy.size")
+ by discarding the high degree terms. The value of [`size`](https://numpy.org/doc/stable/reference/generated/numpy.size.html#numpy.size "numpy.size")
+ must be a positive integer. This can be useful in least squares where the coefficients of the high degree terms may be very small.
+
+Parameters:
+
+**size**positive int
+
+The series is reduced to length [`size`](https://numpy.org/doc/stable/reference/generated/numpy.size.html#numpy.size "numpy.size")
+ by discarding the high degree terms. The value of [`size`](https://numpy.org/doc/stable/reference/generated/numpy.size.html#numpy.size "numpy.size")
+ must be a positive integer.
+
+Returns:
+
+**new\_series**series
+
+New instance of series with truncated coefficients.
+
+On this page

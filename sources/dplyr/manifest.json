@@ -1,0 +1,793 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://dplyr.tidyverse.org/404.html",
+      "last_hash": "ce8e4d6eda709bedb0d8b438af11cf39d6b9f0dc0ca8dd1c5dc75255e7049e2e",
+      "last_fetched": "2026-11-08T05:02:03.253479+00:00",
+      "title": "Page not found (404) • dplyr"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://dplyr.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "7506ecce5748922c0995c1092a6860705b7b798c7cad08e01967d6c6e7f280f1",
+      "last_fetched": "2026-11-08T05:02:04.800181+00:00",
+      "title": "Contributor Covenant Code of Conduct • dplyr"
+    },
+    "CONTRIBUTING": {
+      "url": "https://dplyr.tidyverse.org/CONTRIBUTING.html",
+      "last_hash": "93762a3273ac47ace78ab327ff233facfd40fa29fa27ed2a5ade2ecde10bb881",
+      "last_fetched": "2026-11-08T05:02:06.130248+00:00",
+      "title": "Contributing to dplyr • dplyr"
+    },
+    "ISSUE_TEMPLATE": {
+      "url": "https://dplyr.tidyverse.org/ISSUE_TEMPLATE.html",
+      "last_hash": "30e88379f4ebe5c42a0699ae7d6a24fd0b4659a63d03600bb50515de624afc49",
+      "last_fetched": "2026-11-08T05:02:07.485075+00:00",
+      "title": "NA • dplyr"
+    },
+    "SUPPORT": {
+      "url": "https://dplyr.tidyverse.org/SUPPORT.html",
+      "last_hash": "2399c149d9ec7c42e9fa83f18d0ec4db742e17631030630dceb6c189de56fa81",
+      "last_fetched": "2026-11-08T05:02:08.826195+00:00",
+      "title": "Getting help with dplyr • dplyr"
+    },
+    "articles-base": {
+      "url": "https://dplyr.tidyverse.org/articles/base.html",
+      "last_hash": "4c4202ecd46283cdbe4f0781c5b869b3cbf0f43f9162f84c27ea6be9604c8157",
+      "last_fetched": "2026-11-08T05:02:10.513218+00:00",
+      "title": "dplyr <-> base R • dplyr"
+    },
+    "articles-colwise": {
+      "url": "https://dplyr.tidyverse.org/articles/colwise.html",
+      "last_hash": "99d30298c18e753ca5aea63c119a1055c4081e4fda25a30bc1a4eceae959a43b",
+      "last_fetched": "2026-11-08T05:02:12.081363+00:00",
+      "title": "Column-wise operations • dplyr"
+    },
+    "articles-dplyr": {
+      "url": "https://dplyr.tidyverse.org/articles/dplyr.html",
+      "last_hash": "b2786a148c1fdc8610949ab009cec65e31118766174cc84789df44748c153296",
+      "last_fetched": "2026-11-08T05:02:13.603248+00:00",
+      "title": "Introduction to dplyr • dplyr"
+    },
+    "articles-grouping": {
+      "url": "https://dplyr.tidyverse.org/articles/grouping.html",
+      "last_hash": "be91cc32e7825b725729c62aa00d1b6f72effbb9c4a05a31ac162c43ceb35a18",
+      "last_fetched": "2026-11-08T05:02:15.043837+00:00",
+      "title": "Grouped data • dplyr"
+    },
+    "articles-in-packages": {
+      "url": "https://dplyr.tidyverse.org/articles/in-packages.html",
+      "last_hash": "bf2f1cdfaa251bb1fa12592b62efb2b8417d2764607284cfb1634710cb709f77",
+      "last_fetched": "2026-11-08T05:02:16.405685+00:00",
+      "title": "Using dplyr in packages • dplyr"
+    },
+    "articles-index": {
+      "url": "https://dplyr.tidyverse.org/articles/index.html",
+      "last_hash": "b10e666f4b57872eca34c70b351caf7fda40bbfa2308756f82e6844dd308c2a3",
+      "last_fetched": "2026-11-08T05:02:17.780837+00:00",
+      "title": "Articles • dplyr"
+    },
+    "articles-programming": {
+      "url": "https://dplyr.tidyverse.org/articles/programming.html",
+      "last_hash": "a8b4fbd9ea5a86e2789747bd37663a0080f58bf46acbc4b54f05b5a99fbb91e9",
+      "last_fetched": "2026-11-08T05:02:19.432817+00:00",
+      "title": "Programming with dplyr • dplyr"
+    },
+    "articles-recoding-replacing": {
+      "url": "https://dplyr.tidyverse.org/articles/recoding-replacing.html",
+      "last_hash": "fc2f8f71ff1eb3f42a81bb119bdf9d3d3c539eeb507946ec18a31917e46c18f0",
+      "last_fetched": "2026-11-08T05:02:20.994513+00:00",
+      "title": "Recoding columns and replacing values • dplyr"
+    },
+    "articles-rowwise": {
+      "url": "https://dplyr.tidyverse.org/articles/rowwise.html",
+      "last_hash": "a13e2981ab3d7ddaf764c3d88c52db229c32d59c97c6c3bc707de4e76857646b",
+      "last_fetched": "2026-11-08T05:02:22.471812+00:00",
+      "title": "Row-wise operations • dplyr"
+    },
+    "articles-two-table": {
+      "url": "https://dplyr.tidyverse.org/articles/two-table.html",
+      "last_hash": "37fcbcbfcbdcc81d0b61974eef12fb6c327f8bc9c781d15bab6a96a87e62f7b0",
+      "last_fetched": "2026-11-08T05:02:23.834798+00:00",
+      "title": "Two-table verbs • dplyr"
+    },
+    "articles-window-functions": {
+      "url": "https://dplyr.tidyverse.org/articles/window-functions.html",
+      "last_hash": "b8f4b23b70be6cd00d044b0c120d06d45ab25d2a2a65b78cb5bffb429ba8595e",
+      "last_fetched": "2026-11-08T05:02:25.209772+00:00",
+      "title": "Window functions • dplyr"
+    },
+    "authors": {
+      "url": "https://dplyr.tidyverse.org/authors.html",
+      "last_hash": "6991894d07079a0ec1e0a908ba1af29619a282cdd98dd23676dafb9f3a6a6cfb",
+      "last_fetched": "2026-11-08T05:02:26.630389+00:00",
+      "title": "Authors and Citation • dplyr"
+    },
+    "index": {
+      "url": "https://dplyr.tidyverse.org/index.html",
+      "last_hash": "a246ece09832019f8cf98c565ec006e31996a199693b34140d1b04c7851f13f3",
+      "last_fetched": "2026-11-08T05:02:28.180770+00:00",
+      "title": "A Grammar of Data Manipulation • dplyr"
+    },
+    "reference-across": {
+      "url": "https://dplyr.tidyverse.org/reference/across.html",
+      "last_hash": "d80a693f3179ac13cae22d84004a60438daef8fb3225ac48ae7860a3c3c9f091",
+      "last_fetched": "2026-11-08T05:02:29.598231+00:00",
+      "title": "Apply a function (or functions) across multiple columns — across • dplyr"
+    },
+    "reference-all_equal": {
+      "url": "https://dplyr.tidyverse.org/reference/all_equal.html",
+      "last_hash": "0ce6a026515e7f942bf8f80495f710e6e7d29099fc2218e69ddbf3484cfeb5d1",
+      "last_fetched": "2026-11-08T05:02:30.898820+00:00",
+      "title": "Flexible equality comparison for data frames — all_equal • dplyr"
+    },
+    "reference-all_vars": {
+      "url": "https://dplyr.tidyverse.org/reference/all_vars.html",
+      "last_hash": "403460b8029039df9db2a1b1ab24c42cdff843fc4f794dfe5de404dc6aaa3bbd",
+      "last_fetched": "2026-11-08T05:02:32.202906+00:00",
+      "title": "Apply predicate to all variables — all_vars • dplyr"
+    },
+    "reference-args_by": {
+      "url": "https://dplyr.tidyverse.org/reference/args_by.html",
+      "last_hash": "b5de835a919bf8a20c5afd546a50d63ec817887abd57e3d1520e7f23fb246788",
+      "last_fetched": "2026-11-08T05:02:33.599132+00:00",
+      "title": "Helper for consistent documentation of .by — args_by • dplyr"
+    },
+    "reference-arrange": {
+      "url": "https://dplyr.tidyverse.org/reference/arrange.html",
+      "last_hash": "0e72d4f9c12a80454cfde756a6527cc9716518cc9111b730707fc18c1b479376",
+      "last_fetched": "2026-11-08T05:02:35.041251+00:00",
+      "title": "Order rows using column values — arrange • dplyr"
+    },
+    "reference-arrange_all": {
+      "url": "https://dplyr.tidyverse.org/reference/arrange_all.html",
+      "last_hash": "a0d4ecd889fd3de1cea36eab1bd358c544bee21a06f538d5adfad39e795f21d7",
+      "last_fetched": "2026-11-08T05:02:36.510081+00:00",
+      "title": "Arrange rows by a selection of variables — arrange_all • dplyr"
+    },
+    "reference-auto_copy": {
+      "url": "https://dplyr.tidyverse.org/reference/auto_copy.html",
+      "last_hash": "4068a4a8135eee787a437a7ec528aa43e689a712f62d234a487e6235a4a01cf4",
+      "last_fetched": "2026-11-08T05:02:37.832916+00:00",
+      "title": "Copy tables to same source, if necessary — auto_copy • dplyr"
+    },
+    "reference-backend_dbplyr": {
+      "url": "https://dplyr.tidyverse.org/reference/backend_dbplyr.html",
+      "last_hash": "938f6206acf30322f0b36b59c7aae7177270926fc962c8febdd7d35ca56256bb",
+      "last_fetched": "2026-11-08T05:02:39.220368+00:00",
+      "title": "Database and SQL generics. — backend_dbplyr • dplyr"
+    },
+    "reference-band_members": {
+      "url": "https://dplyr.tidyverse.org/reference/band_members.html",
+      "last_hash": "84f93b0ac74a09a756e773cad78bc1e8784767a7a2a9da101c04c6ba7a5edc10",
+      "last_fetched": "2026-11-08T05:02:40.620203+00:00",
+      "title": "Band membership — band_members • dplyr"
+    },
+    "reference-between": {
+      "url": "https://dplyr.tidyverse.org/reference/between.html",
+      "last_hash": "6c88fd1607d34f87a37a9aa0fc71fe0c63811e4f944845d3b56d0b54ca9c0244",
+      "last_fetched": "2026-11-08T05:02:41.928234+00:00",
+      "title": "Detect where values fall in a specified range — between • dplyr"
+    },
+    "reference-bind_cols": {
+      "url": "https://dplyr.tidyverse.org/reference/bind_cols.html",
+      "last_hash": "aa9a66031aa5ed7f7629c2156954698006553c085f17c164dd1c4f5df7e558b8",
+      "last_fetched": "2026-11-08T05:02:43.290819+00:00",
+      "title": "Bind multiple data frames by column — bind_cols • dplyr"
+    },
+    "reference-bind_rows": {
+      "url": "https://dplyr.tidyverse.org/reference/bind_rows.html",
+      "last_hash": "164f5c4a4771e6fabb3f53b932c514c668cb1ca04bfe94c0640f8d3b859ce3fb",
+      "last_fetched": "2026-11-08T05:02:44.661269+00:00",
+      "title": "Bind multiple data frames by row — bind_rows • dplyr"
+    },
+    "reference-c_across": {
+      "url": "https://dplyr.tidyverse.org/reference/c_across.html",
+      "last_hash": "d3bbf426299e6be86c173c99ae1d9d8a0783b2c443abad4791520fb5843fb202",
+      "last_fetched": "2026-11-08T05:02:46.018449+00:00",
+      "title": "Combine values from multiple columns — c_across • dplyr"
+    },
+    "reference-case-and-replace-when": {
+      "url": "https://dplyr.tidyverse.org/reference/case-and-replace-when.html",
+      "last_hash": "130372d64687c6b96501b7d4ece68c6a4d98c25a86e050ebf8d1c227bc6e5830",
+      "last_fetched": "2026-11-08T05:02:47.648143+00:00",
+      "title": "A general vectorised if-else — case-and-replace-when • dplyr"
+    },
+    "reference-case_match": {
+      "url": "https://dplyr.tidyverse.org/reference/case_match.html",
+      "last_hash": "c636d5386de2a21533967bd3f5c614b6a81afa3776bcebf0a725a2d34c656e93",
+      "last_fetched": "2026-11-08T05:02:49.018224+00:00",
+      "title": "A general vectorised switch() — case_match • dplyr"
+    },
+    "reference-check_dbplyr": {
+      "url": "https://dplyr.tidyverse.org/reference/check_dbplyr.html",
+      "last_hash": "17aabbcb952a96802533bb079a9c3f336537063dcf4c6a212c1c844294b972fe",
+      "last_fetched": "2026-11-08T05:02:50.467302+00:00",
+      "title": "dbplyr compatibility functions — check_dbplyr • dplyr"
+    },
+    "reference-coalesce": {
+      "url": "https://dplyr.tidyverse.org/reference/coalesce.html",
+      "last_hash": "bb196532f9d3e32b55f751c4edfd4b2abcaa287e6df128078aae4db942468dbd",
+      "last_fetched": "2026-11-08T05:02:51.800377+00:00",
+      "title": "Find the first non-missing element — coalesce • dplyr"
+    },
+    "reference-common_by": {
+      "url": "https://dplyr.tidyverse.org/reference/common_by.html",
+      "last_hash": "062e873b1e28864a024e601ba0a02d506fbf45e33efdacb6d5f4a18337e2edc2",
+      "last_fetched": "2026-11-08T05:02:53.197383+00:00",
+      "title": "Extract out common by variables — common_by • dplyr"
+    },
+    "reference-compute": {
+      "url": "https://dplyr.tidyverse.org/reference/compute.html",
+      "last_hash": "640d127c16cd91bdd769ec9a76d4c5d50dc62b53d96641c4fc609cfeb5b1698e",
+      "last_fetched": "2026-11-08T05:02:54.655493+00:00",
+      "title": "Force computation of a database query — compute • dplyr"
+    },
+    "reference-consecutive_id": {
+      "url": "https://dplyr.tidyverse.org/reference/consecutive_id.html",
+      "last_hash": "7712d4b1d478661bda04c8f900542aeac6da707386f871db066f6fb0bf3aa6fd",
+      "last_fetched": "2026-11-08T05:02:56.052600+00:00",
+      "title": "Generate a unique identifier for consecutive combinations — consecutive_id • dplyr"
+    },
+    "reference-context": {
+      "url": "https://dplyr.tidyverse.org/reference/context.html",
+      "last_hash": "aadfcb377d3591ab4eed0d0875d2da65227dabb3b38dbd812eb9e9cf33eada91",
+      "last_fetched": "2026-11-08T05:02:57.413090+00:00",
+      "title": "Information about the \"current\" group or variable — context • dplyr"
+    },
+    "reference-copy_to": {
+      "url": "https://dplyr.tidyverse.org/reference/copy_to.html",
+      "last_hash": "e85b9f6a7ff345d9fa43a4f35bb10c17642d9f2f26e64d2893b775d5381d651f",
+      "last_fetched": "2026-11-08T05:02:58.811891+00:00",
+      "title": "Copy a local data frame to a remote src — copy_to • dplyr"
+    },
+    "reference-count": {
+      "url": "https://dplyr.tidyverse.org/reference/count.html",
+      "last_hash": "d75b52fade31f26cc2859a118ce6a50f58f9c95b88f983bfcc9077807a2b5017",
+      "last_fetched": "2026-11-08T05:03:00.200300+00:00",
+      "title": "Count the observations in each group — count • dplyr"
+    },
+    "reference-cross_join": {
+      "url": "https://dplyr.tidyverse.org/reference/cross_join.html",
+      "last_hash": "01854e75df52b67f960e59bb1ecbeaed1d07e09fa552f80f79b6dd5be9ae3b88",
+      "last_fetched": "2026-11-08T05:03:01.536808+00:00",
+      "title": "Cross join — cross_join • dplyr"
+    },
+    "reference-cumall": {
+      "url": "https://dplyr.tidyverse.org/reference/cumall.html",
+      "last_hash": "a3b3062df5f4b717a21251fba7cf41aef06186407b4e0a3367ad6ec85b0b2eb4",
+      "last_fetched": "2026-11-08T05:03:02.878051+00:00",
+      "title": "Cumulative versions of any, all, and mean — cumall • dplyr"
+    },
+    "reference-defunct-each": {
+      "url": "https://dplyr.tidyverse.org/reference/defunct-each.html",
+      "last_hash": "a128fdae468e1c0a3ed63e69bb780c7fc0e5f4e1dc95af81c730ab71308d86ea",
+      "last_fetched": "2026-11-08T05:03:04.239316+00:00",
+      "title": "Defunct functions for working with multiple columns — defunct-each • dplyr"
+    },
+    "reference-defunct-lazyeval": {
+      "url": "https://dplyr.tidyverse.org/reference/defunct-lazyeval.html",
+      "last_hash": "6bb9de4fa71e22b6918d6695694f988205c16a3a1ead77122ac9ffb0bda31c12",
+      "last_fetched": "2026-11-08T05:03:05.608912+00:00",
+      "title": "Defunct standard evaluation functions — defunct-lazyeval • dplyr"
+    },
+    "reference-defunct": {
+      "url": "https://dplyr.tidyverse.org/reference/defunct.html",
+      "last_hash": "1a93265d65618f52920a8045601f2eea80e453d7c3bc72cc0731c81eae1261c1",
+      "last_fetched": "2026-11-08T05:03:06.923331+00:00",
+      "title": "Defunct functions — defunct • dplyr"
+    },
+    "reference-deprec-context": {
+      "url": "https://dplyr.tidyverse.org/reference/deprec-context.html",
+      "last_hash": "c750de89b266b6386e3c957acfb2e60ccb33f0d83607136c9040aaedebc043cd",
+      "last_fetched": "2026-11-08T05:03:08.322053+00:00",
+      "title": "Information about the \"current\" group or variable — deprec-context • dplyr"
+    },
+    "reference-desc": {
+      "url": "https://dplyr.tidyverse.org/reference/desc.html",
+      "last_hash": "0e450ca33515ef8c7d6909c1f52ccf6863538f88aa839e8ee4f6967cdfcbe461",
+      "last_fetched": "2026-11-08T05:03:09.716674+00:00",
+      "title": "Descending order — desc • dplyr"
+    },
+    "reference-dim_desc": {
+      "url": "https://dplyr.tidyverse.org/reference/dim_desc.html",
+      "last_hash": "a74d443aa5ede78b6097afc5776cfc18750fbb13f0a6edbf2a8add6c0f8004e2",
+      "last_fetched": "2026-11-08T05:03:11.029487+00:00",
+      "title": "Describing dimensions — dim_desc • dplyr"
+    },
+    "reference-distinct": {
+      "url": "https://dplyr.tidyverse.org/reference/distinct.html",
+      "last_hash": "92163153b9cc926efad45985d1f5542d96dc297a9ce7d972544d6c0df7825958",
+      "last_fetched": "2026-11-08T05:03:12.403336+00:00",
+      "title": "Keep distinct/unique rows — distinct • dplyr"
+    },
+    "reference-distinct_all": {
+      "url": "https://dplyr.tidyverse.org/reference/distinct_all.html",
+      "last_hash": "ad141b928a8f9ed97010dcb2e6e43f805c80abcbd63c4a005ab2dccd48bfaed5",
+      "last_fetched": "2026-11-08T05:03:13.756298+00:00",
+      "title": "Select distinct rows by a selection of variables — distinct_all • dplyr"
+    },
+    "reference-do": {
+      "url": "https://dplyr.tidyverse.org/reference/do.html",
+      "last_hash": "095f2e475af30f99bc15bb46a8f5a9e3ce14e0d6abc12f80eae7effcd6c0f89a",
+      "last_fetched": "2026-11-08T05:03:15.158601+00:00",
+      "title": "Do anything — do • dplyr"
+    },
+    "reference-dplyr-locale": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr-locale.html",
+      "last_hash": "f9c2b9a631559cff5205092ba6c5704474b4dc17fe4f518b5bf26c1bd236de53",
+      "last_fetched": "2026-11-08T05:03:16.536332+00:00",
+      "title": "Locale used by arrange() — dplyr-locale • dplyr"
+    },
+    "reference-dplyr-package": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr-package.html",
+      "last_hash": "fbbbb6d1a1dda701c49fce87ffd0de4094bc6a7b266e7a3c2d053d608f5d6a73",
+      "last_fetched": "2026-11-08T05:03:17.854952+00:00",
+      "title": "dplyr: A Grammar of Data Manipulation — dplyr-package • dplyr"
+    },
+    "reference-dplyr_by": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr_by.html",
+      "last_hash": "0215bcc2d2e5990c4234f1388a8a0b6f60ac8ae0f3cd25ad1b32da230722c0ba",
+      "last_fetched": "2026-11-08T05:03:19.337763+00:00",
+      "title": "Per-operation grouping with .by/by — dplyr_by • dplyr"
+    },
+    "reference-dplyr_data_masking": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr_data_masking.html",
+      "last_hash": "a9fcd91282c0d01daf60c1812e4bfeee09eb06baedf09d35f3fa7bbdbb991890",
+      "last_fetched": "2026-11-08T05:03:20.628588+00:00",
+      "title": "Data-masking — dplyr_data_masking • dplyr"
+    },
+    "reference-dplyr_extending": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr_extending.html",
+      "last_hash": "edc5af7427ab8d8124ee6393373862c108ab2569ac652860a542c6f2ffdfb966",
+      "last_fetched": "2026-11-08T05:03:21.981507+00:00",
+      "title": "Extending dplyr with new data frame subclasses — dplyr_extending • dplyr"
+    },
+    "reference-dplyr_tidy_select": {
+      "url": "https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html",
+      "last_hash": "f45f64d11722886d7efa62aab7dc217e3b5fc21d70b5f2e2f291b8de7d49cd88",
+      "last_fetched": "2026-11-08T05:03:23.279021+00:00",
+      "title": "Argument type: tidy-select — dplyr_tidy_select • dplyr"
+    },
+    "reference-explain": {
+      "url": "https://dplyr.tidyverse.org/reference/explain.html",
+      "last_hash": "57e6e25062c1d5feae8605d0c4a0b352a87468f6a2172d221c9c9b54c3366806",
+      "last_fetched": "2026-11-08T05:03:24.638259+00:00",
+      "title": "Explain details of a tbl — explain • dplyr"
+    },
+    "reference-filter-joins": {
+      "url": "https://dplyr.tidyverse.org/reference/filter-joins.html",
+      "last_hash": "6b62536f4b2387bb23e7f4f0af02be8fed66b4023de805b33d8b517a9a65481e",
+      "last_fetched": "2026-11-08T05:03:25.981259+00:00",
+      "title": "Filtering joins — filter-joins • dplyr"
+    },
+    "reference-filter": {
+      "url": "https://dplyr.tidyverse.org/reference/filter.html",
+      "last_hash": "ef79a4726d1b1050991c244cef7d7009be1cdc755e8087780f60b331686686ea",
+      "last_fetched": "2026-11-08T05:03:27.386315+00:00",
+      "title": "Keep or drop rows that match a condition — filter • dplyr"
+    },
+    "reference-filter_all": {
+      "url": "https://dplyr.tidyverse.org/reference/filter_all.html",
+      "last_hash": "3ede5619d25a9b24950756d3f5212219b9aa04034e5bb6d895f9400745e26925",
+      "last_fetched": "2026-11-08T05:03:28.767662+00:00",
+      "title": "Filter within a selection of variables — filter_all • dplyr"
+    },
+    "reference-funs": {
+      "url": "https://dplyr.tidyverse.org/reference/funs.html",
+      "last_hash": "2123474f28e329fff29cbc5aaa9a76a1bdd8c0ade79c8f71e960c838567e45a0",
+      "last_fetched": "2026-11-08T05:03:30.335176+00:00",
+      "title": "Create a list of function calls — funs • dplyr"
+    },
+    "reference-glimpse": {
+      "url": "https://dplyr.tidyverse.org/reference/glimpse.html",
+      "last_hash": "911ba7959fb647ca46369ac580f22275f7616eaf2296153a3c0d0322320cf3e9",
+      "last_fetched": "2026-11-08T05:03:31.813905+00:00",
+      "title": "Get a glimpse of your data — glimpse • dplyr"
+    },
+    "reference-group_by": {
+      "url": "https://dplyr.tidyverse.org/reference/group_by.html",
+      "last_hash": "f00c4d8d504ea41cb37d96e5b5081bf5920ead4543787c454a98248bdab18059",
+      "last_fetched": "2026-11-08T05:03:33.188795+00:00",
+      "title": "Group by one or more variables — group_by • dplyr"
+    },
+    "reference-group_by_all": {
+      "url": "https://dplyr.tidyverse.org/reference/group_by_all.html",
+      "last_hash": "3387fbb3d388a2836029c357664d27c66491eeceb9af78b3fe929315020b2e3e",
+      "last_fetched": "2026-11-08T05:03:34.560118+00:00",
+      "title": "Group by a selection of variables — group_by_all • dplyr"
+    },
+    "reference-group_by_drop_default": {
+      "url": "https://dplyr.tidyverse.org/reference/group_by_drop_default.html",
+      "last_hash": "927d96cb6fe84d68790b977dd4830f7c832a8d448b9fa44f7b57dcc4301fdf0a",
+      "last_fetched": "2026-11-08T05:03:35.913167+00:00",
+      "title": "Default value for .drop argument of group_by — group_by_drop_default • dplyr"
+    },
+    "reference-group_by_prepare": {
+      "url": "https://dplyr.tidyverse.org/reference/group_by_prepare.html",
+      "last_hash": "d5665361a35985db9c238ffe28a03df40ea7158c0d2ff8721d3faa713c378568",
+      "last_fetched": "2026-11-08T05:03:37.288734+00:00",
+      "title": "Prepare for grouping and other operations — distinct_prepare • dplyr"
+    },
+    "reference-group_cols": {
+      "url": "https://dplyr.tidyverse.org/reference/group_cols.html",
+      "last_hash": "5a313b4736ab59e8e8fc26fa2c584be46dd4c9fa0fe340a6916671a5da8783c4",
+      "last_fetched": "2026-11-08T05:03:38.667327+00:00",
+      "title": "Select grouping variables — group_cols • dplyr"
+    },
+    "reference-group_data": {
+      "url": "https://dplyr.tidyverse.org/reference/group_data.html",
+      "last_hash": "f7040cab71e823d2ae9547e3e647eff58bfb218c7308089d6596e5857cd67fc3",
+      "last_fetched": "2026-11-08T05:03:40.038509+00:00",
+      "title": "Grouping metadata — group_data • dplyr"
+    },
+    "reference-group_map": {
+      "url": "https://dplyr.tidyverse.org/reference/group_map.html",
+      "last_hash": "6c22ef92ccfd438b57a29dbd54e3632488f915c17d59f1d5a169a4167ecdd4e0",
+      "last_fetched": "2026-11-08T05:03:41.565312+00:00",
+      "title": "Apply a function to each group — group_map • dplyr"
+    },
+    "reference-group_nest": {
+      "url": "https://dplyr.tidyverse.org/reference/group_nest.html",
+      "last_hash": "50706ac27e7b988d84e91ef73a149702cbb07df4e202530b90b0a87879c81cea",
+      "last_fetched": "2026-11-08T05:03:42.916232+00:00",
+      "title": "Nest a tibble using a grouping specification — group_nest • dplyr"
+    },
+    "reference-group_split": {
+      "url": "https://dplyr.tidyverse.org/reference/group_split.html",
+      "last_hash": "1c6408cc167a9e6afab6291c7f868714b4ab4b33e19ae95620ca1e279fcab897",
+      "last_fetched": "2026-11-08T05:03:44.260506+00:00",
+      "title": "Split data frame by groups — group_split • dplyr"
+    },
+    "reference-group_trim": {
+      "url": "https://dplyr.tidyverse.org/reference/group_trim.html",
+      "last_hash": "a55b829021d94e30b22191a7076e26416543dc8b5e5d1faa271218187c09c894",
+      "last_fetched": "2026-11-08T05:03:45.647020+00:00",
+      "title": "Trim grouping structure — group_trim • dplyr"
+    },
+    "reference-grouped_df": {
+      "url": "https://dplyr.tidyverse.org/reference/grouped_df.html",
+      "last_hash": "eb21afa645938172c3a8e4cee5507ab1e7d0f2d8e4686d837c76d77ec80af543",
+      "last_fetched": "2026-11-08T05:03:46.937022+00:00",
+      "title": "A grouped data frame. — grouped_df • dplyr"
+    },
+    "reference-ident": {
+      "url": "https://dplyr.tidyverse.org/reference/ident.html",
+      "last_hash": "81f8dfaa8e42ff337a68e96ae43fe60725529a8c19ae39b9d33310d87f8de013",
+      "last_fetched": "2026-11-08T05:03:48.253498+00:00",
+      "title": "Flag a character vector as SQL identifiers — ident • dplyr"
+    },
+    "reference-if_else": {
+      "url": "https://dplyr.tidyverse.org/reference/if_else.html",
+      "last_hash": "2eee651a130a23b45b6b1b15884f867018a3d5dbb1626979e4fda512f91151b5",
+      "last_fetched": "2026-11-08T05:03:49.602266+00:00",
+      "title": "Vectorised if-else — if_else • dplyr"
+    },
+    "reference-index": {
+      "url": "https://dplyr.tidyverse.org/reference/index.html",
+      "last_hash": "d027c63646f4be810906fd207c5efbcae948520426122b8994b20b6fe379e3d9",
+      "last_fetched": "2026-11-08T05:03:50.951830+00:00",
+      "title": "Package index • dplyr"
+    },
+    "reference-join_by": {
+      "url": "https://dplyr.tidyverse.org/reference/join_by.html",
+      "last_hash": "fde3e8624ff0dfb35293624e329dfb34446c2e568bee710b67771b3f408535de",
+      "last_fetched": "2026-11-08T05:03:52.443548+00:00",
+      "title": "Join specifications — join_by • dplyr"
+    },
+    "reference-last_dplyr_warnings": {
+      "url": "https://dplyr.tidyverse.org/reference/last_dplyr_warnings.html",
+      "last_hash": "a0e357b100c07108a47b35826318f54594b4bc63ab9f86cf128645711f797dc5",
+      "last_fetched": "2026-11-08T05:03:53.770980+00:00",
+      "title": "Show warnings from the last command — last_dplyr_warnings • dplyr"
+    },
+    "reference-lead-lag": {
+      "url": "https://dplyr.tidyverse.org/reference/lead-lag.html",
+      "last_hash": "0df9a79d65648e5d77c4919539be4faaca1906970b8ae6bd6383c67176716036",
+      "last_fetched": "2026-11-08T05:03:55.095615+00:00",
+      "title": "Compute lagged or leading values — lead-lag • dplyr"
+    },
+    "reference-make_tbl": {
+      "url": "https://dplyr.tidyverse.org/reference/make_tbl.html",
+      "last_hash": "8e13f231f6155e4e2cd77662181b84a3a147a557a57ae3500e2998a5951be211",
+      "last_fetched": "2026-11-08T05:03:56.447468+00:00",
+      "title": "Create a \"tbl\" object — make_tbl • dplyr"
+    },
+    "reference-mutate-joins": {
+      "url": "https://dplyr.tidyverse.org/reference/mutate-joins.html",
+      "last_hash": "0559307a61b230ce6dc7a202bd5fbc195d168c1323a5ef0d168e8682fb980cdf",
+      "last_fetched": "2026-11-08T05:03:57.893976+00:00",
+      "title": "Mutating joins — mutate-joins • dplyr"
+    },
+    "reference-mutate": {
+      "url": "https://dplyr.tidyverse.org/reference/mutate.html",
+      "last_hash": "25c20ca4b63897430d89b0962b9ae81672f2e72744128aacc9a35408e34846e5",
+      "last_fetched": "2026-11-08T05:03:59.280780+00:00",
+      "title": "Create, modify, and delete columns — mutate • dplyr"
+    },
+    "reference-mutate_all": {
+      "url": "https://dplyr.tidyverse.org/reference/mutate_all.html",
+      "last_hash": "a9b332746d28e747708d674d1a8e24ae9bd3a8e1cce6189d20a776e35a769052",
+      "last_fetched": "2026-11-08T05:04:00.821220+00:00",
+      "title": "Mutate multiple columns — mutate_all • dplyr"
+    },
+    "reference-n_distinct": {
+      "url": "https://dplyr.tidyverse.org/reference/n_distinct.html",
+      "last_hash": "5ee72873217d06559db524344fb98aa24af48da93a79f116214fc3f6cb7a591d",
+      "last_fetched": "2026-11-08T05:04:02.269579+00:00",
+      "title": "Count unique combinations — n_distinct • dplyr"
+    },
+    "reference-na_if": {
+      "url": "https://dplyr.tidyverse.org/reference/na_if.html",
+      "last_hash": "0ee22d3dedb8ac60aa0fbd47e674cdb11436afb30c6c287f5cc0a5921c66b9e2",
+      "last_fetched": "2026-11-08T05:04:03.603895+00:00",
+      "title": "Convert values to NA — na_if • dplyr"
+    },
+    "reference-near": {
+      "url": "https://dplyr.tidyverse.org/reference/near.html",
+      "last_hash": "94c18ab905c414dffebf9bb019a3dfbc749f7eab57e0327c817ef2874876378d",
+      "last_fetched": "2026-11-08T05:04:04.887646+00:00",
+      "title": "Compare two numeric vectors — near • dplyr"
+    },
+    "reference-nest_by": {
+      "url": "https://dplyr.tidyverse.org/reference/nest_by.html",
+      "last_hash": "1fea4bdc31ae60553993ad26a341f17a57285698fa0f2ec6fc1d52e7c3bca24b",
+      "last_fetched": "2026-11-08T05:04:06.237860+00:00",
+      "title": "Nest by one or more variables — nest_by • dplyr"
+    },
+    "reference-nest_join": {
+      "url": "https://dplyr.tidyverse.org/reference/nest_join.html",
+      "last_hash": "5086a14b4675f8ed39923c6c23c37434ebdc52ff701dc96e28858dc3119fa907",
+      "last_fetched": "2026-11-08T05:04:07.582305+00:00",
+      "title": "Nest join — nest_join • dplyr"
+    },
+    "reference-new_grouped_df": {
+      "url": "https://dplyr.tidyverse.org/reference/new_grouped_df.html",
+      "last_hash": "1861a3008154f12557cfcfbd7847bf25e0936c32e7ebf00a49fa5927afb077ff",
+      "last_fetched": "2026-11-08T05:04:08.918759+00:00",
+      "title": "Low-level construction and validation for the grouped_df and rowwise_df classes — new_grouped_df • dplyr"
+    },
+    "reference-nth": {
+      "url": "https://dplyr.tidyverse.org/reference/nth.html",
+      "last_hash": "6b20dc779a48ab6c4ef6d689c1ffa1058211d483ef850ed7e6b49dc0b2e1e593",
+      "last_fetched": "2026-11-08T05:04:10.290542+00:00",
+      "title": "Extract the first, last, or nth value from a vector — nth • dplyr"
+    },
+    "reference-ntile": {
+      "url": "https://dplyr.tidyverse.org/reference/ntile.html",
+      "last_hash": "394eabc61a337f0cbda29c2e89982253356cc0beb039f91e4b597250f6043f1e",
+      "last_fetched": "2026-11-08T05:04:11.637456+00:00",
+      "title": "Bucket a numeric vector into n groups — ntile • dplyr"
+    },
+    "reference-order_by": {
+      "url": "https://dplyr.tidyverse.org/reference/order_by.html",
+      "last_hash": "5674abe2d6bd1fd1e3d236a18d85bb75714520adde220de6fcbcbb2d0780b574",
+      "last_fetched": "2026-11-08T05:04:13.133689+00:00",
+      "title": "A helper function for ordering window function output — order_by • dplyr"
+    },
+    "reference-percent_rank": {
+      "url": "https://dplyr.tidyverse.org/reference/percent_rank.html",
+      "last_hash": "e28a138df865b5d0977c6e13bd667bef9e6c96418c3d87ad775837eac576abf7",
+      "last_fetched": "2026-11-08T05:04:14.656387+00:00",
+      "title": "Proportional ranking functions — percent_rank • dplyr"
+    },
+    "reference-pick": {
+      "url": "https://dplyr.tidyverse.org/reference/pick.html",
+      "last_hash": "acec1836e53e8b6c423e2df90467c7a8e8a00d234960e48069a646dc9814c6f0",
+      "last_fetched": "2026-11-08T05:04:16.007821+00:00",
+      "title": "Select a subset of columns — pick • dplyr"
+    },
+    "reference-progress_estimated": {
+      "url": "https://dplyr.tidyverse.org/reference/progress_estimated.html",
+      "last_hash": "441e4199867092a454128d7304904df4ba884482061adf47330028df10d0b592",
+      "last_fetched": "2026-11-08T05:04:17.337068+00:00",
+      "title": "Progress bar with estimated time. — progress_estimated • dplyr"
+    },
+    "reference-pull": {
+      "url": "https://dplyr.tidyverse.org/reference/pull.html",
+      "last_hash": "1828168e3dabddc186e0947b4ea786d502cc501526f45af79192421ca7de5261",
+      "last_fetched": "2026-11-08T05:04:18.693208+00:00",
+      "title": "Extract a single column — pull • dplyr"
+    },
+    "reference-recode-and-replace-values": {
+      "url": "https://dplyr.tidyverse.org/reference/recode-and-replace-values.html",
+      "last_hash": "8ae54ff32fd8d5c356a1d22e5b0a3ca716fdba002638eb4b056046980c35cb9c",
+      "last_fetched": "2026-11-08T05:04:20.110609+00:00",
+      "title": "Recode and replace values — recode-and-replace-values • dplyr"
+    },
+    "reference-recode": {
+      "url": "https://dplyr.tidyverse.org/reference/recode.html",
+      "last_hash": "22682fb2d5b9e6588ba9ee7b0c61351898328797b8275026e65f96ed3ef7945b",
+      "last_fetched": "2026-11-08T05:04:21.471344+00:00",
+      "title": "Recode values — recode • dplyr"
+    },
+    "reference-reexports": {
+      "url": "https://dplyr.tidyverse.org/reference/reexports.html",
+      "last_hash": "6166b38e47d21914aae1418b806ff6022bfe8440d5148225cd16b032b7c321ef",
+      "last_fetched": "2026-11-08T05:04:22.776497+00:00",
+      "title": "Objects exported from other packages — reexports • dplyr"
+    },
+    "reference-reframe": {
+      "url": "https://dplyr.tidyverse.org/reference/reframe.html",
+      "last_hash": "12c07a18f3839cf3f7968ce50b2cd3ffd34fa09da90dbfea3a26705f1f32c294",
+      "last_fetched": "2026-11-08T05:04:24.277947+00:00",
+      "title": "Transform each group to an arbitrary number of rows — reframe • dplyr"
+    },
+    "reference-relocate": {
+      "url": "https://dplyr.tidyverse.org/reference/relocate.html",
+      "last_hash": "f85cd945f6cb92702bddcad332748af82e2b0f2fbd7f23d8a24057757e1d7bb4",
+      "last_fetched": "2026-11-08T05:04:25.665173+00:00",
+      "title": "Change column order — relocate • dplyr"
+    },
+    "reference-rename": {
+      "url": "https://dplyr.tidyverse.org/reference/rename.html",
+      "last_hash": "6a34d51b691c6266adb1bf555facd21c8f8df85608f96f2d67e68d9c3ab99c8a",
+      "last_fetched": "2026-11-08T05:04:27.052421+00:00",
+      "title": "Rename columns — rename • dplyr"
+    },
+    "reference-row_number": {
+      "url": "https://dplyr.tidyverse.org/reference/row_number.html",
+      "last_hash": "3723bc08df880244a8aa2c1f321c1b62d32ce21449ec9e6bffb9bbc365738de6",
+      "last_fetched": "2026-11-08T05:04:28.605719+00:00",
+      "title": "Integer ranking functions — row_number • dplyr"
+    },
+    "reference-rows": {
+      "url": "https://dplyr.tidyverse.org/reference/rows.html",
+      "last_hash": "65fa3acb2e8a28bb59e89b5461b3e7163d15edde538d2e568738525e6f293946",
+      "last_fetched": "2026-11-08T05:04:29.949470+00:00",
+      "title": "Manipulate individual rows — rows • dplyr"
+    },
+    "reference-rowwise": {
+      "url": "https://dplyr.tidyverse.org/reference/rowwise.html",
+      "last_hash": "ee82d97ba4d9fadcfba934698452ae7e0f9b05969190630b7da72a60f99da403",
+      "last_fetched": "2026-11-08T05:04:31.287923+00:00",
+      "title": "Group input by rows — rowwise • dplyr"
+    },
+    "reference-same_src": {
+      "url": "https://dplyr.tidyverse.org/reference/same_src.html",
+      "last_hash": "41a90832fed52b46399f2ef2a980cc3323986dac04ee1c51b2f67b7012d2e5e5",
+      "last_fetched": "2026-11-08T05:04:32.610652+00:00",
+      "title": "Figure out if two sources are the same (or two tbl have the same source) — same_src • dplyr"
+    },
+    "reference-sample_n": {
+      "url": "https://dplyr.tidyverse.org/reference/sample_n.html",
+      "last_hash": "f11fc6de3ab71b57cf2a87c6756538462ee1e88d59c32c0877269bd6c28f6fca",
+      "last_fetched": "2026-11-08T05:04:33.937464+00:00",
+      "title": "Sample n rows from a table — sample_n • dplyr"
+    },
+    "reference-scoped": {
+      "url": "https://dplyr.tidyverse.org/reference/scoped.html",
+      "last_hash": "56438801dcf6fdf496fbede24ed888f5ec04299398abe14ebc13583cb9f95fba",
+      "last_fetched": "2026-11-08T05:04:35.291637+00:00",
+      "title": "Operate on a selection of variables — scoped • dplyr"
+    },
+    "reference-select": {
+      "url": "https://dplyr.tidyverse.org/reference/select.html",
+      "last_hash": "6daed9aed561dd5c6f2ba442d183f29655839a839e77a19240495bc1789517b6",
+      "last_fetched": "2026-11-08T05:04:36.606746+00:00",
+      "title": "Keep or drop columns using their names and types — select • dplyr"
+    },
+    "reference-select_all": {
+      "url": "https://dplyr.tidyverse.org/reference/select_all.html",
+      "last_hash": "2e8c02e3f4da492c7f528094aab3b6c04f0efc6225223a42b9a82de27e3347e9",
+      "last_fetched": "2026-11-08T05:04:37.946794+00:00",
+      "title": "Select and rename a selection of variables — select_all • dplyr"
+    },
+    "reference-setops": {
+      "url": "https://dplyr.tidyverse.org/reference/setops.html",
+      "last_hash": "f014ccab0c21c3e036b58177e1763df16b49f39448d99ad2b6b4aa78765221f6",
+      "last_fetched": "2026-11-08T05:04:39.291844+00:00",
+      "title": "Set operations — setops • dplyr"
+    },
+    "reference-slice": {
+      "url": "https://dplyr.tidyverse.org/reference/slice.html",
+      "last_hash": "10245f070278f52412ddf6073ee94b3a5c5380c372711de2e5a022daaa456a11",
+      "last_fetched": "2026-11-08T05:04:40.767545+00:00",
+      "title": "Subset rows using their positions — slice • dplyr"
+    },
+    "reference-sql": {
+      "url": "https://dplyr.tidyverse.org/reference/sql.html",
+      "last_hash": "a3c4b4757c87c483390f06f28027e76bebd068ae0b12df8473b560936c14209a",
+      "last_fetched": "2026-11-08T05:04:42.092542+00:00",
+      "title": "SQL escaping. — sql • dplyr"
+    },
+    "reference-src": {
+      "url": "https://dplyr.tidyverse.org/reference/src.html",
+      "last_hash": "f15f1382d7bb4440d4a61176cbdab3f0a30df1ad9c106140202f726a4f4f669f",
+      "last_fetched": "2026-11-08T05:04:43.439035+00:00",
+      "title": "Create a \"src\" object — src • dplyr"
+    },
+    "reference-src_tbls": {
+      "url": "https://dplyr.tidyverse.org/reference/src_tbls.html",
+      "last_hash": "f6cd6e3c7a4794dc436dcc16efa4020a9c8d06134a19057dd46e5e07ba991a7d",
+      "last_fetched": "2026-11-08T05:04:44.810552+00:00",
+      "title": "List all tbls provided by a source. — src_tbls • dplyr"
+    },
+    "reference-starwars": {
+      "url": "https://dplyr.tidyverse.org/reference/starwars.html",
+      "last_hash": "f9742ec7fa1233e99f6a23702b9f237717ed0fd405ce273aa648f879d90725f1",
+      "last_fetched": "2026-11-08T05:04:46.160485+00:00",
+      "title": "Starwars characters — starwars • dplyr"
+    },
+    "reference-storms": {
+      "url": "https://dplyr.tidyverse.org/reference/storms.html",
+      "last_hash": "054fe57164910e48895a9155093a27b972c4dd9557a13c111351590788ff2646",
+      "last_fetched": "2026-11-08T05:04:47.459630+00:00",
+      "title": "Storm tracks data — storms • dplyr"
+    },
+    "reference-summarise": {
+      "url": "https://dplyr.tidyverse.org/reference/summarise.html",
+      "last_hash": "11fbd9737eb459e08b441e2a62c3a13df2377e0d46d628f2381a70f192a07dc2",
+      "last_fetched": "2026-11-08T05:04:48.830290+00:00",
+      "title": "Summarise each group down to one row — summarise • dplyr"
+    },
+    "reference-summarise_all": {
+      "url": "https://dplyr.tidyverse.org/reference/summarise_all.html",
+      "last_hash": "8af0816d6f10b9503c46dd84046e294ada4c19aacc6117a2c8a3680b28085b58",
+      "last_fetched": "2026-11-08T05:04:50.208351+00:00",
+      "title": "Summarise multiple columns — summarise_all • dplyr"
+    },
+    "reference-tbl": {
+      "url": "https://dplyr.tidyverse.org/reference/tbl.html",
+      "last_hash": "0544da8e3376082a8cb7e92aebf01003430ad237b5b58fb2ee1ae1847669bdf5",
+      "last_fetched": "2026-11-08T05:04:51.537756+00:00",
+      "title": "Create a table from a data source — tbl • dplyr"
+    },
+    "reference-tbl_ptype": {
+      "url": "https://dplyr.tidyverse.org/reference/tbl_ptype.html",
+      "last_hash": "b5b5079c9677c491928431d3327317c7afca9a271499c99e8e9731368aa5d618",
+      "last_fetched": "2026-11-08T05:04:52.884520+00:00",
+      "title": "Return a prototype of a tbl — tbl_ptype • dplyr"
+    },
+    "reference-tbl_vars": {
+      "url": "https://dplyr.tidyverse.org/reference/tbl_vars.html",
+      "last_hash": "71cb7ea0e3ee1498dcb0df9806cee31121241d8021e9c834138a95019f5bd4c7",
+      "last_fetched": "2026-11-08T05:04:54.230586+00:00",
+      "title": "List variables provided by a tbl. — tbl_vars • dplyr"
+    },
+    "reference-tidyeval-compat": {
+      "url": "https://dplyr.tidyverse.org/reference/tidyeval-compat.html",
+      "last_hash": "4f4af289fa033f1bd76ecbd8ea782a25786f4094683bcb042641dbcaf528c820",
+      "last_fetched": "2026-11-08T05:04:55.645055+00:00",
+      "title": "Other tidy eval tools — tidyeval-compat • dplyr"
+    },
+    "reference-top_n": {
+      "url": "https://dplyr.tidyverse.org/reference/top_n.html",
+      "last_hash": "648b08f5493b8b75533093c51e2f8733c7f2c214da9c09a85164b048cdcd17aa",
+      "last_fetched": "2026-11-08T05:04:57.004772+00:00",
+      "title": "Select top (or bottom) n rows (by value) — top_n • dplyr"
+    },
+    "reference-transmute": {
+      "url": "https://dplyr.tidyverse.org/reference/transmute.html",
+      "last_hash": "f21e25a7a69c47b52d7d2e5f2182adb3e6c59e25a29f6dbbef9d72b0a2dabf29",
+      "last_fetched": "2026-11-08T05:04:58.328370+00:00",
+      "title": "Create, modify, and delete columns — transmute • dplyr"
+    },
+    "reference-vars": {
+      "url": "https://dplyr.tidyverse.org/reference/vars.html",
+      "last_hash": "322a398fd6c0c027a0eab7b117b9012f17b0cf706589ccc180f8e8533b62c7a6",
+      "last_fetched": "2026-11-08T05:04:59.685050+00:00",
+      "title": "Select variables — vars • dplyr"
+    },
+    "reference-when-any-all": {
+      "url": "https://dplyr.tidyverse.org/reference/when-any-all.html",
+      "last_hash": "49de73ff562463b7600364d8f2e1df1914d2d2a016b2e706a17b55503805b533",
+      "last_fetched": "2026-11-08T05:05:01.076521+00:00",
+      "title": "Elementwise any() and all() — when-any-all • dplyr"
+    },
+    "reference-with_groups": {
+      "url": "https://dplyr.tidyverse.org/reference/with_groups.html",
+      "last_hash": "2aac326dd5f33e0743bf6fe04d606a04a33b3a374c987d15c61a3e458d83ce70",
+      "last_fetched": "2026-11-08T05:05:02.449063+00:00",
+      "title": "Perform an operation with temporary groups — with_groups • dplyr"
+    },
+    "reference-with_order": {
+      "url": "https://dplyr.tidyverse.org/reference/with_order.html",
+      "last_hash": "941fce5628e2258630324f4abe44b91514548411a5950f326aaaacb9ee62ce3c",
+      "last_fetched": "2026-11-08T05:05:03.806772+00:00",
+      "title": "Run a function with one order, translating result back to original order — with_order • dplyr"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:05:03.806772+00:00",
+  "version_history": []
+}

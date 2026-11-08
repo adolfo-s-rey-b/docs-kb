@@ -1,0 +1,1477 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://ggplot2.tidyverse.org/404.html",
+      "last_hash": "14828b11fd4f7d7178cb05fceb7ff7e46bd31d57f34148ed69df76ff58a387a0",
+      "last_fetched": "2026-11-08T05:09:00.532506+00:00",
+      "title": "Page not found (404) • ggplot2"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://ggplot2.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "0a47727a857f5c52625d2cd6a07a6946064a42aa64532326cec7c3440635a4be",
+      "last_fetched": "2026-11-08T05:09:01.829723+00:00",
+      "title": "Contributor Covenant Code of Conduct • ggplot2"
+    },
+    "CONTRIBUTING": {
+      "url": "https://ggplot2.tidyverse.org/CONTRIBUTING.html",
+      "last_hash": "bd09a9dfcb172bd0cca829399a65dacd090025997513d7eb79ab4d0e07efa445",
+      "last_fetched": "2026-11-08T05:09:03.130931+00:00",
+      "title": "Contributing to ggplot2 development • ggplot2"
+    },
+    "GOVERNANCE": {
+      "url": "https://ggplot2.tidyverse.org/GOVERNANCE.html",
+      "last_hash": "0ba29de154058a3bdfd315ab7c53b288f9e16898fb51b3f8c0ba0c1dd3bce025",
+      "last_fetched": "2026-11-08T05:09:04.422922+00:00",
+      "title": "Roles and responsibilities • ggplot2"
+    },
+    "articles-extending-ggplot2": {
+      "url": "https://ggplot2.tidyverse.org/articles/extending-ggplot2.html",
+      "last_hash": "fcb758eb814884f3d50d655034e0826e6ff77c330dae1654d983f2da6e5c6c82",
+      "last_fetched": "2026-11-08T05:09:06.137289+00:00",
+      "title": "Extending ggplot2 • ggplot2"
+    },
+    "articles-faq-annotation": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-annotation.html",
+      "last_hash": "2c21b3088a1b6960899e3ed13dbeb9e90323e4f2d90c80d9a9aeeb3f51edc4e2",
+      "last_fetched": "2026-11-08T05:09:07.582736+00:00",
+      "title": "FAQ: Annotation • ggplot2"
+    },
+    "articles-faq-axes": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-axes.html",
+      "last_hash": "39d20876b528aa6d21bb195394e02f1bdb4d9a597a770762ff8ab2500e00a445",
+      "last_fetched": "2026-11-08T05:09:09.012654+00:00",
+      "title": "FAQ: Axes • ggplot2"
+    },
+    "articles-faq-bars": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-bars.html",
+      "last_hash": "fd776737b5eaa4727c0482683aa50575bd0fff3c0a0f05c5f693b661388363a5",
+      "last_fetched": "2026-11-08T05:09:10.391212+00:00",
+      "title": "FAQ: Barplots • ggplot2"
+    },
+    "articles-faq-customising": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-customising.html",
+      "last_hash": "4be2363e48ce44992123664d30590fcf4d301118308726cf3925f788c0fcbcc3",
+      "last_fetched": "2026-11-08T05:09:11.819951+00:00",
+      "title": "FAQ: Customising • ggplot2"
+    },
+    "articles-faq-faceting": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-faceting.html",
+      "last_hash": "227ca96e8b94dc6b0fba00c0d66407a3c1acff08e0b6b66ba3e2d266b5298ea7",
+      "last_fetched": "2026-11-08T05:09:13.326192+00:00",
+      "title": "FAQ: Faceting • ggplot2"
+    },
+    "articles-faq-reordering": {
+      "url": "https://ggplot2.tidyverse.org/articles/faq-reordering.html",
+      "last_hash": "4c8a682d329c9dd4260d56cdaf80b7d3a5eba35b9a6085422e1084e859fd1c29",
+      "last_fetched": "2026-11-08T05:09:14.726353+00:00",
+      "title": "FAQ: Reordering • ggplot2"
+    },
+    "articles-ggplot2-in-packages": {
+      "url": "https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html",
+      "last_hash": "87eaf7223e98ab02a8521030c46a2f2122214a1a3a8df481adc5f4fc5c14025a",
+      "last_fetched": "2026-11-08T05:09:16.084370+00:00",
+      "title": "Using ggplot2 in packages • ggplot2"
+    },
+    "articles-ggplot2-specs": {
+      "url": "https://ggplot2.tidyverse.org/articles/ggplot2-specs.html",
+      "last_hash": "50722e0c9e2955f9cad7edad79d376b503eef08d41838bd2c202ae9c52b53aae",
+      "last_fetched": "2026-11-08T05:09:17.548335+00:00",
+      "title": "Aesthetic specifications • ggplot2"
+    },
+    "articles-ggplot2": {
+      "url": "https://ggplot2.tidyverse.org/articles/ggplot2.html",
+      "last_hash": "3be27c81f4c827b669f26baee28e89d98a168c42897b3df375d39a1d3f59ba28",
+      "last_fetched": "2026-11-08T05:09:19.191113+00:00",
+      "title": "Introduction to ggplot2 • ggplot2"
+    },
+    "articles-index": {
+      "url": "https://ggplot2.tidyverse.org/articles/index.html",
+      "last_hash": "9a3078e66a4a380bf0a5f8d9977497de78fa2a4d377bc54bafca6f0967783ad5",
+      "last_fetched": "2026-11-08T05:09:20.416357+00:00",
+      "title": "Articles • ggplot2"
+    },
+    "articles-profiling": {
+      "url": "https://ggplot2.tidyverse.org/articles/profiling.html",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "authors": {
+      "url": "https://ggplot2.tidyverse.org/authors.html",
+      "last_hash": "09f0dc1f1b730711c400ab138e89408778b59cb80a723cdfdea97a6d68eb3dec",
+      "last_fetched": "2026-11-08T05:10:57.818311+00:00",
+      "title": "Authors and Citation • ggplot2"
+    },
+    "index": {
+      "url": "https://ggplot2.tidyverse.org/index.html",
+      "last_hash": "1165f349168fb63f3ed6b1c3fb3f692e5fe1f4acbe494663ac8ff98c7f505192",
+      "last_fetched": "2026-11-08T05:10:59.091654+00:00",
+      "title": "Create Elegant Data Visualisations Using the Grammar of Graphics • ggplot2"
+    },
+    "reference-Coord": {
+      "url": "https://ggplot2.tidyverse.org/reference/Coord.html",
+      "last_hash": "2e60f938402041ece210a22d146cd477312ecc07920aa64878d5ea3264dbb05e",
+      "last_fetched": "2026-11-08T05:11:00.418041+00:00",
+      "title": "Coords — Coord • ggplot2"
+    },
+    "reference-Facet": {
+      "url": "https://ggplot2.tidyverse.org/reference/Facet.html",
+      "last_hash": "29bed94187cf1544ce7f33e2cfb66c8b51d981160029398b440bd1faba99f8d9",
+      "last_fetched": "2026-11-08T05:11:01.961520+00:00",
+      "title": "Facets — Facet • ggplot2"
+    },
+    "reference-Geom": {
+      "url": "https://ggplot2.tidyverse.org/reference/Geom.html",
+      "last_hash": "3beed58002549fec0bbb1f6c1af157f722e8e1ce76cb4c87e9d67cef58d5c5cb",
+      "last_fetched": "2026-11-08T05:11:03.211006+00:00",
+      "title": "Geoms — Geom • ggplot2"
+    },
+    "reference-Guide": {
+      "url": "https://ggplot2.tidyverse.org/reference/Guide.html",
+      "last_hash": "8da70561f3063d0d58bdcb5886eb663f2048c1eb9298884aaadecc6cfa067d2b",
+      "last_fetched": "2026-11-08T05:11:04.498660+00:00",
+      "title": "Guides — Guide • ggplot2"
+    },
+    "reference-Layer-class": {
+      "url": "https://ggplot2.tidyverse.org/reference/Layer-class.html",
+      "last_hash": "fb436da128d267dd0226f4ea0b7f4705212f7cd027eb90e9eaa74cc2ad340d45",
+      "last_fetched": "2026-11-08T05:11:05.735213+00:00",
+      "title": "Layers — Layer-class • ggplot2"
+    },
+    "reference-Layout": {
+      "url": "https://ggplot2.tidyverse.org/reference/Layout.html",
+      "last_hash": "9562f2a15b4699eabb0b24ecaf6a2a4127d16d2595d3553649885a13ffac8297",
+      "last_fetched": "2026-11-08T05:11:07.026056+00:00",
+      "title": "Layout — Layout • ggplot2"
+    },
+    "reference-Position": {
+      "url": "https://ggplot2.tidyverse.org/reference/Position.html",
+      "last_hash": "70b5dbedef1ce3e688482d70e96427d634d1fa7720734e3d5295a3e051ccdb8c",
+      "last_fetched": "2026-11-08T05:11:08.277136+00:00",
+      "title": "Positions — Position • ggplot2"
+    },
+    "reference-Scale": {
+      "url": "https://ggplot2.tidyverse.org/reference/Scale.html",
+      "last_hash": "6043b51d21e447a6e1ad71e6fb8415c3c2f170c072ffa95da7136865f1dfb7b7",
+      "last_fetched": "2026-11-08T05:11:08.982006+00:00",
+      "title": "Unicorn! · GitHub"
+    },
+    "reference-Stat": {
+      "url": "https://ggplot2.tidyverse.org/reference/Stat.html",
+      "last_hash": "0cb79c448f3df36876a00369897e29accfd755e5d0066189a656b4179323f6fe",
+      "last_fetched": "2026-11-08T05:11:10.292110+00:00",
+      "title": "Stats — Stat • ggplot2"
+    },
+    "reference-absoluteGrob": {
+      "url": "https://ggplot2.tidyverse.org/reference/absoluteGrob.html",
+      "last_hash": "3a9dd2381068d93a9a3266c32900712d05e98259ac49c60bb0de290640cf98c3",
+      "last_fetched": "2026-11-08T05:11:11.493762+00:00",
+      "title": "Absolute grob — absoluteGrob • ggplot2"
+    },
+    "reference-add_theme": {
+      "url": "https://ggplot2.tidyverse.org/reference/add_theme.html",
+      "last_hash": "cfa3b0d7136eb73e5babdc86c1029b61237cb49314f1bfe9739ca494a09a9621",
+      "last_fetched": "2026-11-08T05:11:12.863662+00:00",
+      "title": "Modify properties of an element in a theme object — add_theme • ggplot2"
+    },
+    "reference-aes": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes.html",
+      "last_hash": "c234637bc82333d705f472e242b18643e6862de62f47a7fe108ded2f0aad49da",
+      "last_fetched": "2026-11-08T05:11:14.157608+00:00",
+      "title": "Construct aesthetic mappings — aes • ggplot2"
+    },
+    "reference-aes_": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_.html",
+      "last_hash": "13c4997ef33156734e72e1274c45841b38875e7745df6251a692568ec0475905",
+      "last_fetched": "2026-11-08T05:11:15.391827+00:00",
+      "title": "Define aesthetic mappings programmatically — aes_ • ggplot2"
+    },
+    "reference-aes_all": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_all.html",
+      "last_hash": "f9ac8dcb3fd213418f9d002a505a080cda92d6237a6dc980d02890a75324e05b",
+      "last_fetched": "2026-11-08T05:11:16.623990+00:00",
+      "title": "Given a character vector, create a set of identity mappings — aes_all • ggplot2"
+    },
+    "reference-aes_auto": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_auto.html",
+      "last_hash": "020f935e711c21a0b49a8ab506cd91ea7d8290973d532852c2ac1259a1385b62",
+      "last_fetched": "2026-11-08T05:11:17.857338+00:00",
+      "title": "Automatic aesthetic mapping — aes_auto • ggplot2"
+    },
+    "reference-aes_colour_fill_alpha": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_colour_fill_alpha.html",
+      "last_hash": "fc3f7cf2f819ce183cae5f46cec14b33536cdc97978a33691d85d2bda1cd8664",
+      "last_fetched": "2026-11-08T05:11:19.163219+00:00",
+      "title": "Colour related aesthetics: colour, fill, and alpha — aes_colour_fill_alpha • ggplot2"
+    },
+    "reference-aes_eval": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_eval.html",
+      "last_hash": "0cd4ed8e68c9fd1c54fb8110b6b76c981144eb2d15508bc38cf66f8c53b6bb55",
+      "last_fetched": "2026-11-08T05:11:20.438437+00:00",
+      "title": "Control aesthetic evaluation — aes_eval • ggplot2"
+    },
+    "reference-aes_group_order": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_group_order.html",
+      "last_hash": "5591c2ca94ddc1840a5ec4692a0f128f5610f2cddad1efcf8b0c2f9c8100a4af",
+      "last_fetched": "2026-11-08T05:11:21.713139+00:00",
+      "title": "Aesthetics: grouping — aes_group_order • ggplot2"
+    },
+    "reference-aes_linetype_size_shape": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_linetype_size_shape.html",
+      "last_hash": "2afcdcfcf259baa0d65e1bc56cc3dc2cb9c496ca6544a35cb81bfd5c593eac3e",
+      "last_fetched": "2026-11-08T05:11:23.044555+00:00",
+      "title": "Differentiation related aesthetics: linetype, size, shape — aes_linetype_size_shape • ggplot2"
+    },
+    "reference-aes_position": {
+      "url": "https://ggplot2.tidyverse.org/reference/aes_position.html",
+      "last_hash": "f86329fd1d4623725b909460954598d4e6780695750a9fbe9efdb14a35a47a60",
+      "last_fetched": "2026-11-08T05:11:24.312589+00:00",
+      "title": "Position related aesthetics: x, y, xmin, xmax, ymin, ymax, xend, yend — aes_position • ggplot2"
+    },
+    "reference-annotate": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotate.html",
+      "last_hash": "86be4486c6c2ec84205678232843f4e85d25d48817e1ec1696367ac46466f45a",
+      "last_fetched": "2026-11-08T05:11:25.614248+00:00",
+      "title": "Create an annotation layer — annotate • ggplot2"
+    },
+    "reference-annotation_borders": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotation_borders.html",
+      "last_hash": "381ae9e4bef505223898941cf35facd80c02738a77a0b29f625c5309ad108039",
+      "last_fetched": "2026-11-08T05:11:26.856449+00:00",
+      "title": "Create a layer of map borders — annotation_borders • ggplot2"
+    },
+    "reference-annotation_custom": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotation_custom.html",
+      "last_hash": "43d95ba1a6db1cfcd0c0c7e4735a0998f2947e77df568376840161f0478f3bc4",
+      "last_fetched": "2026-11-08T05:11:28.125791+00:00",
+      "title": "Annotation: Custom grob — annotation_custom • ggplot2"
+    },
+    "reference-annotation_logticks": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotation_logticks.html",
+      "last_hash": "332ce71fc7f68553760807f1546c52731757f1be5c824ea40921e4e3e438db5a",
+      "last_fetched": "2026-11-08T05:11:29.427386+00:00",
+      "title": "Annotation: log tick marks — annotation_logticks • ggplot2"
+    },
+    "reference-annotation_map": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotation_map.html",
+      "last_hash": "3794b8a43bce140d25c18e62b4a01179401c5b8ae986f63a1babf38bd7b5fa7f",
+      "last_fetched": "2026-11-08T05:11:30.660289+00:00",
+      "title": "Annotation: a map — annotation_map • ggplot2"
+    },
+    "reference-annotation_raster": {
+      "url": "https://ggplot2.tidyverse.org/reference/annotation_raster.html",
+      "last_hash": "1214361efa79ecd73dc7c313f13cf551f0f96129d2dfddd4f341f33b4f538108",
+      "last_fetched": "2026-11-08T05:11:31.905286+00:00",
+      "title": "Annotation: high-performance rectangular tiling — annotation_raster • ggplot2"
+    },
+    "reference-as.list.ggproto": {
+      "url": "https://ggplot2.tidyverse.org/reference/as.list.ggproto.html",
+      "last_hash": "962bcd7bd9a96020650ce68b6a4258413d3fb2a5f961324322a90bdb66df9d3a",
+      "last_fetched": "2026-11-08T05:11:33.128299+00:00",
+      "title": "Convert a ggproto object to a list — as.list.ggproto • ggplot2"
+    },
+    "reference-as_labeller": {
+      "url": "https://ggplot2.tidyverse.org/reference/as_labeller.html",
+      "last_hash": "9ad9fd8885ee962cceb242d04d1f1a664c17ed8a5cf5263381a924546ece9942",
+      "last_fetched": "2026-11-08T05:11:34.425875+00:00",
+      "title": "Coerce to labeller function — as_labeller • ggplot2"
+    },
+    "reference-autolayer": {
+      "url": "https://ggplot2.tidyverse.org/reference/autolayer.html",
+      "last_hash": "a4be3fee7d7cf89522896c40488798f246a0429ae29e429ef28c87e4886b4766",
+      "last_fetched": "2026-11-08T05:11:35.673383+00:00",
+      "title": "Create a ggplot layer appropriate to a particular data type — autolayer • ggplot2"
+    },
+    "reference-automatic_plotting": {
+      "url": "https://ggplot2.tidyverse.org/reference/automatic_plotting.html",
+      "last_hash": "93c256aa3e6de9d59fe6290c27f1015844f268bd9a2a0db8d5e3a3741e665f47",
+      "last_fetched": "2026-11-08T05:11:36.904919+00:00",
+      "title": "Tailoring plots to particular data types — automatic_plotting • ggplot2"
+    },
+    "reference-autoplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/autoplot.html",
+      "last_hash": "b7c900ef037c5391ef728d38e75110346dd2540605da5fbc459aadce8600db04",
+      "last_fetched": "2026-11-08T05:11:38.144445+00:00",
+      "title": "Create a complete ggplot appropriate to a particular data type — autoplot • ggplot2"
+    },
+    "reference-benchplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/benchplot.html",
+      "last_hash": "dcf392fffd0e02e27aedb89b02a89632ecc547a3927ade3b2a8432582038726e",
+      "last_fetched": "2026-11-08T05:11:39.357787+00:00",
+      "title": "Benchmark plot creation time. Broken down into construct, build, render and draw times. — benchplot • ggplot2"
+    },
+    "reference-bidirection": {
+      "url": "https://ggplot2.tidyverse.org/reference/bidirection.html",
+      "last_hash": "349b7cd205070ace62185ca31c7803524483e42f4c72256c11f3c3acc6c621a4",
+      "last_fetched": "2026-11-08T05:11:40.595289+00:00",
+      "title": "Utilities for working with bidirectional layers — bidirection • ggplot2"
+    },
+    "reference-binned_scale": {
+      "url": "https://ggplot2.tidyverse.org/reference/binned_scale.html",
+      "last_hash": "d530f725aed699db0debb9d0c5987930f603d92860776b62d7839e6f5604345a",
+      "last_fetched": "2026-11-08T05:11:41.844118+00:00",
+      "title": "Binning scale constructor — binned_scale • ggplot2"
+    },
+    "reference-calc_element": {
+      "url": "https://ggplot2.tidyverse.org/reference/calc_element.html",
+      "last_hash": "cb24aca3e893e952c736d38fa063d50957c6c4234f5ad34733f0790202eca5fd",
+      "last_fetched": "2026-11-08T05:11:43.122042+00:00",
+      "title": "Calculate the element properties, by inheriting properties from its parents — calc_element • ggplot2"
+    },
+    "reference-check_device": {
+      "url": "https://ggplot2.tidyverse.org/reference/check_device.html",
+      "last_hash": "056346a93fe95cd6f706e37161befc8694b04b76ec1b419e1449aa380b4cf783",
+      "last_fetched": "2026-11-08T05:11:44.496288+00:00",
+      "title": "Check graphics device capabilities — check_device • ggplot2"
+    },
+    "reference-class_definitions": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_definitions.html",
+      "last_hash": "26ca2c168b76f4c4f6cbe488522084445e7729f5cf742ba4bb9ecb60dda99528",
+      "last_fetched": "2026-11-08T05:11:45.852145+00:00",
+      "title": "Class definitions — class_definitions • ggplot2"
+    },
+    "reference-class_ggplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_ggplot.html",
+      "last_hash": "1aa89655581c256993d424ed37988eca90e441732dcb603777a5c661d56975ab",
+      "last_fetched": "2026-11-08T05:11:47.096628+00:00",
+      "title": "The ggplot class — class_ggplot • ggplot2"
+    },
+    "reference-class_ggplot_built": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_ggplot_built.html",
+      "last_hash": "efd39393fb2b73a6e8ae3b6a3f7371595544cd79bdecbcc8bada39726c1c359a",
+      "last_fetched": "2026-11-08T05:11:48.422576+00:00",
+      "title": "The ggplot built class — class_ggplot_built • ggplot2"
+    },
+    "reference-class_labels": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_labels.html",
+      "last_hash": "599345733e306067a6463577b47a8404bc511d0f8fa4f34e13cdbb04dab5fe6f",
+      "last_fetched": "2026-11-08T05:11:49.701867+00:00",
+      "title": "The labels class — class_labels • ggplot2"
+    },
+    "reference-class_mapping": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_mapping.html",
+      "last_hash": "da92b1fa6cfe2bc273a91be61c55856092652924284bb9321d7411baf5a95fad",
+      "last_fetched": "2026-11-08T05:11:50.953417+00:00",
+      "title": "The mapping class — class_mapping • ggplot2"
+    },
+    "reference-class_theme": {
+      "url": "https://ggplot2.tidyverse.org/reference/class_theme.html",
+      "last_hash": "f594b55430acc4d1cad96da64b0aee56d8c0b096da1080f8c92791d24907b877",
+      "last_fetched": "2026-11-08T05:11:52.231038+00:00",
+      "title": "The theme class — class_theme • ggplot2"
+    },
+    "reference-combine_vars": {
+      "url": "https://ggplot2.tidyverse.org/reference/combine_vars.html",
+      "last_hash": "256f314dee6f862987a1e7d94c57a0f2c9b2d0d6fb948e3935382a70fd270e0a",
+      "last_fetched": "2026-11-08T05:11:53.525326+00:00",
+      "title": "Take input data and define a mapping between faceting variables and ROW, COL and PANEL keys — combine_vars • ggplot2"
+    },
+    "reference-complete_theme": {
+      "url": "https://ggplot2.tidyverse.org/reference/complete_theme.html",
+      "last_hash": "dfe98e74a2f5b91c9d27017ec58ebcba0504a99f11049fef807e4e34bfaac30c",
+      "last_fetched": "2026-11-08T05:11:54.901384+00:00",
+      "title": "Complete a theme — complete_theme • ggplot2"
+    },
+    "reference-continuous_scale": {
+      "url": "https://ggplot2.tidyverse.org/reference/continuous_scale.html",
+      "last_hash": "49fc8c3737aee4c9d1d4115764d6a59796ccdc339a166eaa273d276f018d60a2",
+      "last_fetched": "2026-11-08T05:11:56.139300+00:00",
+      "title": "Continuous scale constructor — continuous_scale • ggplot2"
+    },
+    "reference-coord_cartesian": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_cartesian.html",
+      "last_hash": "cd17df2c085631fa9d11ac6f0039685713c176d2b1ba80da3b07b797e86082df",
+      "last_fetched": "2026-11-08T05:11:57.448036+00:00",
+      "title": "Cartesian coordinates — coord_cartesian • ggplot2"
+    },
+    "reference-coord_fixed": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_fixed.html",
+      "last_hash": "908e4a15894a8cd6507106f3fec77e1cb3c4f99de6847c7a9bdc737471e069af",
+      "last_fetched": "2026-11-08T05:11:58.710507+00:00",
+      "title": "Cartesian coordinates with fixed \"aspect ratio\" — coord_fixed • ggplot2"
+    },
+    "reference-coord_flip": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_flip.html",
+      "last_hash": "3009653c00fb823c41454303017290b05279d7f879321edfff733dc3fdd7bc63",
+      "last_fetched": "2026-11-08T05:11:59.984572+00:00",
+      "title": "Cartesian coordinates with x and y flipped — coord_flip • ggplot2"
+    },
+    "reference-coord_map": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_map.html",
+      "last_hash": "8603cc6329443b74b1ad71fe643161c6784a366b3bbfb00d75738978fbe3fbc8",
+      "last_fetched": "2026-11-08T05:12:01.276440+00:00",
+      "title": "Map projections — coord_map • ggplot2"
+    },
+    "reference-coord_munch": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_munch.html",
+      "last_hash": "1c8089b5cbb6acb9fdb9c948714070956c8578a0b65e9361bc97c988d8a39f92",
+      "last_fetched": "2026-11-08T05:12:02.550847+00:00",
+      "title": "Munch coordinates data — coord_munch • ggplot2"
+    },
+    "reference-coord_radial": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_radial.html",
+      "last_hash": "e5bcd6b2678b8c21a5e103eae54cd9b5670e291d0938b0c5c795efdb794421a4",
+      "last_fetched": "2026-11-08T05:12:03.856606+00:00",
+      "title": "Polar coordinates — coord_polar • ggplot2"
+    },
+    "reference-coord_transform": {
+      "url": "https://ggplot2.tidyverse.org/reference/coord_transform.html",
+      "last_hash": "b6ae414fa01d1a47b783bac3818b9101195e1cd796268c8ddc6af555dcda4c60",
+      "last_fetched": "2026-11-08T05:12:05.209765+00:00",
+      "title": "Transformed Cartesian coordinate system — coord_transform • ggplot2"
+    },
+    "reference-cut_interval": {
+      "url": "https://ggplot2.tidyverse.org/reference/cut_interval.html",
+      "last_hash": "e75be93c19be2ef7f70239d9d40b8436d4f0eff6a4374de4356634efd4629e21",
+      "last_fetched": "2026-11-08T05:12:06.411098+00:00",
+      "title": "Discretise numeric data into categorical — cut_interval • ggplot2"
+    },
+    "reference-datetime_scale": {
+      "url": "https://ggplot2.tidyverse.org/reference/datetime_scale.html",
+      "last_hash": "62c986d3735268ad5c462dcb0081a6788326cb0aaf62d6c92c20960ababb14e3",
+      "last_fetched": "2026-11-08T05:12:07.678016+00:00",
+      "title": "Date/time scale constructor — datetime_scale • ggplot2"
+    },
+    "reference-diamonds": {
+      "url": "https://ggplot2.tidyverse.org/reference/diamonds.html",
+      "last_hash": "7ee30003ae1650293c3ed992e9b1d4391337ca0a8b65e13777f09ed8ffffe102",
+      "last_fetched": "2026-11-08T05:12:08.899122+00:00",
+      "title": "Prices of over 50,000 round cut diamonds — diamonds • ggplot2"
+    },
+    "reference-discrete_scale": {
+      "url": "https://ggplot2.tidyverse.org/reference/discrete_scale.html",
+      "last_hash": "d644dd89a87e1479aa0feafad4516fb69d026f7767f4855ef9a1d1318170cb13",
+      "last_fetched": "2026-11-08T05:12:10.131346+00:00",
+      "title": "Discrete scale constructor — discrete_scale • ggplot2"
+    },
+    "reference-draw_key": {
+      "url": "https://ggplot2.tidyverse.org/reference/draw_key.html",
+      "last_hash": "9d70047109336c758957f6f8ef15c49ab5ebcd472b4aeb93a414a31aee8edaa5",
+      "last_fetched": "2026-11-08T05:12:11.353225+00:00",
+      "title": "Key glyphs for legends — draw_key • ggplot2"
+    },
+    "reference-economics": {
+      "url": "https://ggplot2.tidyverse.org/reference/economics.html",
+      "last_hash": "cb9230c2a877120988b1706c35f97cccf0efff56b65e60b7e02dc2191b58f3dc",
+      "last_fetched": "2026-11-08T05:12:12.575310+00:00",
+      "title": "US economic time series — economics • ggplot2"
+    },
+    "reference-element": {
+      "url": "https://ggplot2.tidyverse.org/reference/element.html",
+      "last_hash": "67b19d2a5fa14f4beb1f8f9ad87da8716c59f0f1968cafb3f26e8c2d894425a1",
+      "last_fetched": "2026-11-08T05:12:13.803615+00:00",
+      "title": "Theme elements — margin • ggplot2"
+    },
+    "reference-element_grob": {
+      "url": "https://ggplot2.tidyverse.org/reference/element_grob.html",
+      "last_hash": "52b550b66cc73122dd35e4aa7951bd50178aacb808bf39279221e67ac1515ad9",
+      "last_fetched": "2026-11-08T05:12:14.990608+00:00",
+      "title": "Generate grid grob from theme element — element_grob • ggplot2"
+    },
+    "reference-element_render": {
+      "url": "https://ggplot2.tidyverse.org/reference/element_render.html",
+      "last_hash": "d93491e5966057b6506d2a9e8092dfc03393f09487a81c9df2effb9bce79395d",
+      "last_fetched": "2026-11-08T05:12:16.326148+00:00",
+      "title": "Render a specified theme element into a grob — element_render • ggplot2"
+    },
+    "reference-expand_limits": {
+      "url": "https://ggplot2.tidyverse.org/reference/expand_limits.html",
+      "last_hash": "289402648c3a1c2ee0cbf6c580bbae0f955d49273780d73bcaf81023e2a91c64",
+      "last_fetched": "2026-11-08T05:12:17.608508+00:00",
+      "title": "Expand the plot limits, using data — expand_limits • ggplot2"
+    },
+    "reference-expansion": {
+      "url": "https://ggplot2.tidyverse.org/reference/expansion.html",
+      "last_hash": "f9a006dc18a36f0434b78782546dac70f91a1e5bebcf730fa6e2f0e5115f90ef",
+      "last_fetched": "2026-11-08T05:12:18.827022+00:00",
+      "title": "Generate expansion vector for scales — expansion • ggplot2"
+    },
+    "reference-facet_grid": {
+      "url": "https://ggplot2.tidyverse.org/reference/facet_grid.html",
+      "last_hash": "d0ed8a751e3059ae490db8fbc5e5fddad28a6c2c93ab09606c335abed53af135",
+      "last_fetched": "2026-11-08T05:12:20.101957+00:00",
+      "title": "Lay out panels in a grid — facet_grid • ggplot2"
+    },
+    "reference-facet_null": {
+      "url": "https://ggplot2.tidyverse.org/reference/facet_null.html",
+      "last_hash": "ecbf79851386c058cebb193f79a632e0faee791b6d741ddca6c7e1962605b11d",
+      "last_fetched": "2026-11-08T05:12:21.306527+00:00",
+      "title": "Facet specification: a single panel. — facet_null • ggplot2"
+    },
+    "reference-facet_wrap": {
+      "url": "https://ggplot2.tidyverse.org/reference/facet_wrap.html",
+      "last_hash": "b1a12fd7693cfa284cb1f44f1886a03c5c777604b7c9c8f19432f48d06dd58d4",
+      "last_fetched": "2026-11-08T05:12:22.562031+00:00",
+      "title": "Wrap a 1d ribbon of panels into 2d — facet_wrap • ggplot2"
+    },
+    "reference-faithfuld": {
+      "url": "https://ggplot2.tidyverse.org/reference/faithfuld.html",
+      "last_hash": "289bc9f7c7d6111bd5bd8291f88800b23c705d709eb7af725136b1aa4c851869",
+      "last_fetched": "2026-11-08T05:12:23.776970+00:00",
+      "title": "2d density estimate of Old Faithful data — faithfuld • ggplot2"
+    },
+    "reference-fill_alpha": {
+      "url": "https://ggplot2.tidyverse.org/reference/fill_alpha.html",
+      "last_hash": "197ca4d2c014fcefb075b380ed79bd59bbb6e3ca4f14ee923eafe23050b39a79",
+      "last_fetched": "2026-11-08T05:12:25.013148+00:00",
+      "title": "Modify fill transparency — fill_alpha • ggplot2"
+    },
+    "reference-find_panel": {
+      "url": "https://ggplot2.tidyverse.org/reference/find_panel.html",
+      "last_hash": "8e8d3ecc7f308a453021ae7fc08314a2eb3830721e5055570bb671cf8103f63c",
+      "last_fetched": "2026-11-08T05:12:26.346426+00:00",
+      "title": "Find panels in a gtable — find_panel • ggplot2"
+    },
+    "reference-fortify-multcomp": {
+      "url": "https://ggplot2.tidyverse.org/reference/fortify-multcomp.html",
+      "last_hash": "f130af971da660337f6089365722b9794cf5414709383a2c8c147d92093ac898",
+      "last_fetched": "2026-11-08T05:12:27.578510+00:00",
+      "title": "Fortify methods for objects produced by multcomp — fortify-multcomp • ggplot2"
+    },
+    "reference-fortify": {
+      "url": "https://ggplot2.tidyverse.org/reference/fortify.html",
+      "last_hash": "59a1696fb449dc0e41c7d219e27edea55dd7befea463c70c105d8de35441a6c7",
+      "last_fetched": "2026-11-08T05:12:28.780389+00:00",
+      "title": "Fortify a model with data. — fortify • ggplot2"
+    },
+    "reference-fortify.lm": {
+      "url": "https://ggplot2.tidyverse.org/reference/fortify.lm.html",
+      "last_hash": "41fad9c55fea5970cab32fa18dc864c4d43d0e654bd1f5fe920f7fbbc5812879",
+      "last_fetched": "2026-11-08T05:12:30.038160+00:00",
+      "title": "Supplement the data fitted to a linear model with model fit statistics. — fortify.lm • ggplot2"
+    },
+    "reference-fortify.map": {
+      "url": "https://ggplot2.tidyverse.org/reference/fortify.map.html",
+      "last_hash": "1b9ade75c589b2e7944f3f60d5e3c823f435820a5fc51525d1c66674c4c27115",
+      "last_fetched": "2026-11-08T05:12:31.303725+00:00",
+      "title": "Fortify method for map objects — fortify.map • ggplot2"
+    },
+    "reference-fortify.sp": {
+      "url": "https://ggplot2.tidyverse.org/reference/fortify.sp.html",
+      "last_hash": "5abdcec32ccd0b586eb36f9f58ae506efad3a5b8eb16134935d87496963cbe23",
+      "last_fetched": "2026-11-08T05:12:32.551494+00:00",
+      "title": "Fortify method for classes from the sp package. — fortify.sp • ggplot2"
+    },
+    "reference-geom_abline": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_abline.html",
+      "last_hash": "feda2e3a30b2220ad843a3d4b2855650c5e97336a466c31498659e967e85ac5a",
+      "last_fetched": "2026-11-08T05:12:33.818901+00:00",
+      "title": "Reference lines: horizontal, vertical, and diagonal — geom_abline • ggplot2"
+    },
+    "reference-geom_bar": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_bar.html",
+      "last_hash": "a5324141e44de85b13ac29797617ceba917302627ad03f6a4c1135332e7d623a",
+      "last_fetched": "2026-11-08T05:12:35.150006+00:00",
+      "title": "Bar charts — geom_bar • ggplot2"
+    },
+    "reference-geom_bin_2d": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_bin_2d.html",
+      "last_hash": "5b2a037b1f1be6f0c9e3579e7acc4f7e0383d022a3ddded538af67f900e2a0a6",
+      "last_fetched": "2026-11-08T05:12:36.407721+00:00",
+      "title": "Heatmap of 2d bin counts — geom_bin_2d • ggplot2"
+    },
+    "reference-geom_blank": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_blank.html",
+      "last_hash": "ba4da901fa9bae68b61a582cb6e41ff0d9e6b24af6bd43569dabf1dcb1f00327",
+      "last_fetched": "2026-11-08T05:12:37.660275+00:00",
+      "title": "Draw nothing — geom_blank • ggplot2"
+    },
+    "reference-geom_boxplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_boxplot.html",
+      "last_hash": "f1cb451f8fe9f189db40160257372c37b8f043307c70d6e27e3af0e5afd01159",
+      "last_fetched": "2026-11-08T05:12:38.963092+00:00",
+      "title": "A box and whiskers plot (in the style of Tukey) — geom_boxplot • ggplot2"
+    },
+    "reference-geom_contour": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_contour.html",
+      "last_hash": "ce7a10ff0aa907c58f6053bb6998fd68ad9c0b91ad1bceed4850af1803f03302",
+      "last_fetched": "2026-11-08T05:12:40.296432+00:00",
+      "title": "2D contours of a 3D surface — geom_contour • ggplot2"
+    },
+    "reference-geom_count": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_count.html",
+      "last_hash": "32bd19d1c7caff3311885ba41da2e78400d35a57d53923aaaf1c70a876b2665a",
+      "last_fetched": "2026-11-08T05:12:41.559582+00:00",
+      "title": "Count overlapping points — geom_count • ggplot2"
+    },
+    "reference-geom_density": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_density.html",
+      "last_hash": "003ae1f1247a820cee750f7c6fde8b4d6457719b19cbd2b9320442d9749d7c00",
+      "last_fetched": "2026-11-08T05:12:42.850315+00:00",
+      "title": "Smoothed density estimates — geom_density • ggplot2"
+    },
+    "reference-geom_density_2d": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_density_2d.html",
+      "last_hash": "05fb90f8309a11eb6f3d29b93e70961b57b6fedf191652bc6d435c418cbb35bf",
+      "last_fetched": "2026-11-08T05:12:44.117881+00:00",
+      "title": "Contours of a 2D density estimate — geom_density_2d • ggplot2"
+    },
+    "reference-geom_dotplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_dotplot.html",
+      "last_hash": "ebc0055f1b6d08cf03af6485b13ed7ec6d62e50573340d76332e77d242463468",
+      "last_fetched": "2026-11-08T05:12:45.492300+00:00",
+      "title": "Dot plot — geom_dotplot • ggplot2"
+    },
+    "reference-geom_function": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_function.html",
+      "last_hash": "f8a370fb1636da1f755a47348faedf776921ffc713c9f8b07898224183abb71b",
+      "last_fetched": "2026-11-08T05:12:46.780889+00:00",
+      "title": "Draw a function as a continuous curve — geom_function • ggplot2"
+    },
+    "reference-geom_hex": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_hex.html",
+      "last_hash": "be6747c4b76a83ae0a17373e46d9ae5f09906da3d95e3af1629676c6c8efa03e",
+      "last_fetched": "2026-11-08T05:12:48.134571+00:00",
+      "title": "Hexagonal heatmap of 2d bin counts — geom_hex • ggplot2"
+    },
+    "reference-geom_histogram": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_histogram.html",
+      "last_hash": "8a9e07029f215cf0e0ed0d0e5f0cd72ca0223d716945e8749eb11ac2a06b77a4",
+      "last_fetched": "2026-11-08T05:12:49.427939+00:00",
+      "title": "Histograms and frequency polygons — geom_freqpoly • ggplot2"
+    },
+    "reference-geom_jitter": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_jitter.html",
+      "last_hash": "8c341218d7696bfbbf73bc1b04a49941aff214f44c5a86cca9af0db8d328ddf0",
+      "last_fetched": "2026-11-08T05:12:50.687101+00:00",
+      "title": "Jittered points — geom_jitter • ggplot2"
+    },
+    "reference-geom_linerange": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_linerange.html",
+      "last_hash": "9ed9b724a03d84b4c74752a5e9c723cf0c2c028ff811d601700d32767e552b7c",
+      "last_fetched": "2026-11-08T05:12:51.953969+00:00",
+      "title": "Vertical intervals: lines, crossbars & errorbars — geom_crossbar • ggplot2"
+    },
+    "reference-geom_map": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_map.html",
+      "last_hash": "3891ecb9aa2e5201de880f13195ab9a7e8b8ecae2709fb0bc776c33fdf5e2d63",
+      "last_fetched": "2026-11-08T05:12:53.203338+00:00",
+      "title": "Polygons from a reference map — geom_map • ggplot2"
+    },
+    "reference-geom_path": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_path.html",
+      "last_hash": "edab198f98a4416d7d6dd3a82ae67e2cbd0a56759e9656540793292b6b97ac03",
+      "last_fetched": "2026-11-08T05:12:54.464000+00:00",
+      "title": "Connect observations — geom_path • ggplot2"
+    },
+    "reference-geom_point": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_point.html",
+      "last_hash": "ed745a2d97194054916aabe51d073b75a7d8fc099f6148f71197379cdc7ef82f",
+      "last_fetched": "2026-11-08T05:12:55.744127+00:00",
+      "title": "Points — geom_point • ggplot2"
+    },
+    "reference-geom_polygon": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_polygon.html",
+      "last_hash": "0ee59cb0d6a378860882431186e906eb5d366d236e357908a633bd941e46f08c",
+      "last_fetched": "2026-11-08T05:12:56.983081+00:00",
+      "title": "Polygons — geom_polygon • ggplot2"
+    },
+    "reference-geom_qq": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_qq.html",
+      "last_hash": "48a13f451a094a3366a3ec09df3ab2f501b9ffb88b3e202a4a4c6a641711cafc",
+      "last_fetched": "2026-11-08T05:12:58.340540+00:00",
+      "title": "A quantile-quantile plot — geom_qq_line • ggplot2"
+    },
+    "reference-geom_quantile": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_quantile.html",
+      "last_hash": "082f5b3cda172431f5b9f7a894b3f559465b5e59da1d3cc11721cf066d7946b6",
+      "last_fetched": "2026-11-08T05:12:59.570590+00:00",
+      "title": "Quantile regression — geom_quantile • ggplot2"
+    },
+    "reference-geom_ribbon": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_ribbon.html",
+      "last_hash": "6abf35d0a09ca78dcef25673f550050712a25acf9cd365a277895dde9df772cd",
+      "last_fetched": "2026-11-08T05:13:00.842574+00:00",
+      "title": "Ribbons and area plots — geom_ribbon • ggplot2"
+    },
+    "reference-geom_rug": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_rug.html",
+      "last_hash": "b93972b867f8dc60b03a687f84f01b833a1ef5462edef04046ee0ae5160a19b9",
+      "last_fetched": "2026-11-08T05:13:02.111591+00:00",
+      "title": "Rug plots in the margins — geom_rug • ggplot2"
+    },
+    "reference-geom_segment": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_segment.html",
+      "last_hash": "236ae57f519f0b716d5d33208c349411b508f24433a6eec8aa5497bb3b9523cc",
+      "last_fetched": "2026-11-08T05:13:03.368612+00:00",
+      "title": "Line segments and curves — geom_segment • ggplot2"
+    },
+    "reference-geom_smooth": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_smooth.html",
+      "last_hash": "662c2f2dbe4f18cabb0248caef60c0a739a7b3fd19b2c993509772a9f7177746",
+      "last_fetched": "2026-11-08T05:13:04.653007+00:00",
+      "title": "Smoothed conditional means — geom_smooth • ggplot2"
+    },
+    "reference-geom_spoke": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_spoke.html",
+      "last_hash": "6a82d8b190acf095fd099a865213b083c748791cbe44aa7ea25ebdc9d7a36f1e",
+      "last_fetched": "2026-11-08T05:13:05.884451+00:00",
+      "title": "Line segments parameterised by location, direction and distance — geom_spoke • ggplot2"
+    },
+    "reference-geom_text": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_text.html",
+      "last_hash": "0e310fe68e4e14e641ae1cc47b33cdab67508cd68ef726ef1ae69c1f5889225c",
+      "last_fetched": "2026-11-08T05:13:07.159729+00:00",
+      "title": "Text — geom_label • ggplot2"
+    },
+    "reference-geom_tile": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_tile.html",
+      "last_hash": "84abcfd4e76fd7d686f7ce1d546b476c5f27b83ee734a821e037f866127e50d5",
+      "last_fetched": "2026-11-08T05:13:08.510591+00:00",
+      "title": "Rectangles — geom_raster • ggplot2"
+    },
+    "reference-geom_violin": {
+      "url": "https://ggplot2.tidyverse.org/reference/geom_violin.html",
+      "last_hash": "72608a425ac5c9242003b73917db1810d6c924eda04e0d4373453a7ba6ca07c2",
+      "last_fetched": "2026-11-08T05:13:09.768858+00:00",
+      "title": "Violin plot — geom_violin • ggplot2"
+    },
+    "reference-get_alt_text": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_alt_text.html",
+      "last_hash": "d4793879a0aae83a319e4c5f0d011b84ba1360ca703abef8141448b4bb29e8ef",
+      "last_fetched": "2026-11-08T05:13:11.012272+00:00",
+      "title": "Extract alt text from a plot — get_alt_text • ggplot2"
+    },
+    "reference-get_geom_defaults": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_geom_defaults.html",
+      "last_hash": "3b6c9a9860076eb82743fc71eb71248f731048a92c3f3cd33cd1515c277de69a",
+      "last_fetched": "2026-11-08T05:13:12.205726+00:00",
+      "title": "Resolve and get geom defaults — get_geom_defaults • ggplot2"
+    },
+    "reference-get_guide_data": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_guide_data.html",
+      "last_hash": "bfdd2e8e861c80c73d1da62d1ce01f759971f392ce675d259b7d6fa49dbd7886",
+      "last_fetched": "2026-11-08T05:13:13.402266+00:00",
+      "title": "Extract tick information from guides — get_guide_data • ggplot2"
+    },
+    "reference-get_last_plot": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_last_plot.html",
+      "last_hash": "079b7bc331ec52d975fd6e4a7d1dd9555810ea923712d4bd17949f123e27b946",
+      "last_fetched": "2026-11-08T05:13:14.637028+00:00",
+      "title": "Retrieve the last plot to be modified or created. — get_last_plot • ggplot2"
+    },
+    "reference-get_strip_labels": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_strip_labels.html",
+      "last_hash": "36c4029a1caee8064f5dde5c7ff5360de1eff8e6e6b5a99a3b62acbb1fdc8340",
+      "last_fetched": "2026-11-08T05:13:15.845725+00:00",
+      "title": "Accessing a plot's facet strip labels — get_strip_labels • ggplot2"
+    },
+    "reference-get_theme": {
+      "url": "https://ggplot2.tidyverse.org/reference/get_theme.html",
+      "last_hash": "fd23b85f4af98006987e054bf972368fec6149e00cd6550fa7c2bd67300d3fe7",
+      "last_fetched": "2026-11-08T05:13:17.110945+00:00",
+      "title": "Get, set, and modify the active theme — get_theme • ggplot2"
+    },
+    "reference-gg-add": {
+      "url": "https://ggplot2.tidyverse.org/reference/gg-add.html",
+      "last_hash": "b01729888dd842a68f9faf67b444788ad18419b1437fb673dbfdd4ee8282ba43",
+      "last_fetched": "2026-11-08T05:13:18.313521+00:00",
+      "title": "Add components to a plot — add_gg • ggplot2"
+    },
+    "reference-gg_dep": {
+      "url": "https://ggplot2.tidyverse.org/reference/gg_dep.html",
+      "last_hash": "17b7d74879593d7519e1d30985fbb72a2a2d1c183b76c18152eba54fae239cbb",
+      "last_fetched": "2026-11-08T05:13:19.576001+00:00",
+      "title": "Give a deprecation error, warning, or message, depending on version number. — gg_dep • ggplot2"
+    },
+    "reference-gg_par": {
+      "url": "https://ggplot2.tidyverse.org/reference/gg_par.html",
+      "last_hash": "fc3b87e12b278000d1cb9fe448ac3133cba97da10792bac01abef6a4a9a54529",
+      "last_fetched": "2026-11-08T05:13:20.937888+00:00",
+      "title": "Interpreter for graphical parameters — gg_par • ggplot2"
+    },
+    "reference-ggplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplot.html",
+      "last_hash": "062885ea072e11c0b84dd320d8c3474d2a88cf27186417aa71b0c6d8d6d0a273",
+      "last_fetched": "2026-11-08T05:13:22.143369+00:00",
+      "title": "Create a new ggplot — ggplot • ggplot2"
+    },
+    "reference-ggplot2-ggproto": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplot2-ggproto.html",
+      "last_hash": "322293a3e2211b545560130a49fea089868da61ff0a3083c26b51821de5a3fa9",
+      "last_fetched": "2026-11-08T05:13:23.490180+00:00",
+      "title": "Base ggproto classes for ggplot2 — ggplot2-ggproto • ggplot2"
+    },
+    "reference-ggplot2-package": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplot2-package.html",
+      "last_hash": "8937ab44135c57d36c2530f8142f4de4368e5d4480c1e5f49a688d8dd6c4603b",
+      "last_fetched": "2026-11-08T05:13:24.739921+00:00",
+      "title": "ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics — ggplot2-package • ggplot2"
+    },
+    "reference-ggplotGrob": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplotGrob.html",
+      "last_hash": "b44659bfecca35e87a6f1d7b93eaaa51f1122716a18d147ddaf85379cbed24bf",
+      "last_fetched": "2026-11-08T05:13:25.953106+00:00",
+      "title": "Generate a ggplot2 plot grob. — ggplotGrob • ggplot2"
+    },
+    "reference-ggplot_build": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplot_build.html",
+      "last_hash": "168f74898af70a904208ffdf014da5747f88aacd1913eb86b68a430c5710d294",
+      "last_fetched": "2026-11-08T05:13:27.186027+00:00",
+      "title": "Build ggplot for rendering. — ggplot_build • ggplot2"
+    },
+    "reference-ggplot_gtable": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggplot_gtable.html",
+      "last_hash": "22f872748254fabab6df014525f1e146ee9af60f6083f38fa36e4d2f69b09882",
+      "last_fetched": "2026-11-08T05:13:28.402286+00:00",
+      "title": "Build a plot with all the usual bits and pieces. — ggplot_gtable • ggplot2"
+    },
+    "reference-ggproto": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggproto.html",
+      "last_hash": "cbd0ad8797a4ac16cb56b746cab6615432eb99cc22338e69dc1fe3e6e73a595f",
+      "last_fetched": "2026-11-08T05:13:29.741777+00:00",
+      "title": "Create a new ggproto object — ggproto • ggplot2"
+    },
+    "reference-ggsave": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggsave.html",
+      "last_hash": "6173f402b99cb792d60a31e6d464201a010719ad508a102a4b963c6ff6c4715a",
+      "last_fetched": "2026-11-08T05:13:30.969447+00:00",
+      "title": "Save a ggplot (or other grid object) with sensible defaults — ggsave • ggplot2"
+    },
+    "reference-ggsf": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggsf.html",
+      "last_hash": "4a4b0fad4684586f3b91f1bd9d5775016bbf84d5f4d773e33b0045e22bcb8838",
+      "last_fetched": "2026-11-08T05:13:32.220455+00:00",
+      "title": "Visualise sf objects — CoordSf • ggplot2"
+    },
+    "reference-ggtheme": {
+      "url": "https://ggplot2.tidyverse.org/reference/ggtheme.html",
+      "last_hash": "c261688bbbf9a7a611b5738b9964e10f1d3ba8dc6b7be260abf28d6c110dc024",
+      "last_fetched": "2026-11-08T05:13:33.740523+00:00",
+      "title": "Complete themes — ggtheme • ggplot2"
+    },
+    "reference-graphical-units": {
+      "url": "https://ggplot2.tidyverse.org/reference/graphical-units.html",
+      "last_hash": "142ec930cb3f3a2b74709e1346e297ea2400f821a691f6880c50953b83aa448c",
+      "last_fetched": "2026-11-08T05:13:34.950405+00:00",
+      "title": "Graphical units — graphical-units • ggplot2"
+    },
+    "reference-guide_axis": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_axis.html",
+      "last_hash": "a2b560579b6bc13217c687e186c8dc04ecdf90bd7311dcc089b7c0eafc786b5a",
+      "last_fetched": "2026-11-08T05:13:36.179522+00:00",
+      "title": "Axis guide — guide_axis • ggplot2"
+    },
+    "reference-guide_axis_logticks": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_axis_logticks.html",
+      "last_hash": "52c3676a84708d6d92732e9b07db202115a6d3b135d456dc7fe48dfe93571676",
+      "last_fetched": "2026-11-08T05:13:37.424972+00:00",
+      "title": "Axis with logarithmic tick marks — guide_axis_logticks • ggplot2"
+    },
+    "reference-guide_axis_stack": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_axis_stack.html",
+      "last_hash": "b0fa32b3bd5e6cee80b6317406dce0af6dc66e4ef9c40c83ab8eb4a715e0a9dd",
+      "last_fetched": "2026-11-08T05:13:38.638371+00:00",
+      "title": "Stacked axis guides — guide_axis_stack • ggplot2"
+    },
+    "reference-guide_axis_theta": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_axis_theta.html",
+      "last_hash": "561faab797cf74298e1e0a8bf75eaa0b494e00e90a81f5b0106573514678e2cb",
+      "last_fetched": "2026-11-08T05:13:39.990855+00:00",
+      "title": "Angle axis guide — guide_axis_theta • ggplot2"
+    },
+    "reference-guide_bins": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_bins.html",
+      "last_hash": "a3c22748f25c56ec82fc6bd0ee14661b48ff9c8542750203b64c19f58291e121",
+      "last_fetched": "2026-11-08T05:13:41.246438+00:00",
+      "title": "A binned version of guide_legend — guide_bins • ggplot2"
+    },
+    "reference-guide_colourbar": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_colourbar.html",
+      "last_hash": "eea35e135f7e04f1f80efa6d3941ad56b0bf414110748ae0a345f7dc1343fe30",
+      "last_fetched": "2026-11-08T05:13:42.548666+00:00",
+      "title": "Continuous colour bar guide — guide_colourbar • ggplot2"
+    },
+    "reference-guide_coloursteps": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_coloursteps.html",
+      "last_hash": "e25cd482f2c9284ab671b13bbb69e0c8ad92230aed3369abbff42e7be422082c",
+      "last_fetched": "2026-11-08T05:13:43.769678+00:00",
+      "title": "Discretized colourbar guide — guide_coloursteps • ggplot2"
+    },
+    "reference-guide_custom": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_custom.html",
+      "last_hash": "3a2f76c7604aa96ec282c859d690df6a43bade6cdabc091cb643a4068941d201",
+      "last_fetched": "2026-11-08T05:13:45.001218+00:00",
+      "title": "Custom guides — guide_custom • ggplot2"
+    },
+    "reference-guide_legend": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_legend.html",
+      "last_hash": "b2847eed3bf0749a1eb518e4ec2a53094803148885d9964977ffbe398b25b095",
+      "last_fetched": "2026-11-08T05:13:46.237205+00:00",
+      "title": "Legend guide — guide_legend • ggplot2"
+    },
+    "reference-guide_none": {
+      "url": "https://ggplot2.tidyverse.org/reference/guide_none.html",
+      "last_hash": "21fb3944dded867744a899d8bb1a3007d156fd8f23bf353dcf8cf0601cbc8526",
+      "last_fetched": "2026-11-08T05:13:47.455124+00:00",
+      "title": "Empty guide — guide_none • ggplot2"
+    },
+    "reference-guides": {
+      "url": "https://ggplot2.tidyverse.org/reference/guides.html",
+      "last_hash": "ff039dc0c5bd10f9bd6256c51e2237ebed170d9a05582549e501322429b4e825",
+      "last_fetched": "2026-11-08T05:13:48.688618+00:00",
+      "title": "Set guides for each scale — guides • ggplot2"
+    },
+    "reference-hmisc": {
+      "url": "https://ggplot2.tidyverse.org/reference/hmisc.html",
+      "last_hash": "85875ff811e8a9054aea499d6788fc0a3cd54f9838678fcfa8d25e2f4dd39e2e",
+      "last_fetched": "2026-11-08T05:13:49.902459+00:00",
+      "title": "A selection of summary functions from Hmisc — hmisc • ggplot2"
+    },
+    "reference-ignoring_data": {
+      "url": "https://ggplot2.tidyverse.org/reference/ignoring_data.html",
+      "last_hash": "ee11b2ea67b387314effc3fb95415b814e240e8f8810fb5e3e3421c274a807f6",
+      "last_fetched": "2026-11-08T05:13:51.124651+00:00",
+      "title": "Ignoring and exposing data — ignoring_data • ggplot2"
+    },
+    "reference-index": {
+      "url": "https://ggplot2.tidyverse.org/reference/index.html",
+      "last_hash": "97ca851c899abd6813eb76f2a3a118e57aa19f5e19881a0ae2fe3861e1926375",
+      "last_fetched": "2026-11-08T05:13:52.422649+00:00",
+      "title": "Package index • ggplot2"
+    },
+    "reference-is_rel": {
+      "url": "https://ggplot2.tidyverse.org/reference/is_rel.html",
+      "last_hash": "39670bdbe0876606bfdef79f1a1c32c70f998c2e76f23178675d582c153a1b5a",
+      "last_fetched": "2026-11-08T05:13:53.622670+00:00",
+      "title": "Reports whether x is a rel object — is_rel • ggplot2"
+    },
+    "reference-is_tests": {
+      "url": "https://ggplot2.tidyverse.org/reference/is_tests.html",
+      "last_hash": "2f7e963128f49d8fa58b36a746e8ec0ff209b1ce35d71b1f2b7a8b938e6629e5",
+      "last_fetched": "2026-11-08T05:13:54.835574+00:00",
+      "title": "Reports wether x is a type of object — is_ggproto • ggplot2"
+    },
+    "reference-label_bquote": {
+      "url": "https://ggplot2.tidyverse.org/reference/label_bquote.html",
+      "last_hash": "c74295ced4644454ed5e207c840d9769049919ea3950119cbc957ae1475a1661",
+      "last_fetched": "2026-11-08T05:13:56.044292+00:00",
+      "title": "Label with mathematical expressions — label_bquote • ggplot2"
+    },
+    "reference-labeller": {
+      "url": "https://ggplot2.tidyverse.org/reference/labeller.html",
+      "last_hash": "86aac30f8cf8acd317e3442f184ffd5445cbd320c7c872a4c9a6b6e4687d9d1e",
+      "last_fetched": "2026-11-08T05:13:57.246601+00:00",
+      "title": "Construct labelling specification — labeller • ggplot2"
+    },
+    "reference-labellers": {
+      "url": "https://ggplot2.tidyverse.org/reference/labellers.html",
+      "last_hash": "96112b2c715b19d0b7cefc62e4c1d3e1456ffff7b394867edf108a2d91d0d921",
+      "last_fetched": "2026-11-08T05:13:58.477774+00:00",
+      "title": "Useful labeller functions — labellers • ggplot2"
+    },
+    "reference-labs": {
+      "url": "https://ggplot2.tidyverse.org/reference/labs.html",
+      "last_hash": "51841ec0f01d68b5f669456369a57d9b5d72db74b8ed39b50eda24cf466bb15c",
+      "last_fetched": "2026-11-08T05:13:59.978490+00:00",
+      "title": "Modify axis, legend, and plot labels — labs • ggplot2"
+    },
+    "reference-layer": {
+      "url": "https://ggplot2.tidyverse.org/reference/layer.html",
+      "last_hash": "38c64a8ebd0f750513161bf57606e1a0768d00d14eb53432c0e4df6bf3aba42e",
+      "last_fetched": "2026-11-08T05:14:01.307659+00:00",
+      "title": "Create a new layer — layer • ggplot2"
+    },
+    "reference-layer_geoms": {
+      "url": "https://ggplot2.tidyverse.org/reference/layer_geoms.html",
+      "last_hash": "f8b6985cd012dbc7b7ab9d128b9a5ca1e4f1b736ae78e4ac7fb4b870f4c122f9",
+      "last_fetched": "2026-11-08T05:14:02.523485+00:00",
+      "title": "Layer geometry display — layer_geoms • ggplot2"
+    },
+    "reference-layer_positions": {
+      "url": "https://ggplot2.tidyverse.org/reference/layer_positions.html",
+      "last_hash": "711bcd5fd18e9137f366c70f0b6d7701d4722a9628e24f60635606dd2c5854e0",
+      "last_fetched": "2026-11-08T05:14:03.758316+00:00",
+      "title": "Layer position adjustments — layer_positions • ggplot2"
+    },
+    "reference-layer_sf": {
+      "url": "https://ggplot2.tidyverse.org/reference/layer_sf.html",
+      "last_hash": "7d533a7308158dfb4650397217dea9bfa7602009b84c0487c0171825e78ad335",
+      "last_fetched": "2026-11-08T05:14:04.975185+00:00",
+      "title": "Create a new sf layer that auto-maps geometry data — layer_sf • ggplot2"
+    },
+    "reference-layer_stats": {
+      "url": "https://ggplot2.tidyverse.org/reference/layer_stats.html",
+      "last_hash": "dad1d39fb748e08f3bb822a2c88cae5dc4f06e73dc9877065c937127f2759db9",
+      "last_fetched": "2026-11-08T05:14:06.172159+00:00",
+      "title": "Layer statistical transformations — layer_stats • ggplot2"
+    },
+    "reference-limits": {
+      "url": "https://ggplot2.tidyverse.org/reference/limits.html",
+      "last_hash": "1cdcf470ea2f725f583eb0d44f5b382b922a7422d1c3b67218b0098815ae50b4",
+      "last_fetched": "2026-11-08T05:14:07.434651+00:00",
+      "title": "Generate correct scale type for specified limits — limits • ggplot2"
+    },
+    "reference-lims": {
+      "url": "https://ggplot2.tidyverse.org/reference/lims.html",
+      "last_hash": "84781081c75d6c18bf307d55c7518b6967ea9af2b994bc124e1ebb4351fb0d9f",
+      "last_fetched": "2026-11-08T05:14:08.722908+00:00",
+      "title": "Set scale limits — lims • ggplot2"
+    },
+    "reference-luv_colours": {
+      "url": "https://ggplot2.tidyverse.org/reference/luv_colours.html",
+      "last_hash": "831dc0bb0100688bdff7cbbeb66e9efe66f36a33805482de05e1d0683a2e1d28",
+      "last_fetched": "2026-11-08T05:14:09.939593+00:00",
+      "title": "colors() in Luv space — luv_colours • ggplot2"
+    },
+    "reference-make_constructor": {
+      "url": "https://ggplot2.tidyverse.org/reference/make_constructor.html",
+      "last_hash": "dec4e5d13678dd9f71377245e646dbb21906e7c4b2caaa300cbe3cff460280e6",
+      "last_fetched": "2026-11-08T05:14:11.170672+00:00",
+      "title": "Produce boilerplate constructors — make_constructor • ggplot2"
+    },
+    "reference-map_data": {
+      "url": "https://ggplot2.tidyverse.org/reference/map_data.html",
+      "last_hash": "8c16197f76f4ac75c3c5053b6d3f03340a0e98833400aab8aca70b433934bf12",
+      "last_fetched": "2026-11-08T05:14:12.386433+00:00",
+      "title": "Create a data frame of map data — map_data • ggplot2"
+    },
+    "reference-max_height": {
+      "url": "https://ggplot2.tidyverse.org/reference/max_height.html",
+      "last_hash": "60ef37ec5f49aafa78db781a59fc89d6642ddea9f52b110ef90819f5dfcaeea9",
+      "last_fetched": "2026-11-08T05:14:13.585775+00:00",
+      "title": "Get the maximal width/length of a list of grobs — max_height • ggplot2"
+    },
+    "reference-mean_se": {
+      "url": "https://ggplot2.tidyverse.org/reference/mean_se.html",
+      "last_hash": "62742d333e8c2faba9d31f723e3cfd7cbb6ae8734d9ff86595dbb70ecd065437",
+      "last_fetched": "2026-11-08T05:14:14.810591+00:00",
+      "title": "Calculate mean and standard error of the mean — mean_se • ggplot2"
+    },
+    "reference-merge_element": {
+      "url": "https://ggplot2.tidyverse.org/reference/merge_element.html",
+      "last_hash": "9d5b62de71276d4a621beafb002718393d133648c27ed44797179014694ed522",
+      "last_fetched": "2026-11-08T05:14:16.001579+00:00",
+      "title": "Merge a parent element into a child element — merge_element • ggplot2"
+    },
+    "reference-midwest": {
+      "url": "https://ggplot2.tidyverse.org/reference/midwest.html",
+      "last_hash": "a955cba1bc428fa4060321dcdba0cc54e967a48a8c57d13461aa57bd891da43c",
+      "last_fetched": "2026-11-08T05:14:17.206825+00:00",
+      "title": "Midwest demographics — midwest • ggplot2"
+    },
+    "reference-mpg": {
+      "url": "https://ggplot2.tidyverse.org/reference/mpg.html",
+      "last_hash": "723438f70d48898df193cc520890496b12ce91eccf42fc90da764d4f4c66350f",
+      "last_fetched": "2026-11-08T05:14:18.404864+00:00",
+      "title": "Fuel economy data from 1999 to 2008 for 38 popular models of cars — mpg • ggplot2"
+    },
+    "reference-msleep": {
+      "url": "https://ggplot2.tidyverse.org/reference/msleep.html",
+      "last_hash": "9f036572ca08647bef4a20bb1384d8a4c8cc53310d9a63a7d9620e8fe408e563",
+      "last_fetched": "2026-11-08T05:14:19.594316+00:00",
+      "title": "An updated and expanded version of the mammals sleep dataset — msleep • ggplot2"
+    },
+    "reference-new_guide": {
+      "url": "https://ggplot2.tidyverse.org/reference/new_guide.html",
+      "last_hash": "8c0b4155da21c7c1fc4fd7dc0facb5c3cba1f0031f5208b616ec12ddc7d06560",
+      "last_fetched": "2026-11-08T05:14:20.817044+00:00",
+      "title": "Guide constructor — new_guide • ggplot2"
+    },
+    "reference-old_guide": {
+      "url": "https://ggplot2.tidyverse.org/reference/old_guide.html",
+      "last_hash": "a0e919a814e79b425fc868c77f0d2615290a11f4261f69ed8ab628f81da66fb1",
+      "last_fetched": "2026-11-08T05:14:22.110564+00:00",
+      "title": "The previous S3 guide system — old_guide • ggplot2"
+    },
+    "reference-pattern_alpha": {
+      "url": "https://ggplot2.tidyverse.org/reference/pattern_alpha.html",
+      "last_hash": "9d0e0bc7c9980721cb3ea15f2da444f7445192e3c6644dd3ecc212f667ce21c4",
+      "last_fetched": "2026-11-08T05:14:23.303443+00:00",
+      "title": "Modify transparency for patterns — pattern_alpha • ggplot2"
+    },
+    "reference-position_dodge": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_dodge.html",
+      "last_hash": "ca7b8a8561ae68be8216b4305dbb5586c44e900004bccebdb87f6bb3d740f9a4",
+      "last_fetched": "2026-11-08T05:14:24.544207+00:00",
+      "title": "Dodge overlapping objects side-to-side — position_dodge • ggplot2"
+    },
+    "reference-position_identity": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_identity.html",
+      "last_hash": "6a5f7e46e37b9b1d829757c1e2b2b51edf8ea47d66946b7ccf9e580f1bbeb62c",
+      "last_fetched": "2026-11-08T05:14:25.727299+00:00",
+      "title": "Don't adjust position — position_identity • ggplot2"
+    },
+    "reference-position_jitter": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_jitter.html",
+      "last_hash": "3791077e38c406b018b86f371ea1a2cf84d6c8484ecabf9184b73150dd7f7cc6",
+      "last_fetched": "2026-11-08T05:14:26.972239+00:00",
+      "title": "Jitter points to avoid overplotting — position_jitter • ggplot2"
+    },
+    "reference-position_jitterdodge": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_jitterdodge.html",
+      "last_hash": "99d8336fe4db9a6518618694531f8554fe614ff6b6204c1b76e4e5f989520a6c",
+      "last_fetched": "2026-11-08T05:14:28.184833+00:00",
+      "title": "Simultaneously dodge and jitter — position_jitterdodge • ggplot2"
+    },
+    "reference-position_nudge": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_nudge.html",
+      "last_hash": "47a971ea92d47966bdd4cbb80fc162e155912c4eda737d902375fdb1b74c987a",
+      "last_fetched": "2026-11-08T05:14:29.394687+00:00",
+      "title": "Nudge points a fixed distance — position_nudge • ggplot2"
+    },
+    "reference-position_stack": {
+      "url": "https://ggplot2.tidyverse.org/reference/position_stack.html",
+      "last_hash": "ae0a393db3fe4e01c8966a17048e4afa07d5165175272fbdd398d1cba95345fe",
+      "last_fetched": "2026-11-08T05:14:30.682354+00:00",
+      "title": "Stack overlapping objects on top of each another — position_stack • ggplot2"
+    },
+    "reference-presidential": {
+      "url": "https://ggplot2.tidyverse.org/reference/presidential.html",
+      "last_hash": "a84c110b5aac2e5bf48553d8ac06f8aba0eddeaf1b42e41d36d99d6bcd247d96",
+      "last_fetched": "2026-11-08T05:14:31.885225+00:00",
+      "title": "Terms of 12 presidents from Eisenhower to Trump — presidential • ggplot2"
+    },
+    "reference-print.ggplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/print.ggplot.html",
+      "last_hash": "a0debcf9e80061dfaab3c909ef9d5dd49f388381241855e22c9ee6827a4c71dd",
+      "last_fetched": "2026-11-08T05:14:33.084351+00:00",
+      "title": "Explicitly draw plot — print.ggplot • ggplot2"
+    },
+    "reference-print.ggproto": {
+      "url": "https://ggplot2.tidyverse.org/reference/print.ggproto.html",
+      "last_hash": "5ade744dcaccd6ce9c014e1fab9e9ad7145f99c12a00c2fb625fd7f0fcf08d81",
+      "last_fetched": "2026-11-08T05:14:34.296898+00:00",
+      "title": "Format or print a ggproto object — print.ggproto • ggplot2"
+    },
+    "reference-qplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/qplot.html",
+      "last_hash": "95b4867f0f5672458062bb830de52b30fec72525b9eacc511bb87a30d47ab449",
+      "last_fetched": "2026-11-08T05:14:35.541177+00:00",
+      "title": "Quick plot — qplot • ggplot2"
+    },
+    "reference-reexports": {
+      "url": "https://ggplot2.tidyverse.org/reference/reexports.html",
+      "last_hash": "16f59db7330e69476548e7bae063e0658586d3c5e7c5d4fe7d7c85e5bef7d833",
+      "last_fetched": "2026-11-08T05:14:36.772979+00:00",
+      "title": "Objects exported from other packages — reexports • ggplot2"
+    },
+    "reference-register_theme_elements": {
+      "url": "https://ggplot2.tidyverse.org/reference/register_theme_elements.html",
+      "last_hash": "d368bf6e5a5c84dd0885d8afe1f12c70adfb10b6ad7f54820cf52597bf8bf906",
+      "last_fetched": "2026-11-08T05:14:37.987459+00:00",
+      "title": "Define and register new theme elements — register_theme_elements • ggplot2"
+    },
+    "reference-remove_missing": {
+      "url": "https://ggplot2.tidyverse.org/reference/remove_missing.html",
+      "last_hash": "d9994bdb31f9ba35c532f87ea7e363efcc6f38b8562d53dc4862c88cf45ed17e",
+      "last_fetched": "2026-11-08T05:14:39.202323+00:00",
+      "title": "Convenience function to remove missing values from a data.frame — remove_missing • ggplot2"
+    },
+    "reference-render_axes": {
+      "url": "https://ggplot2.tidyverse.org/reference/render_axes.html",
+      "last_hash": "7fa8190201c29d72ab2a7bba7b333fd54629f4f0413a52ffa61f3ba9df378650",
+      "last_fetched": "2026-11-08T05:14:40.411214+00:00",
+      "title": "Render panel axes — render_axes • ggplot2"
+    },
+    "reference-render_strips": {
+      "url": "https://ggplot2.tidyverse.org/reference/render_strips.html",
+      "last_hash": "43524848b7d0099e9c69b58a05abaf19396c860a9b6a5c09cca58ac13bc1a631",
+      "last_fetched": "2026-11-08T05:14:41.627308+00:00",
+      "title": "Render panel strips — render_strips • ggplot2"
+    },
+    "reference-resolution": {
+      "url": "https://ggplot2.tidyverse.org/reference/resolution.html",
+      "last_hash": "df631791b2cb7b2b22b1e36f9143a0fc0cba06af761d238ed1e91c2410d53d63",
+      "last_fetched": "2026-11-08T05:14:42.933978+00:00",
+      "title": "Compute the \"resolution\" of a numeric vector — resolution • ggplot2"
+    },
+    "reference-scale_alpha": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_alpha.html",
+      "last_hash": "261772d1289de6464764873e7270d18499b94b33294ca65ed0d76dc48f311819",
+      "last_fetched": "2026-11-08T05:14:44.172431+00:00",
+      "title": "Alpha transparency scales — scale_alpha • ggplot2"
+    },
+    "reference-scale_binned": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_binned.html",
+      "last_hash": "378232142be15a6d363008e19185a5c1893fc142d695cf03d91a5e7c645c357a",
+      "last_fetched": "2026-11-08T05:14:45.396534+00:00",
+      "title": "Positional scales for binning continuous data (x & y) — scale_binned • ggplot2"
+    },
+    "reference-scale_brewer": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_brewer.html",
+      "last_hash": "18a845aebe7ec88e3ad7704c4f55f106aa6dd2fb3c5f182f0fa6dd25dc2e9efb",
+      "last_fetched": "2026-11-08T05:14:46.644622+00:00",
+      "title": "Sequential, diverging and qualitative colour scales from ColorBrewer — scale_colour_brewer • ggplot2"
+    },
+    "reference-scale_colour_continuous": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_colour_continuous.html",
+      "last_hash": "0db10e069c7d796f321a5c15cb8dafa39300a9ec42e71ba7092c8713fa0c9db3",
+      "last_fetched": "2026-11-08T05:14:47.918726+00:00",
+      "title": "Continuous and binned colour scales — scale_colour_continuous • ggplot2"
+    },
+    "reference-scale_colour_discrete": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_colour_discrete.html",
+      "last_hash": "ecdc4435ea15cab23b8ddf69058b8d62770b6bda542e8f3c995a5b7305820df4",
+      "last_fetched": "2026-11-08T05:14:49.121403+00:00",
+      "title": "Discrete colour scales — scale_colour_discrete • ggplot2"
+    },
+    "reference-scale_continuous": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_continuous.html",
+      "last_hash": "7fe5924a078e77ab606cded3f41d912d2ba9fd9e60e6c90195aeb8846dfaa3b2",
+      "last_fetched": "2026-11-08T05:14:50.414278+00:00",
+      "title": "Position scales for continuous data (x & y) — scale_continuous • ggplot2"
+    },
+    "reference-scale_date": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_date.html",
+      "last_hash": "87526c9392672bf450f8b716e3ca0546a209dd9a753b3eef574c189381b22abf",
+      "last_fetched": "2026-11-08T05:14:51.659215+00:00",
+      "title": "Position scales for date/time data — scale_date • ggplot2"
+    },
+    "reference-scale_discrete": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_discrete.html",
+      "last_hash": "3701fa5902bb83abc27891f5a33455244afbeb1bf5e8f61810bd8ed418a1f122",
+      "last_fetched": "2026-11-08T05:14:52.945433+00:00",
+      "title": "Position scales for discrete data — scale_x_discrete • ggplot2"
+    },
+    "reference-scale_gradient": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_gradient.html",
+      "last_hash": "1c181f3b943aa99c9571f52305b2b3ef33198cf4ce2b6e85612566c3e1e4705d",
+      "last_fetched": "2026-11-08T05:14:54.207476+00:00",
+      "title": "Gradient colour scales — scale_colour_gradient • ggplot2"
+    },
+    "reference-scale_grey": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_grey.html",
+      "last_hash": "d1e4f8c65e9a0b8280c23f712fb6d69b82d41147eaed699ed08d2c4a515f5f50",
+      "last_fetched": "2026-11-08T05:14:55.435816+00:00",
+      "title": "Sequential grey colour scales — scale_colour_grey • ggplot2"
+    },
+    "reference-scale_hue": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_hue.html",
+      "last_hash": "becd2c64fb7c5a7ab0e8422ff57314f80f6cad6ed160187481df155ceede4d90",
+      "last_fetched": "2026-11-08T05:14:56.716563+00:00",
+      "title": "Evenly spaced colours for discrete data — scale_colour_hue • ggplot2"
+    },
+    "reference-scale_identity": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_identity.html",
+      "last_hash": "2df9c8f08940a1bbaa7492f18cf17689399adbaf0d6e9142dafde136060da4a4",
+      "last_fetched": "2026-11-08T05:14:57.986116+00:00",
+      "title": "Use values without scaling — scale_identity • ggplot2"
+    },
+    "reference-scale_linetype": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_linetype.html",
+      "last_hash": "2300276fbc5abe0357ef1d6f626f2dc6ac1730603ce2371b51609a46ebffa5c4",
+      "last_fetched": "2026-11-08T05:14:59.248911+00:00",
+      "title": "Scale for line patterns — scale_linetype • ggplot2"
+    },
+    "reference-scale_linewidth": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_linewidth.html",
+      "last_hash": "211fd9d55926193df0afd2a3c1a2cef81362ec71cf95c15c85d5bf6deea8e6c1",
+      "last_fetched": "2026-11-08T05:15:00.536538+00:00",
+      "title": "Scales for line width — scale_linewidth • ggplot2"
+    },
+    "reference-scale_manual": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_manual.html",
+      "last_hash": "f6b1128f63dfc296822d4fc29bf10f742e69b99f918b8d35b557655e78479e68",
+      "last_fetched": "2026-11-08T05:15:01.793456+00:00",
+      "title": "Create your own discrete scale — scale_manual • ggplot2"
+    },
+    "reference-scale_shape": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_shape.html",
+      "last_hash": "4730731398d19ec77b9eca9fe725b95c206bf833dde15e4f39f9f9e421a7993e",
+      "last_fetched": "2026-11-08T05:15:03.007987+00:00",
+      "title": "Scales for shapes, aka glyphs — scale_shape • ggplot2"
+    },
+    "reference-scale_size": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_size.html",
+      "last_hash": "b35c65f6cd0fba6f7384b7d365c9053944de01fe385d0ac0cb22a0c4635bf4c3",
+      "last_fetched": "2026-11-08T05:15:04.353025+00:00",
+      "title": "Scales for area or radius — scale_size • ggplot2"
+    },
+    "reference-scale_steps": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_steps.html",
+      "last_hash": "5547f2cfe2f06776da97435a2893e7dd7c4c7c111574fab1b59dd08a0fbfc31e",
+      "last_fetched": "2026-11-08T05:15:05.581827+00:00",
+      "title": "Binned gradient colour scales — scale_colour_steps • ggplot2"
+    },
+    "reference-scale_type": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_type.html",
+      "last_hash": "68333948e0140642d47252a8af917c60937df78f2eeef34b820406d060485bda",
+      "last_fetched": "2026-11-08T05:15:06.774144+00:00",
+      "title": "Determine default scale type — scale_type • ggplot2"
+    },
+    "reference-scale_viridis": {
+      "url": "https://ggplot2.tidyverse.org/reference/scale_viridis.html",
+      "last_hash": "07f92a0f5f78cbcaaee61e6fc9afe82c3aed24c5ca1bcae0e49ef2bb55621c6f",
+      "last_fetched": "2026-11-08T05:15:08.069433+00:00",
+      "title": "Viridis colour scales from viridisLite — scale_colour_viridis_d • ggplot2"
+    },
+    "reference-seals": {
+      "url": "https://ggplot2.tidyverse.org/reference/seals.html",
+      "last_hash": "ffbf55397fe49525cf23e08ec7f00d33befc464ea56ddae88f43aecdd57de36f",
+      "last_fetched": "2026-11-08T05:15:09.294600+00:00",
+      "title": "Vector field of seal movements — seals • ggplot2"
+    },
+    "reference-sec_axis": {
+      "url": "https://ggplot2.tidyverse.org/reference/sec_axis.html",
+      "last_hash": "bee7b221fbb2ad1a190a3a7a0bd1f4874143082c200d02e529b15ba3b95510f5",
+      "last_fetched": "2026-11-08T05:15:10.517964+00:00",
+      "title": "Specify a secondary axis — sec_axis • ggplot2"
+    },
+    "reference-set_last_plot": {
+      "url": "https://ggplot2.tidyverse.org/reference/set_last_plot.html",
+      "last_hash": "cf414be001ae8ad7fe97038884685fc2d313ef33bda9ede5b25dcc9f375a676e",
+      "last_fetched": "2026-11-08T05:15:11.722032+00:00",
+      "title": "Set the last plot to be fetched by lastplot() — set_last_plot • ggplot2"
+    },
+    "reference-sf_transform_xy": {
+      "url": "https://ggplot2.tidyverse.org/reference/sf_transform_xy.html",
+      "last_hash": "27bc79e04981a31993b4b2b85ff84763c64306424ce721f54ec23fff63776b34",
+      "last_fetched": "2026-11-08T05:15:12.940443+00:00",
+      "title": "Transform spatial position data — sf_transform_xy • ggplot2"
+    },
+    "reference-should_stop": {
+      "url": "https://ggplot2.tidyverse.org/reference/should_stop.html",
+      "last_hash": "c1f040c8e73cdfc515c787b7d188182ad201e9ff9c1feed30836943740d51af5",
+      "last_fetched": "2026-11-08T05:15:14.164912+00:00",
+      "title": "Used in examples to illustrate when errors should occur. — should_stop • ggplot2"
+    },
+    "reference-standardise_aes_names": {
+      "url": "https://ggplot2.tidyverse.org/reference/standardise_aes_names.html",
+      "last_hash": "011d19487c2c60a6ba70bfe4e543de820812ce4e5b3575ebe50a715948883ffc",
+      "last_fetched": "2026-11-08T05:15:15.356836+00:00",
+      "title": "Standardise aesthetic names — standardise_aes_names • ggplot2"
+    },
+    "reference-stat_connect": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_connect.html",
+      "last_hash": "7b85ba17798074dbd1b90824ecbdc5baa4e7889e43f658675c00ceaf7cf4d618",
+      "last_fetched": "2026-11-08T05:15:16.589395+00:00",
+      "title": "Connect observations — stat_connect • ggplot2"
+    },
+    "reference-stat_ecdf": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_ecdf.html",
+      "last_hash": "2a9b21ed10e5b5af62066cd72ce7b6572fbaf43cbc8ac76b9d22abdb2c879eb4",
+      "last_fetched": "2026-11-08T05:15:17.824096+00:00",
+      "title": "Compute empirical cumulative distribution — stat_ecdf • ggplot2"
+    },
+    "reference-stat_ellipse": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_ellipse.html",
+      "last_hash": "e9bed1a45850e7e23209a50691683b4d9010bcd3c045562fb7e9ce19cafd29de",
+      "last_fetched": "2026-11-08T05:15:19.081108+00:00",
+      "title": "Compute normal data ellipses — stat_ellipse • ggplot2"
+    },
+    "reference-stat_identity": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_identity.html",
+      "last_hash": "09a93d2b93ce75d57e209bca7881c8ab6ca212721062717860e8c1581e39c21f",
+      "last_fetched": "2026-11-08T05:15:20.284947+00:00",
+      "title": "Leave data as is — stat_identity • ggplot2"
+    },
+    "reference-stat_manual": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_manual.html",
+      "last_hash": "fa474b00ff050284551ac271baaa3398e0aadfc875042f96e1cd91a69ea3054f",
+      "last_fetched": "2026-11-08T05:15:21.522626+00:00",
+      "title": "Manually compute transformations — stat_manual • ggplot2"
+    },
+    "reference-stat_sf_coordinates": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_sf_coordinates.html",
+      "last_hash": "9d0d8b757ba5f7896028d43982c2d0b419716fd1bbea8378889635913c7726ee",
+      "last_fetched": "2026-11-08T05:15:22.782203+00:00",
+      "title": "Extract coordinates from 'sf' objects — stat_sf_coordinates • ggplot2"
+    },
+    "reference-stat_summary": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_summary.html",
+      "last_hash": "bb4990f599845dfefcb867766f0930a5ed2884031dc1947fd925ae9ac1364754",
+      "last_fetched": "2026-11-08T05:15:24.034686+00:00",
+      "title": "Summarise y values at unique/binned x — stat_summary_bin • ggplot2"
+    },
+    "reference-stat_summary_2d": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_summary_2d.html",
+      "last_hash": "94fef7b4874e1d8f382d13d563d487700f10511dea32f3cdec6d920710e12aa7",
+      "last_fetched": "2026-11-08T05:15:25.382675+00:00",
+      "title": "Bin and summarise in 2d (rectangle & hexagons) — stat_summary_2d • ggplot2"
+    },
+    "reference-stat_unique": {
+      "url": "https://ggplot2.tidyverse.org/reference/stat_unique.html",
+      "last_hash": "ded7940868b2e87372f37fc9d12b1c578f8e17e6dd05aa4dc5b109f20bbc40a2",
+      "last_fetched": "2026-11-08T05:15:26.636265+00:00",
+      "title": "Remove duplicates — stat_unique • ggplot2"
+    },
+    "reference-subtheme": {
+      "url": "https://ggplot2.tidyverse.org/reference/subtheme.html",
+      "last_hash": "228d61cd0a604498397fe48d7bd882d1bae4c8a5297e6c55cb88dcb83dca771a",
+      "last_fetched": "2026-11-08T05:15:27.865528+00:00",
+      "title": "Shortcuts for theme settings — subtheme • ggplot2"
+    },
+    "reference-summarise_plot": {
+      "url": "https://ggplot2.tidyverse.org/reference/summarise_plot.html",
+      "last_hash": "5b45da1388d5f2bc24066d3c65916387f43e810803f0426b3ade012176ee931f",
+      "last_fetched": "2026-11-08T05:15:29.093926+00:00",
+      "title": "Summarise built plot objects — summarise_plot • ggplot2"
+    },
+    "reference-theme": {
+      "url": "https://ggplot2.tidyverse.org/reference/theme.html",
+      "last_hash": "621bcd5e5b34b41918ea289cc272569e1b4e4795fdcba6bcce392f6b259b019d",
+      "last_fetched": "2026-11-08T05:15:30.400524+00:00",
+      "title": "Modify components of a theme — theme • ggplot2"
+    },
+    "reference-tidyeval": {
+      "url": "https://ggplot2.tidyverse.org/reference/tidyeval.html",
+      "last_hash": "b01e108b2b71d8d1560ac2e6f0976f80a9cce82fa8efb33e7fcfebc1647376e9",
+      "last_fetched": "2026-11-08T05:15:31.590431+00:00",
+      "title": "Tidy eval helpers — tidyeval • ggplot2"
+    },
+    "reference-transform_position": {
+      "url": "https://ggplot2.tidyverse.org/reference/transform_position.html",
+      "last_hash": "1bafcb3b3b7b247b8e661ba174d3f0e5e780261b16b5290199bedc484569d2f6",
+      "last_fetched": "2026-11-08T05:15:32.784948+00:00",
+      "title": "Convenience function to transform all position variables. — transform_position • ggplot2"
+    },
+    "reference-translate_shape_string": {
+      "url": "https://ggplot2.tidyverse.org/reference/translate_shape_string.html",
+      "last_hash": "7b987066ecac9db02f1c8150fb18f88911042a9509c536c27c2a0dfcb407ce3e",
+      "last_fetched": "2026-11-08T05:15:34.048122+00:00",
+      "title": "Translating shape strings — translate_shape_string • ggplot2"
+    },
+    "reference-txhousing": {
+      "url": "https://ggplot2.tidyverse.org/reference/txhousing.html",
+      "last_hash": "7fc2102351d626a18b8d20b542704394dce0d06ae5209a60981c4d097ebb4f2c",
+      "last_fetched": "2026-11-08T05:15:35.301354+00:00",
+      "title": "Housing sales in TX — txhousing • ggplot2"
+    },
+    "reference-update_defaults": {
+      "url": "https://ggplot2.tidyverse.org/reference/update_defaults.html",
+      "last_hash": "f82a50dbcc5740bd7ef38e17a3662715ea83de61acfa7822af11ca392b438130",
+      "last_fetched": "2026-11-08T05:15:36.495511+00:00",
+      "title": "Modify geom/stat aesthetic defaults for future plots — update_geom_defaults • ggplot2"
+    },
+    "reference-update_ggplot": {
+      "url": "https://ggplot2.tidyverse.org/reference/update_ggplot.html",
+      "last_hash": "70eecb888f7cd21513bfe16b607bd510534d2d57f7f52c1249ab3e43b0c594c7",
+      "last_fetched": "2026-11-08T05:15:37.714701+00:00",
+      "title": "Add custom objects to ggplot — update_ggplot • ggplot2"
+    },
+    "reference-update_labels": {
+      "url": "https://ggplot2.tidyverse.org/reference/update_labels.html",
+      "last_hash": "523da2460b191dfa48697e29df962c68f430d1d3beda93c2e8539884d6bb39ac",
+      "last_fetched": "2026-11-08T05:15:38.940938+00:00",
+      "title": "Update axis/legend labels — update_labels • ggplot2"
+    },
+    "reference-vars": {
+      "url": "https://ggplot2.tidyverse.org/reference/vars.html",
+      "last_hash": "046b7577522c68a4f7a1a20bd52e87afc8664fca00f3fd43f54e0dd403f2402b",
+      "last_fetched": "2026-11-08T05:15:40.151880+00:00",
+      "title": "Quote faceting variables — vars • ggplot2"
+    },
+    "reference-waiver": {
+      "url": "https://ggplot2.tidyverse.org/reference/waiver.html",
+      "last_hash": "a082e4605a2f3a4684c439ac356a7c8fc40c080826f410b55044bd64baf82d67",
+      "last_fetched": "2026-11-08T05:15:41.407336+00:00",
+      "title": "A waiver object. — waiver • ggplot2"
+    },
+    "reference-wrap_dims": {
+      "url": "https://ggplot2.tidyverse.org/reference/wrap_dims.html",
+      "last_hash": "7cecf2c88a324d3725288cd78ff59ab8259315a2220f7223d5d89b947f18ef75",
+      "last_fetched": "2026-11-08T05:15:42.617649+00:00",
+      "title": "Arrange 1d structure into a grid — wrap_dims • ggplot2"
+    },
+    "reference-zeroGrob": {
+      "url": "https://ggplot2.tidyverse.org/reference/zeroGrob.html",
+      "last_hash": "07043fa73042bb6223f90d2ffb6c4f3e8000b69c20d49fab58348fe25039b991",
+      "last_fetched": "2026-11-08T05:15:43.847452+00:00",
+      "title": "The zero grob draws nothing and has zero size. — zeroGrob • ggplot2"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:15:43.847452+00:00",
+  "version_history": []
+}

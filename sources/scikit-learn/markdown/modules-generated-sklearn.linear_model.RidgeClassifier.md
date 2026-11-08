@@ -1,0 +1,430 @@
+[Skip to main content](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#main-content)
+
+Back to top Ctrl+K
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/scikit-learn/scikit-learn)
+    
+
+1.9.1 (stable)
+
+[1.10.dev0 (dev)](https://scikit-learn.org/dev/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.9.1 (stable)](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.8.0](https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.7.2](https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.6.1](https://scikit-learn.org/1.6/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.5.2](https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+[1.4.2](https://scikit-learn.org/1.4/modules/generated/sklearn.linear_model.RidgeClassifier.html)
+
+Collapse Sidebar Expand Sidebar
+
+RidgeClassifier[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#ridgeclassifier "Link to this heading")
+
+=======================================================================================================================================================
+
+class sklearn.linear\_model.RidgeClassifier(_alpha\=1.0_, _\*_, _fit\_intercept\=True_, _copy\_X\=True_, _max\_iter\=None_, _tol\=0.0001_, _class\_weight\=None_, _solver\='auto'_, _positive\=False_, _random\_state\=None_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/linear_model/_ridge.py#L1389)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier "Link to this definition")
+
+Classifier using Ridge regression.
+
+This classifier first converts the target values into `{-1, 1}` and then treats the problem as a regression task (multi-output regression in the multiclass case).
+
+Read more in the [User Guide](https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression)
+.
+
+Parameters:
+
+**alpha**float, default=1.0
+
+Regularization strength; must be a positive float. Regularization improves the conditioning of the problem and reduces the variance of the estimates. Larger values specify stronger regularization. Alpha corresponds to `1 / (2C)` in other linear models such as [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression "sklearn.linear_model.LogisticRegression")
+ or [`LinearSVC`](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC "sklearn.svm.LinearSVC")
+.
+
+For an illustration of the effect of alpha on the model coefficients, see [Ridge coefficients as a function of the L2 Regularization](https://scikit-learn.org/stable/auto_examples/linear_model/plot_ridge_coeffs.html#sphx-glr-auto-examples-linear-model-plot-ridge-coeffs-py)
+.
+
+**fit\_intercept**bool, default=True
+
+Whether to calculate the intercept for this model. If set to false, no intercept will be used in calculations (e.g. data is expected to be already centered).
+
+**copy\_X**bool, default=True
+
+If True, X will be copied; else, it may be overwritten.
+
+**max\_iter**int, default=None
+
+Maximum number of iterations for conjugate gradient solver. The default value is determined by scipy.sparse.linalg.
+
+**tol**float, default=1e-4
+
+The precision of the solution (`coef_`) is determined by `tol` which specifies a different convergence criterion for each solver:
+
+*   ‘svd’: `tol` has no impact.
+    
+*   ‘cholesky’: `tol` has no impact.
+    
+*   ‘sparse\_cg’: norm of residuals smaller than `tol`.
+    
+*   ‘lsqr’: `tol` is set as atol and btol of scipy.sparse.linalg.lsqr, which control the norm of the residual vector in terms of the norms of matrix and coefficients.
+    
+*   ‘sag’ and ‘saga’: relative change of coef smaller than `tol`.
+    
+*   ‘lbfgs’: maximum of the absolute (projected) gradient=max|residuals| smaller than `tol`.
+    
+
+Changed in version 1.2: Default value changed from 1e-3 to 1e-4 for consistency with other linear models.
+
+**class\_weight**dict or ‘balanced’, default=None
+
+Weights associated with classes in the form `{class_label: weight}`. If not given, all classes are supposed to have weight one.
+
+The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as `n_samples / (n_classes * np.bincount(y))`.
+
+**solver**{‘auto’, ‘svd’, ‘cholesky’, ‘lsqr’, ‘sparse\_cg’, ‘sag’, ‘saga’, ‘lbfgs’}, default=’auto’
+
+Solver to use in the computational routines:
+
+*   ‘auto’ chooses the solver automatically based on the type of data.
+    
+*   ‘svd’ uses a Singular Value Decomposition of X to compute the Ridge coefficients. It is the most stable solver, in particular more stable for singular matrices than ‘cholesky’ at the cost of being slower.
+    
+*   ‘cholesky’ uses the standard [`scipy.linalg.solve`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html#scipy.linalg.solve "(in SciPy v1.18.0)")
+     function to obtain a closed-form solution.
+    
+*   ‘sparse\_cg’ uses the conjugate gradient solver as found in [`scipy.sparse.linalg.cg`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.cg.html#scipy.sparse.linalg.cg "(in SciPy v1.18.0)")
+    . As an iterative algorithm, this solver is more appropriate than ‘cholesky’ for large-scale data (possibility to set `tol` and `max_iter`).
+    
+*   ‘lsqr’ uses the dedicated regularized least-squares routine [`scipy.sparse.linalg.lsqr`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.lsqr.html#scipy.sparse.linalg.lsqr "(in SciPy v1.18.0)")
+    . It is the fastest and uses an iterative procedure.
+    
+*   ‘sag’ uses a Stochastic Average Gradient descent, and ‘saga’ uses its unbiased and more flexible version named SAGA. Both methods use an iterative procedure, and are often faster than other solvers when both n\_samples and n\_features are large. Note that ‘sag’ and ‘saga’ fast convergence is only guaranteed on features with approximately the same scale. You can preprocess the data with a scaler from sklearn.preprocessing.
+    
+    Added in version 0.17: Stochastic Average Gradient descent solver.
+    
+    Added in version 0.19: SAGA solver.
+    
+*   ‘lbfgs’ uses L-BFGS-B algorithm implemented in `scipy.optimize.minimize`. It can be used only when `positive` is True.
+    
+
+**positive**bool, default=False
+
+When set to `True`, forces the coefficients to be positive. Only ‘lbfgs’ solver is supported in this case.
+
+**random\_state**int, RandomState instance, default=None
+
+Used when `solver` == ‘sag’ or ‘saga’ to shuffle the data. See [Glossary](https://scikit-learn.org/stable/glossary.html#term-random_state)
+ for details.
+
+Attributes:
+
+**coef\_**ndarray of shape (n\_features,) or (n\_classes, n\_features)
+
+Coefficient of the features in the decision function.
+
+`coef_` is of shape `(n_features,)` when the given problem is binary.
+
+**intercept\_**float or ndarray of shape (n\_targets,)
+
+Independent term in decision function. Set to 0.0 if `fit_intercept = False`.
+
+**n\_iter\_**None or ndarray of shape (n\_targets,)
+
+Actual number of iterations for each target. Available only for sag and lsqr solvers. Other solvers will return None.
+
+**classes\_**ndarray of shape (n\_classes,)
+
+The classes labels.
+
+**n\_features\_in\_**int
+
+Number of features seen during [fit](https://scikit-learn.org/stable/glossary.html#term-fit)
+.
+
+Added in version 0.24.
+
+**feature\_names\_in\_**ndarray of shape (`n_features_in_`,)
+
+Names of features seen during [fit](https://scikit-learn.org/stable/glossary.html#term-fit)
+. Defined only when `X` has feature names that are all strings.
+
+Added in version 1.0.
+
+**solver\_**str
+
+The solver that was used at fit time by the computational routines.
+
+Added in version 1.5.
+
+See also
+
+[`Ridge`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge "sklearn.linear_model.Ridge")
+
+Ridge regression.
+
+[`RidgeClassifierCV`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifierCV.html#sklearn.linear_model.RidgeClassifierCV "sklearn.linear_model.RidgeClassifierCV")
+
+Ridge classifier with built-in cross validation.
+
+Notes
+
+For multi-class classification, n\_class classifiers are trained in a one-versus-all approach. Concretely, this is implemented by taking advantage of the multi-variate response support in Ridge.
+
+Examples
+
+\>>> from sklearn.datasets import load\_breast\_cancer
+\>>> from sklearn.linear\_model import RidgeClassifier
+\>>> X, y \= load\_breast\_cancer(return\_X\_y\=True)
+\>>> clf \= RidgeClassifier().fit(X, y)
+\>>> clf.score(X, y)
+0.9595...
+
+Copy to clipboard
+
+decision\_function(_X_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/linear_model/_base.py#L366)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.decision_function "Link to this definition")
+
+Predict confidence scores for samples.
+
+The confidence score for a sample is proportional to the signed distance of that sample to the hyperplane.
+
+Parameters:
+
+**X**{array-like, sparse matrix} of shape (n\_samples, n\_features)
+
+The data matrix for which we want to get the confidence scores.
+
+Returns:
+
+**scores**ndarray of shape (n\_samples,) or (n\_samples, n\_classes)
+
+Confidence scores per `(n_samples, n_classes)` combination. In the binary case, confidence score for `self.classes_[1]` where >0 means this class would be predicted.
+
+fit(_X_, _y_, _sample\_weight\=None_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/linear_model/_ridge.py#L1587)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.fit "Link to this definition")
+
+Fit Ridge classifier model.
+
+Parameters:
+
+**X**{ndarray, sparse matrix} of shape (n\_samples, n\_features)
+
+Training data.
+
+**y**ndarray of shape (n\_samples,)
+
+Target values.
+
+**sample\_weight**float or ndarray of shape (n\_samples,), default=None
+
+Individual weights for each sample. If given a float, every sample will have the same weight.
+
+Added in version 0.17: _sample\_weight_ support to RidgeClassifier.
+
+Returns:
+
+**self**object
+
+Instance of the estimator.
+
+get\_metadata\_routing()[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/utils/_metadata_requests.py#L1743)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.get_metadata_routing "Link to this definition")
+
+Get metadata routing of this object.
+
+Please check [User Guide](https://scikit-learn.org/stable/metadata_routing.html#metadata-routing)
+ on how the routing mechanism works.
+
+Returns:
+
+**routing**MetadataRequest
+
+A [`MetadataRequest`](https://scikit-learn.org/stable/modules/generated/sklearn.utils.metadata_routing.MetadataRequest.html#sklearn.utils.metadata_routing.MetadataRequest "sklearn.utils.metadata_routing.MetadataRequest")
+ encapsulating routing information.
+
+get\_params(_deep\=True_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/base.py#L248)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.get_params "Link to this definition")
+
+Get parameters for this estimator.
+
+Parameters:
+
+**deep**bool, default=True
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.
+
+Returns:
+
+**params**dict
+
+Parameter names mapped to their values.
+
+predict(_X_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/linear_model/_ridge.py#L1350)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.predict "Link to this definition")
+
+Predict class labels for samples in `X`.
+
+Parameters:
+
+**X**{array-like, sparse matrix} of shape (n\_samples, n\_features)
+
+The data matrix for which we want to predict the targets.
+
+Returns:
+
+**y\_pred**ndarray of shape (n\_samples,) or (n\_samples, n\_outputs)
+
+Vector or matrix containing the predictions. In binary and multiclass problems, this is a vector containing `n_samples`. In a multilabel problem, it returns a matrix of shape `(n_samples, n_outputs)`.
+
+score(_X_, _y_, _sample\_weight\=None_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/base.py#L602)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.score "Link to this definition")
+
+Return [accuracy](https://scikit-learn.org/stable/modules/model_evaluation.html#accuracy-score)
+ on provided data and labels.
+
+In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.
+
+Parameters:
+
+**X**array-like of shape (n\_samples, n\_features)
+
+Test samples.
+
+**y**array-like of shape (n\_samples,) or (n\_samples, n\_outputs)
+
+True labels for `X`.
+
+**sample\_weight**array-like of shape (n\_samples,), default=None
+
+Sample weights.
+
+Returns:
+
+**score**float
+
+Mean accuracy of `self.predict(X)` w.r.t. `y`.
+
+set\_fit\_request(_\*_, _sample\_weight: [bool](https://docs.python.org/3/library/functions.html#bool "(in Python v3.14)")
+ | [None](https://docs.python.org/3/library/constants.html#None "(in Python v3.14)")
+ | [str](https://docs.python.org/3/library/stdtypes.html#str "(in Python v3.14)")
+ \= '$UNCHANGED$'_) → [RidgeClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier "sklearn.linear_model._ridge.RidgeClassifier")
+[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/utils/_metadata_requests.py#L1440)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.set_fit_request "Link to this definition")
+
+Configure whether metadata should be requested to be passed to the `fit` method.
+
+Note that this method is only relevant when this estimator is used as a sub-estimator within a [meta-estimator](https://scikit-learn.org/stable/glossary.html#term-meta-estimator)
+ and metadata routing is enabled with `enable_metadata_routing=True` (see [`sklearn.set_config`](https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config "sklearn.set_config")
+). Please check the [User Guide](https://scikit-learn.org/stable/metadata_routing.html#metadata-routing)
+ on how the routing mechanism works.
+
+The options for each parameter are:
+
+*   `True`: metadata is requested, and passed to `fit` if provided. The request is ignored if metadata is not provided.
+    
+*   `False`: metadata is not requested and the meta-estimator will not pass it to `fit`.
+    
+*   `None`: metadata is not requested, and the meta-estimator will raise an error if the user provides it.
+    
+*   `str`: metadata should be passed to the meta-estimator with this given alias instead of the original name.
+    
+
+The default (`sklearn.utils.metadata_routing.UNCHANGED`) retains the existing request. This allows you to change the request for some parameters and not others.
+
+Added in version 1.3.
+
+Parameters:
+
+**sample\_weight**str, True, False, or None, default=sklearn.utils.metadata\_routing.UNCHANGED
+
+Metadata routing for `sample_weight` parameter in `fit`.
+
+Returns:
+
+**self**object
+
+The updated object.
+
+set\_params(_\*\*params_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/base.py#L400)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.set_params "Link to this definition")
+
+Set the parameters of this estimator.
+
+The method works on simple estimators as well as on nested objects (such as [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline "sklearn.pipeline.Pipeline")
+). The latter have parameters of the form `<component>__<parameter>` so that it’s possible to update each component of a nested object.
+
+Parameters:
+
+**\*\*params**dict
+
+Estimator parameters.
+
+Returns:
+
+**self**estimator instance
+
+Estimator instance.
+
+set\_score\_request(_\*_, _sample\_weight: [bool](https://docs.python.org/3/library/functions.html#bool "(in Python v3.14)")
+ | [None](https://docs.python.org/3/library/constants.html#None "(in Python v3.14)")
+ | [str](https://docs.python.org/3/library/stdtypes.html#str "(in Python v3.14)")
+ \= '$UNCHANGED$'_) → [RidgeClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier "sklearn.linear_model._ridge.RidgeClassifier")
+[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/utils/_metadata_requests.py#L1440)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier.set_score_request "Link to this definition")
+
+Configure whether metadata should be requested to be passed to the `score` method.
+
+Note that this method is only relevant when this estimator is used as a sub-estimator within a [meta-estimator](https://scikit-learn.org/stable/glossary.html#term-meta-estimator)
+ and metadata routing is enabled with `enable_metadata_routing=True` (see [`sklearn.set_config`](https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config "sklearn.set_config")
+). Please check the [User Guide](https://scikit-learn.org/stable/metadata_routing.html#metadata-routing)
+ on how the routing mechanism works.
+
+The options for each parameter are:
+
+*   `True`: metadata is requested, and passed to `score` if provided. The request is ignored if metadata is not provided.
+    
+*   `False`: metadata is not requested and the meta-estimator will not pass it to `score`.
+    
+*   `None`: metadata is not requested, and the meta-estimator will raise an error if the user provides it.
+    
+*   `str`: metadata should be passed to the meta-estimator with this given alias instead of the original name.
+    
+
+The default (`sklearn.utils.metadata_routing.UNCHANGED`) retains the existing request. This allows you to change the request for some parameters and not others.
+
+Added in version 1.3.
+
+Parameters:
+
+**sample\_weight**str, True, False, or None, default=sklearn.utils.metadata\_routing.UNCHANGED
+
+Metadata routing for `sample_weight` parameter in `score`.
+
+Returns:
+
+**self**object
+
+The updated object.
+
+Gallery examples[#](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#gallery-examples "Link to this heading")
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_document_classification_20newsgroups_thumb.png)
+
+[Classification of text documents using sparse features](https://scikit-learn.org/stable/auto_examples/text/plot_document_classification_20newsgroups.html)
+
+Classification of text documents using sparse features
+
+On this page
+
+* * *
+
+scikit-learn is [financially supported](https://scikit-learn.org/stable/institutional_support.html#funding)
+ by Probabl and other institutions.
+
+[![](https://scikit-learn.org/stable/_static/probabl.png "Probabl")\
+\
+Enterprise-grade solutions and services](https://probabl.ai/lp/scikit-learn)

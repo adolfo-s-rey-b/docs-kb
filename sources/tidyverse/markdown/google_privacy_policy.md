@@ -1,0 +1,105 @@
+Privacy policy for packages that access Google APIs
+===================================================
+
+The tidyverse team maintains several packages that make it easier to work with Google APIs from R:
+
+*   [gargle](https://gargle.r-lib.org/)
+     provides general R infrastructure for Google APIs, such as auth
+*   [bigrquery](https://bigrquery.r-dbi.org/)
+     wraps the [BigQuery API](https://developers.google.com/bigquery/)
+    
+*   [gmailr](https://gmailr.r-lib.org/)
+     wraps the [Gmail API](https://developers.google.com/gmail/api/)
+    
+*   [googledrive](https://googledrive.tidyverse.org/)
+     wraps the [Drive API](https://developers.google.com/drive/)
+    
+*   [googlesheets4](https://googlesheets4.tidyverse.org/)
+     wraps the [Sheets API](https://developers.google.com/sheets/api/)
+    
+*   [ellmer](https://ellmer.tidyverse.org/)
+     supports working with LLMs from R, including the [Google Gemini API](https://ai.google.dev/gemini-api/docs)
+    
+
+All of these packages are governed by common policies recorded here. These packages use internal resources owned by the “Tidyverse API Packages” project (bigrquery, googledrive, googlesheets4) or the “ellmer (an R package from the tidyverse)” project (ellmer) on Google Cloud Platform. That is the name you will see in a consent screen. _Exception: gmailr does NOT use any resources owned by Tidyverse API Packages, due to [special requirements around Gmail and its scopes](https://developers.google.com/terms/api-services-user-data-policy#additional-requirements-for-specific-api-scopes)
+. You MUST provide your own OAuth client to gmailr, whereas that is possible, but not mandatory, for the other packages listed here._
+
+Your use of Google APIs with these packages is subject to each API’s respective terms of service. See [https://developers.google.com/terms/](https://developers.google.com/terms/)
+.
+
+Privacy[](https://tidyverse.org/google_privacy_policy/#privacy)
+
+================================================================
+
+Google account and user data[](https://tidyverse.org/google_privacy_policy/#google-account-and-user-data)
+
+----------------------------------------------------------------------------------------------------------
+
+### Retention and deletion of user data[](https://tidyverse.org/google_privacy_policy/#retention-and-deletion-of-user-data)
+
+The owners of the Tidyverse API Packages and ellmer projects do not receive, collect, or store Google user data. Because we never hold this data, we do not retain it, there is no data retention period, and there is no user data for us to delete. A request to delete your data is therefore not applicable; your data stays on your own machine, under your control, and is communicated directly between your machine and the Google APIs.
+
+### Accessing user data[](https://tidyverse.org/google_privacy_policy/#accessing-user-data)
+
+These packages access Google resources from your local machine. Your machine communicates directly with the Google APIs.
+
+The Tidyverse API Packages or ellmer project never receives your data or the permission to access your data. The owners of the project can only see anonymous, aggregated information about usage of tokens obtained through its OAuth client, such as which APIs and endpoints are being used.
+
+Each package includes functions that you can execute in order to read or modify your own data. This can only happen after you provide a token, which requires that you authenticate yourself as a specific Google user and authorize these actions.
+
+These packages can help you get a token by guiding you through the OAuth flow in the browser. There you must consent to allow the Tidyverse API Packages or ellmer to operate on your behalf. The OAuth consent screen will describe the scope of what is being authorized, e.g., it will name the target API(s) and whether you are authorizing “read only” or “read and write” access.
+
+There are two ways to use these packages without authorizing the Tidyverse API Packages or ellmer: bring your own [service account token](https://developers.google.com/identity/protocols/OAuth2ServiceAccount)
+ or configure the package to use an OAuth client of your choice.
+
+### Scopes[](https://tidyverse.org/google_privacy_policy/#scopes)
+
+Overview of the scopes requested by various Tidyverse API Packages or by ellmer and their rationale:
+
+*   `userinfo.email` (read only): All OAuth tokens obtained with the Tidyverse API Packages request this scope so that cached tokens can be labelled with the associated Google user, allowing you to more easily access Google APIs with more than one identity. The Tidyverse API Packages do NOT have access to and do NOT store your Google password.
+*   BigQuery and Google Cloud Platform (read/write): The bigrquery package lets you upload, query, and modify data stored in Google BigQuery, as well as retrieve metadata about projects, datasets, tables, and jobs.
+*   Gmail (read/write): The gmailr package allows you to fully manage your Gmail account and therefore the default scope grants that ability. The gmailr package makes it possible for you to get a token with more limited scope, e.g. read or compose only.
+*   Drive (read/write): The googledrive package allows you to manage your Drive files and therefore the default scopes include read/write access. The googledrive package makes it possible for you to get a token with more limited scope, e.g. read only.
+*   Sheets (read/write): The googlesheets4 package allows you to manage your spreadsheets and therefore the default scopes include read/write access. The googlesheets4 package makes it possible for you to get a token with more limited scope, e.g. read only.
+*   Gemini (view/query): The ellmer package allows you to send prompts to Gemini models and receive responses. When you sign in through the browser with `chat_google_gemini()`, it requests the `generative-language.retriever.readonly` scope, which the consent screen describes as “Generative Language API Semantic Retriever”. This is the scope Google recommends for OAuth access to the Gemini API (also known as the Generative Language API).
+
+### Sharing user data[](https://tidyverse.org/google_privacy_policy/#sharing-user-data)
+
+The packages only communicate with Google APIs. No user data is shared with the owners of the Tidyverse API Packages, Posit, or any third party services.
+
+### Storing user data[](https://tidyverse.org/google_privacy_policy/#storing-user-data)
+
+The owners of the Tidyverse API Packages and ellmer projects do not store Google user data. Data you retrieve by using these packages exists only on your own machine, in whatever objects or files your own code creates.
+
+### Storing credentials[](https://tidyverse.org/google_privacy_policy/#storing-credentials)
+
+These packages may store your credentials on your local machine, for later reuse by you. **Use caution when using these packages on a shared machine**.
+
+gargle, gmailr, bigrquery, googledrive, googlesheets4: By default and only with the user’s permission, an OAuth token is cached in a local file, such as `~/.R/gargle/gargle-oauth`. See the documentation for [`gargle::gargle_options()`](https://gargle.r-lib.org/reference/gargle_options.html)
+ and [`gargle::credentials_user_oauth2()`](https://gargle.r-lib.org/reference/credentials_user_oauth2.html)
+ for information on how to control the location of the token cache or suppress token caching, globally or at the individual token level.
+
+ellmer never caches an OAuth token to disk and its token is held in memory for the current R session only.
+
+Data protection policy[](https://tidyverse.org/google_privacy_policy/#data-protection-policy)
+
+==============================================================================================
+
+We do not collect any data about you and we do not have any access to data that you retrieve by using these packages.
+
+Policies for authors of packages or other applications[](https://tidyverse.org/google_privacy_policy/#policies-for-authors-of-packages-or-other-applications)
+
+==============================================================================================================================================================
+
+Do not use an API key or client ID from the Tidyverse API Packages or ellmer in an external package or tool. Per the Google User Data Policy [https://developers.google.com/terms/api-services-user-data-policy](https://developers.google.com/terms/api-services-user-data-policy)
+, your application must accurately represent itself when authenticating to Google API services.
+
+If you use these packages inside another package or application that executes its own logic — as opposed to code in the Tidyverse API Packages or in ellmer or owned by the user — you must communicate this clearly to the user. Do not use credentials from the Tidyverse API Packages or ellmer; instead, use credentials associated with your project or your user.
+
+Contents
+
+The tidyverse is proudly supported by[](https://posit.co/)
+
+[Privacy policy](https://www.tidyverse.org/google_privacy_policy)
+[](https://github.com/tidyverse)
+[](https://twitter.com/hashtag/rstats)

@@ -1,0 +1,337 @@
+{
+  "pages": {
+    "extension-components": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/components.html",
+      "last_hash": "5f0aebeb898aa612a5896e6314b06fcf4a0a66e2373f9ec509759a8ed56a7702",
+      "last_fetched": "2026-11-08T05:31:34.169971+00:00",
+      "title": "Using JupyterLab components — JupyterLab 4.6.6 documentation"
+    },
+    "extension-documents": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/documents.html",
+      "last_hash": "a620a5d454feedbe3af8474b8cdeb4e50ad0872cc29333046979348f98765adb",
+      "last_fetched": "2026-11-08T05:31:35.269599+00:00",
+      "title": "Documents — JupyterLab 4.6.6 documentation"
+    },
+    "extension-extension_dev": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/extension_dev.html",
+      "last_hash": "a31e6f113234e956efcc52dd85b59f5f2eff0bd8276239e63da5c9026a526cbc",
+      "last_fetched": "2026-11-08T05:31:36.501626+00:00",
+      "title": "Develop Extensions — JupyterLab 4.6.6 documentation"
+    },
+    "extension-extension_migration": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/extension_migration.html",
+      "last_hash": "ebe342b5d22714e757e552550f8e36ce01f005a1a18f6077c8e49b1ac35bdcf5",
+      "last_fetched": "2026-11-08T05:31:38.268671+00:00",
+      "title": "Extension Migration Guide — JupyterLab 4.6.6 documentation"
+    },
+    "extension-extension_multiple_ui": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/extension_multiple_ui.html",
+      "last_hash": "903cc7263e8d84ae93cfa899bb46e63180cdeca3d81b7a61cb551f7940f45453",
+      "last_fetched": "2026-11-08T05:31:39.445551+00:00",
+      "title": "Targeting Multiple Applications — JupyterLab 4.6.6 documentation"
+    },
+    "extension-extension_points": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/extension_points.html",
+      "last_hash": "629a8d34ab3785ca974aa63ed58d23e7a17ee73c2456ff217053d1b3b785a6cc",
+      "last_fetched": "2026-11-08T05:31:40.898032+00:00",
+      "title": "Common Extension Points — JupyterLab 4.6.6 documentation"
+    },
+    "extension-extension_tutorial": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html",
+      "last_hash": "6089aad06ba0b9fc944abc0519e78628c288bb01f55dae6eccd06ebf549eb242",
+      "last_fetched": "2026-11-08T05:31:42.473919+00:00",
+      "title": "Extension Tutorial — JupyterLab 4.6.6 documentation"
+    },
+    "extension-identity": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/identity.html",
+      "last_hash": "656e53608fa45d5d32aa798860945ae4614d0375d5ebe6d833677cca8492d3a5",
+      "last_fetched": "2026-11-08T05:31:43.702434+00:00",
+      "title": "Identity — JupyterLab 4.6.6 documentation"
+    },
+    "extension-internationalization": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/internationalization.html",
+      "last_hash": "0c60bc5fb4098ed13d28f1d2621ba903b6159980683b32b4448ed7d0510feca8",
+      "last_fetched": "2026-11-08T05:31:44.893877+00:00",
+      "title": "Internationalization and Localization — JupyterLab 4.6.6 documentation"
+    },
+    "extension-notebook": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/notebook.html",
+      "last_hash": "2fd851319aef174345afe7a4d183d7ede03f907257c77c52a8af951a87421937",
+      "last_fetched": "2026-11-08T05:31:46.554636+00:00",
+      "title": "Notebook — JupyterLab 4.6.6 documentation"
+    },
+    "extension-plugins_list": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/plugins_list.html",
+      "last_hash": "72b7dce9d3db068ca421203a621215f01e9b51afabdcfc7d405428fc345c00aa",
+      "last_fetched": "2026-11-08T05:31:47.610009+00:00",
+      "title": "<no title> — JupyterLab 4.6.6 documentation"
+    },
+    "extension-tokens_list": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/tokens_list.html",
+      "last_hash": "fd1e43e894764d2300be13371ff077220f8bda1409d034e10d1776794c682d43",
+      "last_fetched": "2026-11-08T05:31:48.692037+00:00",
+      "title": "<no title> — JupyterLab 4.6.6 documentation"
+    },
+    "extension-ui_components": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/ui_components.html",
+      "last_hash": "06c1e6e3cd8f98efb288d50fd37285b01c4aa15d20da08ec5bc60951350d6d6a",
+      "last_fetched": "2026-11-08T05:31:49.850454+00:00",
+      "title": "Reusing JupyterLab UI — JupyterLab 4.6.6 documentation"
+    },
+    "extension-ui_helpers": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/ui_helpers.html",
+      "last_hash": "42f39ba5d6963c374c499dd260b6dff8dd20032a9dd1ee24c0163f7ac037bb95",
+      "last_fetched": "2026-11-08T05:31:51.804001+00:00",
+      "title": "User Interface Helpers — JupyterLab 4.6.6 documentation"
+    },
+    "extension-virtualdom": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/extension/virtualdom.html",
+      "last_hash": "f8bb3970e0e0c287cc297cbe0635020f40a27e2bbaa897ce11b7a090d5e20b53",
+      "last_fetched": "2026-11-08T05:31:52.989319+00:00",
+      "title": "React — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-accessibility": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/accessibility.html",
+      "last_hash": "533933ac9cc2cc460bd7af790aae63e47a053a5ed2fedf2c9d74b449c817757d",
+      "last_fetched": "2026-11-08T05:31:54.084174+00:00",
+      "title": "JupyterLab Accessibility Statement — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-faq": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/faq.html",
+      "last_hash": "72206cc5f19c828a09ae9488f8f943dd8411a3e24262498a7d4b2e7097071fd0",
+      "last_fetched": "2026-11-08T05:31:55.223702+00:00",
+      "title": "Frequently Asked Questions (FAQ) — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-installation": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html",
+      "last_hash": "4e14c7cb672c8cec187f6ba335940cecbb79bac503652b8a4be71adb718d2b7b",
+      "last_fetched": "2026-11-08T05:31:56.436844+00:00",
+      "title": "Installation — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-issue": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/issue.html",
+      "last_hash": "b69f051f7d3d9aa07d957469782b22c81795ef6c8f1df348c3f54fcbec09958f",
+      "last_fetched": "2026-11-08T05:31:57.574480+00:00",
+      "title": "Reporting an issue — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-lifecycle": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/lifecycle.html",
+      "last_hash": "1004f8d230d0a25b3581ac4c99a4f8fe2b88e9fd1d8178bacfb9642afbc6faa8",
+      "last_fetched": "2026-11-08T05:31:58.742864+00:00",
+      "title": "Version lifecycle — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-overview": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html",
+      "last_hash": "a3139cb1ed6c953e1d6fd6e35f89fc4cb218520b02cb43986d9538534649e82b",
+      "last_fetched": "2026-11-08T05:32:00.362991+00:00",
+      "title": "Get Started — JupyterLab 4.6.6 documentation"
+    },
+    "getting_started-starting": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html",
+      "last_hash": "21cd0aba3cbcd20e291869694cb01b5d09786e83c0e08efa1be981be941e0e34",
+      "last_fetched": "2026-11-08T05:32:01.423274+00:00",
+      "title": "Starting JupyterLab — JupyterLab 4.6.6 documentation"
+    },
+    "index": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/index.html",
+      "last_hash": "84dc324ceb299aff0c527a50bf145a9ca862390b37e1c0066a726deefdbf65e7",
+      "last_fetched": "2026-11-08T05:32:02.632943+00:00",
+      "title": "JupyterLab Documentation — JupyterLab 4.6.6 documentation"
+    },
+    "privacy_policies": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/privacy_policies.html",
+      "last_hash": "790b082e19409b914d43b49e9205bf71a066b66d2b2bb09cd7b1b11f08d6f4d2",
+      "last_fetched": "2026-11-08T05:32:03.657032+00:00",
+      "title": "Privacy policies — JupyterLab 4.6.6 documentation"
+    },
+    "user-announcements": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/announcements.html",
+      "last_hash": "811cc3d3c38a9b53fcf95afbb940f0b79b2f77f23ed512cb8d71a7a6a2a7c7d8",
+      "last_fetched": "2026-11-08T05:32:04.775208+00:00",
+      "title": "Announcements — JupyterLab 4.6.6 documentation"
+    },
+    "user-binder": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/binder.html",
+      "last_hash": "db9537f2842e8d488ce78e4c86c971b381160196142a32afd3800e2ab89c573a",
+      "last_fetched": "2026-11-08T05:32:05.869366+00:00",
+      "title": "JupyterLab on Binder — JupyterLab 4.6.6 documentation"
+    },
+    "user-code_console": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/code_console.html",
+      "last_hash": "6523df904fbfada9a25caa2f910ea1e7f8da6ce32b9066ac01f4e284e5ff573b",
+      "last_fetched": "2026-11-08T05:32:08.375219+00:00",
+      "title": "Code Consoles — JupyterLab 4.6.6 documentation"
+    },
+    "user-commands": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/commands.html",
+      "last_hash": "a2d6f46788eb3b41260053890d562e16a347a4a961dddfa697a0c01b74814007",
+      "last_fetched": "2026-11-08T05:32:10.107299+00:00",
+      "title": "Commands — JupyterLab 4.6.6 documentation"
+    },
+    "user-commands_list": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/commands_list.html",
+      "last_hash": "82c2e6724f3acc28eaf6d7d0f31d400a866d38b63808075d6bcbf08ea2ac5209",
+      "last_fetched": "2026-11-08T05:32:11.545671+00:00",
+      "title": "Application — JupyterLab 4.6.6 documentation"
+    },
+    "user-completer": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/completer.html",
+      "last_hash": "03d3b79a562b74a2bc5d47768a3ada5e67691e693a29a817c23c15ea5644da8f",
+      "last_fetched": "2026-11-08T05:32:12.995902+00:00",
+      "title": "Completer — JupyterLab 4.6.6 documentation"
+    },
+    "user-custom_css": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/custom_css.html",
+      "last_hash": "56416d280caa815be72f6c39bf97ad4e82480e3cca3b91aee823fd90ee25a840",
+      "last_fetched": "2026-11-08T05:32:14.573190+00:00",
+      "title": "Applying Custom CSS — JupyterLab 4.6.6 documentation"
+    },
+    "user-debugger": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/debugger.html",
+      "last_hash": "d8569ca6b46c53c823e5138423e9110ec102108680fc90eb86e1058654346e0b",
+      "last_fetched": "2026-11-08T05:32:15.950334+00:00",
+      "title": "Debugger — JupyterLab 4.6.6 documentation"
+    },
+    "user-directories": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/directories.html",
+      "last_hash": "b803c66ec51acccb5bc1ce3af5996776b5b59c74dfc16e0d5ea26b698e87f365",
+      "last_fetched": "2026-11-08T05:32:17.304953+00:00",
+      "title": "Advanced Usage — JupyterLab 4.6.6 documentation"
+    },
+    "user-documents_kernels": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/documents_kernels.html",
+      "last_hash": "8426fb446044144642bb822ff2462ae7123dabffb30d6087d2e2f67f85fd2e07",
+      "last_fetched": "2026-11-08T05:32:19.364845+00:00",
+      "title": "Documents and Kernels — JupyterLab 4.6.6 documentation"
+    },
+    "user-export": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/export.html",
+      "last_hash": "a94c4e8b04b32cffb9b95763fec292e648d99045ea6a18b3c7f1ed694116f318",
+      "last_fetched": "2026-11-08T05:32:20.751635+00:00",
+      "title": "Exporting Notebooks — JupyterLab 4.6.6 documentation"
+    },
+    "user-extensions": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/extensions.html",
+      "last_hash": "9dc7425988e06ab0e18e38445a997d39a01999a8c744972baf20a65ef746248c",
+      "last_fetched": "2026-11-08T05:32:22.195496+00:00",
+      "title": "Extensions — JupyterLab 4.6.6 documentation"
+    },
+    "user-file_editor": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/file_editor.html",
+      "last_hash": "e0785edcd11aa4b5959ff723822ac7c9dfc936d020862a67c0bdd92d2aea4017",
+      "last_fetched": "2026-11-08T05:32:24.507423+00:00",
+      "title": "Text Editor — JupyterLab 4.6.6 documentation"
+    },
+    "user-file_formats": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/file_formats.html",
+      "last_hash": "55c6ce60e9774732b41c2d4d36563ade0b5d06bc0e320d75b0594dc15384d242",
+      "last_fetched": "2026-11-08T05:32:28.380355+00:00",
+      "title": "File and Output Formats — JupyterLab 4.6.6 documentation"
+    },
+    "user-files": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/files.html",
+      "last_hash": "1b1d26927001f741cd0c63c86ad21dfb274258326150052191a8e9320b5cd1a4",
+      "last_fetched": "2026-11-08T05:32:31.897766+00:00",
+      "title": "Working with Files — JupyterLab 4.6.6 documentation"
+    },
+    "user-index": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/index.html",
+      "last_hash": "fca8b08e9054afffc6b61b7a8448dddd8985613feef0ee5f12c1f5f790b2d922",
+      "last_fetched": "2026-11-08T05:32:32.942554+00:00",
+      "title": "User Guide — JupyterLab 4.6.6 documentation"
+    },
+    "user-interface": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/interface.html",
+      "last_hash": "4a8e4775679a11312081c6ffde9a9e419cab57f6b3fbf2ca5c0921af15c7915a",
+      "last_fetched": "2026-11-08T05:32:35.723505+00:00",
+      "title": "The JupyterLab Interface — JupyterLab 4.6.6 documentation"
+    },
+    "user-interface_customization": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/interface_customization.html",
+      "last_hash": "3b80aa0013183ae008ac219dc9386a3fadc64ce9fe6c2444ad8a06af4d5e8131",
+      "last_fetched": "2026-11-08T05:32:37.193873+00:00",
+      "title": "Interface Customization — JupyterLab 4.6.6 documentation"
+    },
+    "user-jupyterhub": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/jupyterhub.html",
+      "last_hash": "df6543f6a42bd22700e8bfbb9482f22942d196ad25b6396c0d321e45a6ef27ae",
+      "last_fetched": "2026-11-08T05:32:38.189722+00:00",
+      "title": "JupyterLab on JupyterHub — JupyterLab 4.6.6 documentation"
+    },
+    "user-language": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/language.html",
+      "last_hash": "d0c98c4422ad32ea435bf8be10e751c469b7d5f97f6628fd179b3431fabb23ef",
+      "last_fetched": "2026-11-08T05:32:39.523860+00:00",
+      "title": "Localization and language — JupyterLab 4.6.6 documentation"
+    },
+    "user-lsp": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/lsp.html",
+      "last_hash": "027b10cb255cea584a44bbabaed7440da5eb824b259b8252aaaa31fdad32eb48",
+      "last_fetched": "2026-11-08T05:32:40.561838+00:00",
+      "title": "Language Server Protocol support — JupyterLab 4.6.6 documentation"
+    },
+    "user-notebook": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/notebook.html",
+      "last_hash": "86354457859c4b65034fb08c72163c8ed6855fab10a3440f09b2667895461e63",
+      "last_fetched": "2026-11-08T05:32:44.290827+00:00",
+      "title": "Notebooks — JupyterLab 4.6.6 documentation"
+    },
+    "user-rtc": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/rtc.html",
+      "last_hash": "442675418aa610187e50f0bde282156137d921321a16f40cff58310ad7ad5463",
+      "last_fetched": "2026-11-08T05:32:45.293359+00:00",
+      "title": "Real Time Collaboration — JupyterLab 4.6.6 documentation"
+    },
+    "user-running": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/running.html",
+      "last_hash": "3762d2840fcb4d182cde5917ef6731bb6174137127b780cb50fc62ea63b4b1f3",
+      "last_fetched": "2026-11-08T05:32:47.130185+00:00",
+      "title": "Managing Kernels and Terminals — JupyterLab 4.6.6 documentation"
+    },
+    "user-terminal": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/terminal.html",
+      "last_hash": "7926fae889077e3ac596b6cf34007961674942678b11e41a0defe325a75ac7da",
+      "last_fetched": "2026-11-08T05:32:48.795811+00:00",
+      "title": "Terminals — JupyterLab 4.6.6 documentation"
+    },
+    "user-toc": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/toc.html",
+      "last_hash": "c222eca54786c7da955331363ffa59c2fec237bd24729e0eb3cbaa440c1bf14d",
+      "last_fetched": "2026-11-08T05:32:50.321551+00:00",
+      "title": "Table Of Contents — JupyterLab 4.6.6 documentation"
+    },
+    "user-urls": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/urls.html",
+      "last_hash": "8c2eac439807adeaecdbecbc2dbfbc753db419bd2127dd4eeb0e9325596d44c9",
+      "last_fetched": "2026-11-08T05:32:51.349431+00:00",
+      "title": "JupyterLab URLs — JupyterLab 4.6.6 documentation"
+    },
+    "user-workspaces": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/user/workspaces.html",
+      "last_hash": "37dfbb6f4e8dbc99835c45e27893dd7228caf32e96c4efd83b64722fc0d31843",
+      "last_fetched": "2026-11-08T05:32:52.481180+00:00",
+      "title": "Workspaces — JupyterLab 4.6.6 documentation"
+    },
+    "genindex": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/genindex.html",
+      "last_hash": "499d9e4b69e31a875a3f578c919d875ebd027818c2f94e15f013be80668ae1a8",
+      "last_fetched": "2026-11-08T05:32:53.668950+00:00",
+      "title": "Index — JupyterLab 4.6.6 documentation"
+    },
+    "py-modindex": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/py-modindex.html",
+      "last_hash": "0c5d3f292547dada5227525603cf70d51e248cd5cfef17fed736b9fb8876721c",
+      "last_fetched": "2026-11-08T05:32:54.754487+00:00",
+      "title": "\n  Documentation page not found\n - Read the Docs Community "
+    },
+    "search": {
+      "url": "https://jupyterlab.readthedocs.io/en/stable/search.html",
+      "last_hash": "7d3ca4585c209d2beb5b323739dd695060072d117e136dba28f1637ccb6fa6c7",
+      "last_fetched": "2026-11-08T05:32:56.144513+00:00",
+      "title": "Search - JupyterLab 4.6.6 documentation"
+    }
+  },
+  "detected_version": "4.6.6",
+  "last_updated": "2026-11-08T05:32:56.144513+00:00",
+  "version_history": []
+}

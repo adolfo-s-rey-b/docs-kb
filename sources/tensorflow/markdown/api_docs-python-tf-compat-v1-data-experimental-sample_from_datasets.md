@@ -1,0 +1,94 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#returns)
+    
+*   [Raises](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#raises)
+    
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.compat.v1.data.experimental.sample\_from\_datasets Stay organized with collections Save and categorize content based on your preferences.
+============================================================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#returns)
+    
+*   [Raises](https://www.tensorflow.org/api_docs/python/tf/compat/v1/data/experimental/sample_from_datasets#raises)
+    
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/experimental/ops/interleave_ops.py#L156-L164)
+
+Samples elements at random from the datasets in `datasets`. (deprecated)
+
+tf.compat.v1.data.experimental.sample_from_datasets(
+        datasets, weights=None, seed=None, stop_on_empty_dataset=False
+    )
+
+Creates a dataset by interleaving elements of `datasets` with `weight[i]` probability of picking an element from dataset `i`. Sampling is done without replacement. For example, suppose we have 2 datasets:
+
+dataset1 = tf.data.Dataset.range(0, 3)
+    dataset2 = tf.data.Dataset.range(100, 103)
+
+Suppose also that we sample from these 2 datasets with the following weights:
+
+sample_dataset = tf.data.Dataset.sample_from_datasets(
+        [dataset1, dataset2], weights=[0.5, 0.5])
+
+One possible outcome of elements in sample\_dataset is:
+
+print(list(sample_dataset.as_numpy_iterator()))
+    # [100, 0, 1, 101, 2, 102]
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `datasets` | A non-empty list of [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)<br> objects with compatible structure. |
+| `weights` | (Optional.) A list or Tensor of `len(datasets)` floating-point values where `weights[i]` represents the probability to sample from `datasets[i]`, or a [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)<br> object where each element is such a list. Defaults to a uniform distribution across `datasets`. |
+| `seed` | (Optional.) A [`tf.int64`](https://www.tensorflow.org/api_docs/python/tf#int64)<br> scalar [`tf.Tensor`](https://www.tensorflow.org/api_docs/python/tf/Tensor)<br>, representing the random seed that will be used to create the distribution. See [`tf.random.set_seed`](https://www.tensorflow.org/api_docs/python/tf/random/set_seed)<br> for behavior. |
+| `stop_on_empty_dataset` | If `True`, sampling stops if it encounters an empty dataset. If `False`, it skips empty datasets. It is recommended to set it to `True`. Otherwise, the distribution of samples starts off as the user intends, but may change as input datasets become empty. This can be difficult to detect since the dataset starts off looking correct. Default to `False` for backward compatibility. |
+
+|     |
+| --- |
+| Returns<br>------- |     |
+| A dataset that interleaves elements from `datasets` at random, according to `weights` if provided, otherwise with uniform probability. |     |
+
+|     |     |
+| --- | --- |
+| Raises<br>------ |     |
+| `TypeError` | If the `datasets` or `weights` arguments have the wrong type. |
+| `ValueError` | *   If `datasets` is empty, or<br>*   If `weights` is specified and does not match the length of `datasets`. |
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

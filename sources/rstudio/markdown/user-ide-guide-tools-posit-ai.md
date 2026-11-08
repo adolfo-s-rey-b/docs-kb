@@ -1,0 +1,102 @@
+**Documentation Version**
+
+You are viewing version **2026.10.1**. [Verify that this is the latest version](https://docs.posit.co/supported-versions/rstudio.html)
+.
+
+Copy for LLM View as Markdown
+
+[Posit Assistant](https://pos.it/assistant)
+ is a set of artificial intelligence (AI) features available as a downloadable extension for RStudio. To provide feedback or report bugs, please open a [GitHub Issue](https://github.com/posit-dev/assistant-feedback/issues)
+.
+
+Prerequisites[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#prerequisites)
+
+--------------------------------------------------------------------------------------------
+
+*   To use Posit Assistant in RStudio, you must have a compatible version of RStudio installed. Posit Assistant is available for RStudio Desktop or Server 2026.04.0 and later. Posit Workbench disables Posit Assistant by default, but an administrator can enable it.
+*   To use Posit Assistant, you need access to a model provider. Most providers are cloud-based and require internet access to send requests and receive responses.
+
+Setup[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#setup)
+
+----------------------------------------------------------------------------
+
+To set up Posit Assistant in RStudio, click the “Posit Assistant” button on the toolbar to display the “Posit Assistant” pane.
+
+![Posit Assistant Toolbar Button](https://docs.posit.co/ide/user/ide/guide/tools/images/posit-assistant-button.png)
+
+Click **Install Posit Assistant** to download and install the add-in package. Once the installation completes, configure a model provider as described below before you begin chatting.
+
+![Install Posit Assistant](https://docs.posit.co/ide/user/ide/guide/tools/images/install-posit-assistant.png)
+
+Choosing a model provider[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#choosing-a-model-provider)
+
+--------------------------------------------------------------------------------------------------------------------
+
+Posit Assistant works with several model providers. Click **Configure provider** to choose from the available options.
+
+![Configure Posit Assistant](https://docs.posit.co/ide/user/ide/guide/tools/images/posit-assistant-configure.png)
+
+### Posit AI Pass[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#posit-ai-pass)
+
+[Posit AI Pass](https://docs.posit.co/posit-ai)
+ is a subscription service from Posit that provides access to open weight and commercial models through a single account. Choose Posit AI Pass, then sign in to or create a Posit AI Pass account. Once you are authenticated, the Posit Assistant chat feature is ready to use.
+
+NotePosit AI Pass Account Assistance
+
+For more information on signing up and managing your Posit AI Pass account, visit [https://docs.posit.co/posit-ai](https://docs.posit.co/posit-ai)
+.
+
+### Other providers[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#other-providers)
+
+Posit Assistant also supports direct connections to providers such as Anthropic, OpenAI, Google Gemini, and Amazon Bedrock, among others. Choose the provider, then enter its credentials.
+
+After initial setup, you can add or change providers from the settings (gear) menu in the Posit Assistant pane.
+
+Advanced configuration[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#advanced-configuration)
+
+--------------------------------------------------------------------------------------------------------------
+
+Posit Assistant reads its configuration from JSON settings files: a global file at `~/.posit/assistant/settings.json` and an optional per-project file at `.posit/assistant/settings.json`. Editing these files directly lets you set options that are not exposed in the user interface, such as custom provider base URLs, request headers, permissions, and MCP servers.
+
+For the full list of available settings, see the [Posit Assistant configuration file reference](https://assistant.posit.co/docs/reference/config-file/)
+.
+
+Using Posit Assistant[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#using-posit-assistant)
+
+------------------------------------------------------------------------------------------------------------
+
+For information on using Posit Assistant, visit the [Posit Assistant documentation](https://pos.it/assistant-docs)
+.
+
+Removing Posit Assistant[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#removing-posit-assistant)
+
+------------------------------------------------------------------------------------------------------------------
+
+RStudio does not provide a command for removing Posit Assistant. To remove the components RStudio downloaded, quit RStudio and delete the `pai` directory from RStudio’s data directory:
+
+|     |     |
+| --- | --- |
+| Windows | `%LOCALAPPDATA%\RStudio\pai` |
+| macOS | `~/.local/share/rstudio/pai` |
+| Linux | `~/.local/share/rstudio/pai` |
+
+If an `ai.prev` directory is present beside `pai`, left by an interrupted install or update in an earlier RStudio release, delete it as well. If `RSTUDIO_DATA_HOME` is set, the directory is `$RSTUDIO_DATA_HOME/pai`. If `XDG_DATA_HOME` is set instead on macOS or Linux, it is `$XDG_DATA_HOME/rstudio/pai`.
+
+This directory holds the downloaded Posit Assistant program files – one directory per install under `versions`, plus `selected.json` recording which of them RStudio selected for each of its protocol versions, and a `bin` directory if an earlier RStudio release installed there – and RStudio’s record of its update checks. Each install adds a directory and removes nothing, so the directory grows with each update until it is deleted. Posit Assistant keeps your chat history and settings under `~/.posit`, outside this directory, and they remain available if you install Posit Assistant again.
+
+A copy of Posit Assistant installed by an administrator or bundled with RStudio is not affected by removing this directory, and cannot be removed by the user.
+
+Hiding Posit Assistant features[](https://docs.posit.co/ide/user/ide/guide/tools/posit-ai.html#hiding-posit-assistant-features)
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+To disable and hide the Posit Assistant features entirely, set the `RSTUDIO_DISABLE_POSIT_ASSISTANT` environment variable to any value (e.g., `RSTUDIO_DISABLE_POSIT_ASSISTANT=1`) before starting RStudio. When the variable is set, RStudio does not display the Posit Assistant toolbar button or pane, and you cannot install or use Posit Assistant in that session.
+
+On RStudio Server, administrators can also disable Posit Assistant for all users by adding the following line to `/etc/rstudio/rsession.conf`:
+
+    posit-assistant-enabled=0
+
+See the [Environment Variables](https://docs.posit.co/ide/user/ide/reference/environment-variables.html)
+ reference for other environment variables that affect RStudio.
+
+Back to top

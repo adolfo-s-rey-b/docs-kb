@@ -1,0 +1,896 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts.md)
+.
+
+The Code node editing environment supports a range of keyboard shortcuts to speed up and enhance your experience. Select the appropriate tab to see the relevant shortcuts for your operating system.
+
+Cursor Movement[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#cursor-movement)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Move cursor left
+
+← Left
+
+Move cursor right
+
+→ Right
+
+Move cursor up
+
+↑ Up
+
+Move cursor down
+
+↓ Down
+
+Move cursor by word left
+
+^ Ctrl + ← Left
+
+Move cursor by word right
+
+^ Ctrl + → Right
+
+Move to line start
+
+⤒ Home **or** ^ Ctrl + ← Left
+
+Move to line end
+
+⤓ End **or** ^ Ctrl + → Right
+
+Move to document start
+
+^ Ctrl **or** ⤒ Home
+
+Move to document end
+
+^ Ctrl **or** ⤓ End
+
+Move page up
+
+⇞ Page Up
+
+Move page down
+
+⇟ Page Down
+
+Action
+
+Shortcut
+
+Move cursor left
+
+← Left **or** ^ Ctrl + B
+
+Move cursor right
+
+→ Right **or** ^ Ctrl + F
+
+Move cursor up
+
+↑ Up **or** ^ Ctrl + P
+
+Move cursor down
+
+↓ Down **or** ^ Ctrl + N
+
+Move cursor by word left
+
+⌥ Option + ← Left
+
+Move cursor by word right
+
+⌥ Option + → Right
+
+Move to line start
+
+⌘ Cmd + ← Left **or** ^ Ctrl + A
+
+Move to line end
+
+⌘ Cmd + → Right **or** ^ Ctrl + E
+
+Move to document start
+
+⌘ Cmd + ↑ Up
+
+Move to document end
+
+⌘ Cmd + ↓ Down
+
+Move page up
+
+⇞ Page Up
+
+Move page down
+
+⇟ Page Down
+
+Action
+
+Shortcut
+
+Move cursor left
+
+← Left
+
+Move cursor right
+
+→ Right
+
+Move cursor up
+
+↑ Up
+
+Move cursor down
+
+↓ Down
+
+Move cursor by word left
+
+^ Ctrl + ← Left
+
+Move cursor by word right
+
+^ Ctrl + → Right
+
+Move to line start
+
+⤒ Home **or** ^ Ctrl + ← Left
+
+Move to line end
+
+⤓ End **or** ^ Ctrl + → Right
+
+Move to document start
+
+^ Ctrl **or** ⤒ Home
+
+Move to document end
+
+^ Ctrl **or** ⤓ End
+
+Move page up
+
+⇞ Page Up
+
+Move page down
+
+⇟ Page Down
+
+Selection[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#selection)
+
+------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Selection with any movement key
+
+⇧ Shift + \[Movement Key\]
+
+Select all
+
+^ Ctrl + A
+
+Select line
+
+^ Ctrl + L
+
+Select next occurrence
+
+^ Ctrl + D
+
+Select all occurrences
+
+⇧ Shift + ^ Ctrl + L
+
+Go to matching bracket
+
+⇧ Shift + ^ Ctrl + \\
+
+Action
+
+Shortcut
+
+Selection with any movement key
+
+⇧ Shift + \[Movement Key\]
+
+Select all
+
+⌘ Cmd + A
+
+Select line
+
+⌘ Cmd + L
+
+Select next occurrence
+
+⌘ Cmd + D
+
+Go to matching bracket
+
+⇧ Shift + ⌘ Cmd + \\
+
+Action
+
+Shortcut
+
+Selection with any movement key
+
+⇧ Shift + \[Movement Key\]
+
+Select all
+
+^ Ctrl + A
+
+Select line
+
+^ Ctrl + L
+
+Select next occurrence
+
+^ Ctrl + D
+
+Select all occurrences
+
+⇧ Shift + ^ Ctrl + L
+
+Go to matching bracket
+
+⇧ Shift + ^ Ctrl + \\
+
+Basic Operations[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#basic-operations)
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+New line with indentation
+
+Enter ⏎
+
+Undo
+
+^ Ctrl + Z
+
+Redo
+
+^ Ctrl + Y **or** ^ Ctrl + ⇧ Shift + V
+
+Undo selection
+
+^ Ctrl + U
+
+Copy
+
+^ Ctrl + C
+
+Cut
+
+^ Ctrl + X
+
+Paste
+
+^ Ctrl + V
+
+Action
+
+Shortcut
+
+New line with indentation
+
+Enter ⏎
+
+Undo
+
+⌘ Cmd + Z
+
+Redo
+
+⌘ Cmd + Y **or** ⌘ Cmd + ⇧ Shift + Y
+
+Undo selection
+
+⌘ Cmd + U
+
+Copy
+
+⌘ Cmd + C
+
+Cut
+
+⌘ Cmd + X
+
+Paste
+
+⌘ Cmd + V
+
+Action
+
+Shortcut
+
+New line with indentation
+
+Enter ⏎
+
+Undo
+
+^ Ctrl + Z
+
+Redo
+
+^ Ctrl + Y **or** ^ Ctrl + ⇧ Shift + V
+
+Undo selection
+
+^ Ctrl + U
+
+Copy
+
+^ Ctrl + C
+
+Cut
+
+^ Ctrl + X
+
+Paste
+
+^ Ctrl + V
+
+Delete Operations[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#delete-operations)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Delete character left
+
+⌫ Backspace
+
+Delete character right
+
+⌦ Del
+
+Delete word left
+
+^ Ctrl + ⌫ Backspace
+
+Delete word right
+
+^ Ctrl + ⌦ Del
+
+Delete line
+
+⇧ Shift + ^ Ctrl + K
+
+Action
+
+Shortcut
+
+Delete character left
+
+⌫ Backspace
+
+Delete character right
+
+⌦ Del
+
+Delete word left
+
+⌥ Option + ⌫ Backspace **or** ^ Ctrl + ⌘ Cmd + H
+
+Delete word right
+
+⌥ Option + ⌦ Del **or** Fn + ⌥ Option + ⌦ Del
+
+Delete line
+
+⇧ Shift + ⌘ Cmd + K
+
+Delete to line start
+
+⌘ Cmd + ⌫ Backspace
+
+Delete to line end
+
+⌘ Cmd + ⌦ Del **or** ^ Ctrl + K
+
+Action
+
+Shortcut
+
+Delete character left
+
+⌫ Backspace
+
+Delete character right
+
+⌦ Del
+
+Delete word left
+
+^ Ctrl + ⌫ Backspace
+
+Delete word right
+
+^ Ctrl + ⌦ Del
+
+Delete line
+
+⇧ Shift + ^ Ctrl + K
+
+Line Operations[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#line-operations)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Move line up
+
+⎇ Alt + ↑ Up
+
+Move line down
+
+⎇ Alt + ↓ Down
+
+Copy line up
+
+⇧ Shift + ⎇ Alt + ↑ Up
+
+Copy line down
+
+⇧ Shift + ⎇ Alt + ↓ Down
+
+Toggle line comment
+
+^ Ctrl + /
+
+Add line comment
+
+^ Ctrl + K **then** ^ Ctrl + C
+
+Remove line comment
+
+^ Ctrl + K **then** ^ Ctrl + U
+
+Toggle block comment
+
+⇧ Shift + ⎇ Alt + A
+
+Action
+
+Shortcut
+
+Move line up
+
+⌥ Option + ↑ Up
+
+Move line down
+
+⌥ Option + ↓ Down
+
+Copy line up
+
+⇧ Shift + ⌥ Option + ↑ Up
+
+Copy line down
+
+⇧ Shift + ⌥ Option + ↓ Down
+
+Toggle line comment
+
+⌘ Cmd + /
+
+Add line comment
+
+⌘ Cmd + K **then** ⌘ Cmd + C
+
+Remove line comment
+
+⌘ Cmd + K **then** ⌘ Cmd + U
+
+Toggle block comment
+
+⇧ Shift + ⌥ Option + A
+
+Split line
+
+^ Ctrl + O
+
+Transpose characters
+
+^ Ctrl + T
+
+Action
+
+Shortcut
+
+Move line up
+
+⎇ Alt + ↑ Up
+
+Move line down
+
+⎇ Alt + ↓ Down
+
+Copy line up
+
+⇧ Shift + ⎇ Alt + ↑ Up
+
+Copy line down
+
+⇧ Shift + ⎇ Alt + ↓ Down
+
+Toggle line comment
+
+^ Ctrl + /
+
+Add line comment
+
+^ Ctrl + K **then** ^ Ctrl + C
+
+Remove line comment
+
+^ Ctrl + K **then** ^ Ctrl + U
+
+Toggle block comment
+
+⇧ Shift + ⎇ Alt + A
+
+Autocomplete[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#autocomplete)
+
+------------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Start completion
+
+^ Ctrl + Space
+
+Accept completion
+
+Enter ⏎ **or** Tab ⇥
+
+Close completion
+
+⎋ Esc
+
+Navigate completion options
+
+↑ Up **or** ↓ Down
+
+Action
+
+Shortcut
+
+Start completion
+
+^ Ctrl + Space
+
+Accept completion
+
+Enter ⏎ **or** Tab ⇥
+
+Close completion
+
+⎋ Esc
+
+Navigate completion options
+
+↑ Up **or** ↓ Down
+
+Action
+
+Shortcut
+
+Start completion
+
+^ Ctrl + Space
+
+Accept completion
+
+Enter ⏎ **or** Tab ⇥
+
+Close completion
+
+⎋ Esc
+
+Navigate completion options
+
+↑ Up **or** ↓ Down
+
+Indentation[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#indentation)
+
+----------------------------------------------------------------------------------------------------------------------
+
+Windows
+
+macOS
+
+Linux
+
+Action
+
+Shortcut
+
+Indent more
+
+Tab ⇥ **or** ^ Ctrl + \]
+
+Indent less
+
+⇧ Shift + Tab ⇥ **or** ^ Ctrl + \[\
+\
+Action\
+\
+Shortcut\
+\
+Indent more\
+\
+⌘ Cmd + \]
+
+Indent less
+
+⌘ Cmd + \[\
+\
+Action\
+\
+Shortcut\
+\
+Indent more\
+\
+Tab ⇥ **or** ^ Ctrl + \]
+
+Indent less
+
+⇧ Shift + Tab ⇥ **or** ^ Ctrl + \[\
+\
+Code Folding[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#code-folding)\
+\
+------------------------------------------------------------------------------------------------------------------------\
+\
+Windows\
+\
+macOS\
+\
+Linux\
+\
+Action\
+\
+Shortcut\
+\
+Fold code\
+\
+^ Ctrl + ⇧ Shift + \[\
+\
+Unfold code\
+\
+^ Ctrl + ⇧ Shift + \]\
+\
+Fold all\
+\
+^ Ctrl + K **then** ^ Ctrl + 0\
+\
+Unfold all\
+\
+^ Ctrl + K **then** ^ Ctrl + J\
+\
+Action\
+\
+Shortcut\
+\
+Fold code\
+\
+⌘ Cmd + ⌥ Option + \[\
+\
+Unfold code\
+\
+⌘ Cmd + ⌥ Option + \]\
+\
+Fold all\
+\
+⌘ Cmd + K **then** ⌘ Cmd + 0\
+\
+Unfold all\
+\
+⌘ Cmd + K **then** ⌘ Cmd + J\
+\
+Action\
+\
+Shortcut\
+\
+Fold code\
+\
+^ Ctrl + ⇧ Shift + \[\
+\
+Unfold code\
+\
+^ Ctrl + ⇧ Shift + \]\
+\
+Fold all\
+\
+^ Ctrl + K **then** ^ Ctrl + 0\
+\
+Unfold all\
+\
+^ Ctrl + K **then** ^ Ctrl + J\
+\
+Multi-cursor[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#multi-cursor)\
+\
+------------------------------------------------------------------------------------------------------------------------\
+\
+Windows\
+\
+macOS\
+\
+Linux\
+\
+Action\
+\
+Shortcut\
+\
+Add cursor at click position\
+\
+⎇ Alt + Left Button\
+\
+Add cursor above\
+\
+^ Ctrl + ⎇ Alt + ↑ Up\
+\
+Add cursor below\
+\
+^ Ctrl + ⎇ Alt + ↓ Down\
+\
+Add cursors to line ends\
+\
+⇧ Shift + ⎇ Alt + I\
+\
+Clear multiple cursors\
+\
+⎋ Esc\
+\
+Action\
+\
+Shortcut\
+\
+Add cursor at click position\
+\
+⌥ Option + Left Button\
+\
+Add cursor above\
+\
+^ Ctrl + ⌥ Option + ↑ Up\
+\
+Add cursor below\
+\
+^ Ctrl + ⌥ Option + ↓ Down\
+\
+Add cursors to line ends\
+\
+⇧ Shift + ⌥ Option + I\
+\
+Clear multiple cursors\
+\
+⎋ Esc\
+\
+Action\
+\
+Shortcut\
+\
+Add cursor at click position\
+\
+⎇ Alt + Left Button\
+\
+Add cursor above\
+\
+^ Ctrl + ⎇ Alt + ↑ Up\
+\
+Add cursor below\
+\
+^ Ctrl + ⎇ Alt + ↓ Down\
+\
+Add cursors to line ends\
+\
+⇧ Shift + ⎇ Alt + I\
+\
+Clear multiple cursors\
+\
+⎋ Esc\
+\
+Formatting[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#formatting)\
+\
+--------------------------------------------------------------------------------------------------------------------\
+\
+Windows\
+\
+macOS\
+\
+Linux\
+\
+Action\
+\
+Shortcut\
+\
+Format document\
+\
+⇧ Shift + ⎇ Alt + F\
+\
+Action\
+\
+Shortcut\
+\
+Format document\
+\
+⇧ Shift + ⌘ Cmd + F\
+\
+Action\
+\
+Shortcut\
+\
+Format document\
+\
+^ Ctrl + ⇧ Shift + I\
+\
+Search & Navigation[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/keyboard-shortcuts#search-and-navigation)\
+\
+----------------------------------------------------------------------------------------------------------------------------------------\
+\
+[PreviousCode](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code)\
+[NextCommon issues](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/common-issues)\
+\
+Last updated 10 days ago\
+\
+Was this helpful?

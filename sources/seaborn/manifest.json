@@ -1,0 +1,1345 @@
+{
+  "pages": {
+    "api": {
+      "url": "https://seaborn.pydata.org/api.html",
+      "last_hash": "efbd6e949c3b6adfd873ea97bd3cc6b06b3e383cda6dfaab8bc6ff9d09d84316",
+      "last_fetched": "2026-11-08T04:57:39.534940+00:00",
+      "title": "API reference — seaborn 0.13.2 documentation"
+    },
+    "citing": {
+      "url": "https://seaborn.pydata.org/citing.html",
+      "last_hash": "597eb48994ab3561abf515f914fe295044e0d03fb85b73b17204e87814fa7c22",
+      "last_fetched": "2026-11-08T04:57:40.514408+00:00",
+      "title": "Citing and logo — seaborn 0.13.2 documentation"
+    },
+    "examples-anscombes_quartet": {
+      "url": "https://seaborn.pydata.org/examples/anscombes_quartet.html",
+      "last_hash": "08336be27e2b256647577cef155f9c1df2baabc07a637a0b58c607cab740b4d6",
+      "last_fetched": "2026-11-08T04:57:41.348774+00:00",
+      "title": "Anscombe’s quartet — seaborn 0.13.2 documentation"
+    },
+    "examples-different_scatter_variables": {
+      "url": "https://seaborn.pydata.org/examples/different_scatter_variables.html",
+      "last_hash": "66132d836cacdef0631e1a458c51c461e4f8a8c121dca057b50d95c409c0a69b",
+      "last_fetched": "2026-11-08T04:57:42.288920+00:00",
+      "title": "Scatterplot with multiple semantics — seaborn 0.13.2 documentation"
+    },
+    "examples-errorband_lineplots": {
+      "url": "https://seaborn.pydata.org/examples/errorband_lineplots.html",
+      "last_hash": "06e35ca2b1f87dd6879ea2ad1ad821c96da9ab095ebb0876fb10d1d8532fe5bb",
+      "last_fetched": "2026-11-08T04:57:43.212759+00:00",
+      "title": "Timeseries plot with error bands — seaborn 0.13.2 documentation"
+    },
+    "examples-faceted_histogram": {
+      "url": "https://seaborn.pydata.org/examples/faceted_histogram.html",
+      "last_hash": "66cd6aea715b237f8f636a8895dbd310fd344be832050bfede6c03608bf07599",
+      "last_fetched": "2026-11-08T04:57:44.044270+00:00",
+      "title": "Facetting histograms by subsets of data — seaborn 0.13.2 documentation"
+    },
+    "examples-faceted_lineplot": {
+      "url": "https://seaborn.pydata.org/examples/faceted_lineplot.html",
+      "last_hash": "1487d4d2c8875f630a2121e873b81362609fdc7a24df4ab88f9a4af25b559bad",
+      "last_fetched": "2026-11-08T04:57:44.886696+00:00",
+      "title": "Line plots on multiple facets — seaborn 0.13.2 documentation"
+    },
+    "examples-grouped_barplot": {
+      "url": "https://seaborn.pydata.org/examples/grouped_barplot.html",
+      "last_hash": "2885e2930055fc03f268efec2e3a2ec736937efba9795370fe21351dc20c9852",
+      "last_fetched": "2026-11-08T04:57:45.733275+00:00",
+      "title": "Grouped barplots — seaborn 0.13.2 documentation"
+    },
+    "examples-grouped_boxplot": {
+      "url": "https://seaborn.pydata.org/examples/grouped_boxplot.html",
+      "last_hash": "d7f21771c7c844c373add1c488ae48f6ec557cdf45e42d5678b2d553410322a8",
+      "last_fetched": "2026-11-08T04:57:46.642909+00:00",
+      "title": "Grouped boxplots — seaborn 0.13.2 documentation"
+    },
+    "examples-grouped_violinplots": {
+      "url": "https://seaborn.pydata.org/examples/grouped_violinplots.html",
+      "last_hash": "476ae05133032d042844ce7e9b232b9a81ffc006183f539404b7ad021170b9a2",
+      "last_fetched": "2026-11-08T04:57:47.466825+00:00",
+      "title": "Grouped violinplots with split violins — seaborn 0.13.2 documentation"
+    },
+    "examples-heat_scatter": {
+      "url": "https://seaborn.pydata.org/examples/heat_scatter.html",
+      "last_hash": "d5cc2006bc29432dd0faa3692d3b7bbbcd3175f823a94d5a89c77849a59eed0e",
+      "last_fetched": "2026-11-08T04:57:48.313683+00:00",
+      "title": "Scatterplot heatmap — seaborn 0.13.2 documentation"
+    },
+    "examples-hexbin_marginals": {
+      "url": "https://seaborn.pydata.org/examples/hexbin_marginals.html",
+      "last_hash": "7234a417670270c4b363b1666ec7609cf54471473a32bf0e2a7048ddbb4716d7",
+      "last_fetched": "2026-11-08T04:57:49.193243+00:00",
+      "title": "Hexbin plot with marginal distributions — seaborn 0.13.2 documentation"
+    },
+    "examples-histogram_stacked": {
+      "url": "https://seaborn.pydata.org/examples/histogram_stacked.html",
+      "last_hash": "f08859ea9a09e05ba0dbde094b3e9c0c7efbf8b61fa23ff87c84bd246d20c3c4",
+      "last_fetched": "2026-11-08T04:57:50.094609+00:00",
+      "title": "Stacked histogram on a log scale — seaborn 0.13.2 documentation"
+    },
+    "examples-horizontal_boxplot": {
+      "url": "https://seaborn.pydata.org/examples/horizontal_boxplot.html",
+      "last_hash": "c1b6e95c1f35c8f442e563340c8e776f33b0b26ac351edb49305b25a70caabcd",
+      "last_fetched": "2026-11-08T04:57:51.088472+00:00",
+      "title": "Horizontal boxplot with observations — seaborn 0.13.2 documentation"
+    },
+    "examples-index": {
+      "url": "https://seaborn.pydata.org/examples/index.html",
+      "last_hash": "93c5d3ef39b4f424136a44de4b46d22e36c2683be9eb97469742c291ecfe80cf",
+      "last_fetched": "2026-11-08T04:57:52.147396+00:00",
+      "title": "Example gallery — seaborn 0.13.2 documentation"
+    },
+    "examples-jitter_stripplot": {
+      "url": "https://seaborn.pydata.org/examples/jitter_stripplot.html",
+      "last_hash": "3c2e7e9bd4b2c640cacbad7270aa07adab29ff337e8feeeec18adb6fd46e644f",
+      "last_fetched": "2026-11-08T04:57:53.044757+00:00",
+      "title": "Conditional means with observations — seaborn 0.13.2 documentation"
+    },
+    "examples-joint_histogram": {
+      "url": "https://seaborn.pydata.org/examples/joint_histogram.html",
+      "last_hash": "f7394370713643be203eb10b65cbb5e6f42772012b344e18f3ea67c68bf79eb1",
+      "last_fetched": "2026-11-08T04:57:53.857109+00:00",
+      "title": "Joint and marginal histograms — seaborn 0.13.2 documentation"
+    },
+    "examples-joint_kde": {
+      "url": "https://seaborn.pydata.org/examples/joint_kde.html",
+      "last_hash": "80fb5eda76e72a426d75250f1411ccaeed04767528d30e3cec8c78d5c1846ca3",
+      "last_fetched": "2026-11-08T04:57:54.658247+00:00",
+      "title": "Joint kernel density estimate — seaborn 0.13.2 documentation"
+    },
+    "examples-kde_ridgeplot": {
+      "url": "https://seaborn.pydata.org/examples/kde_ridgeplot.html",
+      "last_hash": "9bf2d607fac46980b9a0ac22d9a7a94b91de0af10d41c6125c314dd50d53229e",
+      "last_fetched": "2026-11-08T04:57:55.524992+00:00",
+      "title": "Overlapping densities (‘ridge plot’) — seaborn 0.13.2 documentation"
+    },
+    "examples-large_distributions": {
+      "url": "https://seaborn.pydata.org/examples/large_distributions.html",
+      "last_hash": "508dfc4ba269b3f466df6d524f32663bc22369b898b412633ca51ffc0c6d2ff8",
+      "last_fetched": "2026-11-08T04:57:56.328312+00:00",
+      "title": "Plotting large distributions — seaborn 0.13.2 documentation"
+    },
+    "examples-layered_bivariate_plot": {
+      "url": "https://seaborn.pydata.org/examples/layered_bivariate_plot.html",
+      "last_hash": "af1d7f77ee4999f10caa025251d1722ee1d24775e619544e4926f11db59ea81b",
+      "last_fetched": "2026-11-08T04:57:57.163856+00:00",
+      "title": "Bivariate plot with multiple elements — seaborn 0.13.2 documentation"
+    },
+    "examples-logistic_regression": {
+      "url": "https://seaborn.pydata.org/examples/logistic_regression.html",
+      "last_hash": "fd9ea087fd6cb203bf8da8936194aea50a4bbe0e0505ec4cca623c8a5281749d",
+      "last_fetched": "2026-11-08T04:57:58.079586+00:00",
+      "title": "Faceted logistic regression — seaborn 0.13.2 documentation"
+    },
+    "examples-many_facets": {
+      "url": "https://seaborn.pydata.org/examples/many_facets.html",
+      "last_hash": "77a9a46e6c6359abdf6978146d039df9dbb738e448826bcdfc47f26512b9e88a",
+      "last_fetched": "2026-11-08T04:57:58.928010+00:00",
+      "title": "Plotting on a large number of facets — seaborn 0.13.2 documentation"
+    },
+    "examples-many_pairwise_correlations": {
+      "url": "https://seaborn.pydata.org/examples/many_pairwise_correlations.html",
+      "last_hash": "3794ee3b2f9aa9acead1a239e6672c8ceebc1c6c7b7d6bc1731f963475fa1418",
+      "last_fetched": "2026-11-08T04:57:59.734018+00:00",
+      "title": "Plotting a diagonal correlation matrix — seaborn 0.13.2 documentation"
+    },
+    "examples-marginal_ticks": {
+      "url": "https://seaborn.pydata.org/examples/marginal_ticks.html",
+      "last_hash": "1a4aa7f40e4cb47a2abfe277a0fca1648dd52fc6744f9975657f4a26e5f2d5eb",
+      "last_fetched": "2026-11-08T04:58:00.605898+00:00",
+      "title": "Scatterplot with marginal ticks — seaborn 0.13.2 documentation"
+    },
+    "examples-multiple_bivariate_kde": {
+      "url": "https://seaborn.pydata.org/examples/multiple_bivariate_kde.html",
+      "last_hash": "285767cab46b14bb09a8983ffd0d6a76aa6335cd221c96f540701f49f817a385",
+      "last_fetched": "2026-11-08T04:58:01.446975+00:00",
+      "title": "Multiple bivariate KDE plots — seaborn 0.13.2 documentation"
+    },
+    "examples-multiple_conditional_kde": {
+      "url": "https://seaborn.pydata.org/examples/multiple_conditional_kde.html",
+      "last_hash": "b416b375ca3a1f60375ab9be401682f493df93721bd5b0f16991a09a2b3f8c5d",
+      "last_fetched": "2026-11-08T04:58:02.266040+00:00",
+      "title": "Conditional kernel density estimate — seaborn 0.13.2 documentation"
+    },
+    "examples-multiple_ecdf": {
+      "url": "https://seaborn.pydata.org/examples/multiple_ecdf.html",
+      "last_hash": "38ee9b001ca4a17989190642e3603fcbed9e5ab9247b6e2470179ec56215b004",
+      "last_fetched": "2026-11-08T04:58:03.082896+00:00",
+      "title": "Facetted ECDF plots — seaborn 0.13.2 documentation"
+    },
+    "examples-multiple_regression": {
+      "url": "https://seaborn.pydata.org/examples/multiple_regression.html",
+      "last_hash": "0ed422538c965189d629affdcc79b3a93b19d1b5389e5b444627ab92562ea98a",
+      "last_fetched": "2026-11-08T04:58:03.893991+00:00",
+      "title": "Multiple linear regression — seaborn 0.13.2 documentation"
+    },
+    "examples-pair_grid_with_kde": {
+      "url": "https://seaborn.pydata.org/examples/pair_grid_with_kde.html",
+      "last_hash": "b3bf41d654c429d379baf5afbee9a817cb551e1884ebef43ba89e9f462d99e29",
+      "last_fetched": "2026-11-08T04:58:04.723002+00:00",
+      "title": "Paired density and scatterplot matrix — seaborn 0.13.2 documentation"
+    },
+    "examples-paired_pointplots": {
+      "url": "https://seaborn.pydata.org/examples/paired_pointplots.html",
+      "last_hash": "508b295d03df72d4403353ec069b3dfa9bd299d6a70e1729fa583479378e8e51",
+      "last_fetched": "2026-11-08T04:58:05.542863+00:00",
+      "title": "Paired categorical plots — seaborn 0.13.2 documentation"
+    },
+    "examples-pairgrid_dotplot": {
+      "url": "https://seaborn.pydata.org/examples/pairgrid_dotplot.html",
+      "last_hash": "5d9be925259e67d29fcda8f3a8ca93e01107f3805069ab8c17d6fcc47ab6d2bf",
+      "last_fetched": "2026-11-08T04:58:06.375072+00:00",
+      "title": "Dot plot with several variables — seaborn 0.13.2 documentation"
+    },
+    "examples-palette_choices": {
+      "url": "https://seaborn.pydata.org/examples/palette_choices.html",
+      "last_hash": "c1e6908f80e94f12ab569cfd3382a8a4a5786589b9faf30cd9e2cea73c899cb7",
+      "last_fetched": "2026-11-08T04:58:07.264430+00:00",
+      "title": "Color palette choices — seaborn 0.13.2 documentation"
+    },
+    "examples-palette_generation": {
+      "url": "https://seaborn.pydata.org/examples/palette_generation.html",
+      "last_hash": "bf7cb209a4e9c374963f96c347867c8ae2cfa65202091bac19e325c9d0e307b8",
+      "last_fetched": "2026-11-08T04:58:08.074320+00:00",
+      "title": "Different cubehelix palettes — seaborn 0.13.2 documentation"
+    },
+    "examples-part_whole_bars": {
+      "url": "https://seaborn.pydata.org/examples/part_whole_bars.html",
+      "last_hash": "dcfa8eb1cac46f9a95fd1aa11114716c2aa55e90cd892461a862aad1c44809ea",
+      "last_fetched": "2026-11-08T04:58:08.882437+00:00",
+      "title": "Horizontal bar plots — seaborn 0.13.2 documentation"
+    },
+    "examples-pointplot_anova": {
+      "url": "https://seaborn.pydata.org/examples/pointplot_anova.html",
+      "last_hash": "c88bfd25fd61ebd847769e82fe7a749ad969b699926b6fac54bb716f413ac031",
+      "last_fetched": "2026-11-08T04:58:09.686362+00:00",
+      "title": "Plotting a three-way ANOVA — seaborn 0.13.2 documentation"
+    },
+    "examples-radial_facets": {
+      "url": "https://seaborn.pydata.org/examples/radial_facets.html",
+      "last_hash": "512d4529eff81bf94d061d3b1aacc065857976deef932cf90c008ebd41488996",
+      "last_fetched": "2026-11-08T04:58:10.492535+00:00",
+      "title": "FacetGrid with custom projection — seaborn 0.13.2 documentation"
+    },
+    "examples-regression_marginals": {
+      "url": "https://seaborn.pydata.org/examples/regression_marginals.html",
+      "last_hash": "ae8c1b9c646060142035bac29ca6ab5f72c76f50ee6e685dc3d1a63b266448e2",
+      "last_fetched": "2026-11-08T04:58:11.287948+00:00",
+      "title": "Linear regression with marginal distributions — seaborn 0.13.2 documentation"
+    },
+    "examples-residplot": {
+      "url": "https://seaborn.pydata.org/examples/residplot.html",
+      "last_hash": "b495f9e866c319573811e5e7fdfe2b3a2f01cdc0d26affce01549c41959dc9be",
+      "last_fetched": "2026-11-08T04:58:12.118920+00:00",
+      "title": "Plotting model residuals — seaborn 0.13.2 documentation"
+    },
+    "examples-scatter_bubbles": {
+      "url": "https://seaborn.pydata.org/examples/scatter_bubbles.html",
+      "last_hash": "abe7d573bcf7b3f6936d47274e24dd6011c2500e793585847339350225245672",
+      "last_fetched": "2026-11-08T04:58:12.954243+00:00",
+      "title": "Scatterplot with varying point sizes and hues — seaborn 0.13.2 documentation"
+    },
+    "examples-scatterplot_categorical": {
+      "url": "https://seaborn.pydata.org/examples/scatterplot_categorical.html",
+      "last_hash": "e9fcaf6930b3a12756095cb9ea6b396dc1ca2f98dcbb489d52b1302a36da5b51",
+      "last_fetched": "2026-11-08T04:58:13.763423+00:00",
+      "title": "Scatterplot with categorical variables — seaborn 0.13.2 documentation"
+    },
+    "examples-scatterplot_matrix": {
+      "url": "https://seaborn.pydata.org/examples/scatterplot_matrix.html",
+      "last_hash": "4527ba13a931c96192d6e0da18470768bdd1f5b31d09a4c296f89b6d240c30e8",
+      "last_fetched": "2026-11-08T04:58:14.610761+00:00",
+      "title": "Scatterplot Matrix — seaborn 0.13.2 documentation"
+    },
+    "examples-scatterplot_sizes": {
+      "url": "https://seaborn.pydata.org/examples/scatterplot_sizes.html",
+      "last_hash": "862e22300eb3faec239bf67ce4ce1ce11bebd390821c86c5896f2baee61c21f9",
+      "last_fetched": "2026-11-08T04:58:15.418558+00:00",
+      "title": "Scatterplot with continuous hues and sizes — seaborn 0.13.2 documentation"
+    },
+    "examples-simple_violinplots": {
+      "url": "https://seaborn.pydata.org/examples/simple_violinplots.html",
+      "last_hash": "5cd483432b14b99e5b6a30d6b2034b27f601cad93b875406787cb7a86fdc1065",
+      "last_fetched": "2026-11-08T04:58:16.235075+00:00",
+      "title": "Horizontal, unfilled violinplots — seaborn 0.13.2 documentation"
+    },
+    "examples-smooth_bivariate_kde": {
+      "url": "https://seaborn.pydata.org/examples/smooth_bivariate_kde.html",
+      "last_hash": "fbd6eee88db2da1a7e47ee5116ad7dd6f0d8223f62e6f60969af01be026fe455",
+      "last_fetched": "2026-11-08T04:58:17.050645+00:00",
+      "title": "Smooth kernel density with marginal histograms — seaborn 0.13.2 documentation"
+    },
+    "examples-spreadsheet_heatmap": {
+      "url": "https://seaborn.pydata.org/examples/spreadsheet_heatmap.html",
+      "last_hash": "c287d7fcd4604f25dd3b15bbe04cda831acd3bf7210d2cfe691ee598dae0d9bd",
+      "last_fetched": "2026-11-08T04:58:17.931505+00:00",
+      "title": "Annotated heatmaps — seaborn 0.13.2 documentation"
+    },
+    "examples-strip_regplot": {
+      "url": "https://seaborn.pydata.org/examples/strip_regplot.html",
+      "last_hash": "a12407023ec43af09477412457959877e566146f14b59116f267f72f3e609674",
+      "last_fetched": "2026-11-08T04:58:18.773270+00:00",
+      "title": "Regression fit over a strip plot — seaborn 0.13.2 documentation"
+    },
+    "examples-structured_heatmap": {
+      "url": "https://seaborn.pydata.org/examples/structured_heatmap.html",
+      "last_hash": "95b96f95fce1ba5c665c1c531c3dc81bd6fa6131c234ea2e08f8ce51e7c08d38",
+      "last_fetched": "2026-11-08T04:58:19.612789+00:00",
+      "title": "Discovering structure in heatmap data — seaborn 0.13.2 documentation"
+    },
+    "examples-three_variable_histogram": {
+      "url": "https://seaborn.pydata.org/examples/three_variable_histogram.html",
+      "last_hash": "826f7b1b4cee00000d9171395d2b9118897ceb962c456e18172f3dff29a873bc",
+      "last_fetched": "2026-11-08T04:58:20.449409+00:00",
+      "title": "Trivariate histogram with two categorical variables — seaborn 0.13.2 documentation"
+    },
+    "examples-timeseries_facets": {
+      "url": "https://seaborn.pydata.org/examples/timeseries_facets.html",
+      "last_hash": "453bb1dd44edc91d3b71016adb07dc425bc15d28afffe37175394da6395611e8",
+      "last_fetched": "2026-11-08T04:58:21.313275+00:00",
+      "title": "Small multiple time series — seaborn 0.13.2 documentation"
+    },
+    "examples-wide_data_lineplot": {
+      "url": "https://seaborn.pydata.org/examples/wide_data_lineplot.html",
+      "last_hash": "2fd01de7e50f2979e76646a879e74654ee6a72778201e1ef33762655efc7617d",
+      "last_fetched": "2026-11-08T04:58:22.169902+00:00",
+      "title": "Lineplot from a wide-form dataset — seaborn 0.13.2 documentation"
+    },
+    "examples-wide_form_violinplot": {
+      "url": "https://seaborn.pydata.org/examples/wide_form_violinplot.html",
+      "last_hash": "d97ed8b7aac98c63be1b285b26042c0b2cda6f46db62ed398f5cd2d1f4d93bd8",
+      "last_fetched": "2026-11-08T04:58:22.980258+00:00",
+      "title": "Violinplot from a wide-form dataset — seaborn 0.13.2 documentation"
+    },
+    "faq": {
+      "url": "https://seaborn.pydata.org/faq.html",
+      "last_hash": "4a5578fe61db18f928a0794436c1b2652f5aecd2c7bc62600aac2aadbab334c7",
+      "last_fetched": "2026-11-08T04:58:23.890734+00:00",
+      "title": "Frequently asked questions — seaborn 0.13.2 documentation"
+    },
+    "index": {
+      "url": "https://seaborn.pydata.org/index.html",
+      "last_hash": "da87e88a45ccbece714cf4f1beb8996606e59cdaf8896be5b241d5f34947ca4c",
+      "last_fetched": "2026-11-08T04:58:24.740669+00:00",
+      "title": "seaborn: statistical data visualization — seaborn 0.13.2 documentation"
+    },
+    "tutorial": {
+      "url": "https://seaborn.pydata.org/tutorial.html",
+      "last_hash": "423d4f80390778d0739d2192cf94438b594b8b8d17ceb7e71d9faad2055ebd91",
+      "last_fetched": "2026-11-08T04:58:25.667641+00:00",
+      "title": "User guide and tutorial — seaborn 0.13.2 documentation"
+    },
+    "tutorial-aesthetics": {
+      "url": "https://seaborn.pydata.org/tutorial/aesthetics.html",
+      "last_hash": "49f7d4d4604525882d6fef443ea7eec316f4fae0a4e76754d37591a7d5503404",
+      "last_fetched": "2026-11-08T04:58:26.582316+00:00",
+      "title": "Controlling figure aesthetics — seaborn 0.13.2 documentation"
+    },
+    "tutorial-axis_grids": {
+      "url": "https://seaborn.pydata.org/tutorial/axis_grids.html",
+      "last_hash": "2fa25401e81cafd3b9b7a4bcea0c11a7a641ce6dd557e18b12bfcce754e5e96a",
+      "last_fetched": "2026-11-08T04:58:27.564227+00:00",
+      "title": "Building structured multi-plot grids — seaborn 0.13.2 documentation"
+    },
+    "tutorial-categorical": {
+      "url": "https://seaborn.pydata.org/tutorial/categorical.html",
+      "last_hash": "3550805170dfae3a719650e9da46c7d480062bac654568c92e709d3ec75796b7",
+      "last_fetched": "2026-11-08T04:58:28.552624+00:00",
+      "title": "Visualizing categorical data — seaborn 0.13.2 documentation"
+    },
+    "tutorial-color_palettes": {
+      "url": "https://seaborn.pydata.org/tutorial/color_palettes.html",
+      "last_hash": "27625a419301bcffe1a1bf2243cd91238bc4ae7662da64bc42fe72d7874be413",
+      "last_fetched": "2026-11-08T04:58:29.431392+00:00",
+      "title": "Choosing color palettes — seaborn 0.13.2 documentation"
+    },
+    "tutorial-data_structure": {
+      "url": "https://seaborn.pydata.org/tutorial/data_structure.html",
+      "last_hash": "0a1cc3a6809709277d6d48883e6c281a53e9ce5f91ecfee4be2340811068ad60",
+      "last_fetched": "2026-11-08T04:58:30.471841+00:00",
+      "title": "Data structures accepted by seaborn — seaborn 0.13.2 documentation"
+    },
+    "tutorial-distributions": {
+      "url": "https://seaborn.pydata.org/tutorial/distributions.html",
+      "last_hash": "0fecd38f606909f1ed6be30ec61918ae12be4a437fb90c92568615756dd75e4c",
+      "last_fetched": "2026-11-08T04:58:31.549095+00:00",
+      "title": "Visualizing distributions of data — seaborn 0.13.2 documentation"
+    },
+    "tutorial-error_bars": {
+      "url": "https://seaborn.pydata.org/tutorial/error_bars.html",
+      "last_hash": "5a9fb6c93bebcbc59dba48fb998cf4c434b83f3f294d6e7c20ec3b6ff8776090",
+      "last_fetched": "2026-11-08T04:58:32.429708+00:00",
+      "title": "Statistical estimation and error bars — seaborn 0.13.2 documentation"
+    },
+    "tutorial-function_overview": {
+      "url": "https://seaborn.pydata.org/tutorial/function_overview.html",
+      "last_hash": "34e13f1c468f818336c8ff36c80fd433b55288289ea05b2aac48988940b2552c",
+      "last_fetched": "2026-11-08T04:58:33.357741+00:00",
+      "title": "Overview of seaborn plotting functions — seaborn 0.13.2 documentation"
+    },
+    "tutorial-introduction": {
+      "url": "https://seaborn.pydata.org/tutorial/introduction.html",
+      "last_hash": "204454867730b2d51d41041c7ddf3d31cd6d069c0c610d1788b67ee2837e73f8",
+      "last_fetched": "2026-11-08T04:58:34.311196+00:00",
+      "title": "An introduction to seaborn — seaborn 0.13.2 documentation"
+    },
+    "tutorial-objects_interface": {
+      "url": "https://seaborn.pydata.org/tutorial/objects_interface.html",
+      "last_hash": "6dadbc3fad9a31b622a8b3d6604f9a71843e772bf04c622a4c789f316a5e8fb3",
+      "last_fetched": "2026-11-08T04:58:35.397888+00:00",
+      "title": "The seaborn.objects interface — seaborn 0.13.2 documentation"
+    },
+    "tutorial-properties": {
+      "url": "https://seaborn.pydata.org/tutorial/properties.html",
+      "last_hash": "1701a8c9dc346451a9738b6e9a616bc0c54e3acc94a8c42861a726779d343425",
+      "last_fetched": "2026-11-08T04:58:36.385581+00:00",
+      "title": "Properties of Mark objects — seaborn 0.13.2 documentation"
+    },
+    "tutorial-regression": {
+      "url": "https://seaborn.pydata.org/tutorial/regression.html",
+      "last_hash": "5ed76428f8efabafad6cc0795a954fc98d8223066289494dbf950488c6aa12c4",
+      "last_fetched": "2026-11-08T04:58:37.356749+00:00",
+      "title": "Estimating regression fits — seaborn 0.13.2 documentation"
+    },
+    "tutorial-relational": {
+      "url": "https://seaborn.pydata.org/tutorial/relational.html",
+      "last_hash": "db87f21e406bc6e04923c556115742e6098fe1a465215a01e25badeed3becbf0",
+      "last_fetched": "2026-11-08T04:58:38.365879+00:00",
+      "title": "Visualizing statistical relationships — seaborn 0.13.2 documentation"
+    },
+    "genindex": {
+      "url": "https://seaborn.pydata.org/genindex.html",
+      "last_hash": "c238403a968df09aa3f9d4f543ad39f1b63d7615ae10981ec130064c99b742d3",
+      "last_fetched": "2026-11-08T04:58:39.210965+00:00",
+      "title": "Index — seaborn 0.13.2 documentation"
+    },
+    "py-modindex": {
+      "url": "https://seaborn.pydata.org/py-modindex.html",
+      "last_hash": "7e862a41ad26feea914d8c53d9d07725c8b8155b2736df1791a336736808a076",
+      "last_fetched": "2026-11-08T04:58:39.942148+00:00",
+      "title": "Page not found · GitHub Pages"
+    },
+    "search": {
+      "url": "https://seaborn.pydata.org/search.html",
+      "last_hash": "53944fa4a2e1ea18c96811958b20910f3cacf761e2adfaf88b7af04889b64626",
+      "last_fetched": "2026-11-08T04:58:40.804328+00:00",
+      "title": "Search - seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.html",
+      "last_hash": "a2fb2426136cdcd7e1cd69f6693678c786c4fcf090dc269389af98e77f08ca08",
+      "last_fetched": "2026-11-08T04:58:41.768152+00:00",
+      "title": "seaborn.FacetGrid — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.html",
+      "last_hash": "9c88573e292dabcb703f6601523bbc1830041c07949846d1901cc04b122ebb32",
+      "last_fetched": "2026-11-08T04:58:42.745865+00:00",
+      "title": "seaborn.JointGrid — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.html",
+      "last_hash": "cb5cc8c01f3624de6a4bc0901f3a1dfdc4ddb86bddeadd40eccc04c1eb520180",
+      "last_fetched": "2026-11-08T04:58:43.707781+00:00",
+      "title": "seaborn.PairGrid — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.axes_style": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.axes_style.html",
+      "last_hash": "de0255b17691ee6dd00dc30ed4f6553a773a1c35fed68121bea80f43aad8f429",
+      "last_fetched": "2026-11-08T04:58:44.542868+00:00",
+      "title": "seaborn.axes_style — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.barplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.barplot.html",
+      "last_hash": "d068e3508cb810aa8dcf8dfef22f010418d15ec983b8f4ec74e1003d6a6654ef",
+      "last_fetched": "2026-11-08T04:58:45.465855+00:00",
+      "title": "seaborn.barplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.blend_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.blend_palette.html",
+      "last_hash": "8f74e09bda4bdce3c2d72a093f99f9701beab966074b4562c6535b8cbc807a45",
+      "last_fetched": "2026-11-08T04:58:46.256341+00:00",
+      "title": "seaborn.blend_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.boxenplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.boxenplot.html",
+      "last_hash": "70ddfd9352fa991011295d95f513b528632de2bbfe76e5a6b2271fe9382fab82",
+      "last_fetched": "2026-11-08T04:58:47.140496+00:00",
+      "title": "seaborn.boxenplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.boxplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.boxplot.html",
+      "last_hash": "2d5955a9a485ef79cc84faa027f6ea3ebef6a1da7c78263a9fe04dd640be74e4",
+      "last_fetched": "2026-11-08T04:58:48.052219+00:00",
+      "title": "seaborn.boxplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.catplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.catplot.html",
+      "last_hash": "b5c1181cc8d81026884ecd37722aa1b70e20b2b8454d597d9a63161d14688002",
+      "last_fetched": "2026-11-08T04:58:48.996548+00:00",
+      "title": "seaborn.catplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.choose_colorbrewer_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.choose_colorbrewer_palette.html",
+      "last_hash": "5d93e5631c0b3b1e55186b91c8ee5605e1514e82af3279df858c4e25b6c2da77",
+      "last_fetched": "2026-11-08T04:58:49.786336+00:00",
+      "title": "seaborn.choose_colorbrewer_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.choose_cubehelix_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.choose_cubehelix_palette.html",
+      "last_hash": "9b0cf57f72fed5df5c3a6a2ee405bb1d226a0d1085ff3aa30e65082d35027dfc",
+      "last_fetched": "2026-11-08T04:58:50.592440+00:00",
+      "title": "seaborn.choose_cubehelix_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.choose_dark_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.choose_dark_palette.html",
+      "last_hash": "009db9283ab59bc0bd1319aea2d4a66419aae54659138a1a8ed4d6cc70707792",
+      "last_fetched": "2026-11-08T04:58:51.382381+00:00",
+      "title": "seaborn.choose_dark_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.choose_diverging_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.choose_diverging_palette.html",
+      "last_hash": "44e501496c87ae50c09a3a562f735844eb146236643fce156179ba68c7b72db6",
+      "last_fetched": "2026-11-08T04:58:52.176925+00:00",
+      "title": "seaborn.choose_diverging_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.choose_light_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.choose_light_palette.html",
+      "last_hash": "e98dfcdbb13c82fd9a933c1473f90244415619ea8a60a7a37d9a918e05eb21d8",
+      "last_fetched": "2026-11-08T04:58:52.973742+00:00",
+      "title": "seaborn.choose_light_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.clustermap": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.clustermap.html",
+      "last_hash": "45c6a524a211bcf8b561309d441d388cb45a4f99b68614ab28df350ba69c7330",
+      "last_fetched": "2026-11-08T04:58:53.848138+00:00",
+      "title": "seaborn.clustermap — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.color_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.color_palette.html",
+      "last_hash": "6c585eb1e23f81449d2b28bc3d4b3ff7cae0f780e0158b957a66f2a034685a85",
+      "last_fetched": "2026-11-08T04:58:54.697498+00:00",
+      "title": "seaborn.color_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.countplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.countplot.html",
+      "last_hash": "5c534f2f2dedc9dbc58107108b73b395c51839fe14da220dd6bf2136e8617f41",
+      "last_fetched": "2026-11-08T04:58:55.626989+00:00",
+      "title": "seaborn.countplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.crayon_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.crayon_palette.html",
+      "last_hash": "34106ba36feacd06d2aeca07ee5f0cdf8350b9d3aaf75d607fc81881b1f1445f",
+      "last_fetched": "2026-11-08T04:58:56.425501+00:00",
+      "title": "seaborn.crayon_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.cubehelix_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.cubehelix_palette.html",
+      "last_hash": "2a91458948782ef4b553d95dd7010549dd42382a1653d63362667b80e7e129c6",
+      "last_fetched": "2026-11-08T04:58:57.236823+00:00",
+      "title": "seaborn.cubehelix_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.dark_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.dark_palette.html",
+      "last_hash": "b560c7eea0756b150a23eaf9a41f86eec9a6ed9669869602a78803db011e2a68",
+      "last_fetched": "2026-11-08T04:58:58.037369+00:00",
+      "title": "seaborn.dark_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.desaturate": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.desaturate.html",
+      "last_hash": "005b0bd0f4fed2ae4429fb892acc4a59c1c65f92dd1b9dbd623a275f6e62d8dd",
+      "last_fetched": "2026-11-08T04:58:58.820345+00:00",
+      "title": "seaborn.desaturate — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.despine": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.despine.html",
+      "last_hash": "86bfb43a5d070928369e14ca909e66abc80e8c56df829fe89f9b4f0bc0b2823d",
+      "last_fetched": "2026-11-08T04:58:59.715484+00:00",
+      "title": "seaborn.despine — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.displot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.displot.html",
+      "last_hash": "ce6b876989f57365b0e50826daa56ba33f7dd3c04ace497ffddde57bbed2ea0a",
+      "last_fetched": "2026-11-08T04:59:00.684334+00:00",
+      "title": "seaborn.displot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.distplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.distplot.html",
+      "last_hash": "0d86c35b79fa7cc0ea74105629bf652d7ed15a8bf43e035a1f7065e778a9340a",
+      "last_fetched": "2026-11-08T04:59:01.478704+00:00",
+      "title": "seaborn.distplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.diverging_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.diverging_palette.html",
+      "last_hash": "69d3b80fc8e7a99dd33a555f0da7e626a274c201888ee63ec368a894371a4f86",
+      "last_fetched": "2026-11-08T04:59:02.260471+00:00",
+      "title": "seaborn.diverging_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.ecdfplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.ecdfplot.html",
+      "last_hash": "3238fb17b55d60e5d327cebdb250d9b83bb17f7d8c5dee3da04116456a2754d9",
+      "last_fetched": "2026-11-08T04:59:03.193398+00:00",
+      "title": "seaborn.ecdfplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.get_data_home": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.get_data_home.html",
+      "last_hash": "cb27eea0221b0a4082b38170a8f9013de7dd0a453130f02707fd775472e62e4d",
+      "last_fetched": "2026-11-08T04:59:03.988765+00:00",
+      "title": "seaborn.get_data_home — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.get_dataset_names": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.get_dataset_names.html",
+      "last_hash": "d567ffef9aa97ae0b628cc7a6794615ccaa4f7f4e8123060f8fb1c4927e818b3",
+      "last_fetched": "2026-11-08T04:59:04.764114+00:00",
+      "title": "seaborn.get_dataset_names — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.heatmap": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.heatmap.html",
+      "last_hash": "89bc8d4358ca5a203066a93a6181ee67af97ff08c1ffe03f54a9bbc7c8cc565a",
+      "last_fetched": "2026-11-08T04:59:05.653959+00:00",
+      "title": "seaborn.heatmap — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.histplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.histplot.html",
+      "last_hash": "bda532d3e39a6b12c6201eefaea3ae6dd8e9e3a922b615c032145098b8d36050",
+      "last_fetched": "2026-11-08T04:59:06.650878+00:00",
+      "title": "seaborn.histplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.hls_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.hls_palette.html",
+      "last_hash": "5d8c6043496491dbd4e7dedd3bb9d2a6e5369e92fd8fda904c957720d13cd01e",
+      "last_fetched": "2026-11-08T04:59:07.446202+00:00",
+      "title": "seaborn.hls_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.husl_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.husl_palette.html",
+      "last_hash": "cbdf51c8ca45ef352e3b4fcd8a0742bf5466b248091963acbe5c4b0ee3ea58c8",
+      "last_fetched": "2026-11-08T04:59:08.242440+00:00",
+      "title": "seaborn.husl_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.jointplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.jointplot.html",
+      "last_hash": "a99e94431479a2098ec5233e81568c86a85382c89c484a86e93f5399da665435",
+      "last_fetched": "2026-11-08T04:59:09.138591+00:00",
+      "title": "seaborn.jointplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.kdeplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.kdeplot.html",
+      "last_hash": "d2f7d8070b39f55be76dd8b55cba5b8b43051ee50b5146e563e0d69043eac89f",
+      "last_fetched": "2026-11-08T04:59:10.165799+00:00",
+      "title": "seaborn.kdeplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.light_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.light_palette.html",
+      "last_hash": "58e883849c979d6c20f7f82c5ea7718ac2d3f4e222451b0fe57a1d9ead562246",
+      "last_fetched": "2026-11-08T04:59:10.965495+00:00",
+      "title": "seaborn.light_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.lineplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.lineplot.html",
+      "last_hash": "1a8c2f0468470f31162d2c4c3d637e1cccc624c5cbb5b73b79597c004124c009",
+      "last_fetched": "2026-11-08T04:59:12.070075+00:00",
+      "title": "seaborn.lineplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.lmplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.lmplot.html",
+      "last_hash": "d0a6f9a21f594325cff234726a2a38b43adc47cd592b7fd0d0823da7febe35b5",
+      "last_fetched": "2026-11-08T04:59:13.019748+00:00",
+      "title": "seaborn.lmplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.load_dataset": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.load_dataset.html",
+      "last_hash": "b7df812fd170d2e082312794f92d1c8e4a511bdbcf5e486cef8f552931a1969c",
+      "last_fetched": "2026-11-08T04:59:13.803321+00:00",
+      "title": "seaborn.load_dataset — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.move_legend": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.move_legend.html",
+      "last_hash": "c4c0fef5004e02f930fbf6095a7e6664a075062dcfdcada724eba7f82d0dba8f",
+      "last_fetched": "2026-11-08T04:59:14.660518+00:00",
+      "title": "seaborn.move_legend — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.mpl_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.mpl_palette.html",
+      "last_hash": "c8207a8e2f44fb018f98071367bfda8d9ca5962740d945b170107860bc7a3947",
+      "last_fetched": "2026-11-08T04:59:15.451528+00:00",
+      "title": "seaborn.mpl_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.pairplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.pairplot.html",
+      "last_hash": "41a712062da21c70c5ab76a2fb0af4f19d4bdc60fe05ac3b619f3cbbca9253a9",
+      "last_fetched": "2026-11-08T04:59:16.396298+00:00",
+      "title": "seaborn.pairplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.plotting_context": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.plotting_context.html",
+      "last_hash": "7106a4f074ca4fbdd1663ac6ff0d9543ce48806cd28db03db1a5fb7f99aed91a",
+      "last_fetched": "2026-11-08T04:59:17.204774+00:00",
+      "title": "seaborn.plotting_context — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.pointplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.pointplot.html",
+      "last_hash": "b7226a29f8fd9ade39a515fa24341aae14bfc656e80cbfe6f55dc6715dcf1e0a",
+      "last_fetched": "2026-11-08T04:59:18.116805+00:00",
+      "title": "seaborn.pointplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.regplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.regplot.html",
+      "last_hash": "44ab28cde4e15aedab70bec0b7d039f64a6086deb5682bb6556ff2278f2d31c8",
+      "last_fetched": "2026-11-08T04:59:19.026545+00:00",
+      "title": "seaborn.regplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.relplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.relplot.html",
+      "last_hash": "3a523d667a727034fec591843a4c8b645053e21e4ca45628d5d998486749f753",
+      "last_fetched": "2026-11-08T04:59:19.953859+00:00",
+      "title": "seaborn.relplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.reset_defaults": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.reset_defaults.html",
+      "last_hash": "18bd88638864ed8360ba8f035f7f68f1fd2b0e7926f32b0998152efe17fb3e03",
+      "last_fetched": "2026-11-08T04:59:20.793154+00:00",
+      "title": "seaborn.reset_defaults — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.reset_orig": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.reset_orig.html",
+      "last_hash": "65c5cf7c1bc92dc89aff23a13f279c78c0c7cc62b6c30b4e648e0d612fc50076",
+      "last_fetched": "2026-11-08T04:59:21.596773+00:00",
+      "title": "seaborn.reset_orig — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.residplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.residplot.html",
+      "last_hash": "35b03f6211400455a5c0bf2c4abf9cc9420357538638c759af6c706153b2cea5",
+      "last_fetched": "2026-11-08T04:59:22.454669+00:00",
+      "title": "seaborn.residplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.rugplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.rugplot.html",
+      "last_hash": "b63105d8fb34e4c92155d4dccd2ecfe61884b01c54627376a7a6e09a5bc1beb0",
+      "last_fetched": "2026-11-08T04:59:23.319679+00:00",
+      "title": "seaborn.rugplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.saturate": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.saturate.html",
+      "last_hash": "29b377d5b5558ff3727edb8eb250cd0bc06ff17685b1d40d622768f82ae1e258",
+      "last_fetched": "2026-11-08T04:59:24.097402+00:00",
+      "title": "seaborn.saturate — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.scatterplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.scatterplot.html",
+      "last_hash": "8be6292fc15b120e1252efd33b4f1ab791126236e5f25505d4e4c1f93851f6d6",
+      "last_fetched": "2026-11-08T04:59:25.037818+00:00",
+      "title": "seaborn.scatterplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set.html",
+      "last_hash": "305c6ec4bd663c7a35cd63dbe946fd6775d802df6a0a701bdf1e5d00b929b4d3",
+      "last_fetched": "2026-11-08T04:59:25.818276+00:00",
+      "title": "seaborn.set — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_color_codes": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_color_codes.html",
+      "last_hash": "ef7f1cb8e7d4166fe7f4ad2f02f42d1bb130699403d9acac36209205b01af387",
+      "last_fetched": "2026-11-08T04:59:26.609722+00:00",
+      "title": "seaborn.set_color_codes — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_context": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_context.html",
+      "last_hash": "e00854dd86f6945731da4f5e336a75981132d29a00ce06b1a3b374e93c2e5e1b",
+      "last_fetched": "2026-11-08T04:59:27.449089+00:00",
+      "title": "seaborn.set_context — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_hls_values": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_hls_values.html",
+      "last_hash": "a7920a0230c01b67d5457956c8054c1fad7b041205d2b688b10eb8de755d02ea",
+      "last_fetched": "2026-11-08T04:59:28.239565+00:00",
+      "title": "seaborn.set_hls_values — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_palette.html",
+      "last_hash": "1ce6baae152bc9f67dc5347f6de60439fa97e33aa69f9ceff75338834e350529",
+      "last_fetched": "2026-11-08T04:59:29.017588+00:00",
+      "title": "seaborn.set_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_style": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_style.html",
+      "last_hash": "4e47e68bb7387c41cd084f0bd99c6bbc332c354e0223258ebfa930ee1e8ae7d0",
+      "last_fetched": "2026-11-08T04:59:29.839526+00:00",
+      "title": "seaborn.set_style — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.set_theme": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.set_theme.html",
+      "last_hash": "011bd6e76c7e946651d2942093a48d3ba0f4994b22ffae942fa4de9973b41bf1",
+      "last_fetched": "2026-11-08T04:59:30.700021+00:00",
+      "title": "seaborn.set_theme — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.stripplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.stripplot.html",
+      "last_hash": "72db6a9d4bd1fcadaa43e8502f7c96e46520f419084f269b2ac2def0755cb371",
+      "last_fetched": "2026-11-08T04:59:31.679545+00:00",
+      "title": "seaborn.stripplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.swarmplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.swarmplot.html",
+      "last_hash": "e46f602b293c491814a026f38efaedcc6b20402e98204b8c8aef20f619557f28",
+      "last_fetched": "2026-11-08T04:59:32.615103+00:00",
+      "title": "seaborn.swarmplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.violinplot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.violinplot.html",
+      "last_hash": "a5616793e79d6fb0c5b05bb5a00d8ee398158ee5e0f4bb6688f244e18c7b7bc4",
+      "last_fetched": "2026-11-08T04:59:33.585671+00:00",
+      "title": "seaborn.violinplot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.xkcd_palette": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.xkcd_palette.html",
+      "last_hash": "a4a62e6cd983eff0a0dcb1f5f8c08f4eaf3ac00bd05ad052b6ce478ca92aff80",
+      "last_fetched": "2026-11-08T04:59:34.365834+00:00",
+      "title": "seaborn.xkcd_palette — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.__init__": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.__init__.html",
+      "last_hash": "31154befa70285c5f421d0896d96533f611df587047d683db9fc39681b1bf33d",
+      "last_fetched": "2026-11-08T04:59:35.301928+00:00",
+      "title": "seaborn.FacetGrid.__init__ — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.add_legend": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.add_legend.html",
+      "last_hash": "17b54f6c87fdc0a0f43d12e501bd0da3a8dede07c47682f40f78de517720ba68",
+      "last_fetched": "2026-11-08T04:59:36.097246+00:00",
+      "title": "seaborn.FacetGrid.add_legend — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.apply": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.apply.html",
+      "last_hash": "ef86be799f460045c7de10fa23107a1880ce9ddb9ca1537c17f0cf0bbd069ca6",
+      "last_fetched": "2026-11-08T04:59:36.879318+00:00",
+      "title": "seaborn.FacetGrid.apply — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.despine": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.despine.html",
+      "last_hash": "f138840f3ffb8cf31debeee50d2d6a8e453ff5cde12d5bd8f41606b3f859a92c",
+      "last_fetched": "2026-11-08T04:59:37.650526+00:00",
+      "title": "seaborn.FacetGrid.despine — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.facet_axis": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.facet_axis.html",
+      "last_hash": "986b8eaddafb8b582825e2a5059ebb8ee1ac4868f3a0a613bc0bbfdef149ca71",
+      "last_fetched": "2026-11-08T04:59:38.442236+00:00",
+      "title": "seaborn.FacetGrid.facet_axis — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.facet_data": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.facet_data.html",
+      "last_hash": "98607f594e630abd2ea70a88ce377752d335f8e5f73a5f7fbcd13ef727a1a812",
+      "last_fetched": "2026-11-08T04:59:39.229251+00:00",
+      "title": "seaborn.FacetGrid.facet_data — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.map": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.map.html",
+      "last_hash": "aab8136d18a7bc4848015e1d7386018cda7577b52897e1da18410d64064d186e",
+      "last_fetched": "2026-11-08T04:59:40.001218+00:00",
+      "title": "seaborn.FacetGrid.map — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.map_dataframe": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.map_dataframe.html",
+      "last_hash": "7e6353bea221c58e776906ce6064585a74738cb5c08d3ff2889f7bce423835b6",
+      "last_fetched": "2026-11-08T04:59:40.781413+00:00",
+      "title": "seaborn.FacetGrid.map_dataframe — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.pipe": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.pipe.html",
+      "last_hash": "3a3daaa673cd897dd264fc6483c616d5a847b464acf8e3146eac6ff4719f15ac",
+      "last_fetched": "2026-11-08T04:59:41.621560+00:00",
+      "title": "seaborn.FacetGrid.pipe — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.refline": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.refline.html",
+      "last_hash": "eedd38bf117b2e0da57587182867421fa99397307ec384cb9e7a3142192eb533",
+      "last_fetched": "2026-11-08T04:59:42.396766+00:00",
+      "title": "seaborn.FacetGrid.refline — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.savefig": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.savefig.html",
+      "last_hash": "639198bc3518d2f9cd7b83fcd011ea52847f24c310df62030bc18a7ba84f1b3d",
+      "last_fetched": "2026-11-08T04:59:43.179348+00:00",
+      "title": "seaborn.FacetGrid.savefig — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set.html",
+      "last_hash": "b586699ada7f2711d8c75a8f7c9190e6f8a37a86079044c55186788a86215526",
+      "last_fetched": "2026-11-08T04:59:43.966766+00:00",
+      "title": "seaborn.FacetGrid.set — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_axis_labels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_axis_labels.html",
+      "last_hash": "1e3a79ba67c34db5f64c0a052f545f13fdc611183933ddbf49e6e7dae409c7a5",
+      "last_fetched": "2026-11-08T04:59:44.738029+00:00",
+      "title": "seaborn.FacetGrid.set_axis_labels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_titles": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_titles.html",
+      "last_hash": "7641d857b5f7e1014a85a54e2a5c7494fdd819b9c2dc060624793c51b541ed52",
+      "last_fetched": "2026-11-08T04:59:45.527445+00:00",
+      "title": "seaborn.FacetGrid.set_titles — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_xlabels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_xlabels.html",
+      "last_hash": "3b0438f8af48350853a267da30762165b0a3b8e8be14b76889a595c24d48074b",
+      "last_fetched": "2026-11-08T04:59:46.294034+00:00",
+      "title": "seaborn.FacetGrid.set_xlabels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_xticklabels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_xticklabels.html",
+      "last_hash": "cf61e6ff15bce352a511ec7f1ea967b07b4edc263e4c39bed44eab4fb9b36336",
+      "last_fetched": "2026-11-08T04:59:47.088058+00:00",
+      "title": "seaborn.FacetGrid.set_xticklabels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_ylabels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_ylabels.html",
+      "last_hash": "41ba79eb5aba09a70abaf2483040ff263baf2536d56e63a680bd3ca7488389e3",
+      "last_fetched": "2026-11-08T04:59:47.870111+00:00",
+      "title": "seaborn.FacetGrid.set_ylabels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.set_yticklabels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.set_yticklabels.html",
+      "last_hash": "bb5e4d0f941262cd9bdcd1e189f20bdad7fe30adad2a3d02cd393b26e6ef0b43",
+      "last_fetched": "2026-11-08T04:59:48.663910+00:00",
+      "title": "seaborn.FacetGrid.set_yticklabels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.tick_params": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.tick_params.html",
+      "last_hash": "fb35302b65055707afb0aa63c51de005c435a4f1de983142cebf8bd98c628296",
+      "last_fetched": "2026-11-08T04:59:49.452986+00:00",
+      "title": "seaborn.FacetGrid.tick_params — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.FacetGrid.tight_layout": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.FacetGrid.tight_layout.html",
+      "last_hash": "ba3a28b124216722e3f22a1c3c66c49f75a45ceea5dbdd3bdbf4a986f2ee022a",
+      "last_fetched": "2026-11-08T04:59:50.253556+00:00",
+      "title": "seaborn.FacetGrid.tight_layout — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.__init__": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.__init__.html",
+      "last_hash": "bf0828bc591aeaffba61e7aeb9da653110db521e42bb94e2fbca27cc224c92f6",
+      "last_fetched": "2026-11-08T04:59:51.178740+00:00",
+      "title": "seaborn.JointGrid.__init__ — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.apply": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.apply.html",
+      "last_hash": "fc53418da4127c35cda3c7e3c3eedf86bd0f7b0d64f6c92afb651ed2fc007840",
+      "last_fetched": "2026-11-08T04:59:52.043751+00:00",
+      "title": "seaborn.JointGrid.apply — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.pipe": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.pipe.html",
+      "last_hash": "f67e15c36bc196f98f04a50e7d5f76d839cd4b87d5bba67089b9b91e86a7c105",
+      "last_fetched": "2026-11-08T04:59:52.819907+00:00",
+      "title": "seaborn.JointGrid.pipe — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.plot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.plot.html",
+      "last_hash": "54304143538330221e0d216171a2d519024804d093648a28a15016807f2cbc34",
+      "last_fetched": "2026-11-08T04:59:53.610833+00:00",
+      "title": "seaborn.JointGrid.plot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.plot_joint": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.plot_joint.html",
+      "last_hash": "9d7325f9a340fc70b868809aff4364b798ffc515e16e41c9a59d61ab93c6fded",
+      "last_fetched": "2026-11-08T04:59:54.416903+00:00",
+      "title": "seaborn.JointGrid.plot_joint — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.plot_marginals": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.plot_marginals.html",
+      "last_hash": "ea13933a5aa3aaec17b899b850a5ca4fef92886026996fad8782f8ec82cf5159",
+      "last_fetched": "2026-11-08T04:59:55.201238+00:00",
+      "title": "seaborn.JointGrid.plot_marginals — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.refline": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.refline.html",
+      "last_hash": "89c9b6e86012f91c3984c570b1d5b0388a0115ec2b27f73cd0bfe35cf51bb75a",
+      "last_fetched": "2026-11-08T04:59:55.988236+00:00",
+      "title": "seaborn.JointGrid.refline — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.savefig": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.savefig.html",
+      "last_hash": "ef0ace1e507199373868433d2d5c00304ad1104afb79c2cc27586975f1faffe9",
+      "last_fetched": "2026-11-08T04:59:56.781130+00:00",
+      "title": "seaborn.JointGrid.savefig — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.set": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.set.html",
+      "last_hash": "3af231a7fc35c31ca70f1f67124082b23bf357a74ed9d36bd26dbcc7ccce3647",
+      "last_fetched": "2026-11-08T04:59:57.548408+00:00",
+      "title": "seaborn.JointGrid.set — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.JointGrid.set_axis_labels": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.JointGrid.set_axis_labels.html",
+      "last_hash": "5f2575cf98d5f6aea2154d96a4fa8f086ff0275e92b72e6e0740e07aef7f867f",
+      "last_fetched": "2026-11-08T04:59:58.332577+00:00",
+      "title": "seaborn.JointGrid.set_axis_labels — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.__init__": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.__init__.html",
+      "last_hash": "058e30e8e8a9f02938d765b9b51c7d4f28b78075f74ba9b3efdc921564e3a63e",
+      "last_fetched": "2026-11-08T04:59:59.282012+00:00",
+      "title": "seaborn.PairGrid.__init__ — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.add_legend": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.add_legend.html",
+      "last_hash": "5f592b026e8cee0056a01aebc920eea28aab24e703502cc904f167fa260cb71a",
+      "last_fetched": "2026-11-08T05:00:00.076439+00:00",
+      "title": "seaborn.PairGrid.add_legend — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.apply": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.apply.html",
+      "last_hash": "783bccf2ba2e7723ce4538b583f45a271556880bde39da6ba24a3e37727ba5cb",
+      "last_fetched": "2026-11-08T05:00:00.874011+00:00",
+      "title": "seaborn.PairGrid.apply — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.map": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.map.html",
+      "last_hash": "4dc6cbdcd67a5033e6623ba2474b5def2facb821abbeb452ee438e43e989a204",
+      "last_fetched": "2026-11-08T05:00:01.655676+00:00",
+      "title": "seaborn.PairGrid.map — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.map_diag": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.map_diag.html",
+      "last_hash": "63058c94651c9a5c951fcb6e962ec8b41d98da96f84dd5f2bb9863bd99836af9",
+      "last_fetched": "2026-11-08T05:00:02.482146+00:00",
+      "title": "seaborn.PairGrid.map_diag — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.map_lower": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.map_lower.html",
+      "last_hash": "ca8f318d058f9ad4fd8f96d60a5aa537a8b1d935e932d9c516ee515bb2f54295",
+      "last_fetched": "2026-11-08T05:00:03.264057+00:00",
+      "title": "seaborn.PairGrid.map_lower — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.map_offdiag": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.map_offdiag.html",
+      "last_hash": "cdb352df70bd19a033687e278e1e220b7bbf4f1cf9030f439a9904311a4ca08a",
+      "last_fetched": "2026-11-08T05:00:04.034472+00:00",
+      "title": "seaborn.PairGrid.map_offdiag — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.map_upper": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.map_upper.html",
+      "last_hash": "13a67381465c9295ee2b4e85f46d71ab44745f46604a6c054b67940813374a77",
+      "last_fetched": "2026-11-08T05:00:04.811286+00:00",
+      "title": "seaborn.PairGrid.map_upper — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.pipe": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.pipe.html",
+      "last_hash": "5f7260bea989c23327aa63b00db15f74b8b7f37fcbafb4d566624d29e2fb5a17",
+      "last_fetched": "2026-11-08T05:00:05.593204+00:00",
+      "title": "seaborn.PairGrid.pipe — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.savefig": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.savefig.html",
+      "last_hash": "d11be4e26b2d42006723b2aa18d3c335dd6f44cacfe9f0b6d9e7fce6453a752e",
+      "last_fetched": "2026-11-08T05:00:06.388724+00:00",
+      "title": "seaborn.PairGrid.savefig — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.set": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.set.html",
+      "last_hash": "5925084c89fa00334d49499d6941b948c007aaa5f00982c79ab9af9b9955bb32",
+      "last_fetched": "2026-11-08T05:00:07.188467+00:00",
+      "title": "seaborn.PairGrid.set — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.tick_params": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.tick_params.html",
+      "last_hash": "b4bc89d305a3514bd5739050b3bc73e4fb444ba69e044913785606fd01c2a67b",
+      "last_fetched": "2026-11-08T05:00:07.961636+00:00",
+      "title": "seaborn.PairGrid.tick_params — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.PairGrid.tight_layout": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.PairGrid.tight_layout.html",
+      "last_hash": "99a10749f816d4602e48c239abfad00f3a73e70548ab9b4a8b4268b10d936bbf",
+      "last_fetched": "2026-11-08T05:00:08.732250+00:00",
+      "title": "seaborn.PairGrid.tight_layout — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Agg": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Agg.html",
+      "last_hash": "30097db17adb9fa00138dea0f00961193b7332cb5113b4535d9af9819a92ad75",
+      "last_fetched": "2026-11-08T05:00:09.615467+00:00",
+      "title": "seaborn.objects.Agg — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Area": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Area.html",
+      "last_hash": "5388ce7748077fd92c2f8ab1fe271b155a55fcb5ee4b2d24cdf056e3e86ee5d7",
+      "last_fetched": "2026-11-08T05:00:10.482666+00:00",
+      "title": "seaborn.objects.Area — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Band": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Band.html",
+      "last_hash": "4991498de489e9532107d5e48999069e326acda4b57798b5c26955e85db6cde2",
+      "last_fetched": "2026-11-08T05:00:11.410251+00:00",
+      "title": "seaborn.objects.Band — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Bar": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Bar.html",
+      "last_hash": "1b215d6f2d02d99a7225e75801ce143c00c3a4f4790fa25783bf9cb6ab277a98",
+      "last_fetched": "2026-11-08T05:00:12.275888+00:00",
+      "title": "seaborn.objects.Bar — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Bars": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Bars.html",
+      "last_hash": "87972105b0577f266e1e5d7304bfc2aa0ed6956a7273941517f5cb18fb08753b",
+      "last_fetched": "2026-11-08T05:00:13.219888+00:00",
+      "title": "seaborn.objects.Bars — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Boolean": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Boolean.html",
+      "last_hash": "f08297ebef5b3db02438273667eb61f8febfe89cc703412caea90b1795d328f8",
+      "last_fetched": "2026-11-08T05:00:14.054309+00:00",
+      "title": "seaborn.objects.Boolean — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Continuous": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Continuous.html",
+      "last_hash": "adef75dca6ed5d35ebc0b01b837a5b02fea7e834e228cf24502a01db8fa5353a",
+      "last_fetched": "2026-11-08T05:00:14.844424+00:00",
+      "title": "seaborn.objects.Continuous — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Count": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Count.html",
+      "last_hash": "5d2ea54b70f036561834792a0a7d2da0e2bef2288216cfcc788bdd1979f06688",
+      "last_fetched": "2026-11-08T05:00:15.699232+00:00",
+      "title": "seaborn.objects.Count — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Dash": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Dash.html",
+      "last_hash": "a5c1dd27b062cedd9589824653e1e5fd71b89e359c3b3d8594712619985c6ab2",
+      "last_fetched": "2026-11-08T05:00:16.602293+00:00",
+      "title": "seaborn.objects.Dash — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Dodge": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Dodge.html",
+      "last_hash": "e3e4a74927d50ca076028993997dcbf9db233418d8c8644a33d994db8959d471",
+      "last_fetched": "2026-11-08T05:00:17.474851+00:00",
+      "title": "seaborn.objects.Dodge — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Dot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Dot.html",
+      "last_hash": "244c4da7c62d7cbbbb9ad49532782bd918da1c06e031e4961083257c72ed4e24",
+      "last_fetched": "2026-11-08T05:00:18.365134+00:00",
+      "title": "seaborn.objects.Dot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Dots": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Dots.html",
+      "last_hash": "e427b6f81555489cc99bbb37a0abf39a461ea9a1ba28b58073353e0371188d2a",
+      "last_fetched": "2026-11-08T05:00:19.233484+00:00",
+      "title": "seaborn.objects.Dots — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Est": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Est.html",
+      "last_hash": "d5f6fd71bb04ec86d1cafecd1d6ce9a040edf253096076056a6bfc2938fb4768",
+      "last_fetched": "2026-11-08T05:00:20.111704+00:00",
+      "title": "seaborn.objects.Est — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Hist": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Hist.html",
+      "last_hash": "7e5d98fd865b5d4daf675a31bcac22cc984221a9c7313a9a0467ae8da4f0e76a",
+      "last_fetched": "2026-11-08T05:00:21.009835+00:00",
+      "title": "seaborn.objects.Hist — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Jitter": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Jitter.html",
+      "last_hash": "921929ef77e0e7ffebbd0f3bfc111dc634a409886bcc5a84c61721209789b2f2",
+      "last_fetched": "2026-11-08T05:00:21.871790+00:00",
+      "title": "seaborn.objects.Jitter — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.KDE": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.KDE.html",
+      "last_hash": "956fe3166b1de32a771c5b91caff5fd37abde57d986037416a41c404d1e18f2d",
+      "last_fetched": "2026-11-08T05:00:22.817857+00:00",
+      "title": "seaborn.objects.KDE — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Line": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Line.html",
+      "last_hash": "584c5bbcfe53f3c00b70c370e16a5eb05b7b66def16bf489475073b3bdc1fc13",
+      "last_fetched": "2026-11-08T05:00:23.774930+00:00",
+      "title": "seaborn.objects.Line — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Lines": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Lines.html",
+      "last_hash": "373997b196a3bd47215702a2104b07d02a1732d3408999a42b3a5978a611330e",
+      "last_fetched": "2026-11-08T05:00:24.609155+00:00",
+      "title": "seaborn.objects.Lines — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Mark": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Mark.html",
+      "last_hash": "8f6dab7edb5162ca2699439cc1de01bb6410794c0a3a8dd97bddecf3b5fc23ec",
+      "last_fetched": "2026-11-08T05:00:25.381052+00:00",
+      "title": "seaborn.objects.Mark — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Move": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Move.html",
+      "last_hash": "bc60be06a367984279ba79f57ff5cb53842bfb6315aca8a890f4cddf88f2d836",
+      "last_fetched": "2026-11-08T05:00:26.169820+00:00",
+      "title": "seaborn.objects.Move — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Nominal": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Nominal.html",
+      "last_hash": "841c2036282fbec2fbfaf528ef0c050c873174b054c951897a0d80d4fb930dcf",
+      "last_fetched": "2026-11-08T05:00:26.948962+00:00",
+      "title": "seaborn.objects.Nominal — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Norm": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Norm.html",
+      "last_hash": "4a513a6e351bd9d7f4a62a16d961e70d331906639075d6ddacc3864b78606e08",
+      "last_fetched": "2026-11-08T05:00:27.813831+00:00",
+      "title": "seaborn.objects.Norm — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Path": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Path.html",
+      "last_hash": "76d76457b7baa06ae6c40e00c6cdcfdd74a523d83b1afab906801612f07158cc",
+      "last_fetched": "2026-11-08T05:00:28.676788+00:00",
+      "title": "seaborn.objects.Path — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Paths": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Paths.html",
+      "last_hash": "a6d62440fbd5247570c2765284da7f47fe69d6daeebb3371b4f49e5b3fb9fabd",
+      "last_fetched": "2026-11-08T05:00:29.549211+00:00",
+      "title": "seaborn.objects.Paths — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Perc": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Perc.html",
+      "last_hash": "4166ef6f98da95e04c62b6ad8eeeba22d255f53e3e0ad5ba77d5f4e22b1b7a27",
+      "last_fetched": "2026-11-08T05:00:30.408306+00:00",
+      "title": "seaborn.objects.Perc — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.html",
+      "last_hash": "8aee382a7c781c28e848d1916829b42bf63e78378f26359674b761ee2687b034",
+      "last_fetched": "2026-11-08T05:00:31.212384+00:00",
+      "title": "seaborn.objects.Plot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.PolyFit": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.PolyFit.html",
+      "last_hash": "0c44ee4caa23c3699159b8a11f520d3e00bfbbe030667da2680202810b34d8d4",
+      "last_fetched": "2026-11-08T05:00:31.982814+00:00",
+      "title": "seaborn.objects.PolyFit — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Range": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Range.html",
+      "last_hash": "e60005cfb79d41d0bf8585cd236ea95827502e0d85beef727405f37a3d9f1469",
+      "last_fetched": "2026-11-08T05:00:33.088729+00:00",
+      "title": "seaborn.objects.Range — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Scale": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Scale.html",
+      "last_hash": "c7e1dc2b20045a7749c5f58233d17cc1a2c52e09a696945f85c060111f92da5a",
+      "last_fetched": "2026-11-08T05:00:33.912151+00:00",
+      "title": "seaborn.objects.Scale — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Shift": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Shift.html",
+      "last_hash": "8910db61d32cea1b7acef24fef8c4fed5a7a4eda6a9b830d4582173a3fa74ce7",
+      "last_fetched": "2026-11-08T05:00:34.770349+00:00",
+      "title": "seaborn.objects.Shift — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Stack": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Stack.html",
+      "last_hash": "f3fe2686a82a05be2cc931bc5ae3a8b5736506a50d6abf0c2b28757da4a6ad25",
+      "last_fetched": "2026-11-08T05:00:35.674656+00:00",
+      "title": "seaborn.objects.Stack — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Stat": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Stat.html",
+      "last_hash": "e39f12c852abd1ad026367f0fdf6073132141714947efb4cba33ab39f24a61df",
+      "last_fetched": "2026-11-08T05:00:36.525310+00:00",
+      "title": "seaborn.objects.Stat — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Temporal": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Temporal.html",
+      "last_hash": "39556fe8c78a0e6cac942b3ddd2aefc14f3f44ffdc068f626ade3757042e642c",
+      "last_fetched": "2026-11-08T05:00:37.328628+00:00",
+      "title": "seaborn.objects.Temporal — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Text": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Text.html",
+      "last_hash": "c44aa12a5e8b8ed87e56174a26e12af4bb1321d9b74a02f10385689bc6a528de",
+      "last_fetched": "2026-11-08T05:00:38.209060+00:00",
+      "title": "seaborn.objects.Text — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.add": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.add.html",
+      "last_hash": "45c3a4c6b8bf0de8e55b38435220c308ba45f1e0cddcabd1d7adf4dfaad297f8",
+      "last_fetched": "2026-11-08T05:00:39.179868+00:00",
+      "title": "seaborn.objects.Plot.add — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.facet": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.facet.html",
+      "last_hash": "f72f4a881db04f26673ff91b6aff0bcc8a5fcea632868ba41dcc09c6538e9bad",
+      "last_fetched": "2026-11-08T05:00:40.080453+00:00",
+      "title": "seaborn.objects.Plot.facet — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.label": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.label.html",
+      "last_hash": "5ed7ef8a5ade48cea731418f6450ba7a0f3f2130db37ac5ea84302a1acc737f2",
+      "last_fetched": "2026-11-08T05:00:41.226319+00:00",
+      "title": "seaborn.objects.Plot.label — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.layout": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.layout.html",
+      "last_hash": "4400a8f06a8ef06aced4535a9ceeab1569f0fc0fc3b46fcb6583afd167aeb7e6",
+      "last_fetched": "2026-11-08T05:00:42.153437+00:00",
+      "title": "seaborn.objects.Plot.layout — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.limit": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.limit.html",
+      "last_hash": "7ddd2e85f128acaac397c087c85077a0429bed3841172f7fbf8fd0a438bc9e52",
+      "last_fetched": "2026-11-08T05:00:43.191559+00:00",
+      "title": "seaborn.objects.Plot.limit — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.on": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.on.html",
+      "last_hash": "af76bac6f2b75f091e24073ba6963e75666671e5a0bc0ebcf8167262293f630e",
+      "last_fetched": "2026-11-08T05:00:44.277317+00:00",
+      "title": "seaborn.objects.Plot.on — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.pair": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.pair.html",
+      "last_hash": "a84c55f8d9e5cd06fd25ec311585120b749b7156e654f36358d0e1610e304f8b",
+      "last_fetched": "2026-11-08T05:00:45.307899+00:00",
+      "title": "seaborn.objects.Plot.pair — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.plot": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.plot.html",
+      "last_hash": "599f2e19a8fc276d25d62fe1cb9624391dce2186e9623e1ecc56e409e7f7ad00",
+      "last_fetched": "2026-11-08T05:00:46.128818+00:00",
+      "title": "seaborn.objects.Plot.plot — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.save": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.save.html",
+      "last_hash": "8597ba193e752c3d242a09f718b6625225d980f2544158f2f04e1dde0a41b85a",
+      "last_fetched": "2026-11-08T05:00:46.926547+00:00",
+      "title": "seaborn.objects.Plot.save — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.scale": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.scale.html",
+      "last_hash": "52f04b09d4b06f581fae6c80836358c84df28c378b343ba6936430698310543c",
+      "last_fetched": "2026-11-08T05:00:47.953434+00:00",
+      "title": "seaborn.objects.Plot.scale — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.share": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.share.html",
+      "last_hash": "ec7cb883f1e2837793ec4530f9977e208e4a6c99ebbf3a3732fdfee27b10d4ab",
+      "last_fetched": "2026-11-08T05:00:48.811104+00:00",
+      "title": "seaborn.objects.Plot.share — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.show": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.show.html",
+      "last_hash": "09fc30c109e021088c60cdf18b268a1f01af5e013ee71158e7344a7e076c219f",
+      "last_fetched": "2026-11-08T05:00:49.605942+00:00",
+      "title": "seaborn.objects.Plot.show — seaborn 0.13.2 documentation"
+    },
+    "generated-seaborn.objects.Plot.theme": {
+      "url": "https://seaborn.pydata.org/generated/seaborn.objects.Plot.theme.html",
+      "last_hash": "2e946263640cab89f475d2385edeb52fb5f24c8a48b4062bb2b3ebe292a93229",
+      "last_fetched": "2026-11-08T05:00:50.477902+00:00",
+      "title": "seaborn.objects.Plot.theme — seaborn 0.13.2 documentation"
+    }
+  },
+  "detected_version": "0.13.2",
+  "last_updated": "2026-11-08T05:00:50.477902+00:00",
+  "version_history": []
+}

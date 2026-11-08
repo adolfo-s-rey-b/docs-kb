@@ -1,0 +1,61 @@
+[Skip to main content](https://pandas.pydata.org/docs/reference/api/pandas.Index.dropna.html#main-content)
+
+Back to top Ctrl+K
+
+Choose version
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/pandas-dev/pandas)
+    
+*   [X](https://x.com/pandas_dev)
+    
+*   [Mastodon](https://fosstodon.org/@pandas_dev)
+    
+
+Collapse Sidebar Expand Sidebar
+
+pandas.Index.dropna[#](https://pandas.pydata.org/docs/reference/api/pandas.Index.dropna.html#pandas-index-dropna "Link to this heading")
+
+=========================================================================================================================================
+
+Index.dropna(_how\='any'_)[\[source\]](https://github.com/pandas-dev/pandas/blob/v3.1.1/pandas/core/indexes/base.py#L2923-L2958)
+[#](https://pandas.pydata.org/docs/reference/api/pandas.Index.dropna.html#pandas.Index.dropna "Link to this definition")
+
+Return Index without NA/NaN values.
+
+Removes missing values from the Index, returning a shorter Index containing only non-NA entries.
+
+Parameters:
+
+**how**{‘any’, ‘all’}, default ‘any’
+
+If the Index is a MultiIndex, drop the value when any or all levels are NaN.
+
+Returns:
+
+Index
+
+Returns an Index object after removing NA/NaN values.
+
+See also
+
+[`Index.fillna`](https://pandas.pydata.org/docs/reference/api/pandas.Index.fillna.html#pandas.Index.fillna "pandas.Index.fillna")
+
+Fill NA/NaN values with the specified value.
+
+[`Index.isna`](https://pandas.pydata.org/docs/reference/api/pandas.Index.isna.html#pandas.Index.isna "pandas.Index.isna")
+
+Detect missing values.
+
+Examples
+
+\>>> idx \= pd.Index(\[1, np.nan, 3\])
+\>>> idx.dropna()
+Index(\[1.0, 3.0\], dtype='float64')
+
+Copy to clipboard
+
+On this page

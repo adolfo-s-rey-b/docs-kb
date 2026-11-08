@@ -1,0 +1,67 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/administer/manage-users-and-access/set-up-for-cloud.md)
+.
+
+**Feature availability**
+
+User management is available from n8n 0.195.0.
+
+**Irreversible upgrade**
+
+Once you upgrade your Cloud instance to an n8n version with user management, you can't downgrade your version.
+
+Step one: In-app setup[](https://docs.n8n.io/administer/manage-users-and-access/set-up-for-cloud#step-one-in-app-setup)
+
+------------------------------------------------------------------------------------------------------------------------
+
+When you set up user management for the first time, you create an owner account.
+
+1.  Open n8n. The app displays a signup screen.
+    
+2.  Enter your details. Your password must be at least eight characters, including at least one number and one capital letter.
+    
+3.  Click **Next**. n8n logs you in with your new owner account.
+    
+
+Step two: Invite users[](https://docs.n8n.io/administer/manage-users-and-access/set-up-for-cloud#step-two-invite-users)
+
+------------------------------------------------------------------------------------------------------------------------
+
+You can now invite other people to your n8n instance.
+
+1.  Sign in to your n8n instance with your owner account. On n8n Cloud, if you're in the n8n Cloud console, select **Open instance** on the **Overview** page.
+    
+2.  Click the three dots next to your user icon at the bottom left and click **Settings**. n8n opens your **Personal settings** page.
+    
+3.  Click **Users** to go to the **Users** page.
+    
+4.  Click **Invite**.
+    
+5.  Enter the new user's email address.
+    
+6.  Click **Invite user**. n8n sends an email with a link for the new user to join.
+    
+
+Related resources[](https://docs.n8n.io/administer/manage-users-and-access/set-up-for-cloud#related-resources)
+
+---------------------------------------------------------------------------------------------------------------
+
+*   [Manage users and access](https://docs.n8n.io/administer/manage-users-and-access)
+    
+*   [Add and remove users](https://docs.n8n.io/administer/manage-users-and-access/add-and-remove-users)
+    
+*   [Understand instance roles](https://docs.n8n.io/administer/manage-users-and-access/understand-instance-roles)
+    
+*   [Set permissions and roles (RBAC)](https://docs.n8n.io/administer/manage-users-and-access/set-permissions-and-roles-rbac)
+    
+*   [Verify user identity](https://docs.n8n.io/administer/manage-users-and-access/verify-user-identity)
+    
+*   [Follow best practices](https://docs.n8n.io/administer/manage-users-and-access/follow-best-practices)
+    
+
+[PreviousManage users and access](https://docs.n8n.io/administer/manage-users-and-access)
+[NextAdd and remove users](https://docs.n8n.io/administer/manage-users-and-access/add-and-remove-users)
+
+Last updated 10 days ago
+
+Was this helpful?

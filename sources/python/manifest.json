@@ -1,0 +1,3307 @@
+{
+  "pages": {
+    "builtins-constants": {
+      "url": "https://docs.python.org/3/builtins/constants.html",
+      "last_hash": "4795593994fb14b2cf6a02c52e38dfe6dbf5dfa4048eedf221d6da79e32d2f82",
+      "last_fetched": "2026-11-08T04:57:42.676012+00:00",
+      "title": "Built-in Constants — Python 3.15.2 documentation"
+    },
+    "builtins-exceptions": {
+      "url": "https://docs.python.org/3/builtins/exceptions.html",
+      "last_hash": "e45bc1e420d09fc52939ac78a3576c6213d13451f624f82aaba38f82193f956d",
+      "last_fetched": "2026-11-08T04:57:43.673683+00:00",
+      "title": "Built-in Exceptions — Python 3.15.2 documentation"
+    },
+    "builtins-functions": {
+      "url": "https://docs.python.org/3/builtins/functions.html",
+      "last_hash": "7b81d30b7b308de28f1db51cd9edabf174af754dc1747fd4323931f3cfd34232",
+      "last_fetched": "2026-11-08T04:57:44.934937+00:00",
+      "title": "Built-in functions — Python 3.15.2 documentation"
+    },
+    "builtins-index": {
+      "url": "https://docs.python.org/3/builtins/index.html",
+      "last_hash": "e81a5a47e104d29a6ed5c6224fb71523f07dad5f62f72f9179078dea1e78eb20",
+      "last_fetched": "2026-11-08T04:57:45.880695+00:00",
+      "title": "Python built-ins reference — Python 3.15.2 documentation"
+    },
+    "builtins-stdtypes": {
+      "url": "https://docs.python.org/3/builtins/stdtypes.html",
+      "last_hash": "e9808de7b4c8d41b6ef47204474937fc894450a9a82397e0231063f7de92166d",
+      "last_fetched": "2026-11-08T04:57:47.740555+00:00",
+      "title": "Built-in Types — Python 3.15.2 documentation"
+    },
+    "builtins-threadsafety": {
+      "url": "https://docs.python.org/3/builtins/threadsafety.html",
+      "last_hash": "c21369a86d96162b58873dab43ad407930b4fd5faab8bacf4fed0f6ea51a624b",
+      "last_fetched": "2026-11-08T04:57:48.669009+00:00",
+      "title": "Thread Safety Guarantees — Python 3.15.2 documentation"
+    },
+    "builtins-time-complexity": {
+      "url": "https://docs.python.org/3/builtins/time-complexity.html",
+      "last_hash": "743f013f628723da40eb2c32230f010365a0bc7c556f7da9ce36a91eaf2f37cb",
+      "last_fetched": "2026-11-08T04:57:49.606782+00:00",
+      "title": "Time complexity of operations on built-in types — Python 3.15.2 documentation"
+    },
+    "c-api-abstract": {
+      "url": "https://docs.python.org/3/c-api/abstract.html",
+      "last_hash": "16ec0587118fd41aff7a9f06ad7aae4b0a2e6b8a3fcd3786fb986ee5f4a71113",
+      "last_fetched": "2026-11-08T04:57:50.449707+00:00",
+      "title": "Abstract Objects Layer — Python 3.15.2 documentation"
+    },
+    "c-api-allocation": {
+      "url": "https://docs.python.org/3/c-api/allocation.html",
+      "last_hash": "4c1ca861c9c0bc69b4c4b0d3216b5f9eec834877154e00c28e21242db36ad6ce",
+      "last_fetched": "2026-11-08T04:57:51.395977+00:00",
+      "title": "Allocating objects on the heap — Python 3.15.2 documentation"
+    },
+    "c-api-apiabiversion": {
+      "url": "https://docs.python.org/3/c-api/apiabiversion.html",
+      "last_hash": "cb836592bbc934b390786986d8e3f6a21a613e2c532b0ddbcd153c9fecff101d",
+      "last_fetched": "2026-11-08T04:57:52.352797+00:00",
+      "title": "API and ABI Versioning — Python 3.15.2 documentation"
+    },
+    "c-api-arg": {
+      "url": "https://docs.python.org/3/c-api/arg.html",
+      "last_hash": "6e8c2736297444b8c7a60c62212026045b321d05636ef9ea670d841ee26d67a1",
+      "last_fetched": "2026-11-08T04:57:53.537099+00:00",
+      "title": "Parsing arguments and building values — Python 3.15.2 documentation"
+    },
+    "c-api-bool": {
+      "url": "https://docs.python.org/3/c-api/bool.html",
+      "last_hash": "932a8d7424d7dd58c16860005831189325593856bbb527981b238d768f6fb372",
+      "last_fetched": "2026-11-08T04:57:54.387115+00:00",
+      "title": "Boolean Objects — Python 3.15.2 documentation"
+    },
+    "c-api-buffer": {
+      "url": "https://docs.python.org/3/c-api/buffer.html",
+      "last_hash": "28230eba2b3b08ffe29c4d1ea598cc678ccc2d392238ebdaeeafc399d0fe644a",
+      "last_fetched": "2026-11-08T04:57:55.580649+00:00",
+      "title": "Buffer Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-bytearray": {
+      "url": "https://docs.python.org/3/c-api/bytearray.html",
+      "last_hash": "044f6ef074f7129c8629f36fe9a4f83d41e4ff5056586bc460efe321673ba946",
+      "last_fetched": "2026-11-08T04:57:56.469929+00:00",
+      "title": "Byte Array Objects — Python 3.15.2 documentation"
+    },
+    "c-api-bytes": {
+      "url": "https://docs.python.org/3/c-api/bytes.html",
+      "last_hash": "0133a6f01fd3846ebace320e2f65280f3c45477cfd8cfbca6e1a31cbf7353f26",
+      "last_fetched": "2026-11-08T04:57:57.731800+00:00",
+      "title": "Bytes Objects — Python 3.15.2 documentation"
+    },
+    "c-api-call": {
+      "url": "https://docs.python.org/3/c-api/call.html",
+      "last_hash": "b19105707a25af008a41987100643abb055aac6356b5c5f5ebb205d3687c539a",
+      "last_fetched": "2026-11-08T04:57:58.677110+00:00",
+      "title": "Call Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-capsule": {
+      "url": "https://docs.python.org/3/c-api/capsule.html",
+      "last_hash": "11b3f0064a41934c19edd785235aa358a8954583b46efb9711b10fc0deb699b9",
+      "last_fetched": "2026-11-08T04:57:59.593273+00:00",
+      "title": "Capsules — Python 3.15.2 documentation"
+    },
+    "c-api-cell": {
+      "url": "https://docs.python.org/3/c-api/cell.html",
+      "last_hash": "eb2ad2dce854d8541613b154f5794d8cfec092ec21aa35dd63561f56dba3ed39",
+      "last_fetched": "2026-11-08T04:58:00.507888+00:00",
+      "title": "Cell Objects — Python 3.15.2 documentation"
+    },
+    "c-api-code": {
+      "url": "https://docs.python.org/3/c-api/code.html",
+      "last_hash": "c8ffbad25b8bc4694cdf80129ffcd7fd5de1b580b62aa224f43dbb855186622a",
+      "last_fetched": "2026-11-08T04:58:01.481122+00:00",
+      "title": "Code Objects — Python 3.15.2 documentation"
+    },
+    "c-api-codec": {
+      "url": "https://docs.python.org/3/c-api/codec.html",
+      "last_hash": "dcca8dd512eca97d9810c752da1eb8aacaa7932dff40268451f8eafd6de9ae6c",
+      "last_fetched": "2026-11-08T04:58:02.358383+00:00",
+      "title": "Codec registry and support functions — Python 3.15.2 documentation"
+    },
+    "c-api-complex": {
+      "url": "https://docs.python.org/3/c-api/complex.html",
+      "last_hash": "ab9b4819e310e0af7847f3905d6d0ed14b775a7160dca1fff9afd5b82e81d629",
+      "last_fetched": "2026-11-08T04:58:03.330397+00:00",
+      "title": "Complex Number Objects — Python 3.15.2 documentation"
+    },
+    "c-api-concrete": {
+      "url": "https://docs.python.org/3/c-api/concrete.html",
+      "last_hash": "e58d0d0c8826294a832a7766c1debd2076329f67bb8f2a3984c12edaf88649d5",
+      "last_fetched": "2026-11-08T04:58:04.310790+00:00",
+      "title": "Concrete Objects Layer — Python 3.15.2 documentation"
+    },
+    "c-api-contextvars": {
+      "url": "https://docs.python.org/3/c-api/contextvars.html",
+      "last_hash": "923bb967870ed9e9f2586ac2b9a194096a71a0f17bb5d9a713e4848ded1b6b89",
+      "last_fetched": "2026-11-08T04:58:05.308410+00:00",
+      "title": "Context Variables Objects — Python 3.15.2 documentation"
+    },
+    "c-api-conversion": {
+      "url": "https://docs.python.org/3/c-api/conversion.html",
+      "last_hash": "6734dcba4a521435b12b813ac9757f8d02983ac160ed44f78a5577d7d5ee6a6f",
+      "last_fetched": "2026-11-08T04:58:06.209781+00:00",
+      "title": "String conversion and formatting — Python 3.15.2 documentation"
+    },
+    "c-api-coro": {
+      "url": "https://docs.python.org/3/c-api/coro.html",
+      "last_hash": "7d0e2f1aeb139a2b59440b5940728cdc7d99356a4b80501cef9dae8cfcf06195",
+      "last_fetched": "2026-11-08T04:58:07.287048+00:00",
+      "title": "Coroutine Objects — Python 3.15.2 documentation"
+    },
+    "c-api-curses": {
+      "url": "https://docs.python.org/3/c-api/curses.html",
+      "last_hash": "7458b90875ee0e67f1ce3e7fdfd76182283d972e73c550d9a8f3563f6088df57",
+      "last_fetched": "2026-11-08T04:58:08.291932+00:00",
+      "title": "Curses C API — Python 3.15.2 documentation"
+    },
+    "c-api-datetime": {
+      "url": "https://docs.python.org/3/c-api/datetime.html",
+      "last_hash": "905eb04f7ebc1a9f2635e6cff9703fd1700f461040fef918a895a2e0a4583d8b",
+      "last_fetched": "2026-11-08T04:58:09.261183+00:00",
+      "title": "DateTime Objects — Python 3.15.2 documentation"
+    },
+    "c-api-descriptor": {
+      "url": "https://docs.python.org/3/c-api/descriptor.html",
+      "last_hash": "1bd468e673b7b168c4eac538ae242d5183a68edd033d19e66e583da8cb28cd99",
+      "last_fetched": "2026-11-08T04:58:10.146057+00:00",
+      "title": "Descriptor Objects — Python 3.15.2 documentation"
+    },
+    "c-api-dict": {
+      "url": "https://docs.python.org/3/c-api/dict.html",
+      "last_hash": "d7ede5bffcae5518a163eda2322535ab347985b4e50418f4ef7340b877fb4d4f",
+      "last_fetched": "2026-11-08T04:58:11.378553+00:00",
+      "title": "Dictionary objects — Python 3.15.2 documentation"
+    },
+    "c-api-exceptions": {
+      "url": "https://docs.python.org/3/c-api/exceptions.html",
+      "last_hash": "76558970bb93e72c1b65a237f14174306d961edaa1004c00d0874ba4c0eb0be0",
+      "last_fetched": "2026-11-08T04:58:13.162320+00:00",
+      "title": "Exception Handling — Python 3.15.2 documentation"
+    },
+    "c-api-extension-modules": {
+      "url": "https://docs.python.org/3/c-api/extension-modules.html",
+      "last_hash": "4448b49424fd9a7ec7077a18d2bf1ff422e7ba215aac3822ac5badf058ef1f86",
+      "last_fetched": "2026-11-08T04:58:13.998942+00:00",
+      "title": "Defining extension modules — Python 3.15.2 documentation"
+    },
+    "c-api-file": {
+      "url": "https://docs.python.org/3/c-api/file.html",
+      "last_hash": "2c70a1e7199c380b0c9610eef15479690ec248b54878362190f91787ab5d924c",
+      "last_fetched": "2026-11-08T04:58:14.838609+00:00",
+      "title": "File objects — Python 3.15.2 documentation"
+    },
+    "c-api-float": {
+      "url": "https://docs.python.org/3/c-api/float.html",
+      "last_hash": "32b357e4d78f95f79e01bf76dc63f701a77dcf0558e46ca2889fb0f39826b526",
+      "last_fetched": "2026-11-08T04:58:15.840296+00:00",
+      "title": "Floating-Point Objects — Python 3.15.2 documentation"
+    },
+    "c-api-frame": {
+      "url": "https://docs.python.org/3/c-api/frame.html",
+      "last_hash": "5f861ad5570fc4a81820311094f9e8ad71e21d96237161b94e62c4062c5f1e71",
+      "last_fetched": "2026-11-08T04:58:16.744622+00:00",
+      "title": "Frame objects — Python 3.15.2 documentation"
+    },
+    "c-api-function": {
+      "url": "https://docs.python.org/3/c-api/function.html",
+      "last_hash": "78390b2b9f75ef1bb173624095fe375e118b2671421f0e7d38f9407108c265d3",
+      "last_fetched": "2026-11-08T04:58:17.661586+00:00",
+      "title": "Function Objects — Python 3.15.2 documentation"
+    },
+    "c-api-gcsupport": {
+      "url": "https://docs.python.org/3/c-api/gcsupport.html",
+      "last_hash": "2ac17a0502771785fba8c3f3993c72e8bcc767fffa951eb647adbcb71b9eb22a",
+      "last_fetched": "2026-11-08T04:58:18.760151+00:00",
+      "title": "Supporting Cyclic Garbage Collection — Python 3.15.2 documentation"
+    },
+    "c-api-gen": {
+      "url": "https://docs.python.org/3/c-api/gen.html",
+      "last_hash": "0c642148733e19cd377c100c17325decaed08cdfac2b27d15a0b35aede3df2ca",
+      "last_fetched": "2026-11-08T04:58:19.762175+00:00",
+      "title": "Generator Objects — Python 3.15.2 documentation"
+    },
+    "c-api-hash": {
+      "url": "https://docs.python.org/3/c-api/hash.html",
+      "last_hash": "20218161d41352de858e156ab40b22cb2d5f9b6b429a4e88d6493bc0243ae9ec",
+      "last_fetched": "2026-11-08T04:58:20.569670+00:00",
+      "title": "PyHash API — Python 3.15.2 documentation"
+    },
+    "c-api-import": {
+      "url": "https://docs.python.org/3/c-api/import.html",
+      "last_hash": "216a8fb7e23c73babe3efffb2a5e7f09ca23f2d717738922fc1e0725d21815c2",
+      "last_fetched": "2026-11-08T04:58:21.521450+00:00",
+      "title": "Importing Modules — Python 3.15.2 documentation"
+    },
+    "c-api-index": {
+      "url": "https://docs.python.org/3/c-api/index.html",
+      "last_hash": "fb57526b43d8957b979fe39bf728c0ca660d10a0682763f77dac0fe9c4e8350a",
+      "last_fetched": "2026-11-08T04:58:22.389476+00:00",
+      "title": "Python/C API reference manual — Python 3.15.2 documentation"
+    },
+    "c-api-init": {
+      "url": "https://docs.python.org/3/c-api/init.html",
+      "last_hash": "3039fabac04189af7a5375f59bbf5599680d087fee5f2d7676a45a3582053c38",
+      "last_fetched": "2026-11-08T04:58:23.365511+00:00",
+      "title": "Initialization, finalization, and threads — Python 3.15.2 documentation"
+    },
+    "c-api-init_config": {
+      "url": "https://docs.python.org/3/c-api/init_config.html",
+      "last_hash": "cbf2e404d4531d162c95c33e2df68a5a9a6d541ea7c4e078759bc0d952555338",
+      "last_fetched": "2026-11-08T04:58:24.681979+00:00",
+      "title": "Python Initialization Configuration — Python 3.15.2 documentation"
+    },
+    "c-api-interp-lifecycle": {
+      "url": "https://docs.python.org/3/c-api/interp-lifecycle.html",
+      "last_hash": "1007b96c7646eded4b6eed3dcc07fb675069225ec4370fe2d6696dd38e612ed2",
+      "last_fetched": "2026-11-08T04:58:25.853319+00:00",
+      "title": "Interpreter initialization and finalization — Python 3.15.2 documentation"
+    },
+    "c-api-intro": {
+      "url": "https://docs.python.org/3/c-api/intro.html",
+      "last_hash": "a8a33467d81ac6857698b387f0e3c199b9cd4f406ab9c5a0cde7faff0617d62a",
+      "last_fetched": "2026-11-08T04:58:27.167486+00:00",
+      "title": "Introduction — Python 3.15.2 documentation"
+    },
+    "c-api-iter": {
+      "url": "https://docs.python.org/3/c-api/iter.html",
+      "last_hash": "edc63c8ef05c215aca98c58777a0e81da46ebcf09f844e2439129c510f40d945",
+      "last_fetched": "2026-11-08T04:58:28.110392+00:00",
+      "title": "Iterator Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-iterator": {
+      "url": "https://docs.python.org/3/c-api/iterator.html",
+      "last_hash": "799eb695d472cb006af569c9878071dffdd384dfb7016225236ca5ad47e1e859",
+      "last_fetched": "2026-11-08T04:58:29.208592+00:00",
+      "title": "Iterator Objects — Python 3.15.2 documentation"
+    },
+    "c-api-lifecycle": {
+      "url": "https://docs.python.org/3/c-api/lifecycle.html",
+      "last_hash": "efd392684b7a946e1144bb57313bbfd33181d776a1aaeaef35be948f030408bd",
+      "last_fetched": "2026-11-08T04:58:30.328533+00:00",
+      "title": "Object Life Cycle — Python 3.15.2 documentation"
+    },
+    "c-api-list": {
+      "url": "https://docs.python.org/3/c-api/list.html",
+      "last_hash": "3d1e049218db70f9d7b8b612bdb24c43062a53f456bcb4cfa99ccca1bb2accbe",
+      "last_fetched": "2026-11-08T04:58:31.301043+00:00",
+      "title": "List Objects — Python 3.15.2 documentation"
+    },
+    "c-api-long": {
+      "url": "https://docs.python.org/3/c-api/long.html",
+      "last_hash": "64beddb2cbf362ad6ee11c84537f98df56ebaa4e41bdaab524cc6109fd56284c",
+      "last_fetched": "2026-11-08T04:58:32.526955+00:00",
+      "title": "Integer Objects — Python 3.15.2 documentation"
+    },
+    "c-api-mapping": {
+      "url": "https://docs.python.org/3/c-api/mapping.html",
+      "last_hash": "bc1f28f41e9afa41c8612a1bb1bd91471ec51ec256ff0205434779b9c74263f6",
+      "last_fetched": "2026-11-08T04:58:33.827557+00:00",
+      "title": "Mapping Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-marshal": {
+      "url": "https://docs.python.org/3/c-api/marshal.html",
+      "last_hash": "066135e5f61d8ef94d75bd77c9d573302a1fac6fc318e85476e4fbe6b8a1a346",
+      "last_fetched": "2026-11-08T04:58:34.716938+00:00",
+      "title": "Data marshalling support — Python 3.15.2 documentation"
+    },
+    "c-api-memory": {
+      "url": "https://docs.python.org/3/c-api/memory.html",
+      "last_hash": "b557ddae5e1aeb70f0f5ceb2a7bc176cdb93f159d1006daf1542e9436b8348d2",
+      "last_fetched": "2026-11-08T04:58:35.662205+00:00",
+      "title": "Memory Management — Python 3.15.2 documentation"
+    },
+    "c-api-memoryview": {
+      "url": "https://docs.python.org/3/c-api/memoryview.html",
+      "last_hash": "6e730c3b5cf71d0e46256a43cf6d9e84eab588df91725dacb8fc0d80b3a8ef70",
+      "last_fetched": "2026-11-08T04:58:36.670045+00:00",
+      "title": "MemoryView objects — Python 3.15.2 documentation"
+    },
+    "c-api-method": {
+      "url": "https://docs.python.org/3/c-api/method.html",
+      "last_hash": "8fa667818884abcd0663ffde4f49f0d1b04acfbfe861b4079c85800f64c36814",
+      "last_fetched": "2026-11-08T04:58:37.593389+00:00",
+      "title": "Instance Method Objects — Python 3.15.2 documentation"
+    },
+    "c-api-module": {
+      "url": "https://docs.python.org/3/c-api/module.html",
+      "last_hash": "8ff2ec33dbefb0113080d4fbe37cf3f0798378c5fb4bab41a3b22026759ec55e",
+      "last_fetched": "2026-11-08T04:58:38.573524+00:00",
+      "title": "Module Objects — Python 3.15.2 documentation"
+    },
+    "c-api-monitoring": {
+      "url": "https://docs.python.org/3/c-api/monitoring.html",
+      "last_hash": "e0362c36bfeb2d071ebde8a2936bda64b67c6699e72f287bd6b5d3c9288736b7",
+      "last_fetched": "2026-11-08T04:58:39.655377+00:00",
+      "title": "Monitoring C API — Python 3.15.2 documentation"
+    },
+    "c-api-none": {
+      "url": "https://docs.python.org/3/c-api/none.html",
+      "last_hash": "8c37bb6bb747654a03c48991d7580aa0bc96f6a83e62ead6cc6dcef9edaffa96",
+      "last_fetched": "2026-11-08T04:58:40.554218+00:00",
+      "title": "The None Object — Python 3.15.2 documentation"
+    },
+    "c-api-number": {
+      "url": "https://docs.python.org/3/c-api/number.html",
+      "last_hash": "935b12b50b742aeb2a7704f7260f5ffd45db74b8d13ec9ff961ee90e08c2971d",
+      "last_fetched": "2026-11-08T04:58:41.513616+00:00",
+      "title": "Number Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-object": {
+      "url": "https://docs.python.org/3/c-api/object.html",
+      "last_hash": "950eb4ec1e27ec0f65cbb451ac21fad816b6213ddc65d699a9218eb8e67fe884",
+      "last_fetched": "2026-11-08T04:58:42.498984+00:00",
+      "title": "Object Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-objimpl": {
+      "url": "https://docs.python.org/3/c-api/objimpl.html",
+      "last_hash": "28788295f69e3c6fc7e32e77537430271c39b17e32dae30c8cb97a70af9f52b3",
+      "last_fetched": "2026-11-08T04:58:43.330519+00:00",
+      "title": "Object Implementation Support — Python 3.15.2 documentation"
+    },
+    "c-api-perfmaps": {
+      "url": "https://docs.python.org/3/c-api/perfmaps.html",
+      "last_hash": "c9a86e599c6182ae716a81d246a93faec802ef0f313014db6a66080fa16f797c",
+      "last_fetched": "2026-11-08T04:58:44.419517+00:00",
+      "title": "Support for Perf Maps — Python 3.15.2 documentation"
+    },
+    "c-api-picklebuffer": {
+      "url": "https://docs.python.org/3/c-api/picklebuffer.html",
+      "last_hash": "f4aa7dbd3acf13a3c8eda5640876e8892655105c29b9a7ed889e712e34f68dbd",
+      "last_fetched": "2026-11-08T04:58:45.361955+00:00",
+      "title": "Pickle buffer objects — Python 3.15.2 documentation"
+    },
+    "c-api-profiling": {
+      "url": "https://docs.python.org/3/c-api/profiling.html",
+      "last_hash": "90351eb166a067f09fa232cdb9c54cfdbaef8c3ec819865c7fdd290031b29b7e",
+      "last_fetched": "2026-11-08T04:58:46.243787+00:00",
+      "title": "Profiling and tracing — Python 3.15.2 documentation"
+    },
+    "c-api-pyexpat": {
+      "url": "https://docs.python.org/3/c-api/pyexpat.html",
+      "last_hash": "347a6dd1b13987d7e6f65ee355dc426bacbd93f852475a6455bac63ce4896c84",
+      "last_fetched": "2026-11-08T04:58:47.215578+00:00",
+      "title": "Expat C API — Python 3.15.2 documentation"
+    },
+    "c-api-refcounting": {
+      "url": "https://docs.python.org/3/c-api/refcounting.html",
+      "last_hash": "56ba9e6d9e54541c67f6496655c508b5f9480550118d0f8183d5fd78f10abe2c",
+      "last_fetched": "2026-11-08T04:58:48.149372+00:00",
+      "title": "Reference Counting — Python 3.15.2 documentation"
+    },
+    "c-api-reflection": {
+      "url": "https://docs.python.org/3/c-api/reflection.html",
+      "last_hash": "5916c00244dcb99802c45700ec0d8d4e4793a26cf2499fdf1bb2de966052cb14",
+      "last_fetched": "2026-11-08T04:58:49.254109+00:00",
+      "title": "Reflection — Python 3.15.2 documentation"
+    },
+    "c-api-sentinel": {
+      "url": "https://docs.python.org/3/c-api/sentinel.html",
+      "last_hash": "db9bb0bbf9195a4e872e1c740f1eb70cd49a416ce1759d1c9364411d9df42649",
+      "last_fetched": "2026-11-08T04:58:50.316571+00:00",
+      "title": "Sentinel objects — Python 3.15.2 documentation"
+    },
+    "c-api-sequence": {
+      "url": "https://docs.python.org/3/c-api/sequence.html",
+      "last_hash": "234de403015d0f749f8b2ca48b481a002544b8708d089b97b6ccb69915cdeba5",
+      "last_fetched": "2026-11-08T04:58:51.211262+00:00",
+      "title": "Sequence Protocol — Python 3.15.2 documentation"
+    },
+    "c-api-set": {
+      "url": "https://docs.python.org/3/c-api/set.html",
+      "last_hash": "9c1c1232a08ae7884558089397babed913410ec6e5ca15449276fdb89d0a2f40",
+      "last_fetched": "2026-11-08T04:58:52.473752+00:00",
+      "title": "Set Objects — Python 3.15.2 documentation"
+    },
+    "c-api-slice": {
+      "url": "https://docs.python.org/3/c-api/slice.html",
+      "last_hash": "badc2e42d80c72eafad7ff18c0f0c643d4769d05f5ea7c94bb52e52fc6601440",
+      "last_fetched": "2026-11-08T04:58:53.264625+00:00",
+      "title": "Slice Objects — Python 3.15.2 documentation"
+    },
+    "c-api-slots": {
+      "url": "https://docs.python.org/3/c-api/slots.html",
+      "last_hash": "fa150608571a8813cba7a9e5589b2f4df7aa04c65a88c7fceddff8e1184013ec",
+      "last_fetched": "2026-11-08T04:58:54.357900+00:00",
+      "title": "Definition slots — Python 3.15.2 documentation"
+    },
+    "c-api-stable": {
+      "url": "https://docs.python.org/3/c-api/stable.html",
+      "last_hash": "5bc3ce1594738dc79f40e8d7b15bd5be6597462c484eee9b24057673e6ad5971",
+      "last_fetched": "2026-11-08T04:58:55.474657+00:00",
+      "title": "C API and ABI Stability — Python 3.15.2 documentation"
+    },
+    "c-api-structures": {
+      "url": "https://docs.python.org/3/c-api/structures.html",
+      "last_hash": "f5986b256baae698a7d18a9394680c936e4432f14c103711f9dee5d5e75f4698",
+      "last_fetched": "2026-11-08T04:58:56.576039+00:00",
+      "title": "Common Object Structures — Python 3.15.2 documentation"
+    },
+    "c-api-subinterpreters": {
+      "url": "https://docs.python.org/3/c-api/subinterpreters.html",
+      "last_hash": "1bf10e1736e579fa7cde5dd5d7f09f491511eee583693f8a9d36cf24920b968f",
+      "last_fetched": "2026-11-08T04:58:57.542399+00:00",
+      "title": "Multiple interpreters in a Python process — Python 3.15.2 documentation"
+    },
+    "c-api-synchronization": {
+      "url": "https://docs.python.org/3/c-api/synchronization.html",
+      "last_hash": "2818d16c8cbb831bf0637cafc2d6b3adf2193ebaa3f43a3510eddc73a1c8f62e",
+      "last_fetched": "2026-11-08T04:58:58.725991+00:00",
+      "title": "Synchronization primitives — Python 3.15.2 documentation"
+    },
+    "c-api-sys": {
+      "url": "https://docs.python.org/3/c-api/sys.html",
+      "last_hash": "612d847e256ed9c929df592acaa68b0e351ee7705b58a9463d2ea9af8e3d27f5",
+      "last_fetched": "2026-11-08T04:58:59.583702+00:00",
+      "title": "Operating System Utilities — Python 3.15.2 documentation"
+    },
+    "c-api-threads": {
+      "url": "https://docs.python.org/3/c-api/threads.html",
+      "last_hash": "5db83f0c5e416c0ae02bd90d2d6026175a0fcb1b9679d7af5e3462241ddefde8",
+      "last_fetched": "2026-11-08T04:59:00.530568+00:00",
+      "title": "Thread states and the global interpreter lock — Python 3.15.2 documentation"
+    },
+    "c-api-time": {
+      "url": "https://docs.python.org/3/c-api/time.html",
+      "last_hash": "1b4c02a37eac02d68b4f17807be9bf8b2c4bb551cb9c4e1bd9c1a8acb75cbd45",
+      "last_fetched": "2026-11-08T04:59:01.592395+00:00",
+      "title": "PyTime C API — Python 3.15.2 documentation"
+    },
+    "c-api-tls": {
+      "url": "https://docs.python.org/3/c-api/tls.html",
+      "last_hash": "d1d7ad5ceb336db4fb11a804bf124c9cca19c4f7c1ddf6fcfe825c0d448dba83",
+      "last_fetched": "2026-11-08T04:59:02.475428+00:00",
+      "title": "Thread-local storage support — Python 3.15.2 documentation"
+    },
+    "c-api-tuple": {
+      "url": "https://docs.python.org/3/c-api/tuple.html",
+      "last_hash": "1a35c8a197f1186dbca1933a0a63021ad022ebda4ada41338147d3df574c7bae",
+      "last_fetched": "2026-11-08T04:59:03.397790+00:00",
+      "title": "Tuple Objects — Python 3.15.2 documentation"
+    },
+    "c-api-type": {
+      "url": "https://docs.python.org/3/c-api/type.html",
+      "last_hash": "ccf383336fc0116b711588a5013db2a5e7c58c8e24722fb542af12b3835d12b0",
+      "last_fetched": "2026-11-08T04:59:04.439984+00:00",
+      "title": "Type Objects — Python 3.15.2 documentation"
+    },
+    "c-api-typehints": {
+      "url": "https://docs.python.org/3/c-api/typehints.html",
+      "last_hash": "346fd54aac4a38f556720efde580bdc8bb4ce296e9704b7e4e06d0bef80c371e",
+      "last_fetched": "2026-11-08T04:59:05.436513+00:00",
+      "title": "Objects for Type Hinting — Python 3.15.2 documentation"
+    },
+    "c-api-typeobj": {
+      "url": "https://docs.python.org/3/c-api/typeobj.html",
+      "last_hash": "4cc1bdb418625315f6474e2ebf55221632e4cf0d8f9f91baff06fd7c97973795",
+      "last_fetched": "2026-11-08T04:59:07.176030+00:00",
+      "title": "Type Object Structures — Python 3.15.2 documentation"
+    },
+    "c-api-unicode": {
+      "url": "https://docs.python.org/3/c-api/unicode.html",
+      "last_hash": "a05b9aa80370614ae1a57a24c7891e9797360d5e0af04e6a21ff6c7148d17c01",
+      "last_fetched": "2026-11-08T04:59:08.388165+00:00",
+      "title": "Unicode Objects and Codecs — Python 3.15.2 documentation"
+    },
+    "c-api-utilities": {
+      "url": "https://docs.python.org/3/c-api/utilities.html",
+      "last_hash": "90708d1fbbfeda787a61e781d65fa3d3c4269e4f7799ad5c503eb667ffe779c9",
+      "last_fetched": "2026-11-08T04:59:09.317476+00:00",
+      "title": "Utilities — Python 3.15.2 documentation"
+    },
+    "c-api-veryhigh": {
+      "url": "https://docs.python.org/3/c-api/veryhigh.html",
+      "last_hash": "b9b0c2cdf68771077fcd5ebe4c98f5f770a1d8e18e3d4fd52d01151af578f736",
+      "last_fetched": "2026-11-08T04:59:10.493215+00:00",
+      "title": "The Very High Level Layer — Python 3.15.2 documentation"
+    },
+    "c-api-weakref": {
+      "url": "https://docs.python.org/3/c-api/weakref.html",
+      "last_hash": "36217888f748be75dc7a28fff467c55343433b71d256d4b34234b9840772bca0",
+      "last_fetched": "2026-11-08T04:59:11.441911+00:00",
+      "title": "Weak Reference Objects — Python 3.15.2 documentation"
+    },
+    "contents": {
+      "url": "https://docs.python.org/3/contents.html",
+      "last_hash": "53b618d3ec5b509d413f533aeaedc6a461ea5f04cc8a4fd6d1e59b6c507a51d4",
+      "last_fetched": "2026-11-08T04:59:13.025303+00:00",
+      "title": "Python Documentation contents — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-future": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-future.html",
+      "last_hash": "9d736085fc4908d6140daeaaa75ca6ca7bdb4ebbe14ddb7c2ecd3dd01a0b424e",
+      "last_fetched": "2026-11-08T04:59:14.150364+00:00",
+      "title": "Pending removal in future versions — Python 3.15.2 documentation"
+    },
+    "deprecations-index": {
+      "url": "https://docs.python.org/3/deprecations/index.html",
+      "last_hash": "a92418f09b83a84921742b1c18f801d6267a704e7e96c1320834a2c4d39ebbfb",
+      "last_fetched": "2026-11-08T04:59:15.045426+00:00",
+      "title": "Deprecations — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-future": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-future.html",
+      "last_hash": "974077c95f8a08b71a5f73efd38de3a23de9003bb6ae9341e4553e18567526db",
+      "last_fetched": "2026-11-08T04:59:16.006448+00:00",
+      "title": "Pending removal in future versions — Python 3.15.2 documentation"
+    },
+    "deprecations-soft-deprecations": {
+      "url": "https://docs.python.org/3/deprecations/soft-deprecations.html",
+      "last_hash": "36d0719fa564581b053c2980bd06a42a6a007c05346991d2441328c9e3a492c7",
+      "last_fetched": "2026-11-08T04:59:16.936969+00:00",
+      "title": "Soft deprecations — Python 3.15.2 documentation"
+    },
+    "distributing-index": {
+      "url": "https://docs.python.org/3/distributing/index.html",
+      "last_hash": "c826b1e378d5a433aa0444bf493b1baccf8db30a2ed009923ea1ef5de81f23c5",
+      "last_fetched": "2026-11-08T04:59:17.900402+00:00",
+      "title": "Distributing Python Modules — Python 3.15.2 documentation"
+    },
+    "extending-building": {
+      "url": "https://docs.python.org/3/extending/building.html",
+      "last_hash": "f54b1a7d69ac425b5bebc7baf7de2d944c3f4e9c9bd5f5df0d34fbd0dc1d72b2",
+      "last_fetched": "2026-11-08T04:59:18.732570+00:00",
+      "title": "Building C and C++ Extensions — Python 3.15.2 documentation"
+    },
+    "extending-embedding": {
+      "url": "https://docs.python.org/3/extending/embedding.html",
+      "last_hash": "987c13a673e93c7db6db991d3bf695d5ea8b9a870124a28df600443ed4ccfc66",
+      "last_fetched": "2026-11-08T04:59:19.719416+00:00",
+      "title": "Embedding Python in Another Application — Python 3.15.2 documentation"
+    },
+    "extending-extending": {
+      "url": "https://docs.python.org/3/extending/extending.html",
+      "last_hash": "645425291089da6939269ba3d7f6173f3c9e3f8b04fe4d959fca1f2d1e0ece47",
+      "last_fetched": "2026-11-08T04:59:20.817384+00:00",
+      "title": "Using the C API: Assorted topics — Python 3.15.2 documentation"
+    },
+    "extending-first-extension-module": {
+      "url": "https://docs.python.org/3/extending/first-extension-module.html",
+      "last_hash": "0f2fa67a4a00be5db18e0f42fef5515a36710a762dce2ee6a5be3e0fe1d90f1e",
+      "last_fetched": "2026-11-08T04:59:22.204735+00:00",
+      "title": "Your first C API extension module — Python 3.15.2 documentation"
+    },
+    "extending-index": {
+      "url": "https://docs.python.org/3/extending/index.html",
+      "last_hash": "43e7cf4697216ba5fbf1bbd4964ab30762d3c9deb939fe6a15423171211121d7",
+      "last_fetched": "2026-11-08T04:59:23.101853+00:00",
+      "title": "Extending and Embedding the Python Interpreter — Python 3.15.2 documentation"
+    },
+    "extending-newtypes": {
+      "url": "https://docs.python.org/3/extending/newtypes.html",
+      "last_hash": "3f3396f3bd4f50b3a5abd07afe98dc44e9662cfd7ed2efea43af1c6fcf8a9222",
+      "last_fetched": "2026-11-08T04:59:24.008251+00:00",
+      "title": "Defining Extension Types: Assorted Topics — Python 3.15.2 documentation"
+    },
+    "extending-newtypes_tutorial": {
+      "url": "https://docs.python.org/3/extending/newtypes_tutorial.html",
+      "last_hash": "4ba5f8bdc40ac4de6932cd436c24893f9f83a736181399d6005d5d90369e5dc4",
+      "last_fetched": "2026-11-08T04:59:25.752267+00:00",
+      "title": "Defining Extension Types: Tutorial — Python 3.15.2 documentation"
+    },
+    "extending-windows": {
+      "url": "https://docs.python.org/3/extending/windows.html",
+      "last_hash": "f6c758ed5a9a1064bb8048b3bc39b21b6e5c0b2e44eb9c4aab35e66381506fbb",
+      "last_fetched": "2026-11-08T04:59:26.696015+00:00",
+      "title": "Building C and C++ Extensions on Windows — Python 3.15.2 documentation"
+    },
+    "faq-design": {
+      "url": "https://docs.python.org/3/faq/design.html",
+      "last_hash": "6aff208ead3ffa33e4573cb56a8a0d7d223b2a7d86750759f698a2854c75f5ba",
+      "last_fetched": "2026-11-08T04:59:27.554680+00:00",
+      "title": "Design and History FAQ — Python 3.15.2 documentation"
+    },
+    "faq-extending": {
+      "url": "https://docs.python.org/3/faq/extending.html",
+      "last_hash": "e577eac0eccbd2188030e0852ca75249b8b0271b7afcc2032aeb7f1b6c5878d2",
+      "last_fetched": "2026-11-08T04:59:28.352817+00:00",
+      "title": "Extending/Embedding FAQ — Python 3.15.2 documentation"
+    },
+    "faq-general": {
+      "url": "https://docs.python.org/3/faq/general.html",
+      "last_hash": "7747ee23811fb248b3b8358ff15646e107c9bf467b78092259297bb22e79a621",
+      "last_fetched": "2026-11-08T04:59:29.305442+00:00",
+      "title": "General Python FAQ — Python 3.15.2 documentation"
+    },
+    "faq-gui": {
+      "url": "https://docs.python.org/3/faq/gui.html",
+      "last_hash": "8cb14e345b607df931bcee426b279b383c4b1f34595586dfb7d2c0554b908345",
+      "last_fetched": "2026-11-08T04:59:30.486519+00:00",
+      "title": "Graphic User Interface FAQ — Python 3.15.2 documentation"
+    },
+    "faq-index": {
+      "url": "https://docs.python.org/3/faq/index.html",
+      "last_hash": "7c52d03a5fe2e2239337a73f42c934826e977d78a285aad3fd400c7be5d9575a",
+      "last_fetched": "2026-11-08T04:59:31.619416+00:00",
+      "title": "Python Frequently Asked Questions — Python 3.15.2 documentation"
+    },
+    "faq-installed": {
+      "url": "https://docs.python.org/3/faq/installed.html",
+      "last_hash": "a684730633588e39881da92425d34363c3030ad2e7658adb75b604e3df2e3b33",
+      "last_fetched": "2026-11-08T04:59:32.747402+00:00",
+      "title": "“Why is Python Installed on my Computer?” FAQ — Python 3.15.2 documentation"
+    },
+    "faq-library": {
+      "url": "https://docs.python.org/3/faq/library.html",
+      "last_hash": "cf3568c2da9f70619faad22c76b1a69c22e37a6089666fa303afc5f4c802142f",
+      "last_fetched": "2026-11-08T04:59:33.707048+00:00",
+      "title": "Library and Extension FAQ — Python 3.15.2 documentation"
+    },
+    "faq-programming": {
+      "url": "https://docs.python.org/3/faq/programming.html",
+      "last_hash": "17122cf2fab118666b48288c6a714963c86abe9ad768bdda5982c5def95e3a04",
+      "last_fetched": "2026-11-08T04:59:34.856099+00:00",
+      "title": "Programming FAQ — Python 3.15.2 documentation"
+    },
+    "faq-windows": {
+      "url": "https://docs.python.org/3/faq/windows.html",
+      "last_hash": "35ae1b97471a544ad232525275a492ffa8d0302713fcd26158db9682763216c1",
+      "last_fetched": "2026-11-08T04:59:35.733326+00:00",
+      "title": "Python on Windows FAQ — Python 3.15.2 documentation"
+    },
+    "glossary": {
+      "url": "https://docs.python.org/3/glossary.html",
+      "last_hash": "6defda3b62251400184943f7e1235ab87a407d05e6a3c0548d24c2e1130ad6b0",
+      "last_fetched": "2026-11-08T04:59:36.913409+00:00",
+      "title": "Glossary — Python 3.15.2 documentation"
+    },
+    "howto-a-conceptual-overview-of-asyncio": {
+      "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+      "last_hash": "84d70c74b1b408090f611f085e0e85720ea2ee87d50357b945ae0a60cb275ead",
+      "last_fetched": "2026-11-08T04:59:37.749889+00:00",
+      "title": "A conceptual overview of asyncio — Python 3.15.2 documentation"
+    },
+    "howto-abi3t-migration": {
+      "url": "https://docs.python.org/3/howto/abi3t-migration.html",
+      "last_hash": "3a69d01dcc4a73ea60913616cae222951a594037932db5d1e2fc800430875ef5",
+      "last_fetched": "2026-11-08T04:59:38.799865+00:00",
+      "title": "Migrating to Stable ABI for free threading (abi3t) — Python 3.15.2 documentation"
+    },
+    "howto-annotations": {
+      "url": "https://docs.python.org/3/howto/annotations.html",
+      "last_hash": "76246a4ead4f60ed0f7de7f7da3587486e1a3b46fb20c2f3c753870115ea813b",
+      "last_fetched": "2026-11-08T04:59:39.851271+00:00",
+      "title": "Annotations Best Practices — Python 3.15.2 documentation"
+    },
+    "howto-argparse": {
+      "url": "https://docs.python.org/3/howto/argparse.html",
+      "last_hash": "6722326dff698386a67b57de8aaaf621b05e08fab03450692a7092b46c1c809e",
+      "last_fetched": "2026-11-08T04:59:40.740761+00:00",
+      "title": "Argparse Tutorial — Python 3.15.2 documentation"
+    },
+    "howto-argparse-optparse": {
+      "url": "https://docs.python.org/3/howto/argparse-optparse.html",
+      "last_hash": "60851d809a9b2795f55bc1669381028906d7a477721d35073fd60d86f88a674d",
+      "last_fetched": "2026-11-08T04:59:41.553572+00:00",
+      "title": "Migrating optparse code to argparse — Python 3.15.2 documentation"
+    },
+    "howto-clinic": {
+      "url": "https://docs.python.org/3/howto/clinic.html",
+      "last_hash": "fb640df7e3b0dd78571250187ff29ba92d1b7f85e4047c91cea5bd537701926d",
+      "last_fetched": "2026-11-08T04:59:42.471675+00:00",
+      "title": "Argument Clinic How-To — Python 3.15.2 documentation"
+    },
+    "howto-cporting": {
+      "url": "https://docs.python.org/3/howto/cporting.html",
+      "last_hash": "f5623b1b3614b0fee47b4da71a56d2a459048aefebee7fb3d15c6a11bb727eda",
+      "last_fetched": "2026-11-08T04:59:43.334309+00:00",
+      "title": "Porting Extension Modules to Python 3 — Python 3.15.2 documentation"
+    },
+    "howto-curses": {
+      "url": "https://docs.python.org/3/howto/curses.html",
+      "last_hash": "b36c13b3a3e46fc301c14db75da1ceda5a06f61c1cf10f8ccd7cb7cf212a1408",
+      "last_fetched": "2026-11-08T04:59:44.207686+00:00",
+      "title": "Curses Programming with Python — Python 3.15.2 documentation"
+    },
+    "howto-descriptor": {
+      "url": "https://docs.python.org/3/howto/descriptor.html",
+      "last_hash": "1a4f62225b5f5b8b068b573e0ff601bb4fb09a40bc0ea67928019bc28df9ec48",
+      "last_fetched": "2026-11-08T04:59:45.536230+00:00",
+      "title": "Descriptor Guide — Python 3.15.2 documentation"
+    },
+    "howto-enum": {
+      "url": "https://docs.python.org/3/howto/enum.html",
+      "last_hash": "66505d06a53c586e70032734de77cc9cf313e14ce86b8a1a05334555f6071db8",
+      "last_fetched": "2026-11-08T04:59:46.864032+00:00",
+      "title": "Enum HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-free-threading-extensions": {
+      "url": "https://docs.python.org/3/howto/free-threading-extensions.html",
+      "last_hash": "78cfe9ddba5f87efe119e7cbd76058b0cdc80dcbbb5f8175b67b17ee214f2012",
+      "last_fetched": "2026-11-08T04:59:47.852270+00:00",
+      "title": "C API Extension Support for Free Threading — Python 3.15.2 documentation"
+    },
+    "howto-free-threading-python": {
+      "url": "https://docs.python.org/3/howto/free-threading-python.html",
+      "last_hash": "2f5b9c4c2df57d6fda13b2d41a35f32fff15a9b9f5171013937c02bdd2693708",
+      "last_fetched": "2026-11-08T04:59:48.748750+00:00",
+      "title": "Python support for free threading — Python 3.15.2 documentation"
+    },
+    "howto-functional": {
+      "url": "https://docs.python.org/3/howto/functional.html",
+      "last_hash": "f9c663139db49254ad2109567bcccf426c7197a7abdfe01171f56fe5b1841907",
+      "last_fetched": "2026-11-08T04:59:49.761304+00:00",
+      "title": "Functional Programming HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-gdb_helpers": {
+      "url": "https://docs.python.org/3/howto/gdb_helpers.html",
+      "last_hash": "98eff7e97d56fb1f44f512df4abc8a94f898705ac513a69741238f807d186a33",
+      "last_fetched": "2026-11-08T04:59:50.569112+00:00",
+      "title": "Debugging C API extensions and CPython Internals with GDB — Python 3.15.2 documentation"
+    },
+    "howto-index": {
+      "url": "https://docs.python.org/3/howto/index.html",
+      "last_hash": "08dadbb6d27c5d8344c9b68aacfb82141750d4e232b4c072468b02687eb06b2f",
+      "last_fetched": "2026-11-08T04:59:51.468783+00:00",
+      "title": "Python HOWTOs — Python 3.15.2 documentation"
+    },
+    "howto-instrumentation": {
+      "url": "https://docs.python.org/3/howto/instrumentation.html",
+      "last_hash": "1a133e7c772bdbc410c320cfe9d1f71bcdf3bbdea27cd4145a9184563059212b",
+      "last_fetched": "2026-11-08T04:59:52.444057+00:00",
+      "title": "Instrumenting CPython with DTrace and SystemTap — Python 3.15.2 documentation"
+    },
+    "howto-ipaddress": {
+      "url": "https://docs.python.org/3/howto/ipaddress.html",
+      "last_hash": "d657a6b90df06df43e752376bcc9312e28a87bd5c12539ea2f271a0b954dc61d",
+      "last_fetched": "2026-11-08T04:59:53.321361+00:00",
+      "title": "An introduction to the ipaddress module — Python 3.15.2 documentation"
+    },
+    "howto-isolating-extensions": {
+      "url": "https://docs.python.org/3/howto/isolating-extensions.html",
+      "last_hash": "9b71400213f7b213002485d9155d2a81c742e1eb72b1b39162b86e594efddaf1",
+      "last_fetched": "2026-11-08T04:59:54.444987+00:00",
+      "title": "Isolating Extension Modules — Python 3.15.2 documentation"
+    },
+    "howto-logging": {
+      "url": "https://docs.python.org/3/howto/logging.html",
+      "last_hash": "decd31ccffb4d8bddcf301dd40107bc12d98e4b6568e87ee9b4d519d00e73162",
+      "last_fetched": "2026-11-08T04:59:55.690461+00:00",
+      "title": "Logging HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-logging-cookbook": {
+      "url": "https://docs.python.org/3/howto/logging-cookbook.html",
+      "last_hash": "1a4a74681c5c09c5e9c83c6dfda96cf2b62729b1b910c6db48964c5f36720fac",
+      "last_fetched": "2026-11-08T04:59:57.062326+00:00",
+      "title": "Logging Cookbook — Python 3.15.2 documentation"
+    },
+    "howto-mro": {
+      "url": "https://docs.python.org/3/howto/mro.html",
+      "last_hash": "1e382f48e9e8de752c612d6be9eece11c1e57b5a156546499217e4fa600bd3c2",
+      "last_fetched": "2026-11-08T04:59:58.018736+00:00",
+      "title": "The Python 2.3 Method Resolution Order — Python 3.15.2 documentation"
+    },
+    "howto-perf_profiling": {
+      "url": "https://docs.python.org/3/howto/perf_profiling.html",
+      "last_hash": "4d4631e0a59b4bf183d844b9c08a412e12e3304d6afad5afd4da4ed97a011ca7",
+      "last_fetched": "2026-11-08T04:59:58.905896+00:00",
+      "title": "Python support for the perf map compatible profilers — Python 3.15.2 documentation"
+    },
+    "howto-pyporting": {
+      "url": "https://docs.python.org/3/howto/pyporting.html",
+      "last_hash": "40ce0c8873a4046a70b72af67d766141583b0c2592dcd8fd93b9b75d80288ff0",
+      "last_fetched": "2026-11-08T04:59:59.773802+00:00",
+      "title": "How to port Python 2 Code to Python 3 — Python 3.15.2 documentation"
+    },
+    "howto-regex": {
+      "url": "https://docs.python.org/3/howto/regex.html",
+      "last_hash": "b1945d4bf5156c977e4968b6b87a1f0c89f5a36a2e4a234df0ce9463f3dd9068",
+      "last_fetched": "2026-11-08T05:00:01.086638+00:00",
+      "title": "Regular expression HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-remote_debugging": {
+      "url": "https://docs.python.org/3/howto/remote_debugging.html",
+      "last_hash": "ea8189817044a3bdd28cbfa204ab4572930c27aa00940e05826ee30824943917",
+      "last_fetched": "2026-11-08T05:00:02.023641+00:00",
+      "title": "Remote debugging attachment protocol — Python 3.15.2 documentation"
+    },
+    "howto-sockets": {
+      "url": "https://docs.python.org/3/howto/sockets.html",
+      "last_hash": "7b181bf3579ebbcd12eb93ebc9e3320fa287e97169c13ce2a29d6233352f7fc7",
+      "last_fetched": "2026-11-08T05:00:03.200963+00:00",
+      "title": "Socket Programming HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-sorting": {
+      "url": "https://docs.python.org/3/howto/sorting.html",
+      "last_hash": "5a18ef87984df40d443a156d8aa2d955d995219293dd5be593026bd3b3a0c5f8",
+      "last_fetched": "2026-11-08T05:00:04.122771+00:00",
+      "title": "Sorting Techniques — Python 3.15.2 documentation"
+    },
+    "howto-timerfd": {
+      "url": "https://docs.python.org/3/howto/timerfd.html",
+      "last_hash": "db4e4cfb790041749d7ad07da3c368ab9118962fd083be0e9e79ebbb7b37b17e",
+      "last_fetched": "2026-11-08T05:00:05.016709+00:00",
+      "title": "timer file descriptor HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-unicode": {
+      "url": "https://docs.python.org/3/howto/unicode.html",
+      "last_hash": "54cc6ff6ec9184131dec938dac582e30d2bae52c3d30f10ca1ec94901d00ab55",
+      "last_fetched": "2026-11-08T05:00:06.146630+00:00",
+      "title": "Unicode HOWTO — Python 3.15.2 documentation"
+    },
+    "howto-urllib2": {
+      "url": "https://docs.python.org/3/howto/urllib2.html",
+      "last_hash": "36f6964b374cc926b55597c983c0e868b8daf286ab39a38db9324e79fd997a99",
+      "last_fetched": "2026-11-08T05:00:07.143124+00:00",
+      "title": "HOWTO Fetch Internet Resources Using The urllib Package — Python 3.15.2 documentation"
+    },
+    "improve-page": {
+      "url": "https://docs.python.org/3/improve-page.html",
+      "last_hash": "1f4aade6c39bf172d50677fbf3339fc457a5e8b93f47ff34261034401f448869",
+      "last_fetched": "2026-11-08T05:00:08.006222+00:00",
+      "title": "Improve a documentation page — Python 3.15.2 documentation"
+    },
+    "improve-page-nojs": {
+      "url": "https://docs.python.org/3/improve-page-nojs.html",
+      "last_hash": "769a9d75643ce3bf3f30f4eaa52cd27c58401ad058d895c93a143b0381fd8cf2",
+      "last_fetched": "2026-11-08T05:00:08.765571+00:00",
+      "title": "Improve a documentation page — Python 3.15.2 documentation"
+    },
+    "installing-index": {
+      "url": "https://docs.python.org/3/installing/index.html",
+      "last_hash": "c9db668186773da7dcb080d022caa02888436486c9bea9f788d5924ad3ea89ee",
+      "last_fetched": "2026-11-08T05:00:09.841249+00:00",
+      "title": "Installing Python modules — Python 3.15.2 documentation"
+    },
+    "library-__future__": {
+      "url": "https://docs.python.org/3/library/__future__.html",
+      "last_hash": "2679d26e2f723260ae29a7e04c76b80c2df9879fe57919d820b53c1933977044",
+      "last_fetched": "2026-11-08T05:00:11.029935+00:00",
+      "title": "__future__ — Future statement definitions — Python 3.15.2 documentation"
+    },
+    "library-__main__": {
+      "url": "https://docs.python.org/3/library/__main__.html",
+      "last_hash": "1fd12ae3fb920fcd3c15e03c8adcacbd1f0a6f252ff8ecf1d514e25c7e35af5b",
+      "last_fetched": "2026-11-08T05:00:12.186608+00:00",
+      "title": "__main__ — Top-level code environment — Python 3.15.2 documentation"
+    },
+    "library-_thread": {
+      "url": "https://docs.python.org/3/library/_thread.html",
+      "last_hash": "b9f05c1f34153e2cf176ad71969c9862092c298bf0eaa0f9a531cbae611222f3",
+      "last_fetched": "2026-11-08T05:00:13.140240+00:00",
+      "title": "_thread — Low-level threading API — Python 3.15.2 documentation"
+    },
+    "library-abc": {
+      "url": "https://docs.python.org/3/library/abc.html",
+      "last_hash": "a42175c1a8571c2a6a40c33b34c975bc0727e4f0a8da92612f7656c01e5bbae2",
+      "last_fetched": "2026-11-08T05:00:14.069549+00:00",
+      "title": "abc — Abstract Base Classes — Python 3.15.2 documentation"
+    },
+    "library-aifc": {
+      "url": "https://docs.python.org/3/library/aifc.html",
+      "last_hash": "f92853aca23fbfafdec60e4c2eae0026016e770322796081a82af15eb72b27fa",
+      "last_fetched": "2026-11-08T05:00:14.975524+00:00",
+      "title": "aifc — Read and write AIFF and AIFC files — Python 3.15.2 documentation"
+    },
+    "library-allos": {
+      "url": "https://docs.python.org/3/library/allos.html",
+      "last_hash": "9953a7601baaa86df0d4bd8f32234b44d3d073183dfab614c8b3e549ef6e4a8a",
+      "last_fetched": "2026-11-08T05:00:15.910845+00:00",
+      "title": "Generic Operating System Services — Python 3.15.2 documentation"
+    },
+    "library-annotationlib": {
+      "url": "https://docs.python.org/3/library/annotationlib.html",
+      "last_hash": "009d9239addb1df39afe49fea77d0c78a0f12164ce1ead64a90f85ddbcb43c5a",
+      "last_fetched": "2026-11-08T05:00:17.063190+00:00",
+      "title": "annotationlib — Functionality for introspecting annotations — Python 3.15.2 documentation"
+    },
+    "library-archiving": {
+      "url": "https://docs.python.org/3/library/archiving.html",
+      "last_hash": "db8a87cfe565d14ee30ef6cc0e075b584887fd7bb65d89bd138e4f265dffcce7",
+      "last_fetched": "2026-11-08T05:00:18.120116+00:00",
+      "title": "Data Compression and Archiving — Python 3.15.2 documentation"
+    },
+    "library-argparse": {
+      "url": "https://docs.python.org/3/library/argparse.html",
+      "last_hash": "5e55ff30e277fe39659cb97e8bd4329c6c7b9d95c59148c5808fea5f03d4d869",
+      "last_fetched": "2026-11-08T05:00:19.154021+00:00",
+      "title": "argparse — Parser for command-line options, arguments and subcommands — Python 3.15.2 documentation"
+    },
+    "library-array": {
+      "url": "https://docs.python.org/3/library/array.html",
+      "last_hash": "53c6e34c93338fb1316b7db573be2cb54b90ba7a6ecb25592a0c0a3b01a490b9",
+      "last_fetched": "2026-11-08T05:00:20.354663+00:00",
+      "title": "array — Efficient arrays of numeric values — Python 3.15.2 documentation"
+    },
+    "library-ast": {
+      "url": "https://docs.python.org/3/library/ast.html",
+      "last_hash": "8c0ff15451c3b190849ad63ccc45927504d124e4e1c9c2d24df92be5941de099",
+      "last_fetched": "2026-11-08T05:00:21.707570+00:00",
+      "title": "ast — Abstract syntax trees — Python 3.15.2 documentation"
+    },
+    "library-asynchat": {
+      "url": "https://docs.python.org/3/library/asynchat.html",
+      "last_hash": "b3bd0ca681afbfb706b80dce2090775757b46f0c29b74ba2db03c5ade5879737",
+      "last_fetched": "2026-11-08T05:00:22.611805+00:00",
+      "title": "asynchat — Asynchronous socket command/response handler — Python 3.15.2 documentation"
+    },
+    "library-asyncio": {
+      "url": "https://docs.python.org/3/library/asyncio.html",
+      "last_hash": "d4b16da4d33c51e8e44e7d644bf9bf602a2caef2127f9c4ed79fc0c297565ad9",
+      "last_fetched": "2026-11-08T05:00:23.514892+00:00",
+      "title": "asyncio — Asynchronous I/O — Python 3.15.2 documentation"
+    },
+    "library-asyncio-api-index": {
+      "url": "https://docs.python.org/3/library/asyncio-api-index.html",
+      "last_hash": "dcbd72a3a1ef3e255786f0cbb0752dfd7b676a100fae073d82dad6ac678574fc",
+      "last_fetched": "2026-11-08T05:00:24.690492+00:00",
+      "title": "High-level API Index — Python 3.15.2 documentation"
+    },
+    "library-asyncio-dev": {
+      "url": "https://docs.python.org/3/library/asyncio-dev.html",
+      "last_hash": "f61933d5bf9f54f64c579f62aa2916c37c35feeccca1919d4bf8c06f389a917a",
+      "last_fetched": "2026-11-08T05:00:25.654541+00:00",
+      "title": "Developing with asyncio — Python 3.15.2 documentation"
+    },
+    "library-asyncio-eventloop": {
+      "url": "https://docs.python.org/3/library/asyncio-eventloop.html",
+      "last_hash": "bdbc1bbe6a9884d1ec71d85ed49850de20565e5b090030160f8bca4c49dd5df5",
+      "last_fetched": "2026-11-08T05:00:26.857308+00:00",
+      "title": "Event loop — Python 3.15.2 documentation"
+    },
+    "library-asyncio-exceptions": {
+      "url": "https://docs.python.org/3/library/asyncio-exceptions.html",
+      "last_hash": "20554d38ec6511c3faa6595609324891eaa2a77721bce812a7d79456df30cd3e",
+      "last_fetched": "2026-11-08T05:00:28.054279+00:00",
+      "title": "Exceptions — Python 3.15.2 documentation"
+    },
+    "library-asyncio-extending": {
+      "url": "https://docs.python.org/3/library/asyncio-extending.html",
+      "last_hash": "5d2160e450600f4aee4360c9746ecaaa082f59c388dde3720f7caa5ffffd577c",
+      "last_fetched": "2026-11-08T05:00:28.992382+00:00",
+      "title": "Extending — Python 3.15.2 documentation"
+    },
+    "library-asyncio-future": {
+      "url": "https://docs.python.org/3/library/asyncio-future.html",
+      "last_hash": "9071e36115a4b64cb7515f5407b38b37d81ae39ff54e6b11caf374ee05b5693e",
+      "last_fetched": "2026-11-08T05:00:29.900845+00:00",
+      "title": "Futures — Python 3.15.2 documentation"
+    },
+    "library-asyncio-graph": {
+      "url": "https://docs.python.org/3/library/asyncio-graph.html",
+      "last_hash": "97e1c24ef018d48e4609d394012ca5cd85d07537f39c75edeb54a5dcdf7cb209",
+      "last_fetched": "2026-11-08T05:00:30.993963+00:00",
+      "title": "Call graph introspection — Python 3.15.2 documentation"
+    },
+    "library-asyncio-llapi-index": {
+      "url": "https://docs.python.org/3/library/asyncio-llapi-index.html",
+      "last_hash": "33a3d07d06ae9a8f3d51acd6e7e9d1cb0304885ab02fe8b8c24360bdd4eb4b15",
+      "last_fetched": "2026-11-08T05:00:31.985933+00:00",
+      "title": "Low-level API Index — Python 3.15.2 documentation"
+    },
+    "library-asyncio-platforms": {
+      "url": "https://docs.python.org/3/library/asyncio-platforms.html",
+      "last_hash": "402d2dd6b7ba1bfde4c311882c899fe1e4ae8068c6e92bd384dce807a2dc6a0e",
+      "last_fetched": "2026-11-08T05:00:32.883855+00:00",
+      "title": "Platform Support — Python 3.15.2 documentation"
+    },
+    "library-asyncio-policy": {
+      "url": "https://docs.python.org/3/library/asyncio-policy.html",
+      "last_hash": "6fedc017eaaeaab4d7d8651b10c139608e7b943f8adb7944cd5db9e6048e5598",
+      "last_fetched": "2026-11-08T05:00:33.823115+00:00",
+      "title": "Policies — Python 3.15.2 documentation"
+    },
+    "library-asyncio-protocol": {
+      "url": "https://docs.python.org/3/library/asyncio-protocol.html",
+      "last_hash": "d86cabad68b1222fe0cc8bff05fd65a8bdd969948a94db5942a05af4766a9c06",
+      "last_fetched": "2026-11-08T05:00:34.908430+00:00",
+      "title": "Transports and Protocols — Python 3.15.2 documentation"
+    },
+    "library-asyncio-queue": {
+      "url": "https://docs.python.org/3/library/asyncio-queue.html",
+      "last_hash": "ba8f016cf859e47a2867792b10cf74955b7f4edebfe9eed3307cb33ee1aa58da",
+      "last_fetched": "2026-11-08T05:00:35.789466+00:00",
+      "title": "Queues — Python 3.15.2 documentation"
+    },
+    "library-asyncio-runner": {
+      "url": "https://docs.python.org/3/library/asyncio-runner.html",
+      "last_hash": "90341eb6cdd610e4a3b77794ae91419f6fb42d3c3b5df8be9cccc28007ffe464",
+      "last_fetched": "2026-11-08T05:00:36.868163+00:00",
+      "title": "Runners — Python 3.15.2 documentation"
+    },
+    "library-asyncio-stream": {
+      "url": "https://docs.python.org/3/library/asyncio-stream.html",
+      "last_hash": "49f9a6d6792de6bdc3b4453322403845cd1da50aa5f14e47d23be8cdfd8b75f2",
+      "last_fetched": "2026-11-08T05:00:37.893430+00:00",
+      "title": "Streams — Python 3.15.2 documentation"
+    },
+    "library-asyncio-subprocess": {
+      "url": "https://docs.python.org/3/library/asyncio-subprocess.html",
+      "last_hash": "db7ab1a34b8319e7f35a58caaea421852c8c921363471c365a8dfcf421c4e3a7",
+      "last_fetched": "2026-11-08T05:00:39.014656+00:00",
+      "title": "Subprocesses — Python 3.15.2 documentation"
+    },
+    "library-asyncio-sync": {
+      "url": "https://docs.python.org/3/library/asyncio-sync.html",
+      "last_hash": "9b8e809317386f6fd413f5a544ac3379efb1f635e9de1989df190ca3281d0fc3",
+      "last_fetched": "2026-11-08T05:00:39.891311+00:00",
+      "title": "Synchronization Primitives — Python 3.15.2 documentation"
+    },
+    "library-asyncio-task": {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "last_hash": "bb8ed7e83bed39bad639f0907067288cf1b9d81a91f4537619c19f90bee764ee",
+      "last_fetched": "2026-11-08T05:00:41.034348+00:00",
+      "title": "Coroutines and tasks — Python 3.15.2 documentation"
+    },
+    "library-asyncio-threading": {
+      "url": "https://docs.python.org/3/library/asyncio-threading.html",
+      "last_hash": "01ea77c1a3f77435d75320a0356256ed9f0854ae6b0800705ef84365297248f4",
+      "last_fetched": "2026-11-08T05:00:42.231919+00:00",
+      "title": "asyncio and free-threaded Python — Python 3.15.2 documentation"
+    },
+    "library-asyncio-tools": {
+      "url": "https://docs.python.org/3/library/asyncio-tools.html",
+      "last_hash": "09e4bce24b6aca62cc7631693f3e22ea6c93c7b7f2ba06ef0cf843d0894e9b79",
+      "last_fetched": "2026-11-08T05:00:43.094526+00:00",
+      "title": "Command-line introspection tools — Python 3.15.2 documentation"
+    },
+    "library-asyncore": {
+      "url": "https://docs.python.org/3/library/asyncore.html",
+      "last_hash": "bfa8abf4864a169163a2ead35b85f093926dd3cb0363bf8806ad2f76d16fab48",
+      "last_fetched": "2026-11-08T05:00:43.949827+00:00",
+      "title": "asyncore — Asynchronous socket handler — Python 3.15.2 documentation"
+    },
+    "library-atexit": {
+      "url": "https://docs.python.org/3/library/atexit.html",
+      "last_hash": "3178f6a21785d2688b7f258a25b9a89ba9b88129dc3b339a36a3133142b64bee",
+      "last_fetched": "2026-11-08T05:00:44.851616+00:00",
+      "title": "atexit — Exit handlers — Python 3.15.2 documentation"
+    },
+    "library-audioop": {
+      "url": "https://docs.python.org/3/library/audioop.html",
+      "last_hash": "74f400e91840b9b69000451c641f5dc727f1f956d4ac2a314a43d0a809a8ed69",
+      "last_fetched": "2026-11-08T05:00:45.859475+00:00",
+      "title": "audioop — Manipulate raw audio data — Python 3.15.2 documentation"
+    },
+    "library-audit_events": {
+      "url": "https://docs.python.org/3/library/audit_events.html",
+      "last_hash": "6daaa6b22ef98302ff40577422ec088c257c04f3099cbe30b55e4a1a1a65a3cf",
+      "last_fetched": "2026-11-08T05:00:49.559041+00:00",
+      "title": "Audit events table — Python 3.15.2 documentation"
+    },
+    "library-base64": {
+      "url": "https://docs.python.org/3/library/base64.html",
+      "last_hash": "40d7e465caa5d63c8db23534e920b81f24d0fdacf90ea6b733fadc66a73b8965",
+      "last_fetched": "2026-11-08T05:00:50.538006+00:00",
+      "title": "base64 — Base16, Base32, Base64, Base85 Data Encodings — Python 3.15.2 documentation"
+    },
+    "library-bdb": {
+      "url": "https://docs.python.org/3/library/bdb.html",
+      "last_hash": "18ee22e79a73df2e8d0e1cad85d21b2847f36c9625004dddfd5929afa6251c5c",
+      "last_fetched": "2026-11-08T05:00:51.673446+00:00",
+      "title": "bdb — Debugger framework — Python 3.15.2 documentation"
+    },
+    "library-binary": {
+      "url": "https://docs.python.org/3/library/binary.html",
+      "last_hash": "1485a919e89022362aa68a08ce2faa87637f539523d78784a1420a2b1266ac50",
+      "last_fetched": "2026-11-08T05:00:52.519644+00:00",
+      "title": "Binary Data Services — Python 3.15.2 documentation"
+    },
+    "library-binascii": {
+      "url": "https://docs.python.org/3/library/binascii.html",
+      "last_hash": "90c87756818f22422557f06195a5830696c2938b06ae546f7e16a8b30646d7cb",
+      "last_fetched": "2026-11-08T05:00:53.525210+00:00",
+      "title": "binascii — Convert between binary and ASCII — Python 3.15.2 documentation"
+    },
+    "library-bisect": {
+      "url": "https://docs.python.org/3/library/bisect.html",
+      "last_hash": "9839dec340e94b7f7dc45915d59155bc2a8124f0a6f5c7db1560339ad1a372b8",
+      "last_fetched": "2026-11-08T05:00:54.467270+00:00",
+      "title": "bisect — Array bisection algorithm — Python 3.15.2 documentation"
+    },
+    "library-builtins": {
+      "url": "https://docs.python.org/3/library/builtins.html",
+      "last_hash": "e91495450d8bd31cf6905a28b0aa2e14fcc680ac5f00ababa5df87fe545e22db",
+      "last_fetched": "2026-11-08T05:00:55.379428+00:00",
+      "title": "builtins — Built-in objects — Python 3.15.2 documentation"
+    },
+    "library-bz2": {
+      "url": "https://docs.python.org/3/library/bz2.html",
+      "last_hash": "d1c315650762407fabfd908827d2155709f0a08b16fe482ed5a98225deb0b387",
+      "last_fetched": "2026-11-08T05:00:56.262232+00:00",
+      "title": "bz2 — Support for bzip2 compression — Python 3.15.2 documentation"
+    },
+    "library-calendar": {
+      "url": "https://docs.python.org/3/library/calendar.html",
+      "last_hash": "10b7a185299cf84ac0ccb59b9ab0f9bcc4ed4af5958f6cadc860c4f82d465dcf",
+      "last_fetched": "2026-11-08T05:00:57.162912+00:00",
+      "title": "calendar — General calendar-related functions — Python 3.15.2 documentation"
+    },
+    "library-cgi": {
+      "url": "https://docs.python.org/3/library/cgi.html",
+      "last_hash": "cc655bc2f48f0360d83b3abfde45bd9de1e78dd1e92a6c87eecffbddb82035ef",
+      "last_fetched": "2026-11-08T05:00:58.056451+00:00",
+      "title": "cgi — Common Gateway Interface support — Python 3.15.2 documentation"
+    },
+    "library-cgitb": {
+      "url": "https://docs.python.org/3/library/cgitb.html",
+      "last_hash": "42a073ffe8785299f63586a715f13fca17044252a8195ac1ecd1f88d6bd0fbb0",
+      "last_fetched": "2026-11-08T05:00:58.980778+00:00",
+      "title": "cgitb — Traceback manager for CGI scripts — Python 3.15.2 documentation"
+    },
+    "library-chunk": {
+      "url": "https://docs.python.org/3/library/chunk.html",
+      "last_hash": "4fa1f042ff80fd536f3a646b4afb9c274e5f05a6c6400751697cd6e2abb69ce6",
+      "last_fetched": "2026-11-08T05:00:59.845898+00:00",
+      "title": "chunk — Read IFF chunked data — Python 3.15.2 documentation"
+    },
+    "library-cmath": {
+      "url": "https://docs.python.org/3/library/cmath.html",
+      "last_hash": "d10ad0da371367f2de2db0803f84fc159c870fc96ae0264fd0ba3d4a5e30e77c",
+      "last_fetched": "2026-11-08T05:01:00.918617+00:00",
+      "title": "cmath — Mathematical functions for complex numbers — Python 3.15.2 documentation"
+    },
+    "library-cmd": {
+      "url": "https://docs.python.org/3/library/cmd.html",
+      "last_hash": "77712dcb273ef24cb8c3d20cb966195e2dfd0cacc73f09d01545098b367eac51",
+      "last_fetched": "2026-11-08T05:01:01.817439+00:00",
+      "title": "cmd — Support for line-oriented command interpreters — Python 3.15.2 documentation"
+    },
+    "library-cmdline": {
+      "url": "https://docs.python.org/3/library/cmdline.html",
+      "last_hash": "760dc6bc898716ce9e12375e1ce524e0cf25bf4989875f099c72123acaec01ac",
+      "last_fetched": "2026-11-08T05:01:02.655132+00:00",
+      "title": "Modules command-line interface (CLI) — Python 3.15.2 documentation"
+    },
+    "library-cmdlinelibs": {
+      "url": "https://docs.python.org/3/library/cmdlinelibs.html",
+      "last_hash": "39c46b3faed29226e714dc1e0f763d51260d46ce7b400fe8484e381029ab852e",
+      "last_fetched": "2026-11-08T05:01:03.732525+00:00",
+      "title": "Command-line interface libraries — Python 3.15.2 documentation"
+    },
+    "library-code": {
+      "url": "https://docs.python.org/3/library/code.html",
+      "last_hash": "0e9c1d33b1192895d5ebfdd29fdbeb11dca36b963317e757031a94acb73e5ad7",
+      "last_fetched": "2026-11-08T05:01:04.881231+00:00",
+      "title": "code — Interpreter base classes — Python 3.15.2 documentation"
+    },
+    "library-codecs": {
+      "url": "https://docs.python.org/3/library/codecs.html",
+      "last_hash": "e8b29b99ae5f3ed5f48b03d3c67d55db646b2731ff3b9501d380a32cf198c597",
+      "last_fetched": "2026-11-08T05:01:06.687342+00:00",
+      "title": "codecs — Codec registry and base classes — Python 3.15.2 documentation"
+    },
+    "library-codeop": {
+      "url": "https://docs.python.org/3/library/codeop.html",
+      "last_hash": "da6e195aaf3053e455e532e1c579321c9f55b85797b5be3c2d3813795fe4f2e6",
+      "last_fetched": "2026-11-08T05:01:07.570861+00:00",
+      "title": "codeop — Compile Python code — Python 3.15.2 documentation"
+    },
+    "library-collections": {
+      "url": "https://docs.python.org/3/library/collections.html",
+      "last_hash": "6ad044ca08cebccedaf890c136448961f093090dcaa5725be658ab6d98ba1f48",
+      "last_fetched": "2026-11-08T05:01:08.723495+00:00",
+      "title": "collections — Container datatypes — Python 3.15.2 documentation"
+    },
+    "library-colorsys": {
+      "url": "https://docs.python.org/3/library/colorsys.html",
+      "last_hash": "26fc13ee71f2c756b568b186dff494bd6f954a0dce66e14448e441d93b0d56b6",
+      "last_fetched": "2026-11-08T05:01:09.793457+00:00",
+      "title": "colorsys — Conversions between color systems — Python 3.15.2 documentation"
+    },
+    "library-compileall": {
+      "url": "https://docs.python.org/3/library/compileall.html",
+      "last_hash": "c1fc3f2ff96abcdb79b3415a8bb3d85e2fa575b4a87ec84987c43fe3a0059413",
+      "last_fetched": "2026-11-08T05:01:10.741513+00:00",
+      "title": "compileall — Byte-compile Python libraries — Python 3.15.2 documentation"
+    },
+    "library-compression": {
+      "url": "https://docs.python.org/3/library/compression.html",
+      "last_hash": "b3b81b7b177eb172d87bcb9a850122d49e1b7266ac6210021b0d688a83584b8b",
+      "last_fetched": "2026-11-08T05:01:11.623017+00:00",
+      "title": "The compression package — Python 3.15.2 documentation"
+    },
+    "library-concurrency": {
+      "url": "https://docs.python.org/3/library/concurrency.html",
+      "last_hash": "17555db6f973c3d8eff442e8cb2daae9a380ee311f90548a268af8b66be48a68",
+      "last_fetched": "2026-11-08T05:01:12.449400+00:00",
+      "title": "Concurrent Execution — Python 3.15.2 documentation"
+    },
+    "library-concurrent": {
+      "url": "https://docs.python.org/3/library/concurrent.html",
+      "last_hash": "05f3b15ba2be1d4dec1c4fbf7f62101805d2d9c935714788fd9124b1974e4f18",
+      "last_fetched": "2026-11-08T05:01:13.287496+00:00",
+      "title": "The concurrent package — Python 3.15.2 documentation"
+    },
+    "library-configparser": {
+      "url": "https://docs.python.org/3/library/configparser.html",
+      "last_hash": "f686ec283e804373eb0ddb351b90706ab91b2893061121d24ad0f56d974e7294",
+      "last_fetched": "2026-11-08T05:01:14.348368+00:00",
+      "title": "configparser — Configuration file parser — Python 3.15.2 documentation"
+    },
+    "library-contextlib": {
+      "url": "https://docs.python.org/3/library/contextlib.html",
+      "last_hash": "72b8a37ce0f47167459f2f89aef7001e43ea8baa3b8ed680dcf33ce0108bfdfc",
+      "last_fetched": "2026-11-08T05:01:15.332159+00:00",
+      "title": "contextlib — Utilities for with-statement contexts — Python 3.15.2 documentation"
+    },
+    "library-contextvars": {
+      "url": "https://docs.python.org/3/library/contextvars.html",
+      "last_hash": "3ca2f5bb87ba1933e4516ada34eaea1734d3fb866391b81affcdfe1600978953",
+      "last_fetched": "2026-11-08T05:01:16.249123+00:00",
+      "title": "contextvars — Context Variables — Python 3.15.2 documentation"
+    },
+    "library-copy": {
+      "url": "https://docs.python.org/3/library/copy.html",
+      "last_hash": "8e8a1cdc92cfaefd9240c94b204becc6f24d2f75a4848a7f5d5461f64e92906f",
+      "last_fetched": "2026-11-08T05:01:17.338018+00:00",
+      "title": "copy — Shallow and deep copy operations — Python 3.15.2 documentation"
+    },
+    "library-copyreg": {
+      "url": "https://docs.python.org/3/library/copyreg.html",
+      "last_hash": "efac5b231cfa86ca8a149fea21ed4891f02a7ec3bc8a7a3d2ef082051b32eae0",
+      "last_fetched": "2026-11-08T05:01:18.201688+00:00",
+      "title": "copyreg — Register pickle support functions — Python 3.15.2 documentation"
+    },
+    "library-crypt": {
+      "url": "https://docs.python.org/3/library/crypt.html",
+      "last_hash": "29016c0e5e74b973d5bd1503c8a29dd8eef6f88e9c8575b64559781f8a3b25d1",
+      "last_fetched": "2026-11-08T05:01:19.130736+00:00",
+      "title": "crypt — Function to check Unix passwords — Python 3.15.2 documentation"
+    },
+    "library-crypto": {
+      "url": "https://docs.python.org/3/library/crypto.html",
+      "last_hash": "1f75e28de20da27a859d161a4283a5bbd26968a563bdb87a5d6ee1590805ec49",
+      "last_fetched": "2026-11-08T05:01:20.221616+00:00",
+      "title": "Cryptographic Services — Python 3.15.2 documentation"
+    },
+    "library-csv": {
+      "url": "https://docs.python.org/3/library/csv.html",
+      "last_hash": "13b75d60319d2115d216786f0902b3b34467df01c66349f366b24f28a74d83c2",
+      "last_fetched": "2026-11-08T05:01:21.118057+00:00",
+      "title": "csv — CSV file reading and writing — Python 3.15.2 documentation"
+    },
+    "library-ctypes": {
+      "url": "https://docs.python.org/3/library/ctypes.html",
+      "last_hash": "144f65d17b805949898c78e42f0a40a7910dafd6d4a0c3be3993878c4631e097",
+      "last_fetched": "2026-11-08T05:01:22.462046+00:00",
+      "title": "ctypes — A foreign function library for Python — Python 3.15.2 documentation"
+    },
+    "library-curses": {
+      "url": "https://docs.python.org/3/library/curses.html",
+      "last_hash": "ed7945974e5a121e3a2dc58386a2961360aaf7207e01e18ef9f43049d439d3c0",
+      "last_fetched": "2026-11-08T05:01:24.524170+00:00",
+      "title": "curses — Terminal handling for character-cell displays — Python 3.15.2 documentation"
+    },
+    "library-custominterp": {
+      "url": "https://docs.python.org/3/library/custominterp.html",
+      "last_hash": "7ddf69a89cd528466b7c2ba0f04b79d99810de362aec5cbf794ef08006b45efc",
+      "last_fetched": "2026-11-08T05:01:25.398697+00:00",
+      "title": "Custom Python Interpreters — Python 3.15.2 documentation"
+    },
+    "library-dataclasses": {
+      "url": "https://docs.python.org/3/library/dataclasses.html",
+      "last_hash": "919a96da9cfd44154bee712696c6ae1047c1e5f38660f46eaac2fad2f0d0fb90",
+      "last_fetched": "2026-11-08T05:01:26.607526+00:00",
+      "title": "dataclasses — Data Classes — Python 3.15.2 documentation"
+    },
+    "library-datatypes": {
+      "url": "https://docs.python.org/3/library/datatypes.html",
+      "last_hash": "5a0159a2cc232a21d9f3af5c8683ff41ace4e412d3d063b5949964842145b4fd",
+      "last_fetched": "2026-11-08T05:01:27.478776+00:00",
+      "title": "Data Types — Python 3.15.2 documentation"
+    },
+    "library-datetime": {
+      "url": "https://docs.python.org/3/library/datetime.html",
+      "last_hash": "b3c8897487917a245e809ce200d1844937c277427908b54ab74d41c64636efb8",
+      "last_fetched": "2026-11-08T05:01:29.077220+00:00",
+      "title": "datetime — Basic date and time types — Python 3.15.2 documentation"
+    },
+    "library-dbm": {
+      "url": "https://docs.python.org/3/library/dbm.html",
+      "last_hash": "37511351c18106542c0d56d72cef1ea42004ba53b67bf79b87d42dbab9d1c06e",
+      "last_fetched": "2026-11-08T05:01:30.038617+00:00",
+      "title": "dbm — Interfaces to Unix “databases” — Python 3.15.2 documentation"
+    },
+    "library-debug": {
+      "url": "https://docs.python.org/3/library/debug.html",
+      "last_hash": "eb855dc66a0411fbd435d42df29108491b572a37ef8ce2e2346dc33b5255dde4",
+      "last_fetched": "2026-11-08T05:01:31.215899+00:00",
+      "title": "Debugging and profiling — Python 3.15.2 documentation"
+    },
+    "library-decimal": {
+      "url": "https://docs.python.org/3/library/decimal.html",
+      "last_hash": "82181d106309d8c93dc995bc7e0fb82a3be627f6a4ee4dea116cb8d3d5b22a6e",
+      "last_fetched": "2026-11-08T05:01:32.268816+00:00",
+      "title": "decimal — Decimal fixed-point and floating-point arithmetic — Python 3.15.2 documentation"
+    },
+    "library-development": {
+      "url": "https://docs.python.org/3/library/development.html",
+      "last_hash": "d6acc91b33c5b0b3e75a251514e23825fa43799d2743fd4082a6955556edf97d",
+      "last_fetched": "2026-11-08T05:01:33.161461+00:00",
+      "title": "Development Tools — Python 3.15.2 documentation"
+    },
+    "library-devmode": {
+      "url": "https://docs.python.org/3/library/devmode.html",
+      "last_hash": "00f239d26a64a888877c9a14d04206a1425985b453eb420faa7823e5ce64ab0f",
+      "last_fetched": "2026-11-08T05:01:34.040944+00:00",
+      "title": "Python Development Mode — Python 3.15.2 documentation"
+    },
+    "library-dialog": {
+      "url": "https://docs.python.org/3/library/dialog.html",
+      "last_hash": "aa09092c80f6bc99e350cebba97636afb043929d6194525a93eec901b1d17c17",
+      "last_fetched": "2026-11-08T05:01:35.235515+00:00",
+      "title": "Tkinter dialogs — Python 3.15.2 documentation"
+    },
+    "library-difflib": {
+      "url": "https://docs.python.org/3/library/difflib.html",
+      "last_hash": "61587bd5c89356e223da128a2f5f1a0ef7bffd15bd1a2b5671cc9db760e3d3ce",
+      "last_fetched": "2026-11-08T05:01:36.254065+00:00",
+      "title": "difflib — Helpers for computing deltas — Python 3.15.2 documentation"
+    },
+    "library-dis": {
+      "url": "https://docs.python.org/3/library/dis.html",
+      "last_hash": "ffa7b5f8342e9e0981624d21bd7529d3a037c3046ca468aaf5b33328ac497765",
+      "last_fetched": "2026-11-08T05:01:37.308224+00:00",
+      "title": "dis — Disassembler for Python bytecode — Python 3.15.2 documentation"
+    },
+    "library-distribution": {
+      "url": "https://docs.python.org/3/library/distribution.html",
+      "last_hash": "14ac6552a21e2c80267104ac190e75684231bac2a52afdb1043efa10259b0a76",
+      "last_fetched": "2026-11-08T05:01:38.241390+00:00",
+      "title": "Software Packaging and Distribution — Python 3.15.2 documentation"
+    },
+    "library-distutils": {
+      "url": "https://docs.python.org/3/library/distutils.html",
+      "last_hash": "006b6353a004f016bf900c3386147a35d6b7d98b159754616b88abf1921dbc30",
+      "last_fetched": "2026-11-08T05:01:39.110769+00:00",
+      "title": "distutils — Building and installing Python modules — Python 3.15.2 documentation"
+    },
+    "library-doctest": {
+      "url": "https://docs.python.org/3/library/doctest.html",
+      "last_hash": "8b2ba24b4f2f99646c720d1f908f852da638151cce7c4a949dfc0872c375d339",
+      "last_fetched": "2026-11-08T05:01:40.195254+00:00",
+      "title": "doctest — Test interactive Python examples — Python 3.15.2 documentation"
+    },
+    "library-email": {
+      "url": "https://docs.python.org/3/library/email.html",
+      "last_hash": "3a9b50b0b4f7b98174a78a539ca68ce89529483f705cb88d1882bad758a19c80",
+      "last_fetched": "2026-11-08T05:01:41.297018+00:00",
+      "title": "email — An email and MIME handling package — Python 3.15.2 documentation"
+    },
+    "library-ensurepip": {
+      "url": "https://docs.python.org/3/library/ensurepip.html",
+      "last_hash": "b5fe254e8f65f53c6e82201e4de60ee96ffe1b67c7d029dc85feedc3aacd3244",
+      "last_fetched": "2026-11-08T05:01:42.195827+00:00",
+      "title": "ensurepip — Bootstrapping the pip installer — Python 3.15.2 documentation"
+    },
+    "library-enum": {
+      "url": "https://docs.python.org/3/library/enum.html",
+      "last_hash": "a602edba87a3726ce20ddaf47b1aeadb2b90b7ec38c827ce618379e57142f7d5",
+      "last_fetched": "2026-11-08T05:01:43.249428+00:00",
+      "title": "enum — Support for enumerations — Python 3.15.2 documentation"
+    },
+    "library-errno": {
+      "url": "https://docs.python.org/3/library/errno.html",
+      "last_hash": "1b41a4607c910760d3b001b0e68f42da15fb38ea8adc5c552d06aa81e0e4d10f",
+      "last_fetched": "2026-11-08T05:01:44.304855+00:00",
+      "title": "errno — Standard errno system symbols — Python 3.15.2 documentation"
+    },
+    "library-faulthandler": {
+      "url": "https://docs.python.org/3/library/faulthandler.html",
+      "last_hash": "6d9257d1fc438d8525de8271103517957a2745fcd12457ad09d81edfcd42d2c0",
+      "last_fetched": "2026-11-08T05:01:45.376785+00:00",
+      "title": "faulthandler — Dump the Python traceback — Python 3.15.2 documentation"
+    },
+    "library-fcntl": {
+      "url": "https://docs.python.org/3/library/fcntl.html",
+      "last_hash": "e850d8d84b9e02e744afa0fc7c777f30d82f1312d04c568b7e361ede1121dda8",
+      "last_fetched": "2026-11-08T05:01:46.265180+00:00",
+      "title": "fcntl — The fcntl and ioctl system calls — Python 3.15.2 documentation"
+    },
+    "library-filecmp": {
+      "url": "https://docs.python.org/3/library/filecmp.html",
+      "last_hash": "f110340c8c2c80dfa0f22dbb587b940c4a2d16678992179dc40cf263c7ec1668",
+      "last_fetched": "2026-11-08T05:01:47.134873+00:00",
+      "title": "filecmp — File and Directory Comparisons — Python 3.15.2 documentation"
+    },
+    "library-fileformats": {
+      "url": "https://docs.python.org/3/library/fileformats.html",
+      "last_hash": "faabf0e09db21eb0e237cd2f990743bbe5697aaaedb587126acc04e1cad1b125",
+      "last_fetched": "2026-11-08T05:01:48.192240+00:00",
+      "title": "File Formats — Python 3.15.2 documentation"
+    },
+    "library-fileinput": {
+      "url": "https://docs.python.org/3/library/fileinput.html",
+      "last_hash": "e016d57b6025a4643088cebac21c20069b92eed5ca4d0685cc38200fc06b9a1c",
+      "last_fetched": "2026-11-08T05:01:49.014106+00:00",
+      "title": "fileinput — Iterate over lines from multiple input streams — Python 3.15.2 documentation"
+    },
+    "library-filesys": {
+      "url": "https://docs.python.org/3/library/filesys.html",
+      "last_hash": "d0db0189ed599e8d10cb26e38d91ed089d6d58712c45d5741ae9a67280b841c4",
+      "last_fetched": "2026-11-08T05:02:19.698316+00:00",
+      "title": "File and Directory Access — Python 3.15.2 documentation"
+    },
+    "library-fnmatch": {
+      "url": "https://docs.python.org/3/library/fnmatch.html",
+      "last_hash": "a678d43911ddef859d740f0efcbd9202e0c365b717fe6a5ebf575063a1f295b7",
+      "last_fetched": "2026-11-08T05:02:20.703955+00:00",
+      "title": "fnmatch — Unix filename pattern matching — Python 3.15.2 documentation"
+    },
+    "library-fractions": {
+      "url": "https://docs.python.org/3/library/fractions.html",
+      "last_hash": "ccb6c2ba0bd7344d64484ce6b64ab7685981172e5408bb07243b17b022e9ebd1",
+      "last_fetched": "2026-11-08T05:02:21.670242+00:00",
+      "title": "fractions — Rational numbers — Python 3.15.2 documentation"
+    },
+    "library-frameworks": {
+      "url": "https://docs.python.org/3/library/frameworks.html",
+      "last_hash": "0bf18692ab3cefc417b67d8807fe4516961b836f61b2913a00272a7d37c8ce57",
+      "last_fetched": "2026-11-08T05:02:22.756766+00:00",
+      "title": "Program frameworks — Python 3.15.2 documentation"
+    },
+    "library-ftplib": {
+      "url": "https://docs.python.org/3/library/ftplib.html",
+      "last_hash": "b7dc0d0947bfc9c82005c4df21f31179e7c8a5790469a31dd671d45c130b8c25",
+      "last_fetched": "2026-11-08T05:02:24.011212+00:00",
+      "title": "ftplib — FTP protocol client — Python 3.15.2 documentation"
+    },
+    "library-functional": {
+      "url": "https://docs.python.org/3/library/functional.html",
+      "last_hash": "a369f4292dde3115a279cfc69c853c40122fa1a539ede5b9aef6076bfae41727",
+      "last_fetched": "2026-11-08T05:02:24.880609+00:00",
+      "title": "Functional Programming Modules — Python 3.15.2 documentation"
+    },
+    "library-functools": {
+      "url": "https://docs.python.org/3/library/functools.html",
+      "last_hash": "91069ff1a8ba03f9d36d47e7c20d6085d220c890cfa7ac04cce9f9a28c0c9459",
+      "last_fetched": "2026-11-08T05:02:25.860506+00:00",
+      "title": "functools — Higher-order functions and operations on callable objects — Python 3.15.2 documentation"
+    },
+    "library-gc": {
+      "url": "https://docs.python.org/3/library/gc.html",
+      "last_hash": "6cebd083aaaec29d9f9b92c1eacf2b8dc4c70a55cf49969221938565d3d474d7",
+      "last_fetched": "2026-11-08T05:02:26.793052+00:00",
+      "title": "gc — Garbage Collector interface — Python 3.15.2 documentation"
+    },
+    "library-getopt": {
+      "url": "https://docs.python.org/3/library/getopt.html",
+      "last_hash": "a61b9cc3d90c88b6dfecab04d3db0e03c28c687e9a9d4e704d57a59b430fde95",
+      "last_fetched": "2026-11-08T05:02:27.707973+00:00",
+      "title": "getopt — C-style parser for command line options — Python 3.15.2 documentation"
+    },
+    "library-getpass": {
+      "url": "https://docs.python.org/3/library/getpass.html",
+      "last_hash": "14443f16c26d9a34822068c1461be18adf8ecd4dc659ca94294c60a023777395",
+      "last_fetched": "2026-11-08T05:02:28.694213+00:00",
+      "title": "getpass — Portable password input — Python 3.15.2 documentation"
+    },
+    "library-gettext": {
+      "url": "https://docs.python.org/3/library/gettext.html",
+      "last_hash": "00d1f5edfd6bab2e0223bd028a7d3384150098e9c08fcb47d71c6b087d721f52",
+      "last_fetched": "2026-11-08T05:02:29.660708+00:00",
+      "title": "gettext — Multilingual internationalization services — Python 3.15.2 documentation"
+    },
+    "library-glob": {
+      "url": "https://docs.python.org/3/library/glob.html",
+      "last_hash": "e52f054f363466d968d313f281ab2bc1bdb0e5ee51f67e79735e7c079cf3169d",
+      "last_fetched": "2026-11-08T05:02:30.811471+00:00",
+      "title": "glob — Unix style pathname pattern expansion — Python 3.15.2 documentation"
+    },
+    "library-graphlib": {
+      "url": "https://docs.python.org/3/library/graphlib.html",
+      "last_hash": "8321b56f64aa294036d0b2fa60b8a002af1955288ca9c401850db741397c05eb",
+      "last_fetched": "2026-11-08T05:02:31.955879+00:00",
+      "title": "graphlib — Functionality to operate with graph-like structures — Python 3.15.2 documentation"
+    },
+    "library-grp": {
+      "url": "https://docs.python.org/3/library/grp.html",
+      "last_hash": "3de46fcaa33c5e7c472cd288f4f27b1c6abae7187ba0bacd2caf2c8a70de43c5",
+      "last_fetched": "2026-11-08T05:02:32.856795+00:00",
+      "title": "grp — The group database — Python 3.15.2 documentation"
+    },
+    "library-gzip": {
+      "url": "https://docs.python.org/3/library/gzip.html",
+      "last_hash": "0979ddd4127292c522aadf5151daa0d1e4b67fe36f38ddc3d1abb34a8a4cf28f",
+      "last_fetched": "2026-11-08T05:02:33.792846+00:00",
+      "title": "gzip — Support for gzip files — Python 3.15.2 documentation"
+    },
+    "library-hashlib": {
+      "url": "https://docs.python.org/3/library/hashlib.html",
+      "last_hash": "54905fcd91a6bb595bbaa2ebaaf544cf78a25d68f9725cb6ff355a21bf61affc",
+      "last_fetched": "2026-11-08T05:02:34.903536+00:00",
+      "title": "hashlib — Secure hashes and message digests — Python 3.15.2 documentation"
+    },
+    "library-heapq": {
+      "url": "https://docs.python.org/3/library/heapq.html",
+      "last_hash": "6c739467f523dd20394d743d0839bc4959070cc6b39fb290d99930b2ec3db77e",
+      "last_fetched": "2026-11-08T05:02:35.776394+00:00",
+      "title": "heapq — Heap queue algorithm — Python 3.15.2 documentation"
+    },
+    "library-hmac": {
+      "url": "https://docs.python.org/3/library/hmac.html",
+      "last_hash": "5ac11bdd8afc684868add1c5c45f8c8cd84f162f08c7e9837edfe6452a9e3d17",
+      "last_fetched": "2026-11-08T05:02:36.752975+00:00",
+      "title": "hmac — Keyed-Hashing for Message Authentication — Python 3.15.2 documentation"
+    },
+    "library-html": {
+      "url": "https://docs.python.org/3/library/html.html",
+      "last_hash": "784a848d6f11786381eb8b199cd5401434a6808016868e3477d0d930403e448e",
+      "last_fetched": "2026-11-08T05:02:37.530260+00:00",
+      "title": "html — HyperText Markup Language support — Python 3.15.2 documentation"
+    },
+    "library-http": {
+      "url": "https://docs.python.org/3/library/http.html",
+      "last_hash": "e6f37fc934d74d47388745b2d59eb782bfbbf575bca85995952689867660d439",
+      "last_fetched": "2026-11-08T05:02:38.939045+00:00",
+      "title": "http — HTTP modules — Python 3.15.2 documentation"
+    },
+    "library-i18n": {
+      "url": "https://docs.python.org/3/library/i18n.html",
+      "last_hash": "dcd685edbe608324d0dda983c05b11fbc4fa041c0b57b9873ab2cd243cbc61ca",
+      "last_fetched": "2026-11-08T05:02:40.063846+00:00",
+      "title": "Internationalization — Python 3.15.2 documentation"
+    },
+    "library-idle": {
+      "url": "https://docs.python.org/3/library/idle.html",
+      "last_hash": "dcf8137a45eed2ce343669f5c158f082cc60edd57cd75417004074efed190e28",
+      "last_fetched": "2026-11-08T05:02:40.993158+00:00",
+      "title": "IDLE — Python editor and shell — Python 3.15.2 documentation"
+    },
+    "library-imaplib": {
+      "url": "https://docs.python.org/3/library/imaplib.html",
+      "last_hash": "8833600b88a23d08c6aee11ba417ed2f7c0d2658864199320a1f915b3578f0ff",
+      "last_fetched": "2026-11-08T05:02:41.935495+00:00",
+      "title": "imaplib — IMAP4 protocol client — Python 3.15.2 documentation"
+    },
+    "library-imghdr": {
+      "url": "https://docs.python.org/3/library/imghdr.html",
+      "last_hash": "ae12d025d163d90dbb764d95f6a6f1d556d03ddc70511b15509475d97f85cdeb",
+      "last_fetched": "2026-11-08T05:02:42.743295+00:00",
+      "title": "imghdr — Determine the type of an image — Python 3.15.2 documentation"
+    },
+    "library-imp": {
+      "url": "https://docs.python.org/3/library/imp.html",
+      "last_hash": "e88ebd0dc61fac42e73ea3129075cdb73d6c5a465e53819055662e60e4923d53",
+      "last_fetched": "2026-11-08T05:02:43.587180+00:00",
+      "title": "imp — Access the import internals — Python 3.15.2 documentation"
+    },
+    "library-importlib": {
+      "url": "https://docs.python.org/3/library/importlib.html",
+      "last_hash": "e50b0188eaa8744297fa91e85496aca31e509f9ccfd56a3243e63cbe58c65e8f",
+      "last_fetched": "2026-11-08T05:02:44.678488+00:00",
+      "title": "importlib — The implementation of import — Python 3.15.2 documentation"
+    },
+    "library-index": {
+      "url": "https://docs.python.org/3/library/index.html",
+      "last_hash": "442de8f9a541b7628691294b1f386f2ed9dd0e277c6fea137acd4c8ac0804428",
+      "last_fetched": "2026-11-08T05:02:45.749247+00:00",
+      "title": "The Python standard library — Python 3.15.2 documentation"
+    },
+    "library-inspect": {
+      "url": "https://docs.python.org/3/library/inspect.html",
+      "last_hash": "57142d974376ab2f9d413b1dc3b6eba2ed7cec42ccd148814d8f64e7b3852d1d",
+      "last_fetched": "2026-11-08T05:02:47.357406+00:00",
+      "title": "inspect — Inspect live objects — Python 3.15.2 documentation"
+    },
+    "library-internet": {
+      "url": "https://docs.python.org/3/library/internet.html",
+      "last_hash": "2f2aaaa3e752b99ba107d117b7f164ab7cde26d8b193db2655f781efd5961ce3",
+      "last_fetched": "2026-11-08T05:02:48.167770+00:00",
+      "title": "Internet Protocols and Support — Python 3.15.2 documentation"
+    },
+    "library-intro": {
+      "url": "https://docs.python.org/3/library/intro.html",
+      "last_hash": "e898fdef99cf5779f9708ecc240d8c42a064c673d41e87d23770c973a862d4b0",
+      "last_fetched": "2026-11-08T05:02:48.985737+00:00",
+      "title": "Introduction — Python 3.15.2 documentation"
+    },
+    "library-io": {
+      "url": "https://docs.python.org/3/library/io.html",
+      "last_hash": "d6858fae11d6285c777d366e34fdfbe9c9c67a6a43ef8e7749cda3fddae05447",
+      "last_fetched": "2026-11-08T05:02:50.044950+00:00",
+      "title": "io — Core tools for working with streams — Python 3.15.2 documentation"
+    },
+    "library-ipaddress": {
+      "url": "https://docs.python.org/3/library/ipaddress.html",
+      "last_hash": "d1bd798ca6128a345a4b6d56ad19b0cd7a2c2b2a0ecc3c841e77824708571f38",
+      "last_fetched": "2026-11-08T05:02:51.103689+00:00",
+      "title": "ipaddress — IPv4/IPv6 manipulation library — Python 3.15.2 documentation"
+    },
+    "library-ipc": {
+      "url": "https://docs.python.org/3/library/ipc.html",
+      "last_hash": "ec8cbabac4c0cbb7e3b6b16451a67e700a682ff474613db91ddde9ecbbc48f24",
+      "last_fetched": "2026-11-08T05:02:52.156230+00:00",
+      "title": "Networking and Interprocess Communication — Python 3.15.2 documentation"
+    },
+    "library-itertools": {
+      "url": "https://docs.python.org/3/library/itertools.html",
+      "last_hash": "9047e67c4e070def69e7dacd7d0e545bf442e71611d7861f2ac52d9256392f63",
+      "last_fetched": "2026-11-08T05:02:53.399275+00:00",
+      "title": "itertools — Functions creating iterators for efficient looping — Python 3.15.2 documentation"
+    },
+    "library-json": {
+      "url": "https://docs.python.org/3/library/json.html",
+      "last_hash": "18d5a9c56187235317c8ac3111e34c2343cc006e4cd4a708670a49689da7def6",
+      "last_fetched": "2026-11-08T05:02:54.440256+00:00",
+      "title": "json — JSON encoder and decoder — Python 3.15.2 documentation"
+    },
+    "library-keyword": {
+      "url": "https://docs.python.org/3/library/keyword.html",
+      "last_hash": "ee564f26f44406525bd58086f8f71e416e6d78186edd21e36ef62a76145d4486",
+      "last_fetched": "2026-11-08T05:02:55.606697+00:00",
+      "title": "keyword — Testing for Python keywords — Python 3.15.2 documentation"
+    },
+    "library-language": {
+      "url": "https://docs.python.org/3/library/language.html",
+      "last_hash": "639e02928a79b913bac366f7e2ed3850fb3cc537851725abda349e33a5c913b4",
+      "last_fetched": "2026-11-08T05:02:56.545444+00:00",
+      "title": "Python Language Services — Python 3.15.2 documentation"
+    },
+    "library-linecache": {
+      "url": "https://docs.python.org/3/library/linecache.html",
+      "last_hash": "efe4e40e44dfd99ac45adafa9bf4fda6954b238bd0da5732757bf83582d2a4d8",
+      "last_fetched": "2026-11-08T05:02:57.443031+00:00",
+      "title": "linecache — Random access to text lines — Python 3.15.2 documentation"
+    },
+    "library-locale": {
+      "url": "https://docs.python.org/3/library/locale.html",
+      "last_hash": "c4e2739789f8603d34a896138104b9ea90170e1b45f069495415ef254bd646d2",
+      "last_fetched": "2026-11-08T05:02:58.463614+00:00",
+      "title": "locale — Internationalization services — Python 3.15.2 documentation"
+    },
+    "library-logging": {
+      "url": "https://docs.python.org/3/library/logging.html",
+      "last_hash": "40d6f75160183d72a9590740d580aac435243808823c80932be87a2ad7726398",
+      "last_fetched": "2026-11-08T05:02:59.510580+00:00",
+      "title": "logging — Logging facility for Python — Python 3.15.2 documentation"
+    },
+    "library-lzma": {
+      "url": "https://docs.python.org/3/library/lzma.html",
+      "last_hash": "dc83effd87493015244a1dab82a267629ebc6205d1d93a9e153d26c3977f2b94",
+      "last_fetched": "2026-11-08T05:03:00.567970+00:00",
+      "title": "lzma — Compression using the LZMA algorithm — Python 3.15.2 documentation"
+    },
+    "library-mailbox": {
+      "url": "https://docs.python.org/3/library/mailbox.html",
+      "last_hash": "86ccbdb43f3ce7e16e051431279cfbae4b163be4442ae21ac212d3041c54b0bf",
+      "last_fetched": "2026-11-08T05:03:01.612670+00:00",
+      "title": "mailbox — Manipulate mailboxes in various formats — Python 3.15.2 documentation"
+    },
+    "library-mailcap": {
+      "url": "https://docs.python.org/3/library/mailcap.html",
+      "last_hash": "86ce8bad81d08635ba1cb2029ea0d224fa06bc91ab4535d538f2b2e7b7ee5140",
+      "last_fetched": "2026-11-08T05:03:02.608180+00:00",
+      "title": "mailcap — Mailcap file handling — Python 3.15.2 documentation"
+    },
+    "library-markup": {
+      "url": "https://docs.python.org/3/library/markup.html",
+      "last_hash": "cc7b2a307597df7da9d80abdce8b171607dc34cf1dc5277dbe4921654e15caab",
+      "last_fetched": "2026-11-08T05:03:03.528497+00:00",
+      "title": "Structured Markup Processing Tools — Python 3.15.2 documentation"
+    },
+    "library-marshal": {
+      "url": "https://docs.python.org/3/library/marshal.html",
+      "last_hash": "17ce64fd7a7c456c77230ef58a0abbc4c25830d2b9f1b3aaa5ff8ea4a617a1d1",
+      "last_fetched": "2026-11-08T05:03:04.557692+00:00",
+      "title": "marshal — Internal Python object serialization — Python 3.15.2 documentation"
+    },
+    "library-math": {
+      "url": "https://docs.python.org/3/library/math.html",
+      "last_hash": "9dcbe586d1362caaf16e69aa9aef924b8af118971b2ce2e22909e52dae9c1bf4",
+      "last_fetched": "2026-11-08T05:03:05.696692+00:00",
+      "title": "math — Mathematical functions — Python 3.15.2 documentation"
+    },
+    "library-mimetypes": {
+      "url": "https://docs.python.org/3/library/mimetypes.html",
+      "last_hash": "09082b5f9f1c540d330598968e884ff3642c209eec5bc4caa337a11278cad28d",
+      "last_fetched": "2026-11-08T05:03:06.578052+00:00",
+      "title": "mimetypes — Map filenames to MIME types — Python 3.15.2 documentation"
+    },
+    "library-mm": {
+      "url": "https://docs.python.org/3/library/mm.html",
+      "last_hash": "0f05693902e6e65ca8537d263a1b044e9bb451292421a22cc8c11be91b751ee7",
+      "last_fetched": "2026-11-08T05:03:07.658352+00:00",
+      "title": "Multimedia Services — Python 3.15.2 documentation"
+    },
+    "library-mmap": {
+      "url": "https://docs.python.org/3/library/mmap.html",
+      "last_hash": "901fa6059a7fbac24f08e6287bcb35f54beb7504cd37a01db72e8c375c38111f",
+      "last_fetched": "2026-11-08T05:03:08.514471+00:00",
+      "title": "mmap — Memory-mapped file support — Python 3.15.2 documentation"
+    },
+    "library-modulefinder": {
+      "url": "https://docs.python.org/3/library/modulefinder.html",
+      "last_hash": "df0c222329f277a40615d0088efe23fadc211d00abd70b3744e5556b6ee3ec6f",
+      "last_fetched": "2026-11-08T05:03:09.468881+00:00",
+      "title": "modulefinder — Find modules used by a script — Python 3.15.2 documentation"
+    },
+    "library-modules": {
+      "url": "https://docs.python.org/3/library/modules.html",
+      "last_hash": "cb9aeff0c77a7cc30daed871a3d9ff55bc7bea174547e2d490a85a765eaa62bc",
+      "last_fetched": "2026-11-08T05:03:10.401443+00:00",
+      "title": "Importing Modules — Python 3.15.2 documentation"
+    },
+    "library-msilib": {
+      "url": "https://docs.python.org/3/library/msilib.html",
+      "last_hash": "99b47377faaa71f0b024e9b01416564f5123ca8f53bef7a51244eed128b9f1a0",
+      "last_fetched": "2026-11-08T05:03:11.232372+00:00",
+      "title": "msilib — Read and write Microsoft Installer files — Python 3.15.2 documentation"
+    },
+    "library-msvcrt": {
+      "url": "https://docs.python.org/3/library/msvcrt.html",
+      "last_hash": "18deec86a74d994a654676650f9b2d85c97688b88bd3734ae93aac59563f2a81",
+      "last_fetched": "2026-11-08T05:03:12.120299+00:00",
+      "title": "msvcrt — Useful routines from the MS VC++ runtime — Python 3.15.2 documentation"
+    },
+    "library-multiprocessing": {
+      "url": "https://docs.python.org/3/library/multiprocessing.html",
+      "last_hash": "f2e5598a62634397db7d9f52940f47825cbc6aabb9a152dc57aa371a498a97ed",
+      "last_fetched": "2026-11-08T05:03:13.389770+00:00",
+      "title": "multiprocessing — Process-based parallelism — Python 3.15.2 documentation"
+    },
+    "library-netdata": {
+      "url": "https://docs.python.org/3/library/netdata.html",
+      "last_hash": "9c7d032e298f634ac29e7e097651f5ca78bc91cd6aa38b4f5727b935a6140f92",
+      "last_fetched": "2026-11-08T05:03:14.464795+00:00",
+      "title": "Internet Data Handling — Python 3.15.2 documentation"
+    },
+    "library-netrc": {
+      "url": "https://docs.python.org/3/library/netrc.html",
+      "last_hash": "dba3ce09d9c9a56d59052772125bd8afe09ead41df054ba386e7f32dcea1cc9a",
+      "last_fetched": "2026-11-08T05:03:15.305012+00:00",
+      "title": "netrc — netrc file processing — Python 3.15.2 documentation"
+    },
+    "library-nis": {
+      "url": "https://docs.python.org/3/library/nis.html",
+      "last_hash": "eb238fec5e3d942f15c1b34e192e3b1b567c5dcf2c73f00f8c53d4051b8ddef7",
+      "last_fetched": "2026-11-08T05:03:16.211340+00:00",
+      "title": "nis — Interface to Sun’s NIS (Yellow Pages) — Python 3.15.2 documentation"
+    },
+    "library-nntplib": {
+      "url": "https://docs.python.org/3/library/nntplib.html",
+      "last_hash": "9cdb1d4ce824035ee072aabf253ee3915a2de5a8bd45db8846e9ca2cf5fb975c",
+      "last_fetched": "2026-11-08T05:03:17.262556+00:00",
+      "title": "nntplib — NNTP protocol client — Python 3.15.2 documentation"
+    },
+    "library-numbers": {
+      "url": "https://docs.python.org/3/library/numbers.html",
+      "last_hash": "bb62000157060b7f7fb8854f818dc08b920faa8a4805744af337f11e69eb6b9a",
+      "last_fetched": "2026-11-08T05:03:18.088463+00:00",
+      "title": "numbers — Numeric abstract base classes — Python 3.15.2 documentation"
+    },
+    "library-numeric": {
+      "url": "https://docs.python.org/3/library/numeric.html",
+      "last_hash": "08c486725a42be2bc6fc77117d842a26c9e36527211e07a0a31495ab06d7278e",
+      "last_fetched": "2026-11-08T05:03:18.894209+00:00",
+      "title": "Numeric and Mathematical Modules — Python 3.15.2 documentation"
+    },
+    "library-operator": {
+      "url": "https://docs.python.org/3/library/operator.html",
+      "last_hash": "e22db97c78a3b5f66b3cf4d8c2a8ad99a76b9d8bf844ae67b3b5abbaccdcae24",
+      "last_fetched": "2026-11-08T05:03:20.007746+00:00",
+      "title": "operator — Standard operators as functions — Python 3.15.2 documentation"
+    },
+    "library-optparse": {
+      "url": "https://docs.python.org/3/library/optparse.html",
+      "last_hash": "8de2453c27a16ce7a470b8e4c08a0f386ce76c4e94453fc83722b58f74c8e144",
+      "last_fetched": "2026-11-08T05:03:21.200223+00:00",
+      "title": "optparse — Parser for command line options — Python 3.15.2 documentation"
+    },
+    "library-os": {
+      "url": "https://docs.python.org/3/library/os.html",
+      "last_hash": "f03fea7898dcd806deafec8fbcec1a1e5a0a3ee88421311a1f3404003d987ac6",
+      "last_fetched": "2026-11-08T05:03:22.585622+00:00",
+      "title": "os — Miscellaneous operating system interfaces — Python 3.15.2 documentation"
+    },
+    "library-ossaudiodev": {
+      "url": "https://docs.python.org/3/library/ossaudiodev.html",
+      "last_hash": "dd81599c50ed73a935febaa5de239b7daf8302aa004427a61a1dc59ec7aa70e0",
+      "last_fetched": "2026-11-08T05:03:23.594356+00:00",
+      "title": "ossaudiodev — Access to OSS-compatible audio devices — Python 3.15.2 documentation"
+    },
+    "library-pathlib": {
+      "url": "https://docs.python.org/3/library/pathlib.html",
+      "last_hash": "e35a640ccf12cdf658b1196b643046cdc65c47f65b1da9b104861c60138b8a8e",
+      "last_fetched": "2026-11-08T05:03:25.115483+00:00",
+      "title": "pathlib — Object-oriented filesystem paths — Python 3.15.2 documentation"
+    },
+    "library-pdb": {
+      "url": "https://docs.python.org/3/library/pdb.html",
+      "last_hash": "0a750197b34d9a90201aa0ab8827544e8442f69fabcf95db072b4f4b7e7a9dcd",
+      "last_fetched": "2026-11-08T05:03:26.105054+00:00",
+      "title": "pdb — The Python Debugger — Python 3.15.2 documentation"
+    },
+    "library-persistence": {
+      "url": "https://docs.python.org/3/library/persistence.html",
+      "last_hash": "3c939189d7d16ed293dafe9fa65e29ec60a274f7f4f25964fa57f369831b6a60",
+      "last_fetched": "2026-11-08T05:03:26.948847+00:00",
+      "title": "Data Persistence — Python 3.15.2 documentation"
+    },
+    "library-pickle": {
+      "url": "https://docs.python.org/3/library/pickle.html",
+      "last_hash": "4a469a502167d0346aebb9043bdcb321b31234774496b1c3d611f3dd339700d6",
+      "last_fetched": "2026-11-08T05:03:27.933667+00:00",
+      "title": "pickle — Python object serialization — Python 3.15.2 documentation"
+    },
+    "library-pickletools": {
+      "url": "https://docs.python.org/3/library/pickletools.html",
+      "last_hash": "ce995abc8127c00f7fe78a8822e625fd259ec62eabb52430e6fb54316969e04b",
+      "last_fetched": "2026-11-08T05:03:28.800651+00:00",
+      "title": "pickletools — Tools for pickle developers — Python 3.15.2 documentation"
+    },
+    "library-pipes": {
+      "url": "https://docs.python.org/3/library/pipes.html",
+      "last_hash": "d07339fc055adcaf62dbcef83d9d298505d8890baaa64658dabd4359c1131a14",
+      "last_fetched": "2026-11-08T05:03:29.677936+00:00",
+      "title": "pipes — Interface to shell pipelines — Python 3.15.2 documentation"
+    },
+    "library-pkgutil": {
+      "url": "https://docs.python.org/3/library/pkgutil.html",
+      "last_hash": "cfdb82d48a9897b89c46c2cb19862c45286ef22625a3130469712f5200efaf81",
+      "last_fetched": "2026-11-08T05:03:30.530222+00:00",
+      "title": "pkgutil — Package extension utility — Python 3.15.2 documentation"
+    },
+    "library-platform": {
+      "url": "https://docs.python.org/3/library/platform.html",
+      "last_hash": "542305c4dfe51d051aa6317fd6a7f521a7f3b99ab9ad0247ea228e863d60eeeb",
+      "last_fetched": "2026-11-08T05:03:31.554477+00:00",
+      "title": "platform — Access to underlying platform’s identifying data — Python 3.15.2 documentation"
+    },
+    "library-plistlib": {
+      "url": "https://docs.python.org/3/library/plistlib.html",
+      "last_hash": "1f71d98e1e9acefec4dd4eaf3da57c305086285a1c0db334ff8267e41127799c",
+      "last_fetched": "2026-11-08T05:03:32.397341+00:00",
+      "title": "plistlib — Generate and parse Apple .plist files — Python 3.15.2 documentation"
+    },
+    "library-poplib": {
+      "url": "https://docs.python.org/3/library/poplib.html",
+      "last_hash": "2a9c7a5a78010bbe87de1155fa4bb87d0603e7f89c06fa5302dfc6156815b1d6",
+      "last_fetched": "2026-11-08T05:03:33.306511+00:00",
+      "title": "poplib — POP3 protocol client — Python 3.15.2 documentation"
+    },
+    "library-posix": {
+      "url": "https://docs.python.org/3/library/posix.html",
+      "last_hash": "1c0da9cdbb9cd5b29560e7f0e7723a6b414d1cdd0222971c7474c48914f7d90f",
+      "last_fetched": "2026-11-08T05:03:34.220547+00:00",
+      "title": "posix — The most common POSIX system calls — Python 3.15.2 documentation"
+    },
+    "library-pprint": {
+      "url": "https://docs.python.org/3/library/pprint.html",
+      "last_hash": "72aa3d6416d426c67bcaf638f00aae28bcd1906bfdec1c79f6e709ff94395668",
+      "last_fetched": "2026-11-08T05:03:35.253290+00:00",
+      "title": "pprint — Data pretty printer — Python 3.15.2 documentation"
+    },
+    "library-profile": {
+      "url": "https://docs.python.org/3/library/profile.html",
+      "last_hash": "3f9359a413491d0b643e1d82b25471ade34b6a7e045067465003049dae40a942",
+      "last_fetched": "2026-11-08T05:03:36.160010+00:00",
+      "title": "profile — Pure Python profiler — Python 3.15.2 documentation"
+    },
+    "library-profiling": {
+      "url": "https://docs.python.org/3/library/profiling.html",
+      "last_hash": "7134988a34ab569992eb1d5ce1a8fc216748f2640779d5709c6a070facd47437",
+      "last_fetched": "2026-11-08T05:03:36.956727+00:00",
+      "title": "profiling — Python profilers — Python 3.15.2 documentation"
+    },
+    "library-pstats": {
+      "url": "https://docs.python.org/3/library/pstats.html",
+      "last_hash": "641059da8e754101d304a2207caaa16c2cb416b116d05e46d5a47609565f733d",
+      "last_fetched": "2026-11-08T05:03:37.869222+00:00",
+      "title": "pstats — Statistics for profilers — Python 3.15.2 documentation"
+    },
+    "library-pty": {
+      "url": "https://docs.python.org/3/library/pty.html",
+      "last_hash": "dbfeaf387fa257287098ad0e9ea46ae1b7c74520aeeaf5c0581dd54a6a3a7e55",
+      "last_fetched": "2026-11-08T05:03:38.743036+00:00",
+      "title": "pty — Pseudo-terminal utilities — Python 3.15.2 documentation"
+    },
+    "library-pwd": {
+      "url": "https://docs.python.org/3/library/pwd.html",
+      "last_hash": "fb6cc726e96019aa2d07a1ed1767f068d968dbd48e17ab8035900b71adc69461",
+      "last_fetched": "2026-11-08T05:03:39.576655+00:00",
+      "title": "pwd — The password database — Python 3.15.2 documentation"
+    },
+    "library-py_compile": {
+      "url": "https://docs.python.org/3/library/py_compile.html",
+      "last_hash": "768cdd5fdaecb6e073f7a049039991fe3d0541e11b7d20f906f117a7888115f8",
+      "last_fetched": "2026-11-08T05:03:40.501854+00:00",
+      "title": "py_compile — Compile Python source files — Python 3.15.2 documentation"
+    },
+    "library-pyclbr": {
+      "url": "https://docs.python.org/3/library/pyclbr.html",
+      "last_hash": "3ad8f77f1ef825aef572a619c315287fd1483479a80c19daa8a66245bf44c7c6",
+      "last_fetched": "2026-11-08T05:03:41.575982+00:00",
+      "title": "pyclbr — Python module browser support — Python 3.15.2 documentation"
+    },
+    "library-pydoc": {
+      "url": "https://docs.python.org/3/library/pydoc.html",
+      "last_hash": "859d38b46a35f14366f3f210bdd32c1fd5979eb07ce6fa0388521582a169692f",
+      "last_fetched": "2026-11-08T05:03:42.423183+00:00",
+      "title": "pydoc — Documentation generator and online help system — Python 3.15.2 documentation"
+    },
+    "library-pyexpat": {
+      "url": "https://docs.python.org/3/library/pyexpat.html",
+      "last_hash": "b4a85511cb50133c6a3f05ddc7dee4e580b6883c2150e659c3ae109506a006aa",
+      "last_fetched": "2026-11-08T05:03:43.515450+00:00",
+      "title": "xml.parsers.expat — Fast XML parsing using Expat — Python 3.15.2 documentation"
+    },
+    "library-python": {
+      "url": "https://docs.python.org/3/library/python.html",
+      "last_hash": "c4b4bbca9bda6f6a737a6235627f55926c3084a7aa7f5c3840d5fcd7098a8e4d",
+      "last_fetched": "2026-11-08T05:03:44.401822+00:00",
+      "title": "Python Runtime Services — Python 3.15.2 documentation"
+    },
+    "library-queue": {
+      "url": "https://docs.python.org/3/library/queue.html",
+      "last_hash": "b591ba1086af2e838e04e7ed6ce13d6e25039809aaa11952745aac340361c028",
+      "last_fetched": "2026-11-08T05:03:45.384266+00:00",
+      "title": "queue — A synchronized queue class — Python 3.15.2 documentation"
+    },
+    "library-quopri": {
+      "url": "https://docs.python.org/3/library/quopri.html",
+      "last_hash": "e5d198deff609c23b08bafc2f4377b5bc9c941e72d287f90b267f45f5ffc762e",
+      "last_fetched": "2026-11-08T05:03:46.315374+00:00",
+      "title": "quopri — Encode and decode MIME quoted-printable data — Python 3.15.2 documentation"
+    },
+    "library-random": {
+      "url": "https://docs.python.org/3/library/random.html",
+      "last_hash": "824de89475fbb4f2c00ce5571dd239bf8971f54600c1852ab4d2dea760b761e3",
+      "last_fetched": "2026-11-08T05:03:47.289239+00:00",
+      "title": "random — Generate pseudo-random numbers — Python 3.15.2 documentation"
+    },
+    "library-re": {
+      "url": "https://docs.python.org/3/library/re.html",
+      "last_hash": "d0529fd19c073f9d5d3bbc82d2283b5cbb5af4291b5fe7922952155440327587",
+      "last_fetched": "2026-11-08T05:03:48.637527+00:00",
+      "title": "re — Regular expression operations — Python 3.15.2 documentation"
+    },
+    "library-readline": {
+      "url": "https://docs.python.org/3/library/readline.html",
+      "last_hash": "de152c1b03c3083bb791fd8ad75c4fb57115538b0da30b439087e0de9865d229",
+      "last_fetched": "2026-11-08T05:03:49.511492+00:00",
+      "title": "readline — GNU readline interface — Python 3.15.2 documentation"
+    },
+    "library-removed": {
+      "url": "https://docs.python.org/3/library/removed.html",
+      "last_hash": "0c09b9c0e827a880265ea790f776dd119b2996ceb005a92c98e688dc589d1048",
+      "last_fetched": "2026-11-08T05:03:50.280105+00:00",
+      "title": "Removed Modules — Python 3.15.2 documentation"
+    },
+    "library-reprlib": {
+      "url": "https://docs.python.org/3/library/reprlib.html",
+      "last_hash": "93d3a824f197ec78b85c98c4a1328ecc4252d3540e747d28a68e622bba8a585b",
+      "last_fetched": "2026-11-08T05:03:51.445385+00:00",
+      "title": "reprlib — Alternate repr() implementation — Python 3.15.2 documentation"
+    },
+    "library-resource": {
+      "url": "https://docs.python.org/3/library/resource.html",
+      "last_hash": "58b6ab921619342b8149cd144855ad79f1e67f4ef66802e2f15d16ce98b52100",
+      "last_fetched": "2026-11-08T05:03:52.356329+00:00",
+      "title": "resource — Resource usage information — Python 3.15.2 documentation"
+    },
+    "library-rlcompleter": {
+      "url": "https://docs.python.org/3/library/rlcompleter.html",
+      "last_hash": "f9f2db144c58bbd1efd5add279088542067691ed19a0e921cf4170f43d292359",
+      "last_fetched": "2026-11-08T05:03:53.240887+00:00",
+      "title": "rlcompleter — Completion function for GNU readline — Python 3.15.2 documentation"
+    },
+    "library-runpy": {
+      "url": "https://docs.python.org/3/library/runpy.html",
+      "last_hash": "211a46ec9eaad3b3c13f4d4b6bb4926b718131b1feefd3d7ff445259c1a292a3",
+      "last_fetched": "2026-11-08T05:03:54.160725+00:00",
+      "title": "runpy — Locating and executing Python modules — Python 3.15.2 documentation"
+    },
+    "library-sched": {
+      "url": "https://docs.python.org/3/library/sched.html",
+      "last_hash": "e4d44206c8ff2e3263cf50ce28cbe8478166a091aab93b738bf9c0955742ebfe",
+      "last_fetched": "2026-11-08T05:03:55.063564+00:00",
+      "title": "sched — Event scheduler — Python 3.15.2 documentation"
+    },
+    "library-secrets": {
+      "url": "https://docs.python.org/3/library/secrets.html",
+      "last_hash": "3451923691e44511c2b957edd8c0b36bb3fea4773df672416161b605c9089d86",
+      "last_fetched": "2026-11-08T05:03:56.013440+00:00",
+      "title": "secrets — Generate secure random numbers for managing secrets — Python 3.15.2 documentation"
+    },
+    "library-security_warnings": {
+      "url": "https://docs.python.org/3/library/security_warnings.html",
+      "last_hash": "c989c6a63ac3eb75ebc4d7c47ee95a2e184794dc88607507884388c824499664",
+      "last_fetched": "2026-11-08T05:03:57.050316+00:00",
+      "title": "Security Considerations — Python 3.15.2 documentation"
+    },
+    "library-select": {
+      "url": "https://docs.python.org/3/library/select.html",
+      "last_hash": "ed0d84abde208ad77fa5c392c85261f6ce3e629780e4923f08c2e15191427ad0",
+      "last_fetched": "2026-11-08T05:03:58.294417+00:00",
+      "title": "select — Waiting for I/O completion — Python 3.15.2 documentation"
+    },
+    "library-selectors": {
+      "url": "https://docs.python.org/3/library/selectors.html",
+      "last_hash": "7b19ba1835007e2f68f7579127928eb5ad4318b103b68cca879f5bfaf35cb536",
+      "last_fetched": "2026-11-08T05:03:59.224288+00:00",
+      "title": "selectors — High-level I/O multiplexing — Python 3.15.2 documentation"
+    },
+    "library-shelve": {
+      "url": "https://docs.python.org/3/library/shelve.html",
+      "last_hash": "9253babd8bd25e8e2747914361eaf1417b7602a2286c8a8f1f2824de4f632766",
+      "last_fetched": "2026-11-08T05:04:00.137211+00:00",
+      "title": "shelve — Python object persistence — Python 3.15.2 documentation"
+    },
+    "library-shlex": {
+      "url": "https://docs.python.org/3/library/shlex.html",
+      "last_hash": "1cd9c584f489a21d24fdfe5c0535197792fbfb76ddad8d72adc65f73f4406ff5",
+      "last_fetched": "2026-11-08T05:04:01.034781+00:00",
+      "title": "shlex — Simple lexical analysis — Python 3.15.2 documentation"
+    },
+    "library-shutil": {
+      "url": "https://docs.python.org/3/library/shutil.html",
+      "last_hash": "bec3a13b5bb39de1c73e43c17328d17b198cee70597310e71ebc01cfb9e346fe",
+      "last_fetched": "2026-11-08T05:04:02.080505+00:00",
+      "title": "shutil — High-level file operations — Python 3.15.2 documentation"
+    },
+    "library-signal": {
+      "url": "https://docs.python.org/3/library/signal.html",
+      "last_hash": "c2a0e5479b4e7728356b313d8fc23f6673f8361fcf978e7117f1c8e76db2a3b4",
+      "last_fetched": "2026-11-08T05:04:03.029905+00:00",
+      "title": "signal — Set handlers for asynchronous events — Python 3.15.2 documentation"
+    },
+    "library-site": {
+      "url": "https://docs.python.org/3/library/site.html",
+      "last_hash": "18ac3d971f6e447dc365cef7dae44925a7d0363fe44f0541414c36b746654d56",
+      "last_fetched": "2026-11-08T05:04:04.145280+00:00",
+      "title": "site — Site-specific configuration hook — Python 3.15.2 documentation"
+    },
+    "library-smtpd": {
+      "url": "https://docs.python.org/3/library/smtpd.html",
+      "last_hash": "05afd72e1e83f01a9367165e54eb6eba986e12980c3b25630ec673a77771ba99",
+      "last_fetched": "2026-11-08T05:04:05.269956+00:00",
+      "title": "smtpd — SMTP Server — Python 3.15.2 documentation"
+    },
+    "library-smtplib": {
+      "url": "https://docs.python.org/3/library/smtplib.html",
+      "last_hash": "07e75e3ffe3db9250fad99d22c37ade5b71fa52d74a82be27f19a83df07a11fe",
+      "last_fetched": "2026-11-08T05:04:06.117973+00:00",
+      "title": "smtplib — SMTP protocol client — Python 3.15.2 documentation"
+    },
+    "library-sndhdr": {
+      "url": "https://docs.python.org/3/library/sndhdr.html",
+      "last_hash": "c3cc27e983be545c695e4d284f1081e3077cb2368fcb0da95b5ff119369f9525",
+      "last_fetched": "2026-11-08T05:04:07.054680+00:00",
+      "title": "sndhdr — Determine type of sound file — Python 3.15.2 documentation"
+    },
+    "library-socket": {
+      "url": "https://docs.python.org/3/library/socket.html",
+      "last_hash": "7c9e30b8557c94f16a614580c60255b099621ac832b22ddd6403b959021e0d61",
+      "last_fetched": "2026-11-08T05:04:08.396456+00:00",
+      "title": "socket — Low-level networking interface — Python 3.15.2 documentation"
+    },
+    "library-socketserver": {
+      "url": "https://docs.python.org/3/library/socketserver.html",
+      "last_hash": "4d713ee02cf136d5cf3aca8ed20507ac7aada7923abfda48b2d821e93b616c85",
+      "last_fetched": "2026-11-08T05:04:09.361168+00:00",
+      "title": "socketserver — A framework for network servers — Python 3.15.2 documentation"
+    },
+    "library-spwd": {
+      "url": "https://docs.python.org/3/library/spwd.html",
+      "last_hash": "101a326c3fbcf075cc4325d4a9aa6274ec0aec5411ae7616b92d95b1da303adf",
+      "last_fetched": "2026-11-08T05:04:10.259692+00:00",
+      "title": "spwd — The shadow password database — Python 3.15.2 documentation"
+    },
+    "library-sqlite3": {
+      "url": "https://docs.python.org/3/library/sqlite3.html",
+      "last_hash": "dea4d4389bf209045a644661927ea69448d9735ff65dfb439de151d666d9d085",
+      "last_fetched": "2026-11-08T05:04:11.361949+00:00",
+      "title": "sqlite3 — DB-API 2.0 interface for SQLite databases — Python 3.15.2 documentation"
+    },
+    "library-ssl": {
+      "url": "https://docs.python.org/3/library/ssl.html",
+      "last_hash": "d28db8bb10997cbafe3e1cea148898b7a473b8e65dcc1ec68c8ddd3d74e0edbc",
+      "last_fetched": "2026-11-08T05:04:12.467338+00:00",
+      "title": "ssl — TLS/SSL wrapper for socket objects — Python 3.15.2 documentation"
+    },
+    "library-stat": {
+      "url": "https://docs.python.org/3/library/stat.html",
+      "last_hash": "e0f34af0bb6d219a3ccea9e3de43841a246a3b8da685a630ccdab2173d49d375",
+      "last_fetched": "2026-11-08T05:04:13.565411+00:00",
+      "title": "stat — Interpreting stat() results — Python 3.15.2 documentation"
+    },
+    "library-statistics": {
+      "url": "https://docs.python.org/3/library/statistics.html",
+      "last_hash": "9c755f9a3d78a83de37c143c66b8dd5b881ada32a5a65df9f4f9cd502bc7f2a7",
+      "last_fetched": "2026-11-08T05:04:14.678352+00:00",
+      "title": "statistics — Mathematical statistics functions — Python 3.15.2 documentation"
+    },
+    "library-string": {
+      "url": "https://docs.python.org/3/library/string.html",
+      "last_hash": "48a8d50e98c23d5ce95f0762c0932534286af2ffe6ab215b658733d88e1d5688",
+      "last_fetched": "2026-11-08T05:04:15.622629+00:00",
+      "title": "string — Common string operations — Python 3.15.2 documentation"
+    },
+    "library-stringprep": {
+      "url": "https://docs.python.org/3/library/stringprep.html",
+      "last_hash": "b5a3c532e87c265845f8166c4ab42e303d09b9f97aef8848417c57c68a88c631",
+      "last_fetched": "2026-11-08T05:04:16.496410+00:00",
+      "title": "stringprep — Internet String Preparation — Python 3.15.2 documentation"
+    },
+    "library-struct": {
+      "url": "https://docs.python.org/3/library/struct.html",
+      "last_hash": "7f9ccdff29ccad4c77d890fdb61891a7ae2fcfb0ff872153c6a886f11d0f294b",
+      "last_fetched": "2026-11-08T05:04:17.663790+00:00",
+      "title": "struct — Interpret bytes as packed binary data — Python 3.15.2 documentation"
+    },
+    "library-subprocess": {
+      "url": "https://docs.python.org/3/library/subprocess.html",
+      "last_hash": "7f6dc15696daa8a53e432e0347d74f65010e09a916fae312c696590fbe5374d3",
+      "last_fetched": "2026-11-08T05:04:18.700548+00:00",
+      "title": "subprocess — Subprocess management — Python 3.15.2 documentation"
+    },
+    "library-sunau": {
+      "url": "https://docs.python.org/3/library/sunau.html",
+      "last_hash": "8abbfc201966b0176fb63ccbd0c68bfc60a6557ca9ee8d57f1ff5f30c3def593",
+      "last_fetched": "2026-11-08T05:04:19.752593+00:00",
+      "title": "sunau — Read and write Sun AU files — Python 3.15.2 documentation"
+    },
+    "library-superseded": {
+      "url": "https://docs.python.org/3/library/superseded.html",
+      "last_hash": "2f4da2d4aae5c44f38e35a36658a8811ed15fa87b69f62bc7bf24b76051320f2",
+      "last_fetched": "2026-11-08T05:04:20.865043+00:00",
+      "title": "Superseded modules — Python 3.15.2 documentation"
+    },
+    "library-symtable": {
+      "url": "https://docs.python.org/3/library/symtable.html",
+      "last_hash": "c454f610fff7750d17fdbf971549e66d847485b52bd2d196aa97cb0a7866c2c4",
+      "last_fetched": "2026-11-08T05:04:21.779267+00:00",
+      "title": "symtable — Access to the compiler’s symbol tables — Python 3.15.2 documentation"
+    },
+    "library-sys": {
+      "url": "https://docs.python.org/3/library/sys.html",
+      "last_hash": "8e38363d48b1b2bfc91408bc0daaa543ab67e4122a2947965dc6a231c92b52d7",
+      "last_fetched": "2026-11-08T05:04:22.983482+00:00",
+      "title": "sys — System-specific parameters and functions — Python 3.15.2 documentation"
+    },
+    "library-sys_path_init": {
+      "url": "https://docs.python.org/3/library/sys_path_init.html",
+      "last_hash": "9268fcad3a05c56de725ee0084fa28fd81964cd043b58aedb33b664392cf2d12",
+      "last_fetched": "2026-11-08T05:04:23.855248+00:00",
+      "title": "The initialization of the sys.path module search path — Python 3.15.2 documentation"
+    },
+    "library-sysconfig": {
+      "url": "https://docs.python.org/3/library/sysconfig.html",
+      "last_hash": "1758a86ce8522e2162250051a805d0de79a7758a457284843657f4c6100234d8",
+      "last_fetched": "2026-11-08T05:04:24.822220+00:00",
+      "title": "sysconfig — Provide access to Python’s configuration information — Python 3.15.2 documentation"
+    },
+    "library-syslog": {
+      "url": "https://docs.python.org/3/library/syslog.html",
+      "last_hash": "c75336d74c3b64230a98afc4d64a740ce4c61a8845d9f7210aa03586b676bb3c",
+      "last_fetched": "2026-11-08T05:04:25.771954+00:00",
+      "title": "syslog — Unix syslog library routines — Python 3.15.2 documentation"
+    },
+    "library-tabnanny": {
+      "url": "https://docs.python.org/3/library/tabnanny.html",
+      "last_hash": "3c74de1286f21aa79a08d44e8b2b3f6cdb9925c846107119c9955015b34d4d51",
+      "last_fetched": "2026-11-08T05:04:26.615731+00:00",
+      "title": "tabnanny — Detection of ambiguous indentation — Python 3.15.2 documentation"
+    },
+    "library-tarfile": {
+      "url": "https://docs.python.org/3/library/tarfile.html",
+      "last_hash": "6de2df48643b57df452467a8e5255cea3df5351d0400a2b46f99dd450b66e04e",
+      "last_fetched": "2026-11-08T05:04:27.731151+00:00",
+      "title": "tarfile — Read and write tar archive files — Python 3.15.2 documentation"
+    },
+    "library-telnetlib": {
+      "url": "https://docs.python.org/3/library/telnetlib.html",
+      "last_hash": "49ef0a1021cbe4022e77c22719b5cd439a28b3ac41e11e10b1f783ad839d09ac",
+      "last_fetched": "2026-11-08T05:04:28.583174+00:00",
+      "title": "telnetlib — Telnet client — Python 3.15.2 documentation"
+    },
+    "library-tempfile": {
+      "url": "https://docs.python.org/3/library/tempfile.html",
+      "last_hash": "11356401de9d642bfbe8a57b776a571186187f266676ed4f834bd6fb1b78baaa",
+      "last_fetched": "2026-11-08T05:04:29.570913+00:00",
+      "title": "tempfile — Generate temporary files and directories — Python 3.15.2 documentation"
+    },
+    "library-termios": {
+      "url": "https://docs.python.org/3/library/termios.html",
+      "last_hash": "2d0229ec65171b5e02ab76a0a1b9dce94bbf05c1913767b324a75958cd135e1e",
+      "last_fetched": "2026-11-08T05:04:30.353383+00:00",
+      "title": "termios — POSIX style tty control — Python 3.15.2 documentation"
+    },
+    "library-test": {
+      "url": "https://docs.python.org/3/library/test.html",
+      "last_hash": "36637d074369bb6f0a1205ba08a9e8a962c0499515ebbee7719cecb1b278c3be",
+      "last_fetched": "2026-11-08T05:04:31.405165+00:00",
+      "title": "test — Regression tests package for Python — Python 3.15.2 documentation"
+    },
+    "library-text": {
+      "url": "https://docs.python.org/3/library/text.html",
+      "last_hash": "225970c9566531bd65fb230e0e24efc362fdc2f3fafa70fe8d740a8cbf2e77c0",
+      "last_fetched": "2026-11-08T05:04:32.526965+00:00",
+      "title": "Text Processing Services — Python 3.15.2 documentation"
+    },
+    "library-textwrap": {
+      "url": "https://docs.python.org/3/library/textwrap.html",
+      "last_hash": "504303759ddd938f6d31f6574b0bf38a5f5f0e907e296497e47bfb7d48d68fdb",
+      "last_fetched": "2026-11-08T05:04:33.430371+00:00",
+      "title": "textwrap — Text wrapping and filling — Python 3.15.2 documentation"
+    },
+    "library-threading": {
+      "url": "https://docs.python.org/3/library/threading.html",
+      "last_hash": "d2fd41a70e8995432507486295e03946dd2256987814e75254bcc0df873bd5f2",
+      "last_fetched": "2026-11-08T05:04:34.501032+00:00",
+      "title": "threading — Thread-based parallelism — Python 3.15.2 documentation"
+    },
+    "library-time": {
+      "url": "https://docs.python.org/3/library/time.html",
+      "last_hash": "c8720a3e19c4ee5900ae48025ff62e991d019f0983cf672286ae98fb39ea7234",
+      "last_fetched": "2026-11-08T05:04:35.473034+00:00",
+      "title": "time — Time access and conversions — Python 3.15.2 documentation"
+    },
+    "library-timeit": {
+      "url": "https://docs.python.org/3/library/timeit.html",
+      "last_hash": "2cf239ee96a033a1bc68ebc6b36a8d5abf99802694d2a9d30559f45163e0ce4d",
+      "last_fetched": "2026-11-08T05:04:36.378143+00:00",
+      "title": "timeit — Measure execution time of small code snippets — Python 3.15.2 documentation"
+    },
+    "library-tk": {
+      "url": "https://docs.python.org/3/library/tk.html",
+      "last_hash": "69da0f6a5470efa55f23768a51224a87b7133d70b60a034d30ada1914ca4e7e3",
+      "last_fetched": "2026-11-08T05:04:37.278995+00:00",
+      "title": "Graphical user interfaces with Tk — Python 3.15.2 documentation"
+    },
+    "library-tkinter": {
+      "url": "https://docs.python.org/3/library/tkinter.html",
+      "last_hash": "5a736901a78c82603cf746f1769097584064aadaf52ddc2f9ee0577168a572d6",
+      "last_fetched": "2026-11-08T05:04:39.093871+00:00",
+      "title": "tkinter — Python interface to Tcl/Tk — Python 3.15.2 documentation"
+    },
+    "library-token": {
+      "url": "https://docs.python.org/3/library/token.html",
+      "last_hash": "55e4f19c4767f341ae4e055b217e49e095bb4fb87f596406d5d684481d7e72bc",
+      "last_fetched": "2026-11-08T05:04:40.497909+00:00",
+      "title": "token — Constants used with Python parse trees — Python 3.15.2 documentation"
+    },
+    "library-tokenize": {
+      "url": "https://docs.python.org/3/library/tokenize.html",
+      "last_hash": "63a66b6a006b556ada3f42259118085edc5e5271c80565e7c094dbf092682812",
+      "last_fetched": "2026-11-08T05:04:41.392680+00:00",
+      "title": "tokenize — Tokenizer for Python source — Python 3.15.2 documentation"
+    },
+    "library-tomllib": {
+      "url": "https://docs.python.org/3/library/tomllib.html",
+      "last_hash": "055cd83a54a56ed7d6e5766557d95c235e84e65d4cea09cfd2af34f785f960be",
+      "last_fetched": "2026-11-08T05:04:42.309251+00:00",
+      "title": "tomllib — Parse TOML files — Python 3.15.2 documentation"
+    },
+    "library-trace": {
+      "url": "https://docs.python.org/3/library/trace.html",
+      "last_hash": "38fd36ca4516a786b4b50675a964165ef58d9f11e95e39388df666267876bf3c",
+      "last_fetched": "2026-11-08T05:04:43.213252+00:00",
+      "title": "trace — Trace or track Python statement execution — Python 3.15.2 documentation"
+    },
+    "library-traceback": {
+      "url": "https://docs.python.org/3/library/traceback.html",
+      "last_hash": "d463110bea21e2f8b32df0bff31367208683723bbfe0beb5e14444ee6bd96c35",
+      "last_fetched": "2026-11-08T05:04:44.129502+00:00",
+      "title": "traceback — Print or retrieve a stack traceback — Python 3.15.2 documentation"
+    },
+    "library-tracemalloc": {
+      "url": "https://docs.python.org/3/library/tracemalloc.html",
+      "last_hash": "dcc27e48ff7715881a5feef840de44b023e8005cdc25c3474a7794fcb4a95197",
+      "last_fetched": "2026-11-08T05:04:45.168561+00:00",
+      "title": "tracemalloc — Trace memory allocations — Python 3.15.2 documentation"
+    },
+    "library-tty": {
+      "url": "https://docs.python.org/3/library/tty.html",
+      "last_hash": "7a962bf8f206ac7ddb3a6643482bf5436bd7cf128e9dd5ae98c8b4e68343776a",
+      "last_fetched": "2026-11-08T05:04:46.143612+00:00",
+      "title": "tty — Terminal control functions — Python 3.15.2 documentation"
+    },
+    "library-turtle": {
+      "url": "https://docs.python.org/3/library/turtle.html",
+      "last_hash": "b7000d45b1560152efdd6057b39bfef135709c8a58ad7cd3f30afeef28097a05",
+      "last_fetched": "2026-11-08T05:04:47.416904+00:00",
+      "title": "turtle — Turtle graphics — Python 3.15.2 documentation"
+    },
+    "library-types": {
+      "url": "https://docs.python.org/3/library/types.html",
+      "last_hash": "168001de7413a05cf3ec7f4aa920c3ee86ebff7c1a78aa20d70f5b9b384598b7",
+      "last_fetched": "2026-11-08T05:04:48.423941+00:00",
+      "title": "types — Dynamic type creation and names for built-in types — Python 3.15.2 documentation"
+    },
+    "library-typing": {
+      "url": "https://docs.python.org/3/library/typing.html",
+      "last_hash": "bd8b0633f4cacf0447820c982421248a398e7ac6d5e0cdb772b296cf5c1de414",
+      "last_fetched": "2026-11-08T05:04:49.866613+00:00",
+      "title": "typing — Support for type hints — Python 3.15.2 documentation"
+    },
+    "library-unicodedata": {
+      "url": "https://docs.python.org/3/library/unicodedata.html",
+      "last_hash": "93e2cecad392474f4c6b5b341e1cdb7dfc50a55888775d2b1b7cf323eaf33313",
+      "last_fetched": "2026-11-08T05:04:50.796662+00:00",
+      "title": "unicodedata — Unicode Database — Python 3.15.2 documentation"
+    },
+    "library-unittest": {
+      "url": "https://docs.python.org/3/library/unittest.html",
+      "last_hash": "3645cd647dd06c136ac4f2cda106f3a87cfa9815c39cab97a109018a992a7382",
+      "last_fetched": "2026-11-08T05:04:51.924673+00:00",
+      "title": "unittest — Unit testing framework — Python 3.15.2 documentation"
+    },
+    "library-unix": {
+      "url": "https://docs.python.org/3/library/unix.html",
+      "last_hash": "152f68a95fb63b57cb557d89ba2b2fe2c568f63ac9f2a26fae3d8e9a295f3ba3",
+      "last_fetched": "2026-11-08T05:04:52.772756+00:00",
+      "title": "Unix-specific services — Python 3.15.2 documentation"
+    },
+    "library-urllib": {
+      "url": "https://docs.python.org/3/library/urllib.html",
+      "last_hash": "26caee280a6182ff1e838304627f7369ea0becda12f91e4e3070218b7b395c0c",
+      "last_fetched": "2026-11-08T05:04:53.614987+00:00",
+      "title": "urllib — URL handling modules — Python 3.15.2 documentation"
+    },
+    "library-uu": {
+      "url": "https://docs.python.org/3/library/uu.html",
+      "last_hash": "d3f2a9483521b82cc4f8bc4d238baedcb270bc1d444fc9ee396c2268a6d7990c",
+      "last_fetched": "2026-11-08T05:04:54.707939+00:00",
+      "title": "uu — Encode and decode uuencode files — Python 3.15.2 documentation"
+    },
+    "library-uuid": {
+      "url": "https://docs.python.org/3/library/uuid.html",
+      "last_hash": "b08060df877223bd52bb421853cdb2f28e2ccbc6a94de70de9f096ce8309b720",
+      "last_fetched": "2026-11-08T05:04:55.732451+00:00",
+      "title": "uuid — UUID objects according to RFC 9562 — Python 3.15.2 documentation"
+    },
+    "library-venv": {
+      "url": "https://docs.python.org/3/library/venv.html",
+      "last_hash": "d2edf5c4171f3b2f455a5e9675e3e3eb638fd7d03ca5d9aad3db5e50241c1feb",
+      "last_fetched": "2026-11-08T05:04:56.740383+00:00",
+      "title": "venv — Creation of virtual environments — Python 3.15.2 documentation"
+    },
+    "library-warnings": {
+      "url": "https://docs.python.org/3/library/warnings.html",
+      "last_hash": "8162b3c5968ff7d1af42dcd6aac15fa2a3158db7cb1ba15d80f0cf4b3491cdc3",
+      "last_fetched": "2026-11-08T05:04:57.704185+00:00",
+      "title": "warnings — Warning control — Python 3.15.2 documentation"
+    },
+    "library-wave": {
+      "url": "https://docs.python.org/3/library/wave.html",
+      "last_hash": "1bd394a5f6f7ca301fa37270d8b8b0bbf893b19ef3df5534ba41a7d719dfea69",
+      "last_fetched": "2026-11-08T05:04:58.567037+00:00",
+      "title": "wave — Read and write WAV files — Python 3.15.2 documentation"
+    },
+    "library-weakref": {
+      "url": "https://docs.python.org/3/library/weakref.html",
+      "last_hash": "d32c4d49e1889fd2b780cb0a92baad5181908cca2da4167b56cf37872c6775e2",
+      "last_fetched": "2026-11-08T05:04:59.653834+00:00",
+      "title": "weakref — Weak references — Python 3.15.2 documentation"
+    },
+    "library-webbrowser": {
+      "url": "https://docs.python.org/3/library/webbrowser.html",
+      "last_hash": "1138b784d3b3f7d915454bf2ade8e884b3c5dfcdbeb01df72397856d502efe34",
+      "last_fetched": "2026-11-08T05:05:00.568847+00:00",
+      "title": "webbrowser — Convenient web-browser controller — Python 3.15.2 documentation"
+    },
+    "library-windows": {
+      "url": "https://docs.python.org/3/library/windows.html",
+      "last_hash": "68a5f71f1c5bbe2c7ddf8cc4305dbefaaeaf230009077d158bf26a0e91dc2f30",
+      "last_fetched": "2026-11-08T05:05:01.411755+00:00",
+      "title": "MS Windows Specific Services — Python 3.15.2 documentation"
+    },
+    "library-winreg": {
+      "url": "https://docs.python.org/3/library/winreg.html",
+      "last_hash": "b377838aad3e14f79ce3da88aa527247c80db6c1ea9b73677715420382422a73",
+      "last_fetched": "2026-11-08T05:05:02.415672+00:00",
+      "title": "winreg — Windows registry access — Python 3.15.2 documentation"
+    },
+    "library-winsound": {
+      "url": "https://docs.python.org/3/library/winsound.html",
+      "last_hash": "9e13cedac5672b92f682eae568b0532435fa26739641cb40f8132226ead5595f",
+      "last_fetched": "2026-11-08T05:05:03.412976+00:00",
+      "title": "winsound — Sound-playing interface for Windows — Python 3.15.2 documentation"
+    },
+    "library-wsgiref": {
+      "url": "https://docs.python.org/3/library/wsgiref.html",
+      "last_hash": "60bdd6cd69fcd7fef9d4373ac46b15060ed0736bd991567d463ec6e74edbefec",
+      "last_fetched": "2026-11-08T05:05:04.505097+00:00",
+      "title": "wsgiref — WSGI Utilities and Reference Implementation — Python 3.15.2 documentation"
+    },
+    "library-xdrlib": {
+      "url": "https://docs.python.org/3/library/xdrlib.html",
+      "last_hash": "9468b0175931a21e821bea764033551cc0b74347d03e6d0440757dd0c45c65dc",
+      "last_fetched": "2026-11-08T05:05:05.383641+00:00",
+      "title": "xdrlib — Encode and decode XDR data — Python 3.15.2 documentation"
+    },
+    "library-xml": {
+      "url": "https://docs.python.org/3/library/xml.html",
+      "last_hash": "333d2fcedecc7723fd8dceb189ccc728359063dc292d40469466eb8047a81759",
+      "last_fetched": "2026-11-08T05:05:06.162224+00:00",
+      "title": "XML Processing Modules — Python 3.15.2 documentation"
+    },
+    "library-xmlrpc": {
+      "url": "https://docs.python.org/3/library/xmlrpc.html",
+      "last_hash": "4fb05baeb7ccad87bf10b3bbb1e4e93a7e84e590721b365cda56e6bf8ba6a899",
+      "last_fetched": "2026-11-08T05:05:06.954972+00:00",
+      "title": "xmlrpc — XMLRPC server and client modules — Python 3.15.2 documentation"
+    },
+    "library-zipapp": {
+      "url": "https://docs.python.org/3/library/zipapp.html",
+      "last_hash": "38359cde2668ad99e6007cddd8d4cb942364d5f535ab16aa3b908e982581ac3c",
+      "last_fetched": "2026-11-08T05:05:08.102516+00:00",
+      "title": "zipapp — Manage executable Python zip archives — Python 3.15.2 documentation"
+    },
+    "library-zipfile": {
+      "url": "https://docs.python.org/3/library/zipfile.html",
+      "last_hash": "a1e85caf9b9b96d91358597c09e3f7c37b07a4a2f1e0309e6c8030e63b912392",
+      "last_fetched": "2026-11-08T05:05:09.106432+00:00",
+      "title": "zipfile — Work with ZIP archives — Python 3.15.2 documentation"
+    },
+    "library-zipimport": {
+      "url": "https://docs.python.org/3/library/zipimport.html",
+      "last_hash": "afcbcf3536ee9b53721cf4600d328fdf93ba7e63a48d51c9d42c0fe45886978f",
+      "last_fetched": "2026-11-08T05:05:09.982646+00:00",
+      "title": "zipimport — Import modules from Zip archives — Python 3.15.2 documentation"
+    },
+    "library-zlib": {
+      "url": "https://docs.python.org/3/library/zlib.html",
+      "last_hash": "bbcf87b6b0941b559215570ad4a4751216f886545a2ac1bd996f807e355a1530",
+      "last_fetched": "2026-11-08T05:05:10.901448+00:00",
+      "title": "zlib — Compression compatible with gzip — Python 3.15.2 documentation"
+    },
+    "library-zoneinfo": {
+      "url": "https://docs.python.org/3/library/zoneinfo.html",
+      "last_hash": "ec4840edca027d3bf99e1fa33a1048d097d7d8225c0b4b9d43558793c414daa2",
+      "last_fetched": "2026-11-08T05:05:11.852911+00:00",
+      "title": "zoneinfo — IANA time zone support — Python 3.15.2 documentation"
+    },
+    "license": {
+      "url": "https://docs.python.org/3/license.html",
+      "last_hash": "c5182aac28667b4f0dd339805042c899e272763e4c43dd9d9f8b03d2fd19504c",
+      "last_fetched": "2026-11-08T05:05:12.933489+00:00",
+      "title": "History and License — Python 3.15.2 documentation"
+    },
+    "reference-compound_stmts": {
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "last_hash": "6fea095241b77fd0d0bf711c116abb504f7b1d2e1e507c535f6b75975687783f",
+      "last_fetched": "2026-11-08T05:05:14.080857+00:00",
+      "title": "8. Compound statements — Python 3.15.2 documentation"
+    },
+    "reference-datamodel": {
+      "url": "https://docs.python.org/3/reference/datamodel.html",
+      "last_hash": "63976a7b60616958c3c7eb39032a6478bda1540a590619060b389eb8c7c147bb",
+      "last_fetched": "2026-11-08T05:05:15.313168+00:00",
+      "title": "3. Data model — Python 3.15.2 documentation"
+    },
+    "reference-executionmodel": {
+      "url": "https://docs.python.org/3/reference/executionmodel.html",
+      "last_hash": "b1eab2c4bafa239f943172ed956ef3e9693c62b1668d12e503d78f7a5d721724",
+      "last_fetched": "2026-11-08T05:05:16.470857+00:00",
+      "title": "4. Execution model — Python 3.15.2 documentation"
+    },
+    "reference-expressions": {
+      "url": "https://docs.python.org/3/reference/expressions.html",
+      "last_hash": "9b4217a3f9c5d67640870ccb5eac6b990d088c7695e016caeb34a427fac2ecc5",
+      "last_fetched": "2026-11-08T05:05:17.650863+00:00",
+      "title": "6. Expressions — Python 3.15.2 documentation"
+    },
+    "reference-grammar": {
+      "url": "https://docs.python.org/3/reference/grammar.html",
+      "last_hash": "19869f2b4bed30a0248549cb92bc50999fee8254bbb2b568b93160444112631e",
+      "last_fetched": "2026-11-08T05:05:18.670485+00:00",
+      "title": "10. Full Grammar specification — Python 3.15.2 documentation"
+    },
+    "reference-import": {
+      "url": "https://docs.python.org/3/reference/import.html",
+      "last_hash": "9a30bc0ee753c1d5f608eb2b9f288c158054876fca2cb17a569ffd52f979121f",
+      "last_fetched": "2026-11-08T05:05:19.621453+00:00",
+      "title": "5. The import system — Python 3.15.2 documentation"
+    },
+    "reference-index": {
+      "url": "https://docs.python.org/3/reference/index.html",
+      "last_hash": "4515bd18f7e9d687b60d392e35230ee1f37d157ff97018f1d6c3670e5f857472",
+      "last_fetched": "2026-11-08T05:05:20.430546+00:00",
+      "title": "The Python Language Reference — Python 3.15.2 documentation"
+    },
+    "reference-introduction": {
+      "url": "https://docs.python.org/3/reference/introduction.html",
+      "last_hash": "88ec356bc40facc01da82041267797ad218e69815b1bd0455036dd43497db0d7",
+      "last_fetched": "2026-11-08T05:05:21.326734+00:00",
+      "title": "1. Introduction — Python 3.15.2 documentation"
+    },
+    "reference-lexical_analysis": {
+      "url": "https://docs.python.org/3/reference/lexical_analysis.html",
+      "last_hash": "622c4df0cdfdecda8e8dd6c60add5d82ee34c183fc5e47ceed881939da651700",
+      "last_fetched": "2026-11-08T05:05:22.530624+00:00",
+      "title": "2. Lexical analysis — Python 3.15.2 documentation"
+    },
+    "reference-simple_stmts": {
+      "url": "https://docs.python.org/3/reference/simple_stmts.html",
+      "last_hash": "f262ec75ad024e451aed781d9f64e23cdb1e368ff15e625236b6ec86ae893f44",
+      "last_fetched": "2026-11-08T05:05:23.754925+00:00",
+      "title": "7. Simple statements — Python 3.15.2 documentation"
+    },
+    "reference-toplevel_components": {
+      "url": "https://docs.python.org/3/reference/toplevel_components.html",
+      "last_hash": "d90fa987976b6f21776982977d6ba1fcd31b79da812c377b048713a6d63f37a2",
+      "last_fetched": "2026-11-08T05:05:24.647139+00:00",
+      "title": "9. Top-level components — Python 3.15.2 documentation"
+    },
+    "tutorial-appendix": {
+      "url": "https://docs.python.org/3/tutorial/appendix.html",
+      "last_hash": "9a4dbcb0768d17f2ce1e9415000983da12d2fc7d5c6453fc14145e4a5ebe8ab1",
+      "last_fetched": "2026-11-08T05:05:25.434554+00:00",
+      "title": "16. Appendix — Python 3.15.2 documentation"
+    },
+    "tutorial-appetite": {
+      "url": "https://docs.python.org/3/tutorial/appetite.html",
+      "last_hash": "4ffff3b6e16de48b82eb7f9dd52034549df4f71137d3dabe1f18cec05d540c13",
+      "last_fetched": "2026-11-08T05:05:26.205388+00:00",
+      "title": "1. Whetting Your Appetite — Python 3.15.2 documentation"
+    },
+    "tutorial-classes": {
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "last_hash": "822fe866837df9f37e41f839a2292c3233d54ae5182d1cbc35136d5c9580100c",
+      "last_fetched": "2026-11-08T05:05:27.202797+00:00",
+      "title": "9. Classes — Python 3.15.2 documentation"
+    },
+    "tutorial-controlflow": {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "last_hash": "c1fa215dbb6d4d3caae9b91ba087268ab804dc6cc98c9b11e1bca8c6ef887589",
+      "last_fetched": "2026-11-08T05:05:28.200633+00:00",
+      "title": "4. More Control Flow Tools — Python 3.15.2 documentation"
+    },
+    "tutorial-datastructures": {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "last_hash": "3f7bff9df4c76da5ee15cbe202de7ab3a9f25489198fe2a85e77b00d150f053e",
+      "last_fetched": "2026-11-08T05:05:29.307440+00:00",
+      "title": "5. Data Structures — Python 3.15.2 documentation"
+    },
+    "tutorial-errors": {
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "last_hash": "76b1e8615e0e21662cad5830951daf1747011fcb106a6e6e0685fc106de78620",
+      "last_fetched": "2026-11-08T05:05:30.238975+00:00",
+      "title": "8. Errors and Exceptions — Python 3.15.2 documentation"
+    },
+    "tutorial-floatingpoint": {
+      "url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+      "last_hash": "d49ef099284bd2fedf16be13c96bd70a92e7f9c2cd8ac592399cdd78a6e66414",
+      "last_fetched": "2026-11-08T05:05:31.413114+00:00",
+      "title": "15. Floating-Point Arithmetic: Issues and Limitations — Python 3.15.2 documentation"
+    },
+    "tutorial-index": {
+      "url": "https://docs.python.org/3/tutorial/index.html",
+      "last_hash": "c0e3d33eda3b766c1327521f1cfb99e0a9c4af3de835dd7fa172a317c627b91d",
+      "last_fetched": "2026-11-08T05:05:32.210445+00:00",
+      "title": "The Python Tutorial — Python 3.15.2 documentation"
+    },
+    "tutorial-inputoutput": {
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "last_hash": "15bde302ae358063093bb1ddcb548ea07934eaf1036bd74da0bc5f8f48812e56",
+      "last_fetched": "2026-11-08T05:05:33.150182+00:00",
+      "title": "7. Input and output — Python 3.15.2 documentation"
+    },
+    "tutorial-interactive": {
+      "url": "https://docs.python.org/3/tutorial/interactive.html",
+      "last_hash": "06c109c6f08f998d9b8757dcd4165d9009e2b6d1e714cf8d8ef2b8a48440aaa5",
+      "last_fetched": "2026-11-08T05:05:34.069637+00:00",
+      "title": "14. Interactive Input Editing and History Substitution — Python 3.15.2 documentation"
+    },
+    "tutorial-interpreter": {
+      "url": "https://docs.python.org/3/tutorial/interpreter.html",
+      "last_hash": "ed430a56d74530d6c5514c027f9f28803f01a2c0157b422471c10ca50e67d7c0",
+      "last_fetched": "2026-11-08T05:05:35.025977+00:00",
+      "title": "2. Using the Python Interpreter — Python 3.15.2 documentation"
+    },
+    "tutorial-introduction": {
+      "url": "https://docs.python.org/3/tutorial/introduction.html",
+      "last_hash": "2b280cc381624012394f5f95749c31495e2c123b8da51a4bd866c0129913c2fa",
+      "last_fetched": "2026-11-08T05:05:35.952453+00:00",
+      "title": "3. An Informal Introduction to Python — Python 3.15.2 documentation"
+    },
+    "tutorial-modules": {
+      "url": "https://docs.python.org/3/tutorial/modules.html",
+      "last_hash": "5252b6de9b4cac84ff087bbd2a82627cd6572bbecb36e0c9ec76f44e1079e3d5",
+      "last_fetched": "2026-11-08T05:05:36.854509+00:00",
+      "title": "6. Modules — Python 3.15.2 documentation"
+    },
+    "tutorial-stdlib": {
+      "url": "https://docs.python.org/3/tutorial/stdlib.html",
+      "last_hash": "2b53d7f9ce93861f43341b46f876d68b8d4a6a434543266a5fc4288c8895af3e",
+      "last_fetched": "2026-11-08T05:05:37.753046+00:00",
+      "title": "10. Brief tour of the standard library — Python 3.15.2 documentation"
+    },
+    "tutorial-stdlib2": {
+      "url": "https://docs.python.org/3/tutorial/stdlib2.html",
+      "last_hash": "ac9787d425caa7e695fe99ffbc6e4fda433bb82e23240a1e24b643fe52647de7",
+      "last_fetched": "2026-11-08T05:05:38.988447+00:00",
+      "title": "11. Brief tour of the standard library — part II — Python 3.15.2 documentation"
+    },
+    "tutorial-venv": {
+      "url": "https://docs.python.org/3/tutorial/venv.html",
+      "last_hash": "5fe774d39f4bb28070b479921597a1ca6e1fc751e99ed7f59ea5f052400488af",
+      "last_fetched": "2026-11-08T05:05:39.884294+00:00",
+      "title": "12. Virtual Environments and Packages — Python 3.15.2 documentation"
+    },
+    "tutorial-whatnow": {
+      "url": "https://docs.python.org/3/tutorial/whatnow.html",
+      "last_hash": "70bc541986e9eb39fafbeae53f522b1ec9dedcbf2c7744a1e5705c5e974c41aa",
+      "last_fetched": "2026-11-08T05:05:40.827262+00:00",
+      "title": "13. What Now? — Python 3.15.2 documentation"
+    },
+    "using-android": {
+      "url": "https://docs.python.org/3/using/android.html",
+      "last_hash": "899756529c2c072674af5da2a0adb3ae2d78c99e5187f70ed842b115836f866d",
+      "last_fetched": "2026-11-08T05:05:41.672209+00:00",
+      "title": "6. Using Python on Android — Python 3.15.2 documentation"
+    },
+    "using-cmdline": {
+      "url": "https://docs.python.org/3/using/cmdline.html",
+      "last_hash": "e5af5b7ba5b420f28ba5afafe5563b96ecb84d546342759efd33d17196a086cb",
+      "last_fetched": "2026-11-08T05:05:42.648905+00:00",
+      "title": "1. Command line and environment — Python 3.15.2 documentation"
+    },
+    "using-configure": {
+      "url": "https://docs.python.org/3/using/configure.html",
+      "last_hash": "9b3cb2d4a9b49e19dfc7a8bb0e390f307df8b075ca1517b388bc94ac83a4ecc8",
+      "last_fetched": "2026-11-08T05:05:43.753741+00:00",
+      "title": "3. Configure Python — Python 3.15.2 documentation"
+    },
+    "using-editors": {
+      "url": "https://docs.python.org/3/using/editors.html",
+      "last_hash": "a5733bd1239f246b82ae823a5b5a5a4ee6a763f4483cd29f433339b18ace455d",
+      "last_fetched": "2026-11-08T05:05:44.628263+00:00",
+      "title": "8. Editors and IDEs — Python 3.15.2 documentation"
+    },
+    "using-index": {
+      "url": "https://docs.python.org/3/using/index.html",
+      "last_hash": "e81511932d9ba51fda173af3a2fb3f7f4b9f87182f4014b87608d163c362eead",
+      "last_fetched": "2026-11-08T05:05:45.402353+00:00",
+      "title": "Python Setup and Usage — Python 3.15.2 documentation"
+    },
+    "using-ios": {
+      "url": "https://docs.python.org/3/using/ios.html",
+      "last_hash": "5d86549d5dc1d0e5e63cc3d54b57ca9d383870eb05c88af527dd8eee33593b10",
+      "last_fetched": "2026-11-08T05:05:46.554383+00:00",
+      "title": "7. Using Python on iOS — Python 3.15.2 documentation"
+    },
+    "using-mac": {
+      "url": "https://docs.python.org/3/using/mac.html",
+      "last_hash": "4e80e7fef31b1ab52bd5a8ce823eeb983728d3c777aa59c75ad4b803bd85ef46",
+      "last_fetched": "2026-11-08T05:05:47.523560+00:00",
+      "title": "5. Using Python on macOS — Python 3.15.2 documentation"
+    },
+    "using-unix": {
+      "url": "https://docs.python.org/3/using/unix.html",
+      "last_hash": "42efac5e0e0cdef38b96438af2c4ad820945c4ae50127b57db891cb98d0a3fab",
+      "last_fetched": "2026-11-08T05:05:48.530839+00:00",
+      "title": "2. Using Python on Unix platforms — Python 3.15.2 documentation"
+    },
+    "using-windows": {
+      "url": "https://docs.python.org/3/using/windows.html",
+      "last_hash": "8b22a33480346eb0c234ff8245033d46b308e595e908599bc74d4f1304a2d851",
+      "last_fetched": "2026-11-08T05:05:49.775768+00:00",
+      "title": "4. Using Python on Windows — Python 3.15.2 documentation"
+    },
+    "whatsnew-changelog": {
+      "url": "https://docs.python.org/3/whatsnew/changelog.html",
+      "last_hash": "d38cabdfdf36bd579b5e71aaefc00f3f407db46de887709198bcba7d8a99da50",
+      "last_fetched": "2026-11-08T05:05:56.799582+00:00",
+      "title": "Changelog — Python 3.15.2 documentation"
+    },
+    "whatsnew-index": {
+      "url": "https://docs.python.org/3/whatsnew/index.html",
+      "last_hash": "a65477501be24193a2144f53bfa7bd54f17d63c92a157cde592a7ec44c61938a",
+      "last_fetched": "2026-11-08T05:05:57.742005+00:00",
+      "title": "What’s New in Python — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.14": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.14.html",
+      "last_hash": "d1f2fdfa6cb5ba291a22ecc655f170ba81236d5ea0cf6f3551d67e4eaa364217",
+      "last_fetched": "2026-11-08T05:05:58.613223+00:00",
+      "title": "Pending removal in Python 3.14 — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.15": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.15.html",
+      "last_hash": "cbbbd23ed190152d841d38d87f7bafdb666626deeb8c0282625e01ff021a5d8d",
+      "last_fetched": "2026-11-08T05:05:59.542786+00:00",
+      "title": "Pending removal in Python 3.15 — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.16": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.16.html",
+      "last_hash": "cbef7fa5404a5bcefb7e7691582c28352083c4b2ebc7e9e722623524d756e3d2",
+      "last_fetched": "2026-11-08T05:06:00.382032+00:00",
+      "title": "Pending removal in Python 3.16 — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.18": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.18.html",
+      "last_hash": "98562d3ee453a5451ea1d87cd0875dc8ccea5a4d806c144b11f6d18f1d1b42b1",
+      "last_fetched": "2026-11-08T05:06:01.468334+00:00",
+      "title": "Pending removal in Python 3.18 — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.19": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.19.html",
+      "last_hash": "c764a8b9dfdc557c07f9db1bbb1094978f047ab165826e3b2ea0195a4e80840c",
+      "last_fetched": "2026-11-08T05:06:02.581689+00:00",
+      "title": "Pending removal in Python 3.19 — Python 3.15.2 documentation"
+    },
+    "deprecations-c-api-pending-removal-in-3.20": {
+      "url": "https://docs.python.org/3/deprecations/c-api-pending-removal-in-3.20.html",
+      "last_hash": "8c3eb905c89846cfc851c468f3dce9e37b97aea43e15d2ca22421bf9d5ce6a5a",
+      "last_fetched": "2026-11-08T05:06:03.599933+00:00",
+      "title": "Pending removal in Python 3.20 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.13": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.13.html",
+      "last_hash": "c87eb7eaa76e44d837144a3e0fb3167395485a46438c849c1f846ce23c03f973",
+      "last_fetched": "2026-11-08T05:06:04.470100+00:00",
+      "title": "Pending removal in Python 3.13 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.14": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.14.html",
+      "last_hash": "d5ce661d077fb95c4dd1021b44d5f505cc8c59461aeee7ee0b9ae9012718b998",
+      "last_fetched": "2026-11-08T05:06:05.336187+00:00",
+      "title": "Pending removal in Python 3.14 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.15": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.15.html",
+      "last_hash": "033d2addaa2419a8d3e4f97a23bb7070e6ee1995aaac103688b79b69a25a1170",
+      "last_fetched": "2026-11-08T05:06:06.210279+00:00",
+      "title": "Pending removal in Python 3.15 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.16": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.16.html",
+      "last_hash": "35025b450e44d843d8b878597ef565a4d35a8def9f9494f5348a3e022cadf5ea",
+      "last_fetched": "2026-11-08T05:06:07.058375+00:00",
+      "title": "Pending removal in Python 3.16 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.17": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.17.html",
+      "last_hash": "d915ed6b82d97586e7a3b023f6a3d0da9b1611ea10ec38659173b6ca7a9e672d",
+      "last_fetched": "2026-11-08T05:06:07.833522+00:00",
+      "title": "Pending removal in Python 3.17 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.18": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.18.html",
+      "last_hash": "334c52430d17882d3d774a39d597093e81f23da0c4a845f4fd2022813bdb81d3",
+      "last_fetched": "2026-11-08T05:06:08.708947+00:00",
+      "title": "Pending removal in Python 3.18 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.19": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.19.html",
+      "last_hash": "c808bbd83265576280d77dbe6f772872b50f2cb32f323afbb81cc631d71a06f5",
+      "last_fetched": "2026-11-08T05:06:09.543396+00:00",
+      "title": "Pending removal in Python 3.19 — Python 3.15.2 documentation"
+    },
+    "deprecations-pending-removal-in-3.20": {
+      "url": "https://docs.python.org/3/deprecations/pending-removal-in-3.20.html",
+      "last_hash": "6efb6bd554a7a1b51cdd20b72debaf9e0330025ba5494cef266894ac52c30673",
+      "last_fetched": "2026-11-08T05:06:10.615983+00:00",
+      "title": "Pending removal in Python 3.20 — Python 3.15.2 documentation"
+    },
+    "library-collections.abc": {
+      "url": "https://docs.python.org/3/library/collections.abc.html",
+      "last_hash": "30677e41022742ae2f8abba1c5606ac08d102f86195b560880e37edb460d6f85",
+      "last_fetched": "2026-11-08T05:06:11.743335+00:00",
+      "title": "collections.abc — Abstract Base Classes for Containers — Python 3.15.2 documentation"
+    },
+    "library-compression.zstd": {
+      "url": "https://docs.python.org/3/library/compression.zstd.html",
+      "last_hash": "6d07d94084ef60de75fc5d566c9fee8e62ad80d2108a5df7ad45f3ec40610e9a",
+      "last_fetched": "2026-11-08T05:06:12.826113+00:00",
+      "title": "compression.zstd — Compression compatible with the Zstandard format — Python 3.15.2 documentation"
+    },
+    "library-concurrent.futures": {
+      "url": "https://docs.python.org/3/library/concurrent.futures.html",
+      "last_hash": "0f4dc471182f895f73184d33a0f4cdacbfd776c439edf2391a5d9e61e4c9376c",
+      "last_fetched": "2026-11-08T05:06:14.182909+00:00",
+      "title": "concurrent.futures — Launching parallel tasks — Python 3.15.2 documentation"
+    },
+    "library-concurrent.interpreters": {
+      "url": "https://docs.python.org/3/library/concurrent.interpreters.html",
+      "last_hash": "e95b3fff13d74768d0b4034b515858fdeb105e3ec3913d4b9511ce82c36fd3de",
+      "last_fetched": "2026-11-08T05:06:15.191727+00:00",
+      "title": "concurrent.interpreters — Multiple interpreters in the same process — Python 3.15.2 documentation"
+    },
+    "library-curses.ascii": {
+      "url": "https://docs.python.org/3/library/curses.ascii.html",
+      "last_hash": "dbfd51b646f3fb4146eec34e9e9fd2b53df623035a0255732e869929732b665c",
+      "last_fetched": "2026-11-08T05:06:16.115488+00:00",
+      "title": "curses.ascii — Utilities for ASCII characters — Python 3.15.2 documentation"
+    },
+    "library-curses.panel": {
+      "url": "https://docs.python.org/3/library/curses.panel.html",
+      "last_hash": "cb79b690afd8b5ab3ccfa75b2181bb3fba240ac2ff73cf5fd1a367c0b3681208",
+      "last_fetched": "2026-11-08T05:06:16.911420+00:00",
+      "title": "curses.panel — A panel stack extension for curses — Python 3.15.2 documentation"
+    },
+    "library-email.charset": {
+      "url": "https://docs.python.org/3/library/email.charset.html",
+      "last_hash": "95df072ff16cdbb891470afbc7486135db9d615098758733c7562eab82ad56ab",
+      "last_fetched": "2026-11-08T05:06:17.867201+00:00",
+      "title": "email.charset: Representing character sets — Python 3.15.2 documentation"
+    },
+    "library-email.compat32-message": {
+      "url": "https://docs.python.org/3/library/email.compat32-message.html",
+      "last_hash": "297bfd71f13a28ffc3e47e8aff106825460087f8c41760a2756258554cad2693",
+      "last_fetched": "2026-11-08T05:06:18.869407+00:00",
+      "title": "email.message.Message: Representing an email message using the compat32 API — Python 3.15.2 documentation"
+    },
+    "library-email.contentmanager": {
+      "url": "https://docs.python.org/3/library/email.contentmanager.html",
+      "last_hash": "70c4e7cf010923c5cd84f11de71927a8e55b52003a81a75aca84fd519964000d",
+      "last_fetched": "2026-11-08T05:06:19.661002+00:00",
+      "title": "email.contentmanager: Managing MIME Content — Python 3.15.2 documentation"
+    },
+    "library-email.encoders": {
+      "url": "https://docs.python.org/3/library/email.encoders.html",
+      "last_hash": "cba4de7180da4f7f9768babf480b1e0da4e99d44278574619482e2d298a3beff",
+      "last_fetched": "2026-11-08T05:06:20.541684+00:00",
+      "title": "email.encoders: Encoders — Python 3.15.2 documentation"
+    },
+    "library-email.errors": {
+      "url": "https://docs.python.org/3/library/email.errors.html",
+      "last_hash": "db52ee7ec8bc8b74bf93ca418dc47420ef53d71779d59e993e04f5c20f071109",
+      "last_fetched": "2026-11-08T05:06:21.384926+00:00",
+      "title": "email.errors: Exception and Defect classes — Python 3.15.2 documentation"
+    },
+    "library-email.examples": {
+      "url": "https://docs.python.org/3/library/email.examples.html",
+      "last_hash": "f34c312f536fb5efa09bb4adee1834929f88c7c6e4e60743390198c02842ad6a",
+      "last_fetched": "2026-11-08T05:06:22.305285+00:00",
+      "title": "email: Examples — Python 3.15.2 documentation"
+    },
+    "library-email.generator": {
+      "url": "https://docs.python.org/3/library/email.generator.html",
+      "last_hash": "96b3ab17a832129ddd887bb6101c19f19a4cd84a6f703487e4f171adb7ef264f",
+      "last_fetched": "2026-11-08T05:06:23.209132+00:00",
+      "title": "email.generator: Generating MIME documents — Python 3.15.2 documentation"
+    },
+    "library-email.header": {
+      "url": "https://docs.python.org/3/library/email.header.html",
+      "last_hash": "794d8d0f16596585174031c48e39ae5bdbf716e9984778a279b0ed4709b7332e",
+      "last_fetched": "2026-11-08T05:06:24.353789+00:00",
+      "title": "email.header: Internationalized headers — Python 3.15.2 documentation"
+    },
+    "library-email.headerregistry": {
+      "url": "https://docs.python.org/3/library/email.headerregistry.html",
+      "last_hash": "101fe3227fd5d5b194788f5feee62c4cc5302462377975ac0614125bc4a14f5d",
+      "last_fetched": "2026-11-08T05:06:25.247331+00:00",
+      "title": "email.headerregistry: Custom Header Objects — Python 3.15.2 documentation"
+    },
+    "library-email.iterators": {
+      "url": "https://docs.python.org/3/library/email.iterators.html",
+      "last_hash": "b37a93b5cf9e3a2a3a7c08eccae672b7320ca02c0a2c41623972aa95e60808a0",
+      "last_fetched": "2026-11-08T05:06:26.337563+00:00",
+      "title": "email.iterators: Iterators — Python 3.15.2 documentation"
+    },
+    "library-email.message": {
+      "url": "https://docs.python.org/3/library/email.message.html",
+      "last_hash": "327c28e5affaf6671e8ffa3f2376cb2b336969737b45ae442434ca9f62c27766",
+      "last_fetched": "2026-11-08T05:06:27.269133+00:00",
+      "title": "email.message: Representing an email message — Python 3.15.2 documentation"
+    },
+    "library-email.mime": {
+      "url": "https://docs.python.org/3/library/email.mime.html",
+      "last_hash": "f7a6438b5f012d5e8faec475a6e39f47bdf4c9c18a93fc5c6283ac8e5cf8a92d",
+      "last_fetched": "2026-11-08T05:06:28.133275+00:00",
+      "title": "email.mime: Creating email and MIME objects from scratch — Python 3.15.2 documentation"
+    },
+    "library-email.parser": {
+      "url": "https://docs.python.org/3/library/email.parser.html",
+      "last_hash": "ad1ff6c0ef7c4bf041f3f90cdf63e437cc3396aa17bc84879b9f72261bc61d6e",
+      "last_fetched": "2026-11-08T05:06:29.081351+00:00",
+      "title": "email.parser: Parsing email messages — Python 3.15.2 documentation"
+    },
+    "library-email.policy": {
+      "url": "https://docs.python.org/3/library/email.policy.html",
+      "last_hash": "b09128b278d01c8efd19ed30c6fbfeccef5f8bc623689b28a17c0b1a102c7f98",
+      "last_fetched": "2026-11-08T05:06:30.216471+00:00",
+      "title": "email.policy: Policy Objects — Python 3.15.2 documentation"
+    },
+    "library-email.utils": {
+      "url": "https://docs.python.org/3/library/email.utils.html",
+      "last_hash": "3fdb3ea427950fac41ae80900a4102f0a1fbf5aa468646ea535faf58a412ed23",
+      "last_fetched": "2026-11-08T05:06:31.192558+00:00",
+      "title": "email.utils: Miscellaneous utilities — Python 3.15.2 documentation"
+    },
+    "library-html.entities": {
+      "url": "https://docs.python.org/3/library/html.entities.html",
+      "last_hash": "d180b303d61f2f6ebbeece155ca68290e326c31bfa84eac75838f8d58b0eba21",
+      "last_fetched": "2026-11-08T05:06:32.243051+00:00",
+      "title": "html.entities — Definitions of HTML general entities — Python 3.15.2 documentation"
+    },
+    "library-html.parser": {
+      "url": "https://docs.python.org/3/library/html.parser.html",
+      "last_hash": "f086de78293df5f12ea54aa8ff652794eb011d6d50514bad1c53908fde56255d",
+      "last_fetched": "2026-11-08T05:06:33.130365+00:00",
+      "title": "html.parser — Simple HTML and XHTML parser — Python 3.15.2 documentation"
+    },
+    "library-http.client": {
+      "url": "https://docs.python.org/3/library/http.client.html",
+      "last_hash": "b0fdab162878381397177675a7846ad799604e4ffecddcc27103447f4febc61f",
+      "last_fetched": "2026-11-08T05:06:34.001872+00:00",
+      "title": "http.client — HTTP protocol client — Python 3.15.2 documentation"
+    },
+    "library-http.cookiejar": {
+      "url": "https://docs.python.org/3/library/http.cookiejar.html",
+      "last_hash": "cc023658b24767204e66039144c52b1edbc46bea852e1eb1948cb7c998758c87",
+      "last_fetched": "2026-11-08T05:06:34.966862+00:00",
+      "title": "http.cookiejar — Cookie handling for HTTP clients — Python 3.15.2 documentation"
+    },
+    "library-http.cookies": {
+      "url": "https://docs.python.org/3/library/http.cookies.html",
+      "last_hash": "3bd5324a78efca6ce2e48b3ce12caf0681f4af92aaaeb6ba255b4f260461a608",
+      "last_fetched": "2026-11-08T05:06:35.920991+00:00",
+      "title": "http.cookies — HTTP state management — Python 3.15.2 documentation"
+    },
+    "library-http.server": {
+      "url": "https://docs.python.org/3/library/http.server.html",
+      "last_hash": "19d3a86693e7ffb6905c90370f6e35ad4fa218ca899373d63f62a760adb2d340",
+      "last_fetched": "2026-11-08T05:06:36.976768+00:00",
+      "title": "http.server — HTTP servers — Python 3.15.2 documentation"
+    },
+    "library-importlib.metadata": {
+      "url": "https://docs.python.org/3/library/importlib.metadata.html",
+      "last_hash": "73467cd01695b5db70c1713ac56ee2b49f6fae7709062780b93fb96433b4ad4d",
+      "last_fetched": "2026-11-08T05:06:37.972425+00:00",
+      "title": "importlib.metadata – Accessing package metadata — Python 3.15.2 documentation"
+    },
+    "library-importlib.resources": {
+      "url": "https://docs.python.org/3/library/importlib.resources.html",
+      "last_hash": "5adb75418c643ad4bb9dd58100828ac4b8e4bf3431417f5a98ab0d28e66ac018",
+      "last_fetched": "2026-11-08T05:06:39.013453+00:00",
+      "title": "importlib.resources – Package resource reading, opening and access — Python 3.15.2 documentation"
+    },
+    "library-logging.config": {
+      "url": "https://docs.python.org/3/library/logging.config.html",
+      "last_hash": "c6acb67f926597695c696e2d6ffee8e1ed7f052b1e99fe37f00ed30fe132a08e",
+      "last_fetched": "2026-11-08T05:06:39.886887+00:00",
+      "title": "logging.config — Logging configuration — Python 3.15.2 documentation"
+    },
+    "library-logging.handlers": {
+      "url": "https://docs.python.org/3/library/logging.handlers.html",
+      "last_hash": "c2826e12cb6fe5a592e5a1ce6d118a893d3bb9ca72df2a2cbbdf6a060f6cac41",
+      "last_fetched": "2026-11-08T05:06:40.959514+00:00",
+      "title": "logging.handlers — Logging handlers — Python 3.15.2 documentation"
+    },
+    "library-math.integer": {
+      "url": "https://docs.python.org/3/library/math.integer.html",
+      "last_hash": "f30a661f8089d84527042cdf11c41a9375920762aea02c64bca1d15e39da929b",
+      "last_fetched": "2026-11-08T05:06:41.806426+00:00",
+      "title": "math.integer — integer-specific mathematics functions — Python 3.15.2 documentation"
+    },
+    "library-multiprocessing.shared_memory": {
+      "url": "https://docs.python.org/3/library/multiprocessing.shared_memory.html",
+      "last_hash": "29514f0a955b8cf1ef4a041357d978fcba46fe0615ad0abe1f7c04de8d99e781",
+      "last_fetched": "2026-11-08T05:06:42.731385+00:00",
+      "title": "multiprocessing.shared_memory — Shared memory for direct access across processes — Python 3.15.2 documentation"
+    },
+    "library-os.path": {
+      "url": "https://docs.python.org/3/library/os.path.html",
+      "last_hash": "9da931b10611b1207b28230e1e74729b712e76f14a7209ff263868dd89c0ac17",
+      "last_fetched": "2026-11-08T05:06:43.679758+00:00",
+      "title": "os.path — Common pathname manipulations — Python 3.15.2 documentation"
+    },
+    "library-profiling.sampling": {
+      "url": "https://docs.python.org/3/library/profiling.sampling.html",
+      "last_hash": "368b89d97c16c6489e14c1ad5b8722e3f7a5e8a8f62fd6a15f43d1ed68ed626a",
+      "last_fetched": "2026-11-08T05:06:44.919855+00:00",
+      "title": "profiling.sampling — Statistical profiler — Python 3.15.2 documentation"
+    },
+    "library-profiling.tracing": {
+      "url": "https://docs.python.org/3/library/profiling.tracing.html",
+      "last_hash": "47a74ccc9593545425db67fbcd5b429579a6eb679658c6c9fd4d7ca8beb05ee1",
+      "last_fetched": "2026-11-08T05:06:45.963440+00:00",
+      "title": "profiling.tracing — Deterministic profiler — Python 3.15.2 documentation"
+    },
+    "library-string.templatelib": {
+      "url": "https://docs.python.org/3/library/string.templatelib.html",
+      "last_hash": "8b1a0cce8b9050d50c36dd469d4c8e6f0b42e87ad457ce06950467ff57907a34",
+      "last_fetched": "2026-11-08T05:06:46.997836+00:00",
+      "title": "string.templatelib — Support for template string literals — Python 3.15.2 documentation"
+    },
+    "library-sys.monitoring": {
+      "url": "https://docs.python.org/3/library/sys.monitoring.html",
+      "last_hash": "44712fc2444b13b8c2202b181f42909853e1be8d9bf6cf88f519babe81510011",
+      "last_fetched": "2026-11-08T05:06:47.962137+00:00",
+      "title": "sys.monitoring — Execution event monitoring — Python 3.15.2 documentation"
+    },
+    "library-tkinter.colorchooser": {
+      "url": "https://docs.python.org/3/library/tkinter.colorchooser.html",
+      "last_hash": "a5cb28e4a76f62f7dcac280bea9b7732be42fa56ef85b40e4a408bd3acc110e5",
+      "last_fetched": "2026-11-08T05:06:48.830567+00:00",
+      "title": "tkinter.colorchooser — Color choosing dialog — Python 3.15.2 documentation"
+    },
+    "library-tkinter.dnd": {
+      "url": "https://docs.python.org/3/library/tkinter.dnd.html",
+      "last_hash": "b34f5916acc43d4cb6a270a80ce7a9c0f51e2330bcf8315d65355e228bace972",
+      "last_fetched": "2026-11-08T05:06:49.767533+00:00",
+      "title": "tkinter.dnd — Drag and drop support — Python 3.15.2 documentation"
+    },
+    "library-tkinter.font": {
+      "url": "https://docs.python.org/3/library/tkinter.font.html",
+      "last_hash": "afbb5ee1cdb187fa86736074e38851c789c819f48bb094e62d1cc251a0ce869c",
+      "last_fetched": "2026-11-08T05:06:50.800598+00:00",
+      "title": "tkinter.font — Tkinter font wrapper — Python 3.15.2 documentation"
+    },
+    "library-tkinter.messagebox": {
+      "url": "https://docs.python.org/3/library/tkinter.messagebox.html",
+      "last_hash": "fc8c614aa3c7846ac26bd180918e310dad4f29d67c5d779f24daaa5132958d41",
+      "last_fetched": "2026-11-08T05:06:51.741600+00:00",
+      "title": "tkinter.messagebox — Tkinter message prompts — Python 3.15.2 documentation"
+    },
+    "library-tkinter.scrolledtext": {
+      "url": "https://docs.python.org/3/library/tkinter.scrolledtext.html",
+      "last_hash": "5ea551e8ab5429a44dd8a18517ef1c285788c6215f4f93089c745c46df9f942f",
+      "last_fetched": "2026-11-08T05:06:52.647926+00:00",
+      "title": "tkinter.scrolledtext — Scrolled text widget — Python 3.15.2 documentation"
+    },
+    "library-tkinter.ttk": {
+      "url": "https://docs.python.org/3/library/tkinter.ttk.html",
+      "last_hash": "34f1309b7c1397439e4f6e3aa0480a46b8ef45f61ac9e76a743c331efe142a90",
+      "last_fetched": "2026-11-08T05:06:53.794444+00:00",
+      "title": "tkinter.ttk — Tk themed widgets — Python 3.15.2 documentation"
+    },
+    "library-unittest.mock": {
+      "url": "https://docs.python.org/3/library/unittest.mock.html",
+      "last_hash": "f3b4ee058097839658aca508d17e393616a5f3be5db2e2d9678245a439b96ed1",
+      "last_fetched": "2026-11-08T05:06:54.957201+00:00",
+      "title": "unittest.mock — mock object library — Python 3.15.2 documentation"
+    },
+    "library-unittest.mock-examples": {
+      "url": "https://docs.python.org/3/library/unittest.mock-examples.html",
+      "last_hash": "6e7a78493c61d41f7d5197860b0a3e965d88bb5316d8a9a47650b449549beee4",
+      "last_fetched": "2026-11-08T05:06:56.256002+00:00",
+      "title": "unittest.mock — getting started — Python 3.15.2 documentation"
+    },
+    "library-urllib.error": {
+      "url": "https://docs.python.org/3/library/urllib.error.html",
+      "last_hash": "318b9682aa7415d74e1f59f0fe71952eedc53d0c43462a0d85fff34a68dbb84b",
+      "last_fetched": "2026-11-08T05:06:57.421037+00:00",
+      "title": "urllib.error — Exception classes raised by urllib.request — Python 3.15.2 documentation"
+    },
+    "library-urllib.parse": {
+      "url": "https://docs.python.org/3/library/urllib.parse.html",
+      "last_hash": "30779b9cd129f61398ed629adbded250448c06a6a31fab25f7bf63a5a2a148aa",
+      "last_fetched": "2026-11-08T05:06:58.410457+00:00",
+      "title": "urllib.parse — Parse URLs into components — Python 3.15.2 documentation"
+    },
+    "library-urllib.request": {
+      "url": "https://docs.python.org/3/library/urllib.request.html",
+      "last_hash": "b69e0aa28b1b21097a2b98f5d4e833f61e2dc22a7adbb4feba9f696c376f337a",
+      "last_fetched": "2026-11-08T05:06:59.450795+00:00",
+      "title": "urllib.request — Extensible library for opening URLs — Python 3.15.2 documentation"
+    },
+    "library-urllib.robotparser": {
+      "url": "https://docs.python.org/3/library/urllib.robotparser.html",
+      "last_hash": "03b53db7d60a0852a386e4f70d8a5f4dab9cf331726cfe8793fbb6563c0051fd",
+      "last_fetched": "2026-11-08T05:07:00.382227+00:00",
+      "title": "urllib.robotparser — Parser for robots.txt — Python 3.15.2 documentation"
+    },
+    "library-xml.dom": {
+      "url": "https://docs.python.org/3/library/xml.dom.html",
+      "last_hash": "fddfaab58b22b762b0411730b191d26098709a8991f9b07ab5413011a29dbebd",
+      "last_fetched": "2026-11-08T05:07:01.661826+00:00",
+      "title": "xml.dom — The Document Object Model API — Python 3.15.2 documentation"
+    },
+    "library-xml.sax": {
+      "url": "https://docs.python.org/3/library/xml.sax.html",
+      "last_hash": "37ac01494c396065ea0b44b4a4c38377ed39b80abba9637242170ec10f99c240",
+      "last_fetched": "2026-11-08T05:07:02.557748+00:00",
+      "title": "xml.sax — Support for SAX2 parsers — Python 3.15.2 documentation"
+    },
+    "library-xmlrpc.client": {
+      "url": "https://docs.python.org/3/library/xmlrpc.client.html",
+      "last_hash": "93f55d2c166b73c39a42dc35e2cc784944f42436761ce46591150bda0085089e",
+      "last_fetched": "2026-11-08T05:07:03.783851+00:00",
+      "title": "xmlrpc.client — XML-RPC client access — Python 3.15.2 documentation"
+    },
+    "library-xmlrpc.server": {
+      "url": "https://docs.python.org/3/library/xmlrpc.server.html",
+      "last_hash": "5e22f99edda40c10b561487dcb688201b70c2f8ec93bf9c3b3ea5a4776c3e374",
+      "last_fetched": "2026-11-08T05:07:04.622247+00:00",
+      "title": "xmlrpc.server — Basic XML-RPC servers — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.0": {
+      "url": "https://docs.python.org/3/whatsnew/2.0.html",
+      "last_hash": "1bff313b25142866eab583f731aa997c8ea5632c5562a1b6bd3acd2fca9508a6",
+      "last_fetched": "2026-11-08T05:07:05.513988+00:00",
+      "title": "What’s New in Python 2.0 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.1": {
+      "url": "https://docs.python.org/3/whatsnew/2.1.html",
+      "last_hash": "197d8ad34f5945c6c588888631b854c925076045dfea9bb4c4ed5e931e2adee6",
+      "last_fetched": "2026-11-08T05:07:06.376519+00:00",
+      "title": "What’s New in Python 2.1 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.2": {
+      "url": "https://docs.python.org/3/whatsnew/2.2.html",
+      "last_hash": "07cebf6747d2deaebbc7d28d47abd29017e3f3f14de9b951374165e405a45be2",
+      "last_fetched": "2026-11-08T05:07:07.491779+00:00",
+      "title": "What’s New in Python 2.2 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.3": {
+      "url": "https://docs.python.org/3/whatsnew/2.3.html",
+      "last_hash": "3f568201d46496f3f59a3c40de08c09a4601b7d9da9495aa539a2f057b05dcc9",
+      "last_fetched": "2026-11-08T05:07:08.811628+00:00",
+      "title": "What’s New in Python 2.3 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.4": {
+      "url": "https://docs.python.org/3/whatsnew/2.4.html",
+      "last_hash": "423d23d7e50f9707dcf55071bf89a72f307070b7ea2d4695cc1cc8d9407d6d8f",
+      "last_fetched": "2026-11-08T05:07:09.867298+00:00",
+      "title": "What’s New in Python 2.4 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.5": {
+      "url": "https://docs.python.org/3/whatsnew/2.5.html",
+      "last_hash": "8e7cca64eb398f568f62fdd136231db589b7a9c2c4e0ca397d430a69b2a95e93",
+      "last_fetched": "2026-11-08T05:07:10.930513+00:00",
+      "title": "What’s New in Python 2.5 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.6": {
+      "url": "https://docs.python.org/3/whatsnew/2.6.html",
+      "last_hash": "d89d1c057faf14a3880379f6f1a58c242b3ea1a03ee6bd8ec43150ba52a3573d",
+      "last_fetched": "2026-11-08T05:07:12.047831+00:00",
+      "title": "What’s New in Python 2.6 — Python 3.15.2 documentation"
+    },
+    "whatsnew-2.7": {
+      "url": "https://docs.python.org/3/whatsnew/2.7.html",
+      "last_hash": "4817d88c7fea134c6aa4d45e262e93f85e747f9b92808e5cbad1b3734ad58d8d",
+      "last_fetched": "2026-11-08T05:07:13.166441+00:00",
+      "title": "What’s New in Python 2.7 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.0": {
+      "url": "https://docs.python.org/3/whatsnew/3.0.html",
+      "last_hash": "c74255041bb48a8b38ad89407e22ce748284ab8325f370333eab81c4d397997f",
+      "last_fetched": "2026-11-08T05:07:14.142256+00:00",
+      "title": "What’s New In Python 3.0 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.1": {
+      "url": "https://docs.python.org/3/whatsnew/3.1.html",
+      "last_hash": "972fed5cc4c07076865904f146c7ff2822e831d96baa634497b04ed50257bb0e",
+      "last_fetched": "2026-11-08T05:07:15.334801+00:00",
+      "title": "What’s New In Python 3.1 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.10": {
+      "url": "https://docs.python.org/3/whatsnew/3.10.html",
+      "last_hash": "375fd93a769bfc8a1ae360ad5aa558302ca561a4d14c9cf6d83b94e1d9d7b4db",
+      "last_fetched": "2026-11-08T05:07:16.317771+00:00",
+      "title": "What’s New In Python 3.10 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.11": {
+      "url": "https://docs.python.org/3/whatsnew/3.11.html",
+      "last_hash": "9eb08093d9dcdd0b517c4fa35087b2eb8817d1179a87b332664da40eb68c0646",
+      "last_fetched": "2026-11-08T05:07:17.473289+00:00",
+      "title": "What’s New In Python 3.11 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.12": {
+      "url": "https://docs.python.org/3/whatsnew/3.12.html",
+      "last_hash": "da15c326faa5a77b97aa2424317fd29f301cc59b04ce5806b94fdb38886648ba",
+      "last_fetched": "2026-11-08T05:07:18.603685+00:00",
+      "title": "What’s New In Python 3.12 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.13": {
+      "url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "last_hash": "85515054f41b7168f2f32ca79ab710ad81af2fc914f000a592f6e971cc94ef34",
+      "last_fetched": "2026-11-08T05:07:20.032679+00:00",
+      "title": "What’s New In Python 3.13 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.14": {
+      "url": "https://docs.python.org/3/whatsnew/3.14.html",
+      "last_hash": "b3fbf2ca5a26a55e3284747014c403da1415404380f3a2e1e2d0d70b69abfec7",
+      "last_fetched": "2026-11-08T05:07:21.180222+00:00",
+      "title": "What’s new in Python 3.14 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.15": {
+      "url": "https://docs.python.org/3/whatsnew/3.15.html",
+      "last_hash": "4cdc8f6290a12be6907d5cca6bd0c46a5cd12dcc9d3c2e06902ecfe72aad0acb",
+      "last_fetched": "2026-11-08T05:07:22.519948+00:00",
+      "title": "What’s new in Python 3.15 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.2": {
+      "url": "https://docs.python.org/3/whatsnew/3.2.html",
+      "last_hash": "7adbc84cb4e926b35330d51a144154ca00206e7995c3b5a164562c81645a5e3e",
+      "last_fetched": "2026-11-08T05:07:23.541513+00:00",
+      "title": "What’s New In Python 3.2 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.3": {
+      "url": "https://docs.python.org/3/whatsnew/3.3.html",
+      "last_hash": "6efad1cb5f9eb4c0fb4c5df419487442bcc96e6af4b324fb027fe7e7d9f686bc",
+      "last_fetched": "2026-11-08T05:07:24.529495+00:00",
+      "title": "What’s New In Python 3.3 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.4": {
+      "url": "https://docs.python.org/3/whatsnew/3.4.html",
+      "last_hash": "11f08e4076f860c5388bf1d78135523fc755f749fb69b498bb41a762e3319658",
+      "last_fetched": "2026-11-08T05:07:25.573142+00:00",
+      "title": "What’s New In Python 3.4 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.5": {
+      "url": "https://docs.python.org/3/whatsnew/3.5.html",
+      "last_hash": "cca8a859d96830bab05a3d9b7ec4a858236774a8ccaccd54be73dd4a4a3b61ad",
+      "last_fetched": "2026-11-08T05:07:26.637647+00:00",
+      "title": "What’s New In Python 3.5 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.6": {
+      "url": "https://docs.python.org/3/whatsnew/3.6.html",
+      "last_hash": "b7009b183cf41d2a3ee52df43e0725b65a625a39b260196a154826da3fd55b74",
+      "last_fetched": "2026-11-08T05:07:27.926399+00:00",
+      "title": "What’s New In Python 3.6 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.7": {
+      "url": "https://docs.python.org/3/whatsnew/3.7.html",
+      "last_hash": "7e0a9302769cadda0e39d4e2d61ae0893745f04c345556fbb164b4f396c8244e",
+      "last_fetched": "2026-11-08T05:07:29.135388+00:00",
+      "title": "What’s New In Python 3.7 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.8": {
+      "url": "https://docs.python.org/3/whatsnew/3.8.html",
+      "last_hash": "1e8d0f60a7aa4ca99888ec02f0509a9f6f5e230abd3dc1d30fae7b963bdf0167",
+      "last_fetched": "2026-11-08T05:07:30.129204+00:00",
+      "title": "What’s New In Python 3.8 — Python 3.15.2 documentation"
+    },
+    "whatsnew-3.9": {
+      "url": "https://docs.python.org/3/whatsnew/3.9.html",
+      "last_hash": "8100c80bed2302c758a5d0db7d323e676631ce9b250e62e34be2ac860c2585fc",
+      "last_fetched": "2026-11-08T05:07:31.184824+00:00",
+      "title": "What’s New In Python 3.9 — Python 3.15.2 documentation"
+    },
+    "library-importlib.resources.abc": {
+      "url": "https://docs.python.org/3/library/importlib.resources.abc.html",
+      "last_hash": "54686e130f047248288a0e4a30845f260263f295a6a4de7b49ef029fbc9fffdf",
+      "last_fetched": "2026-11-08T05:07:32.028987+00:00",
+      "title": "importlib.resources.abc – Abstract base classes for resources — Python 3.15.2 documentation"
+    },
+    "library-xml.dom.minidom": {
+      "url": "https://docs.python.org/3/library/xml.dom.minidom.html",
+      "last_hash": "9a927a7f3160ebb58d14adcb0d4ee757b6b0fc86ae5bc089f69c024f6b661e61",
+      "last_fetched": "2026-11-08T05:07:32.941108+00:00",
+      "title": "xml.dom.minidom — Minimal DOM implementation — Python 3.15.2 documentation"
+    },
+    "library-xml.dom.pulldom": {
+      "url": "https://docs.python.org/3/library/xml.dom.pulldom.html",
+      "last_hash": "555b19b0c977f820872e65bb29a614ff92207f9e3aa5eefedbfae9180eb57766",
+      "last_fetched": "2026-11-08T05:07:33.935457+00:00",
+      "title": "xml.dom.pulldom — Support for building partial DOM trees — Python 3.15.2 documentation"
+    },
+    "library-xml.etree.elementtree": {
+      "url": "https://docs.python.org/3/library/xml.etree.elementtree.html",
+      "last_hash": "d12fe855515ae0072e152afe2b475348ca2a71a440bc4517ee6e309ab14083f5",
+      "last_fetched": "2026-11-08T05:07:35.253016+00:00",
+      "title": "xml.etree.ElementTree — The ElementTree XML API — Python 3.15.2 documentation"
+    },
+    "library-xml.sax.handler": {
+      "url": "https://docs.python.org/3/library/xml.sax.handler.html",
+      "last_hash": "f2c52fda6c9eb91350ac6f758211ddef0d42b1288a699fb5812e8bbca4ff1f4b",
+      "last_fetched": "2026-11-08T05:07:36.328983+00:00",
+      "title": "xml.sax.handler — Base classes for SAX handlers — Python 3.15.2 documentation"
+    },
+    "library-xml.sax.reader": {
+      "url": "https://docs.python.org/3/library/xml.sax.reader.html",
+      "last_hash": "585365a4a4422d80f2ab6ae0dfbc2f91cf6aeecd062b3d1ec2bd44ba606fd834",
+      "last_fetched": "2026-11-08T05:07:37.148989+00:00",
+      "title": "xml.sax.xmlreader — Interface for XML parsers — Python 3.15.2 documentation"
+    },
+    "library-xml.sax.utils": {
+      "url": "https://docs.python.org/3/library/xml.sax.utils.html",
+      "last_hash": "af8f6ab4dfbe0da929d00466046f7800509bf785d50b1ef1d83c3fc215bd4a98",
+      "last_fetched": "2026-11-08T05:07:38.145640+00:00",
+      "title": "xml.sax.saxutils — SAX Utilities — Python 3.15.2 documentation"
+    }
+  },
+  "detected_version": "3.15.2",
+  "last_updated": "2026-11-08T05:07:38.145640+00:00",
+  "version_history": []
+}

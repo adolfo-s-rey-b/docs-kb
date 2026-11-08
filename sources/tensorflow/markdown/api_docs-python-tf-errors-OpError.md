@@ -1,0 +1,87 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/errors/OpError#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/errors/OpError)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/errors/OpError?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/errors/OpError#args)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/errors/OpError#attributes)
+    
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.errors.OpError Stay organized with collections Save and categorize content based on your preferences.
+========================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/errors/OpError#args)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/errors/OpError#attributes)
+    
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/errors_impl.py#L57-L183)
+
+The base class for TensorFlow exceptions.
+
+#### View aliases
+
+**Compat aliases for migration**
+
+See [Migration guide](https://www.tensorflow.org/guide/migrate)
+ for more details.
+
+[`tf.compat.v1.OpError`](https://www.tensorflow.org/api_docs/python/tf/errors/OpError)
+, [`tf.compat.v1.errors.OpError`](https://www.tensorflow.org/api_docs/python/tf/errors/OpError)
+
+tf.errors.OpError(
+        node_def, op, message, error_code, *args
+    )
+
+Usually, TensorFlow will raise a more specific subclass of `OpError` from the [`tf.errors`](https://www.tensorflow.org/api_docs/python/tf/errors)
+ module.
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `node_def` | The `node_def_pb2.NodeDef` proto representing the op that failed, if known; otherwise None. |
+| `op` | The `ops.Operation` that failed, if known; otherwise None. During eager execution, this field is always `None`. |
+| `message` | The message string describing the failure. |
+| `error_code` | The `error_codes_pb2.Code` describing the error. |
+| `*args` | If not empty, it should contain a dictionary describing details about the error. This argument is inspired by Abseil payloads: https://github.com/abseil/abseil-cpp/blob/master/absl/status/status.h |
+
+|     |     |
+| --- | --- |
+| Attributes<br>---------- |     |
+| `error_code` | The integer error code that describes the error. |
+| `experimental_payloads` | A dictionary describing the details of the error. |
+| `message` | The error message that describes the error. |
+| `node_def` | The `NodeDef` proto representing the op that failed. |
+| `op` | The operation that failed, if known. |
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

@@ -1,0 +1,1111 @@
+{
+  "pages": {
+    "index": {
+      "url": "https://react.dev/",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "versions": {
+      "url": "https://react.dev/versions",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn": {
+      "url": "https://react.dev/learn",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react": {
+      "url": "https://react.dev/reference/react",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "community": {
+      "url": "https://react.dev/community",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "blog": {
+      "url": "https://react.dev/blog",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-add-react-to-an-existing-project": {
+      "url": "https://react.dev/learn/add-react-to-an-existing-project",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-creating-a-react-app": {
+      "url": "https://react.dev/learn/creating-a-react-app",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-installation": {
+      "url": "https://react.dev/learn/installation",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-describing-the-ui": {
+      "url": "https://react.dev/learn/describing-the-ui",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-adding-interactivity": {
+      "url": "https://react.dev/learn/adding-interactivity",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-managing-state": {
+      "url": "https://react.dev/learn/managing-state",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-escape-hatches": {
+      "url": "https://react.dev/learn/escape-hatches",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom": {
+      "url": "https://react.dev/reference/react-dom",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-setup": {
+      "url": "https://react.dev/learn/setup",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-compiler": {
+      "url": "https://react.dev/learn/react-compiler",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-components": {
+      "url": "https://react.dev/reference/react/components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-apis": {
+      "url": "https://react.dev/reference/react/apis",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-legacy": {
+      "url": "https://react.dev/reference/react/legacy",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components": {
+      "url": "https://react.dev/reference/react-dom/components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-client": {
+      "url": "https://react.dev/reference/react-dom/client",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server": {
+      "url": "https://react.dev/reference/react-dom/server",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-configuration": {
+      "url": "https://react.dev/reference/react-compiler/configuration",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-directives": {
+      "url": "https://react.dev/reference/react-compiler/directives",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-compiling-libraries": {
+      "url": "https://react.dev/reference/react-compiler/compiling-libraries",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-tutorial-tic-tac-toe": {
+      "url": "https://react.dev/learn/tutorial-tic-tac-toe",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-thinking-in-react": {
+      "url": "https://react.dev/learn/thinking-in-react",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-build-a-react-app-from-scratch": {
+      "url": "https://react.dev/learn/build-a-react-app-from-scratch",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-editor-setup": {
+      "url": "https://react.dev/learn/editor-setup",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-typescript": {
+      "url": "https://react.dev/learn/typescript",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-developer-tools": {
+      "url": "https://react.dev/learn/react-developer-tools",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-compiler-introduction": {
+      "url": "https://react.dev/learn/react-compiler/introduction",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-compiler-installation": {
+      "url": "https://react.dev/learn/react-compiler/installation",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-compiler-incremental-adoption": {
+      "url": "https://react.dev/learn/react-compiler/incremental-adoption",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-react-compiler-debugging": {
+      "url": "https://react.dev/learn/react-compiler/debugging",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-your-first-component": {
+      "url": "https://react.dev/learn/your-first-component",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-importing-and-exporting-components": {
+      "url": "https://react.dev/learn/importing-and-exporting-components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-writing-markup-with-jsx": {
+      "url": "https://react.dev/learn/writing-markup-with-jsx",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-javascript-in-jsx-with-curly-braces": {
+      "url": "https://react.dev/learn/javascript-in-jsx-with-curly-braces",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-passing-props-to-a-component": {
+      "url": "https://react.dev/learn/passing-props-to-a-component",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-conditional-rendering": {
+      "url": "https://react.dev/learn/conditional-rendering",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-rendering-lists": {
+      "url": "https://react.dev/learn/rendering-lists",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-keeping-components-pure": {
+      "url": "https://react.dev/learn/keeping-components-pure",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-understanding-your-ui-as-a-tree": {
+      "url": "https://react.dev/learn/understanding-your-ui-as-a-tree",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-responding-to-events": {
+      "url": "https://react.dev/learn/responding-to-events",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-state-a-components-memory": {
+      "url": "https://react.dev/learn/state-a-components-memory",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-render-and-commit": {
+      "url": "https://react.dev/learn/render-and-commit",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-state-as-a-snapshot": {
+      "url": "https://react.dev/learn/state-as-a-snapshot",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-queueing-a-series-of-state-updates": {
+      "url": "https://react.dev/learn/queueing-a-series-of-state-updates",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-updating-objects-in-state": {
+      "url": "https://react.dev/learn/updating-objects-in-state",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-updating-arrays-in-state": {
+      "url": "https://react.dev/learn/updating-arrays-in-state",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-reacting-to-input-with-state": {
+      "url": "https://react.dev/learn/reacting-to-input-with-state",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-choosing-the-state-structure": {
+      "url": "https://react.dev/learn/choosing-the-state-structure",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-sharing-state-between-components": {
+      "url": "https://react.dev/learn/sharing-state-between-components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-preserving-and-resetting-state": {
+      "url": "https://react.dev/learn/preserving-and-resetting-state",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-extracting-state-logic-into-a-reducer": {
+      "url": "https://react.dev/learn/extracting-state-logic-into-a-reducer",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-passing-data-deeply-with-context": {
+      "url": "https://react.dev/learn/passing-data-deeply-with-context",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-scaling-up-with-reducer-and-context": {
+      "url": "https://react.dev/learn/scaling-up-with-reducer-and-context",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-referencing-values-with-refs": {
+      "url": "https://react.dev/learn/referencing-values-with-refs",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-manipulating-the-dom-with-refs": {
+      "url": "https://react.dev/learn/manipulating-the-dom-with-refs",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-synchronizing-with-effects": {
+      "url": "https://react.dev/learn/synchronizing-with-effects",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-you-might-not-need-an-effect": {
+      "url": "https://react.dev/learn/you-might-not-need-an-effect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-lifecycle-of-reactive-effects": {
+      "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-separating-events-from-effects": {
+      "url": "https://react.dev/learn/separating-events-from-effects",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-removing-effect-dependencies": {
+      "url": "https://react.dev/learn/removing-effect-dependencies",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "learn-reusing-logic-with-custom-hooks": {
+      "url": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useState": {
+      "url": "https://react.dev/reference/react/useState",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-hooks": {
+      "url": "https://react.dev/reference/react/hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useActionState": {
+      "url": "https://react.dev/reference/react/useActionState",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useCallback": {
+      "url": "https://react.dev/reference/react/useCallback",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useContext": {
+      "url": "https://react.dev/reference/react/useContext",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useDebugValue": {
+      "url": "https://react.dev/reference/react/useDebugValue",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useDeferredValue": {
+      "url": "https://react.dev/reference/react/useDeferredValue",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useEffect": {
+      "url": "https://react.dev/reference/react/useEffect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useEffectEvent": {
+      "url": "https://react.dev/reference/react/useEffectEvent",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useId": {
+      "url": "https://react.dev/reference/react/useId",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useImperativeHandle": {
+      "url": "https://react.dev/reference/react/useImperativeHandle",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useInsertionEffect": {
+      "url": "https://react.dev/reference/react/useInsertionEffect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useLayoutEffect": {
+      "url": "https://react.dev/reference/react/useLayoutEffect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useMemo": {
+      "url": "https://react.dev/reference/react/useMemo",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useOptimistic": {
+      "url": "https://react.dev/reference/react/useOptimistic",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useReducer": {
+      "url": "https://react.dev/reference/react/useReducer",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useRef": {
+      "url": "https://react.dev/reference/react/useRef",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useSyncExternalStore": {
+      "url": "https://react.dev/reference/react/useSyncExternalStore",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-useTransition": {
+      "url": "https://react.dev/reference/react/useTransition",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Fragment": {
+      "url": "https://react.dev/reference/react/Fragment",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Profiler": {
+      "url": "https://react.dev/reference/react/Profiler",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-StrictMode": {
+      "url": "https://react.dev/reference/react/StrictMode",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Suspense": {
+      "url": "https://react.dev/reference/react/Suspense",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Activity": {
+      "url": "https://react.dev/reference/react/Activity",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-ViewTransition": {
+      "url": "https://react.dev/reference/react/ViewTransition",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-act": {
+      "url": "https://react.dev/reference/react/act",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-addTransitionType": {
+      "url": "https://react.dev/reference/react/addTransitionType",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-cache": {
+      "url": "https://react.dev/reference/react/cache",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-cacheSignal": {
+      "url": "https://react.dev/reference/react/cacheSignal",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-captureOwnerStack": {
+      "url": "https://react.dev/reference/react/captureOwnerStack",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-createContext": {
+      "url": "https://react.dev/reference/react/createContext",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-lazy": {
+      "url": "https://react.dev/reference/react/lazy",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-memo": {
+      "url": "https://react.dev/reference/react/memo",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-startTransition": {
+      "url": "https://react.dev/reference/react/startTransition",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-use": {
+      "url": "https://react.dev/reference/react/use",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-experimental_taintObjectReference": {
+      "url": "https://react.dev/reference/react/experimental_taintObjectReference",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-experimental_taintUniqueValue": {
+      "url": "https://react.dev/reference/react/experimental_taintUniqueValue",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-hooks": {
+      "url": "https://react.dev/reference/react-dom/hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-hooks-useFormStatus": {
+      "url": "https://react.dev/reference/react-dom/hooks/useFormStatus",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-common": {
+      "url": "https://react.dev/reference/react-dom/components/common",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-form": {
+      "url": "https://react.dev/reference/react-dom/components/form",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-input": {
+      "url": "https://react.dev/reference/react-dom/components/input",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-option": {
+      "url": "https://react.dev/reference/react-dom/components/option",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-progress": {
+      "url": "https://react.dev/reference/react-dom/components/progress",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-select": {
+      "url": "https://react.dev/reference/react-dom/components/select",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-textarea": {
+      "url": "https://react.dev/reference/react-dom/components/textarea",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-img": {
+      "url": "https://react.dev/reference/react-dom/components/img",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-link": {
+      "url": "https://react.dev/reference/react-dom/components/link",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-meta": {
+      "url": "https://react.dev/reference/react-dom/components/meta",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-script": {
+      "url": "https://react.dev/reference/react-dom/components/script",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-style": {
+      "url": "https://react.dev/reference/react-dom/components/style",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-components-title": {
+      "url": "https://react.dev/reference/react-dom/components/title",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-browser": {
+      "url": "https://react.dev/reference/react-dom/browser",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-createPortal": {
+      "url": "https://react.dev/reference/react-dom/createPortal",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-flushSync": {
+      "url": "https://react.dev/reference/react-dom/flushSync",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-preconnect": {
+      "url": "https://react.dev/reference/react-dom/preconnect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-prefetchDNS": {
+      "url": "https://react.dev/reference/react-dom/prefetchDNS",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-preinit": {
+      "url": "https://react.dev/reference/react-dom/preinit",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-preinitModule": {
+      "url": "https://react.dev/reference/react-dom/preinitModule",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-preload": {
+      "url": "https://react.dev/reference/react-dom/preload",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-preloadModule": {
+      "url": "https://react.dev/reference/react-dom/preloadModule",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-client-createRoot": {
+      "url": "https://react.dev/reference/react-dom/client/createRoot",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-client-hydrateRoot": {
+      "url": "https://react.dev/reference/react-dom/client/hydrateRoot",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-renderToPipeableStream": {
+      "url": "https://react.dev/reference/react-dom/server/renderToPipeableStream",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-renderToReadableStream": {
+      "url": "https://react.dev/reference/react-dom/server/renderToReadableStream",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-renderToStaticMarkup": {
+      "url": "https://react.dev/reference/react-dom/server/renderToStaticMarkup",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-renderToString": {
+      "url": "https://react.dev/reference/react-dom/server/renderToString",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-resume": {
+      "url": "https://react.dev/reference/react-dom/server/resume",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-server-resumeToPipeableStream": {
+      "url": "https://react.dev/reference/react-dom/server/resumeToPipeableStream",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-static": {
+      "url": "https://react.dev/reference/react-dom/static",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-static-prerender": {
+      "url": "https://react.dev/reference/react-dom/static/prerender",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-static-prerenderToNodeStream": {
+      "url": "https://react.dev/reference/react-dom/static/prerenderToNodeStream",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-static-resumeAndPrerender": {
+      "url": "https://react.dev/reference/react-dom/static/resumeAndPrerender",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-dom-static-resumeAndPrerenderToNodeStream": {
+      "url": "https://react.dev/reference/react-dom/static/resumeAndPrerenderToNodeStream",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-compilationMode": {
+      "url": "https://react.dev/reference/react-compiler/compilationMode",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-gating": {
+      "url": "https://react.dev/reference/react-compiler/gating",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-logger": {
+      "url": "https://react.dev/reference/react-compiler/logger",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-panicThreshold": {
+      "url": "https://react.dev/reference/react-compiler/panicThreshold",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-target": {
+      "url": "https://react.dev/reference/react-compiler/target",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-directives-use-memo": {
+      "url": "https://react.dev/reference/react-compiler/directives/use-memo",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-compiler-directives-use-no-memo": {
+      "url": "https://react.dev/reference/react-compiler/directives/use-no-memo",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-dev-tools-react-performance-tracks": {
+      "url": "https://react.dev/reference/dev-tools/react-performance-tracks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-dev-tools-react-devtools-cdt-mcp": {
+      "url": "https://react.dev/reference/dev-tools/react-devtools-cdt-mcp",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-exhaustive-deps": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-rules-of-hooks": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/rules-of-hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-component-hook-factories": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/component-hook-factories",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-config": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/config",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-error-boundaries": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-gating": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/gating",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-globals": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/globals",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-immutability": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-incompatible-library": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-preserve-manual-memoization": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-purity": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/purity",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-refs": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/refs",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-set-state-in-effect": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-set-state-in-render": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-static-components": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-unsupported-syntax": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-eslint-plugin-react-hooks-lints-use-memo": {
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rules": {
+      "url": "https://react.dev/reference/rules",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rules-components-and-hooks-must-be-pure": {
+      "url": "https://react.dev/reference/rules/components-and-hooks-must-be-pure",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rules-react-calls-components-and-hooks": {
+      "url": "https://react.dev/reference/rules/react-calls-components-and-hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rules-rules-of-hooks": {
+      "url": "https://react.dev/reference/rules/rules-of-hooks",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rsc-server-components": {
+      "url": "https://react.dev/reference/rsc/server-components",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rsc-server-functions": {
+      "url": "https://react.dev/reference/rsc/server-functions",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rsc-directives": {
+      "url": "https://react.dev/reference/rsc/directives",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rsc-use-client": {
+      "url": "https://react.dev/reference/rsc/use-client",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-rsc-use-server": {
+      "url": "https://react.dev/reference/rsc/use-server",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Children": {
+      "url": "https://react.dev/reference/react/Children",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-cloneElement": {
+      "url": "https://react.dev/reference/react/cloneElement",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-Component": {
+      "url": "https://react.dev/reference/react/Component",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-createElement": {
+      "url": "https://react.dev/reference/react/createElement",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-createRef": {
+      "url": "https://react.dev/reference/react/createRef",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-forwardRef": {
+      "url": "https://react.dev/reference/react/forwardRef",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-isValidElement": {
+      "url": "https://react.dev/reference/react/isValidElement",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    },
+    "reference-react-PureComponent": {
+      "url": "https://react.dev/reference/react/PureComponent",
+      "last_hash": null,
+      "last_fetched": null,
+      "title": null
+    }
+  },
+  "detected_version": null,
+  "last_updated": null,
+  "version_history": []
+}

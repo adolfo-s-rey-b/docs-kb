@@ -1,0 +1,451 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://purrr.tidyverse.org/404.html",
+      "last_hash": "97d278d65bd6718365768cc38d762dc831000171a88c08cb619312d841b127b4",
+      "last_fetched": "2026-11-08T05:06:17.639048+00:00",
+      "title": "Page not found (404) • purrr"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://purrr.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "ea4cbd7c19aa71cd738510fe8cd291551d95a000295a4ac72662fc57f6aa6b6e",
+      "last_fetched": "2026-11-08T05:06:18.582813+00:00",
+      "title": "Contributor Covenant Code of Conduct • purrr"
+    },
+    "CONTRIBUTING": {
+      "url": "https://purrr.tidyverse.org/CONTRIBUTING.html",
+      "last_hash": "96eb6defa9a11a72426e53cec18bac7d49340b8a10c3960a74734bb3cc695ae7",
+      "last_fetched": "2026-11-08T05:06:19.589048+00:00",
+      "title": "Contributing to purrr • purrr"
+    },
+    "SUPPORT": {
+      "url": "https://purrr.tidyverse.org/SUPPORT.html",
+      "last_hash": "f7236748a18e603fa77710a6a9873d4d4f0f86a998de68c46d230189df3e2c3d",
+      "last_fetched": "2026-11-08T05:06:20.538510+00:00",
+      "title": "Getting help with purrr • purrr"
+    },
+    "articles-base": {
+      "url": "https://purrr.tidyverse.org/articles/base.html",
+      "last_hash": "ad5424991a55fffa3d73d4113ba406124774b1db8b8c4221e01e73a391ebc856",
+      "last_fetched": "2026-11-08T05:06:21.681141+00:00",
+      "title": "purrr <-> base R • purrr"
+    },
+    "articles-index": {
+      "url": "https://purrr.tidyverse.org/articles/index.html",
+      "last_hash": "e7fd7737d9e930dd74ef3ce699af97f64b7113d3665296c9db5cc41b28e50c02",
+      "last_fetched": "2026-11-08T05:06:22.626670+00:00",
+      "title": "Articles • purrr"
+    },
+    "articles-other-langs": {
+      "url": "https://purrr.tidyverse.org/articles/other-langs.html",
+      "last_hash": "8429c28c65470a033f66e4f7f8d5be0f93a2e99d03c99d564e24ee82a17146d0",
+      "last_fetched": "2026-11-08T05:06:23.585757+00:00",
+      "title": "Functional programming in other languages • purrr"
+    },
+    "articles-purrr": {
+      "url": "https://purrr.tidyverse.org/articles/purrr.html",
+      "last_hash": "6978c65cbc6ba67cc3da7423a0b2c9998ef106dd35e51e3ce9ea7b1b7fa26300",
+      "last_fetched": "2026-11-08T05:06:24.598782+00:00",
+      "title": "Get started with purrr • purrr"
+    },
+    "authors": {
+      "url": "https://purrr.tidyverse.org/authors.html",
+      "last_hash": "ee533f3f69b3f421dd251650d9328c958ee3073a5e2252e44432ea386631e63a",
+      "last_fetched": "2026-11-08T05:06:25.549950+00:00",
+      "title": "Authors and Citation • purrr"
+    },
+    "index": {
+      "url": "https://purrr.tidyverse.org/index.html",
+      "last_hash": "6e829eef44d53a97d7e89a912b09ceda38cd39ac2e59605a3c7a3d57b2467a6d",
+      "last_fetched": "2026-11-08T05:06:26.506899+00:00",
+      "title": "Functional Programming Tools • purrr"
+    },
+    "reference-accumulate": {
+      "url": "https://purrr.tidyverse.org/reference/accumulate.html",
+      "last_hash": "714e546ac508e8b9765cf194f2d7b076a8b52049b9a9d69021e401b45544b1df",
+      "last_fetched": "2026-11-08T05:06:27.484665+00:00",
+      "title": "Accumulate intermediate results of a vector reduction — accumulate • purrr"
+    },
+    "reference-along": {
+      "url": "https://purrr.tidyverse.org/reference/along.html",
+      "last_hash": "ec3c04ed08ba6f0b282c64ce1ac581e15a147500990840b351b93e8e415c8a04",
+      "last_fetched": "2026-11-08T05:06:28.411547+00:00",
+      "title": "Create a list of given length — along • purrr"
+    },
+    "reference-array-coercion": {
+      "url": "https://purrr.tidyverse.org/reference/array-coercion.html",
+      "last_hash": "5750f3b131c159b035f5fe1760d7018d670e9bdbbaf0482a0f77be9c6962c00c",
+      "last_fetched": "2026-11-08T05:06:29.389955+00:00",
+      "title": "Coerce array to list — array-coercion • purrr"
+    },
+    "reference-as_mapper": {
+      "url": "https://purrr.tidyverse.org/reference/as_mapper.html",
+      "last_hash": "2ea52a70329dda25875e3061a3c08ac1f6df5f4e7706b0c9954fe64db2a3d088",
+      "last_fetched": "2026-11-08T05:06:30.350875+00:00",
+      "title": "Convert an object into a mapper function — as_mapper • purrr"
+    },
+    "reference-as_vector": {
+      "url": "https://purrr.tidyverse.org/reference/as_vector.html",
+      "last_hash": "fcffdf59e3512b798d6fe8e0c8064468bb13677a9b80ff3d2cb603b330219301",
+      "last_fetched": "2026-11-08T05:06:31.295871+00:00",
+      "title": "Coerce a list to a vector — as_vector • purrr"
+    },
+    "reference-attr_getter": {
+      "url": "https://purrr.tidyverse.org/reference/attr_getter.html",
+      "last_hash": "843a77a79076c92967efa2da98d89d6e3451f176e2abc8457e76f83fc19a0fef",
+      "last_fetched": "2026-11-08T05:06:32.211655+00:00",
+      "title": "Create an attribute getter function — attr_getter • purrr"
+    },
+    "reference-auto_browse": {
+      "url": "https://purrr.tidyverse.org/reference/auto_browse.html",
+      "last_hash": "6cd03c9ac9078ee8555dfa808129e7ff86e085ef85d0dd0c0d42ab39e72406cc",
+      "last_fetched": "2026-11-08T05:06:33.185519+00:00",
+      "title": "Wrap a function so it will automatically browse() on error — auto_browse • purrr"
+    },
+    "reference-chuck": {
+      "url": "https://purrr.tidyverse.org/reference/chuck.html",
+      "last_hash": "4f09854249d759dd1e3bddf206bdb7e5ac47b0c7aaefc66e8e906ae5fb58e902",
+      "last_fetched": "2026-11-08T05:06:34.285457+00:00",
+      "title": "Get an element deep within a nested data structure, failing if it doesn't exist — chuck • purrr"
+    },
+    "reference-compose": {
+      "url": "https://purrr.tidyverse.org/reference/compose.html",
+      "last_hash": "c045ad103cde14cc8fca8ceb14e323317b2f6577fde804e7e49d3b6ada6e4c36",
+      "last_fetched": "2026-11-08T05:06:35.214196+00:00",
+      "title": "Compose multiple functions together to create a new function — compose • purrr"
+    },
+    "reference-cross": {
+      "url": "https://purrr.tidyverse.org/reference/cross.html",
+      "last_hash": "607069dd7de94432af40fe68395a09859885ff3caff8bcb4db6240011895ef5f",
+      "last_fetched": "2026-11-08T05:06:36.364320+00:00",
+      "title": "Produce all combinations of list elements — cross • purrr"
+    },
+    "reference-detect": {
+      "url": "https://purrr.tidyverse.org/reference/detect.html",
+      "last_hash": "1ef08be99f747e7c21401c8197de595e4dc892e4aabfb70d9f51c95769b25a90",
+      "last_fetched": "2026-11-08T05:06:37.294476+00:00",
+      "title": "Find the value or position of the first match — detect • purrr"
+    },
+    "reference-every": {
+      "url": "https://purrr.tidyverse.org/reference/every.html",
+      "last_hash": "30e5abef9fb7fbe507511733324bb29d2e25dabce19334e9652f68981277098f",
+      "last_fetched": "2026-11-08T05:06:38.268048+00:00",
+      "title": "Do every, some, or none of the elements of a list satisfy a predicate? — every • purrr"
+    },
+    "reference-faq-adverbs-export": {
+      "url": "https://purrr.tidyverse.org/reference/faq-adverbs-export.html",
+      "last_hash": "a880e1cd650b3f98672b9aa7646e8beb1930dd26a29196d1392150a83f430f76",
+      "last_fetched": "2026-11-08T05:06:39.189935+00:00",
+      "title": "Best practices for exporting adverb-wrapped functions — faq-adverbs-export • purrr"
+    },
+    "reference-flatten": {
+      "url": "https://purrr.tidyverse.org/reference/flatten.html",
+      "last_hash": "1d770738daf9177cbb354cfdf477ad31c7c7db881434bc48731182f0e47c92d2",
+      "last_fetched": "2026-11-08T05:06:40.163044+00:00",
+      "title": "Flatten a list of lists into a simple vector — flatten • purrr"
+    },
+    "reference-has_element": {
+      "url": "https://purrr.tidyverse.org/reference/has_element.html",
+      "last_hash": "ac931fd190eff5aa007bf20a33469f9d4d2009c1bd932a58c77677a2988e4679",
+      "last_fetched": "2026-11-08T05:06:41.107048+00:00",
+      "title": "Does a list contain an object? — has_element • purrr"
+    },
+    "reference-head_while": {
+      "url": "https://purrr.tidyverse.org/reference/head_while.html",
+      "last_hash": "aa3ebd9a255ccacdb17d1e30f45eebd227d198f05ed91adc3c22bf357cb0f868",
+      "last_fetched": "2026-11-08T05:06:42.120121+00:00",
+      "title": "Find head/tail that all satisfies a predicate. — head_while • purrr"
+    },
+    "reference-imap": {
+      "url": "https://purrr.tidyverse.org/reference/imap.html",
+      "last_hash": "b73bbf6af6b08da0fe1505c9acafa90b943b487ecc2e57c1c8959e48a9349796",
+      "last_fetched": "2026-11-08T05:06:43.044957+00:00",
+      "title": "Apply a function to each element of a vector, and its index — imap • purrr"
+    },
+    "reference-in_parallel": {
+      "url": "https://purrr.tidyverse.org/reference/in_parallel.html",
+      "last_hash": "9c92aba1e231289284eef4eeb7bf088b8b44c5497a89db13d958aed1c9606d38",
+      "last_fetched": "2026-11-08T05:06:44.029379+00:00",
+      "title": "Parallelization in purrr — in_parallel • purrr"
+    },
+    "reference-index": {
+      "url": "https://purrr.tidyverse.org/reference/index.html",
+      "last_hash": "b2fe90195e9f1325112a89648602a9a72d4a82f063ceca22b22803c038b800c8",
+      "last_fetched": "2026-11-08T05:06:45.019389+00:00",
+      "title": "Package index • purrr"
+    },
+    "reference-insistently": {
+      "url": "https://purrr.tidyverse.org/reference/insistently.html",
+      "last_hash": "d721042313ec193eda9af533d90a0868202fa8a4ca458f6da790370881682a16",
+      "last_fetched": "2026-11-08T05:06:45.973306+00:00",
+      "title": "Transform a function to wait then retry after an error — insistently • purrr"
+    },
+    "reference-invoke": {
+      "url": "https://purrr.tidyverse.org/reference/invoke.html",
+      "last_hash": "4aa2c7b78f132e8666d96b400fea5971020c5106b7a0e1b8f3dd009e912b8323",
+      "last_fetched": "2026-11-08T05:06:46.951676+00:00",
+      "title": "Invoke functions. — invoke • purrr"
+    },
+    "reference-keep": {
+      "url": "https://purrr.tidyverse.org/reference/keep.html",
+      "last_hash": "a7f64d7e9b887d1726319988d151cd482acc347a126125a967dacfa0064924c3",
+      "last_fetched": "2026-11-08T05:06:47.881379+00:00",
+      "title": "Keep/discard elements based on their values — keep • purrr"
+    },
+    "reference-keep_at": {
+      "url": "https://purrr.tidyverse.org/reference/keep_at.html",
+      "last_hash": "9c0331c571a8847fd29239efa601d458766a3ec226bb20c5a6e323fc184f27e9",
+      "last_fetched": "2026-11-08T05:06:48.808175+00:00",
+      "title": "Keep/discard elements based on their name/position — keep_at • purrr"
+    },
+    "reference-lift": {
+      "url": "https://purrr.tidyverse.org/reference/lift.html",
+      "last_hash": "b60719461d695943dc290be6eed9e9c8c5e6ffd65a5efe491155e84fc6fa84e2",
+      "last_fetched": "2026-11-08T05:06:49.737689+00:00",
+      "title": "Lift the domain of a function — lift • purrr"
+    },
+    "reference-list_assign": {
+      "url": "https://purrr.tidyverse.org/reference/list_assign.html",
+      "last_hash": "7a3f7566d7f90bd3bb6a25d0459ae2b87817dcf034d510516f9472db3a6a640a",
+      "last_fetched": "2026-11-08T05:06:50.745688+00:00",
+      "title": "Modify a list — list_assign • purrr"
+    },
+    "reference-list_c": {
+      "url": "https://purrr.tidyverse.org/reference/list_c.html",
+      "last_hash": "5beaaba2803701a4bdab38488a5091a4688f29f2ea40fcb76320a77ff1e05dcf",
+      "last_fetched": "2026-11-08T05:06:51.718105+00:00",
+      "title": "Combine list elements into a single data structure — list_c • purrr"
+    },
+    "reference-list_flatten": {
+      "url": "https://purrr.tidyverse.org/reference/list_flatten.html",
+      "last_hash": "0334d3e5f173c377ff5a0f063c5ff3d00c3fdc1862146644fec0a0602625e440",
+      "last_fetched": "2026-11-08T05:06:52.725604+00:00",
+      "title": "Flatten a list — list_flatten • purrr"
+    },
+    "reference-list_simplify": {
+      "url": "https://purrr.tidyverse.org/reference/list_simplify.html",
+      "last_hash": "bac27d264e3dfbb6ef7701fe54f87cea59b68ad87b60b2fcf5d854992aa757b3",
+      "last_fetched": "2026-11-08T05:06:53.660999+00:00",
+      "title": "Simplify a list to an atomic or S3 vector — list_simplify • purrr"
+    },
+    "reference-list_transpose": {
+      "url": "https://purrr.tidyverse.org/reference/list_transpose.html",
+      "last_hash": "d6d903e9bd615cfefd468050d23636879e16bf1f3ac35f987431ee1405cb7ac7",
+      "last_fetched": "2026-11-08T05:06:54.625675+00:00",
+      "title": "Transpose a list — list_transpose • purrr"
+    },
+    "reference-lmap": {
+      "url": "https://purrr.tidyverse.org/reference/lmap.html",
+      "last_hash": "d3117ec738b01168f23b6b9067d712b5c192fbab688ac454cf6b978d0fad9ca7",
+      "last_fetched": "2026-11-08T05:06:55.543866+00:00",
+      "title": "Apply a function to list-elements of a list — lmap • purrr"
+    },
+    "reference-map": {
+      "url": "https://purrr.tidyverse.org/reference/map.html",
+      "last_hash": "042652ac0b484a8bb9632141930439cac162164f83b96968dfe919106131ba00",
+      "last_fetched": "2026-11-08T05:06:56.561485+00:00",
+      "title": "Apply a function to each element of a vector — map • purrr"
+    },
+    "reference-map2": {
+      "url": "https://purrr.tidyverse.org/reference/map2.html",
+      "last_hash": "3832970070fd07c089a3817aad50b1f1af4984343717e22eba1aa9be3d7a0dcd",
+      "last_fetched": "2026-11-08T05:06:57.524584+00:00",
+      "title": "Map over two inputs — map2 • purrr"
+    },
+    "reference-map_depth": {
+      "url": "https://purrr.tidyverse.org/reference/map_depth.html",
+      "last_hash": "d12dc6b8d0e0ba84f681a244d9940680277ced874d5af6535f4e81d6984e60fe",
+      "last_fetched": "2026-11-08T05:06:58.537515+00:00",
+      "title": "Map/modify elements at given depth — map_depth • purrr"
+    },
+    "reference-map_dfr": {
+      "url": "https://purrr.tidyverse.org/reference/map_dfr.html",
+      "last_hash": "b987f110cf3f36636ea478552c1f70704554a84aa3f66aae4bd1db2be94ba438",
+      "last_fetched": "2026-11-08T05:06:59.473398+00:00",
+      "title": "Functions that return data frames — map_dfr • purrr"
+    },
+    "reference-map_if": {
+      "url": "https://purrr.tidyverse.org/reference/map_if.html",
+      "last_hash": "21b35e660aa454dbe559604c44a89fc1afd3f8da0ba19ea3f71e4117c8d31da6",
+      "last_fetched": "2026-11-08T05:07:00.419915+00:00",
+      "title": "Apply a function to each element of a vector conditionally — map_if • purrr"
+    },
+    "reference-map_raw": {
+      "url": "https://purrr.tidyverse.org/reference/map_raw.html",
+      "last_hash": "26be0d7e5cc5d09d0389e901114208323ee9a8d0200633c3de4999d1a9fa5718",
+      "last_fetched": "2026-11-08T05:07:01.507446+00:00",
+      "title": "Functions that return raw vectors — map_raw • purrr"
+    },
+    "reference-modify": {
+      "url": "https://purrr.tidyverse.org/reference/modify.html",
+      "last_hash": "8fe33f1c671b38c2315306faf4cf86a47f7b392c857f8851217fcd04df757fed",
+      "last_fetched": "2026-11-08T05:07:02.536616+00:00",
+      "title": "Modify elements selectively — modify • purrr"
+    },
+    "reference-modify_in": {
+      "url": "https://purrr.tidyverse.org/reference/modify_in.html",
+      "last_hash": "cb76ca1e9a61459523ffb5b38f4db5a4514d7ec52af35d0b75b53387d1a21d8c",
+      "last_fetched": "2026-11-08T05:07:03.479970+00:00",
+      "title": "Modify a pluck location — modify_in • purrr"
+    },
+    "reference-modify_tree": {
+      "url": "https://purrr.tidyverse.org/reference/modify_tree.html",
+      "last_hash": "f9fe88b86667d3f1981aa8dd8b4c6e39cc0700bd092b4b954b663cbaaaef1b07",
+      "last_fetched": "2026-11-08T05:07:04.527267+00:00",
+      "title": "Recursively modify a list — modify_tree • purrr"
+    },
+    "reference-negate": {
+      "url": "https://purrr.tidyverse.org/reference/negate.html",
+      "last_hash": "5ab79e914d27c40a0c2403df611e9518e79d97839ac06693d5d2578b561cda89",
+      "last_fetched": "2026-11-08T05:07:05.573167+00:00",
+      "title": "Negate a predicate function so it selects what it previously rejected — negate • purrr"
+    },
+    "reference-partial": {
+      "url": "https://purrr.tidyverse.org/reference/partial.html",
+      "last_hash": "37f65a606ef10106239284ae34819ea95db920dd7163def47edf2c3958d814d0",
+      "last_fetched": "2026-11-08T05:07:06.520892+00:00",
+      "title": "Partially apply a function, filling in some arguments — partial • purrr"
+    },
+    "reference-pipe": {
+      "url": "https://purrr.tidyverse.org/reference/pipe.html",
+      "last_hash": "2c2759258158813614b769c81e948bb80a9ce7ac8ff98ba28ac3a59a94ec0981",
+      "last_fetched": "2026-11-08T05:07:07.416016+00:00",
+      "title": "Pipe operator — %>% • purrr"
+    },
+    "reference-pluck": {
+      "url": "https://purrr.tidyverse.org/reference/pluck.html",
+      "last_hash": "f0a828ca8bb4cfc0c098e750a34240bafe5172ade14b49ff70c17472364a348f",
+      "last_fetched": "2026-11-08T05:07:08.358972+00:00",
+      "title": "Safely get or set an element deep within a nested data structure — pluck • purrr"
+    },
+    "reference-pluck_depth": {
+      "url": "https://purrr.tidyverse.org/reference/pluck_depth.html",
+      "last_hash": "7c049ea579e29a3562f06d6244ef81b8ab920284cf16a654b940a94f5b711f62",
+      "last_fetched": "2026-11-08T05:07:09.285523+00:00",
+      "title": "Compute the depth of a vector — pluck_depth • purrr"
+    },
+    "reference-pmap": {
+      "url": "https://purrr.tidyverse.org/reference/pmap.html",
+      "last_hash": "1e2268be30a37c32dc726e8d421630b60fb2cc6f13130218018f1df1ec059322",
+      "last_fetched": "2026-11-08T05:07:10.346854+00:00",
+      "title": "Map over multiple input simultaneously (in \"parallel\") — pmap • purrr"
+    },
+    "reference-possibly": {
+      "url": "https://purrr.tidyverse.org/reference/possibly.html",
+      "last_hash": "fd3ebc5372304c772ffdef9fe0528b3d41cbc876e151c082032bc83365c8219b",
+      "last_fetched": "2026-11-08T05:07:11.269585+00:00",
+      "title": "Wrap a function to return a value instead of an error — possibly • purrr"
+    },
+    "reference-prepend": {
+      "url": "https://purrr.tidyverse.org/reference/prepend.html",
+      "last_hash": "e2a5d9247621b03971dce91cd1a8c359eb85aea59c3721fb1f7dbaf2aba1b05e",
+      "last_fetched": "2026-11-08T05:07:12.308237+00:00",
+      "title": "Prepend a vector — prepend • purrr"
+    },
+    "reference-progress_bars": {
+      "url": "https://purrr.tidyverse.org/reference/progress_bars.html",
+      "last_hash": "201f92c0b927a3520607e0eba26962a05fc3b46c771ef603a4298e0ef691fd3c",
+      "last_fetched": "2026-11-08T05:07:13.201165+00:00",
+      "title": "Progress bars in purrr — progress_bars • purrr"
+    },
+    "reference-purrr-package": {
+      "url": "https://purrr.tidyverse.org/reference/purrr-package.html",
+      "last_hash": "b74087fbcb246499e44c79cfc7d6ace3a248eb88c72918419a69b9ee854651ed",
+      "last_fetched": "2026-11-08T05:07:14.116852+00:00",
+      "title": "purrr: Functional Programming Tools — purrr-package • purrr"
+    },
+    "reference-purrr_error_indexed": {
+      "url": "https://purrr.tidyverse.org/reference/purrr_error_indexed.html",
+      "last_hash": "11a947cbdbf7c99453bb31f72dc2b1c1df1b3491d964a41ad98c3ce83f6aee8b",
+      "last_fetched": "2026-11-08T05:07:15.133899+00:00",
+      "title": "Indexed errors (purrr_error_indexed) — purrr_error_indexed • purrr"
+    },
+    "reference-quietly": {
+      "url": "https://purrr.tidyverse.org/reference/quietly.html",
+      "last_hash": "deafa72b0f90ec3b004b1aad4b745f392a2c56a0aa111324424096bbf4425700",
+      "last_fetched": "2026-11-08T05:07:16.037099+00:00",
+      "title": "Wrap a function to capture side-effects — quietly • purrr"
+    },
+    "reference-rate-helpers": {
+      "url": "https://purrr.tidyverse.org/reference/rate-helpers.html",
+      "last_hash": "b6d748639d733afac482b1dc86f512d9ff11a897c285191bb57d7d8b94930c4f",
+      "last_fetched": "2026-11-08T05:07:16.969548+00:00",
+      "title": "Create delaying rate settings — rate-helpers • purrr"
+    },
+    "reference-rate_sleep": {
+      "url": "https://purrr.tidyverse.org/reference/rate_sleep.html",
+      "last_hash": "af2ade6b904bf2144277fdefcb75295e20e3badcadda05fd283e011bd873ad54",
+      "last_fetched": "2026-11-08T05:07:17.918941+00:00",
+      "title": "Wait for a given time — rate_sleep • purrr"
+    },
+    "reference-rbernoulli": {
+      "url": "https://purrr.tidyverse.org/reference/rbernoulli.html",
+      "last_hash": "9610c9c099d04afc360d8d22e5f146936c11fe949a954e49f5555542767c1060",
+      "last_fetched": "2026-11-08T05:07:18.863827+00:00",
+      "title": "Generate random sample from a Bernoulli distribution — rbernoulli • purrr"
+    },
+    "reference-rdunif": {
+      "url": "https://purrr.tidyverse.org/reference/rdunif.html",
+      "last_hash": "d26df4d5c6c44014572e50bb4af61f75697e6ae23d20fea2bb4a7fd105c5a761",
+      "last_fetched": "2026-11-08T05:07:19.770114+00:00",
+      "title": "Generate random sample from a discrete uniform distribution — rdunif • purrr"
+    },
+    "reference-reduce": {
+      "url": "https://purrr.tidyverse.org/reference/reduce.html",
+      "last_hash": "9838f3a7d84f31470554e46b817f269a4c76842aa6786a0c68cbea18efc343f3",
+      "last_fetched": "2026-11-08T05:07:20.699786+00:00",
+      "title": "Reduce a list to a single value by iteratively applying a binary function — reduce • purrr"
+    },
+    "reference-reexports": {
+      "url": "https://purrr.tidyverse.org/reference/reexports.html",
+      "last_hash": "dc9243db3f1ed08096f2dfba881b186a2c025cf5b6d2cba8171ed55388cc45cc",
+      "last_fetched": "2026-11-08T05:07:21.670096+00:00",
+      "title": "Objects exported from other packages — reexports • purrr"
+    },
+    "reference-rerun": {
+      "url": "https://purrr.tidyverse.org/reference/rerun.html",
+      "last_hash": "eb19598d8d33cc3d19ab28049fbb9149c6d3d3329be683c8cf4c9ee5b22246b2",
+      "last_fetched": "2026-11-08T05:07:22.802926+00:00",
+      "title": "Re-run expressions multiple times — rerun • purrr"
+    },
+    "reference-safely": {
+      "url": "https://purrr.tidyverse.org/reference/safely.html",
+      "last_hash": "fefcbc39995545fc37f7d78067779aaf094be2b275fc0ac6de470a771c04a29f",
+      "last_fetched": "2026-11-08T05:07:23.767840+00:00",
+      "title": "Wrap a function to capture errors — safely • purrr"
+    },
+    "reference-slowly": {
+      "url": "https://purrr.tidyverse.org/reference/slowly.html",
+      "last_hash": "c9b1dfade9904c61e9bb5877267ccc4d66bb677ca728eb9bbdc35e888c5bd294",
+      "last_fetched": "2026-11-08T05:07:24.711449+00:00",
+      "title": "Wrap a function to wait between executions — slowly • purrr"
+    },
+    "reference-splice": {
+      "url": "https://purrr.tidyverse.org/reference/splice.html",
+      "last_hash": "dff160caf1b8e9d89f1dd8014cdb209c4678e26a903fd1c5b6b74984ea0f1cc9",
+      "last_fetched": "2026-11-08T05:07:25.647269+00:00",
+      "title": "Splice objects and lists of objects into a list — splice • purrr"
+    },
+    "reference-transpose": {
+      "url": "https://purrr.tidyverse.org/reference/transpose.html",
+      "last_hash": "a1f2e2ec1e805157dc87edfa9bc493e53f768017bf6fa5a8f8613c0d2f9ffba2",
+      "last_fetched": "2026-11-08T05:07:26.588658+00:00",
+      "title": "Transpose a list. — transpose • purrr"
+    },
+    "reference-update_list": {
+      "url": "https://purrr.tidyverse.org/reference/update_list.html",
+      "last_hash": "01a7a6c837652961f13367e4cc2b046ffe4e694340fd90c06a26d8c7799f8403",
+      "last_fetched": "2026-11-08T05:07:27.468544+00:00",
+      "title": "Update a list with formulas — update_list • purrr"
+    },
+    "reference-when": {
+      "url": "https://purrr.tidyverse.org/reference/when.html",
+      "last_hash": "5b8aee75c38a7050b53b33eb7e6bc12c2ea85136b5510d724295301355ad9fb3",
+      "last_fetched": "2026-11-08T05:07:28.490818+00:00",
+      "title": "Match/validate a set of conditions for an object and continue with the action associated with the first valid match. — when • purrr"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:07:28.490818+00:00",
+  "version_history": []
+}

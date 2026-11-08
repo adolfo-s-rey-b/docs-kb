@@ -1,0 +1,69 @@
+[Skip to main content](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite.Hermite.integ.html#main-content)
+
+Back to top Ctrl+K
+
+Light Dark System Settings
+
+2.5 (stable)
+
+[dev](https://numpy.org/devdocs/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.5 (stable)](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.4](https://numpy.org/doc/2.4/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.3](https://numpy.org/doc/2.3/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.2](https://numpy.org/doc/2.2/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.1](https://numpy.org/doc/2.1/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[2.0](https://numpy.org/doc/2.0/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.26](https://numpy.org/doc/1.26/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.25](https://numpy.org/doc/1.25/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.24](https://numpy.org/doc/1.24/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.23](https://numpy.org/doc/1.23/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.22](https://numpy.org/doc/1.22/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.21](https://numpy.org/doc/1.21/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.20](https://numpy.org/doc/1.20/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.19](https://numpy.org/doc/1.19/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.18](https://numpy.org/doc/1.18/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.17](https://numpy.org/doc/1.17/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.16](https://numpy.org/doc/1.16/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.15](https://numpy.org/doc/1.15/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.14](https://numpy.org/doc/1.14/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+[1.13](https://numpy.org/doc/1.13/reference/generated/numpy.polynomial.hermite.Hermite.integ.html)
+
+*   [GitHub](https://github.com/numpy/numpy)
+    
+
+Collapse Sidebar Expand Sidebar
+
+numpy.polynomial.hermite.Hermite.integ[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite.Hermite.integ.html#numpy-polynomial-hermite-hermite-integ "Link to this heading")
+
+======================================================================================================================================================================================================
+
+method
+
+polynomial.hermite.Hermite.integ(_m\=1_, _k\=\[\]_, _lbnd\=None_)[\[source\]](https://github.com/numpy/numpy/blob/v2.5.0/numpy/polynomial/_polybase.py#L845-L876)
+[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite.Hermite.integ.html#numpy.polynomial.hermite.Hermite.integ "Link to this definition")
+
+Integrate.
+
+Return a series instance that is the definite integral of the current series.
+
+Parameters:
+
+**m**non-negative int
+
+The number of integrations to perform.
+
+**k**array\_like
+
+Integration constants. The first constant is applied to the first integration, the second to the second, and so on. The list of values must less than or equal to _m_ in length and any missing values are set to zero.
+
+**lbnd**Scalar
+
+The lower bound of the definite integral.
+
+Returns:
+
+**new\_series**series
+
+A new series representing the integral. The domain is the same as the domain of the integrated series.
+
+On this page

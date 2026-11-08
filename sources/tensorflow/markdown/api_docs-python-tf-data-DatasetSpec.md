@@ -1,0 +1,245 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#methods)
+    *   [experimental\_as\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_as_proto)
+        
+    *   [experimental\_from\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_from_proto)
+        
+    *   [experimental\_type\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_type_proto)
+        
+    *   [from\_value](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#from_value)
+        
+    *   [is\_compatible\_with](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#is_compatible_with)
+        
+    *   [is\_subtype\_of](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#is_subtype_of)
+        
+    *   [most\_specific\_common\_supertype](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#most_specific_common_supertype)
+        
+    *   [most\_specific\_compatible\_type](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#most_specific_compatible_type)
+        
+    *   [\_\_eq\_\_](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#__eq__)
+        
+    *   [\_\_ne\_\_](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#__ne__)
+        
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.data.DatasetSpec Stay organized with collections Save and categorize content based on your preferences.
+==========================================================================================================
+
+*   On this page
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#methods)
+    *   [experimental\_as\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_as_proto)
+        
+    *   [experimental\_from\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_from_proto)
+        
+    *   [experimental\_type\_proto](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#experimental_type_proto)
+        
+    *   [from\_value](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#from_value)
+        
+    *   [is\_compatible\_with](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#is_compatible_with)
+        
+    *   [is\_subtype\_of](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#is_subtype_of)
+        
+    *   [most\_specific\_common\_supertype](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#most_specific_common_supertype)
+        
+    *   [most\_specific\_compatible\_type](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#most_specific_compatible_type)
+        
+    *   [\_\_eq\_\_](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#__eq__)
+        
+    *   [\_\_ne\_\_](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec#__ne__)
+        
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/ops/dataset_ops.py#L4594-L4749)
+
+Type specification for [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
+.
+
+Inherits From: [`TypeSpec`](https://www.tensorflow.org/api_docs/python/tf/TypeSpec)
+, [`TraceType`](https://www.tensorflow.org/api_docs/python/tf/types/experimental/TraceType)
+
+#### View aliases
+
+**Compat aliases for migration**
+
+See [Migration guide](https://www.tensorflow.org/guide/migrate)
+ for more details.
+
+[`tf.compat.v1.data.DatasetSpec`](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec)
+, [`tf.compat.v1.data.experimental.DatasetStructure`](https://www.tensorflow.org/api_docs/python/tf/data/DatasetSpec)
+
+tf.data.DatasetSpec(
+        element_spec, dataset_shape=()
+    )
+
+See [`tf.TypeSpec`](https://www.tensorflow.org/api_docs/python/tf/TypeSpec)
+ for more information about TensorFlow type specifications.
+
+    dataset = tf.data.Dataset.range(3)
+
+|     |     |
+| --- | --- |
+| Attributes<br>---------- |     |
+| `element_spec` | The inner element spec. |
+| `value_type` | The Python type for values that are compatible with this TypeSpec.<br><br>In particular, all values that are compatible with this TypeSpec must be an instance of this type. |
+
+Methods
+-------
+
+### `experimental_as_proto`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L217-L222)
+
+experimental_as_proto() -> struct_pb2.TypeSpecProto
+
+Returns a proto representation of the TypeSpec instance.
+
+Do NOT override for custom non-TF types.
+
+### `experimental_from_proto`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L204-L215)
+
+@classmethod
+
+Returns a TypeSpec instance based on the serialized proto.
+
+Do NOT override for custom non-TF types.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `proto` | Proto generated using 'experimental\_as\_proto'. |
+
+### `experimental_type_proto`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L196-L202)
+
+@classmethod
+
+Returns the type of proto associated with TypeSpec serialization.
+
+Do NOT override for custom non-TF types.
+
+### `from_value`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/ops/dataset_ops.py#L4713-L4716)
+
+@staticmethod
+
+Creates a `DatasetSpec` for the given [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
+ value.
+
+### `is_compatible_with`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L300-L321)
+
+is_compatible_with(
+        spec_or_value
+    )
+
+Returns true if `spec_or_value` is compatible with this TypeSpec.
+
+Prefer using "is\_subtype\_of" and "most\_specific\_common\_supertype" wherever possible.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `spec_or_value` | A TypeSpec or TypeSpec associated value to compare against. |
+
+### `is_subtype_of`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/ops/dataset_ops.py#L4622-L4646)
+
+is_subtype_of(
+        other
+    )
+
+See base class.
+
+### `most_specific_common_supertype`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/ops/dataset_ops.py#L4648-L4685)
+
+most_specific_common_supertype(
+        others
+    )
+
+See base class.
+
+### `most_specific_compatible_type`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L323-L341)
+
+most_specific_compatible_type(
+        other: 'TypeSpec'
+    ) -> 'TypeSpec'
+
+Returns the most specific TypeSpec compatible with `self` and `other`. (deprecated)
+
+Deprecated. Please use `most_specific_common_supertype` instead. Do not override this function.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `other` | A `TypeSpec`. |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `ValueError` | If there is no TypeSpec that is compatible with both `self` and `other`. |
+
+### `__eq__`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/ops/dataset_ops.py#L4746-L4749)
+
+__eq__(
+        other
+    )
+
+Return self==value.
+
+### `__ne__`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/framework/type_spec.py#L550-L551)
+
+__ne__(
+        other
+    ) -> bool
+
+Return self!=value.
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

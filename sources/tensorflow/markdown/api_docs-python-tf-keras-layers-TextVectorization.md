@@ -1,0 +1,313 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Used in the notebooks](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#used-in-the-notebooks_1)
+    
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#args_1)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#attributes_1)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#methods_2)
+    *   [adapt](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#adapt)
+        
+    *   [finalize\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#finalize_state)
+        
+    *   [from\_config](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#from_config)
+        
+    *   [get\_vocabulary](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#get_vocabulary)
+        
+    *   [load\_assets](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#load_assets)
+        
+    *   [reset\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#reset_state)
+        
+    *   [save\_assets](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#save_assets)
+        
+    *   [set\_vocabulary](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#set_vocabulary)
+        
+    *   [update\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#update_state)
+        
+    *   [vocabulary\_size](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#vocabulary_size)
+        
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.keras.layers.TextVectorization Stay organized with collections Save and categorize content based on your preferences.
+========================================================================================================================
+
+*   On this page
+*   [Used in the notebooks](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#used-in-the-notebooks_1)
+    
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#args_1)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#attributes_1)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#methods_2)
+    *   [adapt](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#adapt)
+        
+    *   [finalize\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#finalize_state)
+        
+    *   [from\_config](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#from_config)
+        
+    *   [get\_vocabulary](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#get_vocabulary)
+        
+    *   [load\_assets](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#load_assets)
+        
+    *   [reset\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#reset_state)
+        
+    *   [save\_assets](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#save_assets)
+        
+    *   [set\_vocabulary](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#set_vocabulary)
+        
+    *   [update\_state](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#update_state)
+        
+    *   [vocabulary\_size](https://www.tensorflow.org/api_docs/python/tf/keras/layers/TextVectorization?version=stable#vocabulary_size)
+        
+
+See Stable See Nightly
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L15-L685)
+
+A preprocessing layer which maps text features to integer sequences.
+
+Inherits From: [`Layer`](https://www.tensorflow.org/api_docs/python/tf/keras/Layer)
+, [`Operation`](https://www.tensorflow.org/api_docs/python/tf/keras/Operation)
+
+tf.keras.layers.TextVectorization(
+        max_tokens=None,
+        standardize='lower_and_strip_punctuation',
+        split='whitespace',
+        ngrams=None,
+        output_mode='int',
+        output_sequence_length=None,
+        pad_to_max_tokens=False,
+        vocabulary=None,
+        idf_weights=None,
+        sparse=False,
+        ragged=False,
+        encoding='utf-8',
+        name=None,
+        **kwargs
+    )
+
+### Used in the notebooks
+
+| Used in the guide | Used in the tutorials |
+| --- | --- |
+| *   [Working with preprocessing layers](https://www.tensorflow.org/guide/keras/preprocessing_layers) | *   [Load text](https://www.tensorflow.org/tutorials/load_data/text)<br>    <br>*   [Distributed training with DTensors](https://www.tensorflow.org/tutorials/distribute/dtensor_ml_tutorial)<br>    <br>*   [Basic text classification](https://www.tensorflow.org/tutorials/keras/text_classification)<br>    <br>*   [Using side features: feature preprocessing](https://www.tensorflow.org/recommenders/examples/featurization)<br>    <br>*   [Neural machine translation with attention](https://www.tensorflow.org/text/tutorials/nmt_with_attention) |
+
+This layer has basic options for managing text in a Keras model. It transforms a batch of strings (one example = one string) into either a list of token indices (one example = 1D tensor of integer token indices) or a dense representation (one example = 1D tensor of float values representing data about the example's tokens). This layer is meant to handle natural language inputs. To handle simple string inputs (categorical strings or pre-tokenized strings) see `kers_core.layers.StringLookup`.
+
+The vocabulary for the layer must be either supplied on construction or learned via `adapt()`. When this layer is adapted, it will analyze the dataset, determine the frequency of individual string values, and create a vocabulary from them. This vocabulary can have unlimited size or be capped, depending on the configuration options for this layer; if there are more unique values in the input than the maximum vocabulary size, the most frequent terms will be used to create the vocabulary.
+
+The processing of each example contains the following steps:
+
+1.  Standardize each example (usually lowercasing + punctuation stripping)
+2.  Split each example into substrings (usually words)
+3.  Recombine substrings into tokens (usually ngrams)
+4.  Index tokens (associate a unique int value with each token)
+5.  Transform each example using this index, either into a vector of ints or a dense float vector.
+
+Some notes on passing callables to customize splitting and normalization for this layer:
+
+1.  Any callable can be passed to this Layer, but if you want to serialize this object you should only pass functions that are registered Keras serializables (see `keras.saving.register_keras_serializable` for more details).
+2.  When using a custom callable for `standardize`, the data received by the callable depends on the active Keras backend. With the TensorFlow backend, the callable receives a [`tf.Tensor`](https://www.tensorflow.org/api_docs/python/tf/Tensor)
+     of dtype `string`, so it should use [`tf.strings`](https://www.tensorflow.org/api_docs/python/tf/strings)
+     operations. With any other backend (JAX, NumPy, PyTorch, OpenVINO) the callable receives a NumPy array of unicode strings, so it should use `np.char` / `np.strings` operations (or any vectorized string logic of your choice). The callable should return data of the same shape as the input.
+3.  When using a custom callable for `split`, the data received by the callable will have the 1st dimension squeezed out - instead of `[["string to split"], ["another string to split"]]`, the Callable will see `["string to split", "another string to split"]`. The callable should return a [`tf.Tensor`](https://www.tensorflow.org/api_docs/python/tf/Tensor)
+     of dtype `string` with the first dimension containing the split tokens - in this example, we should see something like `[["string", "to", "split"], ["another", "string", "to", "split"]]`.
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `max_tokens` | Maximum size of the vocabulary for this layer. This should only be specified when adapting a vocabulary or when setting `pad_to_max_tokens=True`. Note that this vocabulary contains 1 OOV token, so the effective number of tokens is `(max_tokens - 1 - (1 if output_mode == "int" else 0))`. |
+| `standardize` | Optional specification for standardization to apply to the input text. Values can be:<br><br>*   `None`: No standardization.<br>*   `"lower_and_strip_punctuation"`: Text will be lowercased and all punctuation removed.<br>*   `"lower"`: Text will be lowercased.<br>*   `"strip_punctuation"`: All punctuation will be removed.<br>*   Callable: Inputs will passed to the callable function, which should be standardized and returned. |
+| `split` | Optional specification for splitting the input text. Values can be:*   `None`: No splitting.<br>*   `"whitespace"`: Split on whitespace.<br>*   `"character"`: Split on each unicode character.<br>*   Callable: Standardized inputs will passed to the callable function, which should be split and returned. |
+| `ngrams` | Optional specification for ngrams to create from the possibly-split input text. Values can be `None`, an integer or tuple of integers; passing an integer will create ngrams up to that integer, and passing a tuple of integers will create ngrams for the specified values in the tuple. Passing `None` means that no ngrams will be created. |
+| `output_mode` | Optional specification for the output of the layer. Values can be `"int"`, `"multi_hot"`, `"count"` or `"tf_idf"`, configuring the layer as follows:*   `"int"`: Outputs integer indices, one integer index per split string token. When `output_mode == "int"`, 0 is reserved for masked locations; this reduces the vocab size to `max_tokens - 2` instead of `max_tokens - 1`.<br>*   `"multi_hot"`: Outputs a single int array per batch, of either vocab\_size or max\_tokens size, containing 1s in all elements where the token mapped to that index exists at least once in the batch item.<br>*   `"count"`: Like `"multi_hot"`, but the int array contains a count of the number of times the token at that index appeared in the batch item.<br>*   `"tf_idf"`: Like `"multi_hot"`, but the TF-IDF algorithm is applied to find the value in each token slot. For `"int"` output, any shape of input and output is supported. For all other output modes, currently only rank 1 inputs (and rank 2 outputs after splitting) are supported. |
+| `output_sequence_length` | Only valid in INT mode. If set, the output will have its time dimension padded or truncated to exactly `output_sequence_length` values, resulting in a tensor of shape `(batch_size, output_sequence_length)` regardless of how many tokens resulted from the splitting step. Defaults to `None`. If `ragged` is `True` then `output_sequence_length` may still truncate the output. |
+| `pad_to_max_tokens` | Only valid in `"multi_hot"`, `"count"`, and `"tf_idf"` modes. If `True`, the output will have its feature axis padded to `max_tokens` even if the number of unique tokens in the vocabulary is less than `max_tokens`, resulting in a tensor of shape `(batch_size, max_tokens)` regardless of vocabulary size. Defaults to `False`. |
+| `vocabulary` | Optional. Either an array of strings or a string path to a text file. If passing an array, can pass a tuple, list, 1D NumPy array, or 1D tensor containing the string vocabulary terms. If passing a file path, the file should contain one line per term in the vocabulary. If this argument is set, there is no need to `adapt()` the layer. |
+| `idf_weights` | Only valid when `output_mode` is `"tf_idf"`. A tuple, list, 1D NumPy array, or 1D tensor of the same length as the vocabulary, containing the floating point inverse document frequency weights, which will be multiplied by per sample term counts for the final `tf_idf` weight. If the `vocabulary` argument is set, and `output_mode` is `"tf_idf"`, this argument must be supplied. |
+| `ragged` | Boolean. Only applicable to `"int"` output mode. Only supported with TensorFlow backend. If `True`, returns a `RaggedTensor` instead of a dense `Tensor`, where each sequence may have a different length after string splitting. Defaults to `False`. |
+| `sparse` | Boolean. Only applicable to `"multi_hot"`, `"count"`, and `"tf_idf"` output modes. Only supported with TensorFlow backend. If `True`, returns a `SparseTensor` instead of a dense `Tensor`. Defaults to `False`. |
+| `encoding` | Optional. The text encoding to use to interpret the input strings. Defaults to `"utf-8"`. |
+
+#### Examples:
+
+This example instantiates a `TextVectorization` layer that lowercases text, splits on whitespace, strips punctuation, and outputs integer vocab indices.
+
+    max_tokens = 5000  # Maximum vocab size.
+
+    # Now that the vocab layer has been created, call `adapt` on the
+
+    # Now, the layer can map strings to integers -- you can use an
+
+This example instantiates a `TextVectorization` layer by passing a list of vocabulary terms to the layer's `__init__()` method.
+
+    vocab_data = ["earth", "wind", "and", "fire"]
+
+    # Because we've passed the vocabulary directly, we don't need to adapt
+
+|     |     |
+| --- | --- |
+| Attributes<br>---------- |     |
+| `input` | Retrieves the input tensor(s) of a symbolic operation.<br><br>Only returns the tensor(s) corresponding to the _first time_ the operation was called. |
+| `output` | Retrieves the output tensor(s) of a layer.<br><br>Only returns the tensor(s) corresponding to the _first time_ the operation was called. |
+
+Methods
+-------
+
+### `adapt`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L393-L443)
+
+adapt(
+        data, batch_size=None, steps=None
+    )
+
+Computes a vocabulary of string terms from tokens in a dataset.
+
+Calling `adapt()` on a `TextVectorization` layer is an alternative to passing in a precomputed vocabulary on construction via the `vocabulary` argument. A `TextVectorization` layer should always be either adapted over a dataset or supplied with a vocabulary.
+
+During `adapt()`, the layer will build a vocabulary of all string tokens seen in the dataset, sorted by occurrence count, with ties broken by sort order of the tokens (high to low). At the end of `adapt()`, if `max_tokens` is set, the vocabulary will be truncated to `max_tokens` size. For example, adapting a layer with `max_tokens=1000` will compute the 1000 most frequent tokens occurring in the input dataset. If `output_mode='tf-idf'`, `adapt()` will also learn the document frequencies of each token in the input dataset.
+
+|     |     |
+| --- | --- |
+| Arguments |     |
+| `data` | The data to train on. It can be passed either as a batched [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)<br>, as a list of strings, as a NumPy array, or as any iterable of batches (e.g. a generator yielding batches of strings). |
+| `steps` | Integer or `None`. Total number of steps (batches of samples) to process. If `data` is a [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)<br>, and `steps` is `None`, `adapt()` will run until the input dataset is exhausted. When passing an infinitely repeating dataset, you must specify the `steps` argument. This argument is not supported with array inputs or list inputs. |
+
+### `finalize_state`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L448-L449)
+
+finalize_state()
+
+### `from_config`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L497-L511)
+
+@classmethod
+
+Creates an operation from its config.
+
+This method is the reverse of `get_config`, capable of instantiating the same operation from the config dictionary.
+
+if "dtype" in config and isinstance(config["dtype"], dict):
+        policy = dtype_policies.deserialize(config["dtype"])
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `config` | A Python dictionary, typically the output of `get_config`. |
+
+|     |
+| --- |
+| Returns |     |
+| An operation instance. |     |
+
+### `get_vocabulary`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L454-L465)
+
+get_vocabulary(
+        include_special_tokens=True
+    )
+
+Returns the current vocabulary of the layer.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `include_special_tokens` | If `True`, the returned vocabulary will include the padding and OOV tokens, and a term's index in the vocabulary will equal the term's index when calling the layer. If `False`, the returned vocabulary will not include any padding or OOV tokens. |
+
+### `load_assets`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L684-L685)
+
+load_assets(
+        dir_path
+    )
+
+### `reset_state`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L451-L452)
+
+reset_state()
+
+### `save_assets`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L681-L682)
+
+save_assets(
+        dir_path
+    )
+
+### `set_vocabulary`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L513-L533)
+
+set_vocabulary(
+        vocabulary, idf_weights=None
+    )
+
+Sets vocabulary (and optionally document frequency) for this layer.
+
+This method sets the vocabulary and IDF weights for this layer directly, instead of analyzing a dataset through `adapt()`. It should be used whenever the vocab (and optionally document frequency) information is already known. If vocabulary data is already present in the layer, this method will replace it.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `vocabulary` | Either an array or a string path to a text file. If passing an array, can pass a tuple, list, 1D NumPy array, or 1D tensor containing the vocabulary terms. If passing a file path, the file should contain one line per term in the vocabulary. |
+| `idf_weights` | A tuple, list, 1D NumPy array, or 1D tensor of inverse document frequency weights with equal length to vocabulary. Must be set if `output_mode` is `"tf_idf"`. Should not be set otherwise. |
+
+### `update_state`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L445-L446)
+
+update_state(
+        data
+    )
+
+### `vocabulary_size`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/layers/preprocessing/text_vectorization.py#L467-L474)
+
+vocabulary_size()
+
+Gets the current size of the layer's vocabulary.
+
+|     |
+| --- |
+| Returns |     |
+| The integer size of the vocabulary, including optional mask and OOV indices. |     |
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

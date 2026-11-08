@@ -1,0 +1,867 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#args)
+    
+*   [Raises](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#raises)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#methods)
+    *   [add\_to\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#add_to_tensor)
+        
+    *   [adjoint](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#adjoint)
+        
+    *   [assert\_non\_singular](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_non_singular)
+        
+    *   [assert\_positive\_definite](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_positive_definite)
+        
+    *   [assert\_self\_adjoint](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_self_adjoint)
+        
+    *   [batch\_shape\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#batch_shape_tensor)
+        
+    *   [cholesky](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#cholesky)
+        
+    *   [cond](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#cond)
+        
+    *   [determinant](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#determinant)
+        
+    *   [diag\_part](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#diag_part)
+        
+    *   [domain\_dimension\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#domain_dimension_tensor)
+        
+    *   [eigvals](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#eigvals)
+        
+    *   [inverse](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#inverse)
+        
+    *   [log\_abs\_determinant](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#log_abs_determinant)
+        
+    *   [matmul](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#matmul)
+        
+    *   [matvec](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#matvec)
+        
+    *   [range\_dimension\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#range_dimension_tensor)
+        
+    *   [shape\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#shape_tensor)
+        
+    *   [solve](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#solve)
+        
+    *   [solvevec](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#solvevec)
+        
+    *   [tensor\_rank\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#tensor_rank_tensor)
+        
+    *   [to\_dense](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#to_dense)
+        
+    *   [trace](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#trace)
+        
+    *   [\_\_getitem\_\_](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#__getitem__)
+        
+    *   [\_\_matmul\_\_](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#__matmul__)
+        
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.linalg.LinearOperatorHouseholder Stay organized with collections Save and categorize content based on your preferences.
+==========================================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#args)
+    
+*   [Raises](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#raises)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#methods)
+    *   [add\_to\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#add_to_tensor)
+        
+    *   [adjoint](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#adjoint)
+        
+    *   [assert\_non\_singular](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_non_singular)
+        
+    *   [assert\_positive\_definite](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_positive_definite)
+        
+    *   [assert\_self\_adjoint](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#assert_self_adjoint)
+        
+    *   [batch\_shape\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#batch_shape_tensor)
+        
+    *   [cholesky](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#cholesky)
+        
+    *   [cond](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#cond)
+        
+    *   [determinant](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#determinant)
+        
+    *   [diag\_part](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#diag_part)
+        
+    *   [domain\_dimension\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#domain_dimension_tensor)
+        
+    *   [eigvals](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#eigvals)
+        
+    *   [inverse](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#inverse)
+        
+    *   [log\_abs\_determinant](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#log_abs_determinant)
+        
+    *   [matmul](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#matmul)
+        
+    *   [matvec](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#matvec)
+        
+    *   [range\_dimension\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#range_dimension_tensor)
+        
+    *   [shape\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#shape_tensor)
+        
+    *   [solve](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#solve)
+        
+    *   [solvevec](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#solvevec)
+        
+    *   [tensor\_rank\_tensor](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#tensor_rank_tensor)
+        
+    *   [to\_dense](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#to_dense)
+        
+    *   [trace](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#trace)
+        
+    *   [\_\_getitem\_\_](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#__getitem__)
+        
+    *   [\_\_matmul\_\_](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder#__matmul__)
+        
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator_householder.py#L32-L285)
+
+`LinearOperator` acting like a \[batch\] of Householder transformations.
+
+Inherits From: [`LinearOperator`](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperator)
+, [`Module`](https://www.tensorflow.org/api_docs/python/tf/Module)
+
+#### View aliases
+
+**Compat aliases for migration**
+
+See [Migration guide](https://www.tensorflow.org/guide/migrate)
+ for more details.
+
+[`tf.compat.v1.linalg.LinearOperatorHouseholder`](https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorHouseholder)
+
+tf.linalg.LinearOperatorHouseholder(
+        reflection_axis,
+        is_non_singular=None,
+        is_self_adjoint=None,
+        is_positive_definite=None,
+        is_square=None,
+        name='LinearOperatorHouseholder'
+    )
+
+This operator acts like a \[batch\] of householder reflections with shape `[B1,...,Bb, N, N]` for some `b >= 0`. The first `b` indices index a batch member. For every batch index `(i1,...,ib)`, `A[i1,...,ib, : :]` is an `N x N` matrix. This matrix `A` is not materialized, but for purposes of broadcasting this shape will be relevant.
+
+`LinearOperatorHouseholder` is initialized with a (batch) vector.
+
+A Householder reflection, defined via a vector `v`, which reflects points in `R^n` about the hyperplane orthogonal to `v` and through the origin.
+
+# Create a 2 x 2 householder transform.
+    vec = [1 / np.sqrt(2), 1. / np.sqrt(2)]
+    operator = LinearOperatorHouseholder(vec)
+    
+    operator.to_dense()
+    ==> [[0.,  -1.]\
+         [-1., -0.]]
+    
+    operator.shape
+    ==> [2, 2]
+    
+    operator.log_abs_determinant()
+    ==> scalar Tensor
+    
+    x = ... Shape [2, 4] Tensor
+    operator.matmul(x)
+    ==> Shape [2, 4] Tensor
+
+#### Shape compatibility
+
+This operator acts on \[batch\] matrix with compatible shape. `x` is a batch matrix with compatible shape for `matmul` and `solve` if
+
+operator.shape = [B1,...,Bb] + [N, N],  with b >= 0
+    x.shape =   [C1,...,Cc] + [N, R],
+    and [C1,...,Cc] broadcasts with [B1,...,Bb] to [D1,...,Dd]
+
+#### Matrix property hints
+
+This `LinearOperator` is initialized with boolean flags of the form `is_X`, for `X = non_singular, self_adjoint, positive_definite, square`. These have the following meaning:
+
+*   If `is_X == True`, callers should expect the operator to have the property `X`. This is a promise that should be fulfilled, but is _not_ a runtime assert. For example, finite floating point precision may result in these promises being violated.
+*   If `is_X == False`, callers should expect the operator to not have `X`.
+*   If `is_X == None` (the default), callers should have no expectation either way.
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `reflection_axis` | Shape `[B1,...,Bb, N]` `Tensor` with `b >= 0` `N >= 0`. The vector defining the hyperplane to reflect about. Allowed dtypes: `float16`, `float32`, `float64`, `complex64`, `complex128`. |
+| `is_non_singular` | Expect that this operator is non-singular. |
+| `is_self_adjoint` | Expect that this operator is equal to its hermitian transpose. This is autoset to true |
+| `is_positive_definite` | Expect that this operator is positive definite, meaning the quadratic form `x^H A x` has positive real part for all nonzero `x`. Note that we do not require the operator to be self-adjoint to be positive-definite. See: https://en.wikipedia.org/wiki/Positive-definite\_matrix#Extension\_for\_non-symmetric\_matrices This is autoset to false. |
+| `is_square` | Expect that this operator acts like square \[batch\] matrices. This is autoset to true. |
+| `name` | A name for this `LinearOperator`. |
+
+|     |     |
+| --- | --- |
+| Raises<br>------ |     |
+| `ValueError` | `is_self_adjoint` is not `True`, `is_positive_definite` is not `False` or `is_square` is not `True`. |
+
+|     |     |
+| --- | --- |
+| Attributes<br>---------- |     |
+| `H` | Returns the adjoint of the current `LinearOperator`.<br><br>Given `A` representing this `LinearOperator`, return `A*`. Note that calling `self.adjoint()` and `self.H` are equivalent. |
+| `batch_shape` | `TensorShape` of batch dimensions of this `LinearOperator`.<br><br>If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `TensorShape([B1,...,Bb])`, equivalent to `A.shape[:-2]` |
+| `domain_dimension` | Dimension (in the sense of vector spaces) of the domain of this operator.<br><br>If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `N`. |
+| `dtype` | The `DType` of `Tensor`s handled by this `LinearOperator`. |
+| `graph_parents` | List of graph dependencies of this `LinearOperator`. (deprecated) |
+| `is_non_singular` |     |
+| `is_positive_definite` |     |
+| `is_self_adjoint` |     |
+| `is_square` | Return `True/False` depending on if this operator is square. |
+| `parameters` | Dictionary of parameters used to instantiate this `LinearOperator`. |
+| `range_dimension` | Dimension (in the sense of vector spaces) of the range of this operator.<br><br>If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `M`. |
+| `reflection_axis` |     |
+| `shape` | `TensorShape` of this `LinearOperator`.<br><br>If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `TensorShape([B1,...,Bb, M, N])`, equivalent to `A.shape`. |
+| `tensor_rank` | Rank (in the sense of tensors) of matrix corresponding to this operator.<br><br>If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `b + 2`. |
+
+Methods
+-------
+
+### `add_to_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1254-L1267)
+
+add_to_tensor(
+        x, name='add_to_tensor'
+    )
+
+Add matrix represented by this operator to `x`. Equivalent to `A + x`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `x` | `Tensor` with same `dtype` and shape broadcastable to `self.shape`. |
+| `name` | A name to give this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| A `Tensor` with broadcast shape and same `dtype` as `self`. |     |
+
+### `adjoint`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1079-L1094)
+
+adjoint(
+        name: str = 'adjoint'
+    ) -> 'LinearOperator'
+
+Returns the adjoint of the current `LinearOperator`.
+
+Given `A` representing this `LinearOperator`, return `A*`. Note that calling `self.adjoint()` and `self.H` are equivalent.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `LinearOperator` which represents the adjoint of this `LinearOperator`. |     |
+
+### `assert_non_singular`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L586-L604)
+
+assert_non_singular(
+        name='assert_non_singular'
+    )
+
+Returns an `Op` that asserts this operator is non singular.
+
+This operator is considered non-singular if
+
+ConditionNumber < max{100, range_dimension, domain_dimension} * eps,
+    eps := np.finfo(self.dtype.as_numpy_dtype).eps
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A string name to prepend to created ops. |
+
+|     |
+| --- |
+| Returns |     |
+| An `Assert` `Op`, that, when run, will raise an `InvalidArgumentError` if the operator is singular. |     |
+
+### `assert_positive_definite`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L622-L637)
+
+assert_positive_definite(
+        name='assert_positive_definite'
+    )
+
+Returns an `Op` that asserts this operator is positive definite.
+
+Here, positive definite means that the quadratic form `x^H A x` has positive real part for all nonzero `x`. Note that we do not require the operator to be self-adjoint to be positive definite.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name to give this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| An `Assert` `Op`, that, when run, will raise an `InvalidArgumentError` if the operator is not positive definite. |     |
+
+### `assert_self_adjoint`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L649-L663)
+
+assert_self_adjoint(
+        name='assert_self_adjoint'
+    )
+
+Returns an `Op` that asserts this operator is self-adjoint.
+
+Here we check that this operator is _exactly_ equal to its hermitian transpose.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A string name to prepend to created ops. |
+
+|     |
+| --- |
+| Returns |     |
+| An `Assert` `Op`, that, when run, will raise an `InvalidArgumentError` if the operator is not self-adjoint. |     |
+
+### `batch_shape_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L398-L413)
+
+batch_shape_tensor(
+        name='batch_shape_tensor'
+    )
+
+Shape of batch dimensions of this operator, determined at runtime.
+
+If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns a `Tensor` holding `[B1,...,Bb]`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `int32` `Tensor` |     |
+
+### `cholesky`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1147-L1170)
+
+cholesky(
+        name: str = 'cholesky'
+    ) -> 'LinearOperator'
+
+Returns a Cholesky factor as a `LinearOperator`.
+
+Given `A` representing this `LinearOperator`, if `A` is positive definite self-adjoint, return `L`, where `A = L L^T`, i.e. the cholesky decomposition.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `LinearOperator` which represents the lower triangular matrix in the Cholesky decomposition. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `ValueError` | When the `LinearOperator` is not hinted to be positive definite and self adjoint. |
+
+### `cond`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1304-L1314)
+
+cond(
+        name='cond'
+    )
+
+Returns the condition number of this linear operator.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| Shape `[B1,...,Bb]` `Tensor` of same `dtype` as `self`. |     |
+
+### `determinant`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L837-L854)
+
+determinant(
+        name='det'
+    )
+
+Determinant for every batch member.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `Tensor` with shape `self.batch_shape` and same `dtype` as `self`. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `NotImplementedError` | If `self.is_square` is `False`. |
+
+### `diag_part`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1205-L1231)
+
+diag_part(
+        name='diag_part'
+    )
+
+Efficiently get the \[batch\] diagonal part of this operator.
+
+If this operator has shape `[B1,...,Bb, M, N]`, this returns a `Tensor` `diagonal`, of shape `[B1,...,Bb, min(M, N)]`, where `diagonal[b1,...,bb, i] = self.to_dense()[b1,...,bb, i, i]`.
+
+my_operator = LinearOperatorDiag([1., 2.])
+    
+    # Efficiently get the diagonal
+    my_operator.diag_part()
+    ==> [1., 2.]
+    
+    # Equivalent, but inefficient method
+    tf.linalg.diag_part(my_operator.to_dense())
+    ==> [1., 2.]
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |     |
+| --- | --- |
+| Returns |     |
+| `diag_part` | A `Tensor` of same `dtype` as self. |
+
+### `domain_dimension_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L485-L501)
+
+domain_dimension_tensor(
+        name='domain_dimension_tensor'
+    )
+
+Dimension (in the sense of vector spaces) of the domain of this operator.
+
+Determined at runtime.
+
+If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `N`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `int32` `Tensor` |     |
+
+### `eigvals`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1272-L1289)
+
+eigvals(
+        name='eigvals'
+    )
+
+Returns the eigenvalues of this linear operator.
+
+If the operator is marked as self-adjoint (via `is_self_adjoint`) this computation can be more efficient.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| Shape `[B1,...,Bb, N]` `Tensor` of same `dtype` as `self`. |     |
+
+### `inverse`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1108-L1131)
+
+inverse(
+        name: str = 'inverse'
+    ) -> 'LinearOperator'
+
+Returns the Inverse of this `LinearOperator`.
+
+Given `A` representing this `LinearOperator`, return a `LinearOperator` representing `A^-1`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name scope to use for ops added by this method. |
+
+|     |
+| --- |
+| Returns |     |
+| `LinearOperator` representing inverse of this matrix. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `ValueError` | When the `LinearOperator` is not hinted to be `non_singular`. |
+
+### `log_abs_determinant`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L866-L883)
+
+log_abs_determinant(
+        name='log_abs_det'
+    )
+
+Log absolute value of determinant for every batch member.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `Tensor` with shape `self.batch_shape` and same `dtype` as `self`. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `NotImplementedError` | If `self.is_square` is `False`. |
+
+### `matmul`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L676-L736)
+
+matmul(
+        x, adjoint=False, adjoint_arg=False, name='matmul'
+    )
+
+Transform \[batch\] matrix `x` with left multiplication: `x --> Ax`.
+
+# Make an operator acting like batch matrix A.  Assume A.shape = [..., M, N]
+    operator = LinearOperator(...)
+    operator.shape = [..., M, N]
+    
+    X = ... # shape [..., N, R], batch matrix, R > 0.
+    
+    Y = operator.matmul(X)
+    Y.shape
+    ==> [..., M, R]
+    
+    Y[..., :, r] = sum_j A[..., :, j] X[j, r]
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `x` | `LinearOperator` or `Tensor` with compatible shape and same `dtype` as `self`. See class docstring for definition of compatibility. |
+| `adjoint` | Python `bool`. If `True`, left multiply by the adjoint: `A^H x`. |
+| `adjoint_arg` | Python `bool`. If `True`, compute `A x^H` where `x^H` is the hermitian transpose (transposition and complex conjugation). |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| A `LinearOperator` or `Tensor` with shape `[..., M, R]` and same `dtype` as `self`. |     |
+
+### `matvec`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L794-L827)
+
+matvec(
+        x, adjoint=False, name='matvec'
+    )
+
+Transform \[batch\] vector `x` with left multiplication: `x --> Ax`.
+
+# Make an operator acting like batch matrix A.  Assume A.shape = [..., M, N]
+    operator = LinearOperator(...)
+    
+    X = ... # shape [..., N], batch vector
+    
+    Y = operator.matvec(X)
+    Y.shape
+    ==> [..., M]
+    
+    Y[..., :] = sum_j A[..., :, j] X[..., j]
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `x` | `Tensor` with compatible shape and same `dtype` as `self`. `x` is treated as a \[batch\] vector meaning for every set of leading dimensions, the last dimension defines a vector. See class docstring for definition of compatibility. |
+| `adjoint` | Python `bool`. If `True`, left multiply by the adjoint: `A^H x`. |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| A `Tensor` with shape `[..., M]` and same `dtype` as `self`. |     |
+
+### `range_dimension_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L529-L545)
+
+range_dimension_tensor(
+        name='range_dimension_tensor'
+    )
+
+Dimension (in the sense of vector spaces) of the range of this operator.
+
+Determined at runtime.
+
+If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `M`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `int32` `Tensor` |     |
+
+### `shape_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L364-L382)
+
+shape_tensor(
+        name='shape_tensor'
+    )
+
+Shape of this `LinearOperator`, determined at runtime.
+
+If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns a `Tensor` holding `[B1,...,Bb, M, N]`, equivalent to [`tf.shape(A)`](https://www.tensorflow.org/api_docs/python/tf/shape)
+.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `int32` `Tensor` |     |
+
+### `solve`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L904-L979)
+
+solve(
+        rhs, adjoint=False, adjoint_arg=False, name='solve'
+    )
+
+Solve (exact or approx) `R` (batch) systems of equations: `A X = rhs`.
+
+The returned `Tensor` will be close to an exact solution if `A` is well conditioned. Otherwise closeness will vary. See class docstring for details.
+
+#### Examples:
+
+# Make an operator acting like batch matrix A.  Assume A.shape = [..., M, N]
+    operator = LinearOperator(...)
+    operator.shape = [..., M, N]
+    
+    # Solve R > 0 linear systems for every member of the batch.
+    RHS = ... # shape [..., M, R]
+    
+    X = operator.solve(RHS)
+    # X[..., :, r] is the solution to the r'th linear system
+    # sum_j A[..., :, j] X[..., j, r] = RHS[..., :, r]
+    
+    operator.matmul(X)
+    ==> RHS
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `rhs` | `Tensor` with same `dtype` as this operator and compatible shape. `rhs` is treated like a \[batch\] matrix meaning for every set of leading dimensions, the last two dimensions defines a matrix. See class docstring for definition of compatibility. |
+| `adjoint` | Python `bool`. If `True`, solve the system involving the adjoint of this `LinearOperator`: `A^H X = rhs`. |
+| `adjoint_arg` | Python `bool`. If `True`, solve `A X = rhs^H` where `rhs^H` is the hermitian transpose (transposition and complex conjugation). |
+| `name` | A name scope to use for ops added by this method. |
+
+|     |
+| --- |
+| Returns |     |
+| `Tensor` with shape `[...,N, R]` and same `dtype` as `rhs`. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `NotImplementedError` | If `self.is_non_singular` or `is_square` is False. |
+
+### `solvevec`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1029-L1077)
+
+solvevec(
+        rhs, adjoint=False, name='solve'
+    )
+
+Solve single equation with best effort: `A X = rhs`.
+
+The returned `Tensor` will be close to an exact solution if `A` is well conditioned. Otherwise closeness will vary. See class docstring for details.
+
+#### Examples:
+
+# Make an operator acting like batch matrix A.  Assume A.shape = [..., M, N]
+    operator = LinearOperator(...)
+    operator.shape = [..., M, N]
+    
+    # Solve one linear system for every member of the batch.
+    RHS = ... # shape [..., M]
+    
+    X = operator.solvevec(RHS)
+    # X is the solution to the linear system
+    # sum_j A[..., :, j] X[..., j] = RHS[..., :]
+    
+    operator.matvec(X)
+    ==> RHS
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `rhs` | `Tensor` with same `dtype` as this operator. `rhs` is treated like a \[batch\] vector meaning for every set of leading dimensions, the last dimension defines a vector. See class docstring for definition of compatibility regarding batch dimensions. |
+| `adjoint` | Python `bool`. If `True`, solve the system involving the adjoint of this `LinearOperator`: `A^H X = rhs`. |
+| `name` | A name scope to use for ops added by this method. |
+
+|     |
+| --- |
+| Returns |     |
+| `Tensor` with shape `[...,N]` and same `dtype` as `rhs`. |     |
+
+|     |     |
+| --- | --- |
+| Raises |     |
+| `NotImplementedError` | If `self.is_non_singular` or `is_square` is False. |
+
+### `tensor_rank_tensor`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L442-L456)
+
+tensor_rank_tensor(
+        name='tensor_rank_tensor'
+    )
+
+Rank (in the sense of tensors) of matrix corresponding to this operator.
+
+If this operator acts like the batch matrix `A` with `A.shape = [B1,...,Bb, M, N]`, then this returns `b + 2`.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| `int32` `Tensor`, determined at runtime. |     |
+
+### `to_dense`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1196-L1199)
+
+to_dense(
+        name='to_dense'
+    )
+
+Return a dense (batch) matrix representing this operator.
+
+### `trace`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1236-L1248)
+
+trace(
+        name='trace'
+    )
+
+Trace of the linear operator, equal to sum of `self.diag_part()`.
+
+If the operator is square, this is also the sum of the eigenvalues.
+
+|     |     |
+| --- | --- |
+| Args |     |
+| `name` | A name for this `Op`. |
+
+|     |
+| --- |
+| Returns |     |
+| Shape `[B1,...,Bb]` `Tensor` of same `dtype` as `self`. |     |
+
+### `__getitem__`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L1391-L1392)
+
+__getitem__(
+        slices
+    )
+
+### `__matmul__`
+
+[View source](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/ops/linalg/linear_operator.py#L786-L787)
+
+__matmul__(
+        other
+    )
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

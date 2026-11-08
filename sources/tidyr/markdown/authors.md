@@ -1,0 +1,39 @@
+[Skip to content](https://tidyr.tidyverse.org/authors.html#container)
+
+![](https://tidyr.tidyverse.org/logo.png)
+
+Authors and Citation
+====================
+
+Authors
+-------
+
+*   **[Hadley Wickham](https://hadley.nz/)
+    **. Author, maintainer.
+    
+*   **[Davis Vaughan](https://github.com/DavisVaughan)
+    **. Author.
+    
+*   **Maximilian Girlich**. Author.
+    
+*   **Kevin Ushey**. Contributor.
+    
+*   **[![Posit](https://www.tidyverse.org/posit-logo.svg)](https://www.posit.co/)
+    **. Copyright holder, funder.
+    
+
+Citation
+--------
+
+Source: [`DESCRIPTION`](https://github.com/tidyverse/tidyr/blob/main/DESCRIPTION)
+
+Wickham H, Vaughan D, Girlich M (2026). _tidyr: Tidy Messy Data_. R package version 1.3.2, [https://tidyr.tidyverse.org](https://tidyr.tidyverse.org/)
+.
+
+@Manual{,
+  title = {tidyr: Tidy Messy Data},
+  author = {Hadley Wickham and Davis Vaughan and Maximilian Girlich},
+  year = {2026},
+  note = {R package version 1.3.2},
+  url = {https://tidyr.tidyverse.org},
+}

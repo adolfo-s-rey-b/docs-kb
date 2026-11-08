@@ -1,0 +1,97 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger.md)
+.
+
+**Preview status**
+
+This is an early preview for building agents with Microsoft Agent 365 and n8n. You need to be part of the [Frontier preview program](https://adoption.microsoft.com/copilot/frontier-program/)
+ to get early access to Microsoft Agent 365.
+
+Use the Microsoft Agent 365 Trigger node to receive messages from Microsoft Agent 365 and respond with AI-powered agent capabilities. This node allows n8n to act as the backend for your Agent 365 agents.
+
+**Credentials**
+
+Refer to the [Microsoft Agent 365 credentials documentation](https://docs.n8n.io/integrations/builtin/credentials/microsoftagent365)
+ for authentication information for this node.
+
+Node connectors[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#node-connectors)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Microsoft Agent 365 Trigger node can connect to the following sub-nodes:
+
+*   **Model**: Connect a language model (Chat model sub-node) to process incoming messages
+    
+*   **Memory**: Connect a memory sub-node to maintain conversation context. A single n8n workflow powers multiple Agent instances on the Microsoft side, so multiple users will interact with the same workflow. Choose your session ID key carefully to scope conversations to individual Agent instances and prevent conversation history from bleeding between them.
+    
+*   **Tool**: Connect tool sub-nodes to give your agent additional capabilities
+    
+
+Node options[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#node-options)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+### Enable Microsoft Work IQ Tools for A365[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#enable-microsoft-work-iq-tools-for-a365)
+
+Toggle this option to give your agent access to Microsoft 365 tools through the Model Context Protocol (MCP). Default: Off.
+
+When enabled, select one of:
+
+*   **All**: Enable all available Microsoft MCP tools
+    
+*   **Selected**: Choose specific tools from the list:
+    
+    *   Calendar
+        
+    *   Mail
+        
+    *   SharePoint
+        
+    *   Teams
+        
+    *   Word
+        
+    *   and more
+        
+    
+
+Webhook authentication[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#webhook-authentication)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Feature availability**
+
+From n8n 2.25.7 and n8n 2.26.2, the Microsoft Agent 365 Trigger node validates every incoming request before it runs your workflow. The node checks the Bot Framework token that Microsoft sends with each request and confirms Microsoft issued it for your agent. The node rejects any request without a valid token, so others can't inject forged activities even if they know your webhook URL.
+
+This validation uses the **Client ID** from your [Microsoft Agent 365 credential](https://docs.n8n.io/integrations/builtin/credentials/microsoftagent365)
+. The Client ID must match the application (client) ID of your agent's app registration. If it doesn't, the node rejects legitimate requests from Microsoft.
+
+Getting started[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#getting-started)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+We recommend following these resources to set up your Agent 365 integration:
+
+1.  [Microsoft Agent 365 developer documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/developer/)
+    : Official documentation for building agents with Microsoft Agent 365
+    
+2.  [Agent 365 CLI Documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/developer/agent-365-cli)
+    : Cross-platform command-line tool for deploying and managing Agent 365 applications on Azure
+    
+
+Related resources[](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.microsoftagent365trigger#related-resources)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Refer to [Microsoft Agent 365 developer documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/developer/)
+ for more information about the service.
+
+View n8n's [Advanced AI](https://docs.n8n.io/build/integrate-ai)
+ documentation.
+
+[PreviousLangChain Code](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.code)
+[NextDatabricks AI Agent](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.databricksaiagent)
+
+Last updated 10 days ago
+
+Was this helpful?

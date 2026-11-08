@@ -1,0 +1,63 @@
+[Skip to main content](https://scikit-learn.org/stable/min_dependency_table.html#main-content)
+
+Back to top Ctrl+K
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/scikit-learn/scikit-learn)
+    
+
+Choose version
+
+| Dependency | Minimum Version | Purpose |
+| --- | --- | --- |
+| numpy | 1.24.1 | build, install |
+| scipy | 1.10.0 | build, install |
+| joblib | 1.4.0 | install |
+| narwhals | 2.0.1 | install |
+| threadpoolctl | 3.5.0 | install |
+| cython | 3.1.2 | build |
+| meson-python | 0.17.1 | build |
+| matplotlib | 3.6.1 | benchmark, docs, examples, tests |
+| scikit-image | 0.22.0 | docs, examples |
+| pandas | 1.5.0 | benchmark, docs, examples, tests |
+| rich | 14.1.0 | docs, examples, tests |
+| seaborn | 0.13.0 | docs, examples |
+| memory\_profiler | 0.57.0 | benchmark, docs |
+| pytest | 7.1.2 | tests |
+| pytest-cov | 2.9.0 | tests |
+| ruff | 0.12.2 | tests |
+| pyrefly | 1.2.0 | tests |
+| cython-lint | 0.21 | tests |
+| sphinx-lint | 1.0.2 | tests |
+| codespell | 2.4.1 | tests |
+| pyamg | 5.0.0 | tests |
+| polars | 0.20.30 | docs, tests |
+| pyarrow | 13.0.0 | tests |
+| sphinx | 7.3.7 | docs |
+| sphinx-copybutton | 0.5.2 | docs |
+| sphinx-gallery | 0.17.1 | docs |
+| numpydoc | 1.2.0 | docs, tests |
+| Pillow | 12.1.1 | docs |
+| pooch | 1.8.0 | docs, examples, tests |
+| sphinx-prompt | 1.4.0 | docs |
+| sphinxext-opengraph | 0.9.1 | docs |
+| plotly | 5.22.0 | docs, examples |
+| sphinx-remove-toctrees | 1.0.0.post1 | docs |
+| sphinx-design | 0.6.0 | docs |
+| pydata-sphinx-theme | 0.15.3 | docs |
+| towncrier | 24.8.0 | docs |
+| conda-lock | 3.0.1 | maintenance |
+
+On this page
+
+* * *
+
+scikit-learn is [financially supported](https://scikit-learn.org/stable/institutional_support.html#funding)
+ by Probabl and other institutions.
+
+[![](https://scikit-learn.org/stable/_static/probabl.png "Probabl")\
+\
+Enterprise-grade solutions and services](https://probabl.ai/lp/scikit-learn)

@@ -1,0 +1,391 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://tidyr.tidyverse.org/404.html",
+      "last_hash": "be9c7773b834dff05a64e787c7be9d229f51f02a6763bfd34153c8540599ea81",
+      "last_fetched": "2026-11-08T05:04:16.177353+00:00",
+      "title": "Page not found (404) • tidyr"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://tidyr.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "5aa49115b92f82ed6376d0b806f74faee708baf552065a5d308dc63aa09c2b59",
+      "last_fetched": "2026-11-08T05:04:17.968873+00:00",
+      "title": "Contributor Covenant Code of Conduct • tidyr"
+    },
+    "CONTRIBUTING": {
+      "url": "https://tidyr.tidyverse.org/CONTRIBUTING.html",
+      "last_hash": "516e8881c85ad93d06484aa8e1cabfa2a464a3d3aecf5085285f59726772d2e9",
+      "last_fetched": "2026-11-08T05:04:19.715010+00:00",
+      "title": "Contributing to tidyr • tidyr"
+    },
+    "ISSUE_TEMPLATE": {
+      "url": "https://tidyr.tidyverse.org/ISSUE_TEMPLATE.html",
+      "last_hash": "d44bc860eb7e617584f7c74315f30297a9cdf445bf0be4cc53af70a5e68b3484",
+      "last_fetched": "2026-11-08T05:04:21.295819+00:00",
+      "title": "NA • tidyr"
+    },
+    "SUPPORT": {
+      "url": "https://tidyr.tidyverse.org/SUPPORT.html",
+      "last_hash": "c8a953d374e0a050a7b22e3344cbde6be2506f7b81a36bc32a9e5a91f5ccd55d",
+      "last_fetched": "2026-11-08T05:04:23.085501+00:00",
+      "title": "Getting help with tidyr • tidyr"
+    },
+    "articles-in-packages": {
+      "url": "https://tidyr.tidyverse.org/articles/in-packages.html",
+      "last_hash": "0961d7c05d7c2669ea76a23d4abb2f286ad3bc63b040e41f85c6ce51f5ef337b",
+      "last_fetched": "2026-11-08T05:04:24.930736+00:00",
+      "title": "In packages • tidyr"
+    },
+    "articles-index": {
+      "url": "https://tidyr.tidyverse.org/articles/index.html",
+      "last_hash": "c80bc9cde60a05fabdf2f5e6b0d58a6030eb28fbd9fd0002254750b03d395ad0",
+      "last_fetched": "2026-11-08T05:04:26.579974+00:00",
+      "title": "Articles • tidyr"
+    },
+    "articles-nest": {
+      "url": "https://tidyr.tidyverse.org/articles/nest.html",
+      "last_hash": "d1cd46ee63a1f3a162435a32b6c2b9ef9e98e614ed67e802107c5edb70b3c973",
+      "last_fetched": "2026-11-08T05:04:28.157892+00:00",
+      "title": "Nested data • tidyr"
+    },
+    "articles-pivot": {
+      "url": "https://tidyr.tidyverse.org/articles/pivot.html",
+      "last_hash": "982dbf56dd3c958b2dc73da4047b64f7af736482f106f9b8ae9fe2c648575299",
+      "last_fetched": "2026-11-08T05:04:30.123411+00:00",
+      "title": "Pivoting • tidyr"
+    },
+    "articles-programming": {
+      "url": "https://tidyr.tidyverse.org/articles/programming.html",
+      "last_hash": "e324102e1194997437b21b5c9ddbee25f49fb185f310b0b22a1179d342c73b1f",
+      "last_fetched": "2026-11-08T05:04:31.731104+00:00",
+      "title": "Programming with tidyr • tidyr"
+    },
+    "articles-rectangle": {
+      "url": "https://tidyr.tidyverse.org/articles/rectangle.html",
+      "last_hash": "7f6fadec85280902d8064ca1793aa430259a889cc92328c826b7053b7c9d0842",
+      "last_fetched": "2026-11-08T05:04:33.339146+00:00",
+      "title": "Rectangling • tidyr"
+    },
+    "articles-tidy-data": {
+      "url": "https://tidyr.tidyverse.org/articles/tidy-data.html",
+      "last_hash": "8c8d730917995aa708cb16619ae8dba922712888b81580b1afa2595ffe440857",
+      "last_fetched": "2026-11-08T05:04:35.031825+00:00",
+      "title": "Tidy data • tidyr"
+    },
+    "authors": {
+      "url": "https://tidyr.tidyverse.org/authors.html",
+      "last_hash": "a360c0fb767abbaa386c46976e8ea77b0b719007636212c452d5af0eeb525c0e",
+      "last_fetched": "2026-11-08T05:04:36.655422+00:00",
+      "title": "Authors and Citation • tidyr"
+    },
+    "index": {
+      "url": "https://tidyr.tidyverse.org/index.html",
+      "last_hash": "e2b689402d30d5bc41bae4e765536e7f6d902c8409f7bb70d8b9d3cfd9fb43c2",
+      "last_fetched": "2026-11-08T05:04:38.343379+00:00",
+      "title": "Tidy Messy Data • tidyr"
+    },
+    "reference-billboard": {
+      "url": "https://tidyr.tidyverse.org/reference/billboard.html",
+      "last_hash": "8b920091d74cc44fd4eac008c99b2af789166b5fec3f3d305104225424f5efab",
+      "last_fetched": "2026-11-08T05:04:40.074004+00:00",
+      "title": "Song rankings for Billboard top 100 in the year 2000 — billboard • tidyr"
+    },
+    "reference-check_pivot_spec": {
+      "url": "https://tidyr.tidyverse.org/reference/check_pivot_spec.html",
+      "last_hash": "62d0e30398acb74b2147d5cc2d5a58981d3debd035cd0aee93fa40b8c16c0ee3",
+      "last_fetched": "2026-11-08T05:04:41.726264+00:00",
+      "title": "Check assumptions about a pivot spec — check_pivot_spec • tidyr"
+    },
+    "reference-chop": {
+      "url": "https://tidyr.tidyverse.org/reference/chop.html",
+      "last_hash": "f2bbcf9f49f130d9b814e16e7b0fbec7ed625402bcfaa87b9c792c4e18b44a19",
+      "last_fetched": "2026-11-08T05:04:43.298874+00:00",
+      "title": "Chop and unchop — chop • tidyr"
+    },
+    "reference-cms_patient_experience": {
+      "url": "https://tidyr.tidyverse.org/reference/cms_patient_experience.html",
+      "last_hash": "07e3b3466707e69ad7f4136a9c2e856dfe77ae37aeb68e62a5d3f35a6519e34f",
+      "last_fetched": "2026-11-08T05:04:44.835809+00:00",
+      "title": "Data from the Centers for Medicare & Medicaid Services — cms_patient_experience • tidyr"
+    },
+    "reference-complete": {
+      "url": "https://tidyr.tidyverse.org/reference/complete.html",
+      "last_hash": "ba8c603493107a0f5cac9113dc3ff484ed3642e585597e05ef557fd2250b08a6",
+      "last_fetched": "2026-11-08T05:04:46.535305+00:00",
+      "title": "Complete a data frame with missing combinations of data — complete • tidyr"
+    },
+    "reference-construction": {
+      "url": "https://tidyr.tidyverse.org/reference/construction.html",
+      "last_hash": "b00af45917d4831f38749ed28e7c56a8ae9bf2976b1573de4a035bd56ac57c23",
+      "last_fetched": "2026-11-08T05:04:48.156398+00:00",
+      "title": "Completed construction in the US in 2018 — construction • tidyr"
+    },
+    "reference-deprecated-se": {
+      "url": "https://tidyr.tidyverse.org/reference/deprecated-se.html",
+      "last_hash": "57082fb208daca043b5fa968d255a97b1f40188087556644237d0d7cb5373276",
+      "last_fetched": "2026-11-08T05:04:49.779457+00:00",
+      "title": "Deprecated SE versions of main verbs — deprecated-se • tidyr"
+    },
+    "reference-drop_na": {
+      "url": "https://tidyr.tidyverse.org/reference/drop_na.html",
+      "last_hash": "51269a4c1685065d2550c46311d98ebfd39b2042c174720c269ad488c2b21973",
+      "last_fetched": "2026-11-08T05:04:51.355841+00:00",
+      "title": "Drop rows containing missing values — drop_na • tidyr"
+    },
+    "reference-expand": {
+      "url": "https://tidyr.tidyverse.org/reference/expand.html",
+      "last_hash": "67e24bcebde109cb153c64b303f9dc9fde1b78c467da35e314aa7b4bffacaa47",
+      "last_fetched": "2026-11-08T05:04:52.893846+00:00",
+      "title": "Expand data frame to include all possible combinations of values — expand • tidyr"
+    },
+    "reference-expand_grid": {
+      "url": "https://tidyr.tidyverse.org/reference/expand_grid.html",
+      "last_hash": "34e0c779ae9cd82e8780f4f8ad3153602c7a07e844786a8fc8b917d16794c590",
+      "last_fetched": "2026-11-08T05:04:54.486998+00:00",
+      "title": "Create a tibble from all combinations of inputs — expand_grid • tidyr"
+    },
+    "reference-extract": {
+      "url": "https://tidyr.tidyverse.org/reference/extract.html",
+      "last_hash": "e7f2570d82c48fa08666fd9e79287a6d6b209d18a0a94dc5a28074c0fb9e0dd4",
+      "last_fetched": "2026-11-08T05:04:56.072283+00:00",
+      "title": "Extract a character column into multiple columns using regular expression groups — extract • tidyr"
+    },
+    "reference-extract_numeric": {
+      "url": "https://tidyr.tidyverse.org/reference/extract_numeric.html",
+      "last_hash": "ef6f5509aec91d825ba91fa326cf54f5159efc9e4dc9eaae63c8d6a9048c2961",
+      "last_fetched": "2026-11-08T05:04:57.626354+00:00",
+      "title": "Extract numeric component of variable. — extract_numeric • tidyr"
+    },
+    "reference-fill": {
+      "url": "https://tidyr.tidyverse.org/reference/fill.html",
+      "last_hash": "dfe1950e8c03b511d26d190846e5c00330fb0254687e937a640f736d56ea019a",
+      "last_fetched": "2026-11-08T05:04:59.363587+00:00",
+      "title": "Fill in missing values with previous or next value — fill • tidyr"
+    },
+    "reference-fish_encounters": {
+      "url": "https://tidyr.tidyverse.org/reference/fish_encounters.html",
+      "last_hash": "a5a52d2cf76f379260a4d64b48125faf35ea2c1c556eee789a892b513670a7e9",
+      "last_fetched": "2026-11-08T05:05:00.838476+00:00",
+      "title": "Fish encounters — fish_encounters • tidyr"
+    },
+    "reference-full_seq": {
+      "url": "https://tidyr.tidyverse.org/reference/full_seq.html",
+      "last_hash": "8160aa27a110afb25827ef665a7ba53298cdf1c118c4d6bb0111068006bdc4a1",
+      "last_fetched": "2026-11-08T05:05:02.446449+00:00",
+      "title": "Create the full sequence of values in a vector — full_seq • tidyr"
+    },
+    "reference-gather": {
+      "url": "https://tidyr.tidyverse.org/reference/gather.html",
+      "last_hash": "dd74e0d6958e7fe618e7c8629eed3e058abad53ec9648d00272051aab814d685",
+      "last_fetched": "2026-11-08T05:05:04.113638+00:00",
+      "title": "Gather columns into key-value pairs — gather • tidyr"
+    },
+    "reference-hoist": {
+      "url": "https://tidyr.tidyverse.org/reference/hoist.html",
+      "last_hash": "55abb93da7787bca40b62b5ddc3c7e07ccc47a7a05019ba839f214916eee9092",
+      "last_fetched": "2026-11-08T05:05:05.716189+00:00",
+      "title": "Hoist values out of list-columns — hoist • tidyr"
+    },
+    "reference-household": {
+      "url": "https://tidyr.tidyverse.org/reference/household.html",
+      "last_hash": "57823eeab95a1a0bc96f842592e596cc23433ff603398c6c6de13dcb65afb1b7",
+      "last_fetched": "2026-11-08T05:05:07.280475+00:00",
+      "title": "Household data — household • tidyr"
+    },
+    "reference-index": {
+      "url": "https://tidyr.tidyverse.org/reference/index.html",
+      "last_hash": "b6570f4cf3adfd8b0c98d4d144183f8c3f3e97cb28c76ef0f27cfd3bed924cfc",
+      "last_fetched": "2026-11-08T05:05:08.779728+00:00",
+      "title": "Package index • tidyr"
+    },
+    "reference-nest": {
+      "url": "https://tidyr.tidyverse.org/reference/nest.html",
+      "last_hash": "b03b8b0a8064da34237712405f55c15aa3d4b8fcdfaa5a65febf8c10916e8715",
+      "last_fetched": "2026-11-08T05:05:10.314443+00:00",
+      "title": "Nest rows into a list-column of data frames — nest • tidyr"
+    },
+    "reference-nest_legacy": {
+      "url": "https://tidyr.tidyverse.org/reference/nest_legacy.html",
+      "last_hash": "9e4a00adbc5c1cd33545d10fff148fe8fbaed9b71c1970ada2db59780cc3364a",
+      "last_fetched": "2026-11-08T05:05:11.823609+00:00",
+      "title": "Legacy versions of nest() and unnest() — nest_legacy • tidyr"
+    },
+    "reference-pack": {
+      "url": "https://tidyr.tidyverse.org/reference/pack.html",
+      "last_hash": "069c0dc6ab5882ef1970f82f3fe4225b98832ed6e2b87348f16ebff971cde5a0",
+      "last_fetched": "2026-11-08T05:05:13.486600+00:00",
+      "title": "Pack and unpack — pack • tidyr"
+    },
+    "reference-pipe": {
+      "url": "https://tidyr.tidyverse.org/reference/pipe.html",
+      "last_hash": "b6a32c42ec140a8deae89fab1410968337fcf25304cf8a43820d485d9d413710",
+      "last_fetched": "2026-11-08T05:05:15.063346+00:00",
+      "title": "Pipe operator — %>% • tidyr"
+    },
+    "reference-pivot_longer": {
+      "url": "https://tidyr.tidyverse.org/reference/pivot_longer.html",
+      "last_hash": "07390d8ebd289a1c922daee99a609136c53d09fb44d8fa298d02b2c03c41df19",
+      "last_fetched": "2026-11-08T05:05:16.650787+00:00",
+      "title": "Pivot data from wide to long — pivot_longer • tidyr"
+    },
+    "reference-pivot_longer_spec": {
+      "url": "https://tidyr.tidyverse.org/reference/pivot_longer_spec.html",
+      "last_hash": "f5b45d328fcd0293da0be3d4ca7466c340d8ac91001d564bcdfd482dc02059aa",
+      "last_fetched": "2026-11-08T05:05:18.110015+00:00",
+      "title": "Pivot data from wide to long using a spec — pivot_longer_spec • tidyr"
+    },
+    "reference-pivot_wider": {
+      "url": "https://tidyr.tidyverse.org/reference/pivot_wider.html",
+      "last_hash": "b500685f506c5aa9f131166574707aa62dd7f30ef7009061993926e54baa9e94",
+      "last_fetched": "2026-11-08T05:05:19.881460+00:00",
+      "title": "Pivot data from long to wide — pivot_wider • tidyr"
+    },
+    "reference-pivot_wider_spec": {
+      "url": "https://tidyr.tidyverse.org/reference/pivot_wider_spec.html",
+      "last_hash": "8f46f87c292d1c3adf9a7eb54e15c9890d4a460728e7431967039799be9cae46",
+      "last_fetched": "2026-11-08T05:05:21.400916+00:00",
+      "title": "Pivot data from long to wide using a spec — pivot_wider_spec • tidyr"
+    },
+    "reference-reexports": {
+      "url": "https://tidyr.tidyverse.org/reference/reexports.html",
+      "last_hash": "8a7b84bc405bb531cb99f5d609b4a951cc18aee4466f5389f90ce92040f1031a",
+      "last_fetched": "2026-11-08T05:05:22.956696+00:00",
+      "title": "Objects exported from other packages — reexports • tidyr"
+    },
+    "reference-relig_income": {
+      "url": "https://tidyr.tidyverse.org/reference/relig_income.html",
+      "last_hash": "374008b1bf4b5669d85978ed9465dc5e893b198962061fa9ef249ae125317a53",
+      "last_fetched": "2026-11-08T05:05:24.574183+00:00",
+      "title": "Pew religion and income survey — relig_income • tidyr"
+    },
+    "reference-replace_na": {
+      "url": "https://tidyr.tidyverse.org/reference/replace_na.html",
+      "last_hash": "7ee4baaa90c83d937e3fef42bb8bcd7bd5a65786aa8cb7738967d2ffdcfed48e",
+      "last_fetched": "2026-11-08T05:05:26.335841+00:00",
+      "title": "Replace NAs with specified values — replace_na • tidyr"
+    },
+    "reference-separate": {
+      "url": "https://tidyr.tidyverse.org/reference/separate.html",
+      "last_hash": "f6e1068e780e74708b802b2f5426f3636aaddeb84aef9922de838c1a15d17a1c",
+      "last_fetched": "2026-11-08T05:05:28.035384+00:00",
+      "title": "Separate a character column into multiple columns with a regular expression or numeric locations — separate • tidyr"
+    },
+    "reference-separate_longer_delim": {
+      "url": "https://tidyr.tidyverse.org/reference/separate_longer_delim.html",
+      "last_hash": "42f2756383b9d502c4ec1b0f45520af4b42cd8ecf7274a5a5596f382c97019d7",
+      "last_fetched": "2026-11-08T05:05:29.647504+00:00",
+      "title": "Split a string into rows — separate_longer_delim • tidyr"
+    },
+    "reference-separate_rows": {
+      "url": "https://tidyr.tidyverse.org/reference/separate_rows.html",
+      "last_hash": "749e3511d5add67785766e66b8c7f69aaa152e52ce4a1f96bcad97c70f4d989a",
+      "last_fetched": "2026-11-08T05:05:31.130686+00:00",
+      "title": "Separate a collapsed column into multiple rows — separate_rows • tidyr"
+    },
+    "reference-separate_wider_delim": {
+      "url": "https://tidyr.tidyverse.org/reference/separate_wider_delim.html",
+      "last_hash": "07c11114e5984721a55cdbddda5608339b106e1c2fd3004fc6acc45a69418aac",
+      "last_fetched": "2026-11-08T05:05:32.721831+00:00",
+      "title": "Split a string into columns — separate_wider_delim • tidyr"
+    },
+    "reference-smiths": {
+      "url": "https://tidyr.tidyverse.org/reference/smiths.html",
+      "last_hash": "4eece4c33087ad74d6d02c8798788ce90c735a3535eaf7591c537dcdfd9e305d",
+      "last_fetched": "2026-11-08T05:05:34.236698+00:00",
+      "title": "Some data about the Smith family — smiths • tidyr"
+    },
+    "reference-spread": {
+      "url": "https://tidyr.tidyverse.org/reference/spread.html",
+      "last_hash": "626d2594cd07f0719c9f55bd799f2edd48e909de2b6d32da917191ee1c47c3e5",
+      "last_fetched": "2026-11-08T05:05:35.711323+00:00",
+      "title": "Spread a key-value pair across multiple columns — spread • tidyr"
+    },
+    "reference-table1": {
+      "url": "https://tidyr.tidyverse.org/reference/table1.html",
+      "last_hash": "35aca48938cfa7cb699479e6837d43c14a83f51e5066aa3468297a67922a2c53",
+      "last_fetched": "2026-11-08T05:05:37.405368+00:00",
+      "title": "Example tabular representations — table1 • tidyr"
+    },
+    "reference-tidyr-package": {
+      "url": "https://tidyr.tidyverse.org/reference/tidyr-package.html",
+      "last_hash": "60526b9cfe51b128d9d8d0f0b682005fa01848092d6d563fd2e284bcffcffd46",
+      "last_fetched": "2026-11-08T05:05:39.031308+00:00",
+      "title": "tidyr: Tidy Messy Data — tidyr-package • tidyr"
+    },
+    "reference-tidyr_data_masking": {
+      "url": "https://tidyr.tidyverse.org/reference/tidyr_data_masking.html",
+      "last_hash": "d3993ad657a7e7d21868ca9dcc9680a59c379cc7a8490ba339149ee00f8c44a7",
+      "last_fetched": "2026-11-08T05:05:40.524714+00:00",
+      "title": "Argument type: data-masking — tidyr_data_masking • tidyr"
+    },
+    "reference-tidyr_legacy": {
+      "url": "https://tidyr.tidyverse.org/reference/tidyr_legacy.html",
+      "last_hash": "55121768c20faf4a0d6bc1f5e7d324f2c94db6db82d8d80f2a77f1bbc161ce0b",
+      "last_fetched": "2026-11-08T05:05:42.073990+00:00",
+      "title": "Legacy name repair — tidyr_legacy • tidyr"
+    },
+    "reference-tidyr_tidy_select": {
+      "url": "https://tidyr.tidyverse.org/reference/tidyr_tidy_select.html",
+      "last_hash": "ebe826669b9e7fcca27a2d0521e3825f34f21f1935d1cfd76f379827c623a792",
+      "last_fetched": "2026-11-08T05:05:43.591935+00:00",
+      "title": "Argument type: tidy-select — tidyr_tidy_select • tidyr"
+    },
+    "reference-uncount": {
+      "url": "https://tidyr.tidyverse.org/reference/uncount.html",
+      "last_hash": "ea6965bdfeef3f7459edf38611382c3356fe7728ad1682cb60119edfecaaafbd",
+      "last_fetched": "2026-11-08T05:05:45.099723+00:00",
+      "title": "\"Uncount\" a data frame — uncount • tidyr"
+    },
+    "reference-unite": {
+      "url": "https://tidyr.tidyverse.org/reference/unite.html",
+      "last_hash": "52c44091b6214afc132b0792b3c5ec02fbff6ba3be0dad3d20ba955d5133a8e8",
+      "last_fetched": "2026-11-08T05:05:46.751514+00:00",
+      "title": "Unite multiple columns into one by pasting strings together — unite • tidyr"
+    },
+    "reference-unnest": {
+      "url": "https://tidyr.tidyverse.org/reference/unnest.html",
+      "last_hash": "fe80dc680d4dab05f227d2187fbd5f3140efce61b4b1c14d4c55e1f8927b984a",
+      "last_fetched": "2026-11-08T05:05:48.295809+00:00",
+      "title": "Unnest a list-column of data frames into rows and columns — unnest • tidyr"
+    },
+    "reference-unnest_auto": {
+      "url": "https://tidyr.tidyverse.org/reference/unnest_auto.html",
+      "last_hash": "c4acde86670e3a7ee4d0307f35d07690c24dcb6057eb9229eadb669900bfeac4",
+      "last_fetched": "2026-11-08T05:05:49.814612+00:00",
+      "title": "Automatically call unnest_wider() or unnest_longer() — unnest_auto • tidyr"
+    },
+    "reference-unnest_longer": {
+      "url": "https://tidyr.tidyverse.org/reference/unnest_longer.html",
+      "last_hash": "e3d70f7b57e34d2af3ac94515eb082ea17e9fd84ad3d86c026d342852f50ef39",
+      "last_fetched": "2026-11-08T05:05:51.304513+00:00",
+      "title": "Unnest a list-column into rows — unnest_longer • tidyr"
+    },
+    "reference-unnest_wider": {
+      "url": "https://tidyr.tidyverse.org/reference/unnest_wider.html",
+      "last_hash": "178fd923a971d2123accdd8a1152579589b69a238e659d7407afffbfdd23c120",
+      "last_fetched": "2026-11-08T05:05:52.882232+00:00",
+      "title": "Unnest a list-column into columns — unnest_wider • tidyr"
+    },
+    "reference-us_rent_income": {
+      "url": "https://tidyr.tidyverse.org/reference/us_rent_income.html",
+      "last_hash": "5992443e769b0e0faeae6835ace082baa80822d735b4155dc48eefcf6f07a5bc",
+      "last_fetched": "2026-11-08T05:05:54.490479+00:00",
+      "title": "US rent and income data — us_rent_income • tidyr"
+    },
+    "reference-who": {
+      "url": "https://tidyr.tidyverse.org/reference/who.html",
+      "last_hash": "40bd5d61d776a91ac7bd82855b734cc9ce56a10fabee2acf5dee2ff262836c64",
+      "last_fetched": "2026-11-08T05:05:56.006062+00:00",
+      "title": "World Health Organization TB data — who • tidyr"
+    },
+    "reference-world_bank_pop": {
+      "url": "https://tidyr.tidyverse.org/reference/world_bank_pop.html",
+      "last_hash": "38deb53c68e178914c4f7cb0b84492ffead3cfcd974c662c6baab7b053051fba",
+      "last_fetched": "2026-11-08T05:05:57.553243+00:00",
+      "title": "Population data from the World Bank — world_bank_pop • tidyr"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:05:57.553243+00:00",
+  "version_history": []
+}

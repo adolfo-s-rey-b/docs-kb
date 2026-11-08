@@ -1,0 +1,208 @@
+Opens in a new window Opens an external website Opens an external website in a new window
+
+Close this dialog
+
+This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link: [Privacy Policy](https://lfprojects.org/policies/privacy-policy/)
+
+Manage Preferences
+
+Close Cookie Preferences
+
+[Skip to main content](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html#main-content)
+
+Back to top  
+
+ Ctrl+K
+
+v2.15.0 (stable)
+
+[v2.16.0 (unstable)](https://docs.pytorch.org/docs/main/generated/torch.nn.modules.activation.Softplus.html)
+[v2.15.0 (stable)](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html)
+[v2.14.0](https://docs.pytorch.org/docs/2.14/generated/torch.nn.modules.activation.Softplus.html)
+[v2.13.0](https://docs.pytorch.org/docs/2.13/generated/torch.nn.modules.activation.Softplus.html)
+[v2.12.0](https://docs.pytorch.org/docs/2.12/generated/torch.nn.modules.activation.Softplus.html)
+[v2.11.0](https://docs.pytorch.org/docs/2.11/generated/torch.nn.modules.activation.Softplus.html)
+[v2.10.0](https://docs.pytorch.org/docs/2.10/generated/torch.nn.modules.activation.Softplus.html)
+[v2.9.1](https://docs.pytorch.org/docs/2.9/generated/torch.nn.modules.activation.Softplus.html)
+[v2.8.0](https://docs.pytorch.org/docs/2.8/generated/torch.nn.modules.activation.Softplus.html)
+[v2.7.0](https://docs.pytorch.org/docs/2.7/generated/torch.nn.modules.activation.Softplus.html)
+[v2.6.0](https://docs.pytorch.org/docs/2.6/generated/torch.nn.modules.activation.Softplus.html)
+[v2.5.0](https://docs.pytorch.org/docs/2.5/generated/torch.nn.modules.activation.Softplus.html)
+[v2.4.0](https://docs.pytorch.org/docs/2.4/generated/torch.nn.modules.activation.Softplus.html)
+[v2.3.0](https://docs.pytorch.org/docs/2.3/generated/torch.nn.modules.activation.Softplus.html)
+[v2.2.0](https://docs.pytorch.org/docs/2.2/generated/torch.nn.modules.activation.Softplus.html)
+[v2.1.0](https://docs.pytorch.org/docs/2.1/generated/torch.nn.modules.activation.Softplus.html)
+[v2.0.0](https://docs.pytorch.org/docs/2.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.13](https://docs.pytorch.org/docs/1.13/generated/torch.nn.modules.activation.Softplus.html)
+[v1.12](https://docs.pytorch.org/docs/1.12/generated/torch.nn.modules.activation.Softplus.html)
+[v1.11](https://docs.pytorch.org/docs/1.11/generated/torch.nn.modules.activation.Softplus.html)
+[v1.10](https://docs.pytorch.org/docs/1.10/generated/torch.nn.modules.activation.Softplus.html)
+[v1.9.1](https://docs.pytorch.org/docs/1.9.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.9.0](https://docs.pytorch.org/docs/1.9.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.8.1](https://docs.pytorch.org/docs/1.8.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.8.0](https://docs.pytorch.org/docs/1.8.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.7.1](https://docs.pytorch.org/docs/1.7.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.7.0](https://docs.pytorch.org/docs/1.7.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.6.0](https://docs.pytorch.org/docs/1.6.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.5.1](https://docs.pytorch.org/docs/1.5.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.5.0](https://docs.pytorch.org/docs/1.5.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.4.0](https://docs.pytorch.org/docs/1.4.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.3.1](https://docs.pytorch.org/docs/1.3.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.3.0](https://docs.pytorch.org/docs/1.3.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.2.0](https://docs.pytorch.org/docs/1.2.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.1.0](https://docs.pytorch.org/docs/1.1.0/generated/torch.nn.modules.activation.Softplus.html)
+[v1.0.1](https://docs.pytorch.org/docs/1.0.1/generated/torch.nn.modules.activation.Softplus.html)
+[v1.0.0](https://docs.pytorch.org/docs/1.0.0/generated/torch.nn.modules.activation.Softplus.html)
+[v0.4.1](https://docs.pytorch.org/docs/0.4.1/generated/torch.nn.modules.activation.Softplus.html)
+[v0.4.0](https://docs.pytorch.org/docs/0.4.0/generated/torch.nn.modules.activation.Softplus.html)
+[v0.3.1](https://docs.pytorch.org/docs/0.3.1/generated/torch.nn.modules.activation.Softplus.html)
+[v0.3.0](https://docs.pytorch.org/docs/0.3.0/generated/torch.nn.modules.activation.Softplus.html)
+[v0.2.0](https://docs.pytorch.org/docs/0.2.0/generated/torch.nn.modules.activation.Softplus.html)
+[v0.1.12](https://docs.pytorch.org/docs/0.1.12/generated/torch.nn.modules.activation.Softplus.html)
+
+[Go to pytorch.org](https://pytorch.org/)
+
+ Ctrl+K
+
+|     |     |
+| --- | --- |
+|     | [×](javascript:void(0) "Clear search box") |
+
+search
+
+Custom Search
+
+|     |     |
+| --- | --- |
+|     | Sort by<br><br>Relevance<br><br>Date |
+
+*   [X](https://x.com/PyTorch)
+    
+*   [GitHub](https://github.com/pytorch/pytorch)
+    
+*   [PyTorch Forum](https://discuss.pytorch.org/)
+    
+*   [PyPi](https://pypi.org/project/torch/)
+    
+
+Rate this Page
+
+★ ★ ★ ★ ★
+
+Softplus[#](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html#softplus "Link to this heading")
+
+====================================================================================================================================
+
+_class_ torch.nn.modules.activation.Softplus(_beta\=1.0_, _threshold\=20.0_)[\[source\]](https://github.com/pytorch/pytorch/blob/v2.15.0/torch/nn/modules/activation.py#L959)
+[#](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html#torch.nn.modules.activation.Softplus "Link to this definition")
+
+Applies the Softplus function element-wise.
+
+Softplus(x)\=1β∗log⁡(1+exp⁡(β∗x))\\text{Softplus}(x) = \\frac{1}{\\beta} \* \\log(1 + \\exp(\\beta \* x)) Softplus(x)\=β1​∗log(1+exp(β∗x))
+
+SoftPlus is a smooth approximation to the ReLU function and can be used to constrain the output of a machine to always be positive.
+
+For numerical stability the implementation reverts to the linear function when input×β\>thresholdinput \\times \\beta > thresholdinput×β\>threshold.
+
+Parameters:
+
+*   **beta** ([_float_](https://docs.python.org/3/builtins/functions.html#float "(in Python v3.15)")
+    ) – the β\\betaβ value for the Softplus formulation. Default: 1
+    
+*   **threshold** ([_float_](https://docs.python.org/3/builtins/functions.html#float "(in Python v3.15)")
+    ) – values above this revert to a linear function. Default: 20
+    
+
+Shape:
+
+*   Input: (∗)(\*)(∗), where ∗\*∗ means any number of dimensions.
+    
+*   Output: (∗)(\*)(∗), same shape as the input.
+    
+
+![../_images/Softplus.png](https://docs.pytorch.org/docs/2.15/_images/Softplus.png)
+
+Examples:
+
+\>>> m \= nn.Softplus()
+\>>> input \= torch.randn(2)
+\>>> output \= m(input)
+
+Copy to clipboard
+
+extra\_repr()[\[source\]](https://github.com/pytorch/pytorch/blob/v2.15.0/torch/nn/modules/activation.py#L1003)
+[#](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html#torch.nn.modules.activation.Softplus.extra_repr "Link to this definition")
+
+Return the extra representation of the module.
+
+Return type:
+
+[str](https://docs.python.org/3/builtins/stdtypes.html#str "(in Python v3.15)")
+
+forward(_input_)[\[source\]](https://github.com/pytorch/pytorch/blob/v2.15.0/torch/nn/modules/activation.py#L997)
+[#](https://docs.pytorch.org/docs/2.15/generated/torch.nn.modules.activation.Softplus.html#torch.nn.modules.activation.Softplus.forward "Link to this definition")
+
+Run forward pass.
+
+Return type:
+
+[_Tensor_](https://docs.pytorch.org/docs/2.15/tensors.html#torch.Tensor "torch.Tensor")
+
+On this page
+
+[Show Source](https://docs.pytorch.org/docs/2.15/_sources/generated/torch.nn.modules.activation.Softplus.rst.txt)
+
+PyTorch Libraries
+
+*   [ExecuTorch](https://docs.pytorch.org/executorch)
+    
+*   [Helion](https://docs.pytorch.org/helion)
+    
+*   [torchao](https://docs.pytorch.org/ao)
+    
+*   [kineto](https://github.com/pytorch/kineto)
+    
+*   [torchtitan](https://github.com/pytorch/torchtitan)
+    
+*   [TorchRL](https://docs.pytorch.org/rl)
+    
+*   [torchvision](https://docs.pytorch.org/vision)
+    
+*   [torchaudio](https://docs.pytorch.org/audio)
+    
+*   [tensordict](https://docs.pytorch.org/tensordict)
+    
+*   [PyTorch on XLA Devices](https://docs.pytorch.org/xla)
+    
+
+Docs
+----
+
+Access comprehensive developer documentation for PyTorch
+
+[View Docs](https://docs.pytorch.org/docs/stable/index.html)
+
+Tutorials
+---------
+
+Get in-depth tutorials for beginners and advanced developers
+
+[View Tutorials](https://docs.pytorch.org/tutorials)
+
+Resources
+---------
+
+Find development resources and get your questions answered
+
+[View Resources](https://pytorch.org/resources)
+
+To analyze traffic and optimize your experience, we serve cookies on this site. By clicking or navigating, you agree to allow our usage of cookies. As the current maintainers of this site, Facebook’s Cookies Policy applies. Learn more, including about available controls: [Cookies Policy](https://opensource.fb.com/legal/cookie-policy)
+.
+
+|     |     |
+| --- | --- |
+|     |     |
+
+|     |     |
+| --- | --- |
+|     |     |

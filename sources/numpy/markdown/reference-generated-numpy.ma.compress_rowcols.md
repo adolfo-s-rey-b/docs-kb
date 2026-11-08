@@ -1,0 +1,104 @@
+[Skip to main content](https://numpy.org/doc/stable/reference/generated/numpy.ma.compress_rowcols.html#main-content)
+
+Back to top Ctrl+K
+
+Light Dark System Settings
+
+2.5 (stable)
+
+[dev](https://numpy.org/devdocs/reference/generated/numpy.ma.compress_rowcols.html)
+[2.5 (stable)](https://numpy.org/doc/stable/reference/generated/numpy.ma.compress_rowcols.html)
+[2.4](https://numpy.org/doc/2.4/reference/generated/numpy.ma.compress_rowcols.html)
+[2.3](https://numpy.org/doc/2.3/reference/generated/numpy.ma.compress_rowcols.html)
+[2.2](https://numpy.org/doc/2.2/reference/generated/numpy.ma.compress_rowcols.html)
+[2.1](https://numpy.org/doc/2.1/reference/generated/numpy.ma.compress_rowcols.html)
+[2.0](https://numpy.org/doc/2.0/reference/generated/numpy.ma.compress_rowcols.html)
+[1.26](https://numpy.org/doc/1.26/reference/generated/numpy.ma.compress_rowcols.html)
+[1.25](https://numpy.org/doc/1.25/reference/generated/numpy.ma.compress_rowcols.html)
+[1.24](https://numpy.org/doc/1.24/reference/generated/numpy.ma.compress_rowcols.html)
+[1.23](https://numpy.org/doc/1.23/reference/generated/numpy.ma.compress_rowcols.html)
+[1.22](https://numpy.org/doc/1.22/reference/generated/numpy.ma.compress_rowcols.html)
+[1.21](https://numpy.org/doc/1.21/reference/generated/numpy.ma.compress_rowcols.html)
+[1.20](https://numpy.org/doc/1.20/reference/generated/numpy.ma.compress_rowcols.html)
+[1.19](https://numpy.org/doc/1.19/reference/generated/numpy.ma.compress_rowcols.html)
+[1.18](https://numpy.org/doc/1.18/reference/generated/numpy.ma.compress_rowcols.html)
+[1.17](https://numpy.org/doc/1.17/reference/generated/numpy.ma.compress_rowcols.html)
+[1.16](https://numpy.org/doc/1.16/reference/generated/numpy.ma.compress_rowcols.html)
+[1.15](https://numpy.org/doc/1.15/reference/generated/numpy.ma.compress_rowcols.html)
+[1.14](https://numpy.org/doc/1.14/reference/generated/numpy.ma.compress_rowcols.html)
+[1.13](https://numpy.org/doc/1.13/reference/generated/numpy.ma.compress_rowcols.html)
+
+*   [GitHub](https://github.com/numpy/numpy)
+    
+
+Collapse Sidebar Expand Sidebar
+
+numpy.ma.compress\_rowcols[#](https://numpy.org/doc/stable/reference/generated/numpy.ma.compress_rowcols.html#numpy-ma-compress-rowcols "Link to this heading")
+
+================================================================================================================================================================
+
+ma.compress\_rowcols(_x_, _axis\=None_)[\[source\]](https://github.com/numpy/numpy/blob/v2.5.0/numpy/ma/extras.py#L899-L952)
+[#](https://numpy.org/doc/stable/reference/generated/numpy.ma.compress_rowcols.html#numpy.ma.compress_rowcols "Link to this definition")
+
+Suppress the rows and/or columns of a 2-D array that contain masked values.
+
+The suppression behavior is selected with the _axis_ parameter.
+
+*   If axis is None, both rows and columns are suppressed.
+    
+*   If axis is 0, only rows are suppressed.
+    
+*   If axis is 1 or -1, only columns are suppressed.
+    
+
+Parameters:
+
+**x**array\_like, MaskedArray
+
+The array to operate on. If not a MaskedArray instance (or if no array elements are masked), _x_ is interpreted as a MaskedArray with _mask_ set to [`nomask`](https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.nomask "numpy.ma.nomask")
+. Must be a 2D array.
+
+**axis**int, optional
+
+Axis along which to perform the operation. Default is None.
+
+Returns:
+
+**compressed\_array**ndarray
+
+The compressed array.
+
+Examples
+
+Try it in your browser!
+
+\>>> import numpy as np
+\>>> x \= np.ma.array(np.arange(9).reshape(3, 3), mask\=\[\[1, 0, 0\],\
+...                                                   \[1, 0, 0\],\
+...                                                   \[0, 0, 0\]\])
+\>>> x
+masked\_array(
+  data=\[\[--, 1, 2\],\
+        \[--, 4, 5\],\
+        \[6, 7, 8\]\],
+  mask=\[\[ True, False, False\],\
+        \[ True, False, False\],\
+        \[False, False, False\]\],
+  fill\_value=999999)
+
+Copy to clipboard
+
+\>>> np.ma.compress\_rowcols(x)
+array(\[\[7, 8\]\])
+\>>> np.ma.compress\_rowcols(x, 0)
+array(\[\[6, 7, 8\]\])
+\>>> np.ma.compress\_rowcols(x, 1)
+array(\[\[1, 2\],\
+       \[4, 5\],\
+       \[7, 8\]\])
+
+Copy to clipboard
+
+Go BackOpen In Tab
+
+On this page

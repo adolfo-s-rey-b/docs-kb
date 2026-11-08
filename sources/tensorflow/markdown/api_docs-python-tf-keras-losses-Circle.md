@@ -1,0 +1,152 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#args)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#methods)
+    *   [call](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#call)
+        
+    *   [from\_config](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#from_config)
+        
+    *   [get\_config](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#get_config)
+        
+    *   [\_\_call\_\_](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#__call__)
+        
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.keras.losses.Circle Stay organized with collections Save and categorize content based on your preferences.
+=============================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#args)
+    
+*   [Attributes](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#attributes)
+    
+*   [Methods](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#methods)
+    *   [call](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#call)
+        
+    *   [from\_config](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#from_config)
+        
+    *   [get\_config](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#get_config)
+        
+    *   [\_\_call\_\_](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Circle#__call__)
+        
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/losses/losses.py#L1444-L1533)
+
+Computes Circle Loss between integer labels and L2-normalized embeddings.
+
+Inherits From: [`Loss`](https://www.tensorflow.org/api_docs/python/tf/keras/Loss)
+
+tf.keras.losses.Circle(
+        gamma=80.0,
+        margin=0.4,
+        remove_diagonal=True,
+        reduction='sum_over_batch_size',
+        name='circle',
+        dtype=None
+    )
+
+This is a metric learning loss designed to minimize within-class distance and maximize between-class distance in a flexible manner by dynamically adjusting the penalty strength based on optimization status of each similarity score.
+
+To use Circle Loss effectively, the model should output embeddings without an activation function (such as a `Dense` layer with `activation=None`) followed by UnitNormalization layer to ensure unit-norm embeddings.
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `gamma` | Scaling factor that determines the largest scale of each similarity score. Defaults to `80`. |
+| `margin` | The relaxation factor, below this distance, negatives are up weighted and positives are down weighted. Similarly, above this distance negatives are down weighted and positive are up weighted. Defaults to `0.4`. |
+| `remove_diagonal` | Boolean, whether to remove self-similarities from the positive mask. Defaults to `True`. |
+| `reduction` | Type of reduction to apply to the loss. In almost all cases this should be `"sum_over_batch_size"`. Supported options are `"sum"`, `"sum_over_batch_size"`, `"mean"`, `"mean_with_sample_weight"` or `None`. `"sum"` sums the loss, `"sum_over_batch_size"` and `"mean"` sum the loss and divide by the sample size, and `"mean_with_sample_weight"` sums the loss and divides by the sum of the sample weights. `"none"` and `None` perform no aggregation. Defaults to `"sum_over_batch_size"`. |
+| `name` | Optional name for the loss instance. |
+| `dtype` | The dtype of the loss's computations. Defaults to `None`, which means using [`keras.backend.floatx()`](https://www.tensorflow.org/api_docs/python/tf/keras/backend/floatx)<br>. [`keras.backend.floatx()`](https://www.tensorflow.org/api_docs/python/tf/keras/backend/floatx)<br> is a `"float32"` unless set to different value (via [`keras.backend.set_floatx()`](https://www.tensorflow.org/api_docs/python/tf/keras/backend/set_floatx)<br>). If a [`keras.DTypePolicy`](https://www.tensorflow.org/api_docs/python/tf/keras/DTypePolicy)<br> is provided, then the `compute_dtype` will be utilized. |
+
+#### Examples:
+
+Usage with the `compile()` API:
+
+model = models.Sequential([\
+        keras.layers.Input(shape=(224, 224, 3)),\
+        keras.layers.Conv2D(16, (3, 3), activation='relu'),\
+        keras.layers.Flatten(),\
+        keras.layers.Dense(64, activation=None),  # No activation\
+        keras.layers.UnitNormalization()  # L2 normalization\
+    ])
+    
+    model.compile(optimizer="adam", loss=keras.losses.Circle())
+
+#### Reference:
+
+*   [Yifan Sun et al., 2020](https://arxiv.org/abs/2002.10857)
+    
+
+|     |     |
+| --- | --- |
+| Attributes<br>---------- |     |
+| `dtype` |     |
+
+Methods
+-------
+
+### `call`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/losses/losses.py#L28-L34)
+
+call(
+        y_true, y_pred
+    )
+
+### `from_config`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/losses/losses.py#L42-L46)
+
+@classmethod
+
+### `get_config`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/losses/losses.py#L1524-L1533)
+
+get_config()
+
+### `__call__`
+
+[View source](https://github.com/keras-team/keras/tree/v3.15.1/keras/src/losses/loss.py#L56-L85)
+
+__call__(
+        y_true, y_pred, sample_weight=None
+    )
+
+Call self as a function.
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

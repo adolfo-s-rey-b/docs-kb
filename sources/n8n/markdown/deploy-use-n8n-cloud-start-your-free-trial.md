@@ -1,0 +1,142 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial.md)
+.
+
+[n8n Cloud](https://docs.n8n.io/deploy/use-n8n-cloud)
+ is the managed way to run n8n: n8n hosts your instance, so you don't set up or maintain any infrastructure. The best way to start is with a free trial, then move to a paid plan that fits your needs.
+
+Start with a free trial[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#start-with-a-free-trial)
+
+------------------------------------------------------------------------------------------------------------------
+
+When you create a new n8n Cloud trial, you have 14 days to try all the features of the [Pro plan](https://n8n.io/pricing/)
+, including:
+
+*   Global variables
+    
+*   Insights dashboard
+    
+*   Execution search
+    
+*   Five days of workflow history to roll back
+    
+
+The trial gives you Pro plan features with a limit of 1000 executions and the same computing power as the [Starter plan](https://n8n.io/pricing/)
+.
+
+Compare n8n Cloud plans[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#compare-n8n-cloud-plans)
+
+------------------------------------------------------------------------------------------------------------------
+
+After your trial, you can move to a paid plan. Each plan suits a different user and includes different features, usage limits, and computing power.
+
+The following plans are available for n8n Cloud users:
+
+Plan
+
+Designed for
+
+**Free trial**
+
+Trying n8n Cloud with Pro features for 14 days
+
+**Starter**
+
+Individuals and small projects getting started
+
+**Pro**
+
+Power users and small teams that need higher limits, admin accounts, and insights
+
+**Enterprise**
+
+Organizations that need advanced security, scaling, and dedicated support
+
+**Always check current pricing and conditions**
+
+Exact features, usage limits, and prices for each plan can change. For the current details, see the [pricing page](https://n8n.io/pricing/)
+. This page explains what the plans are, not the specifics of what each one includes.
+
+Upgrade to a paid plan[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#upgrade-to-a-paid-account)
+
+-------------------------------------------------------------------------------------------------------------------
+
+You can upgrade to a paid plan at any time during your trial. To upgrade from the n8n Cloud console:
+
+1.  Open the [Cloud console](https://docs.n8n.io/deploy/use-n8n-cloud/use-the-cloud-console)
+    .
+    
+2.  Select **Upgrade plan** in the trial banner at the top of the page. You can also go to **Billing** and select **Upgrade plan**. n8n opens the **Choose a plan** page.
+    
+3.  Choose **Monthly** or **Annual** billing.
+    
+4.  Select **Select plan** on the plan you want.
+    
+5.  Enter your payment details and complete the checkout.
+    
+
+In the n8n editor, the upgrade button in the trial banner at the top of the page opens the same **Choose a plan** page in the Cloud console.
+
+When your trial ends[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#trial-expiration)
+
+--------------------------------------------------------------------------------------------------------
+
+If you don't upgrade by the end of your trial, the trial automatically expires and n8n deletes your instance.
+
+**Download your workflows**
+
+You can [download your workflows](https://docs.n8n.io/deploy/use-n8n-cloud/download-workflows)
+ to reuse them later. You have 90 days to download your workflows after your free trial ends.
+
+### Cancelling your trial[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#cancelling-your-trial)
+
+You don't need to cancel your trial. Your trial automatically expires at the end of the trial period and no charges occur. n8n deletes all your data soon after.
+
+Enterprise trial[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#enterprise-trial)
+
+----------------------------------------------------------------------------------------------------
+
+To test the [Enterprise plan](https://n8n.io/pricing/)
+, contact the sales team. The Enterprise plan includes features such as:
+
+*   SSO (SAML and LDAP)
+    
+*   Environments
+    
+*   External secrets
+    
+*   Log streaming
+    
+*   Version control using Git
+    
+
+Select the **Contact** button on the [n8n website](https://n8n.io/pricing/)
+.
+
+Related resources[](https://docs.n8n.io/deploy/use-n8n-cloud/start-your-free-trial#related-resources)
+
+------------------------------------------------------------------------------------------------------
+
+*   [Use n8n Cloud](https://docs.n8n.io/deploy/use-n8n-cloud)
+    
+*   [Use the Cloud console](https://docs.n8n.io/deploy/use-n8n-cloud/use-the-cloud-console)
+    
+*   [Update your version](https://docs.n8n.io/deploy/use-n8n-cloud/update-your-version)
+    
+*   [Configure Cloud](https://docs.n8n.io/deploy/use-n8n-cloud/configure-cloud)
+    
+*   [Gateway credits](https://docs.n8n.io/deploy/use-n8n-cloud/gateway-credits)
+    
+*   [Assistant credits](https://docs.n8n.io/deploy/use-n8n-cloud/assistant-credits)
+    
+*   [Understand concurrency](https://docs.n8n.io/deploy/use-n8n-cloud/understand-concurrency)
+    
+*   [Download workflows](https://docs.n8n.io/deploy/use-n8n-cloud/download-workflows)
+    
+
+[PreviousUse n8n Cloud](https://docs.n8n.io/deploy/use-n8n-cloud)
+[NextUse the Cloud console](https://docs.n8n.io/deploy/use-n8n-cloud/use-the-cloud-console)
+
+Last updated 10 days ago
+
+Was this helpful?

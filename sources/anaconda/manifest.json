@@ -1,0 +1,13 @@
+{
+  "pages": {
+    "index": {
+      "url": "https://docs.anaconda.com/",
+      "last_hash": "73b8e8b80bc097f73904b82aa7bc02edb13f7f12d16c885f2cdbe8f19df58a44",
+      "last_fetched": "2026-11-08T05:31:29.608197+00:00",
+      "title": "Anaconda Documentation - Anaconda"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:31:29.608197+00:00",
+  "version_history": []
+}

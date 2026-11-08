@@ -1,0 +1,332 @@
+[Skip to main content](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#main-content)
+
+Back to top Ctrl+K
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/scikit-learn/scikit-learn)
+    
+
+1.9.1 (stable)
+
+[1.10.dev0 (dev)](https://scikit-learn.org/dev/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.9.1 (stable)](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.8.0](https://scikit-learn.org/1.8/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.7.2](https://scikit-learn.org/1.7/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.6.1](https://scikit-learn.org/1.6/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.5.2](https://scikit-learn.org/1.5/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+[1.4.2](https://scikit-learn.org/1.4/auto_examples/preprocessing/plot_target_encoder_cross_val.html)
+
+Collapse Sidebar Expand Sidebar
+
+Note
+
+[Go to the end](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#sphx-glr-download-auto-examples-preprocessing-plot-target-encoder-cross-val-py)
+ to download the full example code or to run this example in your browser via JupyterLite or Binder.
+
+Target Encoder’s Internal Cross fitting[#](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#target-encoder-s-internal-cross-fitting "Link to this heading")
+
+==========================================================================================================================================================================================================
+
+The [`TargetEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+ replaces each category of a categorical feature with the shrunk mean of the target variable for that category. This method is useful in cases where there is a strong relationship between the categorical feature and the target. To prevent overfitting, [`TargetEncoder.fit_transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit_transform "sklearn.preprocessing.TargetEncoder.fit_transform")
+ uses an internal [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ scheme to encode the training data to be used by a downstream model. This scheme involves splitting the data into _k_ folds and encoding each fold using the encodings learnt using the _other k-1_ folds. In this example, we demonstrate the importance of the cross fitting procedure to prevent overfitting.
+
+\# Authors: The scikit-learn developers
+\# SPDX-License-Identifier: BSD-3-Clause
+
+Copy to clipboard
+
+Create Synthetic Dataset[#](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#create-synthetic-dataset "Link to this heading")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For this example, we build a dataset with three categorical features:
+
+*   an informative feature with medium cardinality (“informative”)
+    
+*   an uninformative feature with medium cardinality (“shuffled”)
+    
+*   an uninformative feature with high cardinality (“near\_unique”)
+    
+
+First, we generate the informative feature:
+
+import numpy as np
+
+from sklearn.preprocessing import [KBinsDiscretizer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.KBinsDiscretizer.html#sklearn.preprocessing.KBinsDiscretizer "sklearn.preprocessing.KBinsDiscretizer")
+
+n\_samples \= 50\_000
+
+rng \= [np.random.RandomState](https://numpy.org/doc/stable/reference/random/legacy.html#numpy.random.RandomState "numpy.random.RandomState")
+(42)
+y \= rng.randn(n\_samples)
+noise \= 0.5 \* rng.randn(n\_samples)
+n\_categories \= 100
+
+kbins \= [KBinsDiscretizer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.KBinsDiscretizer.html#sklearn.preprocessing.KBinsDiscretizer "sklearn.preprocessing.KBinsDiscretizer")
+(
+    n\_bins\=n\_categories,
+    encode\="ordinal",
+    strategy\="uniform",
+    random\_state\=rng,
+    subsample\=None,
+)
+X\_informative \= kbins.fit\_transform((y + noise).reshape(\-1, 1))
+
+\# Remove the linear relationship between y and the bin index by permuting the
+\# values of X\_informative:
+permuted\_categories \= rng.permutation(n\_categories)
+X\_informative \= permuted\_categories\[X\_informative.astype([np.int32](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.int32 "numpy.int32")\
+)\]
+
+Copy to clipboard
+
+The uninformative feature with medium cardinality is generated by permuting the informative feature and removing the relationship with the target:
+
+X\_shuffled \= rng.permutation(X\_informative)
+
+Copy to clipboard
+
+The uninformative feature with high cardinality is generated so that it is independent of the target variable. We will show that target encoding without [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ will cause catastrophic overfitting for the downstream regressor. These high cardinality features are basically unique identifiers for samples which should generally be removed from machine learning datasets. In this example, we generate them to show how [`TargetEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+’s default [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ behavior mitigates the overfitting issue automatically.
+
+X\_near\_unique\_categories \= rng.choice(
+    int(0.9 \* n\_samples), size\=n\_samples, replace\=True
+).reshape(\-1, 1)
+
+Copy to clipboard
+
+Finally, we assemble the dataset and perform a train test split:
+
+import pandas as pd
+
+from sklearn.model\_selection import [train\_test\_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split "sklearn.model_selection.train_test_split")
+
+X \= [pd.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame")
+(
+    [np.concatenate](https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html#numpy.concatenate "numpy.concatenate")
+(
+        \[X\_informative, X\_shuffled, X\_near\_unique\_categories\],
+        axis\=1,
+    ),
+    columns\=\["informative", "shuffled", "near\_unique"\],
+)
+X\_train, X\_test, y\_train, y\_test \= [train\_test\_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split "sklearn.model_selection.train_test_split")
+(X, y, random\_state\=0)
+
+Copy to clipboard
+
+Training a Ridge Regressor[#](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#training-a-ridge-regressor "Link to this heading")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+In this section, we train a ridge regressor on the dataset with and without encoding and explore the influence of target encoder with and without the internal [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+. First, we see the Ridge model trained on the raw features will have low performance. This is because we permuted the order of the informative feature meaning `X_informative` is not informative when raw:
+
+import sklearn
+from sklearn.linear\_model import [Ridge](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge "sklearn.linear_model.Ridge")
+
+\# Configure transformers to always output DataFrames
+[sklearn.set\_config](https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config "sklearn.set_config")
+(transform\_output\="pandas")
+
+ridge \= [Ridge](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge "sklearn.linear_model.Ridge")
+(alpha\=1e-6, solver\="lsqr", fit\_intercept\=False)
+
+raw\_model \= ridge.fit(X\_train, y\_train)
+print("Raw Model score on training set: ", raw\_model.score(X\_train, y\_train))
+print("Raw Model score on test set: ", raw\_model.score(X\_test, y\_test))
+
+Copy to clipboard
+
+Raw Model score on training set:  0.0049896314219659565
+Raw Model score on test set:  0.004577621581464908
+
+Copy to clipboard
+
+Next, we create a pipeline with the target encoder and ridge model. The pipeline uses [`TargetEncoder.fit_transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit_transform "sklearn.preprocessing.TargetEncoder.fit_transform")
+ which uses [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+. We see that the model fits the data well and generalizes to the test set:
+
+from sklearn.model\_selection import [KFold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold "sklearn.model_selection.KFold")
+from sklearn.pipeline import [make\_pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline "sklearn.pipeline.make_pipeline")
+from sklearn.preprocessing import [TargetEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+
+model\_with\_cf \= [make\_pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline "sklearn.pipeline.make_pipeline")
+(
+    [TargetEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+(cv\=[KFold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold "sklearn.model_selection.KFold")
+(shuffle\=True, random\_state\=0)), ridge
+)
+model\_with\_cf.fit(X\_train, y\_train)
+print("Model with CF on train set: ", model\_with\_cf.score(X\_train, y\_train))
+print("Model with CF on test set: ", model\_with\_cf.score(X\_test, y\_test))
+
+Copy to clipboard
+
+Model with CF on train set:  0.8000184677460299
+Model with CF on test set:  0.7927845601690924
+
+Copy to clipboard
+
+The coefficients of the linear model shows that most of the weight is on the feature at column index 0, which is the informative feature
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+[plt.rcParams](https://matplotlib.org/stable/api/matplotlib_configuration_api.html#matplotlib.rcParams "matplotlib.rcParams")
+\["figure.constrained\_layout.use"\] \= True
+
+coefs\_cf \= [pd.Series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series "pandas.Series")
+(
+    model\_with\_cf\[\-1\].coef\_, index\=model\_with\_cf\[\-1\].feature\_names\_in\_
+).sort\_values()
+ax \= coefs\_cf.plot(kind\="barh")
+\_ \= ax.set(
+    title\="Target encoded with cross fitting",
+    xlabel\="Ridge coefficient",
+    ylabel\="Feature",
+)
+
+Copy to clipboard
+
+![Target encoded with cross fitting](https://scikit-learn.org/stable/_images/sphx_glr_plot_target_encoder_cross_val_001.png)
+
+While [`TargetEncoder.fit_transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit_transform "sklearn.preprocessing.TargetEncoder.fit_transform")
+ uses an internal [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ scheme to learn encodings for the training set, [`TargetEncoder.fit`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit "sklearn.preprocessing.TargetEncoder.fit")
+ followed by [`TargetEncoder.transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.transform "sklearn.preprocessing.TargetEncoder.transform")
+ does not. It uses the complete training set to learn encodings and to transform the categorical features. Thus, we can use [`TargetEncoder.fit`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit "sklearn.preprocessing.TargetEncoder.fit")
+ followed by [`TargetEncoder.transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.transform "sklearn.preprocessing.TargetEncoder.transform")
+ to disable the [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+. This encoding is then passed to the ridge model.
+
+target\_encoder \= [TargetEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+(random\_state\=0)
+target\_encoder.fit(X\_train, y\_train)
+X\_train\_no\_cf\_encoding \= target\_encoder.transform(X\_train)
+X\_test\_no\_cf\_encoding \= target\_encoder.transform(X\_test)
+
+model\_no\_cf \= ridge.fit(X\_train\_no\_cf\_encoding, y\_train)
+
+Copy to clipboard
+
+We evaluate the model that did not use [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ when encoding and see that it overfits:
+
+print(
+    "Model without CF on training set: ",
+    model\_no\_cf.score(X\_train\_no\_cf\_encoding, y\_train),
+)
+print(
+    "Model without CF on test set: ",
+    model\_no\_cf.score(
+        X\_test\_no\_cf\_encoding,
+        y\_test,
+    ),
+)
+
+Copy to clipboard
+
+Model without CF on training set:  0.858486250088675
+Model without CF on test set:  0.6338211367110548
+
+Copy to clipboard
+
+The ridge model overfits because it assigns much more weight to the uninformative extremely high cardinality (“near\_unique”) and medium cardinality (“shuffled”) features than when the model used [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ to encode the features.
+
+coefs\_no\_cf \= [pd.Series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series "pandas.Series")
+(
+    model\_no\_cf.coef\_, index\=model\_no\_cf.feature\_names\_in\_
+).sort\_values()
+ax \= coefs\_no\_cf.plot(kind\="barh")
+\_ \= ax.set(
+    title\="Target encoded without cross fitting",
+    xlabel\="Ridge coefficient",
+    ylabel\="Feature",
+)
+
+Copy to clipboard
+
+![Target encoded without cross fitting](https://scikit-learn.org/stable/_images/sphx_glr_plot_target_encoder_cross_val_002.png)
+
+Conclusion[#](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder_cross_val.html#conclusion "Link to this heading")
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+This example demonstrates the importance of [`TargetEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+’s internal [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+. It is important to use [`TargetEncoder.fit_transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit_transform "sklearn.preprocessing.TargetEncoder.fit_transform")
+ to encode training data before passing it to a machine learning model. When a [`TargetEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder "sklearn.preprocessing.TargetEncoder")
+ is a part of a [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline "sklearn.pipeline.Pipeline")
+ and the pipeline is fitted, the pipeline will correctly call [`TargetEncoder.fit_transform`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder.fit_transform "sklearn.preprocessing.TargetEncoder.fit_transform")
+ and use [cross fitting](https://scikit-learn.org/stable/glossary.html#term-0)
+ when encoding the training data.
+
+**Total running time of the script:** (0 minutes 0.315 seconds)
+
+[![Launch binder](https://scikit-learn.org/stable/_images/binder_badge_logo28.svg)](https://mybinder.org/v2/gh/scikit-learn/scikit-learn/1.9.X?urlpath=lab/tree/notebooks/auto_examples/preprocessing/plot_target_encoder_cross_val.ipynb)
+
+[![Launch JupyterLite](https://scikit-learn.org/stable/_images/jupyterlite_badge_logo28.svg)](https://scikit-learn.org/stable/lite/lab/index.html?path=auto_examples/preprocessing/plot_target_encoder_cross_val.ipynb)
+
+[`Download Jupyter notebook: plot_target_encoder_cross_val.ipynb`](https://scikit-learn.org/stable/_downloads/c3f95dc25241c64632f9c3378fd4e89b/plot_target_encoder_cross_val.ipynb)
+
+[`Download Python source code: plot_target_encoder_cross_val.py`](https://scikit-learn.org/stable/_downloads/4f6558a73e0c79834afc005bac34dc13/plot_target_encoder_cross_val.py)
+
+[`Download zipped: plot_target_encoder_cross_val.zip`](https://scikit-learn.org/stable/_downloads/b5dd907aa4383b0fd8d5380f1d1a07ac/plot_target_encoder_cross_val.zip)
+
+Related examples
+
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_target_encoder_thumb.png)
+
+[Comparing Target Encoder with Other Encoders](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder.html)
+
+Comparing Target Encoder with Other Encoders
+
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_gradient_boosting_categorical_thumb.png)
+
+[Categorical Feature Support in Gradient Boosting](https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_categorical.html)
+
+Categorical Feature Support in Gradient Boosting
+
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_huber_vs_ridge_thumb.png)
+
+[HuberRegressor vs Ridge on dataset with strong outliers](https://scikit-learn.org/stable/auto_examples/linear_model/plot_huber_vs_ridge.html)
+
+HuberRegressor vs Ridge on dataset with strong outliers
+
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_ols_ridge_thumb.png)
+
+[Ordinary Least Squares and Ridge Regression](https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols_ridge.html)
+
+Ordinary Least Squares and Ridge Regression
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)
+
+On this page
+
+[Download source code](https://scikit-learn.org/stable/_downloads/4f6558a73e0c79834afc005bac34dc13/plot_target_encoder_cross_val.py)
+
+[Download Jupyter notebook](https://scikit-learn.org/stable/_downloads/c3f95dc25241c64632f9c3378fd4e89b/plot_target_encoder_cross_val.ipynb)
+
+[Download zipped](https://scikit-learn.org/stable/_downloads/b5dd907aa4383b0fd8d5380f1d1a07ac/plot_target_encoder_cross_val.zip)
+
+[![Launch JupyterLite](https://scikit-learn.org/stable/_images/jupyterlite_badge_logo28.svg)](https://scikit-learn.org/stable/lite/lab/index.html?path=auto_examples/preprocessing/plot_target_encoder_cross_val.ipynb)
+
+[![Launch binder](https://scikit-learn.org/stable/_images/binder_badge_logo28.svg)](https://mybinder.org/v2/gh/scikit-learn/scikit-learn/1.9.X?urlpath=lab/tree/notebooks/auto_examples/preprocessing/plot_target_encoder_cross_val.ipynb)
+
+* * *
+
+scikit-learn is [financially supported](https://scikit-learn.org/stable/institutional_support.html#funding)
+ by Probabl and other institutions.
+
+[![](https://scikit-learn.org/stable/_static/probabl.png "Probabl")\
+\
+Enterprise-grade solutions and services](https://probabl.ai/lp/scikit-learn)

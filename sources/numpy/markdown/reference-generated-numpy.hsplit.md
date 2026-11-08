@@ -1,0 +1,115 @@
+[Skip to main content](https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html#main-content)
+
+Back to top Ctrl+K
+
+Light Dark System Settings
+
+2.5 (stable)
+
+[dev](https://numpy.org/devdocs/reference/generated/numpy.hsplit.html)
+[2.5 (stable)](https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html)
+[2.4](https://numpy.org/doc/2.4/reference/generated/numpy.hsplit.html)
+[2.3](https://numpy.org/doc/2.3/reference/generated/numpy.hsplit.html)
+[2.2](https://numpy.org/doc/2.2/reference/generated/numpy.hsplit.html)
+[2.1](https://numpy.org/doc/2.1/reference/generated/numpy.hsplit.html)
+[2.0](https://numpy.org/doc/2.0/reference/generated/numpy.hsplit.html)
+[1.26](https://numpy.org/doc/1.26/reference/generated/numpy.hsplit.html)
+[1.25](https://numpy.org/doc/1.25/reference/generated/numpy.hsplit.html)
+[1.24](https://numpy.org/doc/1.24/reference/generated/numpy.hsplit.html)
+[1.23](https://numpy.org/doc/1.23/reference/generated/numpy.hsplit.html)
+[1.22](https://numpy.org/doc/1.22/reference/generated/numpy.hsplit.html)
+[1.21](https://numpy.org/doc/1.21/reference/generated/numpy.hsplit.html)
+[1.20](https://numpy.org/doc/1.20/reference/generated/numpy.hsplit.html)
+[1.19](https://numpy.org/doc/1.19/reference/generated/numpy.hsplit.html)
+[1.18](https://numpy.org/doc/1.18/reference/generated/numpy.hsplit.html)
+[1.17](https://numpy.org/doc/1.17/reference/generated/numpy.hsplit.html)
+[1.16](https://numpy.org/doc/1.16/reference/generated/numpy.hsplit.html)
+[1.15](https://numpy.org/doc/1.15/reference/generated/numpy.hsplit.html)
+[1.14](https://numpy.org/doc/1.14/reference/generated/numpy.hsplit.html)
+[1.13](https://numpy.org/doc/1.13/reference/generated/numpy.hsplit.html)
+
+*   [GitHub](https://github.com/numpy/numpy)
+    
+
+Collapse Sidebar Expand Sidebar
+
+numpy.hsplit[#](https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html#numpy-hsplit "Link to this heading")
+
+========================================================================================================================
+
+numpy.hsplit(_ary_, _indices\_or\_sections_)[\[source\]](https://github.com/numpy/numpy/blob/v2.5.0/numpy/lib/_shape_base_impl.py#L863-L931)
+[#](https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html#numpy.hsplit "Link to this definition")
+
+Split an array into multiple sub-arrays horizontally (column-wise).
+
+Please refer to the [`split`](https://numpy.org/doc/stable/reference/generated/numpy.split.html#numpy.split "numpy.split")
+ documentation. [`hsplit`](https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html#numpy.hsplit "numpy.hsplit")
+ is equivalent to [`split`](https://numpy.org/doc/stable/reference/generated/numpy.split.html#numpy.split "numpy.split")
+ with `axis=1`, the array is always split along the second axis except for 1-D arrays, where it is split at `axis=0`.
+
+See also
+
+[`split`](https://numpy.org/doc/stable/reference/generated/numpy.split.html#numpy.split "numpy.split")
+
+Split an array into multiple sub-arrays of equal size.
+
+Examples
+
+Try it in your browser!
+
+\>>> import numpy as np
+\>>> x \= np.arange(16.0).reshape(4, 4)
+\>>> x
+array(\[\[ 0.,   1.,   2.,   3.\],\
+       \[ 4.,   5.,   6.,   7.\],\
+       \[ 8.,   9.,  10.,  11.\],\
+       \[12.,  13.,  14.,  15.\]\])
+\>>> np.hsplit(x, 2)
+\[array(\[\[  0.,   1.\],\
+       \[  4.,   5.\],\
+       \[  8.,   9.\],\
+       \[12.,  13.\]\]),\
+ array(\[\[  2.,   3.\],\
+       \[  6.,   7.\],\
+       \[10.,  11.\],\
+       \[14.,  15.\]\])\]
+\>>> np.hsplit(x, np.array(\[3, 6\]))
+\[array(\[\[ 0.,   1.,   2.\],\
+       \[ 4.,   5.,   6.\],\
+       \[ 8.,   9.,  10.\],\
+       \[12.,  13.,  14.\]\]),\
+ array(\[\[ 3.\],\
+       \[ 7.\],\
+       \[11.\],\
+       \[15.\]\]),\
+ array(\[\], shape=(4, 0), dtype=float64)\]
+
+Copy to clipboard
+
+With a higher dimensional array the split is still along the second axis.
+
+\>>> x \= np.arange(8.0).reshape(2, 2, 2)
+\>>> x
+array(\[\[\[0.,  1.\],\
+        \[2.,  3.\]\],\
+       \[\[4.,  5.\],\
+        \[6.,  7.\]\]\])
+\>>> np.hsplit(x, 2)
+\[array(\[\[\[0.,  1.\]\],\
+       \[\[4.,  5.\]\]\]),\
+ array(\[\[\[2.,  3.\]\],\
+       \[\[6.,  7.\]\]\])\]
+
+Copy to clipboard
+
+With a 1-D array, the split is along axis 0.
+
+\>>> x \= np.array(\[0, 1, 2, 3, 4, 5\])
+\>>> np.hsplit(x, 2)
+\[array(\[0, 1, 2\]), array(\[3, 4, 5\])\]
+
+Copy to clipboard
+
+Go BackOpen In Tab
+
+On this page

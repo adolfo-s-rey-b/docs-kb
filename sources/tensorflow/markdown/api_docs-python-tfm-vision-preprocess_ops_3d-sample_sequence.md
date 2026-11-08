@@ -1,0 +1,76 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence#returns)
+    
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [More](https://www.tensorflow.org/api_docs/more)
+    
+
+tfm.vision.preprocess\_ops\_3d.sample\_sequence Stay organized with collections Save and categorize content based on your preferences.
+======================================================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tfm/vision/preprocess_ops_3d/sample_sequence#returns)
+    
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/models/blob/v2.20.0/official/vision/ops/preprocess_ops_3d.py#L78-L123)
+
+Samples a single segment of size `num_steps` from a given sequence.
+
+tfm.vision.preprocess_ops_3d.sample_sequence(
+        sequence: tf.Tensor,
+        num_steps: int,
+        random: bool,
+        stride: int,
+        seed: Optional[int] = None
+    ) -> tf.Tensor
+
+If `random` is not `True`, this function will simply sample the central window of the sequence. Otherwise, a random offset will be chosen in a way that the desired `num_steps` might be extracted from the sequence.
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `sequence` | Any tensor where the first dimension is timesteps. |
+| `num_steps` | Number of steps (e.g. frames) to take. |
+| `random` | A boolean indicating whether to random sample the single window. If `True`, the offset is randomized. If `False`, the middle frame minus half of `num_steps` is the first frame. |
+| `stride` | Distance to sample between timesteps. |
+| `seed` | A deterministic seed to use when sampling. |
+
+|     |
+| --- |
+| Returns<br>------- |     |
+| A single [`tf.Tensor`](https://www.tensorflow.org/api_docs/python/tf/Tensor)<br> with first dimension `num_steps` with the sampled segment. |     |
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-11-06 UTC.

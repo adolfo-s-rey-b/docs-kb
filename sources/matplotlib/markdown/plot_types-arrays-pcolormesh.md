@@ -1,0 +1,90 @@
+[Skip to main content](https://matplotlib.org/stable/plot_types/arrays/pcolormesh.html#main-content)
+
+Back to top Ctrl+K
+
+*   [Plot types](https://matplotlib.org/stable/plot_types/index.html)
+    
+*   [User guide](https://matplotlib.org/stable/users/index.html)
+    
+*   [Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+    
+*   [Examples](https://matplotlib.org/stable/gallery/index.html)
+    
+*   [Reference](https://matplotlib.org/stable/api/index.html)
+    
+*   [Contribute](https://matplotlib.org/stable/devel/index.html)
+    
+*   [Releases](https://matplotlib.org/stable/users/release_notes.html)
+    
+
+Choose version
+
+*   [Gitter](https://gitter.im/matplotlib/matplotlib "Gitter")
+    
+*   [Discourse](https://discourse.matplotlib.org/ "Discourse")
+    
+*   [GitHub](https://github.com/matplotlib/matplotlib "GitHub")
+    
+
+Note
+
+[Go to the end](https://matplotlib.org/stable/plot_types/arrays/pcolormesh.html#sphx-glr-download-plot-types-arrays-pcolormesh-py)
+ to download the full example code.
+
+pcolormesh(X, Y, Z)[#](https://matplotlib.org/stable/plot_types/arrays/pcolormesh.html#pcolormesh-x-y-z "Link to this heading")
+
+================================================================================================================================
+
+Create a pseudocolor plot with a non-regular rectangular grid.
+
+[`pcolormesh`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pcolormesh.html#matplotlib.axes.Axes.pcolormesh "matplotlib.axes.Axes.pcolormesh")
+ is more flexible than [`imshow`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.imshow.html#matplotlib.axes.Axes.imshow "matplotlib.axes.Axes.imshow")
+ in that the x and y vectors need not be equally spaced (indeed they can be skewed).
+
+![pcolormesh](https://matplotlib.org/stable/_images/sphx_glr_pcolormesh_001_2_00x.png)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.style.use('\_mpl-gallery-nogrid')
+
+\# make data with uneven sampling in x
+[x](https://docs.python.org/3/library/stdtypes.html#list "builtins.list")
+ \= \[\-3, \-2, \-1.6, \-1.2, \-.8, \-.5, \-.2, .1, .3, .5, .8, 1.1, 1.5, 1.9, 2.3, 3\]
+[X](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, [Y](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ \= [np.meshgrid](https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html#numpy.meshgrid "numpy.meshgrid")
+([x](https://docs.python.org/3/library/stdtypes.html#list "builtins.list")
+, [np.linspace](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html#numpy.linspace "numpy.linspace")
+(\-3, 3, 128))
+[Z](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ \= (1 \- [X](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+/2 + [X](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\*\*5 + [Y](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\*\*3) \* [np.exp](https://numpy.org/doc/stable/reference/generated/numpy.ufunc.html#numpy.ufunc "numpy.ufunc")
+(\-[X](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\*\*2 \- [Y](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\*\*2)
+
+\# plot
+[fig](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+, [ax](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes "matplotlib.axes.Axes")
+ \= [plt.subplots](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots "matplotlib.pyplot.subplots")
+()
+
+[ax.pcolormesh](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pcolormesh.html#matplotlib.axes.Axes.pcolormesh "matplotlib.axes.Axes.pcolormesh")
+([X](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, [Y](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, [Z](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, vmin\=-0.5, vmax\=1.0)
+
+[plt.show](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show "matplotlib.pyplot.show")
+()
+
+[`Download Jupyter notebook: pcolormesh.ipynb`](https://matplotlib.org/stable/_downloads/c07bbba0debb4426b16bbff949f2dc48/pcolormesh.ipynb)
+
+[`Download Python source code: pcolormesh.py`](https://matplotlib.org/stable/_downloads/9bb146524d4291857179a30031ea856a/pcolormesh.py)
+
+[`Download zipped: pcolormesh.zip`](https://matplotlib.org/stable/_downloads/8aa8450abdbf20af2fb0ee68e23b0c63/pcolormesh.zip)
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)

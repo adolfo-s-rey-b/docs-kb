@@ -1,0 +1,355 @@
+*   [Skip to main content](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#content)
+    
+*   [Skip to search](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#mdn-search)
+    
+
+CSS box alignment overview
+==========================
+
+The [CSS box alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment)
+ module specifies CSS features that relate to the alignment of boxes in the various CSS box layout models. The module aims to create a consistent method of alignment across all of CSS. The CSS box alignment properties provide full horizontal and vertical alignment capabilities.
+
+This guide details the general concepts found in this module. Additional guides provide more information on box alignment in [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_flexbox)
+, [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_grid_layout)
+, [multiple-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_multi-column_layout)
+, and [block, absolutely positioned and table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_block_abspos_tables)
+. Alignment of text is covered by the [CSS text](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text)
+ and [CSS inline layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Inline_layout)
+ modules.
+
+[Key concepts and terminology](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#key_concepts_and_terminology)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+The specification details some alignment terminology to make it easier to discuss these alignment properties outside their implementation within a particular layout method. There are also some key concepts which are common to all layout methods.
+
+### [Relationship to writing modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#relationship_to_writing_modes)
+
+Alignment is linked to writing modes in that when we align an item we do not consider whether we are aligning it to the physical dimensions of top, right, bottom and left. Instead we describe alignment in terms of the start and end of the particular dimension we are working with. This ensures that alignment works in the same way whichever writing mode the document has.
+
+### [Two dimensions of alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#two_dimensions_of_alignment)
+
+When using the box alignment properties you will align content on one of two axes — the inline (or main) axis, and the block (or cross) axis. The inline axis is the axis along which words in a sentence flow in the writing mode being used. For English, for example, the inline axis is horizontal. The block axis is the axis along which blocks, such as paragraph elements, are laid out; it runs across the Inline axis.
+
+![Inline axis is the left / right, or horizontal, direction. Block axis is vertical, or top / bottom.](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/two-axes.png)
+
+When aligning items on the inline axis you will use the properties that begin with `justify-`:
+
+*   [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-items)
+    
+*   [`justify-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-self)
+    
+*   [`justify-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content)
+    
+
+When aligning items on the block axis you will use the properties that begin with `align-`:
+
+*   [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items)
+    
+*   [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-self)
+    
+*   [`align-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-content)
+    
+
+Flexbox adds an additional complication in that the above is true when [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-direction)
+ is set to `row`. The properties are swapped when flexbox is set to `column`. Therefore, when working with flexbox it is generally easier to think about the main and cross axis rather than inline and block. The `justify-` properties are always used to align on the main axis, the `align-` properties on the cross axis.
+
+### [The alignment subject](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#the_alignment_subject)
+
+The **[alignment subject](https://developer.mozilla.org/en-US/docs/Glossary/Alignment_Subject)
+** is the thing that is being aligned. For `justify-self` or `align-self`, or when setting these values as a group with `justify-items` or `align-items`, this will be the margin box of the element that this property is being used on. The `justify-content` and `align-content` properties differ per layout method.
+
+### [The alignment container](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#the_alignment_container)
+
+The **[alignment container](https://developer.mozilla.org/en-US/docs/Glossary/Alignment_Container)
+** is the box the subject is being aligned inside. This will typically be the alignment subject's containing block. An alignment container may contain one or many alignment subjects.
+
+The below image shows an alignment container with two alignment subjects inside.
+
+![A box containing two rectangles of the same width but different heights. The two rectangles are top aligned, meaning they both have their top lines about 10px inside the top of the box in which they are contained.](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/align-container-subjects.png)
+
+[Types of alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#types_of_alignment)
+
+------------------------------------------------------------------------------------------------------------------------
+
+There are three different types of alignment that the specification details; these use keyword values.
+
+*   [Positional alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#positional_alignment)
+    
+*   [Baseline alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#baseline_alignment)
+    
+*   [Distributed alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#distributed_alignment)
+    
+
+### [Positional alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#positional_alignment)
+
+**Positional alignment** is the position of an alignment subject with relation to its alignment container. The positional alignment keyword values are defined for positional alignment, and can be used as values for content alignment with `justify-content` and `align-content` and also for self alignment with `justify-self` and `align-self`.
+
+*   `center`
+*   `start`
+*   `end`
+*   `self-start`
+*   `self-end`
+*   `flex-start` for flexbox only
+*   `flex-end` for flexbox only
+*   `left`
+*   `right`
+
+Other than the physical values of `left` and `right`, which relate to physical attributes of the screen, all of the other values, the [`<self-position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/self-position)
+ and [`<content-position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/content-position)
+ values, are logical values and relate to the writing mode of the content.
+
+For example, when working in CSS grid layout, if you are working in English and set `justify-content` to `start` this will move the items in the inline dimension to the start, which will be the left as sentences in English start on the left-hand side of the page. If you were using Arabic, a right-to-left language, then the same value of `start` would result in the items moving to the right, as sentences in Arabic start on the right-hand side of the page.
+
+![There are two boxes, each with 3 children of differing heights but similar widths. The first box has three children with the letters A, B, and C. These three boxes are all aligned to the left. The second box has three children with arabic letters in them. Those three boxes are all aligned to the right.](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/writing-mode-start.png)
+
+Both have `justify-content: start`, but the location of the two starts is different because of the writing mode.
+
+### [Baseline alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#baseline_alignment)
+
+**Baseline alignment** is the relationship among the baselines of multiple alignment subjects within an alignment context. The Baseline alignment [`<baseline-position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/baseline-position)
+ keywords are used to align the baselines of boxes across a group of alignment subjects. They can be used as values for content alignment with `justify-content` and `align-content` and self-alignment with `justify-self` and `align-self`.
+
+*   `baseline`
+*   `first baseline`
+*   `last baseline`
+
+Baseline content alignment — specifying a baseline alignment value for `justify-content` or `align-content` — works in layout methods that lay items out in rows. The alignment subjects are baseline aligned against each other by adding padding inside the boxes.
+
+Baseline self-alignment shifts the boxes to align by baseline by adding a margin outside the boxes. Self-alignment is done for singular boxes using `justify-self` or `align-self`, or for groups of boxes using `justify-items` and `align-items`.
+
+### [Distributed alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#distributed_alignment)
+
+**Distributed alignment** defines alignment as a distribution of space among alignment subjects. The distributed alignment [`<content-distribution>`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/content-distribution)
+ keywords are used with the `align-content` and `justify-content` properties. These keywords define what happens to any additional space after alignment subjects have been displayed. The values are as follows:
+
+*   `stretch`
+*   `space-between`
+*   `space-around`
+*   `space-evenly`
+
+For example, in Flex Layout items are aligned with `flex-start` initially. Working in a horizontal top-to-bottom writing mode (with a language such as English), with `flex-direction` set to `row`, the items start on the far left, and any available space after displaying the items is placed after them.
+
+![Three rectangles of different widths are inside a box. They are all aligned to the left side of the containing box, with about 10px between them, and 10px between the left side of the first rectangle and the parent container.](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/justify-content-start.png)
+
+If you set `justify-content: space-between` on the flex container, the available space is now shared out and placed between the items.
+
+![Three rectangles of different widths are inside a box. The first rectangle is aligned to the left side of the containing box, the third rectangle is aligned right, and the middle rectangle is equally spaced between the first and last.](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/justify-content-space-between.png)
+
+For these keywords to take effect, space is required along the dimension in which you wish to align the items. With no space, there is nothing to distribute.
+
+### [Basic examples](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#basic_examples)
+
+The following examples demonstrate how some of the box alignment properties are applied in [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout)
+ and [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout)
+.
+
+#### CSS grid layout alignment example
+
+In this grid layout example, there is extra space in the grid container after laying out the fixed-width tracks on the inline (main) axis. This space is distributed using [`justify-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content)
+. On the block (cross) axis, the alignment of the items inside their grid areas is controlled with [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items)
+. The first item overrides the `align-items` value set on the group by setting [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-self)
+ to `center`.
+
+html
+
+    <div class="box">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three <br />has <br />extra <br />text</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+    </div>
+    
+
+    body {
+      font: 1.2em sans-serif;
+    }
+    
+    .box {
+      border: 2px dotted rgb(96 139 168);
+    }
+    
+    .box > * {
+      padding: 20px;
+      border: 2px solid rgb(96 139 168);
+      border-radius: 5px;
+      background-color: rgb(96 139 168 / 0.2);
+    }
+    
+
+css
+
+    .box {
+      display: grid;
+      grid-template-columns: 120px 120px 120px;
+      align-items: start;
+      justify-content: space-between;
+    }
+    
+    .box :first-child {
+      align-self: center;
+    }
+    
+
+#### Flexbox Alignment Example
+
+In this example, three flex items are aligned on the main axis using `justify-content` and on the cross axis using `align-items`. The first item overrides the `align-items` set on the group by setting `align-self` to `center`.
+
+html
+
+    <div class="box">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three <br />has <br />extra <br />text</div>
+    </div>
+    
+
+    body {
+      font: 1.2em sans-serif;
+    }
+    
+    .box {
+      border: 2px dotted rgb(96 139 168);
+    }
+    
+    .box > * {
+      padding: 20px;
+      border: 2px solid rgb(96 139 168);
+      border-radius: 5px;
+      background-color: rgb(96 139 168 / 0.2);
+    }
+    
+
+css
+
+    .box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    
+    .box :first-child {
+      align-self: center;
+    }
+    
+
+[Overflow alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#overflow_alignment)
+
+------------------------------------------------------------------------------------------------------------------------
+
+The [`<overflow-position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/overflow-position)
+ keywords `safe` and `unsafe` help define behavior when an alignment subject is larger than the alignment container. The `safe` keyword will align to `start` in the case of a specified alignment causing an overflow, the aim being to avoid "data loss" where part of the item is outside the boundaries of the alignment container and can't be scrolled to.
+
+If you specify `unsafe` then the alignment will be honored even if it would cause such data loss.
+
+[Gaps between boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#gaps_between_boxes)
+
+------------------------------------------------------------------------------------------------------------------------
+
+The box alignment specification also includes the `gap`, `row-gap`, and `column-gap` properties. These properties enable the setting of a consistent gap between items in a row or column, in any layout method which has items arranged in this way.
+
+The `gap` property is a shorthand for `row-gap` and `column-gap`, which allows us to set these properties at once:
+
+*   [`row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/row-gap)
+    
+*   [`column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/column-gap)
+    
+*   [`gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/gap)
+    
+
+In the below example, a grid layout uses the `gap` shorthand to set a `10px` gap between row tracks, and a `2em` gap between column tracks.
+
+html
+
+    <div class="box">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+    </div>
+    
+
+    body {
+      font: 1.2em sans-serif;
+    }
+    
+    .box {
+      border: 2px dotted rgb(96 139 168);
+    }
+    
+    .box > * {
+      padding: 20px;
+      border: 2px solid rgb(96 139 168);
+      border-radius: 5px;
+      background-color: rgb(96 139 168 / 0.2);
+    }
+    
+
+css
+
+    .box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px 2em;
+    }
+    
+    .box :first-child {
+      align-self: center;
+    }
+    
+
+Early grid implementations included `gap` properties prefixed with `grid-`. All browsers support the unprefixed properties, though you may see the following properties in a code-base: [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/row-gap)
+, [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/column-gap)
+, and [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/gap)
+. The prefixed versions are aliases of the unprefixed ones.
+
+Be aware that other things may increase the visual gap displayed, for example using the space distribution keywords or adding margins to items.
+
+[Box-alignment by layout type](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#box-alignment_by_layout_type)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+As the CSS box alignment properties are implemented differently depending on the specification they interact with, refer to the following guides for details of how to use the alignment properties with each layout type:
+
+*   [Box alignment in flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_flexbox)
+    
+*   [Box alignment in CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_grid_layout)
+    
+*   [Box alignment in multiple-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_multi-column_layout)
+    
+*   [Box alignment for block, absolutely positioned and table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_block_abspos_tables)
+    
+
+[See also](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview#see_also)
+
+----------------------------------------------------------------------------------------------------
+
+*   [CSS box alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment)
+     module
+*   [Box alignment in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/In_grid_layout)
+    
+*   [CSS display](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display)
+     module
+*   [CSS flex layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout)
+     module
+*   [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts)
+    
+*   [Aligning items in a flex container](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items)
+    
+*   [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout)
+     module
+
+Help improve MDN
+----------------
+
+[Learn how to contribute](https://developer.mozilla.org/en-US/docs/MDN/Community/Getting_started)
+
+This page was last modified on Aug 27, 2026 by [MDN contributors](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_alignment/Overview/contributors.txt)
+.
+
+[View this page on GitHub](https://github.com/mdn/content/blob/main/files/en-us/web/css/guides/box_alignment/overview/index.md?plain=1 "Folder: en-us/web/css/guides/box_alignment/overview (Opens in a new tab)")
+ • [Report a problem with this content](https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FBox_alignment%2FOverview&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fcss%2Fguides%2Fbox_alignment%2Foverview%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FBox_alignment%2FOverview%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fcss%2Fguides%2Fbox_alignment%2Foverview%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2Fe1e7e2ac2cb1e40293c32c24bc0667905e9a7a04%0A*+Document+last+modified%3A+2026-08-27T09%3A59%3A49.000Z%0A%0A%3C%2Fdetails%3E "This will take you to GitHub to file a new issue.")

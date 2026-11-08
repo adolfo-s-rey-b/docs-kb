@@ -1,0 +1,285 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n.md)
+.
+
+A node to integrate with n8n itself. This node allows you to consume the [n8n API](https://docs.n8n.io/connect/n8n-api)
+ in your workflows.
+
+Refer to the [n8n REST API documentation](https://docs.n8n.io/connect/n8n-api)
+ for more information on using the n8n API. Refer to [API endpoint reference](https://docs.n8n.io/connect/n8n-api/api-reference)
+ for working with the API endpoints directly.
+
+**Credentials**
+
+Refer to the [API authentication documentation](https://docs.n8n.io/connect/n8n-api/authentication)
+ for authentication information for this node.
+
+**SSL**
+
+This node doesn't support SSL. If your server requires an SSL connection, use the [HTTP Request node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest)
+ to call the [n8n API](https://docs.n8n.io/connect/n8n-api)
+. The HTTP Request node has options to [provide the SSL certificate](https://docs.n8n.io/integrations/builtin/credentials/httprequest#provide-an-ssl-certificate)
+.
+
+Operations[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#operations)
+
+------------------------------------------------------------------------------------------------
+
+*   Audit
+    
+    *   [**Generate** a security audit](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#generate-audit)
+        
+    
+*   Credential
+    
+    *   [**Create** a credential](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#create-credential)
+        
+    *   [**Delete** a credential](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#delete-credential)
+        
+    *   [**Get Schema**](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-credential-schema)
+        : Use this operation to get credential data schema for type
+        
+    
+*   Execution
+    
+    *   [**Get** an execution](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-execution)
+        
+    *   [**Get Many** executions](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-executions)
+        
+    *   [**Delete** an execution](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#delete-execution)
+        
+    
+*   Workflow
+    
+    *   [**Publish** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#activate-deactivate-delete-and-get-workflow)
+        
+    *   [**Create** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#create-workflow)
+        
+    *   [**Unpublish** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#activate-deactivate-delete-and-get-workflow)
+        
+    *   [**Delete** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#activate-deactivate-delete-and-get-workflow)
+        
+    *   [**Get** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#activate-deactivate-delete-and-get-workflow)
+        
+    *   [**Get Many** workflows](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-workflows)
+        
+    *   [**Update** a workflow](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#update-workflow)
+        
+    
+
+Generate audit[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#generate-audit)
+
+--------------------------------------------------------------------------------------------------------
+
+This operation has no parameters. Configure it with these options:
+
+*   **Categories**: Select the risk categories you want the audit to include. Options include:
+    
+    *   **Credentials**
+        
+    *   **Database**
+        
+    *   **Filesystem**
+        
+    *   **Instance**
+        
+    *   **Nodes**
+        
+    
+*   **Days Abandoned Workflow**: Use this option to set the number of days without execution after which a workflow should be considered abandoned. Enter a number of days. The default is `90`.
+    
+
+Create credential[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#create-credential)
+
+--------------------------------------------------------------------------------------------------------------
+
+Configure this operation with these parameters:
+
+*   **Name**: Enter the name of the credential you'd like to create.
+    
+*   **Credential Type**: Enter the credential's type. The available types depend on nodes installed on the n8n instance. Some built-in types include `githubApi`, `notionApi`, and `slackApi`.
+    
+*   **Data**: Enter a valid JSON object with the required properties for this **Credential Type**. To see the expected format, use the **Get Schema** operation.
+    
+
+Delete credential[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#delete-credential)
+
+--------------------------------------------------------------------------------------------------------------
+
+Configure this operation with this parameter:
+
+*   **Credential ID**: Enter the ID of the credential you want to delete.
+    
+
+Get credential schema[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-credential-schema)
+
+----------------------------------------------------------------------------------------------------------------------
+
+Configure this operation with this parameter:
+
+*   **Credential Type**: Enter the credential's type. The available types depend on nodes installed on the n8n instance. Some built-in types include `githubApi`, `notionApi`, and `slackApi`.
+    
+
+Get execution[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-execution)
+
+------------------------------------------------------------------------------------------------------
+
+Configure this operation with this parameter:
+
+*   **Execution ID**: Enter the ID of the execution you want to retrieve.
+    
+
+### Get execution option[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-execution-option)
+
+You can further configure this operation with this **Option**:
+
+*   **Include Execution Details**: Use this control to set whether to include the detailed execution data (turned on) or not (turned off).
+    
+
+Get many executions[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-executions)
+
+------------------------------------------------------------------------------------------------------------------
+
+Configure this operation with these parameters:
+
+*   **Return All**: Set whether to return all results (turned on) or whether to limit the results to the entered **Limit** (turned on).
+    
+*   **Limit**: Set the number of results to return if the **Return All** control is turned off.
+    
+
+### Get many executions filters[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-executions-filters)
+
+You can further configure this operation with these **Filters**:
+
+*   **Workflow**: Filter the executions by workflow. Options include:
+    
+    *   **From list**: Select a workflow to use as a filter.
+        
+    *   **By URL**: Enter a workflow URL to use as a filter.
+        
+    *   **By ID**: Enter a workflow ID to use as a filter.
+        
+    
+*   **Status**: Filter the executions by status. Options include:
+    
+    *   **Error**
+        
+    *   **Success**
+        
+    *   **Waiting**
+        
+    
+
+### Get many execution options[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-execution-options)
+
+You can further configure this operation with this **Option**:
+
+*   **Include Execution Details**: Use this control to set whether to include the detailed execution data (turned on) or not (turned off).
+    
+
+Delete execution[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#delete-execution)
+
+------------------------------------------------------------------------------------------------------------
+
+Configure this operation with this parameter:
+
+*   **Execution ID**: Enter the ID of the execution you want to delete.
+    
+
+Publish, unpublish, delete, and get workflow[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#activate-deactivate-delete-and-get-workflow)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The **Publish**, **Unpublish**, **Delete**, and **Get** workflow operations all include the same parameter for you to select the **Workflow** you want to perform the operation on. Options include:
+
+*   **From list**: Select the workflow from the list.
+    
+*   **By URL**: Enter the URL of the workflow.
+    
+*   **By ID**: Enter the ID of the workflow.
+    
+
+Create workflow[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#create-workflow)
+
+----------------------------------------------------------------------------------------------------------
+
+Configure this operation with this parameter:
+
+*   **Workflow Object**: Enter a valid JSON object with the new workflow's details. The object requires these fields:
+    
+    *   `name`
+        
+    *   `nodes`
+        
+    *   `connections`
+        
+    *   `settings`
+        
+    
+
+Refer to [n8n API reference](https://docs.n8n.io/connect/n8n-api/api-reference)
+ for more information.
+
+Get many workflows[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-workflows)
+
+----------------------------------------------------------------------------------------------------------------
+
+Configure this operation with these parameters:
+
+*   **Return All**: Set whether to return all results (turned on) or whether to limit the results to the entered **Limit** (turned on).
+    
+*   **Limit**: Set the number of results to return if the **Return All** control is turned off.
+    
+
+### Get many workflows filters[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#get-many-workflows-filters)
+
+You can further configure this operation with these **Filters**:
+
+*   **Return Only Published Workflows**: Select whether to return only published workflows (turned on) or published and unpublished workflows (turned off).
+    
+*   **Tags**: Enter a comma-separated list of tags the returned workflows must have.
+    
+
+Update workflow[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#update-workflow)
+
+----------------------------------------------------------------------------------------------------------
+
+Configure this operation with these parameters:
+
+*   **Workflow**: Select the workflow you want to update. Options include:
+    
+    *   **From list**: Select the workflow from the list.
+        
+    *   **By URL**: Enter the URL of the workflow.
+        
+    *   **By ID**: Enter the ID of the workflow.
+        
+    
+*   **Workflow Object**: Enter a valid JSON object to update the workflow with. The object requires these fields:
+    
+    *   `name`
+        
+    *   `nodes`
+        
+    *   `connections`
+        
+    *   `settings`
+        
+    
+
+Refer to the [n8n API | Update a workflow documentation](https://docs.n8n.io/api/api-reference/#tag/Workflow/paths/~1workflows~1%7Bid%7D/put)
+ for more information.
+
+Templates and examples[](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.n8n#templates-and-examples)
+
+------------------------------------------------------------------------------------------------------------------------
+
+[Browse n8n integration templates](https://n8n.io/integrations/n8n)
+ or [search all templates](https://n8n.io/workflows/)
+
+[PreviousMessage an Agent](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.messageanagent)
+[Nextn8n Form](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form)
+
+Last updated 10 days ago
+
+Was this helpful?

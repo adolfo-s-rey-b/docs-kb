@@ -1,0 +1,79 @@
+{
+  "pages": {
+    "r-release-R-intro": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-intro.html",
+      "last_hash": "44a88e43995feb03135085f0d07c067f8ebd9f03fd4d23f3e33221367f5c7618",
+      "last_fetched": "2026-11-08T04:57:42.715837+00:00",
+      "title": "An Introduction to R"
+    },
+    "r-release-R-lang": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-lang.html",
+      "last_hash": "d05569b623806cea357a1ae032dd2f4582c5b22c2a23fb9f4fe0e233b8e70c7d",
+      "last_fetched": "2026-11-08T04:57:45.466228+00:00",
+      "title": "The R Language Definition"
+    },
+    "r-release-R-data": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-data.html",
+      "last_hash": "48597583c6d29801bb12f3259883d623303f6e33dbea48bd63231a60479e8779",
+      "last_fetched": "2026-11-08T04:57:48.356837+00:00",
+      "title": "R Data Import/Export"
+    },
+    "r-release-R-exts": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-exts.html",
+      "last_hash": "ac58f1cd13645d7eb94ab9108265facea2c0c83339b1f1e5a6934f697d7f1ddc",
+      "last_fetched": "2026-11-08T04:58:08.219221+00:00",
+      "title": "Writing R Extensions"
+    },
+    "r-release-R-admin": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-admin.html",
+      "last_hash": "0cca8511677cb2c7162cca93303b287fdb01443d21ae344e035f63ce133dd075",
+      "last_fetched": "2026-11-08T04:58:14.560091+00:00",
+      "title": "R Installation and Administration"
+    },
+    "r-release-R-ints": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-ints.html",
+      "last_hash": "aaabd14c8905ac9d1ec1ffb3c600f736d45a160fd6ca5f9d3c7c102db991072e",
+      "last_fetched": "2026-11-08T04:58:21.407900+00:00",
+      "title": "R Internals"
+    },
+    "r-release-R-intro.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-intro.epub",
+      "last_hash": "5c3ceb1d2207e7b607e917a237621edeffd5e699d9244b9a9df71b09481d077c",
+      "last_fetched": "2026-11-08T04:58:25.264629+00:00",
+      "title": null
+    },
+    "r-release-R-lang.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-lang.epub",
+      "last_hash": "7defa8ae362d1afc6b2838cea63b2b0a14b6ca49214151245bdfab7f36c08a26",
+      "last_fetched": "2026-11-08T04:58:27.924924+00:00",
+      "title": null
+    },
+    "r-release-R-data.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-data.epub",
+      "last_hash": "85ceb53513aff5a782baff72c6551592251544968f9b7727f85bf11fce447848",
+      "last_fetched": "2026-11-08T04:58:28.792448+00:00",
+      "title": null
+    },
+    "r-release-R-exts.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-exts.epub",
+      "last_hash": "2d1b91d6e0fda4bbe3c92ff3011c694f1a7125adb0d167bbd2bc9f4318206e2c",
+      "last_fetched": "2026-11-08T04:58:30.168234+00:00",
+      "title": null
+    },
+    "r-release-R-admin.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-admin.epub",
+      "last_hash": "aab1323896b3b03c99ef29f7a522e5961a6525b1072ada35da892aac6148c612",
+      "last_fetched": "2026-11-08T04:58:31.081030+00:00",
+      "title": null
+    },
+    "r-release-R-ints.epub": {
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-ints.epub",
+      "last_hash": "83c3eee9a2445d2ae2bbb0104f067edd4085e7eeb86f8595ad626335a4ca5e5c",
+      "last_fetched": "2026-11-08T04:58:31.987865+00:00",
+      "title": null
+    }
+  },
+  "detected_version": "4.6.2",
+  "last_updated": "2026-11-08T04:58:31.987865+00:00",
+  "version_history": []
+}

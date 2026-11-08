@@ -1,0 +1,295 @@
+{
+  "pages": {
+    "404": {
+      "url": "https://stringr.tidyverse.org/404.html",
+      "last_hash": "86c1647b529bd31a7fa3a54c1403b63c390bfdfb8b56bf47c96949cbbb90f2e8",
+      "last_fetched": "2026-11-08T05:07:12.054630+00:00",
+      "title": "Page not found (404) • stringr"
+    },
+    "CODE_OF_CONDUCT": {
+      "url": "https://stringr.tidyverse.org/CODE_OF_CONDUCT.html",
+      "last_hash": "281ca8cadd80344d130a23f269d3758c37a5f6981f1db443639cd38594dcaaf9",
+      "last_fetched": "2026-11-08T05:07:12.961433+00:00",
+      "title": "Contributor Covenant Code of Conduct • stringr"
+    },
+    "articles-from-base": {
+      "url": "https://stringr.tidyverse.org/articles/from-base.html",
+      "last_hash": "91b8d8a3be3b7bc874c6cbc205d09f1ac079f3147d2c041578074a8d237a6583",
+      "last_fetched": "2026-11-08T05:07:14.092865+00:00",
+      "title": "From base R • stringr"
+    },
+    "articles-index": {
+      "url": "https://stringr.tidyverse.org/articles/index.html",
+      "last_hash": "88d73037109d7d9b2e648e0b99e02bd44d991f1f296b998eeef3b23f87b016ef",
+      "last_fetched": "2026-11-08T05:07:15.031219+00:00",
+      "title": "Articles • stringr"
+    },
+    "articles-locale-sensitive": {
+      "url": "https://stringr.tidyverse.org/articles/locale-sensitive.html",
+      "last_hash": "9bb279414a4256faec264c1ae55bd9ac71e4bca97155a9ffd0f86bbede2d8251",
+      "last_fetched": "2026-11-08T05:07:16.041223+00:00",
+      "title": "Locale sensitive functions • stringr"
+    },
+    "articles-regular-expressions": {
+      "url": "https://stringr.tidyverse.org/articles/regular-expressions.html",
+      "last_hash": "fef5dad3eb1633f18639dce62609c3537515457e6b004bc47c04e334c5a54917",
+      "last_fetched": "2026-11-08T05:07:17.057588+00:00",
+      "title": "Regular expressions • stringr"
+    },
+    "articles-stringr": {
+      "url": "https://stringr.tidyverse.org/articles/stringr.html",
+      "last_hash": "2945ec1ce2b7054636ac5a1c4d5949cd28837cc7f3175ae6ee1da0efd8e05142",
+      "last_fetched": "2026-11-08T05:07:18.007877+00:00",
+      "title": "Introduction to stringr • stringr"
+    },
+    "authors": {
+      "url": "https://stringr.tidyverse.org/authors.html",
+      "last_hash": "f94921899355152e6466e434dacfd7f81c6abbdc0876af6d522ac5630e05c5ec",
+      "last_fetched": "2026-11-08T05:07:18.947852+00:00",
+      "title": "Authors and Citation • stringr"
+    },
+    "index": {
+      "url": "https://stringr.tidyverse.org/index.html",
+      "last_hash": "a03544f67cfd60e33485014df789095dbb6b90eb1ee02b21b6dd259a84af0b20",
+      "last_fetched": "2026-11-08T05:07:19.907047+00:00",
+      "title": "Simple, Consistent Wrappers for Common String Operations • stringr"
+    },
+    "reference-case": {
+      "url": "https://stringr.tidyverse.org/reference/case.html",
+      "last_hash": "3736f56efee2295a49d6f32225d8d39222832a98cc739bda5158ab10f9f5a5bc",
+      "last_fetched": "2026-11-08T05:07:20.812611+00:00",
+      "title": "Convert string to upper case, lower case, title case, or sentence case — case • stringr"
+    },
+    "reference-index": {
+      "url": "https://stringr.tidyverse.org/reference/index.html",
+      "last_hash": "d448901ed1f4356b9dc19a3e0eba741aaf456868af446192833697ca914fd66b",
+      "last_fetched": "2026-11-08T05:07:21.796046+00:00",
+      "title": "Package index • stringr"
+    },
+    "reference-invert_match": {
+      "url": "https://stringr.tidyverse.org/reference/invert_match.html",
+      "last_hash": "79c2e9cfcd095f6991c71df5c3ae2d2e9594ea33f991b854d71febc6df627711",
+      "last_fetched": "2026-11-08T05:07:22.685390+00:00",
+      "title": "Switch location of matches to location of non-matches — invert_match • stringr"
+    },
+    "reference-modifiers": {
+      "url": "https://stringr.tidyverse.org/reference/modifiers.html",
+      "last_hash": "3302444b2fc8974d89e1e226d454a419b5e723a91fd2aa33f8d97502eb9f6735",
+      "last_fetched": "2026-11-08T05:07:23.647211+00:00",
+      "title": "Control matching behaviour with modifier functions — modifiers • stringr"
+    },
+    "reference-pipe": {
+      "url": "https://stringr.tidyverse.org/reference/pipe.html",
+      "last_hash": "5c9e686b88ad7adbcfd768846b147414ace6b240948e3250b2a62fa0d667a848",
+      "last_fetched": "2026-11-08T05:07:24.539523+00:00",
+      "title": "Pipe operator — %>% • stringr"
+    },
+    "reference-str_c": {
+      "url": "https://stringr.tidyverse.org/reference/str_c.html",
+      "last_hash": "cc6ecae3e6a0ed40d99722cd3c3e76264a28c60ca30c33ff947205cdc8c7995f",
+      "last_fetched": "2026-11-08T05:07:25.466628+00:00",
+      "title": "Join multiple strings into one string — str_c • stringr"
+    },
+    "reference-str_conv": {
+      "url": "https://stringr.tidyverse.org/reference/str_conv.html",
+      "last_hash": "e9609eea51ff485c8ad75040d64e8140fafe974a3f9775050756f73a27be868e",
+      "last_fetched": "2026-11-08T05:07:26.360582+00:00",
+      "title": "Specify the encoding of a string — str_conv • stringr"
+    },
+    "reference-str_count": {
+      "url": "https://stringr.tidyverse.org/reference/str_count.html",
+      "last_hash": "bc8aa4cda0749275cf0f1eb1b61a82142b9e43138008f0a5fb5d8455ca9a8f72",
+      "last_fetched": "2026-11-08T05:07:27.249152+00:00",
+      "title": "Count number of matches — str_count • stringr"
+    },
+    "reference-str_detect": {
+      "url": "https://stringr.tidyverse.org/reference/str_detect.html",
+      "last_hash": "1859f266f49efdd35491f1090f686f5d4e38f29eb98380061dd778248ae74dd6",
+      "last_fetched": "2026-11-08T05:07:28.128059+00:00",
+      "title": "Detect the presence/absence of a match — str_detect • stringr"
+    },
+    "reference-str_dup": {
+      "url": "https://stringr.tidyverse.org/reference/str_dup.html",
+      "last_hash": "8089c5ca55f3f7b20e33d65d6edae2c366e36de41b4bac12243a611b7f5205be",
+      "last_fetched": "2026-11-08T05:07:29.089278+00:00",
+      "title": "Duplicate a string — str_dup • stringr"
+    },
+    "reference-str_equal": {
+      "url": "https://stringr.tidyverse.org/reference/str_equal.html",
+      "last_hash": "243cdc5d71c493183ddff887474588b3dd506723d39827a93eaf6bebe1edc609",
+      "last_fetched": "2026-11-08T05:07:30.303714+00:00",
+      "title": "Determine if two strings are equivalent — str_equal • stringr"
+    },
+    "reference-str_escape": {
+      "url": "https://stringr.tidyverse.org/reference/str_escape.html",
+      "last_hash": "43473863177dc8eb4f4f59d93b2adf6076546d78aa9af42ba5de69c7c8cd534c",
+      "last_fetched": "2026-11-08T05:07:31.197708+00:00",
+      "title": "Escape regular expression metacharacters — str_escape • stringr"
+    },
+    "reference-str_extract": {
+      "url": "https://stringr.tidyverse.org/reference/str_extract.html",
+      "last_hash": "136229053ddbeb6f933a96056506dff9608fe99a2865c17192a3480d9738c65e",
+      "last_fetched": "2026-11-08T05:07:32.142561+00:00",
+      "title": "Extract the complete match — str_extract • stringr"
+    },
+    "reference-str_flatten": {
+      "url": "https://stringr.tidyverse.org/reference/str_flatten.html",
+      "last_hash": "7b3cbbe55aa7fee589523af8fb94bf96c2c68f6751daca3b196574ac5ffdf785",
+      "last_fetched": "2026-11-08T05:07:33.022897+00:00",
+      "title": "Flatten a string — str_flatten • stringr"
+    },
+    "reference-str_glue": {
+      "url": "https://stringr.tidyverse.org/reference/str_glue.html",
+      "last_hash": "e0e97b07cf50caed386eb875b9f7a96da04ed816c5bac8686fd08df670a056df",
+      "last_fetched": "2026-11-08T05:07:34.055195+00:00",
+      "title": "Interpolation with glue — str_glue • stringr"
+    },
+    "reference-str_interp": {
+      "url": "https://stringr.tidyverse.org/reference/str_interp.html",
+      "last_hash": "2aa7e12f88916ad7f7cba47afdb9cb99d094bf8248e7b8c4fa5f3ba15f496f8b",
+      "last_fetched": "2026-11-08T05:07:34.937929+00:00",
+      "title": "String interpolation — str_interp • stringr"
+    },
+    "reference-str_length": {
+      "url": "https://stringr.tidyverse.org/reference/str_length.html",
+      "last_hash": "168816b17d15e6bd61af2d7ad5d2fae06744eab3bd6e349fdbcf3099f3b33597",
+      "last_fetched": "2026-11-08T05:07:35.852006+00:00",
+      "title": "Compute the length/width — str_length • stringr"
+    },
+    "reference-str_like": {
+      "url": "https://stringr.tidyverse.org/reference/str_like.html",
+      "last_hash": "81fec0447894cf4a5a10b48d3c08abbaa77084bff806d083d02ef5aac16ac16f",
+      "last_fetched": "2026-11-08T05:07:36.759802+00:00",
+      "title": "Detect a pattern in the same way as SQL's LIKE and ILIKE operators — str_like • stringr"
+    },
+    "reference-str_locate": {
+      "url": "https://stringr.tidyverse.org/reference/str_locate.html",
+      "last_hash": "02f82b47e029d0c5a0379f97a5007d65bff148b8053019b7fe2bf73e62fb4d96",
+      "last_fetched": "2026-11-08T05:07:37.657715+00:00",
+      "title": "Find location of match — str_locate • stringr"
+    },
+    "reference-str_match": {
+      "url": "https://stringr.tidyverse.org/reference/str_match.html",
+      "last_hash": "2d5484d9b4e01ea07451294f5146c5fe6e6d45a970a1263c4cbb6c77e8344c45",
+      "last_fetched": "2026-11-08T05:07:38.585883+00:00",
+      "title": "Extract components (capturing groups) from a match — str_match • stringr"
+    },
+    "reference-str_order": {
+      "url": "https://stringr.tidyverse.org/reference/str_order.html",
+      "last_hash": "1fbfecb8255e7f65178aaa09b7ae45b83f45b3bfa8bf76a2419e06ca64f7d480",
+      "last_fetched": "2026-11-08T05:07:39.519125+00:00",
+      "title": "Order, rank, or sort a character vector — str_order • stringr"
+    },
+    "reference-str_pad": {
+      "url": "https://stringr.tidyverse.org/reference/str_pad.html",
+      "last_hash": "145dbc37d30b72140d09a44996794c4527d2e03efac0f038cc84cf16e28baf44",
+      "last_fetched": "2026-11-08T05:07:40.442142+00:00",
+      "title": "Pad a string to minimum width — str_pad • stringr"
+    },
+    "reference-str_remove": {
+      "url": "https://stringr.tidyverse.org/reference/str_remove.html",
+      "last_hash": "7943d3dc0be9ea37faa1cfab51cd1e32275bfd84def7104c7aae1721251849de",
+      "last_fetched": "2026-11-08T05:07:41.336220+00:00",
+      "title": "Remove matched patterns — str_remove • stringr"
+    },
+    "reference-str_replace": {
+      "url": "https://stringr.tidyverse.org/reference/str_replace.html",
+      "last_hash": "2322e3a54664134f0fc85edb8b14dd291b5f205abdc1833c772aa06602bd81e7",
+      "last_fetched": "2026-11-08T05:07:42.363631+00:00",
+      "title": "Replace matches with new text — str_replace • stringr"
+    },
+    "reference-str_replace_na": {
+      "url": "https://stringr.tidyverse.org/reference/str_replace_na.html",
+      "last_hash": "d7f60a53708561e44a160a5556f8a05ad8f74f7523617788955e1815bea6369f",
+      "last_fetched": "2026-11-08T05:07:43.240435+00:00",
+      "title": "Turn NA into \"NA\" — str_replace_na • stringr"
+    },
+    "reference-str_split": {
+      "url": "https://stringr.tidyverse.org/reference/str_split.html",
+      "last_hash": "5f2659f9395144440a13c7630d0a21c5b0018f2a949b5ac0b7560773366a7234",
+      "last_fetched": "2026-11-08T05:07:44.172703+00:00",
+      "title": "Split up a string into pieces — str_split • stringr"
+    },
+    "reference-str_starts": {
+      "url": "https://stringr.tidyverse.org/reference/str_starts.html",
+      "last_hash": "0ba19b972b5f9d6ad981cfd0be66954a986deeb1ec9546c173476fb4d4440fee",
+      "last_fetched": "2026-11-08T05:07:45.074500+00:00",
+      "title": "Detect the presence/absence of a match at the start/end — str_starts • stringr"
+    },
+    "reference-str_sub": {
+      "url": "https://stringr.tidyverse.org/reference/str_sub.html",
+      "last_hash": "ab81aae5a31dd6669b45e517947472b3c5d5faca5378a89bb12e725215b944e3",
+      "last_fetched": "2026-11-08T05:07:45.965956+00:00",
+      "title": "Get and set substrings using their positions — str_sub • stringr"
+    },
+    "reference-str_subset": {
+      "url": "https://stringr.tidyverse.org/reference/str_subset.html",
+      "last_hash": "d5320f030f98ddbb34d96fd6f89c0bbcdbfa98060083afb237794a43afc588d4",
+      "last_fetched": "2026-11-08T05:07:46.893532+00:00",
+      "title": "Find matching elements — str_subset • stringr"
+    },
+    "reference-str_to_camel": {
+      "url": "https://stringr.tidyverse.org/reference/str_to_camel.html",
+      "last_hash": "1f5769bc7f7b5be108bc97d32d9bc6254400a68fdfa56ea713d6b78813a07b6e",
+      "last_fetched": "2026-11-08T05:07:47.806605+00:00",
+      "title": "Convert between different types of programming case — str_to_camel • stringr"
+    },
+    "reference-str_trim": {
+      "url": "https://stringr.tidyverse.org/reference/str_trim.html",
+      "last_hash": "1c84b34ceec12aeac2ddac899b4adc12f9b109f7108fe748ffbc0d7c18fbcf73",
+      "last_fetched": "2026-11-08T05:07:48.714396+00:00",
+      "title": "Remove whitespace — str_trim • stringr"
+    },
+    "reference-str_trunc": {
+      "url": "https://stringr.tidyverse.org/reference/str_trunc.html",
+      "last_hash": "a34c6a5913f7232af4129ac204393a3d85cd6c00c74647cf2b08edbd0d7a9652",
+      "last_fetched": "2026-11-08T05:07:49.625813+00:00",
+      "title": "Truncate a string to maximum width — str_trunc • stringr"
+    },
+    "reference-str_unique": {
+      "url": "https://stringr.tidyverse.org/reference/str_unique.html",
+      "last_hash": "c23841082568cd04c4abdf2e8b15bbf032e36aac9c348fc1b46d3e52be958bc8",
+      "last_fetched": "2026-11-08T05:07:50.520752+00:00",
+      "title": "Remove duplicated strings — str_unique • stringr"
+    },
+    "reference-str_view": {
+      "url": "https://stringr.tidyverse.org/reference/str_view.html",
+      "last_hash": "60345c4e439ddca99cae1900001d4476f44746d224e67dd789af460423d9d22f",
+      "last_fetched": "2026-11-08T05:07:51.468539+00:00",
+      "title": "View strings and matches — str_view • stringr"
+    },
+    "reference-str_which": {
+      "url": "https://stringr.tidyverse.org/reference/str_which.html",
+      "last_hash": "08df48af0ce9820e07f739848640fc28d3080edf810b64881f3c9b9f2941a0e6",
+      "last_fetched": "2026-11-08T05:07:52.354275+00:00",
+      "title": "Find matching indices — str_which • stringr"
+    },
+    "reference-str_wrap": {
+      "url": "https://stringr.tidyverse.org/reference/str_wrap.html",
+      "last_hash": "a4d200052b7334e2d97589547d833d1a5d0efd4279c424c485378ba602cf196d",
+      "last_fetched": "2026-11-08T05:07:53.250767+00:00",
+      "title": "Wrap words into nicely formatted paragraphs — str_wrap • stringr"
+    },
+    "reference-stringr-data": {
+      "url": "https://stringr.tidyverse.org/reference/stringr-data.html",
+      "last_hash": "56e842425c3a7f003876de1d06f624fb3b27c060e8916f23ba28a98fbe17685e",
+      "last_fetched": "2026-11-08T05:07:54.114011+00:00",
+      "title": "Sample character vectors for practicing string manipulations — stringr-data • stringr"
+    },
+    "reference-stringr-package": {
+      "url": "https://stringr.tidyverse.org/reference/stringr-package.html",
+      "last_hash": "e8add7afb9b78c3d9c0bcbe274681c4f55e5c430d15a87c829706b44607681ca",
+      "last_fetched": "2026-11-08T05:07:54.989922+00:00",
+      "title": "stringr: Simple, Consistent Wrappers for Common String Operations — stringr-package • stringr"
+    },
+    "reference-word": {
+      "url": "https://stringr.tidyverse.org/reference/word.html",
+      "last_hash": "ae07a6ad6cca032e7e193dcd06337018cf0d8b3203b850567beb6a7e98698747",
+      "last_fetched": "2026-11-08T05:07:55.894713+00:00",
+      "title": "Extract words from a sentence — word • stringr"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:07:55.894713+00:00",
+  "version_history": []
+}

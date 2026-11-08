@@ -1,0 +1,89 @@
+[Skip to main content](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_adjust.html#main-content)
+
+Back to top Ctrl+K
+
+*   [Plot types](https://matplotlib.org/stable/plot_types/index.html)
+    
+*   [User guide](https://matplotlib.org/stable/users/index.html)
+    
+*   [Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+    
+*   [Examples](https://matplotlib.org/stable/gallery/index.html)
+    
+*   [Reference](https://matplotlib.org/stable/api/index.html)
+    
+*   [Contribute](https://matplotlib.org/stable/devel/index.html)
+    
+*   [Releases](https://matplotlib.org/stable/users/release_notes.html)
+    
+
+Choose version
+
+*   [Gitter](https://gitter.im/matplotlib/matplotlib "Gitter")
+    
+*   [Discourse](https://discourse.matplotlib.org/ "Discourse")
+    
+*   [GitHub](https://github.com/matplotlib/matplotlib "GitHub")
+    
+
+Note
+
+[Go to the end](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_adjust.html#sphx-glr-download-gallery-subplots-axes-and-figures-subplots-adjust-py)
+ to download the full example code.
+
+Subplots spacings and margins[#](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_adjust.html#subplots-spacings-and-margins "Link to this heading")
+
+============================================================================================================================================================================
+
+Adjusting the spacing of margins and subplots using [`pyplot.subplots_adjust`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots_adjust.html#matplotlib.pyplot.subplots_adjust "matplotlib.pyplot.subplots_adjust")
+.
+
+Note
+
+There is also a tool window to adjust the margins and spacings of displayed figures interactively. It can be opened via the toolbar or by calling [`pyplot.subplot_tool`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot_tool.html#matplotlib.pyplot.subplot_tool "matplotlib.pyplot.subplot_tool")
+.
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+\# Fixing random state for reproducibility
+[np.random.seed](https://numpy.org/doc/stable/reference/random/generated/numpy.random.seed.html#numpy.random.seed "numpy.random.seed")
+(19680801)
+
+[plt.subplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot "matplotlib.pyplot.subplot")
+(211)
+[plt.imshow](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow "matplotlib.pyplot.imshow")
+([np.random.random](https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html#numpy.random.random "numpy.random.random")
+((100, 100)))
+[plt.subplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot "matplotlib.pyplot.subplot")
+(212)
+[plt.imshow](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow "matplotlib.pyplot.imshow")
+([np.random.random](https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html#numpy.random.random "numpy.random.random")
+((100, 100)))
+
+[plt.subplots\_adjust](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots_adjust.html#matplotlib.pyplot.subplots_adjust "matplotlib.pyplot.subplots_adjust")
+(bottom\=0.1, right\=0.8, top\=0.9)
+[cax](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes "matplotlib.axes.Axes")
+ \= [plt.axes](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes "matplotlib.pyplot.axes")
+((0.85, 0.1, 0.075, 0.8))
+[plt.colorbar](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar "matplotlib.pyplot.colorbar")
+([cax](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes "matplotlib.axes.Axes")
+\=[cax](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes "matplotlib.axes.Axes")
+)
+
+[plt.show](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show "matplotlib.pyplot.show")
+()
+
+![subplots adjust](https://matplotlib.org/stable/_images/sphx_glr_subplots_adjust_001_2_00x.png)
+
+Tags: [component: subplot](https://matplotlib.org/stable/_tags/component-subplot.html)
+ [plot-type: imshow](https://matplotlib.org/stable/_tags/plot-type-imshow.html)
+ [level: beginner](https://matplotlib.org/stable/_tags/level-beginner.html)
+
+[`Download Jupyter notebook: subplots_adjust.ipynb`](https://matplotlib.org/stable/_downloads/e2b0096ce1e0adac0b3d5006e3fc7b5f/subplots_adjust.ipynb)
+
+[`Download Python source code: subplots_adjust.py`](https://matplotlib.org/stable/_downloads/ae98d6400556dc85e7f24d68d8480dd7/subplots_adjust.py)
+
+[`Download zipped: subplots_adjust.zip`](https://matplotlib.org/stable/_downloads/8fb0efddc4593611ed5d96cf0fb055bd/subplots_adjust.zip)
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)

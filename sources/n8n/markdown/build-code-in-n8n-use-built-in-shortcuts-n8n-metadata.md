@@ -1,0 +1,276 @@
+For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt)
+. This page is also available as [Markdown](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/n8n-metadata.md)
+.
+
+Methods for working with n8n metadata.
+
+This includes:
+
+*   Access to n8n environment variables for self-hosted n8n.
+    
+*   Metadata about workflows, executions, and nodes.
+    
+*   Information about instance [Variables](https://docs.n8n.io/build/code-in-n8n/define-custom-variables)
+     and [External secrets](https://docs.n8n.io/administer/manage-credentials/use-external-secret-stores)
+    .
+    
+
+**Python support**
+
+You can use Python in the Code node. It isn't available in expressions.
+
+JavaScript[](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/n8n-metadata#javascript)
+
+---------------------------------------------------------------------------------------------------
+
+Method
+
+Description
+
+Available in Code node?
+
+`$env`
+
+Contains n8n instance configuration [environment variables](https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/use-environment-variables)
+.
+
+✅
+
+`$execution.customData`
+
+Set and get custom execution data. Refer to [Custom executions data](https://docs.n8n.io/build/understand-workflows/understand-executions/customize-executions-data)
+ for more information.
+
+✅
+
+`$execution.id`
+
+The unique ID of the current workflow execution.
+
+✅
+
+`$execution.mode`
+
+Whether the execution was triggered automatically, or by manually running the workflow. Possible values are `test` and `production`.
+
+✅
+
+`$execution.resumeUrl`
+
+The webhook URL to call to resume a workflow waiting at a [Wait node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait)
+.
+
+✅
+
+`$getWorkflowStaticData(type)`
+
+This gives access to the static workflow data. Static data doesn't persist when testing workflows: publish the workflow and run it from a trigger or webhook to save static data. For persisting data between executions, consider [data tables](https://docs.n8n.io/build/work-with-data/data-tables)
+ instead. View an [example](https://docs.n8n.io/build/code-in-n8n/cookbook/built-in-methods-and-variables-examples/getworkflowstaticdata)
+.
+
+✅
+
+`$("<node-name>").isExecuted`
+
+Check whether a node has already executed.
+
+✅
+
+`$itemIndex`
+
+The index of an item in a list of items.
+
+❌
+
+`$nodeVersion`
+
+Get the version of the current node.
+
+✅
+
+`$prevNode.name`
+
+The name of the node that the current input came from. When using the Merge node, note that `$prevNode` always uses the first input connector.
+
+✅
+
+`$prevNode.outputIndex`
+
+The index of the output connector that the current input came from. Use this when the previous node had multiple outputs (such as an If or Switch node). When using the Merge node, note that `$prevNode` always uses the first input connector.
+
+✅
+
+`$prevNode.runIndex`
+
+The run of the previous node that generated the current input. When using the Merge node, note that `$prevNode` always uses the first input connector.
+
+✅
+
+`$runIndex`
+
+How many times n8n has executed the current node. Zero-based (the first run is 0, the second is 1, and so on).
+
+✅
+
+`$secrets`
+
+Contains information about your [External secrets](https://docs.n8n.io/administer/manage-credentials/use-external-secret-stores)
+ setup.
+
+❌
+
+`$vars`
+
+Contains the [Variables](https://docs.n8n.io/build/code-in-n8n/define-custom-variables)
+ available in the active environment.
+
+✅
+
+`$version`
+
+The node version.
+
+❌
+
+`$workflow.active`
+
+Whether the workflow is active (true) or not (false).
+
+✅
+
+`$workflow.id`
+
+The workflow ID.
+
+✅
+
+`$workflow.name`
+
+The workflow name.
+
+✅
+
+Python (native)[](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/n8n-metadata#python-native)
+
+-----------------------------------------------------------------------------------------------------------
+
+Method
+
+Description
+
+`_items`
+
+Contains incoming items in "Run once for all items" mode.
+
+`_item`
+
+Contains the item being iterated on in "Run once for each item" mode.
+
+`_query`
+
+In the Code Tool, contains the input string the AI Agent passes when it calls the tool. Available in "Run once for all items" mode.
+
+Python (Pyodide, deprecated)[](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/n8n-metadata#python-pyodide-deprecated)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Python (Pyodide) support is deprecated from n8n 1.113.2. Use Python (native) instead.
+
+Method
+
+Description
+
+`_env`
+
+Contains n8n instance configuration [environment variables](https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/use-environment-variables)
+.
+
+`_execution.customData`
+
+Set and get custom execution data. Refer to [Custom executions data](https://docs.n8n.io/build/understand-workflows/understand-executions/customize-executions-data)
+ for more information.
+
+`_execution.id`
+
+The unique ID of the current workflow execution.
+
+`_execution.mode`
+
+Whether the execution was triggered automatically, or by manually running the workflow. Possible values are `test` and `production`.
+
+`_execution.resumeUrl`
+
+The webhook URL to call to resume a workflow waiting at a [Wait node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait)
+.
+
+`_getWorkflowStaticData(type)`
+
+This gives access to the static workflow data. Static data doesn't persist when testing workflows: publish the workflow and run it from a trigger or webhook to save static data. For persisting data between executions, consider [data tables](https://docs.n8n.io/build/work-with-data/data-tables)
+ instead. View an [example](https://docs.n8n.io/build/code-in-n8n/cookbook/built-in-methods-and-variables-examples/getworkflowstaticdata)
+.
+
+`_("<node-name>").isExecuted`
+
+Check whether a node has already executed.
+
+`_nodeVersion`
+
+Get the version of the current node.
+
+`_prevNode.name`
+
+The name of the node that the current input came from. When using the Merge node, note that `_prevNode` always uses the first input connector.
+
+`_prevNode.outputIndex`
+
+The index of the output connector that the current input came from. Use this when the previous node had multiple outputs (such as an If or Switch node). When using the Merge node, note that `_prevNode` always uses the first input connector.
+
+`_prevNode.runIndex`
+
+The run of the previous node that generated the current input. When using the Merge node, note that `_prevNode` always uses the first input connector.
+
+`_runIndex`
+
+How many times n8n has executed the current node. Zero-based (the first run is 0, the second is 1, and so on).
+
+`_secrets`
+
+Contains information about your [External secrets](https://docs.n8n.io/administer/manage-credentials/use-external-secret-stores)
+ setup.
+
+`_vars`
+
+Contains the [Variables](https://docs.n8n.io/build/code-in-n8n/define-custom-variables)
+ available in the active environment.
+
+`_workflow.active`
+
+Whether the workflow is active (true) or not (false).
+
+`_workflow.id`
+
+The workflow ID.
+
+`_workflow.name`
+
+The workflow name.
+
+Related resources[](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/n8n-metadata#related-resources)
+
+-----------------------------------------------------------------------------------------------------------------
+
+*   [Use built-in shortcuts](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts)
+    
+*   [JMESPath](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/jmespath)
+    
+*   [HTTP node](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/http-node)
+    
+*   [LangChain Code node](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/langchain-code-node)
+    
+
+[PreviousLangChain Code node](https://docs.n8n.io/build/code-in-n8n/use-built-in-shortcuts/langchain-code-node)
+[NextDefine custom variables](https://docs.n8n.io/build/code-in-n8n/define-custom-variables)
+
+Last updated 10 days ago
+
+Was this helpful?

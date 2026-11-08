@@ -1,0 +1,185 @@
+[Skip to main content](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transform.html#main-content)
+
+Back to top Ctrl+K
+
+Choose version
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/pandas-dev/pandas)
+    
+*   [X](https://x.com/pandas_dev)
+    
+*   [Mastodon](https://fosstodon.org/@pandas_dev)
+    
+
+Collapse Sidebar Expand Sidebar
+
+pandas.DataFrame.transform[#](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transform.html#pandas-dataframe-transform "Link to this heading")
+
+==============================================================================================================================================================
+
+DataFrame.transform(_func_, _axis\=0_, _\*args_, _\*\*kwargs_)[\[source\]](https://github.com/pandas-dev/pandas/blob/v3.1.1/pandas/core/frame.py#L15021-L15171)
+[#](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transform.html#pandas.DataFrame.transform "Link to this definition")
+
+Call `func` on self producing a DataFrame with the same axis shape as self.
+
+Unlike aggregation, transformation preserves the shape of the input. The provided function must return a result that is the same size as the input along the specified axis, raising a `ValueError` otherwise.
+
+Parameters:
+
+**func**function, str, list-like or dict-like
+
+Function to use for transforming the data. If a function, must either work when passed a DataFrame or when passed to DataFrame.apply. If func is both list-like and dict-like, dict-like behavior takes precedence.
+
+Accepted combinations are:
+
+*   function
+    
+*   string function name
+    
+*   list-like of functions and/or function names, e.g. `[np.exp, 'sqrt']`
+    
+*   dict-like of axis labels -> functions, function names or list-like of such.
+    
+
+**axis**{0 or ‘index’, 1 or ‘columns’}, default 0
+
+If 0 or ‘index’: apply function to each column. If 1 or ‘columns’: apply function to each row.
+
+**\*args**
+
+Positional arguments to pass to func.
+
+**\*\*kwargs**
+
+Keyword arguments to pass to func.
+
+Returns:
+
+DataFrame
+
+A DataFrame that must have the same length as self.
+
+Raises:
+
+**ValueError**If the returned DataFrame has a different length than self.
+
+See also
+
+[`DataFrame.agg`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.agg.html#pandas.DataFrame.agg "pandas.DataFrame.agg")
+
+Only perform aggregating type operations.
+
+[`DataFrame.apply`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html#pandas.DataFrame.apply "pandas.DataFrame.apply")
+
+Invoke function on a DataFrame.
+
+Notes
+
+Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See [Mutating with User Defined Function (UDF) methods](https://pandas.pydata.org/docs/user_guide/gotchas.html#gotchas-udf-mutation)
+ for more details.
+
+Examples
+
+\>>> df \= pd.DataFrame({"A": range(3), "B": range(1, 4)})
+\>>> df
+   A  B
+0  0  1
+1  1  2
+2  2  3
+\>>> df.transform(lambda x: x + 1)
+   A  B
+0  1  2
+1  2  3
+2  3  4
+
+Copy to clipboard
+
+Even though the resulting DataFrame must have the same length as the input DataFrame, it is possible to provide several input functions:
+
+\>>> s \= pd.Series(range(3))
+\>>> s
+0    0
+1    1
+2    2
+dtype: int64
+\>>> s.transform(\[np.sqrt, np.exp\])
+       sqrt        exp
+0  0.000000   1.000000
+1  1.000000   2.718282
+2  1.414214   7.389056
+
+Copy to clipboard
+
+You can call transform on a GroupBy object:
+
+\>>> df \= pd.DataFrame(
+...     {
+...         "Date": \[\
+...             "2015-05-08",\
+...             "2015-05-07",\
+...             "2015-05-06",\
+...             "2015-05-05",\
+...             "2015-05-08",\
+...             "2015-05-07",\
+...             "2015-05-06",\
+...             "2015-05-05",\
+...         \],
+...         "Data": \[5, 8, 6, 1, 50, 100, 60, 120\],
+...     }
+... )
+\>>> df
+         Date  Data
+0  2015-05-08     5
+1  2015-05-07     8
+2  2015-05-06     6
+3  2015-05-05     1
+4  2015-05-08    50
+5  2015-05-07   100
+6  2015-05-06    60
+7  2015-05-05   120
+\>>> df.groupby("Date")\["Data"\].transform("sum")
+0     55
+1    108
+2     66
+3    121
+4     55
+5    108
+6     66
+7    121
+Name: Data, dtype: int64
+
+Copy to clipboard
+
+\>>> df \= pd.DataFrame(
+...     {
+...         "c": \[1, 1, 1, 2, 2, 2, 2\],
+...         "type": \["m", "n", "o", "m", "m", "n", "n"\],
+...     }
+... )
+\>>> df
+   c type
+0  1    m
+1  1    n
+2  1    o
+3  2    m
+4  2    m
+5  2    n
+6  2    n
+\>>> df\["size"\] \= df.groupby("c")\["type"\].transform(len)
+\>>> df
+   c type size
+0  1    m    3
+1  1    n    3
+2  1    o    3
+3  2    m    4
+4  2    m    4
+5  2    n    4
+6  2    n    4
+
+Copy to clipboard
+
+On this page

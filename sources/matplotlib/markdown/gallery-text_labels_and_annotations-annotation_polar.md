@@ -1,0 +1,108 @@
+[Skip to main content](https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_polar.html#main-content)
+
+Back to top Ctrl+K
+
+*   [Plot types](https://matplotlib.org/stable/plot_types/index.html)
+    
+*   [User guide](https://matplotlib.org/stable/users/index.html)
+    
+*   [Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+    
+*   [Examples](https://matplotlib.org/stable/gallery/index.html)
+    
+*   [Reference](https://matplotlib.org/stable/api/index.html)
+    
+*   [Contribute](https://matplotlib.org/stable/devel/index.html)
+    
+*   [Releases](https://matplotlib.org/stable/users/release_notes.html)
+    
+
+Choose version
+
+*   [Gitter](https://gitter.im/matplotlib/matplotlib "Gitter")
+    
+*   [Discourse](https://discourse.matplotlib.org/ "Discourse")
+    
+*   [GitHub](https://github.com/matplotlib/matplotlib "GitHub")
+    
+
+Note
+
+[Go to the end](https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_polar.html#sphx-glr-download-gallery-text-labels-and-annotations-annotation-polar-py)
+ to download the full example code.
+
+Annotate polar plots[#](https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_polar.html#annotate-polar-plots "Link to this heading")
+
+=============================================================================================================================================================
+
+This example shows how to create an annotation on a polar graph.
+
+For a complete overview of the annotation capabilities, also see the [Annotations](https://matplotlib.org/stable/users/explain/text/annotations.html#annotations)
+.
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+[fig](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+ \= [plt.figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure "matplotlib.pyplot.figure")
+()
+ax \= [fig.add\_subplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.add_subplot.html#matplotlib.figure.Figure.add_subplot "matplotlib.figure.Figure.add_subplot")
+(projection\='polar')
+[r](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ \= [np.arange](https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange "numpy.arange")
+(0, 1, 0.001)
+[theta](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ \= 2 \* 2\*[np.pi](https://docs.python.org/3/library/functions.html#float "builtins.float")
+ \* [r](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+[line](https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D "matplotlib.lines.Line2D")
+, \= [ax.plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib.axes.Axes.plot "matplotlib.axes.Axes.plot")
+([theta](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, [r](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+, color\='#ee8d18', lw\=3)
+
+[ind](https://docs.python.org/3/library/functions.html#int "builtins.int")
+ \= 800
+[thisr](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")
+, [thistheta](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")
+ \= [r](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\[[ind](https://docs.python.org/3/library/functions.html#int "builtins.int")\
+\], [theta](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+\[[ind](https://docs.python.org/3/library/functions.html#int "builtins.int")\
+\]
+[ax.plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib.axes.Axes.plot "matplotlib.axes.Axes.plot")
+(\[[thistheta](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")\
+\], \[[thisr](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")\
+\], 'o')
+[ax.annotate](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.annotate.html#matplotlib.axes.Axes.annotate "matplotlib.axes.Axes.annotate")
+('a polar annotation',
+            xy\=([thistheta](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")
+, [thisr](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64 "numpy.float64")
+),  \# theta, radius
+            xytext\=(0.05, 0.05),    \# fraction, fraction
+            textcoords\='figure fraction',
+            arrowprops\=dict(facecolor\='black', shrink\=0.05),
+            horizontalalignment\='left',
+            verticalalignment\='bottom',
+            )
+[plt.show](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show "matplotlib.pyplot.show")
+()
+
+![annotation polar](https://matplotlib.org/stable/_images/sphx_glr_annotation_polar_001_2_00x.png)
+
+References
+
+The use of the following functions, methods, classes and modules is shown in this example:
+
+*   [`matplotlib.projections.polar`](https://matplotlib.org/stable/api/projections/polar.html#module-matplotlib.projections.polar "matplotlib.projections.polar")
+    
+*   [`matplotlib.axes.Axes.annotate`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.annotate.html#matplotlib.axes.Axes.annotate "matplotlib.axes.Axes.annotate")
+     / [`matplotlib.pyplot.annotate`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.annotate.html#matplotlib.pyplot.annotate "matplotlib.pyplot.annotate")
+    
+
+[`Download Jupyter notebook: annotation_polar.ipynb`](https://matplotlib.org/stable/_downloads/157e627d53f215035d7f6d226e5e87f8/annotation_polar.ipynb)
+
+[`Download Python source code: annotation_polar.py`](https://matplotlib.org/stable/_downloads/ffc150ccbb9ee266a1f585c63bad2603/annotation_polar.py)
+
+[`Download zipped: annotation_polar.zip`](https://matplotlib.org/stable/_downloads/d55f510d06bab221b70ed83fed76c855/annotation_polar.zip)
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)

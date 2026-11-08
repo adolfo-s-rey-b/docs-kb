@@ -1,0 +1,78 @@
+[Skip to main content](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html#main-content)
+
+Back to top Ctrl+K
+
+*   System Settings
+*   Light
+*   Dark
+
+*   [GitHub](https://github.com/scikit-learn/scikit-learn)
+    
+
+1.9.1 (stable)
+
+[1.10.dev0 (dev)](https://scikit-learn.org/dev/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.9.1 (stable)](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.8.0](https://scikit-learn.org/1.8/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.7.2](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.6.1](https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.5.2](https://scikit-learn.org/1.5/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+[1.4.2](https://scikit-learn.org/1.4/modules/generated/sklearn.metrics.pairwise.linear_kernel.html)
+
+Collapse Sidebar Expand Sidebar
+
+linear\_kernel[#](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html#linear-kernel "Link to this heading")
+
+======================================================================================================================================================
+
+sklearn.metrics.pairwise.linear\_kernel(_X_, _Y\=None_, _dense\_output\=True_)[\[source\]](https://github.com/scikit-learn/scikit-learn/blob/afe5bcd80/sklearn/metrics/pairwise.py#L1394)
+[#](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.linear_kernel.html#sklearn.metrics.pairwise.linear_kernel "Link to this definition")
+
+Compute the linear kernel between X and Y.
+
+Read more in the [User Guide](https://scikit-learn.org/stable/modules/metrics.html#linear-kernel)
+.
+
+Parameters:
+
+**X**{array-like, sparse matrix} of shape (n\_samples\_X, n\_features)
+
+A feature array.
+
+**Y**{array-like, sparse matrix} of shape (n\_samples\_Y, n\_features), default=None
+
+An optional second feature array. If `None`, uses `Y=X`.
+
+**dense\_output**bool, default=True
+
+Whether to return dense output even when the input is sparse. If `False`, the output is sparse if both input arrays are sparse.
+
+Added in version 0.20.
+
+Returns:
+
+**kernel**ndarray of shape (n\_samples\_X, n\_samples\_Y)
+
+The Gram matrix of the linear kernel, i.e. `X @ Y.T`.
+
+Examples
+
+\>>> from sklearn.metrics.pairwise import linear\_kernel
+\>>> X \= \[\[0, 0, 0\], \[1, 1, 1\]\]
+\>>> Y \= \[\[1, 0, 0\], \[1, 1, 0\]\]
+\>>> linear\_kernel(X, Y)
+array(\[\[0., 0.\],\
+       \[1., 2.\]\])
+
+Copy to clipboard
+
+On this page
+
+* * *
+
+scikit-learn is [financially supported](https://scikit-learn.org/stable/institutional_support.html#funding)
+ by Probabl and other institutions.
+
+[![](https://scikit-learn.org/stable/_static/probabl.png "Probabl")\
+\
+Enterprise-grade solutions and services](https://probabl.ai/lp/scikit-learn)

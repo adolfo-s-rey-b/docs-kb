@@ -1,0 +1,73 @@
+[Skip to main content](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html#main-content)
+
+Back to top Ctrl+K
+
+Light Dark System Settings
+
+2.5 (stable)
+
+[dev](https://numpy.org/devdocs/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.5 (stable)](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.4](https://numpy.org/doc/2.4/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.3](https://numpy.org/doc/2.3/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.2](https://numpy.org/doc/2.2/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.1](https://numpy.org/doc/2.1/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[2.0](https://numpy.org/doc/2.0/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.26](https://numpy.org/doc/1.26/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.25](https://numpy.org/doc/1.25/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.24](https://numpy.org/doc/1.24/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.23](https://numpy.org/doc/1.23/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.22](https://numpy.org/doc/1.22/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.21](https://numpy.org/doc/1.21/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.20](https://numpy.org/doc/1.20/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.19](https://numpy.org/doc/1.19/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.18](https://numpy.org/doc/1.18/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.17](https://numpy.org/doc/1.17/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.16](https://numpy.org/doc/1.16/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.15](https://numpy.org/doc/1.15/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.14](https://numpy.org/doc/1.14/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+[1.13](https://numpy.org/doc/1.13/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html)
+
+*   [GitHub](https://github.com/numpy/numpy)
+    
+
+Collapse Sidebar Expand Sidebar
+
+numpy.polynomial.hermite\_e.HermiteE.basis[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html#numpy-polynomial-hermite-e-hermitee-basis "Link to this heading")
+
+================================================================================================================================================================================================================
+
+method
+
+_classmethod_ polynomial.hermite\_e.HermiteE.basis(_deg_, _domain\=None_, _window\=None_, _symbol\='x'_)[\[source\]](https://github.com/numpy/numpy/blob/v2.5.0/numpy/polynomial/_polybase.py#L1114-L1151)
+[#](https://numpy.org/doc/stable/reference/generated/numpy.polynomial.hermite_e.HermiteE.basis.html#numpy.polynomial.hermite_e.HermiteE.basis "Link to this definition")
+
+Series basis polynomial of degree _deg_.
+
+Returns the series representing the basis polynomial of degree _deg_.
+
+Parameters:
+
+**deg**int
+
+Degree of the basis polynomial for the series. Must be >= 0.
+
+**domain**{None, array\_like}, optional
+
+If given, the array must be of the form `[beg, end]`, where `beg` and `end` are the endpoints of the domain. If None is given then the class domain is used. The default is None.
+
+**window**{None, array\_like}, optional
+
+If given, the resulting array must be if the form `[beg, end]`, where `beg` and `end` are the endpoints of the window. If None is given then the class window is used. The default is None.
+
+**symbol**str, optional
+
+Symbol representing the independent variable. Default is ‘x’.
+
+Returns:
+
+**new\_series**series
+
+A series with the coefficient of the _deg_ term set to one and all others zero.
+
+On this page

@@ -1,0 +1,110 @@
+[Skip to main content](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id#main-content)
+
+[![TensorFlow](https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/tensorflow/images/lockup.svg)](https://www.tensorflow.org/)
+
+/
+
+*   [English](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id)
+    
+*   [中文 – 简体](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id?hl=zh-cn)
+    
+
+[GitHub](https://github.com/tensorflow)
+ Sign in
+
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id#returns)
+    
+
+*   [TensorFlow](https://www.tensorflow.org/)
+    
+*   [API](https://www.tensorflow.org/api)
+    
+*   [TensorFlow v2.21.0](https://www.tensorflow.org/api_docs)
+    
+*   [Python](https://www.tensorflow.org/api_docs/python/tf)
+    
+
+tf.data.experimental.service.from\_dataset\_id Stay organized with collections Save and categorize content based on your preferences.
+=====================================================================================================================================
+
+*   On this page
+*   [Args](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id#args)
+    
+*   [Returns](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id#returns)
+    
+
+ [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png) View source on GitHub](https://github.com/tensorflow/tensorflow/blob/v2.21.0/tensorflow/python/data/experimental/ops/data_service_ops.py#L1105-L1231)
+
+Creates a dataset which reads data from the tf.data service.
+
+#### View aliases
+
+**Compat aliases for migration**
+
+See [Migration guide](https://www.tensorflow.org/guide/migrate)
+ for more details.
+
+[`tf.compat.v1.data.experimental.service.from_dataset_id`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/from_dataset_id)
+
+tf.data.experimental.service.from_dataset_id(
+        processing_mode,
+        service,
+        dataset_id,
+        element_spec=None,
+        job_name=None,
+        consumer_index=None,
+        num_consumers=None,
+        max_outstanding_requests=None,
+        data_transfer_protocol=None,
+        cross_trainer_cache=None,
+        target_workers='AUTO'
+    ) -> tf.data.Dataset
+
+This is useful when the dataset is registered by one process, then used in another process. When the same process is both registering and reading from the dataset, it is simpler to use [`tf.data.experimental.service.distribute`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/distribute)
+ instead.
+
+Before using `from_dataset_id`, the dataset must have been registered with the tf.data service using [`tf.data.experimental.service.register_dataset`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/register_dataset)
+. `register_dataset` returns a dataset id for the registered dataset. That is the `dataset_id` which should be passed to `from_dataset_id`.
+
+The `element_spec` argument indicates the [`tf.TypeSpec`](https://www.tensorflow.org/api_docs/python/tf/TypeSpec)
+s for the elements produced by the dataset. Currently `element_spec` must be explicitly specified, and match the dataset registered under `dataset_id`. `element_spec` defaults to `None` so that in the future we can support automatically discovering the `element_spec` by querying the tf.data service.
+
+[`tf.data.experimental.service.distribute`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/distribute)
+ is a convenience method which combines `register_dataset` and `from_dataset_id` into a dataset transformation. See the documentation for [`tf.data.experimental.service.distribute`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/distribute)
+ for more detail about how `from_dataset_id` works.
+
+    dispatcher = tf.data.experimental.service.DispatchServer()
+
+|     |     |
+| --- | --- |
+| Args<br>---- |     |
+| `processing_mode` | A [`tf.data.experimental.service.ShardingPolicy`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/ShardingPolicy)<br> specifying how to shard the dataset among tf.data workers. See [`tf.data.experimental.service.ShardingPolicy`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/ShardingPolicy)<br> for details. For backwards compatibility, `processing_mode` may also be set to the strings `"parallel_epochs"` or `"distributed_epoch"`, which are respectively equivalent to [`ShardingPolicy.OFF`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/ShardingPolicy#OFF)<br> and [`ShardingPolicy.DYNAMIC`](https://www.tensorflow.org/api_docs/python/tf/data/experimental/service/ShardingPolicy#DYNAMIC)<br>. |
+| `service` | A string or a tuple indicating how to connect to the tf.data service. If it's a string, it should be in the format `[<protocol>://]<address>`, where `<address>` identifies the dispatcher address and `<protocol>` can optionally be used to override the default protocol to use. If it's a tuple, it should be (protocol, address). |
+| `dataset_id` | The id of the dataset to read from. This id is returned by `register_dataset` when the dataset is registered with the tf.data service. |
+| `element_spec` | A nested structure of [`tf.TypeSpec`](https://www.tensorflow.org/api_docs/python/tf/TypeSpec)<br>s representing the type of elements produced by the dataset. This argument is only required inside a tf.function. Use [`tf.data.Dataset.element_spec`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset#element_spec)<br> to get the element spec for a given dataset. |
+| `job_name` | (Optional.) The name of the job. If provided, it must be a non-empty string. This argument makes it possible for multiple datasets to share the same job. The default behavior is that the dataset creates anonymous, exclusively owned jobs. |
+| `consumer_index` | (Optional.) The index of the consumer in the range from `0` to `num_consumers`. Must be specified alongside `num_consumers`. When specified, consumers will read from the job in a strict round-robin order, instead of the default first-come-first-served order. |
+| `num_consumers` | (Optional.) The number of consumers which will consume from the job. Must be specified alongside `consumer_index`. When specified, consumers will read from the job in a strict round-robin order, instead of the default first-come-first-served order. When `num_consumers` is specified, the dataset must have infinite cardinality to prevent a producer from running out of data early and causing consumers to go out of sync. |
+| `max_outstanding_requests` | (Optional.) A limit on how many elements may be requested at the same time. You can use this option to control the amount of memory used, since `distribute` won't use more than `element_size` \* `max_outstanding_requests` of memory. |
+| `data_transfer_protocol` | (Optional.) The protocol to use for transferring data with the tf.data service. If not provided, a protocol is determined at runtime. |
+| `cross_trainer_cache` | (Optional.) If a `CrossTrainerCache` object is provided, dataset iteration will be shared across concurrently running trainers. See https://www.tensorflow.org/api\_docs/python/tf/data/experimental/service#sharing\_tfdata\_service\_with\_concurrent\_trainers for details. |
+| `target_workers` | (Optional.) Which workers to read from. If `"AUTO"`, tf.data runtime decides which workers to read from. If `"ANY"`, reads from any tf.data service workers. If `"LOCAL"`, only reads from local in-process tf.data service workers. `"AUTO"` works well for most cases, while users can specify other targets. For example, `"LOCAL"` helps avoid RPCs and data copy if every TF worker colocates with a tf.data service worker. Consumers of a shared job must use the same `target_workers`. Defaults to `"AUTO"`. |
+
+|     |
+| --- |
+| Returns<br>------- |     |
+| A [`tf.data.Dataset`](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)<br> which reads from the tf.data service. |     |
+
+Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+, and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+. For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies)
+. Java is a registered trademark of Oracle and/or its affiliates. Some content is licensed under the [numpy license](https://numpy.org/doc/stable/license.html)
+.
+
+Last updated 2026-10-31 UTC.

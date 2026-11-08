@@ -1,0 +1,91 @@
+[Skip to main content](https://matplotlib.org/stable/gallery/animation/animation_demo.html#main-content)
+
+Back to top Ctrl+K
+
+*   [Plot types](https://matplotlib.org/stable/plot_types/index.html)
+    
+*   [User guide](https://matplotlib.org/stable/users/index.html)
+    
+*   [Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+    
+*   [Examples](https://matplotlib.org/stable/gallery/index.html)
+    
+*   [Reference](https://matplotlib.org/stable/api/index.html)
+    
+*   [Contribute](https://matplotlib.org/stable/devel/index.html)
+    
+*   [Releases](https://matplotlib.org/stable/users/release_notes.html)
+    
+
+Choose version
+
+*   [Gitter](https://gitter.im/matplotlib/matplotlib "Gitter")
+    
+*   [Discourse](https://discourse.matplotlib.org/ "Discourse")
+    
+*   [GitHub](https://github.com/matplotlib/matplotlib "GitHub")
+    
+
+Note
+
+[Go to the end](https://matplotlib.org/stable/gallery/animation/animation_demo.html#sphx-glr-download-gallery-animation-animation-demo-py)
+ to download the full example code.
+
+pyplot animation[#](https://matplotlib.org/stable/gallery/animation/animation_demo.html#pyplot-animation "Link to this heading")
+
+=================================================================================================================================
+
+Generating an animation by calling [`pause`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pause.html#matplotlib.pyplot.pause "matplotlib.pyplot.pause")
+ between plotting commands.
+
+The method shown here is only suitable for simple, low-performance use. For more demanding applications, look at the [`animation`](https://matplotlib.org/stable/api/animation_api.html#module-matplotlib.animation "matplotlib.animation")
+ module and the examples that use it.
+
+Note that calling [`time.sleep`](https://docs.python.org/3/library/time.html#time.sleep "(in Python v3.14)")
+ instead of [`pause`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pause.html#matplotlib.pyplot.pause "matplotlib.pyplot.pause")
+ would _not_ work.
+
+Output generated via [`matplotlib.animation.Animation.to_jshtml`](https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.Animation.html#matplotlib.animation.Animation.to_jshtml "matplotlib.animation.Animation.to_jshtml")
+.
+
+![frame 49](https://matplotlib.org/stable/_images/sphx_glr_animation_demo_001_2_00x.png)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+[np.random.seed](https://numpy.org/doc/stable/reference/random/generated/numpy.random.seed.html#numpy.random.seed "numpy.random.seed")
+(19680801)
+[data](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ \= [np.random.random](https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html#numpy.random.random "numpy.random.random")
+((50, 50, 50))
+
+[fig](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure "matplotlib.figure.Figure")
+, [ax](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes "matplotlib.axes.Axes")
+ \= [plt.subplots](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots "matplotlib.pyplot.subplots")
+()
+
+for [i](https://docs.python.org/3/library/functions.html#int "builtins.int")
+, [img](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+ in enumerate([data](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+):
+    [ax.clear](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.clear.html#matplotlib.axes.Axes.clear "matplotlib.axes.Axes.clear")
+()
+    [ax.imshow](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.imshow.html#matplotlib.axes.Axes.imshow "matplotlib.axes.Axes.imshow")
+([img](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray "numpy.ndarray")
+)
+    [ax.set\_title](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_title.html#matplotlib.axes.Axes.set_title "matplotlib.axes.Axes.set_title")
+(f"frame {[i](https://docs.python.org/3/library/functions.html#int "builtins.int")
+}")
+    \# Note that using time.sleep does \*not\* work here!
+    [plt.pause](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pause.html#matplotlib.pyplot.pause "matplotlib.pyplot.pause")
+(0.1)
+
+**Total running time of the script:** (0 minutes 10.420 seconds)
+
+[`Download Jupyter notebook: animation_demo.ipynb`](https://matplotlib.org/stable/_downloads/bc13e7f47de32e454f938d22ed01e78f/animation_demo.ipynb)
+
+[`Download Python source code: animation_demo.py`](https://matplotlib.org/stable/_downloads/00f7f20b47c4afdb8cf00a246bc6af53/animation_demo.py)
+
+[`Download zipped: animation_demo.zip`](https://matplotlib.org/stable/_downloads/f3056b1f811a110a4f5f18696b799c98/animation_demo.zip)
+
+[Gallery generated by Sphinx-Gallery](https://sphinx-gallery.github.io/)

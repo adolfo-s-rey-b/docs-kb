@@ -1,0 +1,322 @@
+Opens in a new window Opens an external website Opens an external website in a new window
+
+Close this dialog
+
+This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link: [Privacy Policy](https://lfprojects.org/policies/privacy-policy/)
+
+Manage Preferences
+
+Close Cookie Preferences
+
+[Skip to main content](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#main-content)
+
+Back to top  
+
+ Ctrl+K
+
+v2.15.0 (stable)
+
+[v2.16.0 (unstable)](https://docs.pytorch.org/docs/main/notes/numerical_accuracy.html)
+[v2.15.0 (stable)](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html)
+[v2.14.0](https://docs.pytorch.org/docs/2.14/notes/numerical_accuracy.html)
+[v2.13.0](https://docs.pytorch.org/docs/2.13/notes/numerical_accuracy.html)
+[v2.12.0](https://docs.pytorch.org/docs/2.12/notes/numerical_accuracy.html)
+[v2.11.0](https://docs.pytorch.org/docs/2.11/notes/numerical_accuracy.html)
+[v2.10.0](https://docs.pytorch.org/docs/2.10/notes/numerical_accuracy.html)
+[v2.9.1](https://docs.pytorch.org/docs/2.9/notes/numerical_accuracy.html)
+[v2.8.0](https://docs.pytorch.org/docs/2.8/notes/numerical_accuracy.html)
+[v2.7.0](https://docs.pytorch.org/docs/2.7/notes/numerical_accuracy.html)
+[v2.6.0](https://docs.pytorch.org/docs/2.6/notes/numerical_accuracy.html)
+[v2.5.0](https://docs.pytorch.org/docs/2.5/notes/numerical_accuracy.html)
+[v2.4.0](https://docs.pytorch.org/docs/2.4/notes/numerical_accuracy.html)
+[v2.3.0](https://docs.pytorch.org/docs/2.3/notes/numerical_accuracy.html)
+[v2.2.0](https://docs.pytorch.org/docs/2.2/notes/numerical_accuracy.html)
+[v2.1.0](https://docs.pytorch.org/docs/2.1/notes/numerical_accuracy.html)
+[v2.0.0](https://docs.pytorch.org/docs/2.0/notes/numerical_accuracy.html)
+[v1.13](https://docs.pytorch.org/docs/1.13/notes/numerical_accuracy.html)
+[v1.12](https://docs.pytorch.org/docs/1.12/notes/numerical_accuracy.html)
+[v1.11](https://docs.pytorch.org/docs/1.11/notes/numerical_accuracy.html)
+[v1.10](https://docs.pytorch.org/docs/1.10/notes/numerical_accuracy.html)
+[v1.9.1](https://docs.pytorch.org/docs/1.9.1/notes/numerical_accuracy.html)
+[v1.9.0](https://docs.pytorch.org/docs/1.9.0/notes/numerical_accuracy.html)
+[v1.8.1](https://docs.pytorch.org/docs/1.8.1/notes/numerical_accuracy.html)
+[v1.8.0](https://docs.pytorch.org/docs/1.8.0/notes/numerical_accuracy.html)
+[v1.7.1](https://docs.pytorch.org/docs/1.7.1/notes/numerical_accuracy.html)
+[v1.7.0](https://docs.pytorch.org/docs/1.7.0/notes/numerical_accuracy.html)
+[v1.6.0](https://docs.pytorch.org/docs/1.6.0/notes/numerical_accuracy.html)
+[v1.5.1](https://docs.pytorch.org/docs/1.5.1/notes/numerical_accuracy.html)
+[v1.5.0](https://docs.pytorch.org/docs/1.5.0/notes/numerical_accuracy.html)
+[v1.4.0](https://docs.pytorch.org/docs/1.4.0/notes/numerical_accuracy.html)
+[v1.3.1](https://docs.pytorch.org/docs/1.3.1/notes/numerical_accuracy.html)
+[v1.3.0](https://docs.pytorch.org/docs/1.3.0/notes/numerical_accuracy.html)
+[v1.2.0](https://docs.pytorch.org/docs/1.2.0/notes/numerical_accuracy.html)
+[v1.1.0](https://docs.pytorch.org/docs/1.1.0/notes/numerical_accuracy.html)
+[v1.0.1](https://docs.pytorch.org/docs/1.0.1/notes/numerical_accuracy.html)
+[v1.0.0](https://docs.pytorch.org/docs/1.0.0/notes/numerical_accuracy.html)
+[v0.4.1](https://docs.pytorch.org/docs/0.4.1/notes/numerical_accuracy.html)
+[v0.4.0](https://docs.pytorch.org/docs/0.4.0/notes/numerical_accuracy.html)
+[v0.3.1](https://docs.pytorch.org/docs/0.3.1/notes/numerical_accuracy.html)
+[v0.3.0](https://docs.pytorch.org/docs/0.3.0/notes/numerical_accuracy.html)
+[v0.2.0](https://docs.pytorch.org/docs/0.2.0/notes/numerical_accuracy.html)
+[v0.1.12](https://docs.pytorch.org/docs/0.1.12/notes/numerical_accuracy.html)
+
+[Go to pytorch.org](https://pytorch.org/)
+
+ Ctrl+K
+
+|     |     |
+| --- | --- |
+|     | [×](javascript:void(0) "Clear search box") |
+
+search
+
+Custom Search
+
+|     |     |
+| --- | --- |
+|     | Sort by<br><br>Relevance<br><br>Date |
+
+*   [X](https://x.com/PyTorch)
+    
+*   [GitHub](https://github.com/pytorch/pytorch)
+    
+*   [PyTorch Forum](https://discuss.pytorch.org/)
+    
+*   [PyPi](https://pypi.org/project/torch/)
+    
+
+Rate this Page
+
+★ ★ ★ ★ ★
+
+Numerical accuracy[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#numerical-accuracy "Link to this heading")
+
+==================================================================================================================================
+
+Created On: May 13, 2026 | Last Updated On: Sep 02, 2026
+
+In modern computers, floating point numbers are represented using IEEE 754 standard. For more details on floating point arithmetic and IEEE 754 standard, please see [Floating point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
+. In particular, note that floating point provides limited accuracy (about 7 decimal digits for single precision floating point numbers, about 16 decimal digits for double precision floating point numbers) and that floating point addition and multiplication are not associative, so the order of the operations affects the results. Because of this, PyTorch is not guaranteed to produce bitwise identical results for floating point computations that are mathematically identical. Similarly, bitwise identical results are not guaranteed across PyTorch releases, individual commits, or different platforms. In particular, CPU and GPU results can be different even for bitwise-identical inputs and even after controlling for the sources of randomness.
+
+Batched computations or slice computations[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#batched-computations-or-slice-computations "Link to this heading")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Many operations in PyTorch support batched computation, where the same operation is performed for the elements of the batches of inputs. An example of this is [`torch.mm()`](https://docs.pytorch.org/docs/2.15/generated/torch.mm.html#torch.mm "torch.mm")
+ and [`torch.bmm()`](https://docs.pytorch.org/docs/2.15/generated/torch.bmm.html#torch.bmm "torch.bmm")
+. It is possible to implement batched computation as a loop over batch elements, and apply the necessary math operations to the individual batch elements, for efficiency reasons we are not doing that, and typically perform computation for the whole batch. The mathematical libraries that we are calling, and PyTorch internal implementations of operations can produce slightly different results in this case, compared to non-batched computations. In particular, let `A` and `B` be 3D tensors with the dimensions suitable for batched matrix multiplication. Then `(A@B)[0]` (the first element of the batched result) is not guaranteed to be bitwise identical to `A[0]@B[0]` (the matrix product of the first elements of the input batches) even though mathematically it’s an identical computation.
+
+Similarly, an operation applied to a tensor slice is not guaranteed to produce results that are identical to the slice of the result of the same operation applied to the full tensor. E.g. let `A` be a 2-dimensional tensor. `A.sum(-1)[0]` is not guaranteed to be bitwise equal to `A[:,0].sum()`.
+
+Extremal values[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#extremal-values "Link to this heading")
+
+----------------------------------------------------------------------------------------------------------------------------
+
+When inputs contain large values such that intermediate results may overflow the range of the used datatype, the end result may overflow too, even though it is representable in the original datatype. E.g.:
+
+import torch
+a \= torch.tensor(\[1e20, 1e20\])  \# fp32 type by default
+a.norm()  \# produces tensor(inf)
+a.double().norm()  \# produces tensor(1.4142e+20, dtype=torch.float64), representable in fp32
+
+Copy to clipboard
+
+Different backends may use different algorithms, reduction orders, or accumulation precision for the same operation. As a result, finite inputs near the limits of a dtype may produce finite results on one backend and non-finite results, such as `inf` or `NaN`, on another backend, such as when moving a computation between CPU and CUDA. A value being representable in a dtype does not guarantee that all intermediate or output values of an operation will remain finite. For workflows that are sensitive to non-finite values, consider normalizing or clamping extremal inputs and using [`torch.isfinite()`](https://docs.pytorch.org/docs/2.15/generated/torch.isfinite.html#torch.isfinite "torch.isfinite")
+ to detect them.
+
+Linear algebra (`torch.linalg`)[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#linear-algebra-torch-linalg "Link to this heading")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Non-finite values[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#non-finite-values "Link to this heading")
+
+The external libraries (backends) that `torch.linalg` uses provide no guarantees on their behaviour when the inputs have non-finite values like `inf` or `NaN`. As such, neither does PyTorch. The operations may return a tensor with non-finite values, or raise an exception, or even segfault.
+
+Consider using [`torch.isfinite()`](https://docs.pytorch.org/docs/2.15/generated/torch.isfinite.html#torch.isfinite "torch.isfinite")
+ before calling these functions to detect this situation.
+
+### Extremal values in linalg[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#extremal-values-in-linalg "Link to this heading")
+
+Functions within `torch.linalg` have more [extremal values](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#extremal-values)
+ than other PyTorch functions.
+
+[linalg solvers](https://docs.pytorch.org/docs/2.15/linalg.html#linalg-solvers)
+ and [linalg inverses](https://docs.pytorch.org/docs/2.15/linalg.html#linalg-inverses)
+ assume that the input matrix `A` is invertible. If it is close to being non-invertible (for example, if it has a very small singular value), then these algorithms may silently return incorrect results. These matrices are said to be [ill-conditioned](https://nhigham.com/2020/03/19/what-is-a-condition-number/)
+. If provided with ill-conditioned inputs, the result of these functions they may vary when using the same inputs on different devices or when using different backends via the keyword `driver`.
+
+Spectral operations like `svd`, `eig`, and `eigh` may also return incorrect results (and their gradients may be infinite) when their inputs have singular values that are close to each other. This is because the algorithms used to compute these decompositions struggle to converge for these inputs.
+
+Running the computation in `float64` (as NumPy does by default) often helps, but it does not solve these issues in all cases. Analyzing the spectrum of the inputs via [`torch.linalg.svdvals()`](https://docs.pytorch.org/docs/2.15/generated/torch.linalg.svdvals.html#torch.linalg.svdvals "torch.linalg.svdvals")
+ or their condition number via [`torch.linalg.cond()`](https://docs.pytorch.org/docs/2.15/generated/torch.linalg.cond.html#torch.linalg.cond "torch.linalg.cond")
+ may help to detect these issues.
+
+TensorFloat-32 (TF32) on Nvidia Ampere (and later) devices[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#tensorfloat-32-tf32-on-nvidia-ampere-and-later-devices "Link to this heading")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+On Ampere (and later) Nvidia GPUs, PyTorch can use TensorFloat32 (TF32) to speed up mathematically intensive operations, in particular matrix multiplications and convolutions. When an operation is performed using TF32 tensor cores, only the first 10 bits of the input mantissa are read. This may reduce accuracy and produce surprising results (e.g., multiplying a matrix by the identity matrix may produce results that are different from the input). By default, TF32 tensor cores are disabled for matrix multiplications and enabled for convolutions, although most neural network workloads have the same convergence behavior when using TF32 as they have with fp32. We recommend enabling TF32 tensor cores for matrix multiplications with `torch.backends.cuda.matmul.fp32_precision = "tf32"` (`torch.backends.cuda.matmul.allow_tf32 = True` is going to be deprecated) if your network does not need full float32 precision. With a CUDA 12.9 or newer build, `torch.backends.cuda.matmul.fp32_precision = "bfx9"` allows cuBLAS to use BF16x9 emulation on supported NVIDIA GPUs. BF16x9 keeps FP32 inputs and outputs and retains all FP32 input bits through its decomposition, but its arithmetic is not IEEE-754 compliant and its relative accuracy is workload-dependent. On GPUs without a BF16x9 implementation, cuBLAS uses native FP32 instead. If your network needs full float32 precision for both matrix multiplications and convolutions, then TF32 tensor cores can also be disabled for convolutions with `torch.backends.cudnn.conv.fp32_precision = "ieee"` (`torch.backends.cudnn.allow_tf32 = False` is going to be deprecated).
+
+For more information see [TensorFloat32](https://docs.pytorch.org/docs/2.15/notes/cuda.html#tf32-on-ampere)
+.
+
+Reduced Precision Reduction for FP16 and BF16 GEMMs[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#reduced-precision-reduction-for-fp16-and-bf16-gemms "Link to this heading")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half-precision GEMM operations are typically done with intermediate accumulations (reduction) in single-precision for numerical accuracy and improved resilience to overflow. For performance, certain GPU architectures, especially more recent ones, allow a few truncations of the intermediate accumulation results to the reduced precision (e.g., half-precision). This change is often benign from the perspective of model convergence, though it may lead to unexpected results (e.g., `inf` values when the final result should be representable in half-precision). If reduced-precision reductions are problematic, they can be turned off with `torch.backends.cuda.matmul.allow_fp16_reduced_precision_reduction = False`. This sets `allow_splitk` to `True`. To disable both reduced-precision reductions and split-k reductions, use `torch.backends.cuda.matmul.allow_fp16_reduced_precision_reduction = (False, False)`.
+
+A similar flag exists for BF16 GEMM operations and is turned on by default. If BF16 reduced-precision reductions are problematic, they can be turned off with `torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = False`. This sets `allow_splitk` to `True`. To disable both reduced-precision reductions and split-k reductions, use `torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = (False, False)`.
+
+For more information see [allow\_fp16\_reduced\_precision\_reduction](https://docs.pytorch.org/docs/2.15/notes/cuda.html#fp16reducedprecision)
+ and [allow\_bf16\_reduced\_precision\_reduction](https://docs.pytorch.org/docs/2.15/notes/cuda.html#bf16reducedprecision)
+.
+
+Reduced Precision Reduction for FP16 and BF16 in Scaled Dot Product Attention (SDPA)[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#reduced-precision-reduction-for-fp16-and-bf16-in-scaled-dot-product-attention-sdpa "Link to this heading")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A naive SDPA math backend, when using FP16/BF16 inputs, can accumulate significant numerical errors due to the usage of low-precision intermediate buffers. To mitigate this issue, the default behavior now involves upcasting FP16/BF16 inputs to FP32. Computations are performed in FP32/TF32, and the final FP32 results are then downcasted back to FP16/BF16. This will improve numerical accuracy of the final output for the math backend with FP16/BF16 inputs, but increases memory usage and may cause performance regressions in the math backend as computations shift from FP16/BF16 BMM to FP32/TF32 BMM/Matmul.
+
+For scenarios where reduced-precision reductions are preferred for speed, they can be enabled with the following setting: `torch.backends.cuda.allow_fp16_bf16_reduction_math_sdp(True)`.
+
+Reduced Precision FP16 and BF16 GEMMs and Convolutions on AMD Instinct MI200 devices[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#reduced-precision-fp16-and-bf16-gemms-and-convolutions-on-amd-instinct-mi200-devices "Link to this heading")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+On AMD Instinct MI200 GPUs, the FP16 and BF16 V\_DOT2 and MFMA matrix instructions flush input and output denormal values to zero. FP32 and FP64 MFMA matrix instructions do not flush input and output denormal values to zero. The affected instructions are only used by rocBLAS (GEMM) and MIOpen (convolution) kernels; all other PyTorch operations will not encounter this behavior. All other supported AMD GPUs will not encounter this behavior.
+
+rocBLAS and MIOpen provide alternate implementations for affected FP16 operations. Alternate implementations for BF16 operations are not provided; BF16 numbers have a larger dynamic range than FP16 numbers and are less likely to encounter denormal values. For the FP16 alternate implementations, FP16 input values are cast to an intermediate BF16 value and then cast back to FP16 output after the accumulate FP32 operations. In this way, the input and output types are unchanged.
+
+When training using FP16 precision, some models may fail to converge with FP16 denorms flushed to zero. Denormal values more frequently occur in the backward pass of training during gradient calculation. PyTorch by default will use the rocBLAS and MIOpen alternate implementations during the backward pass. The default behavior can be overridden using environment variables, `ROCBLAS_INTERNAL_FP16_ALT_IMPL` and `MIOPEN_DEBUG_CONVOLUTION_ATTRIB_FP16_ALT_IMPL`. The behavior of these environment variables is as follows:
+
+|     | forward | backward |
+| --- | --- | --- |
+| Env unset | original | alternate |
+| Env set to 1 | alternate | alternate |
+| Env set to 0 | original | original |
+
+The following is the list of operations where rocBLAS may be used:
+
+*   `torch.addbmm`
+    
+*   `torch.addmm`
+    
+*   `torch.baddbmm`
+    
+*   `torch.bmm`
+    
+*   `torch.mm`
+    
+*   `torch.nn.GRUCell`
+    
+*   `torch.nn.LSTMCell`
+    
+*   `torch.nn.Linear`
+    
+*   `torch.sparse.addmm`
+    
+*   the following `torch._C._ConvBackend` implementations:
+    
+    *   `slowNd`
+        
+    *   `slowNd_transposed`
+        
+    *   `slowNd_dilated`
+        
+    *   `slowNd_dilated_transposed`
+        
+
+The following is the list of operations where MIOpen may be used:
+
+*   `torch.nn.Conv[Transpose]Nd`
+    
+*   the following `torch._C._ConvBackend` implementations:
+    
+    *   `ConvBackend::Miopen`
+        
+    *   `ConvBackend::MiopenDepthwise`
+        
+    *   `ConvBackend::MiopenTranspose`
+        
+
+TensorFloat-32 (TF32) on AMD Instinct MI300 devices[#](https://docs.pytorch.org/docs/2.15/notes/numerical_accuracy.html#tensorfloat-32-tf32-on-amd-instinct-mi300-devices "Link to this heading")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+On AMD Instinct MI300 GPUs (gfx942, CDNA3), the `v_mfma_f32_*_xf32` matrix instructions used by hipBLASLt’s TF32 path perform round-down accumulation. This is a documented property of the CDNA3 hardware. NVIDIA’s TF32 implementation rounds to nearest, so a TF32 GEMM exhibits a small negative-biased error on MI300 that is absent on NVIDIA. The bias scales with `sqrt(K) * 2^-10 * |A|_inf` and reaches the low single-digit milli-units for typical random inputs; the corresponding error on NVIDIA TF32 is roughly half to a third of that.
+
+Only operations that dispatch through hipBLASLt with TF32 enabled are affected. To run a block of code in full IEEE FP32:
+
+torch.backends.cuda.matmul.fp32\_precision \= "ieee"
+
+Copy to clipboard
+
+To enable TF32 on supported hardware:
+
+torch.backends.cuda.matmul.fp32\_precision \= "tf32"
+
+Copy to clipboard
+
+For a per-shape characterization of the MI300 vs NVIDIA-TF32 numerical gap, see https://github.com/jeffdaily/tf32\_analysis.
+
+On this page
+
+[Edit on GitHub](https://github.com/pytorch/pytorch/edit/main/docs/source/notes/numerical_accuracy.md)
+
+[Show Source](https://docs.pytorch.org/docs/2.15/_sources/notes/numerical_accuracy.md.txt)
+
+PyTorch Libraries
+
+*   [ExecuTorch](https://docs.pytorch.org/executorch)
+    
+*   [Helion](https://docs.pytorch.org/helion)
+    
+*   [torchao](https://docs.pytorch.org/ao)
+    
+*   [kineto](https://github.com/pytorch/kineto)
+    
+*   [torchtitan](https://github.com/pytorch/torchtitan)
+    
+*   [TorchRL](https://docs.pytorch.org/rl)
+    
+*   [torchvision](https://docs.pytorch.org/vision)
+    
+*   [torchaudio](https://docs.pytorch.org/audio)
+    
+*   [tensordict](https://docs.pytorch.org/tensordict)
+    
+*   [PyTorch on XLA Devices](https://docs.pytorch.org/xla)
+    
+
+Docs
+----
+
+Access comprehensive developer documentation for PyTorch
+
+[View Docs](https://docs.pytorch.org/docs/stable/index.html)
+
+Tutorials
+---------
+
+Get in-depth tutorials for beginners and advanced developers
+
+[View Tutorials](https://docs.pytorch.org/tutorials)
+
+Resources
+---------
+
+Find development resources and get your questions answered
+
+[View Resources](https://pytorch.org/resources)
+
+To analyze traffic and optimize your experience, we serve cookies on this site. By clicking or navigating, you agree to allow our usage of cookies. As the current maintainers of this site, Facebook’s Cookies Policy applies. Learn more, including about available controls: [Cookies Policy](https://opensource.fb.com/legal/cookie-policy)
+.
+
+|     |     |
+| --- | --- |
+|     |     |
+
+|     |     |
+| --- | --- |
+|     |     |

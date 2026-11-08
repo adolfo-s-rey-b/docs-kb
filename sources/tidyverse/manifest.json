@@ -1,0 +1,1117 @@
+{
+  "pages": {
+    "categories": {
+      "url": "https://www.tidyverse.org/categories",
+      "last_hash": "520fd0bc7681ba589c81633e7f99dbc61771d9bda185876a611ce3c4d42b81dd",
+      "last_fetched": "2026-11-08T04:59:46.165666+00:00",
+      "title": "Categories"
+    },
+    "tags-package": {
+      "url": "https://www.tidyverse.org/tags/package",
+      "last_hash": "01b36ba0dda4769673f6a92c627f157f4b445fc7d1d32635ae598978b2ec5da9",
+      "last_fetched": "2026-11-08T04:59:47.285973+00:00",
+      "title": "package"
+    },
+    "categories-package": {
+      "url": "https://www.tidyverse.org/categories/package",
+      "last_hash": "d0389ada7e3a2312e540e6a9cee4b9d4244baaf258504869aadf9d03c0479b6a",
+      "last_fetched": "2026-11-08T04:59:48.478196+00:00",
+      "title": "package"
+    },
+    "blog": {
+      "url": "https://www.tidyverse.org/blog",
+      "last_hash": "2ccc75c9e18849348f354a6ad2614537cc5d50fe596cb799afb6623cdcf6fee8",
+      "last_fetched": "2026-11-08T04:59:49.517310+00:00",
+      "title": "Posts"
+    },
+    "tags-processes": {
+      "url": "https://www.tidyverse.org/tags/processes",
+      "last_hash": "f3c76a8330e689b4b45374284b35ec81856be3b301d468bd7ed846aefc6faa14",
+      "last_fetched": "2026-11-08T04:59:50.602468+00:00",
+      "title": "processes"
+    },
+    "tags-processx": {
+      "url": "https://www.tidyverse.org/tags/processx",
+      "last_hash": "0fbaccf269c5c34b40ad7e0ae5782ce35f62aff99f6b4fd51c106c22efe27590",
+      "last_fetched": "2026-11-08T04:59:51.632661+00:00",
+      "title": "processx"
+    },
+    "tags-system": {
+      "url": "https://www.tidyverse.org/tags/system",
+      "last_hash": "f3370e8615b4c0dc71da2d92e17e1ed5a40d01a4dd4f78f81014422f2a3bc8d4",
+      "last_fetched": "2026-11-08T04:59:52.640127+00:00",
+      "title": "system"
+    },
+    "tags": {
+      "url": "https://www.tidyverse.org/tags",
+      "last_hash": "74923d555b66dedc980a4c7431973738aad7177ec28405ad94344c5e3ca857c0",
+      "last_fetched": "2026-11-08T04:59:53.635105+00:00",
+      "title": "Tags"
+    },
+    "tags-deep-learning": {
+      "url": "https://www.tidyverse.org/tags/deep-learning",
+      "last_hash": "487f8b63856d0ae6b0f79d72af3c049f5fd9d6f335595ab03cbee69257b3f2f2",
+      "last_fetched": "2026-11-08T04:59:54.728422+00:00",
+      "title": "deep learning"
+    },
+    "tags-modeling": {
+      "url": "https://www.tidyverse.org/tags/modeling",
+      "last_hash": "0d2d9275e1313c343c179bf491d52f06101aaf4fad6fd30c485d3cccb9523597",
+      "last_fetched": "2026-11-08T04:59:55.864713+00:00",
+      "title": "modeling"
+    },
+    "tags-connect": {
+      "url": "https://www.tidyverse.org/tags/connect",
+      "last_hash": "e6a7d017be9782ebb33b894f6724fd655548b8c4da5acd9d216f1e9020a2dd08",
+      "last_fetched": "2026-11-08T04:59:56.864377+00:00",
+      "title": "connect"
+    },
+    "tags-internship": {
+      "url": "https://www.tidyverse.org/tags/internship",
+      "last_hash": "e9f8861310820326d6bdfb03860906c11b00602eea6e0906930a22665ff358e7",
+      "last_fetched": "2026-11-08T04:59:57.862109+00:00",
+      "title": "internship"
+    },
+    "categories-other": {
+      "url": "https://www.tidyverse.org/categories/other",
+      "last_hash": "2ebcf264e8c930f94d7a82771e3d829f77fa5eedd5d8e82a9b85496ec7f4f729",
+      "last_fetched": "2026-11-08T04:59:58.981225+00:00",
+      "title": "other"
+    },
+    "tags-pydata": {
+      "url": "https://www.tidyverse.org/tags/pydata",
+      "last_hash": "61b5839d77e6e5381796de0dc786f3234b51c90148ca2b0e2237fbef3ed47221",
+      "last_fetched": "2026-11-08T04:59:59.968709+00:00",
+      "title": "PyData"
+    },
+    "tags-shiny": {
+      "url": "https://www.tidyverse.org/tags/shiny",
+      "last_hash": "99b5459cbe4646ff2efc84c337d80e3b573eb47aceeddd04178408aaa3329703",
+      "last_fetched": "2026-11-08T05:00:01.067452+00:00",
+      "title": "shiny"
+    },
+    "tags-tidymodels": {
+      "url": "https://www.tidyverse.org/tags/tidymodels",
+      "last_hash": "9730d606e86558bd0325077c5e0b498d92973dcf194d5d96fc86472803105646",
+      "last_fetched": "2026-11-08T05:00:02.104959+00:00",
+      "title": "tidymodels"
+    },
+    "tags-orbital": {
+      "url": "https://www.tidyverse.org/tags/orbital",
+      "last_hash": "f5144143b0d016ce8f4aaf7c2482df1cb688388dd506145de1915d84e645e5af",
+      "last_fetched": "2026-11-08T05:00:03.212568+00:00",
+      "title": "orbital"
+    },
+    "tags-programming": {
+      "url": "https://www.tidyverse.org/tags/programming",
+      "last_hash": "3243315838f72b82b6256afa8f381e57fe33efb1e3721a514176ebdbc67a65d7",
+      "last_fetched": "2026-11-08T05:00:04.419467+00:00",
+      "title": "programming"
+    },
+    "tags-r-lib": {
+      "url": "https://www.tidyverse.org/tags/r-lib",
+      "last_hash": "24d20f76a90bfd27539a07540f3b0bdb502c5979ef0ccdde2b7d2ce8db02698b",
+      "last_fetched": "2026-11-08T05:00:05.472566+00:00",
+      "title": "r-lib"
+    },
+    "tags-yaml": {
+      "url": "https://www.tidyverse.org/tags/yaml",
+      "last_hash": "bec2cbef6e92c4cbd6124cfa135fefb6d44b7fb4cc0d10c4ec8950c02ce94ce1",
+      "last_fetched": "2026-11-08T05:00:06.427682+00:00",
+      "title": "yaml"
+    },
+    "tags-mirai": {
+      "url": "https://www.tidyverse.org/tags/mirai",
+      "last_hash": "3b5d697155752efe72ac035a7d8b68a07619d1ef39f08f87b9f46d44d7eaf7a9",
+      "last_fetched": "2026-11-08T05:00:07.478885+00:00",
+      "title": "mirai"
+    },
+    "tags-parallelism": {
+      "url": "https://www.tidyverse.org/tags/parallelism",
+      "last_hash": "97b947f2a8b81710d09e13662e748d25ef957e87185497f91700fab5447c0b88",
+      "last_fetched": "2026-11-08T05:00:08.566508+00:00",
+      "title": "parallelism"
+    },
+    "tags-dplyr": {
+      "url": "https://www.tidyverse.org/tags/dplyr",
+      "last_hash": "f9fb56bb710f0180817d00f7e21bd43ddcfbe895130ce78eb312d74ea618401a",
+      "last_fetched": "2026-11-08T05:00:09.640638+00:00",
+      "title": "dplyr"
+    },
+    "tags-nanonext": {
+      "url": "https://www.tidyverse.org/tags/nanonext",
+      "last_hash": "95429b2e6c4fbab8254a8c16806e9effa907367bf8dbf694a38b42400f88a712",
+      "last_fetched": "2026-11-08T05:00:10.902552+00:00",
+      "title": "nanonext"
+    },
+    "tags-ai": {
+      "url": "https://www.tidyverse.org/tags/ai",
+      "last_hash": "a2947cb0398339353c1c262a10d6184a0188b2664bd2428b3284806e4f5a4027",
+      "last_fetched": "2026-11-08T05:00:12.020942+00:00",
+      "title": "ai"
+    },
+    "tags-ragnar": {
+      "url": "https://www.tidyverse.org/tags/ragnar",
+      "last_hash": "0e2754edfbcb425a9f42241269f383cd70e2c953107c8b67f0d0fd96ea8ae451",
+      "last_fetched": "2026-11-08T05:00:13.126729+00:00",
+      "title": "ragnar"
+    },
+    "tags-plumber2": {
+      "url": "https://www.tidyverse.org/tags/plumber2",
+      "last_hash": "2fa669ae3f428a788e3b0830d80c6f5ce77819dc6cdd78b2abc05dfb66f4ba33",
+      "last_fetched": "2026-11-08T05:00:14.130104+00:00",
+      "title": "plumber2"
+    },
+    "tags-web": {
+      "url": "https://www.tidyverse.org/tags/web",
+      "last_hash": "064eeba5e5a1b28e80615e0eb75fb4307b5f426c75462bbac1b6c3ae9c28040a",
+      "last_fetched": "2026-11-08T05:00:15.235943+00:00",
+      "title": "web"
+    },
+    "tags-python": {
+      "url": "https://www.tidyverse.org/tags/python",
+      "last_hash": "0fc50d39f9131a147438e1802b0d55478fa0865ac026e3742175ca46c41d3a20",
+      "last_fetched": "2026-11-08T05:00:16.238189+00:00",
+      "title": "python"
+    },
+    "tags-r": {
+      "url": "https://www.tidyverse.org/tags/r",
+      "last_hash": "1c65663567c4c363fb9d8fec8e1942d04c45fcc01a9947afc1a1eecede989308",
+      "last_fetched": "2026-11-08T05:00:17.384765+00:00",
+      "title": "r"
+    },
+    "tags-rust": {
+      "url": "https://www.tidyverse.org/tags/rust",
+      "last_hash": "a7742ece80079530d5e7fa2e6c09fa434df281d74302981a14160b0fd89ff397",
+      "last_fetched": "2026-11-08T05:00:18.381616+00:00",
+      "title": "rust"
+    },
+    "tags-tidypredict": {
+      "url": "https://www.tidyverse.org/tags/tidypredict",
+      "last_hash": "a0d560f323de89b9c8f851f0f855ffe0e685d0d36255f6f5f50428e4b481de4b",
+      "last_fetched": "2026-11-08T05:00:19.390559+00:00",
+      "title": "tidypredict"
+    },
+    "tags-feature-selection": {
+      "url": "https://www.tidyverse.org/tags/feature-selection",
+      "last_hash": "4febb7fdb8c37cbe212e7d8c594e98eb907bf1abd4e5b785d59d4836e413510f",
+      "last_fetched": "2026-11-08T05:00:20.529995+00:00",
+      "title": "feature-selection"
+    },
+    "tags-ellmer": {
+      "url": "https://www.tidyverse.org/tags/ellmer",
+      "last_hash": "17173ed2d247534cd8b2764b2cdc58be912eceb90fa3a0edee8cf7a874d905db",
+      "last_fetched": "2026-11-08T05:00:21.706460+00:00",
+      "title": "ellmer"
+    },
+    "categories-roundup": {
+      "url": "https://www.tidyverse.org/categories/roundup",
+      "last_hash": "52ce9d85665c7129890d224ad8226cd63eaf619c6895df2be7c97bb705a71a90",
+      "last_fetched": "2026-11-08T05:00:22.735208+00:00",
+      "title": "roundup"
+    },
+    "tags-devtools": {
+      "url": "https://www.tidyverse.org/tags/devtools",
+      "last_hash": "0af05889e75ed6b787426a16fe03a6299092bf569c833b409e5e392e702ba4e9",
+      "last_fetched": "2026-11-08T05:00:23.776727+00:00",
+      "title": "devtools"
+    },
+    "tags-testthat": {
+      "url": "https://www.tidyverse.org/tags/testthat",
+      "last_hash": "22158d2a485a9e22b4c292b8e99b336eee140ca1257748ad0b7ec53b7a1600e0",
+      "last_fetched": "2026-11-08T05:00:24.761755+00:00",
+      "title": "testthat"
+    },
+    "tags-pkgdown": {
+      "url": "https://www.tidyverse.org/tags/pkgdown",
+      "last_hash": "e9c091b63bc5466647fd79d2109d61c18065224fc07719cb07da329d5fc5c578",
+      "last_fetched": "2026-11-08T05:00:25.821189+00:00",
+      "title": "pkgdown"
+    },
+    "tags-parallel-processing": {
+      "url": "https://www.tidyverse.org/tags/parallel-processing",
+      "last_hash": "77d26db309b971aed6ddf43e68dd9f7341f448d4ec580542b1036f58ff5c5a2b",
+      "last_fetched": "2026-11-08T05:00:26.814898+00:00",
+      "title": "parallel processing"
+    },
+    "tags-postprocessing": {
+      "url": "https://www.tidyverse.org/tags/postprocessing",
+      "last_hash": "32801f757b48f880ebfc49a33a8e56150380e147df6fad36027fe4a183e2054a",
+      "last_fetched": "2026-11-08T05:00:27.844601+00:00",
+      "title": "postprocessing"
+    },
+    "tags-purrr": {
+      "url": "https://www.tidyverse.org/tags/purrr",
+      "last_hash": "4da6ede900521f8dbc722c9a758f3145ba9ca8f60f1dc7924dd3eb1ee4b8d473",
+      "last_fetched": "2026-11-08T05:00:28.887266+00:00",
+      "title": "purrr"
+    },
+    "tags-stringr": {
+      "url": "https://www.tidyverse.org/tags/stringr",
+      "last_hash": "d9264be1d7a000369227bee1cec42009d2f7eccf08fba0a1a77aa6501aef2166",
+      "last_fetched": "2026-11-08T05:00:29.904107+00:00",
+      "title": "stringr"
+    },
+    "tags-ggplot2": {
+      "url": "https://www.tidyverse.org/tags/ggplot2",
+      "last_hash": "40ff524b5bc3ed1959e87a77b081195639a14affe7d4fa1ca309256568f3f191",
+      "last_fetched": "2026-11-08T05:00:30.985358+00:00",
+      "title": "ggplot2"
+    },
+    "tags-tidyverse-dev-day": {
+      "url": "https://www.tidyverse.org/tags/tidyverse-dev-day",
+      "last_hash": "8119eb56f4f64690cb310a859a82e68d3c7791b122398e7b5aa0e6a7cfabbba9",
+      "last_fetched": "2026-11-08T05:00:31.986717+00:00",
+      "title": "tidyverse-dev-day"
+    },
+    "tags-httr2": {
+      "url": "https://www.tidyverse.org/tags/httr2",
+      "last_hash": "09dd81d3a477b0d208d03ec1b0dd538ca729f187233aa86fd8cd0877f13c26a4",
+      "last_fetched": "2026-11-08T05:00:33.060523+00:00",
+      "title": "httr2"
+    },
+    "tags-wasm": {
+      "url": "https://www.tidyverse.org/tags/wasm",
+      "last_hash": "99537bc07435c0ad5348c0ba2fee8ca0fff654621837c44fad484c2d4393db09",
+      "last_fetched": "2026-11-08T05:00:34.131886+00:00",
+      "title": "wasm"
+    },
+    "tags-webr": {
+      "url": "https://www.tidyverse.org/tags/webr",
+      "last_hash": "44e39d8921ed821eb8f2a3fac3e5ef759295d1bcb5a317ed43657d7e1d6c3c22",
+      "last_fetched": "2026-11-08T05:00:35.103843+00:00",
+      "title": "webr"
+    },
+    "tags-duckplyr": {
+      "url": "https://www.tidyverse.org/tags/duckplyr",
+      "last_hash": "00f606c6e4092d881094ef0bc1cda2f5b23bd6bddea53ce14ca599c637f9607e",
+      "last_fetched": "2026-11-08T05:00:36.061797+00:00",
+      "title": "duckplyr"
+    },
+    "tags-tidyverse": {
+      "url": "https://www.tidyverse.org/tags/tidyverse",
+      "last_hash": "251c705c823e2725c8573135e89da14e181a05c385558d7d4d6bbce545078601",
+      "last_fetched": "2026-11-08T05:00:37.091909+00:00",
+      "title": "tidyverse"
+    },
+    "categories-programming": {
+      "url": "https://www.tidyverse.org/categories/programming",
+      "last_hash": "2f689976067a5942fe9c8be6f4aec7866716b52c02cdb921b0ac1cb04254014e",
+      "last_fetched": "2026-11-08T05:00:38.180191+00:00",
+      "title": "programming"
+    },
+    "categories-deep-dive": {
+      "url": "https://www.tidyverse.org/categories/deep-dive",
+      "last_hash": "492754712d880421cde7a770541f6f544c3c4287389cb9d2e915a08aa79d760b",
+      "last_fetched": "2026-11-08T05:00:39.271830+00:00",
+      "title": "deep-dive"
+    },
+    "tags-graphics": {
+      "url": "https://www.tidyverse.org/tags/graphics",
+      "last_hash": "26245edafe34dc0e92c85d05ad37446be9e3858dc096523bcbd2c9c68a0404af",
+      "last_fetched": "2026-11-08T05:00:40.262647+00:00",
+      "title": "graphics"
+    },
+    "tags-ragg": {
+      "url": "https://www.tidyverse.org/tags/ragg",
+      "last_hash": "6144d7ee6f4b5a40790e5eb9d2066298ba8d177d67606e49a1a8e77e8cde016a",
+      "last_fetched": "2026-11-08T05:00:41.305590+00:00",
+      "title": "ragg"
+    },
+    "tags-svglite": {
+      "url": "https://www.tidyverse.org/tags/svglite",
+      "last_hash": "40982cab06b094cc40fce065c39f2f39db7390197deaade2ac30f9094923fed4",
+      "last_fetched": "2026-11-08T05:00:42.307933+00:00",
+      "title": "svglite"
+    },
+    "tags-systemfonts": {
+      "url": "https://www.tidyverse.org/tags/systemfonts",
+      "last_hash": "eb83424fe492a931939b89fdb2405e9e71eea89e62c9c16b594b7e035294a25e",
+      "last_fetched": "2026-11-08T05:00:43.280342+00:00",
+      "title": "systemfonts"
+    },
+    "tags-textshaping": {
+      "url": "https://www.tidyverse.org/tags/textshaping",
+      "last_hash": "14de5763e71eeab3173da7d21d5a568f42e6eea145168f068700cb6d878fded1",
+      "last_fetched": "2026-11-08T05:00:44.301245+00:00",
+      "title": "textshaping"
+    },
+    "tags-graphic-device": {
+      "url": "https://www.tidyverse.org/tags/graphic-device",
+      "last_hash": "cdd9b45d754fb6b1ac7c077ba77a4c7507a2c5efa44386afa7d71409190528cb",
+      "last_fetched": "2026-11-08T05:00:45.281773+00:00",
+      "title": "graphic-device"
+    },
+    "tags-recipes": {
+      "url": "https://www.tidyverse.org/tags/recipes",
+      "last_hash": "476e3c8abf1fd20953c2dd50380537612dc18972e8f1ff67a779f35764b035a5",
+      "last_fetched": "2026-11-08T05:00:47.402725+00:00",
+      "title": "recipes"
+    },
+    "tags-scales": {
+      "url": "https://www.tidyverse.org/tags/scales",
+      "last_hash": "c498d79920bf7f3da148e8ed8a926b77056700398c8203afa84687ddd4fc366a",
+      "last_fetched": "2026-11-08T05:00:48.475662+00:00",
+      "title": "scales"
+    },
+    "categories-learn": {
+      "url": "https://www.tidyverse.org/categories/learn",
+      "last_hash": "61c5e0054f39f9eb43e141867ea39717dfc3d7246d191490c83be4a97f72f4a5",
+      "last_fetched": "2026-11-08T05:00:49.490172+00:00",
+      "title": "learn"
+    },
+    "tags-rsample": {
+      "url": "https://www.tidyverse.org/tags/rsample",
+      "last_hash": "41cd181c705ca48f4f121a4ecb01e51f657c7f6598231387fd65fadd4cf3ed4b",
+      "last_fetched": "2026-11-08T05:00:50.567640+00:00",
+      "title": "rsample"
+    },
+    "tags-parsnip": {
+      "url": "https://www.tidyverse.org/tags/parsnip",
+      "last_hash": "05eaccd1679ee9aa471480d5732b2656c674d55551c5716efb0d63d1b15522d4",
+      "last_fetched": "2026-11-08T05:00:51.576992+00:00",
+      "title": "parsnip"
+    },
+    "tags-workflows": {
+      "url": "https://www.tidyverse.org/tags/workflows",
+      "last_hash": "d6e73246e5adb99a7972730700c7be349d40784714551a5b9f4dda5b82fa1d25",
+      "last_fetched": "2026-11-08T05:00:52.572980+00:00",
+      "title": "workflows"
+    },
+    "tags-parquet": {
+      "url": "https://www.tidyverse.org/tags/parquet",
+      "last_hash": "9401e4d11bd472ae9a1c302c4f3900de937f4b041f4edf641186424670d40dde",
+      "last_fetched": "2026-11-08T05:00:53.596487+00:00",
+      "title": "parquet"
+    },
+    "tags-marquee": {
+      "url": "https://www.tidyverse.org/tags/marquee",
+      "last_hash": "214a8df2b8b440e4226a5ca1fc49e6083292d81529ed07822c3ca05befb3e774",
+      "last_fetched": "2026-11-08T05:00:54.633094+00:00",
+      "title": "marquee"
+    },
+    "tags-s7": {
+      "url": "https://www.tidyverse.org/tags/s7",
+      "last_hash": "5e411022e0bdf85dd41e4baba8669c816ceef3d55e96179d608ffa0fdee32eec",
+      "last_fetched": "2026-11-08T05:00:55.661862+00:00",
+      "title": "s7"
+    },
+    "tags-quarto": {
+      "url": "https://www.tidyverse.org/tags/quarto",
+      "last_hash": "98b4d609b93465c6fc96a386803b3317984500db8c6a999cf0d3b349feaade33",
+      "last_fetched": "2026-11-08T05:00:56.675715+00:00",
+      "title": "quarto"
+    },
+    "tags-shinylive": {
+      "url": "https://www.tidyverse.org/tags/shinylive",
+      "last_hash": "ce8437677b49598e85770553590e9e32655923ca3dbf934dc5281c6c5de397d5",
+      "last_fetched": "2026-11-08T05:00:57.823454+00:00",
+      "title": "shinylive"
+    },
+    "tags-webassembly": {
+      "url": "https://www.tidyverse.org/tags/webassembly",
+      "last_hash": "1ec9df7a0290a4675efa0b97f20af1607ab90767ad20f0bf3824c3c46445c7ae",
+      "last_fetched": "2026-11-08T05:00:58.895807+00:00",
+      "title": "webassembly"
+    },
+    "tags-gt": {
+      "url": "https://www.tidyverse.org/tags/gt",
+      "last_hash": "13f352bdb7bf2fcd6b34cf3c18b69ef692faba9b2ea8e760e2d0ee8a7cec2847",
+      "last_fetched": "2026-11-08T05:00:59.888148+00:00",
+      "title": "gt"
+    },
+    "tags-patchwork": {
+      "url": "https://www.tidyverse.org/tags/patchwork",
+      "last_hash": "f3ba750ee0f363cfe4b79bd65f016d6b7282c7ff47235b89d36a4a561125fd96",
+      "last_fetched": "2026-11-08T05:01:00.943989+00:00",
+      "title": "patchwork"
+    },
+    "tags-bonsai": {
+      "url": "https://www.tidyverse.org/tags/bonsai",
+      "last_hash": "17af938af640769f7f3474dd777b5a76717ba71cab604fa50fd74404920e6106",
+      "last_fetched": "2026-11-08T05:01:01.978931+00:00",
+      "title": "bonsai"
+    },
+    "tags-censored": {
+      "url": "https://www.tidyverse.org/tags/censored",
+      "last_hash": "9250cea4f3b93d8bcd152d7420f49b07c25980632c4dece3e803a3949b6bac9e",
+      "last_fetched": "2026-11-08T05:01:03.036852+00:00",
+      "title": "censored"
+    },
+    "tags-workflowsets": {
+      "url": "https://www.tidyverse.org/tags/workflowsets",
+      "last_hash": "607bfa78558da8ccf101f9fcf3d421d4afcf3e29bc316f2636397d56916f0977",
+      "last_fetched": "2026-11-08T05:01:04.068857+00:00",
+      "title": "workflowsets"
+    },
+    "tags-tune": {
+      "url": "https://www.tidyverse.org/tags/tune",
+      "last_hash": "13db76f90f8a61cd61682d392c5a8aee9a175db69bedea2e175e14702832ce4d",
+      "last_fetched": "2026-11-08T05:01:05.161082+00:00",
+      "title": "tune"
+    },
+    "tags-dbplyr": {
+      "url": "https://www.tidyverse.org/tags/dbplyr",
+      "last_hash": "073693c34dcb3ff5e5d20cfc274119a83786a5f5ca1a14c631b17d7e150407bd",
+      "last_fetched": "2026-11-08T05:01:06.233683+00:00",
+      "title": "dbplyr"
+    },
+    "tags-yardstick": {
+      "url": "https://www.tidyverse.org/tags/yardstick",
+      "last_hash": "907f8b0501e502f75ef00c6b737fed12668c65e65198f63e8043d3b43bcba094",
+      "last_fetched": "2026-11-08T05:01:07.266008+00:00",
+      "title": "yardstick"
+    },
+    "tags-ggplot2-3-5-0": {
+      "url": "https://www.tidyverse.org/tags/ggplot2-3-5-0",
+      "last_hash": "480c8cecf7fa8aee8ad2b18ce6ceb60d0d4887a874acda7693ec6d125edd9c08",
+      "last_fetched": "2026-11-08T05:01:08.319896+00:00",
+      "title": "ggplot2-3-5-0"
+    },
+    "tags-survey": {
+      "url": "https://www.tidyverse.org/tags/survey",
+      "last_hash": "b3774fde065872ea6e1157b0a3d7f2f12908110e95be4ce0d9b21d504fbcfa1f",
+      "last_fetched": "2026-11-08T05:01:09.310646+00:00",
+      "title": "survey"
+    },
+    "tags-bigrquery": {
+      "url": "https://www.tidyverse.org/tags/bigrquery",
+      "last_hash": "857d8f55418699146f444e90fda7650eca522995678e03bc5f032cb43a70ad5f",
+      "last_fetched": "2026-11-08T05:01:10.319190+00:00",
+      "title": "bigrquery"
+    },
+    "tags-withr": {
+      "url": "https://www.tidyverse.org/tags/withr",
+      "last_hash": "9d2fc777645249a7b24c16e4d50de8b92c1fb00d192bfc3a7dd92607af89045c",
+      "last_fetched": "2026-11-08T05:01:11.315546+00:00",
+      "title": "withr"
+    },
+    "tags-roxygen2": {
+      "url": "https://www.tidyverse.org/tags/roxygen2",
+      "last_hash": "a03a9c54266d2384532a287c9a787d834ee14163bb590fdeb51324866b100f69",
+      "last_fetched": "2026-11-08T05:01:12.323824+00:00",
+      "title": "roxygen2"
+    },
+    "tags-httr": {
+      "url": "https://www.tidyverse.org/tags/httr",
+      "last_hash": "ee89f99c96f58579fcdb5e2f8559e701ccc7cfc123611e6f381deb638889bd3b",
+      "last_fetched": "2026-11-08T05:01:13.410837+00:00",
+      "title": "httr"
+    },
+    "tags-package-maintenance": {
+      "url": "https://www.tidyverse.org/tags/package-maintenance",
+      "last_hash": "6f93c8dd332d89e6c3ec2443e9b27555ba52ea3fbee40004262c46ef3a06abd9",
+      "last_fetched": "2026-11-08T05:01:14.471039+00:00",
+      "title": "package maintenance"
+    },
+    "tags-tidyclust": {
+      "url": "https://www.tidyverse.org/tags/tidyclust",
+      "last_hash": "95b2e8d394779aec65b9c015c5f6ed06a2c64656e23f8c99d23371233f3255a8",
+      "last_fetched": "2026-11-08T05:01:15.513837+00:00",
+      "title": "tidyclust"
+    },
+    "tags-teaching": {
+      "url": "https://www.tidyverse.org/tags/teaching",
+      "last_hash": "ec0c6d5ef99040b37135f7c9db149e37dfc7c47c801eff191893e77806217193",
+      "last_fetched": "2026-11-08T05:01:16.599903+00:00",
+      "title": "teaching"
+    },
+    "tags-book": {
+      "url": "https://www.tidyverse.org/tags/book",
+      "last_hash": "035b4e8f5b09ff33326b6fedbfab975c3604d9bd76cac54bdf79426ef47e0fdb",
+      "last_fetched": "2026-11-08T05:01:17.584227+00:00",
+      "title": "book"
+    },
+    "tags-gargle": {
+      "url": "https://www.tidyverse.org/tags/gargle",
+      "last_hash": "c226dfaf59b0320a0637fe2367a3a3effa0d73d7a59ae7bb171cb8ec8eaf2fad",
+      "last_fetched": "2026-11-08T05:01:18.544601+00:00",
+      "title": "gargle"
+    },
+    "tags-gmailr": {
+      "url": "https://www.tidyverse.org/tags/gmailr",
+      "last_hash": "377a8b3f1c5a4bf66339408b09d55a45c78d581436eb06a8f96d657b8c40b198",
+      "last_fetched": "2026-11-08T05:01:19.501707+00:00",
+      "title": "gmailr"
+    },
+    "tags-spring-cleaning": {
+      "url": "https://www.tidyverse.org/tags/spring-cleaning",
+      "last_hash": "599136155f057ce97872d157d9bcc9b82174b20ded2181d798212f3ad200f24b",
+      "last_fetched": "2026-11-08T05:01:20.697998+00:00",
+      "title": "spring cleaning"
+    },
+    "tags-fs": {
+      "url": "https://www.tidyverse.org/tags/fs",
+      "last_hash": "8b4fda78728dec7fc98b1bfc3a61ccdc3c07529c17c9cd0cc55075a033b840e7",
+      "last_fetched": "2026-11-08T05:01:21.743845+00:00",
+      "title": "fs"
+    },
+    "tags-desirability": {
+      "url": "https://www.tidyverse.org/tags/desirability",
+      "last_hash": "b720a9471bb47579ffe319ea7b174eb8853cda4dffe73d783cdff9d5651c0e6d",
+      "last_fetched": "2026-11-08T05:01:22.757647+00:00",
+      "title": "desirability"
+    },
+    "tags-optimization": {
+      "url": "https://www.tidyverse.org/tags/optimization",
+      "last_hash": "813c3ebebfca3938a116454cc0c839c182084dfe005ca577705c9040f3fb0ef8",
+      "last_fetched": "2026-11-08T05:01:23.803028+00:00",
+      "title": "optimization"
+    },
+    "tags-dials": {
+      "url": "https://www.tidyverse.org/tags/dials",
+      "last_hash": "19db2f65368ede4774410de1ec904929a2e116e6361fcb9c5772b22dd2478758",
+      "last_fetched": "2026-11-08T05:01:24.813056+00:00",
+      "title": "dials"
+    },
+    "tags-magrittr": {
+      "url": "https://www.tidyverse.org/tags/magrittr",
+      "last_hash": "97bcebea18bd525df9f041eb0f845db90f2f834d330e144b797a3a7b200a9658",
+      "last_fetched": "2026-11-08T05:01:25.719190+00:00",
+      "title": "magrittr"
+    },
+    "tags-vctrs": {
+      "url": "https://www.tidyverse.org/tags/vctrs",
+      "last_hash": "adec56994b1c17c382480ac7a6f7c9f8be4a97126ef26d53c997eac243d647bc",
+      "last_fetched": "2026-11-08T05:01:26.766777+00:00",
+      "title": "vctrs"
+    },
+    "tags-dplyr-1-1-0": {
+      "url": "https://www.tidyverse.org/tags/dplyr-1-1-0",
+      "last_hash": "d19eb9a23bdffa82a8d6d5b28f19f706b04e028fa218767b909759468eccdb7b",
+      "last_fetched": "2026-11-08T05:01:27.840474+00:00",
+      "title": "dplyr-1-1-0"
+    },
+    "tags-dtplyr": {
+      "url": "https://www.tidyverse.org/tags/dtplyr",
+      "last_hash": "dc94967fdcfb9f891687a0beda927b23c42c7a6d76b7ce08f4792b46c9bc8f2a",
+      "last_fetched": "2026-11-08T05:01:28.871090+00:00",
+      "title": "dtplyr"
+    },
+    "tags-forcats": {
+      "url": "https://www.tidyverse.org/tags/forcats",
+      "last_hash": "abbb58c1d1fd37a63e395c01fa71b8e6044e4efa0979602c78a8081acd19d51a",
+      "last_fetched": "2026-11-08T05:01:29.939397+00:00",
+      "title": "forcats"
+    },
+    "tags-tidyr": {
+      "url": "https://www.tidyverse.org/tags/tidyr",
+      "last_hash": "a9fd9c70521a42e05cefb432c4a627555a0e7e68492ef6808ef24cbc15c54033",
+      "last_fetched": "2026-11-08T05:01:30.981334+00:00",
+      "title": "tidyr"
+    },
+    "tags-model": {
+      "url": "https://www.tidyverse.org/tags/model",
+      "last_hash": "aa14a42cc16f3201dab4cb940b26e21c993f49d2df70262bfedeeb2153662007",
+      "last_fetched": "2026-11-08T05:01:32.312311+00:00",
+      "title": "model"
+    },
+    "tags-plots": {
+      "url": "https://www.tidyverse.org/tags/plots",
+      "last_hash": "fb039a23d7c7d359431261658b430361146f1e60bafc7eb7fa8fe2da378c7f0f",
+      "last_fetched": "2026-11-08T05:01:33.368247+00:00",
+      "title": "plots"
+    },
+    "tags-agua": {
+      "url": "https://www.tidyverse.org/tags/agua",
+      "last_hash": "1a685f766e18ad7dcd08bfa2cadef3de2dc91979aa657ece980ff29d570bc760",
+      "last_fetched": "2026-11-08T05:01:34.485847+00:00",
+      "title": "agua"
+    },
+    "tags-h2o": {
+      "url": "https://www.tidyverse.org/tags/h2o",
+      "last_hash": "72496d1d3a2dccd5dc8273031e69cdb153a04b17183f6e6f975830d429542370",
+      "last_fetched": "2026-11-08T05:01:35.533574+00:00",
+      "title": "h2o"
+    },
+    "tags-lifecycle": {
+      "url": "https://www.tidyverse.org/tags/lifecycle",
+      "last_hash": "e2fb1c2e3951f119a7832acb351bbbbfc1dc610a59daa76b69982b518d1aa3f4",
+      "last_fetched": "2026-11-08T05:01:36.579288+00:00",
+      "title": "lifecycle"
+    },
+    "tags-tidyselect": {
+      "url": "https://www.tidyverse.org/tags/tidyselect",
+      "last_hash": "d7a3b7b512a1733816147874a06dd0c431b8af0a68f27a2b90513ec48a2ef828",
+      "last_fetched": "2026-11-08T05:01:37.706801+00:00",
+      "title": "tidyselect"
+    },
+    "tags-clock": {
+      "url": "https://www.tidyverse.org/tags/clock",
+      "last_hash": "5494a883d8289a325fdc64700e324edb97a19b8f733a7272163c09dc0ee00aeb",
+      "last_fetched": "2026-11-08T05:01:38.699028+00:00",
+      "title": "clock"
+    },
+    "tags-brulee": {
+      "url": "https://www.tidyverse.org/tags/brulee",
+      "last_hash": "a7c329faa9ef4e09b429f379be1e097ff998852a39e2134ef755cdf0c32685bd",
+      "last_fetched": "2026-11-08T05:01:39.771274+00:00",
+      "title": "brulee"
+    },
+    "tags-hiring": {
+      "url": "https://www.tidyverse.org/tags/hiring",
+      "last_hash": "bb3a46352bc2849a6c5a4f83ce31f1d8f7943c60f4473aef3ca108a63ac21344",
+      "last_fetched": "2026-11-08T05:01:40.832573+00:00",
+      "title": "hiring"
+    },
+    "tags-bundle": {
+      "url": "https://www.tidyverse.org/tags/bundle",
+      "last_hash": "7273efe3fabe84d360267c9c26ba02ff324fdf16912788924805fdfef093663f",
+      "last_fetched": "2026-11-08T05:01:41.861042+00:00",
+      "title": "bundle"
+    },
+    "tags-lintr": {
+      "url": "https://www.tidyverse.org/tags/lintr",
+      "last_hash": "1180437f42c41b8ca5fb5c56e021dcdce28c2e9c395de83d1a2a12a8bcc5fbd6",
+      "last_fetched": "2026-11-08T05:01:42.830143+00:00",
+      "title": "lintr"
+    },
+    "tags-spatialsample": {
+      "url": "https://www.tidyverse.org/tags/spatialsample",
+      "last_hash": "53dcb26a962a60d6af3542c1e65efad68fb60b9aceea0575b5f5cf2a95976473",
+      "last_fetched": "2026-11-08T05:01:43.888501+00:00",
+      "title": "spatialsample"
+    },
+    "tags-vetiver": {
+      "url": "https://www.tidyverse.org/tags/vetiver",
+      "last_hash": "ad44dd77b0d1c1097fc911d9334d56ec0d0a836022da1022de6073816f0c77d0",
+      "last_fetched": "2026-11-08T05:01:44.989507+00:00",
+      "title": "vetiver"
+    },
+    "tags-github-actions": {
+      "url": "https://www.tidyverse.org/tags/github-actions",
+      "last_hash": "e47ebfa9c96ee8340efb25a06213a76901ca788cb33b6a31d4d5cfc7c816b9a8",
+      "last_fetched": "2026-11-08T05:01:46.039234+00:00",
+      "title": "GitHub Actions"
+    },
+    "tags-haven": {
+      "url": "https://www.tidyverse.org/tags/haven",
+      "last_hash": "fd592269b5038b596d2edbc1e658c7dfaabccbec0669bdb07b9955e629386f0a",
+      "last_fetched": "2026-11-08T05:01:47.649435+00:00",
+      "title": "haven"
+    },
+    "tags-textrecipes": {
+      "url": "https://www.tidyverse.org/tags/textrecipes",
+      "last_hash": "3a123ce4d2a5c0927d8143bd1b967b34dde9340ee1c4657a015265c80af264c7",
+      "last_fetched": "2026-11-08T05:01:48.893905+00:00",
+      "title": "textrecipes"
+    },
+    "tags-readxl": {
+      "url": "https://www.tidyverse.org/tags/readxl",
+      "last_hash": "559007e8ba394f38f4bd19e14897c37388197930df3d2fe339933a075f2e9409",
+      "last_fetched": "2026-11-08T05:01:50.033089+00:00",
+      "title": "readxl"
+    },
+    "tags-multilevelmod": {
+      "url": "https://www.tidyverse.org/tags/multilevelmod",
+      "last_hash": "e1d6428aa2eb327aa3b0e64c52f764f763e311285c0357a30ef8ea678d8a7791",
+      "last_fetched": "2026-11-08T05:01:51.117830+00:00",
+      "title": "multilevelmod"
+    },
+    "tags-usethis": {
+      "url": "https://www.tidyverse.org/tags/usethis",
+      "last_hash": "3110f1b0a5484a00f1a7527b90b4ce63a3d74dc312627738cee9d554f4be2239",
+      "last_fetched": "2026-11-08T05:01:52.249177+00:00",
+      "title": "usethis"
+    },
+    "tags-shinymodels": {
+      "url": "https://www.tidyverse.org/tags/shinymodels",
+      "last_hash": "9dd3330fc30f6b41c5cdee9a1abb725d97a266a412e07cd6d0fbad8e3495eddf",
+      "last_fetched": "2026-11-08T05:01:53.315256+00:00",
+      "title": "shinymodels"
+    },
+    "tags-readr": {
+      "url": "https://www.tidyverse.org/tags/readr",
+      "last_hash": "c983ba596a83d35badb09e1d7220f50b3586496f92ba7f0b5f5dbfbccb9421cf",
+      "last_fetched": "2026-11-08T05:01:54.284558+00:00",
+      "title": "readr"
+    },
+    "tags-modeldata": {
+      "url": "https://www.tidyverse.org/tags/modeldata",
+      "last_hash": "d2f1cc697515885df60662ce76b7c3dbe1728cdf4624e2d4206c38aea140e7c6",
+      "last_fetched": "2026-11-08T05:01:55.327803+00:00",
+      "title": "modeldata"
+    },
+    "tags-cpp11": {
+      "url": "https://www.tidyverse.org/tags/cpp11",
+      "last_hash": "e8f52bd49decc6f97e5ee24503b82349bc4163acf0af434870c376ea983dce52",
+      "last_fetched": "2026-11-08T05:01:56.312356+00:00",
+      "title": "cpp11"
+    },
+    "tags-waldo": {
+      "url": "https://www.tidyverse.org/tags/waldo",
+      "last_hash": "ec4431d8402b5d5d5f71c225b3f9d918b2e4cac321aca08b57afe81e814b0ec0",
+      "last_fetched": "2026-11-08T05:01:57.376786+00:00",
+      "title": "waldo"
+    },
+    "tags-databases": {
+      "url": "https://www.tidyverse.org/tags/databases",
+      "last_hash": "38083186fbe5a9a2de391f338699d6d81c7a402ab2c146e51841b4d1c4d8ea60",
+      "last_fetched": "2026-11-08T05:01:58.421078+00:00",
+      "title": "databases"
+    },
+    "tags-discrim": {
+      "url": "https://www.tidyverse.org/tags/discrim",
+      "last_hash": "ec62f1eb63f0f1f22a10b7ca30fa07915053a4edf022958f875e8fdc28a5d64e",
+      "last_fetched": "2026-11-08T05:01:59.504993+00:00",
+      "title": "discrim"
+    },
+    "tags-finetune": {
+      "url": "https://www.tidyverse.org/tags/finetune",
+      "last_hash": "3fb377e37dbbc142d0373ed206f6a255ec713c96e69e7562895686b38649851e",
+      "last_fetched": "2026-11-08T05:02:00.487776+00:00",
+      "title": "finetune"
+    },
+    "tags-hardhat": {
+      "url": "https://www.tidyverse.org/tags/hardhat",
+      "last_hash": "acbe7d3b07d41a2982767d73bcb492f0d89cc0fe647d8a644dde64041b5b4435",
+      "last_fetched": "2026-11-08T05:02:01.565044+00:00",
+      "title": "hardhat"
+    },
+    "tags-googlesheets4": {
+      "url": "https://www.tidyverse.org/tags/googlesheets4",
+      "last_hash": "f8601ce7bf51d5f27ca768e7b09072065dd8a045f3ccd8a538b75bedc0be5b5b",
+      "last_fetched": "2026-11-08T05:02:02.546998+00:00",
+      "title": "googlesheets4"
+    },
+    "tags-googledrive": {
+      "url": "https://www.tidyverse.org/tags/googledrive",
+      "last_hash": "524cf1144e1cfbf59cda87a0d0818bf4280a540cf77fa9e534c9fdf8836bd475",
+      "last_fetched": "2026-11-08T05:02:03.666446+00:00",
+      "title": "googledrive"
+    },
+    "tags-butcher": {
+      "url": "https://www.tidyverse.org/tags/butcher",
+      "last_hash": "2ea50a572f2340dd608f53aff3b864406446a7e076b0e9d744c3adb2607746d8",
+      "last_fetched": "2026-11-08T05:02:04.625219+00:00",
+      "title": "butcher"
+    },
+    "tags-probably": {
+      "url": "https://www.tidyverse.org/tags/probably",
+      "last_hash": "5ecb54a839f3c0d60b40a30ececa2b11490e24aa4adc9a31df3c05991fafcddf",
+      "last_fetched": "2026-11-08T05:02:05.675973+00:00",
+      "title": "probably"
+    },
+    "tags-off-label": {
+      "url": "https://www.tidyverse.org/tags/off-label",
+      "last_hash": "8a73bde232514bb7996e2ec781e79eaf25657756c991b2a31f7077c84d27a56c",
+      "last_fetched": "2026-11-08T05:02:06.702345+00:00",
+      "title": "off-label"
+    },
+    "tags-bayesian-analysis": {
+      "url": "https://www.tidyverse.org/tags/bayesian-analysis",
+      "last_hash": "a729d93ac82515531963e476efae99365fc34aaa8a739cc62ce99e062a119657",
+      "last_fetched": "2026-11-08T05:02:07.936966+00:00",
+      "title": "Bayesian analysis"
+    },
+    "tags-tidyposterior": {
+      "url": "https://www.tidyverse.org/tags/tidyposterior",
+      "last_hash": "addb8bd85598d68c40224e9001ae4430bf4a440eb48ab1929aa51048e98df888",
+      "last_fetched": "2026-11-08T05:02:09.370735+00:00",
+      "title": "tidyposterior"
+    },
+    "tags-rvest": {
+      "url": "https://www.tidyverse.org/tags/rvest",
+      "last_hash": "66caa2c436bb5bc4676bdc418b4268b1656d57e21b375bd649d4be1cc5ba2765",
+      "last_fetched": "2026-11-08T05:02:10.397744+00:00",
+      "title": "rvest"
+    },
+    "tags-reprex": {
+      "url": "https://www.tidyverse.org/tags/reprex",
+      "last_hash": "58a7ed173f757dbb18f4cfb052a847fa3b5f2b1a48830ee3da4399d37638b864",
+      "last_fetched": "2026-11-08T05:02:11.437509+00:00",
+      "title": "reprex"
+    },
+    "tags-correlation": {
+      "url": "https://www.tidyverse.org/tags/correlation",
+      "last_hash": "545cbcbdee7712fef5bd09fdf434ade69c2db27b26659c834beea4f0c12a2519",
+      "last_fetched": "2026-11-08T05:02:12.463529+00:00",
+      "title": "correlation"
+    },
+    "tags-corrr": {
+      "url": "https://www.tidyverse.org/tags/corrr",
+      "last_hash": "28809397bb17bb6108cf38ba6730022905e03a1979d6c82f20ad3cc2c2cfd464",
+      "last_fetched": "2026-11-08T05:02:13.554030+00:00",
+      "title": "corrr"
+    },
+    "tags-stacks": {
+      "url": "https://www.tidyverse.org/tags/stacks",
+      "last_hash": "3068de76a1ff3f76b2eb9d182582337fd1f5c1d7e2d685c7de3dafbec3ad5ea6",
+      "last_fetched": "2026-11-08T05:02:14.496635+00:00",
+      "title": "stacks"
+    },
+    "tags-embed": {
+      "url": "https://www.tidyverse.org/tags/embed",
+      "last_hash": "9146910e2dccb8c10147380e3647991da5f86212e842ca6e185e024ab5f04a35",
+      "last_fetched": "2026-11-08T05:02:15.484734+00:00",
+      "title": "embed"
+    },
+    "tags-embed-0-1-0": {
+      "url": "https://www.tidyverse.org/tags/embed-0-1-0",
+      "last_hash": "3209d7e77815eecbcd5abed3ad83ddb7e2bb47a319c7744ee2aaf584c35c7bc1",
+      "last_fetched": "2026-11-08T05:02:16.466703+00:00",
+      "title": "embed-0-1-0"
+    },
+    "tags-dplyr-1-0-0": {
+      "url": "https://www.tidyverse.org/tags/dplyr-1-0-0",
+      "last_hash": "699011528fe48c0e3fe4b979b6b9f9c6038301d568cab1cac475b256a2eb6db0",
+      "last_fetched": "2026-11-08T05:02:17.474097+00:00",
+      "title": "dplyr-1-0-0"
+    },
+    "tags-rules": {
+      "url": "https://www.tidyverse.org/tags/rules",
+      "last_hash": "6693c9932d29b48a9b7aed4211b403afc8fe235ce35cfa18f96ab90221d51ef1",
+      "last_fetched": "2026-11-08T05:02:18.519360+00:00",
+      "title": "rules"
+    },
+    "tags-google": {
+      "url": "https://www.tidyverse.org/tags/google",
+      "last_hash": "9b3f2eda3f30415cec15f704713384e60191b8b8a5508e97972821940b8fac5a",
+      "last_fetched": "2026-11-08T05:02:19.682109+00:00",
+      "title": "google"
+    },
+    "tags-baguette": {
+      "url": "https://www.tidyverse.org/tags/baguette",
+      "last_hash": "e18f480b55f5d99071e7af62330fd76d12647e859f01e1cb0c8ff14ab5f8cc6e",
+      "last_fetched": "2026-11-08T05:02:20.732986+00:00",
+      "title": "baguette"
+    },
+    "tags-plsmod": {
+      "url": "https://www.tidyverse.org/tags/plsmod",
+      "last_hash": "753f2f29f659f47740eded5cae3ade5f550700ffce905eeddeeb628b7dcfef2e",
+      "last_fetched": "2026-11-08T05:02:21.739796+00:00",
+      "title": "plsmod"
+    },
+    "tags-poissonreg": {
+      "url": "https://www.tidyverse.org/tags/poissonreg",
+      "last_hash": "5d16661ea82a49124b7afb32080df2d9838dffe6b000c5536ed16e3b1ee8ebc7",
+      "last_fetched": "2026-11-08T05:02:22.803801+00:00",
+      "title": "poissonreg"
+    },
+    "tags-themis": {
+      "url": "https://www.tidyverse.org/tags/themis",
+      "last_hash": "b1480abe48c669b3d6a3d43cae31ae7215eba0abdb39be0dc1147bfd3f7d4089",
+      "last_fetched": "2026-11-08T05:02:23.919119+00:00",
+      "title": "themis"
+    },
+    "tags-slider": {
+      "url": "https://www.tidyverse.org/tags/slider",
+      "last_hash": "4079f0c3ed9dee747047271631bdc3a17a0d899b489ecac87d4f0bdea0bf1d2f",
+      "last_fetched": "2026-11-08T05:02:24.901589+00:00",
+      "title": "slider"
+    },
+    "events-2020-rstudio-conf": {
+      "url": "https://www.tidyverse.org/events/2020-rstudio-conf",
+      "last_hash": "0e06b3afb58fc0b589c7b32ade24c968db8171800942cbf57b61903aca84419c",
+      "last_fetched": "2026-11-08T05:02:25.950445+00:00",
+      "title": "rstudio::conf 2020"
+    },
+    "events": {
+      "url": "https://www.tidyverse.org/events",
+      "last_hash": "7e303247d39a1859f336a18947af8b918575cecc600724f0dfb9dda53d53c7eb",
+      "last_fetched": "2026-11-08T05:02:27.016162+00:00",
+      "title": "Upcoming Events"
+    },
+    "tags-vroom": {
+      "url": "https://www.tidyverse.org/tags/vroom",
+      "last_hash": "eb463adb54d7ee87713135d3ac908345f07f34090c1435d0968feb18afce3349",
+      "last_fetched": "2026-11-08T05:02:28.023671+00:00",
+      "title": "vroom"
+    },
+    "events-2019-field-school": {
+      "url": "https://www.tidyverse.org/events/2019-field-school",
+      "last_hash": "045079321903443fac3209953374a146f112a4194eafe0430cc0b56f16f9fbe7",
+      "last_fetched": "2026-11-08T05:02:29.049841+00:00",
+      "title": "Building Tidy Tools"
+    },
+    "tags-odbc": {
+      "url": "https://www.tidyverse.org/tags/odbc",
+      "last_hash": "34dc3cc93b908e60d0a7512ad8579b8ccf9584f8a1ec0c4b14bc4ba94099f7dc",
+      "last_fetched": "2026-11-08T05:02:29.970164+00:00",
+      "title": "odbc"
+    },
+    "events-2019-aml-london": {
+      "url": "https://www.tidyverse.org/events/2019-aml-london",
+      "last_hash": "d5c6aeaf6e3ba2611f226ef0737007422852c84f76998603ff3d13ece8770800",
+      "last_fetched": "2026-11-08T05:02:30.973061+00:00",
+      "title": "Applied Machine Learning Workshop"
+    },
+    "tags-styler": {
+      "url": "https://www.tidyverse.org/tags/styler",
+      "last_hash": "fd343a56ce90fd87bff80939a66e6c8deb864f8e744b4c81993438ab7abde1a0",
+      "last_fetched": "2026-11-08T05:02:32.141436+00:00",
+      "title": "styler"
+    },
+    "events-2019-tidy-tools-atl": {
+      "url": "https://www.tidyverse.org/events/2019-tidy-tools-atl",
+      "last_hash": "6366e933eaac24a8a40d038cddd3f3830eb98535d69fb89efac362cd905b83bf",
+      "last_fetched": "2026-11-08T05:02:33.161506+00:00",
+      "title": "Building Tidy Tools"
+    },
+    "tags-callr": {
+      "url": "https://www.tidyverse.org/tags/callr",
+      "last_hash": "c6a327b49faef8b8b7c96f852ec05c7a1893c6d2d6bdaf30e373db7bf3af97a5",
+      "last_fetched": "2026-11-08T05:02:34.154164+00:00",
+      "title": "callr"
+    },
+    "tags-rlang": {
+      "url": "https://www.tidyverse.org/tags/rlang",
+      "last_hash": "0f8073ff1778dea31924cb2849d024db67862d359274738a8b3d4624dd6f755e",
+      "last_fetched": "2026-11-08T05:02:35.206072+00:00",
+      "title": "rlang"
+    },
+    "tags-itdepends": {
+      "url": "https://www.tidyverse.org/tags/itdepends",
+      "last_hash": "24b5987ee68917abfaaeee8ef87bb98b3eb0486e5c7312cee62189ee5a67bf83",
+      "last_fetched": "2026-11-08T05:02:36.211903+00:00",
+      "title": "itdepends"
+    },
+    "tags-cleancall": {
+      "url": "https://www.tidyverse.org/tags/cleancall",
+      "last_hash": "04785cec6f6030679ba6872ac4b265f00e0f9c7c77adf3065d77c0f32fb3559e",
+      "last_fetched": "2026-11-08T05:02:37.263338+00:00",
+      "title": "cleancall"
+    },
+    "events-2019-tidy-tools-aus": {
+      "url": "https://www.tidyverse.org/events/2019-tidy-tools-aus",
+      "last_hash": "045079321903443fac3209953374a146f112a4194eafe0430cc0b56f16f9fbe7",
+      "last_fetched": "2026-11-08T05:02:38.264784+00:00",
+      "title": "Building Tidy Tools"
+    },
+    "tags-tibble": {
+      "url": "https://www.tidyverse.org/tags/tibble",
+      "last_hash": "03f40907d295005ba71b118a463f3a91828b537a9b666f580cec30302e4ac196",
+      "last_fetched": "2026-11-08T05:02:39.319117+00:00",
+      "title": "tibble"
+    },
+    "events-2019-rstudio-conf": {
+      "url": "https://www.tidyverse.org/events/2019-rstudio-conf",
+      "last_hash": "17451d3ef7316ff014d2f06b022b740d7c4be85690ae119aa44b58e82363cffb",
+      "last_fetched": "2026-11-08T05:02:40.339651+00:00",
+      "title": "rstudio::conf 2019"
+    },
+    "tags-vdiffr": {
+      "url": "https://www.tidyverse.org/tags/vdiffr",
+      "last_hash": "e27f2edf19b2377de7f453819ded9af48fa34c4bfcf07af89f9d958d0e188a79",
+      "last_fetched": "2026-11-08T05:02:41.377002+00:00",
+      "title": "vdiffr"
+    },
+    "tags-lobstr": {
+      "url": "https://www.tidyverse.org/tags/lobstr",
+      "last_hash": "bea456ff0f4a57b733593278b2ce6e05db2a7fb0ec4e3f3eda7d3e18111b5804",
+      "last_fetched": "2026-11-08T05:02:42.510052+00:00",
+      "title": "lobstr"
+    },
+    "tags-generics": {
+      "url": "https://www.tidyverse.org/tags/generics",
+      "last_hash": "1f612a3772a3144457c6e8739247cac66a05c0a37282274dbe93bf32cd5fc2f9",
+      "last_fetched": "2026-11-08T05:02:43.801006+00:00",
+      "title": "generics"
+    },
+    "tags-broom": {
+      "url": "https://www.tidyverse.org/tags/broom",
+      "last_hash": "0f94ec9e548f4b7e41b46d2ae55979366ef12927822294a3bc4c8f68fb56d8cc",
+      "last_fetched": "2026-11-08T05:02:45.136946+00:00",
+      "title": "broom"
+    },
+    "tags-bench": {
+      "url": "https://www.tidyverse.org/tags/bench",
+      "last_hash": "c830777029a25e45a4f20fe19dafe84fba8b919abe6eb7a6a7c79aafbf0124eb",
+      "last_fetched": "2026-11-08T05:02:46.091867+00:00",
+      "title": "bench"
+    },
+    "tags-conflicted": {
+      "url": "https://www.tidyverse.org/tags/conflicted",
+      "last_hash": "2a1f8bb985e1090dc2788491a0b0ff5ef5f750ea4265a5d5ef63ca28617d4b8e",
+      "last_fetched": "2026-11-08T05:02:47.040011+00:00",
+      "title": "conflicted"
+    },
+    "tags-pillar": {
+      "url": "https://www.tidyverse.org/tags/pillar",
+      "last_hash": "fe14a4217c1354bd5de67c8bf5ce44080350bf03937a3229a0648fa68371c928",
+      "last_fetched": "2026-11-08T05:02:48.001792+00:00",
+      "title": "pillar"
+    },
+    "events-2018-rstudio-conf": {
+      "url": "https://www.tidyverse.org/events/2018-rstudio-conf",
+      "last_hash": "7a6c76f1c55323384304012f611e4e8b21ab97679a1f332090bdb35f21300873",
+      "last_fetched": "2026-11-08T05:02:49.068595+00:00",
+      "title": "rstudio::conf 2018"
+    },
+    "tags-lubridate": {
+      "url": "https://www.tidyverse.org/tags/lubridate",
+      "last_hash": "1d8fc713fa6ae9ca222dd689c9f9f0f6eab199b133ecf4b0d1c31becca908444",
+      "last_fetched": "2026-11-08T05:02:50.166477+00:00",
+      "title": "lubridate"
+    },
+    "tags-glue": {
+      "url": "https://www.tidyverse.org/tags/glue",
+      "last_hash": "604d0599d0344ffc95050aac24f640aac7ec53b6d17a6e91c7d95aa99711bbfc",
+      "last_fetched": "2026-11-08T05:02:51.124767+00:00",
+      "title": "glue"
+    },
+    "contribute": {
+      "url": "https://www.tidyverse.org/contribute",
+      "last_hash": "e2275fd9f53ea6e56cb999e19c10ad7a2e33f81864e343497c6559ee73e01733",
+      "last_fetched": "2026-11-08T05:02:52.104258+00:00",
+      "title": "Contribute to the tidyverse"
+    },
+    "help": {
+      "url": "https://www.tidyverse.org/help",
+      "last_hash": "58b164d22b8fd20109e9bbd54d3bd4342d1493f34ed6023914077dfbe55a2e7c",
+      "last_fetched": "2026-11-08T05:02:53.174418+00:00",
+      "title": "Get help!"
+    },
+    "home": {
+      "url": "https://www.tidyverse.org/home",
+      "last_hash": "81006fd63031582f21dfa15800136b6ec072460996cba0f497d537e3b46d411f",
+      "last_fetched": "2026-11-08T05:02:54.226260+00:00",
+      "title": "Homes"
+    },
+    "home-band_two": {
+      "url": "https://www.tidyverse.org/home/band_two",
+      "last_hash": "a087bc82a30b69da1383c6bc6a60eb83eb7990be5b5dcbbcd513140a223c90e2",
+      "last_fetched": "2026-11-08T05:02:55.287043+00:00",
+      "title": "Learn the tidyverse"
+    },
+    "learn": {
+      "url": "https://www.tidyverse.org/learn",
+      "last_hash": "5e6595a3ad4434c8759f929da6d9318f4d7904f0a4a6b54504e7e8e85044573d",
+      "last_fetched": "2026-11-08T05:02:56.297968+00:00",
+      "title": "Learn the tidyverse"
+    },
+    "home-band_three": {
+      "url": "https://www.tidyverse.org/home/band_three",
+      "last_hash": "305c3c9a5c66f5e097bdb3232bc568ec62eef27d49649ab4e4ad2264f9dede3d",
+      "last_fetched": "2026-11-08T05:02:57.258391+00:00",
+      "title": "Need help?"
+    },
+    "events-archive": {
+      "url": "https://www.tidyverse.org/events/archive",
+      "last_hash": "388b70d5434fac67c4a851da9e8bb8f41155a8d121b035c62c99920ef4fe9b4d",
+      "last_fetched": "2026-11-08T05:02:58.257141+00:00",
+      "title": "Past Events"
+    },
+    "google_privacy_policy": {
+      "url": "https://www.tidyverse.org/google_privacy_policy",
+      "last_hash": "c3a9563c8d3eeb8e2d0a7ae7738fc8729addbcbffa1421166ab8edec47e1a311",
+      "last_fetched": "2026-11-08T05:02:59.246548+00:00",
+      "title": "Privacy policy for packages that access Google APIs"
+    },
+    "home-band_one": {
+      "url": "https://www.tidyverse.org/home/band_one",
+      "last_hash": "29a672c68ef68a929ec943b27c1bbc726a275734825ac3c128de168665cf38ae",
+      "last_fetched": "2026-11-08T05:03:00.280425+00:00",
+      "title": "R packages for data science"
+    },
+    "packages": {
+      "url": "https://www.tidyverse.org/packages",
+      "last_hash": "2efb30dd66284f28911d2eab3b7bafd2356b18e4479193b348dfdee716fd236c",
+      "last_fetched": "2026-11-08T05:03:02.832787+00:00",
+      "title": "Tidyverse packages"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:03:02.832787+00:00",
+  "version_history": []
+}

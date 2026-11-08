@@ -1,0 +1,1555 @@
+{
+  "pages": {
+    "index": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "last_hash": "b8c624bca1678e6e882c83f17689150b7e603a31d727dbf14ce621007f651a05",
+      "last_fetched": "2026-11-08T05:16:58.680484+00:00",
+      "title": "HTML: HyperText Markup Language | MDN"
+    },
+    "Guides": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides",
+      "last_hash": "6f715bc0e2e14fb7ea5fe7c335c0208a48877f6382938662ac2752bb15056ad2",
+      "last_fetched": "2026-11-08T05:16:59.859483+00:00",
+      "title": "HTML guides - HTML | MDN"
+    },
+    "Guides-Cheatsheet": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet",
+      "last_hash": "da957a024782d9da2229c7903bc51b19e4a601678f70380514a7f95d32150c5a",
+      "last_fetched": "2026-11-08T05:17:01.071267+00:00",
+      "title": "HTML cheatsheet for syntax and common tasks - HTML | MDN"
+    },
+    "Guides-Comments": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Comments",
+      "last_hash": "89407b8edbe74189b97fe207135f3768b744b279e10c80c7a24db95120856ecf",
+      "last_fetched": "2026-11-08T05:17:02.089835+00:00",
+      "title": "Using HTML comments <!-- … --> - HTML | MDN"
+    },
+    "Guides-Constraint_validation": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+      "last_hash": "0c31d103da16e0259ec9753705bd55a73e2df87997b39de6c01dd120a45a7c93",
+      "last_fetched": "2026-11-08T05:17:03.234229+00:00",
+      "title": "Using HTML form validation and the Constraint Validation API - HTML | MDN"
+    },
+    "Guides-Content_categories": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories",
+      "last_hash": "f78820253bf49f01d5cbfb7ff6f9aba3b9bdcc7571aae1309af1bde1218b67ed",
+      "last_fetched": "2026-11-08T05:17:04.384695+00:00",
+      "title": "Content categories - HTML | MDN"
+    },
+    "Guides-Date_and_time_formats": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Date_and_time_formats",
+      "last_hash": "12224b7f2c76c3b798ae0a12cf7237ed986acfdf23567f4ff7fc8d7a789cdae2",
+      "last_fetched": "2026-11-08T05:17:05.633702+00:00",
+      "title": "Using date and time formats in HTML - HTML | MDN"
+    },
+    "Guides-Microdata": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microdata",
+      "last_hash": "c48cb3636dc823c7e80271e3821233ce5ca27167ba5ed1d68dd8479ffab100a7",
+      "last_fetched": "2026-11-08T05:17:06.854899+00:00",
+      "title": "Using microdata in HTML - HTML | MDN"
+    },
+    "Guides-Microformats": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats",
+      "last_hash": "fd9c30458bce1bb83f265da6d470320b4b2906d80151d0911ababc3956f1c660",
+      "last_fetched": "2026-11-08T05:17:07.964688+00:00",
+      "title": "Using microformats in HTML - HTML | MDN"
+    },
+    "Guides-Quirks_mode_and_standards_mode": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Quirks_mode_and_standards_mode",
+      "last_hash": "0094d07c6f9a228fecab14d0ef818fb06614356b892d47863de4a8ffd81ae0d6",
+      "last_fetched": "2026-11-08T05:17:09.089231+00:00",
+      "title": "Understanding quirks and standards modes - HTML | MDN"
+    },
+    "Guides-Responsive_images": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images",
+      "last_hash": "cf8206a7d56a1a15c42622577db258a1f3b7e63a1833e55fddacf30040f64def",
+      "last_fetched": "2026-11-08T05:17:10.133623+00:00",
+      "title": "Using responsive images in HTML - HTML | MDN"
+    },
+    "How_to": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to",
+      "last_hash": "72fbc6692d0d601edfd58e4bea22370d2038db35d68532ab235574b6b413a925",
+      "last_fetched": "2026-11-08T05:17:11.349328+00:00",
+      "title": "How to - HTML | MDN"
+    },
+    "How_to-Add_JavaScript_to_your_web_page": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Add_JavaScript_to_your_web_page",
+      "last_hash": "d9d19d452dabfaf7a6f5aa1157e977fa5bcfc13ecfa49ebe70f6535d057a1246",
+      "last_fetched": "2026-11-08T05:17:12.414292+00:00",
+      "title": "Add JavaScript to your web page - HTML | MDN"
+    },
+    "How_to-Add_a_hit_map_on_top_of_an_image": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Add_a_hit_map_on_top_of_an_image",
+      "last_hash": "51571e2a2d66125fa405d46878109e1b33b45a59e55eb9700d9f11417268fa57",
+      "last_fetched": "2026-11-08T05:17:13.542767+00:00",
+      "title": "Add a hitmap on top of an image - HTML | MDN"
+    },
+    "How_to-Author_fast-loading_HTML_pages": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Author_fast-loading_HTML_pages",
+      "last_hash": "9903bb02fb0de4e581418501d2704bd211dc94ed22db66c3b869450f0ce43856",
+      "last_fetched": "2026-11-08T05:17:14.847776+00:00",
+      "title": "Author fast-loading HTML pages - HTML | MDN"
+    },
+    "How_to-CORS_enabled_image": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/CORS_enabled_image",
+      "last_hash": "1eaedb5ad57d5044ec3e9687c07b02f2a25536259dbbe579fbc9fdddc50cbb7e",
+      "last_fetched": "2026-11-08T05:17:15.926845+00:00",
+      "title": "Use cross-origin images in a canvas - HTML | MDN"
+    },
+    "How_to-Define_terms_with_HTML": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Define_terms_with_HTML",
+      "last_hash": "61ab9fe4f833c5c2100a5a0c7786cc515310d4d570aaa3ddbb1e3214726617da",
+      "last_fetched": "2026-11-08T05:17:17.026765+00:00",
+      "title": "Define terms with HTML - HTML | MDN"
+    },
+    "How_to-Use_data_attributes": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes",
+      "last_hash": "5a53afa0aa197b463bfb40d1379c241f965586f658ee5b95ea6a1e158430a7f0",
+      "last_fetched": "2026-11-08T05:17:18.006508+00:00",
+      "title": "Use data attributes - HTML | MDN"
+    },
+    "Reference": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference",
+      "last_hash": "91ae82315a17815bde2af061ba23e66a950cce14fba810fb98dff01937bdae77",
+      "last_fetched": "2026-11-08T05:17:19.011945+00:00",
+      "title": "HTML reference - HTML | MDN"
+    },
+    "Reference-Attributes": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes",
+      "last_hash": "115a7006196fd365b1e8c5de3382ce5c23cf8fbc1f336a16245969896a3cfdcf",
+      "last_fetched": "2026-11-08T05:17:21.764168+00:00",
+      "title": "HTML attribute reference - HTML | MDN"
+    },
+    "Reference-Attributes-accept": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept",
+      "last_hash": "7396cbea38d156479cbf8aeb309c15e184bc99a3e53c256bc5573285a5c2dee0",
+      "last_fetched": "2026-11-08T05:17:22.925642+00:00",
+      "title": "accept HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-autocomplete": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete",
+      "last_hash": "53cd98aae6ce730e54d27afa0be52dfe3cc7d02e4defadfd77ca522ebeae2727",
+      "last_fetched": "2026-11-08T05:17:24.215098+00:00",
+      "title": "autocomplete HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-capture": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/capture",
+      "last_hash": "f9681ba73dde7f7f1c3d67539315df0d223f6adcb50f0b4a1d12d1fd1b74f6ee",
+      "last_fetched": "2026-11-08T05:17:25.357313+00:00",
+      "title": "capture HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-content": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/content",
+      "last_hash": "c409d2addf89cdf8dd7b4ab805473a4f17eb881d3a6832a8fbe30aa19c73aa47",
+      "last_fetched": "2026-11-08T05:17:26.598689+00:00",
+      "title": "content HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-crossorigin": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/crossorigin",
+      "last_hash": "e650113cdf4d77ecbf6a25387840b46d52a14f8001e53efbe18b03f44c216d80",
+      "last_fetched": "2026-11-08T05:17:27.617809+00:00",
+      "title": "crossorigin HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-dirname": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/dirname",
+      "last_hash": "1273e634e755cbd3b85c6526a674f19470916b6f4c1c64b7a8c61efe8ab6fe93",
+      "last_fetched": "2026-11-08T05:17:28.791453+00:00",
+      "title": "dirname HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-disabled": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled",
+      "last_hash": "31fd460128a68ac3c0dc4a1b63112ae86542e263e663c0c98d01817629958547",
+      "last_fetched": "2026-11-08T05:17:30.036104+00:00",
+      "title": "disabled HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-elementtiming": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/elementtiming",
+      "last_hash": "c9f68f515684fb156140272bd4ae17b1fd4184f64168e3e1255e234be1d59820",
+      "last_fetched": "2026-11-08T05:17:31.060839+00:00",
+      "title": "elementtiming HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-fetchpriority": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/fetchpriority",
+      "last_hash": "acf20d1186b315242d8809ead0a3c98d15c1cbe8ba039ecd7943a9b21b82d66b",
+      "last_fetched": "2026-11-08T05:17:32.178986+00:00",
+      "title": "fetchpriority HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-for": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/for",
+      "last_hash": "3e98f6bb1815ab26fd6d192a4008a5728e908f02c5c82e00b663f9eb9127493c",
+      "last_fetched": "2026-11-08T05:17:33.486668+00:00",
+      "title": "for HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-form": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/form",
+      "last_hash": "9fa4f5bfe10000dfa799b6ef703f16127b1d69ea341db7e4cb66dffe15ee2c28",
+      "last_fetched": "2026-11-08T05:17:34.537773+00:00",
+      "title": "form HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-integrity": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/integrity",
+      "last_hash": "1625a8d6a43ce74ea5df22c09adafda317aa7fa50ed430f8710c0be98f477c5e",
+      "last_fetched": "2026-11-08T05:17:35.604830+00:00",
+      "title": "integrity HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-max": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/max",
+      "last_hash": "a4415a45768fc222068dd8deb2f3be485574916e40758e4c1439dfaeee47d629",
+      "last_fetched": "2026-11-08T05:17:36.884245+00:00",
+      "title": "max HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-maxlength": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/maxlength",
+      "last_hash": "8ede74ea17c6220b7f138a8fc46949d98ffbe4fd0c5e65e3042d45297be59f02",
+      "last_fetched": "2026-11-08T05:17:38.053779+00:00",
+      "title": "maxlength HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-min": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/min",
+      "last_hash": "2abba53575c601a3a684efbb877efe01baf1f0945ac91dba02ca60375608055e",
+      "last_fetched": "2026-11-08T05:17:39.119589+00:00",
+      "title": "min HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-minlength": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/minlength",
+      "last_hash": "b217024e77e0a62476eea22bbe7573ad621e7d6645d52d0a2736b3f4ad8970c3",
+      "last_fetched": "2026-11-08T05:17:40.272644+00:00",
+      "title": "minlength HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-multiple": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/multiple",
+      "last_hash": "be7bfb8418f4d58b0f73d78ccafe39068f42e57ab3fba294b7a2c94044d83a68",
+      "last_fetched": "2026-11-08T05:17:41.621510+00:00",
+      "title": "multiple HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-pattern": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern",
+      "last_hash": "a15524a9c1f9d699d4b6f1a6e6e6f5beafc401c0f2f4e5447b9aec6e21763391",
+      "last_fetched": "2026-11-08T05:17:42.693988+00:00",
+      "title": "pattern HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-placeholder": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/placeholder",
+      "last_hash": "1c527c31c5d95d7c0b84b53dcff18b177137600576e2bb4aa2c0b05941dcb6ff",
+      "last_fetched": "2026-11-08T05:17:43.718196+00:00",
+      "title": "placeholder HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-readonly": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/readonly",
+      "last_hash": "c5786550cfd24c6897729ea7f9386c0f6ef1d8571f6d4feb85f6598b5994badc",
+      "last_fetched": "2026-11-08T05:17:44.881678+00:00",
+      "title": "readonly HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-rel": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel",
+      "last_hash": "2d0a686e342961cbbf5be69f3d9d8abfc42dc8eb2f19910cde132e03cd48477a",
+      "last_fetched": "2026-11-08T05:17:46.079055+00:00",
+      "title": "rel HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-rel-alternate_stylesheet": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/alternate_stylesheet",
+      "last_hash": "d877cff58c73cb8bb5968732b4894da738dbcfedc9e091f74d97593c4d91e987",
+      "last_fetched": "2026-11-08T05:17:47.194477+00:00",
+      "title": "rel=\"alternate stylesheet\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-compression-dictionary": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/compression-dictionary",
+      "last_hash": "51ad71cc79b817c304a2b0a03aac06e0950dc3390ffb4b892ffaba75796b479e",
+      "last_fetched": "2026-11-08T05:17:48.461030+00:00",
+      "title": "rel=\"compression-dictionary\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-dns-prefetch": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/dns-prefetch",
+      "last_hash": "1932f2669172b1ee7ab8889b00161a7648bcb3c97772f47a57c22d7fb4ed7f3c",
+      "last_fetched": "2026-11-08T05:17:49.651200+00:00",
+      "title": "rel=\"dns-prefetch\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-manifest": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/manifest",
+      "last_hash": "c277bae3ed49e5440dde6d4285277db04b2166d3d61f4bba88227af45008dccb",
+      "last_fetched": "2026-11-08T05:17:50.696692+00:00",
+      "title": "rel=\"manifest\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-me": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/me",
+      "last_hash": "a427ca74d2233afe93aed7f2ae78e3ef0b506b7886e6e5eceee73d124e000c9c",
+      "last_fetched": "2026-11-08T05:17:51.928464+00:00",
+      "title": "rel=\"me\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-modulepreload": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/modulepreload",
+      "last_hash": "f4cda0a3b7fa79d61aecaca9f476bb4cd129712ad34d1e8c76746705c9380b5e",
+      "last_fetched": "2026-11-08T05:17:53.109062+00:00",
+      "title": "rel=\"modulepreload\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-noopener": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener",
+      "last_hash": "512bfaba8f6eda39fb103a211e53273b379b910f0e316521924aa52161e5d3d9",
+      "last_fetched": "2026-11-08T05:17:54.134298+00:00",
+      "title": "rel=\"noopener\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-noreferrer": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noreferrer",
+      "last_hash": "e2159a3a21143796e52adbe89df269f81a77c1a5f54a6e5c6dc10c6a85bae631",
+      "last_fetched": "2026-11-08T05:17:55.241915+00:00",
+      "title": "rel=\"noreferrer\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-preconnect": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preconnect",
+      "last_hash": "09550b89d5738f9c60590e71453fe7bbe2063f4501cb36acb68677b4edc167b8",
+      "last_fetched": "2026-11-08T05:17:56.445847+00:00",
+      "title": "rel=\"preconnect\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-prefetch": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/prefetch",
+      "last_hash": "c649eed6a925b179d10b830aabcaf2cbbcd85b3f42cb0dbfb2798d3293620d00",
+      "last_fetched": "2026-11-08T05:17:57.658558+00:00",
+      "title": "rel=\"prefetch\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-preload": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload",
+      "last_hash": "84075f04b9590a3730eb387c03312bf6462636f15dfa4ed92d6e938278c1a0ca",
+      "last_fetched": "2026-11-08T05:17:58.736761+00:00",
+      "title": "rel=\"preload\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-rel-prerender": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/prerender",
+      "last_hash": "b55c38e5b6611855bc0c9c3b39b3321fc5f14d3d03c2b4742de0b22b4f93f10c",
+      "last_fetched": "2026-11-08T05:17:59.706329+00:00",
+      "title": "rel=\"prerender\" HTML attribute value - HTML | MDN"
+    },
+    "Reference-Attributes-required": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required",
+      "last_hash": "b493c6effc203f749b8724f2c5c6b6f3a7c299c72573bc7bbcadefd64a18f098",
+      "last_fetched": "2026-11-08T05:18:00.750701+00:00",
+      "title": "required HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-size": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/size",
+      "last_hash": "f0bc7e9a9006260de86a8dcade626f27f0cd26ef9115225561b884f7b4a0a740",
+      "last_fetched": "2026-11-08T05:18:01.847884+00:00",
+      "title": "size HTML attribute - HTML | MDN"
+    },
+    "Reference-Attributes-step": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/step",
+      "last_hash": "ebf3c00f4bc205afe00a96830d0b7f6704d78928139f96c271a772f899a4a5d3",
+      "last_fetched": "2026-11-08T05:18:02.969354+00:00",
+      "title": "step HTML attribute - HTML | MDN"
+    },
+    "Reference-Elements": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+      "last_hash": "ea67fdff6ed5adfa90b8dc2dad1fd67f9ec480be963f5d49dd10cb45de7038ab",
+      "last_fetched": "2026-11-08T05:18:04.249955+00:00",
+      "title": "HTML elements reference - HTML | MDN"
+    },
+    "Reference-Elements-Heading_Elements": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements",
+      "last_hash": "36c90226d85a0bbb9bc1c60f80dc847991a263b3eb050888a534fd379d5cb75e",
+      "last_fetched": "2026-11-08T05:18:05.449661+00:00",
+      "title": "<h1>–<h6> HTML section heading elements - HTML | MDN"
+    },
+    "Reference-Elements-a": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a",
+      "last_hash": "7ab6bd930802f960d3eb98811a7a0c9839ba3494084814080474c8703d786f87",
+      "last_fetched": "2026-11-08T05:18:06.718020+00:00",
+      "title": "<a> HTML anchor element - HTML | MDN"
+    },
+    "Reference-Elements-abbr": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/abbr",
+      "last_hash": "323fdd9f9a09d95137f09b920d9a4fc4facbd4b5730cf0a67b8b5fc9a7c06fd3",
+      "last_fetched": "2026-11-08T05:18:07.768390+00:00",
+      "title": "<abbr> HTML abbreviation element - HTML | MDN"
+    },
+    "Reference-Elements-acronym": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/acronym",
+      "last_hash": "0c1d0c7f3a849d418a13b648f775b14dc11f31cd78935197a95109a1d756c971",
+      "last_fetched": "2026-11-08T05:18:08.733965+00:00",
+      "title": "<acronym> HTML acronym or abbreviation element - HTML | MDN"
+    },
+    "Reference-Elements-address": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/address",
+      "last_hash": "085ce7fcedf635bedb5e8a6f35ace3aae0a56d9ddabbb9eca1a46d708a03f53c",
+      "last_fetched": "2026-11-08T05:18:09.747973+00:00",
+      "title": "<address> HTML contact address element - HTML | MDN"
+    },
+    "Reference-Elements-area": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/area",
+      "last_hash": "457ee09363712976b3da9150bda3032b8e6aa1bf820540fcfae547b057af82df",
+      "last_fetched": "2026-11-08T05:18:10.756897+00:00",
+      "title": "<area> HTML image map area element - HTML | MDN"
+    },
+    "Reference-Elements-article": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article",
+      "last_hash": "972bcfe6c8b44df5b884c8299a3da98a597a3b687a5e5d596ec77dd4bc7d6f21",
+      "last_fetched": "2026-11-08T05:18:11.839807+00:00",
+      "title": "<article> HTML article contents element - HTML | MDN"
+    },
+    "Reference-Elements-aside": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside",
+      "last_hash": "93bc90e995c10d4a7dcccbbbba904904605b148b80dc04028a98a4d49adab74d",
+      "last_fetched": "2026-11-08T05:18:12.850220+00:00",
+      "title": "<aside> HTML aside element - HTML | MDN"
+    },
+    "Reference-Elements-audio": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio",
+      "last_hash": "563630151f53cada73523f9fa67e643bb9dc25dad15893db4e38642030e81e35",
+      "last_fetched": "2026-11-08T05:18:14.270496+00:00",
+      "title": "<audio> HTML embed audio element - HTML | MDN"
+    },
+    "Reference-Elements-b": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/b",
+      "last_hash": "552921d7ffca278c2f9f69df89709549f372092262316e2a902f4a2f75928180",
+      "last_fetched": "2026-11-08T05:18:15.446977+00:00",
+      "title": "<b> HTML bring attention to element - HTML | MDN"
+    },
+    "Reference-Elements-base": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base",
+      "last_hash": "28386c022341668b988b8439690ef478dff16a995f172d0f4a3ef4ac303683c1",
+      "last_fetched": "2026-11-08T05:18:16.510587+00:00",
+      "title": "<base> HTML document base URL element - HTML | MDN"
+    },
+    "Reference-Elements-bdi": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdi",
+      "last_hash": "91dd5e52ecd6f8b0d74168bc5eb057e3c2f7888dd57f31f3e5f05d47f57ba40f",
+      "last_fetched": "2026-11-08T05:18:17.526718+00:00",
+      "title": "<bdi> HTML bidirectional isolate element - HTML | MDN"
+    },
+    "Reference-Elements-bdo": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdo",
+      "last_hash": "6c0023c31540f1e29dfc7d41ad313ec5d9cc4ecdbd8ab212ec6def2cb0833cf9",
+      "last_fetched": "2026-11-08T05:18:18.514818+00:00",
+      "title": "<bdo> HTML bidirectional text override element - HTML | MDN"
+    },
+    "Reference-Elements-big": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/big",
+      "last_hash": "b62b55a8151e6f1395bbcae46d3f45e187852a4651f8be51346cd10834b1ad69",
+      "last_fetched": "2026-11-08T05:18:19.637903+00:00",
+      "title": "<big> HTML bigger text element - HTML | MDN"
+    },
+    "Reference-Elements-blockquote": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote",
+      "last_hash": "1aaab48bacdb32a254e52550077257a164b7ee41c409cb5f4bde36a141c3e16e",
+      "last_fetched": "2026-11-08T05:18:20.646823+00:00",
+      "title": "<blockquote> HTML block quotation element - HTML | MDN"
+    },
+    "Reference-Elements-body": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body",
+      "last_hash": "5c0003873ec7e4e9ecce5f9ddf10b2fc804e26a115710bf6be28b65e056e25c4",
+      "last_fetched": "2026-11-08T05:18:21.672048+00:00",
+      "title": "<body> HTML document body element - HTML | MDN"
+    },
+    "Reference-Elements-br": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br",
+      "last_hash": "5b6a832991a346e30ea868366bf082c6a57b86966df86d39dcd20e990794e930",
+      "last_fetched": "2026-11-08T05:18:22.907575+00:00",
+      "title": "<br> HTML line break element - HTML | MDN"
+    },
+    "Reference-Elements-button": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button",
+      "last_hash": "20088bbae949afb675c5828618667f1236aa5d91732ef98193265c3ee5551f3f",
+      "last_fetched": "2026-11-08T05:18:23.983091+00:00",
+      "title": "<button> HTML button element - HTML | MDN"
+    },
+    "Reference-Elements-canvas": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas",
+      "last_hash": "8c050e51fb60861afb460a25fc8f425c3ab9df1579aeaf9557c158e62a610a2a",
+      "last_fetched": "2026-11-08T05:18:25.118287+00:00",
+      "title": "<canvas> HTML graphics canvas element - HTML | MDN"
+    },
+    "Reference-Elements-caption": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/caption",
+      "last_hash": "8aa688b883255af389d9a28876d1a89d3328f7f360e1b37cc2e414bf5a708fd6",
+      "last_fetched": "2026-11-08T05:18:26.275310+00:00",
+      "title": "<caption> HTML table caption element - HTML | MDN"
+    },
+    "Reference-Elements-center": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/center",
+      "last_hash": "c5c455461978ad300c1a6b52b9030aa35e6bfbfc2da68a0a11205d9dfe615392",
+      "last_fetched": "2026-11-08T05:18:27.280984+00:00",
+      "title": "<center> HTML centered text element - HTML | MDN"
+    },
+    "Reference-Elements-cite": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/cite",
+      "last_hash": "02d169e8cdd9eca51a3531278c69caf76a5e95b8c614f306aa086718d11b4d47",
+      "last_fetched": "2026-11-08T05:18:28.344081+00:00",
+      "title": "<cite> HTML citation element - HTML | MDN"
+    },
+    "Reference-Elements-code": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/code",
+      "last_hash": "2879cceef84ce99d34b62a765953faa03129fa4a44c8048d2cd8b9dd62be5f5d",
+      "last_fetched": "2026-11-08T05:18:29.349278+00:00",
+      "title": "<code> HTML inline code element - HTML | MDN"
+    },
+    "Reference-Elements-col": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/col",
+      "last_hash": "703f61837b48d3ccf292e672f9cf5d5bb911099d0613a49a77289efa6d178db8",
+      "last_fetched": "2026-11-08T05:18:30.458959+00:00",
+      "title": "<col> HTML table column element - HTML | MDN"
+    },
+    "Reference-Elements-colgroup": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/colgroup",
+      "last_hash": "9b4034b2f1ad23d99e9d7aa7f4e5ad7a96e3a3a5601bcda89a87ef789957f002",
+      "last_fetched": "2026-11-08T05:18:31.485054+00:00",
+      "title": "<colgroup> HTML table column group element - HTML | MDN"
+    },
+    "Reference-Elements-data": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/data",
+      "last_hash": "195533b8fbebbfebb2a6dd4ef395531fbdc725ed6a0e3e76b0d70ff562bec9c8",
+      "last_fetched": "2026-11-08T05:18:32.489541+00:00",
+      "title": "<data> HTML data element - HTML | MDN"
+    },
+    "Reference-Elements-datalist": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist",
+      "last_hash": "6cd34af15c9814fb3fd5a52f548788bba32eecc7781184904562da6de0ed6d72",
+      "last_fetched": "2026-11-08T05:18:33.831500+00:00",
+      "title": "<datalist> HTML data list element - HTML | MDN"
+    },
+    "Reference-Elements-dd": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dd",
+      "last_hash": "239a5dc05ea69eea008d11dfe7537bdc5873837e4a7c350aed41ca77fa93598c",
+      "last_fetched": "2026-11-08T05:18:34.996993+00:00",
+      "title": "<dd> HTML description details element - HTML | MDN"
+    },
+    "Reference-Elements-del": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/del",
+      "last_hash": "c1cce8fd10ef21d83e425cfca2f9802dbcd4465eb757c8519a236165ae12c954",
+      "last_fetched": "2026-11-08T05:18:35.996782+00:00",
+      "title": "<del> HTML deleted text element - HTML | MDN"
+    },
+    "Reference-Elements-details": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details",
+      "last_hash": "dd6a704629e5d95ef0259a6a57dc50f05e39d8204077632d5a05dfc036391783",
+      "last_fetched": "2026-11-08T05:18:37.199013+00:00",
+      "title": "<details> HTML details disclosure element - HTML | MDN"
+    },
+    "Reference-Elements-dfn": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dfn",
+      "last_hash": "6d8fbc64071268f23c694ab3fc394d71bf81778e171a383902a0f9bc56d5c370",
+      "last_fetched": "2026-11-08T05:18:38.399045+00:00",
+      "title": "<dfn> HTML definition element - HTML | MDN"
+    },
+    "Reference-Elements-dialog": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
+      "last_hash": "9d8ba8585e20ec42d4a9f2484f273507bd87a0c6a65df2d7797096ec9de0e11f",
+      "last_fetched": "2026-11-08T05:18:39.515234+00:00",
+      "title": "<dialog> HTML dialog element - HTML | MDN"
+    },
+    "Reference-Elements-dir": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dir",
+      "last_hash": "6072b461ce22311def11b501febcfbf9bf1399fd470f0e4e3c6790e1516dd06a",
+      "last_fetched": "2026-11-08T05:18:40.503864+00:00",
+      "title": "<dir> HTML directory element - HTML | MDN"
+    },
+    "Reference-Elements-div": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div",
+      "last_hash": "4085ccdc74c598af1a40d219f07b33432ed77b063ca550905ed3714cbeb547f9",
+      "last_fetched": "2026-11-08T05:18:41.495262+00:00",
+      "title": "<div> HTML content division element - HTML | MDN"
+    },
+    "Reference-Elements-dl": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dl",
+      "last_hash": "137d88887af448a44d4becc2d52c6e36478bd0bfae75eeab43c18198bbfac179",
+      "last_fetched": "2026-11-08T05:18:42.571498+00:00",
+      "title": "<dl> HTML description list element - HTML | MDN"
+    },
+    "Reference-Elements-dt": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dt",
+      "last_hash": "b3c99222517eb10e6dae64c56b0bebaf867fa78f0d52490b0a145d8b7a839ce3",
+      "last_fetched": "2026-11-08T05:18:43.697443+00:00",
+      "title": "<dt> HTML description term element - HTML | MDN"
+    },
+    "Reference-Elements-em": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/em",
+      "last_hash": "3638519b66fa9f468111549a404c8246cd7327b33bbc6485e2dcc43a0899a3ad",
+      "last_fetched": "2026-11-08T05:18:45.036742+00:00",
+      "title": "<em> HTML emphasis element - HTML | MDN"
+    },
+    "Reference-Elements-embed": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/embed",
+      "last_hash": "e27c5c99578b2063635acd835d14022b9d381612ef73db4f8caef71fffbc5d2b",
+      "last_fetched": "2026-11-08T05:18:46.427373+00:00",
+      "title": "<embed> HTML embed external content element - HTML | MDN"
+    },
+    "Reference-Elements-fencedframe": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fencedframe",
+      "last_hash": "7c1d0fe165ff153c6994a78746d7ed6c17c27bff7ac1be62931ea58e5b208341",
+      "last_fetched": "2026-11-08T05:18:47.509928+00:00",
+      "title": "<fencedframe> HTML fenced frame element - HTML | MDN"
+    },
+    "Reference-Elements-fieldset": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset",
+      "last_hash": "19ae73aec92e1571a24f3ba06d420dfee8548edf9d6b88761adb2981800135a5",
+      "last_fetched": "2026-11-08T05:18:48.536551+00:00",
+      "title": "<fieldset> HTML field set element - HTML | MDN"
+    },
+    "Reference-Elements-figcaption": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption",
+      "last_hash": "3c3495bb4d859163e19b2264fdf8a8bf7f7e22cf872319e76ee7f47f1827a6fc",
+      "last_fetched": "2026-11-08T05:18:49.836089+00:00",
+      "title": "<figcaption> HTML figure caption element - HTML | MDN"
+    },
+    "Reference-Elements-figure": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure",
+      "last_hash": "920cb992b138edb94d21a065c495ae2638287c7547f24b795b16bd04dcc4d3ba",
+      "last_fetched": "2026-11-08T05:18:50.820218+00:00",
+      "title": "<figure> HTML figure with optional caption element - HTML | MDN"
+    },
+    "Reference-Elements-font": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/font",
+      "last_hash": "f147ea8dfcaa293119db52492318a30321c7c0cb5afce8fa7188e80997a410c4",
+      "last_fetched": "2026-11-08T05:18:51.812634+00:00",
+      "title": "<font> HTML font element - HTML | MDN"
+    },
+    "Reference-Elements-footer": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer",
+      "last_hash": "0ec30650f5336223da412dc82468484379c3cbcdcc6a347caca5668baebd2de9",
+      "last_fetched": "2026-11-08T05:18:52.953827+00:00",
+      "title": "<footer> HTML footer element - HTML | MDN"
+    },
+    "Reference-Elements-form": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form",
+      "last_hash": "d7182f1a71ba9b71f1e155fb7503af0c554fbd94dfc302e42ce9eca1d715a4e8",
+      "last_fetched": "2026-11-08T05:18:54.140519+00:00",
+      "title": "<form> HTML form element - HTML | MDN"
+    },
+    "Reference-Elements-frame": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/frame",
+      "last_hash": "e22cca2edf2261ad242f18633d3233e6d2d95242b4a40c0849a50c1163e1e542",
+      "last_fetched": "2026-11-08T05:18:55.176553+00:00",
+      "title": "<frame> HTML frame element - HTML | MDN"
+    },
+    "Reference-Elements-frameset": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/frameset",
+      "last_hash": "32075c871a5a4734c6121fd10966f1383fd1e8fc3cb980e6ca8342b904b2d944",
+      "last_fetched": "2026-11-08T05:18:56.196387+00:00",
+      "title": "<frameset> HTML frameset element - HTML | MDN"
+    },
+    "Reference-Elements-geolocation": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/geolocation",
+      "last_hash": "779ab9da55e2f94e1d2261e467ff2c7bf23bde18736b403b0674e4cf65f6ffc8",
+      "last_fetched": "2026-11-08T05:18:57.501828+00:00",
+      "title": "<geolocation> HTML geolocation element - HTML | MDN"
+    },
+    "Reference-Elements-head": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head",
+      "last_hash": "d9c61ba621bb7709a806d8bdf193cd7afffbc20253b0132fd9cf4f6ff5e8369b",
+      "last_fetched": "2026-11-08T05:18:58.527947+00:00",
+      "title": "<head> HTML document metadata (header) element - HTML | MDN"
+    },
+    "Reference-Elements-header": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header",
+      "last_hash": "d37bb84226d51f7ba3334fd14c968595e96b5bdb2e69b1dd01a4cf36c39f016a",
+      "last_fetched": "2026-11-08T05:18:59.534104+00:00",
+      "title": "<header> HTML header element - HTML | MDN"
+    },
+    "Reference-Elements-hgroup": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hgroup",
+      "last_hash": "7a8a425a853bf99a15474de6915c119e645a18b3f3bf3ad50486d19a8d0cea55",
+      "last_fetched": "2026-11-08T05:19:00.676612+00:00",
+      "title": "<hgroup> HTML heading group element - HTML | MDN"
+    },
+    "Reference-Elements-hr": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr",
+      "last_hash": "507ad3c94f5c6626ba4de20d29003aae72af5d6272535f06b4c79f9859bd5956",
+      "last_fetched": "2026-11-08T05:19:01.935317+00:00",
+      "title": "<hr> HTML thematic break (horizontal rule) element - HTML | MDN"
+    },
+    "Reference-Elements-html": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/html",
+      "last_hash": "a4a6a7664c9a7eba382782dc57f52338a565bfa49b73b8f63c2b7c808142ac8e",
+      "last_fetched": "2026-11-08T05:19:02.963218+00:00",
+      "title": "<html> HTML document root element - HTML | MDN"
+    },
+    "Reference-Elements-i": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/i",
+      "last_hash": "fd6bc05284984e1a735e76d0669ef65d38fe4000047d4c7f6328582fac199cd1",
+      "last_fetched": "2026-11-08T05:19:03.986091+00:00",
+      "title": "<i> HTML idiomatic text element - HTML | MDN"
+    },
+    "Reference-Elements-iframe": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe",
+      "last_hash": "9d7c15d64fd7f6c3080188b68eb25ec6249d3a848302908bb17986651371f12f",
+      "last_fetched": "2026-11-08T05:19:05.242264+00:00",
+      "title": "<iframe> HTML inline frame element - HTML | MDN"
+    },
+    "Reference-Elements-img": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img",
+      "last_hash": "3f802e23f5347cb734e1480d7734735a0a6116dfaa1e2b1d9ed1b86c5245fdf3",
+      "last_fetched": "2026-11-08T05:19:06.441842+00:00",
+      "title": "<img> HTML image embed element - HTML | MDN"
+    },
+    "Reference-Elements-input": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input",
+      "last_hash": "e87be9b68762dd082169dd4868601367f807c961743db04a8379a8bbf4189946",
+      "last_fetched": "2026-11-08T05:19:08.138449+00:00",
+      "title": "<input> HTML input element - HTML | MDN"
+    },
+    "Reference-Elements-input-button": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/button",
+      "last_hash": "91126ba16fe1d2c97ef6b9b94326ee80af8959f8836159f1627da46d63bbad51",
+      "last_fetched": "2026-11-08T05:19:09.189042+00:00",
+      "title": "<input type=\"button\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-checkbox": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/checkbox",
+      "last_hash": "f895778f4f959d467dfd39370ee6d730265ad0c00f81c3d891d173ffd7ef2bb7",
+      "last_fetched": "2026-11-08T05:19:10.364941+00:00",
+      "title": "<input type=\"checkbox\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-color": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/color",
+      "last_hash": "743dfa63b1e8178a241b994114027954eb4c8b7dc29f5b52c0505c4a2a0b4469",
+      "last_fetched": "2026-11-08T05:19:11.609478+00:00",
+      "title": "<input type=\"color\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-date": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/date",
+      "last_hash": "88a0252de93b201df159cb439132fa7ad7a5ee017f78b13143e502e9a365ef3b",
+      "last_fetched": "2026-11-08T05:19:12.701395+00:00",
+      "title": "<input type=\"date\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-datetime-local": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/datetime-local",
+      "last_hash": "a241b30d318c8bc7fa11cba07b2482a7c5faa6fab56d93063220a52c0760ca3a",
+      "last_fetched": "2026-11-08T05:19:14.028308+00:00",
+      "title": "<input type=\"datetime-local\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-email": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/email",
+      "last_hash": "774612d80495b311a4d163c69d7fc3f16fa8b038489f13e82a6a3ed9d24ada5f",
+      "last_fetched": "2026-11-08T05:19:15.151467+00:00",
+      "title": "<input type=\"email\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-file": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file",
+      "last_hash": "0e59d0a5b2526203876e56110fc820fe35ad63e8c5bf516d3a4d1789eb9d6618",
+      "last_fetched": "2026-11-08T05:19:16.394675+00:00",
+      "title": "<input type=\"file\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-hidden": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/hidden",
+      "last_hash": "d98028fafd7ef0bf35898e7f15d1c96947985f233bbf01ada37db4d6fc814ac7",
+      "last_fetched": "2026-11-08T05:19:17.477104+00:00",
+      "title": "<input type=\"hidden\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-image": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/image",
+      "last_hash": "a6d482a673c50b579a4d8bd1a2c1a165cf6ab30f0ef4f28649121166f89b8f2e",
+      "last_fetched": "2026-11-08T05:19:18.588593+00:00",
+      "title": "<input type=\"image\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-month": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/month",
+      "last_hash": "772432a42b6d54a01f0ecbfb55a6202fc312cb0b2edfa7ce14c37026763b79fe",
+      "last_fetched": "2026-11-08T05:19:19.720431+00:00",
+      "title": "<input type=\"month\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-number": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/number",
+      "last_hash": "ba640afdc2a11a9d940cfb6639576b5c5e8c09ecd4cd35aa5d69ba022665ec48",
+      "last_fetched": "2026-11-08T05:19:20.896782+00:00",
+      "title": "<input type=\"number\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-password": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password",
+      "last_hash": "d95551b89cdb2854e5044b0249878d2cd949cf9653a4ac0e852ef7577a7ff1a3",
+      "last_fetched": "2026-11-08T05:19:22.120438+00:00",
+      "title": "<input type=\"password\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-radio": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio",
+      "last_hash": "a80477c286461c017c51b0832e6110f8afa16823782f14f1ab8467362143dc59",
+      "last_fetched": "2026-11-08T05:19:23.167112+00:00",
+      "title": "<input type=\"radio\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-range": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range",
+      "last_hash": "d45fd1bece0429aa22e5999c608b27365e645ce1408062f61ef13faddb73c162",
+      "last_fetched": "2026-11-08T05:19:24.258695+00:00",
+      "title": "<input type=\"range\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-reset": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/reset",
+      "last_hash": "b9d3598aeb3e20330058ba5de57f7293e388aa132dcba12c47c92a1d0388ca2c",
+      "last_fetched": "2026-11-08T05:19:25.421026+00:00",
+      "title": "<input type=\"reset\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-search": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/search",
+      "last_hash": "4a285179968def28cc4695ce2ba70f7c584a773f48e9b630c8c73b676d947413",
+      "last_fetched": "2026-11-08T05:19:26.674362+00:00",
+      "title": "<input type=\"search\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-submit": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/submit",
+      "last_hash": "b98324db39a976eb66ab9d8d075be3ae385717e6611a70e6b161c5b3eb640f8e",
+      "last_fetched": "2026-11-08T05:19:27.724819+00:00",
+      "title": "<input type=\"submit\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-tel": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/tel",
+      "last_hash": "e749bb369219ae1abfd8fabbaf2dec4dfb0083544a21f96fad898e711e8c22b1",
+      "last_fetched": "2026-11-08T05:19:29.046872+00:00",
+      "title": "<input type=\"tel\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-text": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text",
+      "last_hash": "0ae8aa4b0155b29d51ecc79c8fd62f0ac5310f57a784b3aa87a89793046b63fe",
+      "last_fetched": "2026-11-08T05:19:30.251398+00:00",
+      "title": "<input type=\"text\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-time": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/time",
+      "last_hash": "d7d00529e87538b6fe8f017a2797eaa08180545f7b5322cb1c7ee5dc3efbfdca",
+      "last_fetched": "2026-11-08T05:19:31.341253+00:00",
+      "title": "<input type=\"time\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-url": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/url",
+      "last_hash": "775b8ddff1f8ddc5b1520722a4734b0826eeacf60a0cd2efcf8440c249d96a58",
+      "last_fetched": "2026-11-08T05:19:32.457930+00:00",
+      "title": "<input type=\"url\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-input-week": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/week",
+      "last_hash": "43781b60788bb02437436ccd5e9687c0b2bce40949162ec54c8359beb3b08d1e",
+      "last_fetched": "2026-11-08T05:19:33.540231+00:00",
+      "title": "<input type=\"week\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-ins": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ins",
+      "last_hash": "bc2fdab2baf91049e730556446346b52892d20445bcbb3e30ee2fb53b6bd1e28",
+      "last_fetched": "2026-11-08T05:19:34.758843+00:00",
+      "title": "<ins> HTML inserted text element - HTML | MDN"
+    },
+    "Reference-Elements-kbd": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/kbd",
+      "last_hash": "9aa26b43924e576e84a05ad73c620cd2a056f93087981c707251a5c246a707c5",
+      "last_fetched": "2026-11-08T05:19:35.830947+00:00",
+      "title": "<kbd> HTML keyboard input element - HTML | MDN"
+    },
+    "Reference-Elements-label": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label",
+      "last_hash": "bcfcb69a1e472c617dcf974048a91f615d22b90b6b430d26d571f9ca2b17f3c5",
+      "last_fetched": "2026-11-08T05:19:36.909674+00:00",
+      "title": "<label> HTML label element - HTML | MDN"
+    },
+    "Reference-Elements-legend": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend",
+      "last_hash": "ec9a1ce5fcd546d45ad38cbc103a0a6be689bcaf7fe232b49718ae49b665f14b",
+      "last_fetched": "2026-11-08T05:19:38.235550+00:00",
+      "title": "<legend> HTML field set legend element - HTML | MDN"
+    },
+    "Reference-Elements-li": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/li",
+      "last_hash": "1086a91e718523a3d901722044655b14c67474fe0146e9318d17c74fad5f6c19",
+      "last_fetched": "2026-11-08T05:19:39.524591+00:00",
+      "title": "<li> HTML list item element - HTML | MDN"
+    },
+    "Reference-Elements-link": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link",
+      "last_hash": "df54bccb837993143f403cf2a497027c6fae75d03a910a3efdd243a09f136d05",
+      "last_fetched": "2026-11-08T05:19:40.802566+00:00",
+      "title": "<link> HTML external resource link element - HTML | MDN"
+    },
+    "Reference-Elements-main": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main",
+      "last_hash": "76b0dffd07b734eda5bc2b951f288e3268cea63def990fb5013bdfe10637bc00",
+      "last_fetched": "2026-11-08T05:19:41.991849+00:00",
+      "title": "<main> HTML main element - HTML | MDN"
+    },
+    "Reference-Elements-map": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/map",
+      "last_hash": "026e7879e0d3237b984e061d28bc498a144edd3b780f21b44ccf752d0fe1217f",
+      "last_fetched": "2026-11-08T05:19:42.986830+00:00",
+      "title": "<map> HTML image map element - HTML | MDN"
+    },
+    "Reference-Elements-mark": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/mark",
+      "last_hash": "717d9ca60dd8164dbd7e5a41d02dc0e411ec8b718b6423541d2ba9f74c3972d7",
+      "last_fetched": "2026-11-08T05:19:44.009142+00:00",
+      "title": "<mark> HTML mark text element - HTML | MDN"
+    },
+    "Reference-Elements-marquee": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee",
+      "last_hash": "4c28b1df267fcbf69177c3753baa7fb515b5f0905a151b7d7c209afe103c5f38",
+      "last_fetched": "2026-11-08T05:19:44.984276+00:00",
+      "title": "<marquee> HTML marquee element - HTML | MDN"
+    },
+    "Reference-Elements-menu": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/menu",
+      "last_hash": "30ed4a01569df1c9bbccdd801bcaacedfe86f3ed833417c4003c66a225b4d747",
+      "last_fetched": "2026-11-08T05:19:46.149735+00:00",
+      "title": "<menu> HTML menu element - HTML | MDN"
+    },
+    "Reference-Elements-meta": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta",
+      "last_hash": "ad0d00550c2096fe427799b6299c8000f83285b3363c61711d120f9296e1181d",
+      "last_fetched": "2026-11-08T05:19:47.405839+00:00",
+      "title": "<meta> HTML metadata element - HTML | MDN"
+    },
+    "Reference-Elements-meta-http-equiv": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/http-equiv",
+      "last_hash": "da19f85baac7f59acbfdbf5396188ab38349759404966111e15e1cb0b1bc6a6e",
+      "last_fetched": "2026-11-08T05:19:48.480397+00:00",
+      "title": "<meta http-equiv> HTML attribute - HTML | MDN"
+    },
+    "Reference-Elements-meta-name": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name",
+      "last_hash": "164e4274a99c02e9ef2f725116cd5a2bf45f06d69e297686ac2b080933600422",
+      "last_fetched": "2026-11-08T05:19:49.841358+00:00",
+      "title": "<meta name> HTML attribute - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-color-scheme": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/color-scheme",
+      "last_hash": "36fb3b97503603b20444d317fa230772278b1b1ed2fb8e4f36c0f42ec11125c9",
+      "last_fetched": "2026-11-08T05:19:51.116676+00:00",
+      "title": "<meta name=\"color-scheme\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-referrer": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/referrer",
+      "last_hash": "2ee85e2496a2d13dd1f22177073a5607f573fc4c4fc468a3f2b67ebf6e4f2ff0",
+      "last_fetched": "2026-11-08T05:19:52.187586+00:00",
+      "title": "<meta name=\"referrer\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-responsive-embedded-sizing": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/responsive-embedded-sizing",
+      "last_hash": "dd300916b252b670ab4cc58aec2c6452c145aecbb76f8b0a6489f835de0c3151",
+      "last_fetched": "2026-11-08T05:19:53.217076+00:00",
+      "title": "<meta name=\"responsive-embedded-sizing\"> - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-robots": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/robots",
+      "last_hash": "a9a5744094d3bc2f3073ffec3b336deb5f9e901ba440efe0af31b40c6ca5ea16",
+      "last_fetched": "2026-11-08T05:19:54.279625+00:00",
+      "title": "<meta name=\"robots\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-text-scale": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/text-scale",
+      "last_hash": "da1551c182226439e6effe41b8e426fc47f8895aee6b2292548764c1627e128c",
+      "last_fetched": "2026-11-08T05:19:55.452334+00:00",
+      "title": "<meta name=\"text-scale\"> - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-theme-color": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/theme-color",
+      "last_hash": "99278f9ec0c534989b487e36be3b465c93efe3f1ffd7f68d343c8a0694f46661",
+      "last_fetched": "2026-11-08T05:19:56.749048+00:00",
+      "title": "<meta name=\"theme-color\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-meta-name-viewport": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport",
+      "last_hash": "ffac3849556b9262e6916c5281f820cd7f6fe73a347adc857f25d50ebe212630",
+      "last_fetched": "2026-11-08T05:19:57.833060+00:00",
+      "title": "<meta name=\"viewport\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-meter": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meter",
+      "last_hash": "2118d438870f5adc54284e499d436596946d89e38d7a1cc26d20d70d53a793df",
+      "last_fetched": "2026-11-08T05:19:58.884703+00:00",
+      "title": "<meter> HTML meter element - HTML | MDN"
+    },
+    "Reference-Elements-nav": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav",
+      "last_hash": "bd266f9b98b218ea8662cf87edbe7766a71712fe382cb0337531dd85e5d14183",
+      "last_fetched": "2026-11-08T05:20:00.052371+00:00",
+      "title": "<nav> HTML navigation section element - HTML | MDN"
+    },
+    "Reference-Elements-nobr": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nobr",
+      "last_hash": "7277d9b1751a6fe7851ad49e6123337ae26c63c876112b856a180be900290dc5",
+      "last_fetched": "2026-11-08T05:20:01.222733+00:00",
+      "title": "<nobr> HTML non-breaking text element - HTML | MDN"
+    },
+    "Reference-Elements-noembed": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noembed",
+      "last_hash": "7e54776836a245cfc75c00b9fd479ba7418c636bcddbb529a4f96996b398439c",
+      "last_fetched": "2026-11-08T05:20:02.230271+00:00",
+      "title": "<noembed> HTML embed fallback element - HTML | MDN"
+    },
+    "Reference-Elements-noframes": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noframes",
+      "last_hash": "272272dad7e98e046ed19641d16d30118b38ccc177fe164c874876a2bb52b210",
+      "last_fetched": "2026-11-08T05:20:03.426700+00:00",
+      "title": "<noframes> HTML frame fallback element - HTML | MDN"
+    },
+    "Reference-Elements-noscript": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noscript",
+      "last_hash": "1f7475b62b48dbb1c68805e471c241c75bd33033101f6557b57185e062ae1e51",
+      "last_fetched": "2026-11-08T05:20:04.441868+00:00",
+      "title": "<noscript> HTML noscript element - HTML | MDN"
+    },
+    "Reference-Elements-object": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/object",
+      "last_hash": "1cb099ed720b95867f9ad86d08e15a0ef48258c6e1d18cd3a5feddc5e019a4a5",
+      "last_fetched": "2026-11-08T05:20:05.450887+00:00",
+      "title": "<object> HTML external object element - HTML | MDN"
+    },
+    "Reference-Elements-ol": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ol",
+      "last_hash": "881247efb74384793775c84e0b5959a71dc587b2ea2acd59254ea20af420c811",
+      "last_fetched": "2026-11-08T05:20:06.609909+00:00",
+      "title": "<ol> HTML ordered list element - HTML | MDN"
+    },
+    "Reference-Elements-optgroup": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/optgroup",
+      "last_hash": "757f0d2cce74126ef446f0ebac367c13711335daf796861ecfd54dc5d2fb33d8",
+      "last_fetched": "2026-11-08T05:20:07.884473+00:00",
+      "title": "<optgroup> HTML option group element - HTML | MDN"
+    },
+    "Reference-Elements-option": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/option",
+      "last_hash": "ad974881ff34ff78997388827130fcbc95cc5d1575adaabbb3504acf7cfd5365",
+      "last_fetched": "2026-11-08T05:20:09.343073+00:00",
+      "title": "<option> HTML option element - HTML | MDN"
+    },
+    "Reference-Elements-output": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/output",
+      "last_hash": "8912f9d4674342bfc31dc6b813ab812709bba9cc34b660d873e430619f40341b",
+      "last_fetched": "2026-11-08T05:20:10.368882+00:00",
+      "title": "<output> HTML output element - HTML | MDN"
+    },
+    "Reference-Elements-p": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p",
+      "last_hash": "d992d6a4bb501487bd3b782229dfa49bbecd6ed4bf32816661198dd04a600f23",
+      "last_fetched": "2026-11-08T05:20:11.760748+00:00",
+      "title": "<p> HTML paragraph element - HTML | MDN"
+    },
+    "Reference-Elements-param": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/param",
+      "last_hash": "df7a9831bd65ce046d58f237fa1a93d0a6341a6596c51ef54ff725f0b2b18391",
+      "last_fetched": "2026-11-08T05:20:12.771636+00:00",
+      "title": "<param> HTML object parameter element - HTML | MDN"
+    },
+    "Reference-Elements-picture": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture",
+      "last_hash": "ed757fcd4b1889ac880f9a40b4329b71c8a6daff68c7a7c2011ad6a0712e887a",
+      "last_fetched": "2026-11-08T05:20:14.137418+00:00",
+      "title": "<picture> HTML picture element - HTML | MDN"
+    },
+    "Reference-Elements-plaintext": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/plaintext",
+      "last_hash": "c87fde4c7cdff6af49d500376b0151ff7e8bdb5f484cb7732c9c9ad98fc80ad0",
+      "last_fetched": "2026-11-08T05:20:15.325463+00:00",
+      "title": "<plaintext> HTML plain text element - HTML | MDN"
+    },
+    "Reference-Elements-pre": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre",
+      "last_hash": "d7c79909efe61cda9d38d7f40a6e40992bd3e749468166009ee9567944d2ae20",
+      "last_fetched": "2026-11-08T05:20:16.542287+00:00",
+      "title": "<pre> HTML preformatted text element - HTML | MDN"
+    },
+    "Reference-Elements-progress": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/progress",
+      "last_hash": "28b88f08c9d83341d43bcb29c47584fdf264002bcfd5823c54630fed9a74f657",
+      "last_fetched": "2026-11-08T05:20:17.570263+00:00",
+      "title": "<progress> HTML progress indicator element - HTML | MDN"
+    },
+    "Reference-Elements-q": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q",
+      "last_hash": "e44ed16bb3262b8164ec876399c7a5af6db5e2356dc392b096ee8face8eb2b8e",
+      "last_fetched": "2026-11-08T05:20:18.552161+00:00",
+      "title": "<q> HTML inline quotation element - HTML | MDN"
+    },
+    "Reference-Elements-rb": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rb",
+      "last_hash": "f72c692d7f2de4d57bbc9fce82e8e389f9ea405f1ae388b4cc75127167eb03be",
+      "last_fetched": "2026-11-08T05:20:19.504091+00:00",
+      "title": "<rb> HTML ruby base element - HTML | MDN"
+    },
+    "Reference-Elements-rp": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rp",
+      "last_hash": "c60483179cfdcbb9d35f549352d02a5dd4c55dd828086aa4db94cf7ad16e3320",
+      "last_fetched": "2026-11-08T05:20:20.512020+00:00",
+      "title": "<rp> HTML ruby fallback parenthesis element - HTML | MDN"
+    },
+    "Reference-Elements-rt": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rt",
+      "last_hash": "59469695d2124f8262aeeb3469fce9a2baec1fcade66fd5d455c79543db522dc",
+      "last_fetched": "2026-11-08T05:20:21.727965+00:00",
+      "title": "<rt> HTML ruby text element - HTML | MDN"
+    },
+    "Reference-Elements-rtc": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rtc",
+      "last_hash": "68a2776ad453ff1350b514d59951f63c4d7f4e52e0dbaa9c237c33781b533b4b",
+      "last_fetched": "2026-11-08T05:20:22.970100+00:00",
+      "title": "<rtc> HTML ruby text container element - HTML | MDN"
+    },
+    "Reference-Elements-ruby": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby",
+      "last_hash": "95dfb2b05a36ce7bd6ce62b6fe28c854d0ba0882d5ac09a712518b95ec448403",
+      "last_fetched": "2026-11-08T05:20:24.157462+00:00",
+      "title": "<ruby> HTML ruby annotation element - HTML | MDN"
+    },
+    "Reference-Elements-s": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s",
+      "last_hash": "04a43bf4376f9d82c6754581c02e87ac4054af08a6d1ce40995a582dfe47c8b2",
+      "last_fetched": "2026-11-08T05:20:25.169875+00:00",
+      "title": "<s> HTML strikethrough element - HTML | MDN"
+    },
+    "Reference-Elements-samp": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/samp",
+      "last_hash": "717ebf813d661633304c0dea1f6964280c65a58a1c550d084fb6b1db3042bbf6",
+      "last_fetched": "2026-11-08T05:20:26.177843+00:00",
+      "title": "<samp> HTML sample output element - HTML | MDN"
+    },
+    "Reference-Elements-script": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script",
+      "last_hash": "1900c2abd4b1228a7e8f4750c2761832740510427039aa99fff8fdb3a88a49c4",
+      "last_fetched": "2026-11-08T05:20:27.259505+00:00",
+      "title": "<script> HTML script element - HTML | MDN"
+    },
+    "Reference-Elements-script-type": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type",
+      "last_hash": "8ec4c300168cae753fa876b21dcbd003cd4eb5728693896e3b22ae2647037996",
+      "last_fetched": "2026-11-08T05:20:28.366696+00:00",
+      "title": "<script type> HTML attribute - HTML | MDN"
+    },
+    "Reference-Elements-script-type-importmap": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap",
+      "last_hash": "becc870d80c729a2675b1244ea981d4befa49e7da46cea5dcdbd0a712fc98f1a",
+      "last_fetched": "2026-11-08T05:20:29.534174+00:00",
+      "title": "<script type=\"importmap\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-script-type-speculationrules": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/speculationrules",
+      "last_hash": "d1c71270780f5892be88dc62734ecc5224d79985e2187b1832337625f92c959a",
+      "last_fetched": "2026-11-08T05:20:30.667297+00:00",
+      "title": "<script type=\"speculationrules\"> HTML attribute value - HTML | MDN"
+    },
+    "Reference-Elements-search": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/search",
+      "last_hash": "7aa738ec93a2537bf54cf462fcb9df9b94d3ce37766788a1b3836d35120c7c3d",
+      "last_fetched": "2026-11-08T05:20:31.677861+00:00",
+      "title": "<search> HTML generic search element - HTML | MDN"
+    },
+    "Reference-Elements-section": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section",
+      "last_hash": "d75c30abe990f260a4113932d8efbea896ec08a10aefcec14c5f28368b0fc787",
+      "last_fetched": "2026-11-08T05:20:32.864114+00:00",
+      "title": "<section> HTML generic section element - HTML | MDN"
+    },
+    "Reference-Elements-select": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select",
+      "last_hash": "503eed38367f9d58deee9be68c1e0c8b4e3f43f9eef7aef22cc1e94f5a54298a",
+      "last_fetched": "2026-11-08T05:20:34.107899+00:00",
+      "title": "<select> HTML select element - HTML | MDN"
+    },
+    "Reference-Elements-selectedcontent": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/selectedcontent",
+      "last_hash": "27ef5b7c660f2fd40d1c3f586ff545e4ac69645fc3293923fd84908a2b0a5d36",
+      "last_fetched": "2026-11-08T05:20:35.157698+00:00",
+      "title": "<selectedcontent> HTML selected option display element - HTML | MDN"
+    },
+    "Reference-Elements-slot": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/slot",
+      "last_hash": "02584e67168d82ac9d7a710c570db32e28e02e3eed60452150b84864df99a3e6",
+      "last_fetched": "2026-11-08T05:20:36.234592+00:00",
+      "title": "<slot> HTML web component slot element - HTML | MDN"
+    },
+    "Reference-Elements-small": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/small",
+      "last_hash": "c6571031a53ec04db5c3869cbe38ba0fcb1cf25799ec4fbd48ce04b1f694adf5",
+      "last_fetched": "2026-11-08T05:20:37.262796+00:00",
+      "title": "<small> HTML side comment element - HTML | MDN"
+    },
+    "Reference-Elements-source": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/source",
+      "last_hash": "c20978e815380527bc6915d7aa820d74b7a1f0be710dc398913429073753e43a",
+      "last_fetched": "2026-11-08T05:20:38.618386+00:00",
+      "title": "<source> HTML media or image source element - HTML | MDN"
+    },
+    "Reference-Elements-span": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span",
+      "last_hash": "7bf15b63ce875e816e09c93fb10edaab617eb1cf1e16addbb35c8a955a901b10",
+      "last_fetched": "2026-11-08T05:20:39.628608+00:00",
+      "title": "<span> HTML content span element - HTML | MDN"
+    },
+    "Reference-Elements-strike": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strike",
+      "last_hash": "51ddbf4b2cbcd2bc914343b5eda8de41a3c825d3c87929945c980518e128d96f",
+      "last_fetched": "2026-11-08T05:20:40.673219+00:00",
+      "title": "<strike> HTML strikethrough element - HTML | MDN"
+    },
+    "Reference-Elements-strong": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strong",
+      "last_hash": "5e300dff8849702e485496399a761daadeee884fa388e813dd5539256f479e46",
+      "last_fetched": "2026-11-08T05:20:41.942222+00:00",
+      "title": "<strong> HTML strong importance element - HTML | MDN"
+    },
+    "Reference-Elements-style": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style",
+      "last_hash": "18ed7984e39ab69539dc464f911c9295752f057993133c190ddde3db824dff7b",
+      "last_fetched": "2026-11-08T05:20:42.965533+00:00",
+      "title": "<style> HTML style information element - HTML | MDN"
+    },
+    "Reference-Elements-sub": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sub",
+      "last_hash": "806dddc1be15bd2d4768c898d16dfe56a779e61edb6efc2ae73f8058018cd590",
+      "last_fetched": "2026-11-08T05:20:44.048654+00:00",
+      "title": "<sub> HTML subscript element - HTML | MDN"
+    },
+    "Reference-Elements-summary": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary",
+      "last_hash": "8866ad1999cb2eaea549dc6c2d30a8d7ee1da3b88a0677de3d757e331f265e6a",
+      "last_fetched": "2026-11-08T05:20:45.078195+00:00",
+      "title": "<summary> HTML disclosure summary element - HTML | MDN"
+    },
+    "Reference-Elements-sup": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sup",
+      "last_hash": "df92e2a8b9bd6cab8f403dba60e07894260d6b3084cc27fd69289ef7181d6b08",
+      "last_fetched": "2026-11-08T05:20:46.075145+00:00",
+      "title": "<sup> HTML superscript element - HTML | MDN"
+    },
+    "Reference-Elements-table": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table",
+      "last_hash": "730bae9b07b0f7053243ff5ab581a0283b9870f0ff8c83cfe53c77370a3117ac",
+      "last_fetched": "2026-11-08T05:20:47.244186+00:00",
+      "title": "<table> HTML table element - HTML | MDN"
+    },
+    "Reference-Elements-tbody": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tbody",
+      "last_hash": "da3d068364880c06e4bde17dfc1164c7655089ea971360813ee5e2a98c25735e",
+      "last_fetched": "2026-11-08T05:20:48.452349+00:00",
+      "title": "<tbody> HTML table body element - HTML | MDN"
+    },
+    "Reference-Elements-td": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/td",
+      "last_hash": "ba65284b033f98a8225f253fd20903cda8cbe263ba54768e49606c46e2e7bce1",
+      "last_fetched": "2026-11-08T05:20:49.616664+00:00",
+      "title": "<td> HTML table data cell element - HTML | MDN"
+    },
+    "Reference-Elements-template": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template",
+      "last_hash": "c8d630aeb292d2abe4666d403fba1c0f61994562b17b6342e14cb9e4c811dc99",
+      "last_fetched": "2026-11-08T05:20:50.680459+00:00",
+      "title": "<template> HTML content template element - HTML | MDN"
+    },
+    "Reference-Elements-textarea": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea",
+      "last_hash": "bbe8a076afb4f46c2c7ab8e3b3237445a8950ffb3a63d60a5d19078c13d6f8cc",
+      "last_fetched": "2026-11-08T05:20:52.002654+00:00",
+      "title": "<textarea> HTML textarea element - HTML | MDN"
+    },
+    "Reference-Elements-tfoot": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tfoot",
+      "last_hash": "a46a5a5cdab59068f638921dd3d0b88f248b2991c39ff5f80c61059d6060b657",
+      "last_fetched": "2026-11-08T05:20:53.014887+00:00",
+      "title": "<tfoot> HTML table foot element - HTML | MDN"
+    },
+    "Reference-Elements-th": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/th",
+      "last_hash": "01e25c374816c7028b79ea133380905daf04892acd5bf52931f8fb978e3cf58b",
+      "last_fetched": "2026-11-08T05:20:54.295445+00:00",
+      "title": "<th> HTML table header element - HTML | MDN"
+    },
+    "Reference-Elements-thead": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/thead",
+      "last_hash": "cfeea2f2c2082d7f44694c598ee2f27cb1730da0b696c7cdc590329ff30d7d57",
+      "last_fetched": "2026-11-08T05:20:55.512097+00:00",
+      "title": "<thead> HTML table head element - HTML | MDN"
+    },
+    "Reference-Elements-time": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time",
+      "last_hash": "8a7069581409a2b8133a3bac51509a6864e6239bac8c300a912306b775e28f95",
+      "last_fetched": "2026-11-08T05:20:56.709866+00:00",
+      "title": "<time> HTML time (date) element - HTML | MDN"
+    },
+    "Reference-Elements-title": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title",
+      "last_hash": "44377cae82ba49db45b55683594d338471f9d66b6e79d299bfe68756a519f5db",
+      "last_fetched": "2026-11-08T05:20:57.753417+00:00",
+      "title": "<title> HTML document title element - HTML | MDN"
+    },
+    "Reference-Elements-tr": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tr",
+      "last_hash": "b97f390f1d765049e9573cdb85ac4c823e95f5c0051c4ddd6eaf4b1427d448c6",
+      "last_fetched": "2026-11-08T05:20:58.787213+00:00",
+      "title": "<tr> HTML table row element - HTML | MDN"
+    },
+    "Reference-Elements-track": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track",
+      "last_hash": "dcf470148b00fe481c5fdd58af948c1905da2e2b00453773f248350d2be6a472",
+      "last_fetched": "2026-11-08T05:21:00.109694+00:00",
+      "title": "<track> HTML embed text track element - HTML | MDN"
+    },
+    "Reference-Elements-tt": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tt",
+      "last_hash": "295e673628bd8769c18948e481fb1ebe0286a665f33fccdc1f469e19b7006abc",
+      "last_fetched": "2026-11-08T05:21:01.068187+00:00",
+      "title": "<tt> HTML teletype text element - HTML | MDN"
+    },
+    "Reference-Elements-u": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/u",
+      "last_hash": "6c1a1e81c60c30f0f954be12be9bbd3177ceee9e05bc1567cce144621a87f93c",
+      "last_fetched": "2026-11-08T05:21:02.170443+00:00",
+      "title": "<u> HTML unarticulated annotation (underline) element - HTML | MDN"
+    },
+    "Reference-Elements-ul": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul",
+      "last_hash": "076c3f92b7d2424cc85a7f96dfa5708b91818da8f239e36cf5c7be306440a6dc",
+      "last_fetched": "2026-11-08T05:21:03.217810+00:00",
+      "title": "<ul> HTML unordered list element - HTML | MDN"
+    },
+    "Reference-Elements-var": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/var",
+      "last_hash": "4d7c968957c3f9b93dcb2fe86727a999682fbab85648254fd5c228da3e2350c4",
+      "last_fetched": "2026-11-08T05:21:04.225473+00:00",
+      "title": "<var> HTML variable element - HTML | MDN"
+    },
+    "Reference-Elements-video": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video",
+      "last_hash": "6ae75dda25fe63adec0700791529446b32ef2a14699e392305e0228bc0e98184",
+      "last_fetched": "2026-11-08T05:21:05.431401+00:00",
+      "title": "<video> HTML video embed element - HTML | MDN"
+    },
+    "Reference-Elements-wbr": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/wbr",
+      "last_hash": "0a0f176c4e1d5fc341def02b988f3148c6294f06aea061dc917cdcbbf988be4e",
+      "last_fetched": "2026-11-08T05:21:06.455244+00:00",
+      "title": "<wbr> HTML line break opportunity element - HTML | MDN"
+    },
+    "Reference-Elements-xmp": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/xmp",
+      "last_hash": "dfca6f37bbc26c68676fb55ca67029cfc5e0c9c6953aee3eef0ca9644f45aad7",
+      "last_fetched": "2026-11-08T05:21:07.632330+00:00",
+      "title": "<xmp> HTML plain text rendering element - HTML | MDN"
+    },
+    "Reference-Global_attributes": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+      "last_hash": "e3228416de6d221a05eaa7db61188f0cdc89ded682d8174e21beb18d43366d4c",
+      "last_fetched": "2026-11-08T05:21:08.682068+00:00",
+      "title": "Global attributes - HTML | MDN"
+    },
+    "Reference-Global_attributes-accesskey": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/accesskey",
+      "last_hash": "fb0055a0ac94a20b32edeec943be01875151438bc2c335f35f82e26d6211983b",
+      "last_fetched": "2026-11-08T05:21:09.836264+00:00",
+      "title": "accesskey HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-anchor": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/anchor",
+      "last_hash": "bb1bec4cca1b8bc86f0127968f9ea5bb08c3696d25597b5a3d189256f26c170f",
+      "last_fetched": "2026-11-08T05:21:10.894098+00:00",
+      "title": "anchor HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-autocapitalize": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autocapitalize",
+      "last_hash": "37b5bf3ddeac5726694a6a7e1dcadeca61e77d9e0df996b993c5ea5f70451935",
+      "last_fetched": "2026-11-08T05:21:11.916927+00:00",
+      "title": "autocapitalize HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-autocorrect": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autocorrect",
+      "last_hash": "a6bcc5d8001fbfd4cc89291db84d154f0b7ca4dcf871ee545744667e72d2efc6",
+      "last_fetched": "2026-11-08T05:21:12.985963+00:00",
+      "title": "autocorrect HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-autofocus": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus",
+      "last_hash": "149c66f674da8dd1f8db7e5e7258be123ef2f3fe1594f856bf36d756e765d7a1",
+      "last_fetched": "2026-11-08T05:21:14.029380+00:00",
+      "title": "autofocus HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-class": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class",
+      "last_hash": "efa4279cdbb34243d63dbef744f6655ee2615c3bcb59aeae941d05e1c43aabd8",
+      "last_fetched": "2026-11-08T05:21:15.343713+00:00",
+      "title": "class HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-containertiming": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/containertiming",
+      "last_hash": "254c2744e5a589501d3e653ad66f4f9fc6f3c92e126c7d0d87d035c584648575",
+      "last_fetched": "2026-11-08T05:21:16.558191+00:00",
+      "title": "containertiming HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-containertimingignore": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/containertimingignore",
+      "last_hash": "1043fb0ec740b26d0a9458e9aa3ef3bc9c0ea4079d0f353a34785da432ae8913",
+      "last_fetched": "2026-11-08T05:21:17.922481+00:00",
+      "title": "containertimingignore HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-contenteditable": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable",
+      "last_hash": "5b12aec4105f8192fbd510dae7c6e9667817aa66e73995ba4229ed99525b2666",
+      "last_fetched": "2026-11-08T05:21:18.956614+00:00",
+      "title": "contenteditable HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-data": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/data-*",
+      "last_hash": "42040fff95b4d53225b3252934477f130ff78222c82985db9ea801b9f5b6e9da",
+      "last_fetched": "2026-11-08T05:21:20.125992+00:00",
+      "title": "data-* HTML global attributes - HTML | MDN"
+    },
+    "Reference-Global_attributes-dir": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/dir",
+      "last_hash": "8733c6e5ba6ebb537bb31b19f618fc9ed73a5e531b40e50cef4a7be168b699a2",
+      "last_fetched": "2026-11-08T05:21:21.409293+00:00",
+      "title": "dir HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-draggable": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/draggable",
+      "last_hash": "acbe2736c6e079fe46240ef0bfe6a4390b12a86faafd21b2d056059ad42512e8",
+      "last_fetched": "2026-11-08T05:21:22.595420+00:00",
+      "title": "draggable HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-enterkeyhint": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/enterkeyhint",
+      "last_hash": "dc7c80276a9befcc77096316b2d5e27db93ef0f716dbedd5165531931461f352",
+      "last_fetched": "2026-11-08T05:21:23.764262+00:00",
+      "title": "enterkeyhint HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-exportparts": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/exportparts",
+      "last_hash": "ab9b23593241da1d851a5ac24d80968eb815436cbd27b604c70e030cf19c1cd9",
+      "last_fetched": "2026-11-08T05:21:24.804489+00:00",
+      "title": "exportparts HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-headingoffset": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset",
+      "last_hash": "6e47be60512c946be6441641023b5d12fa8495a797c07f271217cd42881fbab6",
+      "last_fetched": "2026-11-08T05:21:26.021382+00:00",
+      "title": "headingoffset HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-headingreset": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingreset",
+      "last_hash": "fd1ef33241d70e38dbad537470d6750009909584cebdad45b46c3a2e37a34a7b",
+      "last_fetched": "2026-11-08T05:21:27.079950+00:00",
+      "title": "headingreset HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-hidden": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/hidden",
+      "last_hash": "8a763953e6a1d1b5cac1addd3126c668bc815800d0f7a43c5ffde54197eeb7f5",
+      "last_fetched": "2026-11-08T05:21:28.220551+00:00",
+      "title": "hidden HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-id": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id",
+      "last_hash": "ff7edb9278ea9cb82ca905acac0210668893b6cdbd465c2573ac0b7caa1d310b",
+      "last_fetched": "2026-11-08T05:21:29.533251+00:00",
+      "title": "id HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-inert": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert",
+      "last_hash": "fa6f81c801abd4c978f56102c5c4ce8ffe5bb0eb4a8f8d662c4718012f483b72",
+      "last_fetched": "2026-11-08T05:21:30.535893+00:00",
+      "title": "inert HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-inputmode": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inputmode",
+      "last_hash": "22cbcf07e746b2986443f6676e16335f3e2585dea8becc3b6752498048969b42",
+      "last_fetched": "2026-11-08T05:21:31.629696+00:00",
+      "title": "inputmode HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-is": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/is",
+      "last_hash": "e96098a79d8cb7e379dfbf34a2de87e1564b27923897759ffb211c722900e68e",
+      "last_fetched": "2026-11-08T05:21:32.714264+00:00",
+      "title": "is HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-itemid": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/itemid",
+      "last_hash": "18ce404019133f23de3853905636c47427f8134f5de90f50ebfdb74fb6c2e421",
+      "last_fetched": "2026-11-08T05:21:33.755056+00:00",
+      "title": "itemid HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-itemprop": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/itemprop",
+      "last_hash": "45c61ead17ef5a4c6125312bf75acb7e07a05348c9e674f56a8c297be96521af",
+      "last_fetched": "2026-11-08T05:21:34.841980+00:00",
+      "title": "itemprop HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-itemref": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/itemref",
+      "last_hash": "62ac064285c452b84b941187046411ad92fef0ec0ee6e44f7f8ea1d757f36d4d",
+      "last_fetched": "2026-11-08T05:21:36.032481+00:00",
+      "title": "itemref HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-itemscope": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope",
+      "last_hash": "18f282a93cf9e2fb0af2f1c9c03d0dd61a60a6e00a6943f10dd5208f5b308061",
+      "last_fetched": "2026-11-08T05:21:37.307961+00:00",
+      "title": "itemscope HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-itemtype": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype",
+      "last_hash": "e7ef9b7e86ae250c8214f2d43a7845529b5b056d70a16a1610d13e40fb1c07da",
+      "last_fetched": "2026-11-08T05:21:38.346212+00:00",
+      "title": "itemtype HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-lang": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang",
+      "last_hash": "2899885d685686a30af99239e306775a92443d73b084c42c5e66595479d87f4a",
+      "last_fetched": "2026-11-08T05:21:39.555264+00:00",
+      "title": "lang HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-nonce": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/nonce",
+      "last_hash": "0aa67ce32fc6e0a42b3b16dd5695942ce876eec5780cff3ceb45ecf3ecc7ff86",
+      "last_fetched": "2026-11-08T05:21:40.612910+00:00",
+      "title": "nonce HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-part": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/part",
+      "last_hash": "c8f074b2b89a01a5b5fc87281f0ab9dd5b37eec147eeda6c885aeabdccb59027",
+      "last_fetched": "2026-11-08T05:21:41.646727+00:00",
+      "title": "part HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-popover": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover",
+      "last_hash": "fb7e933e2cf863e45fe677fd392c584e608a819b9d3dbb107c495d89d451f863",
+      "last_fetched": "2026-11-08T05:21:42.655727+00:00",
+      "title": "popover HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-slot": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/slot",
+      "last_hash": "ee07389115e495f0cb472d1acb1acbf829bbef1860874bec30af98c4ec799555",
+      "last_fetched": "2026-11-08T05:21:43.708040+00:00",
+      "title": "slot HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-spellcheck": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/spellcheck",
+      "last_hash": "deefddd479392c33ff309c082f458e24f922a8e5693b05888b9639deb16c832e",
+      "last_fetched": "2026-11-08T05:21:44.863756+00:00",
+      "title": "spellcheck HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-style": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style",
+      "last_hash": "771aad360452b4aa7efaa5785847206202360791420a42e97349a411d18dd517",
+      "last_fetched": "2026-11-08T05:21:46.164168+00:00",
+      "title": "style HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-tabindex": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex",
+      "last_hash": "3cb07d1e43cd46362504be26d439c17f0b2b300e42a6011b05332f3928b23f3e",
+      "last_fetched": "2026-11-08T05:21:47.416696+00:00",
+      "title": "tabindex HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-title": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title",
+      "last_hash": "d316ce3fa9acc85a5587a0f114874d1ac537727ee757b4983a8478563617be92",
+      "last_fetched": "2026-11-08T05:21:48.436076+00:00",
+      "title": "title HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-translate": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/translate",
+      "last_hash": "d442963a7f067c127d666fc1a9dc1102123873cdc5ff18110c8dba0e147e8445",
+      "last_fetched": "2026-11-08T05:21:49.642084+00:00",
+      "title": "translate HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-virtualkeyboardpolicy": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/virtualkeyboardpolicy",
+      "last_hash": "134e813e7071bc69bacc186e58053d295f44ec0cda6e5075e9deb8cf980feb05",
+      "last_fetched": "2026-11-08T05:21:50.714568+00:00",
+      "title": "virtualkeyboardpolicy HTML global attribute - HTML | MDN"
+    },
+    "Reference-Global_attributes-writingsuggestions": {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/writingsuggestions",
+      "last_hash": "9b669fd08eb75582bd825a1bfe60e2ef3ff16b691bc2f7db9f953a47cb420fc7",
+      "last_fetched": "2026-11-08T05:21:51.799959+00:00",
+      "title": "writingsuggestions HTML global attribute - HTML | MDN"
+    }
+  },
+  "detected_version": null,
+  "last_updated": "2026-11-08T05:21:51.799959+00:00",
+  "version_history": []
+}
