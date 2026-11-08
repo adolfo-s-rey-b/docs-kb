@@ -1,6 +1,6 @@
 # Conclusiones — Pruebas del Servidor MCP docs-kb
 
-**Última actualización:** 2026-11-07
+**Última actualización:** 2026-11-08
 **Método:** `./chequeo_remoto.sh` (JSON-RPC 2.0 / streamable-http contra el endpoint público HTTPS) y comprobaciones en el servidor (`ssh server`)
 **Versión del servidor:** docs-kb v1.27.0
 
@@ -58,20 +58,64 @@
 
 ## 4. Recolección completa
 
-Lanzada el 2026-11-07 a las 18:37 UTC con `recoleccion_completa.sh` (3 grupos en paralelo). Ritmo observado: unas 100 páginas por minuto y 0 fallos en la primera hora.
+**Cronología**
 
-| Grupo | Tecnologías |
+| Cuándo (UTC) | Qué pasó |
 | --- | --- |
-| 1 | tensorflow (4474), pytorch (3490), keras (crawl), seaborn (223), tidyverse (185), jupyterlab (55) |
-| 2 | numpy (2520), matplotlib (2031), pandas (1756), python (550), scikit-learn (1061) |
-| 3 | css (1288), javascript (1346), html (258), n8n (1390), dplyr (131), tidyr (64), purrr (74), stringr (48), lubridate (76), ggplot2 (245), r, react, rstudio, anaconda (crawl) |
+| 2026-11-07 18:37 | Recolección completa en el servidor (`recoleccion_completa.sh`, 3 grupos en paralelo) |
+| 2026-11-08 02:10 | Caída abrupta del servidor (sin secuencia de apagado en el journal), con ~19.600 páginas descargadas y sin publicar. Iba por PyTorch |
+| 2026-11-08 04:55 | Como el servidor no respondía, lancé la carga completa en GitHub Actions (run 42448781365, 25 jobs, 10 en paralelo) |
+| 2026-11-08 06:25 / 07:20 / 14:25 | El servidor arranca, vuelve a caerse a las 07:20 y arranca de nuevo a las 14:25 |
+| 2026-11-08 07:35 | Actions publica el commit `218313e` (`docs-kb-bot`, 23.931 archivos). El job más largo fue tensorflow (2 h 38 min) |
+| 2026-11-08 17:00 | El servidor descarta su copia local, sincroniza con el repo y reindexa con el parser de secciones corregido |
 
-*Resultado final: pendiente; se completará al terminar la recolección y la reconstrucción del índice.*
+**Documentación publicada** (repo `sources/`, 23.906 páginas de Markdown en 23 tecnologías, ~290 MB):
+
+| Tecnología | Páginas | MB | Descubrimiento |
+| --- | --- | --- | --- |
+| tensorflow | 4.474 | 36 | map |
+| pytorch | 3.490 | 42 | map |
+| numpy | 2.520 | 18 | inventory |
+| matplotlib | 2.031 | 27 | inventory |
+| pandas | 1.756 | 13 | inventory |
+| n8n | 1.390 | 11 | map |
+| keras | 1.360 | 22 | crawl |
+| javascript | 1.341 | 15 | sitemap (MDN) |
+| css | 1.287 | 21 | sitemap (MDN) |
+| rstudio | 1.275 | 13 | crawl |
+| scikit-learn | 1.061 | 21 | inventory |
+| python | 550 | 28 | inventory |
+| html | 258 | 4 | sitemap (MDN) |
+| ggplot2 | 244 | 3 | map |
+| seaborn | 223 | 2 | inventory |
+| tidyverse | 185 | 1 | map |
+| dplyr | 131 | 2 | map |
+| lubridate | 76 | 1 | map |
+| purrr | 74 | 1 | map |
+| tidyr | 64 | 1 | map |
+| jupyterlab | 55 | 2 | inventory |
+| stringr | 48 | 1 | map |
+| r | 12 | 6 | crawl |
+| react | (en curso) | | crawl, desde el servidor |
+| anaconda | (en curso) | | crawl, desde el servidor |
+
+Total de las 23 tecnologías publicadas por Actions: **23,905 páginas**.
+
+**React y Anaconda** se recolectan desde el servidor porque react.dev y docs.anaconda.com bloquean las IPs de GitHub Actions. En Actions dieron 286 scrapes de React con error 500 y un crawl de Anaconda con 1 sola página; desde el servidor se habían descargado 184 y 26. Quedan marcadas con `"recolectar_en": "servidor"` y se recolectan una vez al mes (cron del día 2).
+
+**Índice de secciones:** con el parser original solo 9.166 de 23.906 páginas tenían secciones (numpy: 63 de 2.520), porque Firecrawl renderiza los títulos de Sphinx y pkgdown como setext y con anclas permalink. Con el parser corregido se indexan 22.494 páginas (94 %) y 162.753 secciones.
+
+**Otros errores corregidos durante la recolección**
+- Snapshots de versión espurios (~3 GB; 105 en matplotlib), por detectar la versión página por página.
+- Las páginas sin cambios no actualizaban `last_fetched`.
+- La caché de embeddings ahora es reanudable (checkpoints cada 20.000 secciones), por la inestabilidad del servidor.
 
 ---
 
 ## 5. Pendientes
 
-1. Completar la sección 4 con las cifras finales y repetir `./chequeo_remoto.sh`.
-2. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*`.
-3. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
+1. Repetir `./chequeo_remoto.sh` cuando termine el reindexado (~18:00 UTC del 2026-11-08) y anotar el resultado.
+2. Completar las filas de react y anaconda cuando el servidor publique su recolección.
+3. **Estabilidad del servidor:** se cayó tres veces en cuatro meses (ago–nov, y dos veces el 2026-11-08) sin apagado ordenado. Hay que revisar la alimentación eléctrica (¿UPS?) y el hardware. Además, `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo (es un servicio personal, ajeno a docs-kb).
+4. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*` en las pruebas end-to-end.
+5. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
