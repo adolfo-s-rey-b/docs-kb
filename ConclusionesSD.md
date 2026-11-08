@@ -1,6 +1,6 @@
 # Conclusiones — Pruebas del Servidor MCP docs-kb
 
-**Última actualización:** 2026-11-08
+**Última actualización:** 2026-11-08 (MCP local)
 **Método:** `./chequeo_remoto.sh` (JSON-RPC 2.0 / streamable-http contra el endpoint público HTTPS) y comprobaciones en el servidor (`ssh server`)
 **Versión del servidor:** docs-kb v1.27.0
 
@@ -116,8 +116,32 @@ Total: 23.905 páginas de las 23 tecnologías recolectadas por GitHub Actions, m
 
 ---
 
-## 5. Pendientes
+## 5. MCP local: todo depende de GitHub (2026-11-08)
 
-1. **Disponibilidad del servidor:** las interrupciones del 2026-11-08 fueron desconexiones físicas intencionales, no fallas. Mientras el servidor está desconectado, el MCP remoto no responde, pero el repo sigue actualizándose con GitHub Actions. Aparte de docs-kb: `obsidian-sync.service` falla cada 10 s porque no existe su directorio de trabajo.
-2. Reiniciar Claude Code en el cliente para usar los tools nativos `mcp__docs-kb__*` en las pruebas end-to-end.
-3. Acceso de terceros al MCP: por ahora es solo del mantenedor. Si se abre, conviene emitir tokens por persona y evaluar restringir `docs_fetch_live`.
+Como el servidor propio se va a desconectar, docs-kb pasó a funcionar solo con GitHub:
+
+| Pieza | Resultado |
+| --- | --- |
+| Recolección | GitHub Actions, semanal. React se toma ahora del Markdown de [reactjs/react.dev](https://github.com/reactjs/react.dev): react.dev bloquea los runners, pero su fuente es pública. Run 42516933791: 181 páginas, 4 obsoletas eliminadas. Anaconda queda **congelada** (26 páginas): bloquea los runners y no publica su fuente |
+| Índice y paquete | `datos.yml`: índice FAISS SQ8 incremental (165.212 vectores) y Release `datos` con `docs-kb-datos.tar.gz` (~101 MB), `version.json` y la caché de embeddings. La primera construcción reutilizó 161.032 embeddings sembrados desde el servidor y solo calculó 53 |
+| Plugin / marketplace | `/plugin install docs-kb --marketplace adolfo-s-rey-b/docs-kb`. Añadir el marketplace tarda 6,5 s (el repo comprimido pesa 41 MB) y Claude Code copia solo `plugin/` |
+| Instalación local | 46 s desde cero en Python 3.14: paquete, entorno y modelo. Mientras se instala, el MCP responde con un servidor mínimo que informa el avance |
+| Prueba end-to-end (`docs_kb_local.py check`) | **12/12 PASS**, tanto con instalación directa como con el plugin desde el marketplace. Init en 2–3 s y consultas en menos de 0,7 s |
+
+Problemas encontrados y corregidos en el camino:
+
+- **mcp 2.x** renombró `FastMCP` y rompía las instalaciones nuevas: se fijó `mcp<2`.
+- `fastembed` quedó fijado en 0.8.0, la versión del índice; una instalación nueva había bajado la 0.9.1.
+- El servidor escribía logs en stdout, que en modo stdio es el canal MCP: ahora van a stderr.
+- El directorio de datos del plugin no coincidía entre el hook y el MCP.
+
+---
+
+## 6. Pendientes
+
+1. **Retirar el servidor propio** cuando Adolfo lo decida. Pasos:
+   - Quitar el registro remoto con `claude mcp remove docs-kb -s user`; el plugin ya registra su propio `docs-kb`.
+   - En el servidor, apagar `mcp_docs_kb_http_core`, `firecrawl_*` (si nada más los usa) y el bloque `mcp-docs-proxy.conf` de nginx, y quitar la regla `mcp-documentacion` del túnel. Avisar antes a la sesión de Obsidian, que comparte nginx y el túnel.
+   - Quitar el cron de `sincronizar.sh` y revocar la deploy key del repo (`gh repo deploy-key list`).
+2. **Anaconda** está congelada. Alternativa: reemplazarla por la documentación de conda ([docs.conda.io](https://docs.conda.io), sitio Sphinx con `objects.inv`), que cubre gestión de entornos y paquetes y sí se puede recolectar desde GitHub Actions.
+3. Primera corrida programada del workflow: domingo 2026-11-15 a las 03:00 UTC. Verificar que publique y que encadene `datos.yml`.

@@ -1,8 +1,15 @@
 # Chequeo del Sistema docs-kb
 
-**Fecha de actualizacion:** 2026-11-08
+**Fecha de actualizacion:** 2026-11-08 (servidor: legado)
 
-Pruebas para verificar el correcto funcionamiento del sistema docs-kb despues de cualquier modificacion, reinicio de servicios, o como healthcheck periodico. **Se ejecutan en el servidor** (`ssh server`). Desde el cliente, las 12 pruebas remotas se corren con `./chequeo_remoto.sh` (ver GuiaMCP.md).
+Pruebas del **servidor propio (legado)**. Desde el 2026-11-08 docs-kb depende solo de GitHub y el MCP corre en el equipo de cada usuario; la prueba principal es:
+
+```bash
+python3 plugin/docs_kb_local.py check      # 12 pruebas end-to-end del MCP local (stdio)
+gh run list --repo adolfo-s-rey-b/docs-kb --limit 5   # recolección semanal y publicación del paquete
+```
+
+Lo que sigue solo aplica mientras el servidor siga conectado. Se ejecuta en el servidor (`ssh server`); desde el cliente, las 12 pruebas remotas se corren con `./chequeo_remoto.sh`.
 
 Las pruebas que usan el proxy necesitan el token en la variable `DOCS_KB_TOKEN` (nunca escribirlo en este documento):
 

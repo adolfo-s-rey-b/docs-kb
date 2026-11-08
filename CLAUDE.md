@@ -4,26 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-`docs-kb`: a public knowledge base of technical documentation (25 technologies, Markdown in `sources/<tech>/markdown/`) plus the MCP server that indexes it (FAISS multilingual semantic search, 8 tools). This repo is the single source of truth: GitHub Actions re-collects the docs weekly and commits them here; the MCP server is a clone that only pulls and re-indexes. All documentation is in Spanish.
+`docs-kb`: a public knowledge base of technical documentation (25 technologies, Markdown in `sources/<tech>/markdown/`) plus the MCP server that indexes it (FAISS multilingual semantic search, 8 tools). **Everything depends only on GitHub**: GitHub Actions re-collects the docs weekly and commits them here, builds the semantic index and publishes the local-MCP package to the `datos` Release; users run the MCP locally through the Claude Code plugin in `plugin/` (this repo is also a plugin marketplace). The old self-hosted server is legacy. All documentation is in Spanish.
 
-**Only public technical documentation belongs here.** Never add personal notes, server configs, tokens, internal IPs or anything private — `publicar.sh` pushes everything under `sources/` to the public repo.
+**Only public technical documentation belongs here.** Never add personal notes, server configs, tokens, internal IPs or anything private — everything under `sources/` (and the `datos` Release) is public.
 
 ## Layout
 
-- `mcp_server.py` — MCP server (8 tools, streamable-http on :8765 in Docker)
-- `collector.py` — collects docs via Firecrawl (+ Playwright), discovery map → objects.inv → sitemap → crawl, builds `index/` (section index + FAISS)
-- `config.json` — the 25 technologies (base URL, exclude patterns, discovery overrides; `max_pages: 0` = no limit)
-- `.github/workflows/actualizar-docs.yml` — weekly collection on GitHub Actions (one job per tech, ephemeral Firecrawl + Playwright from `.github/firecrawl/docker-compose.yml`; manual: `gh workflow run actualizar-docs.yml -f tecnologias=a,b -f publicar=false`)
-- `"recolectar_en": "servidor"` in `config.json` (react, anaconda): those sites block GitHub runner IPs, so the workflow skips them and the server collects them monthly (`actualizar.sh --tech react,anaconda`).
-- `sincronizar.sh` — server cron (hourly): `git pull --ff-only` + resumable `--index-only` (tracks `index/indexed-commit`)
-- `actualizar.sh` / `publicar.sh` / `recoleccion_completa.sh` — manual fallback: collect from the server and push with its deploy key (don't run while the workflow runs)
-- `chequeo_remoto.sh` — the 12 remote tests against the MCP endpoint
+- `mcp_server.py` — MCP server (8 tools; stdio locally, streamable-http on the legacy server). Logs must go to stderr (stdout is the MCP channel)
+- `collector.py` — collects docs via Firecrawl (+ Playwright) or from a GitHub repo (`source_type: "github"`, used for React), discovery map → objects.inv → sitemap → crawl, builds `index/` (section index + FAISS; `DOCS_KB_FAISS_INDEX=sq8` for the 8-bit index)
+- `config.json` — the 25 technologies (`max_pages: 0` = no limit; `"recolectar_en": "congelada"` = not collected, anaconda)
+- `.github/workflows/actualizar-docs.yml` — weekly collection (one job per tech, ephemeral Firecrawl + Playwright from `.github/firecrawl/docker-compose.yml`), then calls `datos.yml`
+- `.github/workflows/datos.yml` + `.github/scripts/` — incremental index build, changelog from git, package `docs-kb-datos.tar.gz` + `version.json` + `embeddings-cache.npz` → Release `datos`
+- `.claude-plugin/marketplace.json`, `plugin/` — the plugin: `docs_kb_local.py` (stdlib-only launcher: install/update/serve/ensure/status/check), SessionStart hook, `/docs-kb:actualizar`, `/docs-kb:estado`, skill
+- `requirements-local.txt` — pinned deps of the local MCP (`fastembed==0.8.0` must match the index build; `mcp<2`)
 - `sources/<tech>/markdown/*.md` + `manifest.json` — the collected documentation (generated; don't hand-edit)
-- Not versioned: `.env`, `.venv/`, `index/`, `logs/`, `sources/*/html/`, `changelog/`
+- Legacy server only: `sincronizar.sh`, `actualizar.sh`, `publicar.sh`, `recoleccion_completa.sh`, `Dockerfile.http`, `requirements.txt`, `error_hook.py`, `chequeo_remoto.sh`
+- Not versioned: `.env`, `.venv/`, `index/`, `logs/`, `dist/`, `sources/*/html/`, `changelog/`
 
-Architecture and maintenance: [SistemaDocumentación.md](SistemaDocumentación.md). Server test suite: [ChequeoSD.md](ChequeoSD.md). Client guide: [GuiaMCP.md](GuiaMCP.md). Latest results: [ConclusionesSD.md](ConclusionesSD.md). Licenses: [ATTRIBUTION.md](ATTRIBUTION.md).
+Architecture and maintenance: [SistemaDocumentación.md](SistemaDocumentación.md). User guide: [GuiaMCP.md](GuiaMCP.md). Latest results: [ConclusionesSD.md](ConclusionesSD.md). Licenses: [ATTRIBUTION.md](ATTRIBUTION.md).
 
-## Connecting to the MCP Server
+## Local MCP (primary)
+
+```bash
+python3 plugin/docs_kb_local.py install   # or: /plugin install docs-kb --marketplace adolfo-s-rey-b/docs-kb
+python3 plugin/docs_kb_local.py check     # 12 end-to-end tests over stdio; exit code 0 = all pass
+claude plugin validate .                  # marketplace + plugin manifests
+```
+
+Data dir: `$DOCS_KB_HOME`, `${CLAUDE_PLUGIN_DATA}` (plugin) or `~/.local/share/docs-kb`. The plugin intentionally has no `version` (tracks commits). After changing `mcp_server.py`, `collector.py`, `config.json` or `requirements-local.txt`, a push triggers `datos.yml`, which republishes the package; clients pick it up within 12 h.
+
+## Legacy remote endpoint (self-hosted server, to be retired)
 
 The endpoint requires a Bearer token, kept only in `.env` (`DOCS_KB_TOKEN`, chmod 600, git-ignored; template `.env.example`). Never write the token into files or commands — use `$DOCS_KB_TOKEN`.
 

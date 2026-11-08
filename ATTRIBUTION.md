@@ -1,6 +1,6 @@
 # Atribución y licencias
 
-El código de este repositorio está bajo licencia MIT ([LICENSE](LICENSE)); eso **no** aplica a `sources/`. La documentación en `sources/` es una copia en Markdown de la documentación oficial de cada proyecto, convertida automáticamente con Firecrawl. **Los derechos pertenecen a sus autores.** Cada página conserva su URL original en `sources/<tecnología>/manifest.json`. Para cualquier uso que vaya más allá de la consulta, se debe respetar la licencia del proyecto original.
+El código de este repositorio está bajo licencia MIT ([LICENSE](LICENSE)); eso **no** aplica a `sources/`. La documentación en `sources/` es una copia en Markdown de la documentación oficial de cada proyecto, convertida automáticamente con Firecrawl (React: tomada del Markdown de su repositorio oficial). **Los derechos pertenecen a sus autores.** Cada página conserva su URL original en `sources/<tecnología>/manifest.json`. Para cualquier uso que vaya más allá de la consulta, se debe respetar la licencia del proyecto original.
 
 | Tecnología | Fuente | Licencia de la documentación |
 | --- | --- | --- |
@@ -19,10 +19,10 @@ El código de este repositorio está bajo licencia MIT ([LICENSE](LICENSE)); eso
 | dplyr, tidyr, purrr, stringr, ggplot2 | https://\<paquete\>.tidyverse.org/ | Licencia del paquete (MIT); ver la ficha del paquete en CRAN |
 | lubridate | https://lubridate.tidyverse.org/ | Licencia del paquete; ver la ficha en CRAN |
 | css, html, javascript | https://developer.mozilla.org/ | Prosa CC BY-SA 2.5 (Mozilla Contributors); ejemplos de código CC0. La copia de MDN conserva la licencia CC BY-SA 2.5 |
-| react | https://react.dev/ | CC BY 4.0 (Meta Platforms) |
+| react | https://react.dev/ (Markdown de [reactjs/react.dev](https://github.com/reactjs/react.dev), `src/content`) | CC BY 4.0 (Meta Platforms) |
 | n8n | https://docs.n8n.io/ | © n8n GmbH; no se encontró una licencia explícita de la documentación |
 | rstudio | https://docs.posit.co/ide/ | © Posit Software, PBC; documentación propietaria |
-| anaconda | https://docs.anaconda.com/ | © Anaconda, Inc.; documentación propietaria |
+| anaconda | https://docs.anaconda.com/ | © Anaconda, Inc.; documentación propietaria. Copia congelada del 2026-11-08 (no se actualiza) |
 
 Las tres últimas filas no tienen una licencia abierta conocida. Se incluyen para consulta, por decisión del mantenedor.
 

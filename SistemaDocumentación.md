@@ -2,70 +2,79 @@
 
 **Ultima actualizacion:** 2026-11-08
 
-> Repositorio publico y fuente unica de verdad: [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). El servidor (`~/server-stack/docs-kb/`) es un clon que publica cada actualizacion de la documentacion. docs-kb contiene **solo documentacion tecnica publica**: ningun contenido personal.
+> Repositorio publico y fuente unica de verdad: [github.com/adolfo-s-rey-b/docs-kb](https://github.com/adolfo-s-rey-b/docs-kb). **Desde 2026-11-08 todo depende solo de GitHub**: GitHub Actions recolecta la documentacion, construye el indice y publica el paquete del MCP local (Release `datos`), que cada usuario instala con el plugin de Claude Code. El servidor propio (secciones marcadas *legado*) ya no es necesario. docs-kb contiene **solo documentacion tecnica publica**: ningun contenido personal.
 
 ---
 
 ## 1. Proposito
 
-Repositorio local de documentacion tecnica para Claude Code. Protege la ventana de contexto retornando solo secciones relevantes, en lugar de documentos completos. Incluye busqueda semantica multilingue via FAISS: una consulta en espanol encuentra documentacion en ingles aunque los terminos sean distintos.
+Documentacion tecnica oficial de 25 tecnologias para Claude Code (y cualquier cliente MCP). Protege la ventana de contexto devolviendo solo las secciones relevantes. La busqueda semantica multilingue (FAISS) hace que una consulta en espanol encuentre la documentacion en ingles aunque los terminos sean distintos.
 
 **Acceso:**
 
-- **Local (servidor Ubuntu):** `http://localhost:8765/mcp` (sin auth, dentro de la red)
-- **Remoto (cliente Linux, Claude Code):** `https://mcp-documentacion.adolfo-s-rey-b.com/mcp` (Bearer token requerido; ver GuiaMCP.md)
+- **MCP local (principal):** plugin `docs-kb@docs-kb` (`/plugin install docs-kb --marketplace adolfo-s-rey-b/docs-kb`) o `python3 plugin/docs_kb_local.py serve` (stdio). Sin token. Ver GuiaMCP.md
+- **Lectura directa:** `sources/<tecnologia>/markdown/*.md` en GitHub
+- **Legado:** `https://mcp-documentacion.adolfo-s-rey-b.com/mcp` (servidor propio, Bearer token), que se desconectara
 
 ---
 
 ## 2. Arquitectura
 
 ```text
-[Documentacion tecnica publica de 25 tecnologias]
-         |
-         v Firecrawl + Playwright (efimeros, uno por job)
+[Documentacion tecnica publica de 25 tecnologias]        [reactjs/react.dev (markdown)]
+         |                                                         |
+         v Firecrawl + Playwright (efimeros, uno por job)          v API de GitHub (source_type: github)
     +-----------------------------------------------------------------------------------+
-    |  GitHub Actions: .github/workflows/actualizar-docs.yml (domingos; dia 1 + discover)|
+    |  GitHub Actions: actualizar-docs.yml (domingos 03:00 UTC; dia 1 01:00 + discover)  |
     |  - 1 job por tecnologia: collector.py --tech T --max-age-days 28 --no-index       |
     |  - Descubre paginas: map -> objects.inv -> sitemap -> crawl BFS                   |
-    |  - Job final: un commit "docs: actualizacion automatica" (docs-kb-bot) en main    |
+    |  - Job publicar: un commit "docs: actualizacion automatica" (docs-kb-bot) en main |
     +-----------------------------------------------------------------------------------+
                  |
-                 v github.com/adolfo-s-rey-b/docs-kb  (fuente unica de verdad: sources/)
+                 v github.com/adolfo-s-rey-b/docs-kb   (fuente unica de verdad: sources/)
                  |
-                 v git pull cada hora (sincronizar.sh, cron del servidor)
     +-----------------------------------------------------------------------------------+
-    |  Servidor (~/server-stack/docs-kb = clon del repo)                                |
-    |  - collector.py --index-only: section-index.json + embeddings.faiss (multilingue, |
-    |    cache incremental con checkpoints; reanudable tras un reinicio)                |
+    |  GitHub Actions: datos.yml (tras cada recoleccion, o push de codigo/config)       |
+    |  - collector.py --index-only: section-index + FAISS SQ8 (incremental: cache de    |
+    |    embeddings del Release anterior)                                               |
+    |  - changelog desde git, paquete docs-kb-datos.tar.gz + version.json (sha256)      |
     +-----------------------------------------------------------------------------------+
                  |
-                 v index/
-    +-----------------------------------------------------------------------------------+
-    |                 mcp_server.py (Docker container :8765)                            |
-    |  Transporte: streamable-http                                                      |
-    |  - 8 tools MCP                                                                    |
-    |  - Cache LRU (invalidacion por mtime de section-index)                            |
-    |  - FAISS con recarga en caliente (mtime de embeddings.faiss)                      |
-    |  - Busqueda semantica (fase 0) + keyword (fase 1+2)                               |
-    +-----------------------------------------------------------------------------------+
-                 |                                    |
-          :8765 (interno)                    localhost:8765
-                 |                                    |
-    +---------------------------+        +--------------------------+
-    |  nginx_firecrawl_proxy    |        |  Claude Code (servidor)  |
-    |  :8766 Bearer token auth  |        |  .mcp.json type: http    |
-    +---------------------------+        +--------------------------+
+                 v Release "datos": docs-kb-datos.tar.gz (~100 MB), version.json, embeddings-cache.npz
                  |
-                 v
-    +---------------------------+
-    |  Cloudflare Tunnel        |
-    |  mcp-documentacion.       |
-    |  adolfo-s-rey-b.com       |
-    +---------------------------+
-                 |
-                 v
-    Claude Code (cliente Linux) — claude mcp add --scope user + Bearer token
+    +-----------------------------------------------------------------------------------+
+    |  Equipo del usuario: plugin docs-kb (Claude Code) / docs_kb_local.py              |
+    |  - hook SessionStart (async): instala o actualiza (cada <=12 h) en segundo plano  |
+    |  - serve: venv propio -> mcp_server.py por stdio (8 tools); mientras se instala,  |
+    |    un MCP minimo (solo stdlib) informa el avance                                  |
+    |  - datos en ${CLAUDE_PLUGIN_DATA} (o ~/.local/share/docs-kb)                       |
+    +-----------------------------------------------------------------------------------+
 ```
+
+El servidor propio (legado) hacia lo mismo que el ultimo bloque, pero remoto: era un clon del repo con `sincronizar.sh` y servia `mcp_server.py` por streamable-http (Docker :8765 -> nginx :8766 con Bearer token -> Cloudflare Tunnel).
+
+---
+
+## 2b. MCP local: plugin y paquete
+
+| Pieza | Donde | Que hace |
+| --- | --- | --- |
+| Marketplace | `.claude-plugin/marketplace.json` | El repo es un marketplace de Claude Code (`docs-kb`); el plugin esta en `./plugin` y Claude Code copia solo esa carpeta |
+| Plugin | `plugin/.claude-plugin/plugin.json` | Declara el MCP `docs-kb` (`python3 ${CLAUDE_PLUGIN_ROOT}/docs_kb_local.py serve`, `DOCS_KB_HOME=${CLAUDE_PLUGIN_DATA}`). Sin `version`: sigue los commits del repo |
+| Hook | `plugin/hooks/hooks.json` | `SessionStart` (`startup`, `async`): `docs_kb_local.py ensure` |
+| Comandos y skill | `plugin/commands/`, `plugin/skills/docs-kb/` | `/docs-kb:actualizar`, `/docs-kb:estado`; la skill explica a Claude cuando y como consultar |
+| Lanzador | `plugin/docs_kb_local.py` | Solo stdlib. `install`/`update`/`status`/`serve`/`ensure`/`check`/`uninstall`. Descarga `version.json` y el paquete desde `https://github.com/adolfo-s-rey-b/docs-kb/releases/download/datos/` (sin API ni token), verifica sha256, extrae en `versiones/<commit>/` y cambia `actual` de forma atomica (conserva la version anterior). Crea `venv/` con `requirements-local.txt` (usa `uv` si existe) y descarga el modelo a `modelos/` |
+| Paquete | Release `datos` | `mcp_server.py`, `config.json`, `requirements-local.txt`, `LICENSE`, `ATTRIBUTION.md`, `sources/*/markdown`, `sources/*/manifest.json`, `index/` (FAISS SQ8, meta, section-index, tech-map) y `changelog/` (90 dias, desde git) |
+
+**Versiones fijadas** (`requirements-local.txt`): `fastembed==0.8.0`, la version con la que se calcula el indice (asi las consultas producen embeddings comparables); `mcp>=1.27,<2`, porque mcp 2.x renombro FastMCP.
+
+**En local:**
+
+- `docs_fetch_live` descarga la pagina directamente y la convierte con html2text. No renderiza JavaScript; con `DOCS_KB_FIRECRAWL_URL` usa un Firecrawl propio.
+- `docs_changelog` lee el changelog generado desde git.
+- Los logs del servidor van a stderr, porque stdout es el canal MCP.
+
+**Prueba end-to-end:** `python3 docs_kb_local.py check` (12 pruebas por stdio). Resultados del 2026-11-08: 12/12, tanto con la instalacion directa como con el plugin instalado desde el marketplace.
 
 ---
 
@@ -78,6 +87,11 @@ docs-kb/
 +-- error_hook.py              # PostToolUse hook para errores
 +-- config.json                # 25 tecnologias configuradas
 +-- .github/workflows/actualizar-docs.yml  # Recoleccion semanal en GitHub Actions (mecanismo principal)
++-- .github/workflows/datos.yml            # Indice + paquete del MCP local -> Release "datos"
++-- .github/scripts/                       # changelog_desde_git.py, empaquetar.py
++-- .claude-plugin/marketplace.json        # El repo como marketplace de Claude Code
++-- plugin/                                # Plugin docs-kb: MCP local (docs_kb_local.py), hook, comandos, skill
++-- requirements-local.txt                 # Dependencias fijadas del MCP local
 +-- .github/firecrawl/docker-compose.yml   # Firecrawl + Playwright efimeros para los jobs
 +-- sincronizar.sh             # Servidor (cron cada hora): git pull + reindexado reanudable
 +-- actualizar.sh              # Alternativa manual en el servidor: collector.py <args> + publicar.sh
@@ -118,10 +132,14 @@ Backups: `~/backups/docs-kb-AAAA-MM-DD.tgz` (codigo, config, index, sources), `d
 
 ## 4. Tecnologias Configuradas (25)
 
-**Web (via Firecrawl):**
+**Web (via Firecrawl, en GitHub Actions), 23:**
 python, pandas, numpy, matplotlib, seaborn, scikit-learn, keras, tensorflow, pytorch, r,
 tidyverse, dplyr, tidyr, purrr, stringr, lubridate, ggplot2, rstudio, css, html,
-javascript, react, n8n, anaconda, jupyterlab
+javascript, n8n, jupyterlab
+
+**Repositorio GitHub (`source_type: "github"`), 1:** react, desde el Markdown de [reactjs/react.dev](https://github.com/reactjs/react.dev) (`src/content/learn`, `src/content/reference`; CC-BY-4.0). react.dev bloquea los runners de GitHub, pero su fuente es publica.
+
+**Congelada (`"recolectar_en": "congelada"`), 1:** anaconda. docs.anaconda.com bloquea los runners de GitHub y no publica su fuente; se conservan las 26 paginas recolectadas el 2026-11-08 y el workflow no la actualiza.
 
 Fuente y licencia de cada una: `ATTRIBUTION.md`.
 
@@ -224,6 +242,25 @@ Opciones por tecnologia en `config.json`: `discovery` (orden), `inventory_url`, 
 
 `firecrawl_playwright` (`ghcr.io/firecrawl/playwright-service`) renderiza paginas con JavaScript; `firecrawl_api` lo usa via `PLAYWRIGHT_MICROSERVICE_URL=http://firecrawl_playwright:3000/scrape`. El container `playwright_mcp_daemon` es otra cosa (MCP interactivo de navegador) y no lo usa el collector.
 
+### Fuente repositorio GitHub (`source_type: "github"`)
+
+Para documentacion publicada como Markdown en un repo publico:
+
+```json
+"react": {"source_type": "github", "repo": "reactjs/react.dev", "ref": "main", "path": "src/content",
+          "include": ["learn/", "reference/"], "doc_base_url": "https://react.dev/"}
+```
+
+- Una sola llamada a la API (`git/trees/<ref>?recursive=1`) lista los archivos. Solo se descargan, desde `raw.githubusercontent.com`, los que cambiaron segun su sha de blob.
+- El slug y la URL replican el sitio: `learn/foo.md` -> `learn-foo` -> `https://react.dev/learn/foo`.
+- Se eliminan las paginas que ya no existen.
+- Usa `GH_TOKEN`/`GITHUB_TOKEN` si estan definidos.
+- El indice de secciones toma el `title` del frontmatter y quita las anclas MDX (`{/*x*/}`) y los componentes sueltos (`<InlineToc />`).
+
+### Indice FAISS
+
+`DOCS_KB_FAISS_INDEX=flat` (por defecto) crea `IndexFlatL2` exacto en float32. `sq8` crea `IndexScalarQuantizer` de 8 bits, unas 4 veces mas chico (165k vectores: ~63 MB en lugar de ~250 MB), con la misma API; es el que usa el paquete local. La cache de embeddings (`index/embeddings-cache.npz`) se guarda en float16.
+
 ### Fuentes locales (soportadas, ninguna configurada)
 
 Cualquier fuente local que se agregue queda publicada en el repo publico: no usar para contenido personal.
@@ -261,7 +298,7 @@ Siempre a `logs/collector.log`; a stdout solo si corre en una terminal (el cron 
 
 ---
 
-## 7. Error Hook (error_hook.py)
+## 7. Error Hook (error_hook.py) — legado (servidor)
 
 **Tipo:** PostToolUse hook, matcher: Bash
 **Interprete:** System Python (sin venv)
@@ -277,7 +314,10 @@ Prioridad (mayor a menor): pandas > numpy > scikit-learn > keras > tensorflow > 
 
 ---
 
-## 8. Skills (servidor: `~/server-stack/.claude/skills`)
+## 8. Skills del servidor (`~/server-stack/.claude/skills`) — legado
+
+El plugin trae su propia skill (`plugin/skills/docs-kb`) y comandos (`/docs-kb:actualizar`, `/docs-kb:estado`).
+
 
 | Skill | Descripcion |
 | --- | --- |
@@ -294,7 +334,7 @@ Solo existen en sesiones de Claude Code abiertas en el servidor. En el cliente s
 
 ---
 
-## 9. Infraestructura Docker
+## 9. Infraestructura Docker — legado (servidor propio)
 
 ### Servicios relevantes
 
@@ -337,16 +377,22 @@ claude mcp add --transport http --scope user docs-kb \
 - Job `publicar`: junta los artefactos y hace un unico commit `docs: actualizacion automatica FECHA (N archivos)` como `docs-kb-bot`.
 - Carga inicial completa: run 42448781365 (2026-11-08, ~2 h 40 min; el job mas largo fue tensorflow, 4.474 paginas), commit `218313e` con 23.931 archivos.
 
-**Excepcion: react y anaconda** (`"recolectar_en": "servidor"` en `config.json`). react.dev y docs.anaconda.com bloquean las IPs de GitHub Actions (en el run 42502728904: 286 scrapes de React con error 500 y el crawl de Anaconda con 1 sola pagina), mientras que desde el servidor se descargan bien (184 y 26 paginas). El workflow las omite salvo que se pidan explicitamente, y el servidor las recolecta una vez al mes y las publica con su deploy key (ver cron abajo). Si el servidor esta caido ese dia, esperan al mes siguiente; las otras 23 tecnologias no dependen de el.
+**Indice y paquete: GitHub Actions** (`.github/workflows/datos.yml`): corre como job `datos` al final de `actualizar-docs.yml`, y tambien en un push que cambie `mcp_server.py`, `collector.py`, `config.json`, `requirements-local.txt` o los scripts, o a mano. Hace lo siguiente:
 
-**Servidor: solo sincroniza** (cron instalado el 2026-11-08):
+1. Descarga del Release la cache de embeddings (`embeddings-cache.npz`, float16).
+2. `DOCS_KB_FAISS_INDEX=sq8 collector.py --index-only`: solo codifica las secciones nuevas o modificadas.
+3. Genera el changelog desde git y empaqueta.
+4. Sube al Release `datos` el paquete y la cache, y `version.json` al final, para que ningun cliente vea una version que todavia no esta subida.
+
+Primera publicacion: `bb4b28c` (2026-11-08, 99 MB, 162.933 vectores; la cache se sembro con los embeddings del servidor). Tras pasar React a la fuente GitHub: `3396873` (24.116 paginas, 165.212 vectores).
+
+**Servidor propio — legado, solo sincroniza** (cron instalado el 2026-11-08; ya no hace falta para nada, el MCP local lo reemplaza):
 
 ```text
 17 * * * * cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -n /tmp/docs-kb-collector.lock ./sincronizar.sh >> logs/sincronizar.log 2>&1
-43 4 2 * * cd /home/adolfo-s-rey-b/server-stack/docs-kb && flock -w 7200 /tmp/docs-kb-collector.lock ./actualizar.sh --tech react,anaconda --discover --max-age-days 28 --no-index
 ```
 
-La segunda linea (dia 2 de cada mes, 04:43 UTC) es la recoleccion mensual de react y anaconda desde el servidor; `--no-index` porque la siguiente corrida de `sincronizar.sh` reindexa.
+(La recoleccion mensual de react y anaconda desde el servidor se retiro el 2026-11-08: react viene de GitHub y anaconda esta congelada.)
 
 `sincronizar.sh` hace `git pull --ff-only`; si cambio `mcp_server.py` reinicia el container; si cambio algo que afecta al indice (`sources/`, `config.json`, `collector.py`) corre `collector.py --index-only`. El commit indexado se guarda en `index/indexed-commit` solo al terminar, y la cache de embeddings se guarda cada 20.000 secciones: si el servidor se reinicia a mitad, la siguiente hora retoma el reindexado sin repetir trabajo. El MCP recarga indice y secciones en caliente.
 
@@ -360,7 +406,8 @@ La segunda linea (dia 2 de cada mes, 04:43 UTC) es la recoleccion mensual de rea
 
 - Repo publico: `github.com/adolfo-s-rey-b/docs-kb`. La documentacion se lee directamente en `sources/<tecnologia>/markdown/*.md`; `sources/<tecnologia>/manifest.json` tiene la URL original, titulo y fecha de cada pagina.
 - Servidor: `~/server-stack/docs-kb` es un clon. Remoto `git@github-docs-kb:adolfo-s-rey-b/docs-kb.git`; alias SSH `github-docs-kb` -> deploy key `~/.ssh/docs-kb-deploy` (escritura solo en este repo). Autor de commits: noreply de GitHub.
-- Quien escribe en `sources/`: el workflow de GitHub Actions (`docs-kb-bot`). El servidor solo lee (`sincronizar.sh`); `publicar.sh` existe para recolecciones manuales desde el servidor.
+- Quien escribe en `sources/`: el workflow de GitHub Actions (`docs-kb-bot`). El servidor (legado) solo lee.
+- Release `datos` (tag fijo, assets reemplazados en cada publicacion): `docs-kb-datos.tar.gz`, `version.json`, `embeddings-cache.npz`. URLs estables: `https://github.com/adolfo-s-rey-b/docs-kb/releases/download/datos/<asset>`.
 - No se versionan (`.gitignore`): `.env`, `.venv/`, `index/` (se reconstruye con `--index-only`), `logs/`, `sources/*/html/` (cache para detectar cambios), `sources/*/versions/` (obsoleto), `changelog/` (estado local; el historial publico es el de git).
 - Cambios de codigo o documentacion se hacen en un clon (por ejemplo en el cliente) y se hace push; el servidor los recibe en la siguiente corrida de `sincronizar.sh` (cada hora), que reinicia el container si cambia `mcp_server.py`.
 
