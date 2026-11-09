@@ -160,4 +160,5 @@ Se mantuvo Firecrawl, que también usan flujos de n8n, junto con nginx y el rest
 ## 7. Pendientes
 
 1. El registro DNS `mcp-documentacion.adolfo-s-rey-b.com` sigue existiendo en Cloudflare. El túnel ya responde 404 para ese nombre. Se puede borrar desde el panel de Cloudflare (DNS), porque `cloudflared` no borra registros.
-2. Verificar la primera corrida programada del workflow, el domingo 2026-11-15 a las 03:00 UTC: debe publicar y encadenar `datos.yml`.
+2. **conda incompleta (24 de ~80 páginas).** docs.conda.io también bloquea los runners de GitHub tras unas 12 páginas, aun con 3 s de pausa (`SCRAPE_ALL_ENGINES_FAILED`). El cortacircuitos detiene la tecnología y cada corrida semanal agrega unas 12 páginas más. Para tenerla completa de una vez, se podría añadir al collector soporte para reStructuredText y tomarla de `conda/conda` (`docs/source`, 106 archivos `.rst`) con la fuente GitHub.
+3. Verificar la primera corrida programada del workflow, el domingo 2026-11-15 a las 03:00 UTC: debe publicar y encadenar `datos.yml`.
