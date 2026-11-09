@@ -118,7 +118,10 @@ def firecrawl_scrape(url: str, firecrawl_url: str, options: dict) -> dict | None
             json=payload,
             timeout=60,
         )
-        resp.raise_for_status()
+        if resp.status_code >= 400:
+            # Firecrawl wraps the site's answer (e.g. 429 rate limit) in its own error body
+            log.error(f"  Scrape failed for {url}: HTTP {resp.status_code} {resp.text[:200]!r}")
+            return None
         result = resp.json()
         return result.get("data", result)
     except Exception as e:
@@ -899,6 +902,9 @@ def collect_local_technology(tech_key: str, tech_conf: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 DEFAULT_DISCOVERY = ["map", "inventory", "sitemap", "crawl"]
+DEFAULT_PAUSE = 0.5          # seconds between page downloads ("pausa_segundos" per tech)
+RETRY_WAITS = (10, 30)       # back-off before retrying a failed scrape
+MAX_CONSECUTIVE_FAILURES = 15  # circuit breaker per technology
 DEFAULT_CRAWL_DEPTH = 6
 DEFAULT_CRAWL_MAX_FETCH = 3000
 
@@ -1146,6 +1152,7 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
         urls = [p["url"] for p in manifest["pages"].values() if p.get("url")]
 
     run_versions: dict = {}  # version string -> pages where it was detected in this run
+    consecutive_failures = 0
     for url in urls:
         slug = url_to_slug(url, base_url)
         page_info = manifest["pages"].get(slug, {
@@ -1169,9 +1176,22 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
 
         log.info(f"  Scraping: {slug} ({url})")
         data = firecrawl_scrape(url, firecrawl_url, scrape_options)
+        for wait in RETRY_WAITS:
+            if data:
+                break
+            # Usually a rate limit (Read the Docs, etc.): back off and retry politely
+            log.info(f"    retrying {slug} in {wait}s")
+            time.sleep(wait)
+            data = firecrawl_scrape(url, firecrawl_url, scrape_options)
         if not data:
             stats["failed"] += 1
+            consecutive_failures += 1
+            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                log.warning(f"  {tech_key}: {consecutive_failures} consecutive failures, stopping this "
+                            f"technology for now (site blocking or down); the rest is retried next run")
+                break
             continue
+        consecutive_failures = 0
 
         markdown = data.get("markdown", "")
         html_content = data.get("html", "")
@@ -1226,7 +1246,7 @@ def collect_technology(tech_key: str, tech_conf: dict, config: dict,
 
         if (stats["new"] + stats["updated"]) % 50 == 0:
             save_manifest(tech_key, manifest)  # checkpoint for long runs
-        time.sleep(0.5)
+        time.sleep(float(tech_conf.get("pausa_segundos", DEFAULT_PAUSE)))
 
     update_detected_version(tech_key, manifest, run_versions)
     save_manifest(tech_key, manifest)

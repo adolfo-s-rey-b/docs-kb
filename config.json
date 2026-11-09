@@ -307,7 +307,8 @@
         "search",
         "py-modindex"
       ],
-      "max_pages": 0
+      "max_pages": 0,
+      "pausa_segundos": 3
     }
   }
 }
