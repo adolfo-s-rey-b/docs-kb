@@ -146,336 +146,336 @@
     },
     "commands-list": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/list.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "8610488dbd9a16a814c4f31bded258c966334e6d65564b89055dcc5076cb11da",
+      "last_fetched": "2026-11-15T10:26:57.882429+00:00",
+      "title": "conda list — conda 26.10.0 documentation"
     },
     "commands-notices": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/notices.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "9155a56fdd398b8b04010746841f710398f031a733c0ad294ed15fde1de46998",
+      "last_fetched": "2026-11-15T10:27:01.472545+00:00",
+      "title": "conda notices — conda 26.10.0 documentation"
     },
     "commands-package": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/package.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "5048574989ea9cc51105d58e08bfe429ef175c1ebbfe80951116e35679a422e4",
+      "last_fetched": "2026-11-15T10:27:05.063534+00:00",
+      "title": "conda package — conda 26.10.0 documentation"
     },
     "commands-remove": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/remove.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "0f41dd31b39cfd74919d3984f934ef851fd7b7a0937725e1e31d5dcf0eb4d5be",
+      "last_fetched": "2026-11-15T10:27:08.998171+00:00",
+      "title": "conda remove — conda 26.10.0 documentation"
     },
     "commands-rename": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/rename.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "a022ad3e676b91e16dcf54e2dfa42b9a2f3a93f84ed555c3415e25adfb1c06d9",
+      "last_fetched": "2026-11-15T10:27:13.051473+00:00",
+      "title": "conda rename — conda 26.10.0 documentation"
     },
     "commands-repoquery-depends": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/depends.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "ec6381453f1a972796acd997983be04ae3e19259b4205567f3b47979531fd376",
+      "last_fetched": "2026-11-15T10:27:17.045569+00:00",
+      "title": "conda repoquery depends — conda 26.10.0 documentation"
     },
     "commands-repoquery-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "52cfda10332b7eb2bf203beeee80ce53e490a4bdf3a6cfa25b3d6c2d2edf1af2",
+      "last_fetched": "2026-11-15T10:27:20.898236+00:00",
+      "title": "conda repoquery — conda 26.10.0 documentation"
     },
     "commands-repoquery-whoneeds": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/repoquery/whoneeds.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "53b3d49e6e036a069e77c2dd0fa54bd169a5559c9ec5f3b13085991de57305ee",
+      "last_fetched": "2026-11-15T10:27:24.831463+00:00",
+      "title": "conda repoquery whoneeds — conda 26.10.0 documentation"
     },
     "commands-run": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/run.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "ef2a96368bd8e0dd760f88ddabbcc64de29645040dc31262d30ed60117453472",
+      "last_fetched": "2026-11-15T10:27:28.431023+00:00",
+      "title": "conda run — conda 26.10.0 documentation"
     },
     "commands-update": {
       "url": "https://docs.conda.io/projects/conda/en/stable/commands/update.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "571877c724ec7192126f73fad05904dcba66dfbd96fe076da5f2470e99132dc9",
+      "last_fetched": "2026-11-15T10:27:32.066975+00:00",
+      "title": "conda update — conda 26.10.0 documentation"
     },
     "configuration": {
       "url": "https://docs.conda.io/projects/conda/en/stable/configuration.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "54edd54618e518e9544a51713c50509becf06d3338a4421f5dcab5cf4cb79edc",
+      "last_fetched": "2026-11-15T10:27:35.643321+00:00",
+      "title": "Configuration — conda 26.10.0 documentation"
     },
     "glossary": {
       "url": "https://docs.conda.io/projects/conda/en/stable/glossary.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "39a74298d7fad3032a60422d80fa708fb5c98d61238ec63c5df509ffb6e9c166",
+      "last_fetched": "2026-11-15T10:27:39.572134+00:00",
+      "title": "Glossary — conda 26.10.0 documentation"
     },
     "index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "f76dd03b3a6bd3524a6d93537339b755b0de97f5026077319b8621cf347117d7",
+      "last_fetched": "2026-11-15T10:27:43.219428+00:00",
+      "title": "Conda Documentation — conda 26.10.0 documentation"
     },
     "new-features": {
       "url": "https://docs.conda.io/projects/conda/en/stable/new-features.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "ce5cecef318a546731ceb77ce26eb3d5e143d7e91ea7c73cca93c64299b784e3",
+      "last_fetched": "2026-11-15T10:27:47.131854+00:00",
+      "title": "New features to try — conda 26.10.0 documentation"
     },
     "user-guide-cheatsheet": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "ccb2d60e66d62fc3963bb387be6d3e52c6aeb0146e529a8d3e63c2c58a48c8f8",
+      "last_fetched": "2026-11-15T10:27:51.057306+00:00",
+      "title": "Cheatsheet — conda 26.10.0 documentation"
     },
     "user-guide-concepts-channels": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "e1d22f54b7803fcfdc37e684cde1f2373a3039a0152fb173b0f96d53b16c9ce5",
+      "last_fetched": "2026-11-15T10:27:55.132822+00:00",
+      "title": "Channels — conda 26.10.0 documentation"
     },
     "user-guide-concepts-conda-commands": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-commands.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "07532e9b89117be4da920cfd1a9ae1ad0c78ce43bf1fe9b4217de69db5c73215",
+      "last_fetched": "2026-11-15T10:27:58.993613+00:00",
+      "title": "Commands — conda 26.10.0 documentation"
     },
     "user-guide-concepts-conda-performance": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-performance.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "7ce7376e95131e6a56c79b1eb917e06be884e000b400071e88522421e8b42697",
+      "last_fetched": "2026-11-15T10:28:03.068270+00:00",
+      "title": "Performance — conda 26.10.0 documentation"
     },
     "user-guide-concepts-conda-plugins": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-plugins.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "3bdcbc66472b34b5196a086c5b14a544c97dab736cccd4608044e81e700504cb",
+      "last_fetched": "2026-11-15T10:28:06.899607+00:00",
+      "title": "Plugins — conda 26.10.0 documentation"
     },
     "user-guide-concepts-data-science": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/data-science.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "88f50fc1214873217730c08be6ba390cb784e09abc3aa221961c591e19c6e45d",
+      "last_fetched": "2026-11-15T10:28:10.735855+00:00",
+      "title": "Conda for data scientists — conda 26.10.0 documentation"
     },
     "user-guide-concepts-environments": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/environments.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "b40f41b681bd04197195d7e2bebbe9ee5f6eca88c91bee37d481ec7d7f0222c8",
+      "last_fetched": "2026-11-15T10:28:14.623744+00:00",
+      "title": "Environments — conda 26.10.0 documentation"
     },
     "user-guide-concepts-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "9c47d0f32d43f467d01db03ef20a41df617f78961d0f07d91d72399d5a6d0e65",
+      "last_fetched": "2026-11-15T10:28:18.162725+00:00",
+      "title": "Concepts — conda 26.10.0 documentation"
     },
     "user-guide-concepts-installing-with-conda": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/installing-with-conda.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "21e9ff6082e1290bbd39eedcf9777c29a0611b76228a37c87076df40edc76697",
+      "last_fetched": "2026-11-15T10:28:21.884873+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-concepts-packages": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/packages.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "ccab52c73ad1ea88fdc5282827a8e9d7df86a239c638ae0b0fcbc462dceac6dd",
+      "last_fetched": "2026-11-15T10:28:25.638875+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-concepts-pkg-specs": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/pkg-specs.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "9e0e95f3eddcb95707cc23cb4cfa52fe1c973a37bce5edf92aab8f771fa6b21b",
+      "last_fetched": "2026-11-15T10:28:29.388113+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-concepts-solvers": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/solvers.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "f280ba02753c47b63378c566fbe5e5282c3b99435bac357651ae2af9aeaaa289",
+      "last_fetched": "2026-11-15T10:28:33.189019+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-admin-multi-user-install": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/admin-multi-user-install.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "17a0270c988b22e27743e3a90f148b2558e8679c7c90d0416b199118a80a308d",
+      "last_fetched": "2026-11-15T10:28:36.930741+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-custom-env-and-pkg-locations": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/custom-env-and-pkg-locations.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "7f51defd360af196b0ef32b7299b9f7f9a31db87a4ce2a7a9fcac0ccc6bb8b1f",
+      "last_fetched": "2026-11-15T10:28:40.643215+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-disable-ssl-verification": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/disable-ssl-verification.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "318740e9adfc560cb7811b2f992e2d13e18cc4d1c9eb14c231d3a53b3252d068",
+      "last_fetched": "2026-11-15T10:28:44.417127+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "4b983d39b6792b111be9c8936b4c1e86291d98f3724335ca16f329f55a5f0dae",
+      "last_fetched": "2026-11-15T10:28:48.225497+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-mirroring": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/mirroring.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "74d059611ae6ab81297fdeefa00fb8778ba1adff03b20510ea1f40d9d90ec1a0",
+      "last_fetched": "2026-11-15T10:28:51.986901+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-non-standard-certs": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/non-standard-certs.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "2e107e0a2f2b1b71c01ce9f617ce366453cc354564b39b67896f485c52c026af",
+      "last_fetched": "2026-11-15T10:28:55.793641+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-pip-interoperability": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/pip-interoperability.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "e2b9c6b51ab1c8df31806a835d1ba0408411b53c034bbfd1fb2fbaf39eacfc61",
+      "last_fetched": "2026-11-15T10:28:59.544834+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-settings": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/settings.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "785c6c4f3ed29a75be65d95b208475aee54991c1c6a91f910aa304c1d94b270d",
+      "last_fetched": "2026-11-15T10:29:03.287398+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-temp-files": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/temp-files.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "24da9d41bd27e7ef064469b11ecccc27068d3c7c44f6a2f9338e991897000763",
+      "last_fetched": "2026-11-15T10:29:07.081258+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-configuration-use-condarc": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "34578d0b8a45dbd0bbdd9aec22aead619d9ba977e2d0c60c8d0825e1a5cc177d",
+      "last_fetched": "2026-11-15T10:29:10.783997+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-getting-started": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "bc336ba8d14bb403d63036fe614ecb598625083c304cead89442e07da55a8e2e",
+      "last_fetched": "2026-11-15T10:29:14.503166+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "f36d723aa08e025010f31f77dad26bc1877c17f4667c4918b7c3a57af3cb7fce",
+      "last_fetched": "2026-11-15T10:29:18.238447+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-install-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "c4fef416fa64cc055e711b060d050741f90260ac4bdc9b744703669b3da64d94",
+      "last_fetched": "2026-11-15T10:29:21.956700+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-install-linux": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "f13d37459cee0f4824230ab89859b1f7b57e1eb94389f6c1768cdc69c92ee998",
+      "last_fetched": "2026-11-15T10:29:25.687579+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-install-macos": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/macos.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "d005124bd57dd54f7804ccdcfe47263227bcfe2d396a45cf491e91177c08d641",
+      "last_fetched": "2026-11-15T10:29:29.505242+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-install-windows": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "79e79aa784f450ca3130b5359604ca46efad11317643831c61bb1a92e7fd3da7",
+      "last_fetched": "2026-11-15T10:29:33.239003+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-authenticated-channels": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/authenticated-channels.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "a3fe95eee0c48d137b840894dfb5a8c93fcc3dc8762cb6064872c98cbc60477c",
+      "last_fetched": "2026-11-15T10:29:36.959470+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-create-custom-channels": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/create-custom-channels.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "1145d6e0f5d8efb5502c7663f1be9c42f3d71f283284b5871a099b21f012d46f",
+      "last_fetched": "2026-11-15T10:29:40.773728+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-creating-projects": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/creating-projects.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "d923a42cf4cfb302f64c61d4eeb1ebac7f231c1ad265c87a796594e1846c6eb0",
+      "last_fetched": "2026-11-15T10:29:44.488268+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-index": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/index.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "83df7d7930321079c2c42c346164a40bd1b8e676c003f799640bee8166b26b55",
+      "last_fetched": "2026-11-15T10:29:48.567882+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-install-packages-from-pypi": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/install-packages-from-pypi.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "e693df06c15c3f3a2f93ef820193e6a024065df937c9915f210f69b8f9d056f7",
+      "last_fetched": "2026-11-15T10:29:52.398052+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-channels": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "a083ef14a2359e47d4db8ed8038e2d4829bcc2d43232833e5aebacda95e9477f",
+      "last_fetched": "2026-11-15T10:29:56.128830+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-conda": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-conda.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "bb912e665f96b87232d38a740fd3bd865b614f521a115d8350b9c4d4841b4feb",
+      "last_fetched": "2026-11-15T10:29:59.876797+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-environments": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "35d87aa146d7c472c6a76e4a12f11b0b1920b1a5b74621621e6e2270292f873c",
+      "last_fetched": "2026-11-15T10:30:03.600397+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-pkgs": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-pkgs.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "2b06a5dd95d5fc511fa73b8f45259757664b9af7f85005dcf3cf777609568612",
+      "last_fetched": "2026-11-15T10:30:07.372044+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-python": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-python.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "758b59480448a988612deda4956578b730edc905acda700412298f9c9c79ce7a",
+      "last_fetched": "2026-11-15T10:30:11.180540+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-manage-virtual": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-virtual.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "386f74700a06c35100f321d47eeccae8f1f634899ae8ae4ed6cf1929f1698d3c",
+      "last_fetched": "2026-11-15T10:30:14.899295+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-tasks-view-command-line-help": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/view-command-line-help.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "8b6e14bf66b7318ff9f5c67b846a23b89b1f7cb8988ca8dc7b7525b6032c84d7",
+      "last_fetched": "2026-11-15T10:30:18.634952+00:00",
+      "title": "Just a moment..."
     },
     "user-guide-troubleshooting": {
       "url": "https://docs.conda.io/projects/conda/en/stable/user-guide/troubleshooting.html",
-      "last_hash": null,
-      "last_fetched": null,
-      "title": null
+      "last_hash": "133273787b85d46e8f05f678047d37a36ebca26acc211bed3f16abe37c79873d",
+      "last_fetched": "2026-11-15T10:30:22.444105+00:00",
+      "title": "Just a moment..."
     }
   },
   "detected_version": "26.10.0",
-  "last_updated": "2026-11-09T00:19:40.809694+00:00",
+  "last_updated": "2026-11-15T10:30:22.444105+00:00",
   "version_history": []
 }
